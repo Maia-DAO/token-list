@@ -1,0 +1,25 @@
+name: Scheduled Weekly Run
+
+on:
+  schedule:
+    # Runs at 11:00 PM UTC every Wednesday
+    - cron: '0 23 * * 3'
+
+jobs:
+  run-all:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '20' 
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run all scripts
+        run: npm run all
