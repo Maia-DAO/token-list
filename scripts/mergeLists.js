@@ -5,6 +5,32 @@ const path = require('path');
 // Normalization functions for tokens to the unified format
 // ---------------------------------------------------------------------
 
+function mergeTokenData(existing, incoming) {
+    return {
+        ...existing,
+        ...incoming,
+        isAcross: existing.isAcross || incoming.isAcross,
+        isOFT: existing.isOFT || incoming.isOFT,
+        logoURI: existing.logoURI || incoming.logoURI,
+        extensions: mergeExtensions(existing.extensions, incoming.extensions)
+    };
+}
+
+function mergeExtensions(ext1 = {}, ext2 = {}) {
+    const merged = { ...ext1 };
+    for (const key in ext2) {
+        if (merged[key] && typeof merged[key] === 'object' && typeof ext2[key] === 'object') {
+            merged[key] = {
+                ...merged[key],
+                ...ext2[key]
+            };
+        } else {
+            merged[key] = ext2[key];
+        }
+    }
+    return merged;
+}
+
 /**
  * Normalize a token from the across list.
  * Input structure (from TOKEN_SYMBOLS_MAP):
@@ -19,22 +45,21 @@ const path = require('path');
  *
  * Each address entry from across is converted to a separate token.
  */
-function normalizeAcrossToken(symbol, data) {
+function normalizeAcrossToken(data) {
     const tokens = [];
     // Convert addresses keys to numbers.
     for (const key in data.addresses) {
         const chainId = Number(key);
         const address = data.addresses[key];
         tokens.push({
-            // New unified token format.
             chainId,
-            address,          // use the chain-specific address as "address"
+            address,
             name: data.name,
             decimals: data.decimals,
             symbol: data.symbol,
             logoURI: data.logoURI || null,
             tags: [],
-            extensions: { coingeckoId: data.coingeckoId },
+            extensions: data.extensions ? data.extensions : {},
             isAcross: true,   // from across list
             isOFT: false
         });
@@ -59,48 +84,17 @@ function normalizeAcrossToken(symbol, data) {
  */
 function normalizeStargateToken(token) {
     return [{
-        chainId: 1, // default numeric chainId (adjust if needed)
+        chainId: token.chainId,
         address: token.address,
         name: token.name,
         decimals: token.decimals,
         symbol: token.symbol,
         logoURI: token.icon || null,
         tags: [],
-        extensions: token.extensions ? { bridgeInfo: token.extensions.bridgeInfo } : {},
+        extensions: token.extensions ? token.extensions : {},
         isAcross: false,
         isOFT: true  // from stargate list
     }];
-}
-
-// ---------------------------------------------------------------------
-// Ulysses tokens and Uniswap tokens are added as-is (Format B).
-// Ulysses tokens are used directly.
-// Uniswap tokens are also added as-is except those with chainId === 42161;
-// those go to rootTokens (overwriting any duplicate by symbol).
-// ---------------------------------------------------------------------
-
-// ---------------------------------------------------------------------
-// Merge helper for normalized (Format A) tokens
-// ---------------------------------------------------------------------
-/**
- * Merges a token into the merged mapping.
- * In this version each token is uniquely keyed by symbol (uppercased) and chainId.
- */
-function addOrMergeNormalizedToken(mergedMap, token) {
-    const key = token.symbol.toUpperCase() + "_" + token.chainId;
-    if (!mergedMap[key]) {
-        mergedMap[key] = token;
-    } else {
-        const existing = mergedMap[key];
-        // Merge flags if either token flags it.
-        if (token.isAcross) existing.isAcross = true;
-        if (token.isOFT) existing.isOFT = true;
-        // Merge local fields if needed.
-        if (!existing.logoURI && token.logoURI) {
-            existing.logoURI = token.logoURI;
-        }
-        // Additional merging logic can be added as necessary.
-    }
 }
 
 /**
@@ -165,7 +159,7 @@ async function mergeTokens() {
         // Process Across tokens.
         for (const symbol in acrossData) {
             const tokenData = acrossData[symbol];
-            const normalizedArray = normalizeAcrossToken(symbol, tokenData);
+            const normalizedArray = normalizeAcrossToken(tokenData);
             normalizedArray.forEach(token => {
                 if (token.chainId === 42161) {
                     // Merge into rootTokensMap.
@@ -174,10 +168,7 @@ async function mergeTokens() {
                         rootTokensMap[rootKey] = token;
                     } else {
                         const existing = rootTokensMap[rootKey];
-                        if (token.isAcross) existing.isAcross = true;
-                        if (!existing.logoURI && token.logoURI) {
-                            existing.logoURI = token.logoURI;
-                        }
+                        rootTokensMap[rootKey] = mergeTokenData(existing, token);
                     }
                 } else {
                     // Merge into normalizedMap.
@@ -185,11 +176,7 @@ async function mergeTokens() {
                     if (!normalizedMap[key]) {
                         normalizedMap[key] = token;
                     } else {
-                        const existing = normalizedMap[key];
-                        if (token.isAcross) existing.isAcross = true;
-                        if (!existing.logoURI && token.logoURI) {
-                            existing.logoURI = token.logoURI;
-                        }
+                        normalizedMap[key] = mergeTokenData(normalizedMap[key], token);
                     }
                 }
             });
@@ -204,22 +191,14 @@ async function mergeTokens() {
                     if (!rootTokensMap[rootKey]) {
                         rootTokensMap[rootKey] = token;
                     } else {
-                        const existing = rootTokensMap[rootKey];
-                        if (token.isOFT) existing.isOFT = true;
-                        if (!existing.logoURI && token.logoURI) {
-                            existing.logoURI = token.logoURI;
-                        }
+                        rootTokensMap[rootKey] = mergeTokenData(rootTokensMap[rootKey], token);
                     }
                 } else {
                     const key = token.symbol.toUpperCase() + "_" + token.chainId;
                     if (!normalizedMap[key]) {
                         normalizedMap[key] = token;
                     } else {
-                        const existing = normalizedMap[key];
-                        if (token.isOFT) existing.isOFT = true;
-                        if (!existing.logoURI && token.logoURI) {
-                            existing.logoURI = token.logoURI;
-                        }
+                        normalizedMap[key] = mergeTokenData(normalizedMap[key], token);
                     }
                 }
             });
@@ -232,12 +211,7 @@ async function mergeTokens() {
                     const rootKey = token.symbol.toUpperCase();
                     if (rootTokensMap[rootKey]) {
                         const existing = rootTokensMap[rootKey];
-                        if (token.isAcross) existing.isAcross = true;
-                        if (token.isOFT) existing.isOFT = true;
-                        if (!existing.logoURI && token.logoURI) {
-                            existing.logoURI = token.logoURI;
-                        }
-                        // Add additional field merging as needed.
+                        rootTokensMap[rootKey] = mergeTokenData(existing, token);
                     } else {
                         rootTokensMap[token.symbol.toUpperCase()] = token;
                     }
@@ -245,11 +219,7 @@ async function mergeTokens() {
                     const key = token.symbol.toUpperCase() + "_" + token.chainId;
                     if (normalizedMap[key]) {
                         const existing = normalizedMap[key];
-                        if (token.isAcross) existing.isAcross = true;
-                        if (token.isOFT) existing.isOFT = true;
-                        if (!existing.logoURI && token.logoURI) {
-                            existing.logoURI = token.logoURI;
-                        }
+                        normalizedMap[key] = mergeTokenData(existing, token);
                     } else {
                         normalizedMap[key] = token;
                     }
@@ -267,11 +237,7 @@ async function mergeTokens() {
                     const rootKey = token.symbol.toUpperCase();
                     if (rootTokensMap[rootKey]) {
                         const existing = rootTokensMap[rootKey];
-                        if (token.isAcross) existing.isAcross = true;
-                        if (token.isOFT) existing.isOFT = true;
-                        if (!existing.logoURI && token.logoURI) {
-                            existing.logoURI = token.logoURI;
-                        }
+                        rootTokensMap[rootKey] = mergeTokenData(existing, token);
                     } else {
                         rootTokensMap[rootKey] = token;
                     }
@@ -279,11 +245,7 @@ async function mergeTokens() {
                     const key = token.symbol.toUpperCase() + "_" + token.chainId;
                     if (normalizedMap[key]) {
                         const existing = normalizedMap[key];
-                        if (token.isAcross) existing.isAcross = true;
-                        if (token.isOFT) existing.isOFT = true;
-                        if (!existing.logoURI && token.logoURI) {
-                            existing.logoURI = token.logoURI;
-                        }
+                        normalizedMap[key] = mergeTokenData(existing, token);
                     } else {
                         normalizedMap[key] = token;
                     }
