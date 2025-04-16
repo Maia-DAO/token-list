@@ -1,0 +1,29 @@
+# Node.js dependencies
+node_modules/
+
+# Build and output directories
+dist/
+output/
+*.log
+
+# dotenv environment files
+.env
+.env.local
+.env.*.local
+
+# System-specific files
+.DS_Store
+Thumbs.db
+
+# IDEs/editors
+.vscode/
+.idea/
+*.sw?
+
+# OS junk files
+*.bak
+*.tmp
+
+# JSON backups or temporary files
+*.json.bak
+*~.json
