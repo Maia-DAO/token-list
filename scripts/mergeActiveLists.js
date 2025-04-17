@@ -162,7 +162,7 @@ async function main() {
             const tokenData = acrossData[symbol];
             const normalizedArray = await normalizeAcrossToken(tokenData);
             normalizedArray.forEach(token => {
-                if(!token.logoURI) return
+                if (!token.logoURI) return
                 if (token.chainId === 42161) {
                     // Merge into rootTokensMap.
                     const rootKey = token.symbol.toUpperCase();
@@ -188,7 +188,7 @@ async function main() {
         stargateTokens.forEach(token => {
             const normalizedArray = normalizeStargateToken(token);
             normalizedArray.forEach(token => {
-                if(!token.logoURI) return
+                if (!token.logoURI) return
                 if (token.chainId === 42161) {
                     const rootKey = token.symbol.toUpperCase();
                     if (!rootTokensMap[rootKey]) {
@@ -210,7 +210,7 @@ async function main() {
         // 2. Incorporate Ulysses tokens (Format B).
         if (ulyssesData.tokens && Array.isArray(ulyssesData.tokens)) {
             ulyssesData.tokens.forEach(token => {
-                if(!token.logoURI) return
+                if (!token.logoURI) return
                 if (token.chainId === 42161) {
                     const rootKey = token.symbol.toUpperCase();
                     if (rootTokensMap[rootKey]) {
@@ -234,7 +234,7 @@ async function main() {
         // 3. Incorporate Uniswap tokens (Format B).
         if (Array.isArray(uniswapTokens)) {
             uniswapTokens.forEach(token => {
-                if(!token.logoURI) return
+                if (!token.logoURI) return
                 // Default flags if undefined.
                 if (typeof token.isAcross === 'undefined') token.isAcross = false;
                 if (typeof token.isOFT === 'undefined') token.isOFT = false;
@@ -267,7 +267,7 @@ async function main() {
         // -----------------------------------------------------------------
         const newOutput = {
             name: "Hermes Omnichain Token List",
-            timestamp: new Date().toISOString(),
+            timestamp: Math.floor(Date.now() / 1000),
             version: { major: 1, minor: 0, patch: 0 }, // default version if no previous exists
             tokens: finalTokens,
             rootTokens: finalRootTokens,
@@ -287,7 +287,7 @@ async function main() {
             if (!isEqual(oldComparable, newComparable)) {
                 // If differences exist, bump patch version.
                 finalOutput.version = bumpVersion(existingData.version);
-                finalOutput.timestamp = new Date().toISOString()
+                finalOutput.timestamp = Math.floor(Date.now() / 1000);
             } else {
                 // No meaningful changes; keep previous version.
                 finalOutput.version = existingData.version;
