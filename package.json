@@ -1,8 +1,9 @@
 {
-  "name": "js-project",
+  "name": "token-list",
+  "author": "MaiaDAO",
   "version": "1.0.0",
-  "description": "Fetch and filter tokens from the API",
-  "main": "fetchTokens.js",
+  "license": "MIT",
+  "description": "Fetch and manage token lists",
   "scripts": {
     "fetch": "node scripts/fetchLists.js",
     "filter": "node scripts/filterStargateTokens.js && node scripts/filterAcrossTokens.js",
@@ -10,8 +11,6 @@
     "merge-others": "node scripts/mergeInactiveLists.js",
     "all": "yarn fetch && yarn filter && yarn merge && yarn merge-others"
   },
-  "author": "",
-  "license": "MIT",
   "dependencies": {
     "@across-protocol/constants": "^3.1.52",
     "maia-core-sdk": "^1.0.59",
