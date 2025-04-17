@@ -1,4 +1,3 @@
-```md
 # Hermes dApp Token Lists Repository
 
 This project automates the fetching, filtering, and merging of token lists from various bridges and protocols.
@@ -47,4 +46,3 @@ After running the pipeline:
 ## 📆 Automation
 
 This project includes a GitHub Action to run the full workflow every **Wednesday between 11 PM and midnight UTC**, ensuring the lists stay fresh and consistent.
-```
