@@ -291,6 +291,7 @@ async function main() {
             } else {
                 // No meaningful changes; keep previous version.
                 finalOutput.version = existingData.version;
+                finalOutput.timestamp = existingData.timestamp;
             }
         } catch (err) {
             // File doesn't exist; we'll use the default version.

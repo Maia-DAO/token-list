@@ -127,6 +127,8 @@ async function main() {
             } else {
                 // No change – keep version
                 finalInactiveOutput.version = existingInactive.version;
+                finalInactiveOutput.timestamp = existingInactive.timestamp;
+
             }
         } catch (err) {
             // File doesn't exist; we'll use the default version.
