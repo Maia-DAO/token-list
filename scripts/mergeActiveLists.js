@@ -120,7 +120,7 @@ function isEqual(obj1, obj2) {
 /**
  * Main merge function.
  */
-async function mergeTokens() {
+async function main() {
     try {
         // Read source files from the output directory.
         // 1. Across tokens from filteredAcrossTokens.json 
@@ -304,4 +304,4 @@ async function mergeTokens() {
     }
 }
 
-mergeTokens();
+main();
