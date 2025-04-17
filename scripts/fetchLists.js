@@ -40,8 +40,16 @@ async function writeAcrossMapping() {
  * Main function to fetch token lists and write across mapping.
  */
 (async () => {
+  // Active Lists
   await fetchList('https://stargate.finance/api/tokens', 'stargate');
   await fetchList('https://raw.githubusercontent.com/Maia-DAO/token-list-v2/main/default-tokenlist.json', 'ulysses');
   await fetchList('https://tokens.uniswap.org', 'uniswap');
   await writeAcrossMapping();
+
+  // Inactive Lists
+  await fetchList('https://extendedtokens.uniswap.org', 'uni_extended');
+  await fetchList('https://raw.githubusercontent.com/compound-finance/token-list/master/compound.tokenlist.json', 'compound');
+  await fetchList('https://raw.githubusercontent.com/SetProtocol/uniswap-tokenlist/main/set.tokenlist.json', 'set');
+  await fetchList('https://raw.githubusercontent.com/The-Blockchain-Association/sec-notice-list/master/ba-sec-list.json', 'ba');
+
 })();

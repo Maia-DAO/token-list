@@ -6,8 +6,9 @@
   "scripts": {
     "fetch": "node scripts/fetchLists.js",
     "filter": "node scripts/filterStargateTokens.js && node scripts/filterAcrossTokens.js",
-    "merge": "node scripts/mergeLists.js",
-    "all": "npm run fetch && npm run filter && npm run merge"
+    "merge": "node scripts/mergeActiveLists.js",
+    "merge-others": "node scripts/mergeInactiveLists.js",
+    "all": "npm run fetch && npm run filter && npm run merge && npm run merge-others"
   },
   "author": "",
   "license": "ISC",
