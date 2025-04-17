@@ -300,7 +300,7 @@ async function mergeTokens() {
         await fs.writeFile('token-list.json', JSON.stringify(finalOutput, null, 2));
         console.log(`✅  token-list.json written with ${finalTokens.length} tokens and ${finalRootTokens.length} root tokens`);
     } catch (error) {
-        console.error('Error merging tokens:', error);
+        console.error('❌ Error merging tokens:', error);
     }
 }
 

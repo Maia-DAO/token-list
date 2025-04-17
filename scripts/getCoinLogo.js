@@ -11,7 +11,7 @@ if (fs.existsSync(CACHE_PATH)) {
   try {
     cache = JSON.parse(fs.readFileSync(CACHE_PATH, 'utf8'));
   } catch (err) {
-    console.warn('Failed to parse cache, starting fresh:', err);
+    console.warn('⚠️ Failed to parse cache, starting fresh:', err);
     cache = {};
   }
 }
@@ -87,7 +87,7 @@ async function getCoinLogo(slug) {
 
     return src;
   } catch (err) {
-    console.error(`Failed to fetch logo for ${slug}:`, err.message);
+    console.error(`❌ Failed to fetch logo for ${slug}:`, err.message);
     return null;
   }
 }

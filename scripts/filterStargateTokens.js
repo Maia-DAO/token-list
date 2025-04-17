@@ -38,9 +38,9 @@ async function filterStargateTokens() {
 
         // Save the filtered tokens.
         await fs.writeFile('output/filteredStargateTokens.json', JSON.stringify(filteredTokens, null, 2));
-        console.log('Filtered tokens saved to output/filteredStargateTokens.json');
+        console.log('✅ Filtered tokens saved to output/filteredStargateTokens.json');
     } catch (error) {
-        console.error('Error:', error);
+        console.error('❌ Error:', error);
     }
 }
 
