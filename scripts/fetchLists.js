@@ -17,9 +17,9 @@ async function fetchList(url, name) {
     const tokens = await response.json();
 
     await fs.writeFile(`output/${name}.json`, JSON.stringify(tokens, null, 2));
-    console.log(`Tokens data saved to output/${name}.json`);
+    console.log(`✅ Tokens data saved to output/${name}.json`);
   } catch (error) {
-    console.error('Error:', error);
+    console.error(`❌ Error fetching ${name} list:`, error);
   }
 }
 
@@ -30,9 +30,9 @@ async function writeAcrossMapping() {
   try {
     // Write the TOKEN_SYMBOLS_MAP object to across.json with pretty printing.
     await fs.writeFile('output/across.json', JSON.stringify(TOKEN_SYMBOLS_MAP, null, 2));
-    console.log('Across mapping saved to output/across.json');
+    console.log('✅ Tokens data saved to output/across.json');
   } catch (error) {
-    console.error('Error writing across mapping:', error);
+    console.error('❌ Error writing across mapping:', error);
   }
 }
 
