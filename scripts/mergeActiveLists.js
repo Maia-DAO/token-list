@@ -162,6 +162,7 @@ async function mergeTokens() {
             const tokenData = acrossData[symbol];
             const normalizedArray = await normalizeAcrossToken(tokenData);
             normalizedArray.forEach(token => {
+                if(!token.logoURI) return
                 if (token.chainId === 42161) {
                     // Merge into rootTokensMap.
                     const rootKey = token.symbol.toUpperCase();
@@ -187,6 +188,7 @@ async function mergeTokens() {
         stargateTokens.forEach(token => {
             const normalizedArray = normalizeStargateToken(token);
             normalizedArray.forEach(token => {
+                if(!token.logoURI) return
                 if (token.chainId === 42161) {
                     const rootKey = token.symbol.toUpperCase();
                     if (!rootTokensMap[rootKey]) {
@@ -208,6 +210,7 @@ async function mergeTokens() {
         // 2. Incorporate Ulysses tokens (Format B).
         if (ulyssesData.tokens && Array.isArray(ulyssesData.tokens)) {
             ulyssesData.tokens.forEach(token => {
+                if(!token.logoURI) return
                 if (token.chainId === 42161) {
                     const rootKey = token.symbol.toUpperCase();
                     if (rootTokensMap[rootKey]) {
@@ -231,6 +234,7 @@ async function mergeTokens() {
         // 3. Incorporate Uniswap tokens (Format B).
         if (Array.isArray(uniswapTokens)) {
             uniswapTokens.forEach(token => {
+                if(!token.logoURI) return
                 // Default flags if undefined.
                 if (typeof token.isAcross === 'undefined') token.isAcross = false;
                 if (typeof token.isOFT === 'undefined') token.isOFT = false;

@@ -37,7 +37,10 @@ function saveCache() {
 async function fetchWithRetry(url, options = {}, retries = 3, delayMs = 2000) {
   try {
     const res = await fetch(url, options);
-    if (!res.ok) throw new Error(`Status ${res.status}`);
+    if (!res.ok) {
+      if (res.status === 404) return null;
+      throw new Error(`Status ${res.status}`);
+    }
     return res;
   } catch (err) {
     if (retries > 0) {
@@ -65,6 +68,12 @@ async function getCoinLogo(slug) {
   const headers = { 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)' };
   try {
     const res = await fetchWithRetry(pageUrl, { headers });
+
+    if (!res) {
+      console.warn(`No response for ${slug}, returning without logo.`);
+      return null;
+    }
+
     const html = await res.text();
     const $ = cheerio.load(html);
     const img = $('img.tw-rounded-full').first();
