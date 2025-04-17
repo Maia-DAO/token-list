@@ -27,6 +27,7 @@ async function filterStargateTokens() {
         const filteredTokens = tokens
             .filter(token => supportedChains.includes(token.chainKey))
             .filter(token => token?.isBridgeable)
+            .filter(token => token?.address)
             .map(token => {
                 // Create a new token object without the "price" property
                 const { price, ...rest } = token;
