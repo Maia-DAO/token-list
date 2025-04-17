@@ -1,4 +1,5 @@
 const fs = require('fs').promises;
+const SupportedChainId = require('maia-core-sdk').SupportedChainId
 
 async function filterAcrossTokens() {
     try {
@@ -7,7 +8,7 @@ async function filterAcrossTokens() {
         const tokens = JSON.parse(data);
 
         // Supported chain numbers 
-        const supportedChains = [1, 42161, 8453, 56, 80094, 10, 1088, 43114, 146];
+        // const supportedChains = [1, 42161, 8453, 56, 80094, 10, 1088, 43114, 146];
 
         // Create an output object with filtered addresses per token.
         const filteredAcross = {};
@@ -19,7 +20,7 @@ async function filterAcrossTokens() {
                 // Filter the addresses: only keep keys that are in the supportedChains array.
                 const filteredAddresses = {};
                 for (const chain in token.addresses) {
-                    if (supportedChains.includes(Number(chain))) {
+                    if (SupportedChainId.includes(Number(chain))) {
                         filteredAddresses[chain] = token.addresses[chain];
                     }
                 }

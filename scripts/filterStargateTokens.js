@@ -7,7 +7,7 @@ async function filterStargateTokens() {
         const tokens = JSON.parse(data);
 
         // Supported chains List.
-        const supportedChains = ['ethereum', 'arbitrum', 'base', 'bsc', 'bera', 'optimism', 'metis', 'avalanche', 'sonic']; 
+        const supportedChains = ['ethereum', 'arbitrum', 'base', 'bsc', 'bera', 'optimism', 'metis', 'avalanche', 'sonic','polygon']; 
 
         // Mapping of chain name to chain ID
         const chainKeyToId = {
@@ -19,7 +19,8 @@ async function filterStargateTokens() {
             optimism: 10,
             metis: 1088,
             avalanche: 43114,
-            sonic: 146
+            sonic: 146,
+            polygon: 137
         };
 
         // Filter tokens: keep only bridgeable tokens that have a chainKey in the supportedChains list.
