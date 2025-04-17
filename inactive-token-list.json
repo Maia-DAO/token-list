@@ -1,8 +1,8 @@
 {
   "name": "Hermes Omnichain Token List",
-  "timestamp": "2025-04-17T11:20:24.599Z",
+  "timestamp": "2025-04-17T11:43:40.635Z",
   "version": {
-    "major": 3,
+    "major": 5,
     "minor": 0,
     "patch": 0
   },
@@ -25652,13 +25652,14 @@
       "decimals": 18,
       "logoURI": "https://assets.coingecko.com/coins/images/28161/large/across-200x200.png?1668168201",
       "extensions": {
+        "coingeckoId": "across-protocol",
         "bridgeInfo": {
           "1": {
             "tokenAddress": "0x44108f0223A3C3028F5Fe7AEC7f9bb2E66beF82F"
           }
         }
       },
-      "isAcross": false,
+      "isAcross": true,
       "isOFT": false
     },
     {
@@ -26230,13 +26231,14 @@
       "decimals": 18,
       "logoURI": "https://assets.coingecko.com/coins/images/13287/thumb/badger_dao_logo.jpg?1607054976",
       "extensions": {
+        "coingeckoId": "badger-dao",
         "bridgeInfo": {
           "1": {
             "tokenAddress": "0x3472A5A71965499acd81997a54BBA8D852C6E53d"
           }
         }
       },
-      "isAcross": false,
+      "isAcross": true,
       "isOFT": false
     },
     {
@@ -26247,13 +26249,14 @@
       "chainId": 137,
       "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xba100000625a3754423978a60c9317c58a424e3D/logo.png",
       "extensions": {
+        "coingeckoId": "balancer",
         "bridgeInfo": {
           "1": {
             "tokenAddress": "0xba100000625a3754423978a60c9317c58a424e3D"
           }
         }
       },
-      "isAcross": false,
+      "isAcross": true,
       "isOFT": false
     },
     {
@@ -27743,14 +27746,15 @@
       "chainId": 137,
       "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x6B175474E89094C44Da98b954EedeAC495271d0F/logo.png",
       "extensions": {
+        "coingeckoId": "dai",
         "bridgeInfo": {
           "1": {
             "tokenAddress": "0x6B175474E89094C44Da98b954EedeAC495271d0F"
           }
         }
       },
-      "isAcross": false,
-      "isOFT": false
+      "isAcross": true,
+      "isOFT": true
     },
     {
       "chainId": 137,
@@ -29127,7 +29131,7 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true
     },
     {
       "chainId": 137,
@@ -30861,7 +30865,7 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true
     },
     {
       "chainId": 137,
@@ -32265,13 +32269,9 @@
       "decimals": 18,
       "logoURI": "https://assets.coingecko.com/coins/images/14003/large/PoolTogether.png?1613585632",
       "extensions": {
-        "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0x0cEC1A9154Ff802e7934Fc916Ed7Ca50bDE6844e"
-          }
-        }
+        "coingeckoId": "pooltogether"
       },
-      "isAcross": false,
+      "isAcross": true,
       "isOFT": false
     },
     {
@@ -34322,13 +34322,14 @@
       "chainId": 137,
       "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x04Fa0d235C4abf4BcF4787aF4CF447DE572eF828/logo.png",
       "extensions": {
+        "coingeckoId": "uma",
         "bridgeInfo": {
           "1": {
             "tokenAddress": "0x04Fa0d235C4abf4BcF4787aF4CF447DE572eF828"
           }
         }
       },
-      "isAcross": false,
+      "isAcross": true,
       "isOFT": false
     },
     {
@@ -34509,14 +34510,15 @@
       "chainId": 137,
       "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48/logo.png",
       "extensions": {
+        "coingeckoId": "usd-coin-ethereum-bridged",
         "bridgeInfo": {
           "1": {
             "tokenAddress": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48"
           }
         }
       },
-      "isAcross": false,
-      "isOFT": false
+      "isAcross": true,
+      "isOFT": true
     },
     {
       "chainId": 137,
@@ -34543,14 +34545,15 @@
       "chainId": 137,
       "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xdAC17F958D2ee523a2206206994597C13D831ec7/logo.png",
       "extensions": {
+        "coingeckoId": "tether",
         "bridgeInfo": {
           "1": {
             "tokenAddress": "0xdAC17F958D2ee523a2206206994597C13D831ec7"
           }
         }
       },
-      "isAcross": false,
-      "isOFT": false
+      "isAcross": true,
+      "isOFT": true
     },
     {
       "chainId": 137,
@@ -34791,13 +34794,14 @@
       "chainId": 137,
       "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599/logo.png",
       "extensions": {
+        "coingeckoId": "wrapped-bitcoin",
         "bridgeInfo": {
           "1": {
             "tokenAddress": "0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599"
           }
         }
       },
-      "isAcross": false,
+      "isAcross": true,
       "isOFT": false
     },
     {
@@ -34825,13 +34829,14 @@
       "chainId": 137,
       "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2/logo.png",
       "extensions": {
+        "coingeckoId": "weth",
         "bridgeInfo": {
           "1": {
             "tokenAddress": "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
           }
         }
       },
-      "isAcross": false,
+      "isAcross": true,
       "isOFT": false
     },
     {
@@ -34909,7 +34914,10 @@
       "decimals": 18,
       "chainId": 137,
       "logoURI": "https://assets.coingecko.com/coins/images/4713/thumb/matic-token-icon.png?1624446912",
-      "isAcross": false,
+      "extensions": {
+        "coingeckoId": "wmatic"
+      },
+      "isAcross": true,
       "isOFT": false
     },
     {
@@ -34961,7 +34969,7 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true
     },
     {
       "chainId": 137,
@@ -43466,7 +43474,10 @@
       "decimals": 18,
       "chainId": 11155111,
       "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2/logo.png",
-      "isAcross": false,
+      "extensions": {
+        "coingeckoId": "weth"
+      },
+      "isAcross": true,
       "isOFT": false
     },
     {
