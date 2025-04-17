@@ -8,12 +8,13 @@
     "filter": "node scripts/filterStargateTokens.js && node scripts/filterAcrossTokens.js",
     "merge": "node scripts/mergeActiveLists.js",
     "merge-others": "node scripts/mergeInactiveLists.js",
-    "all": "npm run fetch && npm run filter && npm run merge && npm run merge-others"
+    "all": "yarn fetch && yarn filter && yarn merge && yarn merge-others"
   },
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "@across-protocol/constants": "^3.1.52",
+    "maia-core-sdk": "^1.0.59",
     "node-fetch": "^3.3.2"
   }
 }
