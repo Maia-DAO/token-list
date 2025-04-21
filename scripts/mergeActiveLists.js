@@ -9,25 +9,29 @@ const { getCoinLogo } = require('./getCoinLogo')
 function mergeTokenData(existing, incoming, isUlysses = false) {
     // We use Ulysses format if the token is from Ulysses.
     if (isUlysses) {
-        const {address: addressIncoming, ...restIncoming} = existing
-        const {address: addressExisting, ...restExisting} = incoming
+        const { address: addressIncoming, ...restIncoming } = existing
+        const { address: addressExisting, ...restExisting } = incoming
 
         return {
             ...restIncoming,
             ...restExisting,
+            name: incoming.name,
+            symbol: incoming.symbol,
             isAcross: existing.isAcross || incoming.isAcross,
             isOFT: existing.isOFT || incoming.isOFT,
-            logoURI: existing.logoURI || incoming.logoURI,
+            logoURI: incoming.logoURI || existing.logoURI,
             extensions: mergeExtensions(existing.extensions, incoming.extensions)
         }
     }
-    
+
     return {
         ...existing,
         ...incoming,
+        name: incoming.name,
+        symbol: incoming.symbol,
         isAcross: existing.isAcross || incoming.isAcross,
         isOFT: existing.isOFT || incoming.isOFT,
-        logoURI: existing.logoURI || incoming.logoURI,
+        logoURI: incoming.logoURI || existing.logoURI,
         extensions: mergeExtensions(existing.extensions, incoming.extensions)
     };
 }
@@ -222,7 +226,7 @@ async function main() {
             });
         });
 
-        
+
         // 2. Incorporate Uniswap tokens (Format B).
         if (Array.isArray(uniswapTokens)) {
             uniswapTokens.forEach(token => {
@@ -249,7 +253,7 @@ async function main() {
                 }
             });
         }
-       
+
         // 3. Incorporate Ulysses tokens (Format B).
         if (ulyssesData.tokens && Array.isArray(ulyssesData.tokens)) {
             ulyssesData.tokens.forEach(token => {

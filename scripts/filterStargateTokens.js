@@ -33,6 +33,7 @@ async function filterStargateTokens() {
                 // Create a new token object without the "price" property
                 const { price, ...rest } = token;
                 rest.chainId = chainKeyToId[token.chainKey]; // Convert chain name to chain ID
+                if (!rest.name) rest.name = token.symbol; // Fallback to symbol if name is not available
                 return rest;
             });
 
