@@ -258,13 +258,13 @@ async function main() {
         if (ulyssesData.tokens && Array.isArray(ulyssesData.tokens)) {
             ulyssesData.tokens.forEach(token => {
                 if (!token.logoURI) return
-                    const key = token.symbol.toUpperCase() + "_" + token.chainId;
-                    if (normalizedMap[key]) {
-                        const existing = normalizedMap[key];
-                        normalizedMap[key] = mergeTokenData(existing, token, true);
-                    } else {
-                        normalizedMap[key] = token;
-                    }
+                const key = token.symbol.toUpperCase() + "_" + token.chainId;
+                if (normalizedMap[key]) {
+                    const existing = normalizedMap[key];
+                    normalizedMap[key] = mergeTokenData(existing, token, true);
+                } else {
+                    normalizedMap[key] = token;
+                }
             });
         }
 
@@ -294,7 +294,7 @@ async function main() {
             // Remove version and timestamp from both outputs for comparison.
             const oldComparable = { ...existingData, version: undefined, timestamp: undefined };
             const newComparable = { ...newOutput, version: undefined, timestamp: undefined };
-            if (!isEqual(oldComparable, newComparable)) {
+            if (!isEqual(oldComparable, newComparable) || finalTokens.length !== existingData.tokens.length || finalRootTokens.length !== existingData.rootTokens.length) {
                 // If differences exist, bump patch version.
                 finalOutput.version = bumpVersion(existingData.version);
                 finalOutput.timestamp = (Math.floor(Date.now() / 1000)).toString();

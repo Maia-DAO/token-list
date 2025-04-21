@@ -104,11 +104,11 @@ async function main() {
         const newInactiveOutput = {
             name: 'Hermes Omnichain Inactive Token List',
             timestamp: (Math.floor(Date.now() / 1000)).toString(),
-            version: { ...existingList.version },
+            version: { major: 1, minor: 0, patch: 0 }, // default version if no previous exists
             tokens: finalTokens,
-            keywords: existingList.keywords || [],
-            tags: existingList.tags || {},
-            logoURI: existingList.logoURI || ''
+            tags: {},
+            keywords: ["hermes", "default"],
+            logoURI: "https://raw.githubusercontent.com/Maia-DAO/token-list-v2/main/logos/Hermes-color.svg"
         };
 
         let finalInactiveOutput = newInactiveOutput;
@@ -120,7 +120,7 @@ async function main() {
             const oldComparable = { ...existingInactive, version: undefined, timestamp: undefined };
             const newComparable = { ...newInactiveOutput, version: undefined, timestamp: undefined };
 
-            if (!isEqual(oldComparable, newComparable)) {
+            if (!isEqual(oldComparable, newComparable) || finalTokens.length !== existingData.tokens.length) {
                 // Differences exist – bump patch version
                 finalInactiveOutput.version = bumpVersion(existingInactive.version);
                 finalInactiveOutput.timestamp = (Math.floor(Date.now() / 1000)).toString();
