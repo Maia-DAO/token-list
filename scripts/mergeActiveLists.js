@@ -258,15 +258,6 @@ async function main() {
         if (ulyssesData.tokens && Array.isArray(ulyssesData.tokens)) {
             ulyssesData.tokens.forEach(token => {
                 if (!token.logoURI) return
-                if (token.chainId === 42161) {
-                    const rootKey = token.symbol.toUpperCase();
-                    if (rootTokensMap[rootKey]) {
-                        const existing = rootTokensMap[rootKey];
-                        rootTokensMap[rootKey] = mergeTokenData(existing, token, true);
-                    } else {
-                        rootTokensMap[token.symbol.toUpperCase()] = token;
-                    }
-                } else {
                     const key = token.symbol.toUpperCase() + "_" + token.chainId;
                     if (normalizedMap[key]) {
                         const existing = normalizedMap[key];
@@ -274,7 +265,6 @@ async function main() {
                     } else {
                         normalizedMap[key] = token;
                     }
-                }
             });
         }
 
@@ -287,7 +277,7 @@ async function main() {
         // -----------------------------------------------------------------
         const newOutput = {
             name: "Hermes Omnichain Token List",
-            timestamp: Math.floor(Date.now() / 1000),
+            timestamp: (Math.floor(Date.now() / 1000)).toString(),
             version: { major: 1, minor: 0, patch: 0 }, // default version if no previous exists
             tokens: finalTokens,
             rootTokens: finalRootTokens,
@@ -307,7 +297,7 @@ async function main() {
             if (!isEqual(oldComparable, newComparable)) {
                 // If differences exist, bump patch version.
                 finalOutput.version = bumpVersion(existingData.version);
-                finalOutput.timestamp = Math.floor(Date.now() / 1000);
+                finalOutput.timestamp = (Math.floor(Date.now() / 1000)).toString();
             } else {
                 // No meaningful changes; keep previous version.
                 finalOutput.version = existingData.version;

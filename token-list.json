@@ -1,8 +1,8 @@
 {
   "name": "Hermes Omnichain Token List",
-  "timestamp": 1745245692,
+  "timestamp": "1745246958",
   "version": {
-    "major": 7,
+    "major": 8,
     "minor": 0,
     "patch": 0
   },
@@ -24181,6 +24181,78 @@
       "isOFT": false
     },
     {
+      "chainId": 42161,
+      "globalAddress": "0x45940000009600102A1c002F0097C4A500fa00AB",
+      "underlyingAddress": "0x45940000009600102A1c002F0097C4A500fa00AB",
+      "name": "Hermes",
+      "decimals": 18,
+      "symbol": "HERMES",
+      "logoURI": "https://raw.githubusercontent.com/Maia-DAO/token-list-v2/main/logos/Hermes-color.svg"
+    },
+    {
+      "chainId": 42161,
+      "globalAddress": "0x3A0000000000E1007cEb00351F65a1806eCd937C",
+      "underlyingAddress": "0x3A0000000000E1007cEb00351F65a1806eCd937C",
+      "name": "Burnt Hermes",
+      "decimals": 18,
+      "symbol": "bHERMES",
+      "logoURI": "https://raw.githubusercontent.com/Maia-DAO/token-list-v2/main/logos/burnt-hermes-color.svg"
+    },
+    {
+      "chainId": 42161,
+      "globalAddress": "0xe6D0aeA7cEf79B08B906e0C455C25042b57b23Ed",
+      "underlyingAddress": "0xe6D0aeA7cEf79B08B906e0C455C25042b57b23Ed",
+      "name": "Burnt Hermes - Gauges",
+      "decimals": 18,
+      "symbol": "bHERMES-G",
+      "logoURI": "https://raw.githubusercontent.com/Maia-DAO/token-list-v2/main/logos/g-hermes-color.svg"
+    },
+    {
+      "chainId": 42161,
+      "globalAddress": "0x73A899D7e71393dDf2B1cD8336f820969c709E70",
+      "underlyingAddress": "0x73A899D7e71393dDf2B1cD8336f820969c709E70",
+      "name": "Burnt Hermes - Boost",
+      "decimals": 18,
+      "symbol": "bHERMES-B",
+      "logoURI": "https://raw.githubusercontent.com/Maia-DAO/token-list-v2/main/logos/b-hermes-color.svg"
+    },
+    {
+      "chainId": 42161,
+      "globalAddress": "0x5B99ACF131463bFc62FE000b8Bb962097B6734d9",
+      "underlyingAddress": "0x5B99ACF131463bFc62FE000b8Bb962097B6734d9",
+      "name": "Burnt Hermes - Votes",
+      "decimals": 18,
+      "symbol": "bHERMES-V",
+      "logoURI": "https://raw.githubusercontent.com/Maia-DAO/token-list-v2/main/logos/v-hermes-color.svg"
+    },
+    {
+      "chainId": 42161,
+      "globalAddress": "0x00000000ea00F3F4000e7Ed5Ed91965b19f1009B",
+      "underlyingAddress": "0x00000000ea00F3F4000e7Ed5Ed91965b19f1009B",
+      "name": "Maia",
+      "decimals": 18,
+      "symbol": "MAIA",
+      "logoURI": "https://raw.githubusercontent.com/Maia-DAO/token-list-v2/main/logos/Maia_color.svg"
+    },
+    {
+      "chainId": 42161,
+      "globalAddress": "0x000000f0C01c6200354f240000b7003668B4D080",
+      "underlyingAddress": "0x000000f0C01c6200354f240000b7003668B4D080",
+      "name": "Vote Maia",
+      "decimals": 18,
+      "symbol": "vMaia",
+      "logoURI": "https://raw.githubusercontent.com/Maia-DAO/token-list-v2/main/logos/locked-maia-color.svg"
+    },
+    {
+      "chainId": 42161,
+      "globalAddress": "0x54b6e28a869a56f4e34d1187ae0a35b7dd3be111",
+      "underlyingAddress": "0x54b6e28a869a56f4e34d1187ae0a35b7dd3be111",
+      "name": "Vote Maia - Votes",
+      "decimals": 18,
+      "symbol": "vMAIA-V",
+      "logoURI": "https://raw.githubusercontent.com/Maia-DAO/token-list-v2/main/logos/v-maia-color.svg"
+    },
+    {
       "chainId": 8453,
       "globalAddress": "0xf40C521489a48E85613078a699FB6acc6fB7A547",
       "localAddress": {
@@ -28360,78 +28432,6 @@
       },
       "isAcross": false,
       "isOFT": false
-    },
-    {
-      "chainId": 42161,
-      "globalAddress": "0x45940000009600102A1c002F0097C4A500fa00AB",
-      "underlyingAddress": "0x45940000009600102A1c002F0097C4A500fa00AB",
-      "name": "Hermes",
-      "decimals": 18,
-      "symbol": "HERMES",
-      "logoURI": "https://raw.githubusercontent.com/Maia-DAO/token-list-v2/main/logos/Hermes-color.svg"
-    },
-    {
-      "chainId": 42161,
-      "globalAddress": "0x3A0000000000E1007cEb00351F65a1806eCd937C",
-      "underlyingAddress": "0x3A0000000000E1007cEb00351F65a1806eCd937C",
-      "name": "Burnt Hermes",
-      "decimals": 18,
-      "symbol": "bHERMES",
-      "logoURI": "https://raw.githubusercontent.com/Maia-DAO/token-list-v2/main/logos/burnt-hermes-color.svg"
-    },
-    {
-      "chainId": 42161,
-      "globalAddress": "0xe6D0aeA7cEf79B08B906e0C455C25042b57b23Ed",
-      "underlyingAddress": "0xe6D0aeA7cEf79B08B906e0C455C25042b57b23Ed",
-      "name": "Burnt Hermes - Gauges",
-      "decimals": 18,
-      "symbol": "bHERMES-G",
-      "logoURI": "https://raw.githubusercontent.com/Maia-DAO/token-list-v2/main/logos/g-hermes-color.svg"
-    },
-    {
-      "chainId": 42161,
-      "globalAddress": "0x73A899D7e71393dDf2B1cD8336f820969c709E70",
-      "underlyingAddress": "0x73A899D7e71393dDf2B1cD8336f820969c709E70",
-      "name": "Burnt Hermes - Boost",
-      "decimals": 18,
-      "symbol": "bHERMES-B",
-      "logoURI": "https://raw.githubusercontent.com/Maia-DAO/token-list-v2/main/logos/b-hermes-color.svg"
-    },
-    {
-      "chainId": 42161,
-      "globalAddress": "0x5B99ACF131463bFc62FE000b8Bb962097B6734d9",
-      "underlyingAddress": "0x5B99ACF131463bFc62FE000b8Bb962097B6734d9",
-      "name": "Burnt Hermes - Votes",
-      "decimals": 18,
-      "symbol": "bHERMES-V",
-      "logoURI": "https://raw.githubusercontent.com/Maia-DAO/token-list-v2/main/logos/v-hermes-color.svg"
-    },
-    {
-      "chainId": 42161,
-      "globalAddress": "0x00000000ea00F3F4000e7Ed5Ed91965b19f1009B",
-      "underlyingAddress": "0x00000000ea00F3F4000e7Ed5Ed91965b19f1009B",
-      "name": "Maia",
-      "decimals": 18,
-      "symbol": "MAIA",
-      "logoURI": "https://raw.githubusercontent.com/Maia-DAO/token-list-v2/main/logos/Maia_color.svg"
-    },
-    {
-      "chainId": 42161,
-      "globalAddress": "0x000000f0C01c6200354f240000b7003668B4D080",
-      "underlyingAddress": "0x000000f0C01c6200354f240000b7003668B4D080",
-      "name": "Vote Maia",
-      "decimals": 18,
-      "symbol": "vMaia",
-      "logoURI": "https://raw.githubusercontent.com/Maia-DAO/token-list-v2/main/logos/locked-maia-color.svg"
-    },
-    {
-      "chainId": 42161,
-      "globalAddress": "0x54b6e28a869a56f4e34d1187ae0a35b7dd3be111",
-      "underlyingAddress": "0x54b6e28a869a56f4e34d1187ae0a35b7dd3be111",
-      "name": "Vote Maia - Votes",
-      "decimals": 18,
-      "symbol": "vMAIA-V",
-      "logoURI": "https://raw.githubusercontent.com/Maia-DAO/token-list-v2/main/logos/v-maia-color.svg"
     }
   ],
   "tags": {},

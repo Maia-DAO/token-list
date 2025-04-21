@@ -103,7 +103,7 @@ async function main() {
         // --- Write out the combined list ---
         const newInactiveOutput = {
             name: 'Hermes Omnichain Inactive Token List',
-            timestamp: Math.floor(Date.now() / 1000),
+            timestamp: (Math.floor(Date.now() / 1000)).toString(),
             version: { ...existingList.version },
             tokens: finalTokens,
             keywords: existingList.keywords || [],
@@ -123,7 +123,7 @@ async function main() {
             if (!isEqual(oldComparable, newComparable)) {
                 // Differences exist – bump patch version
                 finalInactiveOutput.version = bumpVersion(existingInactive.version);
-                finalInactiveOutput.timestamp = Math.floor(Date.now() / 1000);
+                finalInactiveOutput.timestamp = (Math.floor(Date.now() / 1000)).toString();
             } else {
                 // No change – keep version
                 finalInactiveOutput.version = existingInactive.version;
