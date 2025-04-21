@@ -6,7 +6,22 @@ const { getCoinLogo } = require('./getCoinLogo')
 // Normalization functions for tokens to the unified format
 // ---------------------------------------------------------------------
 
-function mergeTokenData(existing, incoming) {
+function mergeTokenData(existing, incoming, isUlysses = false) {
+    // We use Ulysses format if the token is from Ulysses.
+    if (isUlysses) {
+        const {address: addressIncoming, ...restIncoming} = existing
+        const {address: addressExisting, ...restExisting} = incoming
+
+        return {
+            ...restIncoming,
+            ...restExisting,
+            isAcross: existing.isAcross || incoming.isAcross,
+            isOFT: existing.isOFT || incoming.isOFT,
+            logoURI: existing.logoURI || incoming.logoURI,
+            extensions: mergeExtensions(existing.extensions, incoming.extensions)
+        }
+    }
+    
     return {
         ...existing,
         ...incoming,
@@ -207,31 +222,8 @@ async function main() {
             });
         });
 
-        // 2. Incorporate Ulysses tokens (Format B).
-        if (ulyssesData.tokens && Array.isArray(ulyssesData.tokens)) {
-            ulyssesData.tokens.forEach(token => {
-                if (!token.logoURI) return
-                if (token.chainId === 42161) {
-                    const rootKey = token.symbol.toUpperCase();
-                    if (rootTokensMap[rootKey]) {
-                        const existing = rootTokensMap[rootKey];
-                        rootTokensMap[rootKey] = mergeTokenData(existing, token);
-                    } else {
-                        rootTokensMap[token.symbol.toUpperCase()] = token;
-                    }
-                } else {
-                    const key = token.symbol.toUpperCase() + "_" + token.chainId;
-                    if (normalizedMap[key]) {
-                        const existing = normalizedMap[key];
-                        normalizedMap[key] = mergeTokenData(existing, token);
-                    } else {
-                        normalizedMap[key] = token;
-                    }
-                }
-            });
-        }
-
-        // 3. Incorporate Uniswap tokens (Format B).
+        
+        // 2. Incorporate Uniswap tokens (Format B).
         if (Array.isArray(uniswapTokens)) {
             uniswapTokens.forEach(token => {
                 if (!token.logoURI) return
@@ -251,6 +243,30 @@ async function main() {
                     if (normalizedMap[key]) {
                         const existing = normalizedMap[key];
                         normalizedMap[key] = mergeTokenData(existing, token);
+                    } else {
+                        normalizedMap[key] = token;
+                    }
+                }
+            });
+        }
+       
+        // 3. Incorporate Ulysses tokens (Format B).
+        if (ulyssesData.tokens && Array.isArray(ulyssesData.tokens)) {
+            ulyssesData.tokens.forEach(token => {
+                if (!token.logoURI) return
+                if (token.chainId === 42161) {
+                    const rootKey = token.symbol.toUpperCase();
+                    if (rootTokensMap[rootKey]) {
+                        const existing = rootTokensMap[rootKey];
+                        rootTokensMap[rootKey] = mergeTokenData(existing, token, true);
+                    } else {
+                        rootTokensMap[token.symbol.toUpperCase()] = token;
+                    }
+                } else {
+                    const key = token.symbol.toUpperCase() + "_" + token.chainId;
+                    if (normalizedMap[key]) {
+                        const existing = normalizedMap[key];
+                        normalizedMap[key] = mergeTokenData(existing, token, true);
                     } else {
                         normalizedMap[key] = token;
                     }
