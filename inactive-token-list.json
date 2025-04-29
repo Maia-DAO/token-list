@@ -1,8 +1,8 @@
 {
   "name": "Hermes Omnichain Inactive Token List",
-  "timestamp": "1745248714",
+  "timestamp": "1745924986",
   "version": {
-    "major": 6,
+    "major": 1,
     "minor": 0,
     "patch": 0
   },
@@ -1566,6 +1566,9 @@
       "extensions": {
         "coingeckoId": "balancer",
         "bridgeInfo": {
+          "1": {
+            "tokenAddress": "0xba100000625a3754423978a60c9317c58a424e3D"
+          },
           "130": {
             "tokenAddress": "0x01625E26274Ed828Ac1d47694c97221b34a8ADdF"
           },
@@ -1574,6 +1577,9 @@
           },
           "42161": {
             "tokenAddress": "0x040d1EdC9569d4Bab2D15287Dc5A4F10F56a56B8"
+          },
+          "43114": {
+            "tokenAddress": "0xE15bCB9E0EA69e6aB9FA080c4c4A5632896298C3"
           }
         }
       },
@@ -1890,7 +1896,16 @@
       "symbol": "BETA",
       "decimals": 18,
       "logoURI": "https://assets.coingecko.com/coins/images/18715/large/beta_finance.jpg?1633087053",
-      "extensions": {},
+      "extensions": {
+        "bridgeInfo": {
+          "1": {
+            "tokenAddress": "0xBe1a001FE942f96Eea22bA08783140B9Dcc09D28"
+          },
+          "56": {
+            "tokenAddress": "0x2A73F85024f101F3FAC9FbCBcE60707B6b3A6203"
+          }
+        }
+      },
       "isAcross": false,
       "isOFT": true
     },
@@ -2992,7 +3007,16 @@
       "symbol": "CERE",
       "decimals": 10,
       "logoURI": "https://assets.coingecko.com/coins/images/20008/large/cere.png?1636366576",
-      "extensions": {},
+      "extensions": {
+        "bridgeInfo": {
+          "1": {
+            "tokenAddress": "0x2dA719DB753dFA10a62E140f436E1d67F2ddB0d6"
+          },
+          "8453": {
+            "tokenAddress": "0x9886447Ff4c350f4600E4BF95Db756Bdc629b1cA"
+          }
+        }
+      },
       "isAcross": false,
       "isOFT": true
     },
@@ -3763,6 +3787,9 @@
       "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xD533a949740bb3306d119CC777fa900bA034cd52/logo.png",
       "extensions": {
         "bridgeInfo": {
+          "1": {
+            "tokenAddress": "0xD533a949740bb3306d119CC777fa900bA034cd52"
+          },
           "130": {
             "tokenAddress": "0xAC73671a1762FE835208Fb93b7aE7490d1c2cCb3"
           },
@@ -5885,8 +5912,29 @@
       "logoURI": "https://assets.coingecko.com/coins/images/26149/thumb/YCvKDfl8_400x400.jpeg?1656041509",
       "extensions": {
         "bridgeInfo": {
+          "1": {
+            "tokenAddress": "0xd9Fcd98c322942075A5C3860693e9f4f03AAE07b"
+          },
+          "56": {
+            "tokenAddress": "0x2117E8b79e8E176A670c9fCf945d4348556bfFad"
+          },
           "130": {
             "tokenAddress": "0x6319F47719b6713b1624C1b3A8e2DBf15b5D03FE"
+          },
+          "146": {
+            "tokenAddress": "0x8e15C8D399e86d4FD7B427D42f06c60cDD9397e7"
+          },
+          "8453": {
+            "tokenAddress": "0xa153Ad732F831a79b5575Fa02e793EC4E99181b0"
+          },
+          "42161": {
+            "tokenAddress": "0x462cD9E0247b2e63831c3189aE738E5E9a5a4b64"
+          },
+          "43114": {
+            "tokenAddress": "0x9ceeD3A7f753608372eeAb300486cc7c2F38AC68"
+          },
+          "80094": {
+            "tokenAddress": "0xEb9b5f4EB023aE754fF59A04c9C038D58606DAC6"
           }
         }
       },
@@ -6024,7 +6072,16 @@
       "symbol": "FACTR",
       "decimals": 18,
       "logoURI": "https://assets.coingecko.com/coins/images/19201/large/jFLSu4U9_400x400.png?1650437050",
-      "extensions": {},
+      "extensions": {
+        "bridgeInfo": {
+          "1": {
+            "tokenAddress": "0xe0bCEEF36F3a6eFDd5EEBFACD591423f8549B9D5"
+          },
+          "42161": {
+            "tokenAddress": "0xaB24c63bee518Ac956c8123389fc538c7e36d82C"
+          }
+        }
+      },
       "isAcross": false,
       "isOFT": true
     },
@@ -6859,6 +6916,12 @@
       "logoURI": "https://assets.coingecko.com/coins/images/13423/thumb/frax_share.png?1608478989",
       "extensions": {
         "bridgeInfo": {
+          "1": {
+            "tokenAddress": "0x3432B6A60D23Ca0dFCa7761B7ab56459D9C964D0"
+          },
+          "10": {
+            "tokenAddress": "0x64445f0aecC51E94aD52d8AC56b7190e764E561a"
+          },
           "56": {
             "tokenAddress": "0xe48A3d7d0Bc88d552f730B62c006bC925eadB9eE"
           },
@@ -6867,6 +6930,15 @@
           },
           "137": {
             "tokenAddress": "0x3e121107F6F22DA4911079845a470757aF4e1A1b"
+          },
+          "146": {
+            "tokenAddress": "0x64445f0aecC51E94aD52d8AC56b7190e764E561a"
+          },
+          "1088": {
+            "tokenAddress": "0x23432452B720C80553458496D4D9d7C5003280d0"
+          },
+          "8453": {
+            "tokenAddress": "0x23432452B720C80553458496D4D9d7C5003280d0"
           },
           "42161": {
             "tokenAddress": "0xd9f9d2Ee2d3EFE420699079f16D9e924affFdEA4"
@@ -7297,7 +7369,13 @@
       "symbol": "GMEE",
       "decimals": 18,
       "logoURI": "https://assets.coingecko.com/coins/images/14716/large/gmee-200x200.png?1621827468",
-      "extensions": {},
+      "extensions": {
+        "bridgeInfo": {
+          "1": {
+            "tokenAddress": "0xD9016A907Dc0ECfA3ca425ab20B6b785B42F2373"
+          }
+        }
+      },
       "isAcross": false,
       "isOFT": true
     },
@@ -7550,7 +7628,16 @@
       "symbol": "GUILD",
       "decimals": 18,
       "logoURI": "https://assets.coingecko.com/coins/images/21271/large/BednjMw.png?1638857799",
-      "extensions": {},
+      "extensions": {
+        "bridgeInfo": {
+          "1": {
+            "tokenAddress": "0x83E9F223e1edb3486F876EE888d76bFba26c475A"
+          },
+          "137": {
+            "tokenAddress": "0xAfF41DA975501E5b71848C975834341777D1a473"
+          }
+        }
+      },
       "isAcross": false,
       "isOFT": true
     },
@@ -8001,9 +8088,18 @@
       "symbol": "HOT",
       "decimals": 18,
       "logoURI": "https://assets.coingecko.com/coins/images/3348/large/Holologo_Profile.png?1547037966",
-      "extensions": {},
+      "extensions": {
+        "bridgeInfo": {
+          "137": {
+            "tokenAddress": "0x0C51f415cF478f8D08c246a6C6Ee180C5dC3A012"
+          },
+          "42161": {
+            "tokenAddress": "0x03aDaEA083727921BbD04b5f95A68ca8edE907b9"
+          }
+        }
+      },
       "isAcross": false,
-      "isOFT": true
+      "isOFT": false
     },
     {
       "chainId": 1,
@@ -9884,7 +9980,13 @@
       "symbol": "LYM",
       "decimals": 18,
       "logoURI": "https://assets.coingecko.com/coins/images/2620/large/lympo_token.png?1547036775",
-      "extensions": {},
+      "extensions": {
+        "bridgeInfo": {
+          "1": {
+            "tokenAddress": "0xc690F7C7FcfFA6a82b79faB7508c466FEfdfc8c5"
+          }
+        }
+      },
       "isAcross": false,
       "isOFT": true
     },
@@ -12400,7 +12502,16 @@
       "symbol": "PBR",
       "decimals": 18,
       "logoURI": "https://assets.coingecko.com/coins/images/13744/large/symbol-whitebg200x200.png?1611377553",
-      "extensions": {},
+      "extensions": {
+        "bridgeInfo": {
+          "1": {
+            "tokenAddress": "0x298d492e8c1d909D3F63Bc4A36C66c64ACB3d695"
+          },
+          "56": {
+            "tokenAddress": "0x3C1B057cb7AcEB4F2c4D889A29fEBec30A6A3146"
+          }
+        }
+      },
       "isAcross": false,
       "isOFT": true
     },
@@ -13572,7 +13683,19 @@
       "symbol": "RADAR",
       "decimals": 18,
       "logoURI": "https://assets.coingecko.com/coins/images/20894/large/radar.png?1640306268",
-      "extensions": {},
+      "extensions": {
+        "bridgeInfo": {
+          "1": {
+            "tokenAddress": "0x44709a920fCcF795fbC57BAA433cc3dd53C44DbE"
+          },
+          "56": {
+            "tokenAddress": "0x489580eB70a50515296eF31E8179fF3e77E24965"
+          },
+          "137": {
+            "tokenAddress": "0xdCb72AE4d5dc6Ae274461d57E65dB8D50d0a33AD"
+          }
+        }
+      },
       "isAcross": false,
       "isOFT": true
     },
@@ -14668,11 +14791,20 @@
       "logoURI": "https://assets.coingecko.com/coins/images/12129/thumb/sandbox_logo.jpg?1597397942",
       "extensions": {
         "bridgeInfo": {
+          "1": {
+            "tokenAddress": "0x3845badAde8e6dFF049820680d1F14bD3903a5d0"
+          },
+          "56": {
+            "tokenAddress": "0xac531Eb26Ca1d21b85126De8FB87E80E09002DcF"
+          },
           "130": {
             "tokenAddress": "0x6A654A2ec95fB988Ea37746dBCca10772CAf25CA"
           },
           "137": {
             "tokenAddress": "0xBbba073C31bF03b8ACf7c28EF0738DeCF3695683"
+          },
+          "8453": {
+            "tokenAddress": "0xac531Eb26Ca1d21b85126De8FB87E80E09002DcF"
           },
           "42161": {
             "tokenAddress": "0xd1318eb19DBF2647743c720ed35174efd64e3DAC"
@@ -15966,12 +16098,23 @@
       "address": "0xAf5191B0De278C7286d6C7CC6ab6BB8A73bA2Cd6",
       "decimals": 18,
       "extensions": {
+        "coingeckoId": "stargate-finance",
+        "coinMarketCapId": 18934,
         "bridgeInfo": {
+          "10": {
+            "tokenAddress": "0x296F55F8Fb28E498B858d0BcDA06D955B2Cb3f97"
+          },
           "56": {
             "tokenAddress": "0xB0D502E938ed5f4df2E681fE6E419ff29631d62b"
           },
           "130": {
             "tokenAddress": "0x77c8A8E1dd3b5270d3Ab589543e9A83319373135"
+          },
+          "137": {
+            "tokenAddress": "0x2F6F07CDcf3588944Bf4C42aC74ff24bF56e7590"
+          },
+          "8453": {
+            "tokenAddress": "0xE3B53AF74a4BF62Ae5511055290838050bf764Df"
           },
           "42161": {
             "tokenAddress": "0xe018C7a3d175Fb0fE15D70Da2c874d3CA16313EC"
@@ -17547,7 +17690,16 @@
       "symbol": "UNIX",
       "decimals": 18,
       "logoURI": "https://assets.coingecko.com/coins/images/20674/large/unix.png?1663499268",
-      "extensions": {},
+      "extensions": {
+        "bridgeInfo": {
+          "1": {
+            "tokenAddress": "0xDDD6A0ECc3c6F6C102E5eA3d8Af7B801d1a77aC8"
+          },
+          "43114": {
+            "tokenAddress": "0x6f97D3F120fBbDaacF1c9da61a8aD126b7426861"
+          }
+        }
+      },
       "isAcross": false,
       "isOFT": true
     },
@@ -18287,17 +18439,32 @@
       "extensions": {
         "coingeckoId": "wrapped-bitcoin",
         "bridgeInfo": {
+          "1": {
+            "tokenAddress": "0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599"
+          },
+          "56": {
+            "tokenAddress": "0x0555E30da8f98308EdB960aa94C0Db47230d2B9c"
+          },
           "130": {
             "tokenAddress": "0x927B51f251480a681271180DA4de28D44EC4AfB8"
           },
           "137": {
             "tokenAddress": "0x1BFD67037B42Cf73acF2047067bd4F2C47D9BfD6"
           },
+          "146": {
+            "tokenAddress": "0x0555E30da8f98308EdB960aa94C0Db47230d2B9c"
+          },
+          "8453": {
+            "tokenAddress": "0x0555E30da8f98308EdB960aa94C0Db47230d2B9c"
+          },
           "42161": {
             "tokenAddress": "0x2f2a2543B76A4166549F7aaB2e75Bef0aefC5B0f"
           },
           "43114": {
             "tokenAddress": "0x50b7545627a5162F82A992c33b87aDc75187B218"
+          },
+          "80094": {
+            "tokenAddress": "0x0555E30da8f98308EdB960aa94C0Db47230d2B9c"
           }
         }
       },
@@ -18497,7 +18664,12 @@
       "address": "0x4691937a7508860F876c9c0a2a617E7d9E945D4B",
       "decimals": 18,
       "extensions": {
+        "coingeckoId": "woo-network",
+        "coinMarketCapId": 7501,
         "bridgeInfo": {
+          "10": {
+            "tokenAddress": "0x871f2F2ff935FD1eD867842FF2a7bfD051A5E527"
+          },
           "56": {
             "tokenAddress": "0x4691937a7508860F876c9c0a2a617E7d9E945D4B"
           },
@@ -18525,7 +18697,16 @@
       "symbol": "WOOF",
       "decimals": 18,
       "logoURI": "https://assets.coingecko.com/coins/images/28903/large/WWlogoTransparent_200x200.png?1675241564",
-      "extensions": {},
+      "extensions": {
+        "bridgeInfo": {
+          "1": {
+            "tokenAddress": "0x6BC08509B36A98E829dFfAD49Fde5e412645d0a3"
+          },
+          "8453": {
+            "tokenAddress": "0xB3a9bd4861454bA94931ebFF410c3D828525dCe2"
+          }
+        }
+      },
       "isAcross": false,
       "isOFT": true
     },
@@ -18615,7 +18796,13 @@
       "symbol": "WSTETH",
       "decimals": 18,
       "logoURI": "https://assets.coingecko.com/coins/images/18834/large/wstETH.png?1633565443",
-      "extensions": {},
+      "extensions": {
+        "bridgeInfo": {
+          "1": {
+            "tokenAddress": "0x7f39C581F595B53c5cb19bD0b3f8dA6c935E2Ca0"
+          }
+        }
+      },
       "isAcross": false,
       "isOFT": true
     },
@@ -19895,7 +20082,18 @@
       "decimals": 18,
       "logoURI": "https://ethereum-optimism.github.io/data/OP/logo.png",
       "extensions": {
-        "coingeckoId": "optimism"
+        "coingeckoId": "optimism",
+        "bridgeInfo": {
+          "10": {
+            "tokenAddress": "0x4200000000000000000000000000000000000042"
+          },
+          "42161": {
+            "tokenAddress": "0xaC800FD6159c2a2CB8fC31EF74621eB430287a5A"
+          },
+          "43114": {
+            "tokenAddress": "0xaC800FD6159c2a2CB8fC31EF74621eB430287a5A"
+          }
+        }
       },
       "isAcross": true,
       "isOFT": true
@@ -20002,7 +20200,7 @@
       "chainId": 10,
       "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48/logo.png",
       "extensions": {
-        "coingeckoId": "usd-coin-ethereum-bridged"
+        "coingeckoId": "bridged-usd-coin-optimism"
       },
       "isAcross": true,
       "isOFT": true
@@ -20761,6 +20959,7 @@
       "decimals": 18,
       "logoURI": "https://assets.coingecko.com/coins/images/9576/thumb/BUSD.png?1568947766",
       "extensions": {
+        "coingeckoId": "binance-peg-busd",
         "bridgeInfo": {
           "1": {
             "tokenAddress": "0x4Fabb145d64652a948d72533023f6E7A623C7C53"
@@ -24342,6 +24541,7 @@
       "address": "0xB0D502E938ed5f4df2E681fE6E419ff29631d62b",
       "decimals": 18,
       "extensions": {
+        "coingeckoId": "stargate-finance",
         "bridgeInfo": {
           "1": {
             "tokenAddress": "0xAf5191B0De278C7286d6C7CC6ab6BB8A73bA2Cd6"
@@ -24999,9 +25199,25 @@
       "address": "0x4691937a7508860F876c9c0a2a617E7d9E945D4B",
       "decimals": 18,
       "extensions": {
+        "coingeckoId": "woo-network",
         "bridgeInfo": {
           "1": {
             "tokenAddress": "0x4691937a7508860F876c9c0a2a617E7d9E945D4B"
+          },
+          "10": {
+            "tokenAddress": "0x871f2F2ff935FD1eD867842FF2a7bfD051A5E527"
+          },
+          "56": {
+            "tokenAddress": "0x4691937a7508860F876c9c0a2a617E7d9E945D4B"
+          },
+          "137": {
+            "tokenAddress": "0x1B815d120B3eF02039Ee11dC2d33DE7aA4a8C603"
+          },
+          "42161": {
+            "tokenAddress": "0xcAFcD85D8ca7Ad1e1C6F82F651fA15E33AEfD07b"
+          },
+          "43114": {
+            "tokenAddress": "0xaBC9547B534519fF73921b1FBA6E672b5f58D083"
           }
         }
       },
@@ -27705,7 +27921,7 @@
       "chainId": 137,
       "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x6B175474E89094C44Da98b954EedeAC495271d0F/logo.png",
       "extensions": {
-        "coingeckoId": "dai",
+        "coingeckoId": "polygon-pos-bridged-dai-polygon-pos",
         "bridgeInfo": {
           "1": {
             "tokenAddress": "0x6B175474E89094C44Da98b954EedeAC495271d0F"
@@ -34469,7 +34685,7 @@
       "chainId": 137,
       "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48/logo.png",
       "extensions": {
-        "coingeckoId": "usd-coin-ethereum-bridged",
+        "coingeckoId": "bridged-usdc-polygon-pos-bridge",
         "bridgeInfo": {
           "1": {
             "tokenAddress": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48"
@@ -34504,7 +34720,7 @@
       "chainId": 137,
       "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xdAC17F958D2ee523a2206206994597C13D831ec7/logo.png",
       "extensions": {
-        "coingeckoId": "tether",
+        "coingeckoId": "polygon-bridged-usdt-polygon",
         "bridgeInfo": {
           "1": {
             "tokenAddress": "0xdAC17F958D2ee523a2206206994597C13D831ec7"
@@ -34921,6 +35137,7 @@
       "address": "0x1B815d120B3eF02039Ee11dC2d33DE7aA4a8C603",
       "decimals": 18,
       "extensions": {
+        "coingeckoId": "woo-network",
         "bridgeInfo": {
           "1": {
             "tokenAddress": "0x4691937a7508860F876c9c0a2a617E7d9E945D4B"
@@ -42656,6 +42873,7 @@
       "decimals": 18,
       "logoURI": "https://assets.coingecko.com/coins/images/13422/thumb/frax_logo.png?1608476506",
       "extensions": {
+        "coingeckoId": "frax",
         "bridgeInfo": {
           "1": {
             "tokenAddress": "0x853d955aCEf822Db058eb8505911ED77F175b99e"
@@ -43064,6 +43282,7 @@
       "address": "0x2F6F07CDcf3588944Bf4C42aC74ff24bF56e7590",
       "decimals": 18,
       "extensions": {
+        "coingeckoId": "stargate-finance",
         "bridgeInfo": {
           "1": {
             "tokenAddress": "0xAf5191B0De278C7286d6C7CC6ab6BB8A73bA2Cd6"
