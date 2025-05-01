@@ -12,6 +12,7 @@ env:
 jobs:
   run-all:
     runs-on: ubuntu-latest
+    environment: Prod   
 
     steps:
       - name: Checkout repository
