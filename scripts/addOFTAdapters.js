@@ -113,7 +113,7 @@ async function main() {
     for (const res of results) {
         const mainExtensions = res.extensions || {};
         const bridgeInfo = bridgeMap[res.address.toLowerCase() + res.chainKey];
-        if (bridgeInfo) {
+        if (Object.keys(bridgeInfo || {}).length > 0) {
             res.extensions = mergeExtensions(mainExtensions, { bridgeInfo });
         }
     }
