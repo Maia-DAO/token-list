@@ -104,17 +104,17 @@ async function main() {
         returnData.forEach((hex, idx) => {
             const { src, dst } = calls[idx];
             console.log(`Decoding quote for ${src.symbol} from ${src.chainKey} to ${dst.chainKey}...`);
-            const [limits, , receipt] = iface.decodeFunctionResult('quoteOFT', hex);
+            const [, , receipt] = iface.decodeFunctionResult('quoteOFT', hex);
             const sent = BigInt(receipt[0]);
             const received = BigInt(receipt[1]);
             const feeBips = sent > 0n ? ((sent - received) * 10000n) / sent : 10000n;
-            console.log(`Fee: ${feeBips} bps`);
-            tokenFeeMap[src.address + src.chainKey] ||= {};
-            tokenFeeMap[src.address + src.chainKey][dst.chainId] = {
-                oftFee: parseInt(feeBips.toString()),
-                oftMinAmount: limits[0].toString(),
-                oftMaxAmount: limits[1].toString()
-            };
+            if (feeBips > 0n) {
+                console.log(`Fee: ${feeBips} bps`);
+                tokenFeeMap[src.address + src.chainKey] ||= {};
+                tokenFeeMap[src.address + src.chainKey][dst.chainId] = {
+                    oftFee: parseInt(feeBips.toString()),
+                };
+            }
         });
     }
 
