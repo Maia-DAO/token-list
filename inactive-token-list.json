@@ -1,6 +1,6 @@
 {
   "name": "Hermes Omnichain Inactive Token List",
-  "timestamp": "1745924986",
+  "timestamp": "1746118149",
   "version": {
     "major": 1,
     "minor": 0,
@@ -268,9 +268,6 @@
           },
           "137": {
             "tokenAddress": "0xdDa7b23D2D72746663E7939743f929a3d85FC975"
-          },
-          "8453": {
-            "tokenAddress": "0x3c87e7AF3cDBAe5bB56b4936325Ea95CA3E0EfD9"
           }
         }
       },
@@ -580,9 +577,6 @@
           "137": {
             "tokenAddress": "0xbFc70507384047Aa74c29Cdc8c5Cb88D0f7213AC"
           },
-          "8453": {
-            "tokenAddress": "0x97c806e7665d3AFd84A8Fe1837921403D59F3Dcc"
-          },
           "42161": {
             "tokenAddress": "0xeF6124368c0B56556667e0de77eA008DfC0a71d1"
           }
@@ -880,6 +874,16 @@
           },
           "42161": {
             "tokenAddress": "0x74885b4D524d497261259B38900f54e6dbAd2210"
+          },
+          "undefined": {
+            "tokenAddress": "0x0000000000000000000000000000000000000000"
+          }
+        },
+        "feeInfo": {
+          "42161": {
+            "oftFee": 0,
+            "oftMinAmount": "0",
+            "oftMaxAmount": "18446744073709551615"
           }
         }
       },
@@ -1566,14 +1570,14 @@
       "extensions": {
         "coingeckoId": "balancer",
         "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0xba100000625a3754423978a60c9317c58a424e3D"
-          },
           "130": {
             "tokenAddress": "0x01625E26274Ed828Ac1d47694c97221b34a8ADdF"
           },
           "137": {
             "tokenAddress": "0x9a71012B13CA4d3D0Cdc72A177DF3ef03b0E76A3"
+          },
+          "8453": {
+            "tokenAddress": "0x4158734D47Fc9692176B5085E0F52ee0Da5d47F1"
           },
           "42161": {
             "tokenAddress": "0x040d1EdC9569d4Bab2D15287Dc5A4F10F56a56B8"
@@ -1898,11 +1902,15 @@
       "logoURI": "https://assets.coingecko.com/coins/images/18715/large/beta_finance.jpg?1633087053",
       "extensions": {
         "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0xBe1a001FE942f96Eea22bA08783140B9Dcc09D28"
-          },
           "56": {
             "tokenAddress": "0x2A73F85024f101F3FAC9FbCBcE60707B6b3A6203"
+          }
+        },
+        "feeInfo": {
+          "56": {
+            "oftFee": 0,
+            "oftMinAmount": "0",
+            "oftMaxAmount": "18446744073709551615"
           }
         }
       },
@@ -2607,6 +2615,9 @@
         "bridgeInfo": {
           "130": {
             "tokenAddress": "0x6A4a359C7453F5892392FCb8eAB7A9A100986B71"
+          },
+          "8453": {
+            "tokenAddress": "0xA7d68d155d17cB30e311367c2Ef1E82aB6022b67"
           }
         }
       },
@@ -2875,6 +2886,9 @@
           "130": {
             "tokenAddress": "0xEb64b50FeF2A363940369285F86Ae9a68211db59"
           },
+          "8453": {
+            "tokenAddress": "0x2Ae3F1Ec7F1F5012CFEab0185bfc7aa3cf0DEc22"
+          },
           "42161": {
             "tokenAddress": "0x1DEBd73E752bEaF79865Fd6446b0c970EaE7732f"
           }
@@ -3009,11 +3023,15 @@
       "logoURI": "https://assets.coingecko.com/coins/images/20008/large/cere.png?1636366576",
       "extensions": {
         "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0x2dA719DB753dFA10a62E140f436E1d67F2ddB0d6"
-          },
           "8453": {
             "tokenAddress": "0x9886447Ff4c350f4600E4BF95Db756Bdc629b1cA"
+          }
+        },
+        "feeInfo": {
+          "8453": {
+            "oftFee": 0,
+            "oftMinAmount": "0",
+            "oftMaxAmount": "100000000000000000000"
           }
         }
       },
@@ -3426,6 +3444,9 @@
           "137": {
             "tokenAddress": "0x8505b9d2254A7Ae468c0E9dd10Ccea3A837aef5c"
           },
+          "8453": {
+            "tokenAddress": "0x9e1028F5F1D5eDE59748FFceE5532509976840E0"
+          },
           "42161": {
             "tokenAddress": "0x354A6dA3fcde098F8389cad84b0182725c6C91dE"
           },
@@ -3787,14 +3808,14 @@
       "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xD533a949740bb3306d119CC777fa900bA034cd52/logo.png",
       "extensions": {
         "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0xD533a949740bb3306d119CC777fa900bA034cd52"
-          },
           "130": {
             "tokenAddress": "0xAC73671a1762FE835208Fb93b7aE7490d1c2cCb3"
           },
           "137": {
             "tokenAddress": "0x172370d5Cd63279eFa6d502DAB29171933a610AF"
+          },
+          "8453": {
+            "tokenAddress": "0x8Ee73c484A26e0A5df2Ee2a4960B789967dd0415"
           },
           "42161": {
             "tokenAddress": "0x11cDb42B0EB46D95f990BeDD4695A6e3fA034978"
@@ -3875,6 +3896,9 @@
           },
           "137": {
             "tokenAddress": "0x8c208BC2A808a088a78398fed8f2640cab0b6EDb"
+          },
+          "8453": {
+            "tokenAddress": "0xBB22Ff867F8Ca3D5F2251B4084F6Ec86D4666E14"
           },
           "42161": {
             "tokenAddress": "0x84F5c2cFba754E76DD5aE4fB369CfC920425E12b"
@@ -5912,9 +5936,6 @@
       "logoURI": "https://assets.coingecko.com/coins/images/26149/thumb/YCvKDfl8_400x400.jpeg?1656041509",
       "extensions": {
         "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0xd9Fcd98c322942075A5C3860693e9f4f03AAE07b"
-          },
           "56": {
             "tokenAddress": "0x2117E8b79e8E176A670c9fCf945d4348556bfFad"
           },
@@ -5935,6 +5956,38 @@
           },
           "80094": {
             "tokenAddress": "0xEb9b5f4EB023aE754fF59A04c9C038D58606DAC6"
+          }
+        },
+        "feeInfo": {
+          "56": {
+            "oftFee": 0,
+            "oftMinAmount": "0",
+            "oftMaxAmount": "18446744073709551615"
+          },
+          "146": {
+            "oftFee": 0,
+            "oftMinAmount": "0",
+            "oftMaxAmount": "18446744073709551615"
+          },
+          "8453": {
+            "oftFee": 0,
+            "oftMinAmount": "0",
+            "oftMaxAmount": "18446744073709551615"
+          },
+          "42161": {
+            "oftFee": 0,
+            "oftMinAmount": "0",
+            "oftMaxAmount": "18446744073709551615"
+          },
+          "43114": {
+            "oftFee": 0,
+            "oftMinAmount": "0",
+            "oftMaxAmount": "18446744073709551615"
+          },
+          "80094": {
+            "oftFee": 0,
+            "oftMinAmount": "0",
+            "oftMaxAmount": "18446744073709551615"
           }
         }
       },
@@ -6074,11 +6127,15 @@
       "logoURI": "https://assets.coingecko.com/coins/images/19201/large/jFLSu4U9_400x400.png?1650437050",
       "extensions": {
         "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0xe0bCEEF36F3a6eFDd5EEBFACD591423f8549B9D5"
-          },
           "42161": {
             "tokenAddress": "0xaB24c63bee518Ac956c8123389fc538c7e36d82C"
+          }
+        },
+        "feeInfo": {
+          "42161": {
+            "oftFee": 0,
+            "oftMinAmount": "0",
+            "oftMaxAmount": "300000000000000000000000000"
           }
         }
       },
@@ -6194,9 +6251,6 @@
           },
           "137": {
             "tokenAddress": "0x7583FEDDbceFA813dc18259940F76a02710A8905"
-          },
-          "8453": {
-            "tokenAddress": "0x74F804B4140ee70830B3Eef4e690325841575F89"
           },
           "42161": {
             "tokenAddress": "0x4BE87C766A7CE11D5Cc864b6C3Abb7457dCC4cC9"
@@ -6551,6 +6605,9 @@
           },
           "137": {
             "tokenAddress": "0x5eCbA59DAcc1ADc5bDEA35f38A732823fc3dE977"
+          },
+          "8453": {
+            "tokenAddress": "0x968B2323d4b005C7D39c67D31774FE83c9943A60"
           }
         }
       },
@@ -6916,9 +6973,6 @@
       "logoURI": "https://assets.coingecko.com/coins/images/13423/thumb/frax_share.png?1608478989",
       "extensions": {
         "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0x3432B6A60D23Ca0dFCa7761B7ab56459D9C964D0"
-          },
           "10": {
             "tokenAddress": "0x64445f0aecC51E94aD52d8AC56b7190e764E561a"
           },
@@ -6945,6 +6999,43 @@
           },
           "43114": {
             "tokenAddress": "0x214DB107654fF987AD859F34125307783fC8e387"
+          }
+        },
+        "feeInfo": {
+          "10": {
+            "oftFee": 0,
+            "oftMinAmount": "0",
+            "oftMaxAmount": "18446744073709551615"
+          },
+          "56": {
+            "oftFee": 0,
+            "oftMinAmount": "0",
+            "oftMaxAmount": "18446744073709551615"
+          },
+          "137": {
+            "oftFee": 0,
+            "oftMinAmount": "0",
+            "oftMaxAmount": "18446744073709551615"
+          },
+          "146": {
+            "oftFee": 0,
+            "oftMinAmount": "0",
+            "oftMaxAmount": "18446744073709551615"
+          },
+          "8453": {
+            "oftFee": 0,
+            "oftMinAmount": "0",
+            "oftMaxAmount": "18446744073709551615"
+          },
+          "42161": {
+            "oftFee": 0,
+            "oftMinAmount": "0",
+            "oftMaxAmount": "18446744073709551615"
+          },
+          "43114": {
+            "oftFee": 0,
+            "oftMinAmount": "0",
+            "oftMaxAmount": "18446744073709551615"
           }
         }
       },
@@ -7277,6 +7368,9 @@
           },
           "137": {
             "tokenAddress": "0x385Eeac5cB85A38A9a07A70c73e0a3271CfB54A7"
+          },
+          "8453": {
+            "tokenAddress": "0xcD2F22236DD9Dfe2356D7C543161D4d260FD9BcB"
           }
         }
       },
@@ -7370,11 +7464,7 @@
       "decimals": 18,
       "logoURI": "https://assets.coingecko.com/coins/images/14716/large/gmee-200x200.png?1621827468",
       "extensions": {
-        "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0xD9016A907Dc0ECfA3ca425ab20B6b785B42F2373"
-          }
-        }
+        "bridgeInfo": {}
       },
       "isAcross": false,
       "isOFT": true
@@ -7533,6 +7623,9 @@
           "137": {
             "tokenAddress": "0x5fe2B58c013d7601147DcdD68C143A77499f5531"
           },
+          "8453": {
+            "tokenAddress": "0x0F4d237B09Cb37d207BA60353Dc254d4530D4dF1"
+          },
           "42161": {
             "tokenAddress": "0x9623063377AD1B27544C965cCd7342f7EA7e88C7"
           },
@@ -7630,9 +7723,6 @@
       "logoURI": "https://assets.coingecko.com/coins/images/21271/large/BednjMw.png?1638857799",
       "extensions": {
         "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0x83E9F223e1edb3486F876EE888d76bFba26c475A"
-          },
           "137": {
             "tokenAddress": "0xAfF41DA975501E5b71848C975834341777D1a473"
           }
@@ -8669,6 +8759,9 @@
           },
           "137": {
             "tokenAddress": "0xf6372cDb9c1d3674E83842e3800F2A62aC9F3C66"
+          },
+          "8453": {
+            "tokenAddress": "0xBCBAf311ceC8a4EAC0430193A528d9FF27ae38C1"
           }
         }
       },
@@ -8779,6 +8872,9 @@
         "bridgeInfo": {
           "130": {
             "tokenAddress": "0x428c2B7Fa7a7821891fb529BAE4d80a71d5c61A8"
+          },
+          "8453": {
+            "tokenAddress": "0xFf9957816c813C5Ad0b9881A8990Df1E3AA2a057"
           }
         }
       },
@@ -9817,9 +9913,6 @@
           "137": {
             "tokenAddress": "0x8Ab2Fec94d17ae69FB90E7c773f2C85Ed1802c01"
           },
-          "8453": {
-            "tokenAddress": "0x5259384690aCF240e9b0A8811bD0FFbFBDdc125C"
-          },
           "42161": {
             "tokenAddress": "0xfb9E5D956D889D91a82737B9bFCDaC1DCE3e1449"
           }
@@ -9842,9 +9935,6 @@
           },
           "137": {
             "tokenAddress": "0x84e1670F61347CDaeD56dcc736FB990fBB47ddC1"
-          },
-          "8453": {
-            "tokenAddress": "0x0D760ee479401Bb4C40BDB7604b329FfF411b3f2"
           },
           "42161": {
             "tokenAddress": "0x46d0cE7de6247b0A95f67b43B589b4041BaE7fbE"
@@ -9981,11 +10071,7 @@
       "decimals": 18,
       "logoURI": "https://assets.coingecko.com/coins/images/2620/large/lympo_token.png?1547036775",
       "extensions": {
-        "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0xc690F7C7FcfFA6a82b79faB7508c466FEfdfc8c5"
-          }
-        }
+        "bridgeInfo": {}
       },
       "isAcross": false,
       "isOFT": true
@@ -11313,6 +11399,9 @@
           "137": {
             "tokenAddress": "0x4985E0B13554fB521840e893574D3848C10Fcc6f"
           },
+          "8453": {
+            "tokenAddress": "0xE6bAA3Fedb5Dc88b2c59ba4812388Bb0906D19dB"
+          },
           "42161": {
             "tokenAddress": "0x53236015A675fcB937485F1AE58040e4Fb920d5b"
           }
@@ -12504,11 +12593,15 @@
       "logoURI": "https://assets.coingecko.com/coins/images/13744/large/symbol-whitebg200x200.png?1611377553",
       "extensions": {
         "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0x298d492e8c1d909D3F63Bc4A36C66c64ACB3d695"
-          },
           "56": {
             "tokenAddress": "0x3C1B057cb7AcEB4F2c4D889A29fEBec30A6A3146"
+          }
+        },
+        "feeInfo": {
+          "56": {
+            "oftFee": 0,
+            "oftMinAmount": "0",
+            "oftMaxAmount": "18446744073709551615"
           }
         }
       },
@@ -12668,6 +12761,9 @@
           },
           "137": {
             "tokenAddress": "0x263534a4Fe3cb249dF46810718B7B612a30ebbff"
+          },
+          "8453": {
+            "tokenAddress": "0xCD6dDDa305955AcD6b94b934f057E8b0daaD58dE"
           },
           "42161": {
             "tokenAddress": "0x753D224bCf9AAFaCD81558c32341416df61D3DAC"
@@ -13278,6 +13374,9 @@
           "130": {
             "tokenAddress": "0xD17D5f0DA4200bBfd3D6626AC6aEA2eccbf9fEE0"
           },
+          "8453": {
+            "tokenAddress": "0xfA980cEd6895AC314E7dE34Ef1bFAE90a5AdD21b"
+          },
           "42161": {
             "tokenAddress": "0x8d8e1b6ffc6832E8D2eF0DE8a3d957cAE7ac5067"
           }
@@ -13300,6 +13399,9 @@
           },
           "137": {
             "tokenAddress": "0x82FFdFD1d8699E8886a4e77CeFA9dd9710a7FefD"
+          },
+          "8453": {
+            "tokenAddress": "0x18dD5B087bCA9920562aFf7A0199b96B9230438b"
           }
         }
       },
@@ -13685,14 +13787,23 @@
       "logoURI": "https://assets.coingecko.com/coins/images/20894/large/radar.png?1640306268",
       "extensions": {
         "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0x44709a920fCcF795fbC57BAA433cc3dd53C44DbE"
-          },
           "56": {
             "tokenAddress": "0x489580eB70a50515296eF31E8179fF3e77E24965"
           },
           "137": {
             "tokenAddress": "0xdCb72AE4d5dc6Ae274461d57E65dB8D50d0a33AD"
+          }
+        },
+        "feeInfo": {
+          "56": {
+            "oftFee": 0,
+            "oftMinAmount": "0",
+            "oftMaxAmount": "18446744073709551615"
+          },
+          "137": {
+            "oftFee": 0,
+            "oftMinAmount": "0",
+            "oftMaxAmount": "18446744073709551615"
           }
         }
       },
@@ -14574,9 +14685,6 @@
           "130": {
             "tokenAddress": "0x993A565A1E6219951323cA3c34Cee0A3b1889066"
           },
-          "8453": {
-            "tokenAddress": "0xaB36452DbAC151bE02b16Ca17d8919826072f64a"
-          },
           "42161": {
             "tokenAddress": "0xCa5Ca9083702c56b481D1eec86F1776FDbd2e594"
           }
@@ -14791,9 +14899,6 @@
       "logoURI": "https://assets.coingecko.com/coins/images/12129/thumb/sandbox_logo.jpg?1597397942",
       "extensions": {
         "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0x3845badAde8e6dFF049820680d1F14bD3903a5d0"
-          },
           "56": {
             "tokenAddress": "0xac531Eb26Ca1d21b85126De8FB87E80E09002DcF"
           },
@@ -14808,6 +14913,18 @@
           },
           "42161": {
             "tokenAddress": "0xd1318eb19DBF2647743c720ed35174efd64e3DAC"
+          }
+        },
+        "feeInfo": {
+          "56": {
+            "oftFee": 0,
+            "oftMinAmount": "0",
+            "oftMaxAmount": "18446744073709551615"
+          },
+          "8453": {
+            "oftFee": 0,
+            "oftMinAmount": "0",
+            "oftMaxAmount": "18446744073709551615"
           }
         }
       },
@@ -16674,6 +16791,9 @@
           "130": {
             "tokenAddress": "0xAd497996Dc33DC8E8e552824CcEe199420BC7814"
           },
+          "8453": {
+            "tokenAddress": "0x236aa50979D5f3De3Bd1Eeb40E81137F22ab794b"
+          },
           "42161": {
             "tokenAddress": "0x7E2a1eDeE171C5B19E6c54D73752396C0A572594"
           }
@@ -17692,9 +17812,6 @@
       "logoURI": "https://assets.coingecko.com/coins/images/20674/large/unix.png?1663499268",
       "extensions": {
         "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0xDDD6A0ECc3c6F6C102E5eA3d8Af7B801d1a77aC8"
-          },
           "43114": {
             "tokenAddress": "0x6f97D3F120fBbDaacF1c9da61a8aD126b7426861"
           }
@@ -18439,9 +18556,6 @@
       "extensions": {
         "coingeckoId": "wrapped-bitcoin",
         "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599"
-          },
           "56": {
             "tokenAddress": "0x0555E30da8f98308EdB960aa94C0Db47230d2B9c"
           },
@@ -18465,6 +18579,33 @@
           },
           "80094": {
             "tokenAddress": "0x0555E30da8f98308EdB960aa94C0Db47230d2B9c"
+          }
+        },
+        "feeInfo": {
+          "56": {
+            "oftFee": 0,
+            "oftMinAmount": "0",
+            "oftMaxAmount": "18446744073709551615"
+          },
+          "146": {
+            "oftFee": 0,
+            "oftMinAmount": "0",
+            "oftMaxAmount": "18446744073709551615"
+          },
+          "8453": {
+            "oftFee": 0,
+            "oftMinAmount": "0",
+            "oftMaxAmount": "18446744073709551615"
+          },
+          "43114": {
+            "oftFee": 0,
+            "oftMinAmount": "0",
+            "oftMaxAmount": "18446744073709551615"
+          },
+          "80094": {
+            "oftFee": 0,
+            "oftMinAmount": "0",
+            "oftMaxAmount": "18446744073709551615"
           }
         }
       },
@@ -18699,9 +18840,6 @@
       "logoURI": "https://assets.coingecko.com/coins/images/28903/large/WWlogoTransparent_200x200.png?1675241564",
       "extensions": {
         "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0x6BC08509B36A98E829dFfAD49Fde5e412645d0a3"
-          },
           "8453": {
             "tokenAddress": "0xB3a9bd4861454bA94931ebFF410c3D828525dCe2"
           }
@@ -18797,11 +18935,7 @@
       "decimals": 18,
       "logoURI": "https://assets.coingecko.com/coins/images/18834/large/wstETH.png?1633565443",
       "extensions": {
-        "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0x7f39C581F595B53c5cb19bD0b3f8dA6c935E2Ca0"
-          }
-        }
+        "bridgeInfo": {}
       },
       "isAcross": false,
       "isOFT": true
@@ -19305,9 +19439,6 @@
           },
           "137": {
             "tokenAddress": "0xd2507e7b5794179380673870d88B22F94da6abe0"
-          },
-          "8453": {
-            "tokenAddress": "0xD7B99ffB8B2afc6fe013a17207cbe50f223aDc94"
           }
         }
       },
@@ -19393,9 +19524,6 @@
           },
           "137": {
             "tokenAddress": "0xDA537104D6A5edd53c6fBba9A898708E465260b6"
-          },
-          "8453": {
-            "tokenAddress": "0x9EaF8C1E34F05a589EDa6BAfdF391Cf6Ad3CB239"
           },
           "42161": {
             "tokenAddress": "0x82e3A8F066a6989666b031d916c43672085b1582"
@@ -20084,14 +20212,23 @@
       "extensions": {
         "coingeckoId": "optimism",
         "bridgeInfo": {
-          "10": {
-            "tokenAddress": "0x4200000000000000000000000000000000000042"
-          },
           "42161": {
             "tokenAddress": "0xaC800FD6159c2a2CB8fC31EF74621eB430287a5A"
           },
           "43114": {
             "tokenAddress": "0xaC800FD6159c2a2CB8fC31EF74621eB430287a5A"
+          }
+        },
+        "feeInfo": {
+          "42161": {
+            "oftFee": 0,
+            "oftMinAmount": "0",
+            "oftMaxAmount": "18446744073709551615"
+          },
+          "43114": {
+            "oftFee": 0,
+            "oftMinAmount": "0",
+            "oftMaxAmount": "18446744073709551615"
           }
         }
       },
@@ -20200,7 +20337,12 @@
       "chainId": 10,
       "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48/logo.png",
       "extensions": {
-        "coingeckoId": "bridged-usd-coin-optimism"
+        "coingeckoId": "bridged-usd-coin-optimism",
+        "bridgeInfo": {
+          "1": {
+            "tokenAddress": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48"
+          }
+        }
       },
       "isAcross": true,
       "isOFT": true
@@ -22205,6 +22347,43 @@
           "1": {
             "tokenAddress": "0x3432B6A60D23Ca0dFCa7761B7ab56459D9C964D0"
           }
+        },
+        "feeInfo": {
+          "1": {
+            "oftFee": 0,
+            "oftMinAmount": "0",
+            "oftMaxAmount": "18446744073709551615"
+          },
+          "10": {
+            "oftFee": 0,
+            "oftMinAmount": "0",
+            "oftMaxAmount": "18446744073709551615"
+          },
+          "137": {
+            "oftFee": 0,
+            "oftMinAmount": "0",
+            "oftMaxAmount": "18446744073709551615"
+          },
+          "146": {
+            "oftFee": 0,
+            "oftMinAmount": "0",
+            "oftMaxAmount": "18446744073709551615"
+          },
+          "8453": {
+            "oftFee": 0,
+            "oftMinAmount": "0",
+            "oftMaxAmount": "18446744073709551615"
+          },
+          "42161": {
+            "oftFee": 0,
+            "oftMinAmount": "0",
+            "oftMaxAmount": "18446744073709551615"
+          },
+          "43114": {
+            "oftFee": 0,
+            "oftMinAmount": "0",
+            "oftMaxAmount": "18446744073709551615"
+          }
         }
       },
       "isAcross": false,
@@ -23071,6 +23250,9 @@
         "bridgeInfo": {
           "1": {
             "tokenAddress": "0x9E32b13ce7f2E80A01932B42553652E053D6ed8e"
+          },
+          "1088": {
+            "tokenAddress": "0x0000000000000000000000000000000000000000"
           }
         }
       },
@@ -23985,7 +24167,25 @@
       "symbol": "RADAR",
       "decimals": 18,
       "logoURI": "https://assets.coingecko.com/coins/images/20894/large/radar.png?1640306268",
-      "extensions": {},
+      "extensions": {
+        "bridgeInfo": {
+          "1": {
+            "tokenAddress": "0x44709a920fccf795fbc57baa433cc3dd53c44dbe"
+          }
+        },
+        "feeInfo": {
+          "1": {
+            "oftFee": 0,
+            "oftMinAmount": "0",
+            "oftMaxAmount": "18446744073709551615"
+          },
+          "137": {
+            "oftFee": 0,
+            "oftMinAmount": "0",
+            "oftMaxAmount": "18446744073709551615"
+          }
+        }
+      },
       "isAcross": false,
       "isOFT": true
     },
@@ -25206,9 +25406,6 @@
           },
           "10": {
             "tokenAddress": "0x871f2F2ff935FD1eD867842FF2a7bfD051A5E527"
-          },
-          "56": {
-            "tokenAddress": "0x4691937a7508860F876c9c0a2a617E7d9E945D4B"
           },
           "137": {
             "tokenAddress": "0x1B815d120B3eF02039Ee11dC2d33DE7aA4a8C603"
@@ -29302,6 +29499,43 @@
         "bridgeInfo": {
           "1": {
             "tokenAddress": "0x3432B6A60D23Ca0dFCa7761B7ab56459D9C964D0"
+          }
+        },
+        "feeInfo": {
+          "1": {
+            "oftFee": 0,
+            "oftMinAmount": "0",
+            "oftMaxAmount": "18446744073709551615"
+          },
+          "10": {
+            "oftFee": 0,
+            "oftMinAmount": "0",
+            "oftMaxAmount": "18446744073709551615"
+          },
+          "56": {
+            "oftFee": 0,
+            "oftMinAmount": "0",
+            "oftMaxAmount": "18446744073709551615"
+          },
+          "146": {
+            "oftFee": 0,
+            "oftMinAmount": "0",
+            "oftMaxAmount": "18446744073709551615"
+          },
+          "8453": {
+            "oftFee": 0,
+            "oftMinAmount": "0",
+            "oftMaxAmount": "18446744073709551615"
+          },
+          "42161": {
+            "oftFee": 0,
+            "oftMinAmount": "0",
+            "oftMaxAmount": "18446744073709551615"
+          },
+          "43114": {
+            "oftFee": 0,
+            "oftMinAmount": "0",
+            "oftMaxAmount": "18446744073709551615"
           }
         }
       },
@@ -36204,13 +36438,6 @@
       "symbol": "RSR",
       "decimals": 18,
       "logoURI": "https://assets.coingecko.com/coins/images/8365/large/rsr.png?1637983320",
-      "extensions": {
-        "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0x320623b8E4fF03373931769A31Fc52A4E78B5d70"
-          }
-        }
-      },
       "isAcross": false,
       "isOFT": false
     },
@@ -42912,6 +43139,43 @@
           "1": {
             "tokenAddress": "0x3432B6A60D23Ca0dFCa7761B7ab56459D9C964D0"
           }
+        },
+        "feeInfo": {
+          "1": {
+            "oftFee": 0,
+            "oftMinAmount": "0",
+            "oftMaxAmount": "18446744073709551615"
+          },
+          "10": {
+            "oftFee": 0,
+            "oftMinAmount": "0",
+            "oftMaxAmount": "18446744073709551615"
+          },
+          "56": {
+            "oftFee": 0,
+            "oftMinAmount": "0",
+            "oftMaxAmount": "18446744073709551615"
+          },
+          "137": {
+            "oftFee": 0,
+            "oftMinAmount": "0",
+            "oftMaxAmount": "18446744073709551615"
+          },
+          "146": {
+            "oftFee": 0,
+            "oftMinAmount": "0",
+            "oftMaxAmount": "18446744073709551615"
+          },
+          "8453": {
+            "oftFee": 0,
+            "oftMinAmount": "0",
+            "oftMaxAmount": "18446744073709551615"
+          },
+          "42161": {
+            "oftFee": 0,
+            "oftMinAmount": "0",
+            "oftMaxAmount": "18446744073709551615"
+          }
         }
       },
       "isAcross": false,
@@ -43490,6 +43754,33 @@
         "bridgeInfo": {
           "1": {
             "tokenAddress": "0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599"
+          }
+        },
+        "feeInfo": {
+          "1": {
+            "oftFee": 0,
+            "oftMinAmount": "0",
+            "oftMaxAmount": "18446744073709551615"
+          },
+          "56": {
+            "oftFee": 0,
+            "oftMinAmount": "0",
+            "oftMaxAmount": "18446744073709551615"
+          },
+          "146": {
+            "oftFee": 0,
+            "oftMinAmount": "0",
+            "oftMaxAmount": "18446744073709551615"
+          },
+          "8453": {
+            "oftFee": 0,
+            "oftMinAmount": "0",
+            "oftMaxAmount": "18446744073709551615"
+          },
+          "80094": {
+            "oftFee": 0,
+            "oftMinAmount": "0",
+            "oftMaxAmount": "18446744073709551615"
           }
         }
       },
