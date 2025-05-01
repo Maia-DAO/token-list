@@ -10,7 +10,7 @@
 */
 
 const fs = require('fs');
-const { CHAIN_KEYS, CHAIN_KEY_TO_ID } = require('../constants');
+const { CHAIN_KEYS, CHAIN_KEY_TO_ID, SUPPORTED_CHAINS } = require('../constants');
 
 function mergeExtensions(ext1 = {}, ext2 = {}) {
     const merged = { ...ext1 };
@@ -88,10 +88,12 @@ async function main() {
         // record bridge mapping: map main token to list of OFTs
         if (appInfo.peggedTo) {
             const mainAddr = appInfo.peggedTo.address;
-            bridgeMap[mainAddr] = bridgeMap[mainAddr] || {};
-            bridgeMap[mainAddr][chainId] = { tokenAddress: address };
-            // Ensure link to pegged token
-            extensions.bridgeInfo = {[CHAIN_KEY_TO_ID[appInfo.peggedTo.chainName]]: { tokenAddress: appInfo.peggedTo.address }};
+            bridgeMap[mainAddr + appInfo.peggedTo.chainName] = bridgeMap[mainAddr + appInfo.peggedTo.chainName] || {};
+            bridgeMap[mainAddr + appInfo.peggedTo.chainName][chainId] = { tokenAddress: address };
+            // Ensure link to pegged token when possible
+            if (SUPPORTED_CHAINS.includes(appInfo.peggedTo.chainName)) {
+                extensions.bridgeInfo = { [CHAIN_KEY_TO_ID[appInfo.peggedTo.chainName]]: { tokenAddress: appInfo.peggedTo.address } };
+            }
         }
 
         // assemble result
@@ -110,7 +112,7 @@ async function main() {
     // attach bridgeInfo to main tokens in results
     for (const res of results) {
         const mainExtensions = res.extensions || {};
-        const bridgeInfo = bridgeMap[res.address.toLowerCase()];
+        const bridgeInfo = bridgeMap[res.address.toLowerCase() + res.chainKey];
         if (bridgeInfo) {
             res.extensions = mergeExtensions(mainExtensions, { bridgeInfo });
         }
