@@ -2,29 +2,14 @@ const fs = require('fs').promises;
 const path = require('path');
 const { getCoinLogo } = require('./getCoinLogo')
 
+// TODO: Add arbitrary Uniswap Token List support
+
 // ---------------------------------------------------------------------
 // Normalization functions for tokens to the unified format
 // ---------------------------------------------------------------------
 
-function mergeTokenData(existing, incoming, isUlysses = false) {
-    // We use Ulysses format if the token is from Ulysses.
-    if (isUlysses) {
-        const { address: addressIncoming, ...restIncoming } = existing
-        const { address: addressExisting, ...restExisting } = incoming
-
-        return {
-            ...restIncoming,
-            ...restExisting,
-            name: incoming.name,
-            symbol: incoming.symbol,
-            isAcross: existing.isAcross || incoming.isAcross,
-            isOFT: existing.isOFT || incoming.isOFT,
-            logoURI: incoming.logoURI || existing.logoURI,
-            extensions: mergeExtensions(existing.extensions, incoming.extensions)
-        }
-    }
-
-    return {
+function mergeTokenData(existing, incoming) {
+    const merged = {
         ...existing,
         ...incoming,
         name: incoming.name,
@@ -34,6 +19,67 @@ function mergeTokenData(existing, incoming, isUlysses = false) {
         logoURI: incoming.logoURI || existing.logoURI,
         extensions: mergeExtensions(existing.extensions, incoming.extensions)
     };
+
+    return orderAttributes(merged);
+}
+
+function mergeTokenDataUlysses(existing, incoming) {
+    // We use Ulysses format if the token is from Ulysses.
+    const { address: addressIncoming, ...restIncoming } = existing;
+    const { address: addressExisting, ...restExisting } = incoming;
+
+    const merged = {
+        ...restIncoming,
+        ...restExisting,
+        name: incoming.name,
+        symbol: incoming.symbol,
+        isAcross: existing.isAcross || incoming.isAcross,
+        isOFT: existing.isOFT || incoming.isOFT,
+        logoURI: incoming.logoURI || existing.logoURI,
+        extensions: mergeExtensions(existing.extensions, incoming.extensions)
+    };
+
+    return orderAttributes(merged);
+}
+
+// Function to order attributes consistently. 
+function orderAttributes(token) {
+    const ordered = {};
+    const keysOrder = [
+        "chainId",
+        "address",
+        "globalAddress",
+        "localAddress",
+        "underlyingAddress",
+        "name",
+        "symbol",
+        "decimals",
+        "logoURI",
+        "tags",
+        "extensions",
+        "isAcross",
+        "isOFT",
+        "oftAdapter",
+        "oftVersion", 
+        "endpointVersion",
+        "endpointId",
+        "oftSharedDecimals"
+    ];
+
+    keysOrder.forEach(key => {
+        if (key in token) {
+            ordered[key] = token[key];
+        }
+    });
+
+    // Add any remaining keys that are not in the predefined order.
+    Object.keys(token).forEach(key => {
+        if (!ordered.hasOwnProperty(key)) {
+            ordered[key] = token[key];
+        }
+    });
+
+    return ordered;
 }
 
 function mergeExtensions(ext1 = {}, ext2 = {}) {
@@ -103,7 +149,7 @@ async function normalizeAcrossToken(data) {
  * Produces one token entry in the new unified format.
  */
 function normalizeStargateToken(token) {
-    return [{
+    const result = {
         chainId: token.chainId,
         address: token.address,
         name: token.name,
@@ -113,8 +159,30 @@ function normalizeStargateToken(token) {
         tags: [],
         extensions: token.extensions ? token.extensions : {},
         isAcross: false,
-        isOFT: true  // from stargate list
-    }];
+        isOFT: true,  // from stargate list
+    };
+
+    if (token.oftAdapter) {
+        result.oftAdapter = token.oftAdapter;
+    }
+
+    if (token.oftVersion) {
+        result.oftVersion = token.oftVersion;
+    }
+
+    if (token.endpointVersion) {
+        result.endpointVersion = token.endpointVersion;
+    }
+
+    if (token.endpointId) {
+        result.endpointId = token.endpointId;
+    }
+
+    if (token.oftSharedDecimals) {
+        result.oftSharedDecimals = token.oftSharedDecimals;
+    }
+
+    return [result];
 }
 
 /**
@@ -147,7 +215,7 @@ async function main() {
         const acrossData = JSON.parse(acrossDataRaw);
 
         // 2. Filtered stargate tokens from filteredStargateTokens.json 
-        const stargateRaw = await fs.readFile(path.join('output', 'filteredStargateTokens.json'), 'utf8');
+        const stargateRaw = await fs.readFile(path.join('output', 'usableStargateTokensEnhanced.json'), 'utf8');
         const stargateTokens = JSON.parse(stargateRaw);
 
         // 3. Ulysses tokens from ulysses.json
@@ -261,7 +329,7 @@ async function main() {
                 const key = token.symbol.toUpperCase() + "_" + token.chainId;
                 if (normalizedMap[key]) {
                     const existing = normalizedMap[key];
-                    normalizedMap[key] = mergeTokenData(existing, token, true);
+                    normalizedMap[key] = mergeTokenDataUlysses(existing, token);
                 } else {
                     normalizedMap[key] = token;
                 }

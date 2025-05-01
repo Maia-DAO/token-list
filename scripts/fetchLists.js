@@ -1,6 +1,6 @@
+require('dotenv').config();
 const fs = require('fs').promises;
 const { TOKEN_SYMBOLS_MAP } = require('@across-protocol/constants')
-
 
 /**
  * Fetch token data from a given URL and write it to an output file.
@@ -42,6 +42,7 @@ async function writeAcrossMapping() {
 (async () => {
   // Active Lists
   await fetchList('https://stargate.finance/api/tokens', 'stargate');
+  await fetchList(process.env.STARGATE_API, 'ofts');
   await fetchList('https://raw.githubusercontent.com/Maia-DAO/token-list-v2/main/default-tokenlist.json', 'ulysses');
   await fetchList('https://tokens.uniswap.org', 'uniswap');
   await writeAcrossMapping();

@@ -6,13 +6,16 @@
   "description": "Fetch and manage token lists",
   "scripts": {
     "fetch": "node scripts/fetchLists.js",
-    "filter": "node scripts/filterStargateTokens.js && node scripts/filterAcrossTokens.js",
+    "filter": "node scripts/filterStargateTokens.js && node scripts/filterAcrossTokens.js && node scripts/addOFTAdapters.js && node scripts/queryOFTFees.js",
     "merge": "node scripts/mergeActiveLists.js",
     "merge-others": "node scripts/mergeInactiveLists.js",
-    "all": "yarn fetch && yarn filter && yarn merge && yarn merge-others"
+    "all": "yarn fetch && yarn filter && yarn merge && yarn merge-others",
+    "dev": "yarn filter && yarn merge && yarn merge-others"
   },
   "dependencies": {
     "@across-protocol/constants": "^3.1.52",
+    "dotenv": "^16.5.0",
+    "ethers": "^6.13.7",
     "maia-core-sdk": "^1.0.59",
     "node-fetch": "^3.3.2"
   }
