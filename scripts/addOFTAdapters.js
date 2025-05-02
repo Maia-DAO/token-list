@@ -106,6 +106,8 @@ async function main() {
             extensions
         };
 
+        if (tokenInfo.fee) enriched.fee = tokenInfo.fee;
+
         results.push(enriched);
     }
 
