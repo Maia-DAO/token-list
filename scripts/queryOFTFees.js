@@ -2,6 +2,10 @@ require('dotenv').config();
 const fs = require('fs');
 const { ethers } = require('ethers');
 
+const OAPP_ABI = [
+    'function lzEndpoint() view returns (address)',
+];
+
 const OFT_V3_ABI = [
     'function quoteOFT((uint32,bytes32,uint256,uint256,bytes,bytes,bytes)) view returns ((uint256 nativeFee,uint256 lzTokenFee),(int256,string)[],(uint256 sent,uint256 received))'
 ];
@@ -69,7 +73,8 @@ async function main() {
     const ifaceV2 = new ethers.Interface(OFT_V2_ABI);
     for (const src of relevant) {
         for (const dst of relevant) {
-            if (src.address === dst.address || src.symbol !== dst.symbol) continue;
+            if (src.address === dst.address && src.chainId === dst.chainId) continue;
+            if (src.symbol !== dst.symbol) continue;
             const chainKey = src.chainKey;
             const providerUrl = rpcUrls[chainKey];
             if (!providerUrl) continue;
@@ -95,11 +100,67 @@ async function main() {
 
     // Execute multicalls and build fee map
     const tokenFeeMap = {};
+    const minGasCallsByChain = {};
+
+    // Also prepare minDstGas calls: for each src-dst pair
+    for (const src of tokens) {
+        for (const dst of tokens) {
+            // skip self and mismatched symbols if you still need that guard
+            if (src.address === dst.address && src.chainId === dst.chainId) continue;
+            if (src.symbol !== dst.symbol) continue;
+            if (src.oftVersion === 3 || src.endpointVersion === 2) continue;
+
+            const chainKey = src.chainKey;
+            const providerUrl = rpcUrls[chainKey];
+            if (!providerUrl) continue;
+
+            // encode the gas lookup
+            const minGasIface = new ethers.Interface([
+                'function minDstGasLookup(uint16 dstChainId,uint16 type) view returns (uint)'
+            ]);
+            const callData = minGasIface.encodeFunctionData(
+                'minDstGasLookup',
+                [dst.endpointId, 0]
+            );
+
+            // initialize array if needed
+            minGasCallsByChain[chainKey] ||= [];
+
+            // push the new call
+            minGasCallsByChain[chainKey].push({
+                src,
+                dst,
+                callData,
+                providerUrl
+            });
+        }
+    }
+
+    const isOApp = {};
+    const isOAppCallsByChain = {};
+    const oAppInterface = new ethers.Interface(OAPP_ABI);
+
+    // Check if the source is an OApp
+    for (const src of tokens) {
+        const chainKey = src.chainKey;
+        const providerUrl = rpcUrls[chainKey];
+        if (!providerUrl) continue;
+
+        const callData = oAppInterface.encodeFunctionData('lzEndpoint', []);
+
+        isOAppCallsByChain[chainKey] ||= [];
+        isOAppCallsByChain[chainKey].push({ src, callData, providerUrl });
+    }
+
     const mcIface = new ethers.Interface(MULTICALL3_ABI);
     for (const [chainKey, calls] of Object.entries(callsByChain)) {
         const provider = new ethers.JsonRpcProvider(calls[0].providerUrl);
         const mcContract = new ethers.Contract(MULTICALL3_ADDRESS, MULTICALL3_ABI, provider);
-        const aggregateCalls = calls.map(c => ({ target: c.src.oftAdapter, callData: c.callData }));
+        const feeCalls = calls.map(c => ({ target: c.src.oftAdapter, callData: c.callData }));
+        const gasCalls = minGasCallsByChain[chainKey].map(c => ({ target: c.src.oftAdapter, callData: c.callData }));
+
+        // batch both fee and gas calls together
+        const aggregateCalls = feeCalls.concat(gasCalls);
 
         console.log(`==> Aggregating on ${chainKey}…`);
         // Use tryAggregate to allow individual call failures without reverting batch
@@ -114,7 +175,12 @@ async function main() {
                 return data;
             });
 
-        returnData.forEach((hex, idx) => {
+        // split results
+        const feeData = returnData.slice(0, feeCalls.length);
+        const gasData = returnData.slice(feeCalls.length);
+
+        // process fee results
+        feeData.forEach((hex, idx) => {
             const { src, dst } = calls[idx];
             // Skip empty return (call failed)
             if (!hex || hex === '0x') {
@@ -145,10 +211,92 @@ async function main() {
                 if (feeBips > 0) tokenFeeMap[src.address + src.chainKey][dst.chainId] = { oftFee: parseInt(feeBips) };
             }
         });
+
+        // process minDstGas results
+        gasData.forEach((hex, idx) => {
+            const { src, dst } = minGasCallsByChain[chainKey][idx];
+
+            // Skip empty return (call failed)
+            if (!hex || hex === '0x') {
+                console.warn(`Empty minDstGas return data for ${src.oftAdapter} from ${src.chainKey} to ${dst.chainKey}, default values being used.`);
+            }
+
+            let gasVal = dst.chainId === 42161 ? 2000000 : 200000;
+            try {
+                [gasVal] = new ethers.Interface([
+                    'function minDstGasLookup(uint16 dstChainId,uint16 type) view returns (uint)'
+                ]).decodeFunctionResult('minDstGasLookup', hex);
+            } catch {
+                console.warn(`Failed to decode minDstGas for ${src.symbol} from ${src.chainKey} to ${dst.chainKey}, default values being used:`, hex);
+            }
+            // attach gas to feeInfo
+            tokenFeeMap[src.address + src.chainKey] ||= {};
+            tokenFeeMap[src.address + src.chainKey][dst.chainId] = {
+                ...tokenFeeMap[src.address + src.chainKey][dst.chainId],
+                minDstGas: parseInt(gasVal)
+            };
+        });
+
+        // process isOApp results
+        const oCalls = isOAppCallsByChain[chainKey] || [];
+        if (oCalls.length) {
+            const calls = oCalls.map(c => ({ target: c.src.oftAdapter, callData: c.callData }));
+            console.log(`==> Checking isOApp on ${chainKey}…`);
+            const results = (await mcContract.tryAggregate(false, calls))
+                .map(r => r[1] || '0x');
+
+            results.forEach((hex, idx) => {
+                let isOApp = {}
+
+                const src = oCalls[idx].src;
+                if (!hex || hex === '0x') {
+                    console.warn(`Empty lzEndpoint return for ${src.chainKey} - ${src.oftAdapter}`);
+                    isOApp[src.address] = false;
+                }
+                try {
+                    // No need to decode if already set as false due to no return
+                    if (hex && hex !== '0x') {
+                        const [endpointAddr] = oAppInterface.decodeFunctionResult('lzEndpoint', hex);
+                        isOApp[src.address] = endpointAddr && endpointAddr !== '' && endpointAddr !== '0x';
+                    }
+                    // If it is not an OApp, remove OFT specific fields
+                    if (!isOApp[src.address]) {
+                        console.warn(`Not an OApp for ${src.symbol}: ${src.chainKey} - ${src.oftAdapter}`);
+                        // Update tokens to reflect it is not an OFT
+                        const tokenIndex = tokens.findIndex(t => t.chainKey === src.chainKey && t.address === src.address);
+                        if (tokenIndex === -1) {
+                            console.warn(`Token not found for ${src.address} on ${src.chainKey}`);
+                        } else {
+                            console.warn(`Removing OFT specific fields for ${src.symbol}: ${src.chainKey} - ${src.oftAdapter}`);
+                            // Remove OFT specific fields
+                            if (tokens[tokenIndex]?.oftVersion) delete tokens[tokenIndex].oftVersion;
+                            if (tokens[tokenIndex]?.endpointVersion) delete tokens[tokenIndex].endpointVersion;
+                            if (tokens[tokenIndex]?.oftAdapter) delete tokens[tokenIndex].oftAdapter;
+                            if (tokens[tokenIndex]?.endpointId) delete tokens[tokenIndex].endpointId;
+                            if (tokens[tokenIndex]?.oftSharedDecimals) delete tokens[tokenIndex].oftSharedDecimals;
+                            if (tokens[tokenIndex]?.extensions) {
+                                if (tokens[tokenIndex]?.extensions?.feeInfo) delete tokens[tokenIndex].extensions?.feeInfo;
+                            }
+                            if (tokens[tokenIndex]?.isBridgeable) delete tokens[tokenIndex].isBridgeable;
+                            // Set isOFT to false
+                            tokens[tokenIndex].isOFT = false;
+                        }
+                    }
+                } catch (e) {
+                    console.warn(`Failed to decode lzEndpoint for ${src.chainKey}:`, e.message);
+                }
+            });
+        }
     }
 
     // Merge and validate extensions
     const enhanced = tokens.map(t => {
+
+        // Skip tokens that are not OFT
+        if (!t.isOFT) {
+            return t;
+        }
+
         const existingExt = t.extensions || undefined;
         let bridgeInfo = existingExt.bridgeInfo || undefined;
         let feeInfo = tokenFeeMap[t.address + t.chainKey] || undefined;
@@ -189,8 +337,6 @@ async function main() {
             delete token.extensions.bridgeInfo;
         }
     }
-
-
 
     fs.writeFileSync(OUT_FILE, JSON.stringify(enhanced, null, 2));
     console.log(`Enhanced tokens saved to ${OUT_FILE}`);

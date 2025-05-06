@@ -60,7 +60,7 @@ function orderAttributes(token) {
         "isAcross",
         "isOFT",
         "oftAdapter",
-        "oftVersion", 
+        "oftVersion",
         "endpointVersion",
         "endpointId",
         "oftSharedDecimals"
@@ -159,7 +159,7 @@ function normalizeStargateToken(token) {
         tags: [],
         extensions: token.extensions ? token.extensions : {},
         isAcross: false,
-        isOFT: true,  // from stargate list
+        isOFT: token.isOFT,  // not all tokens in stargate list are OFT
     };
 
     if (token.oftAdapter) {
