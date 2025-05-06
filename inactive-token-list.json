@@ -1,8 +1,8 @@
 {
   "name": "Hermes Omnichain Inactive Token List",
-  "timestamp": "1746528302",
+  "timestamp": "1746540633",
   "version": {
-    "major": 7,
+    "major": 8,
     "minor": 0,
     "patch": 0
   },
@@ -1560,9 +1560,6 @@
       "extensions": {
         "coingeckoId": "balancer",
         "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0xba100000625a3754423978a60c9317c58a424e3D"
-          },
           "130": {
             "tokenAddress": "0x01625E26274Ed828Ac1d47694c97221b34a8ADdF"
           },
@@ -1577,6 +1574,11 @@
           },
           "43114": {
             "tokenAddress": "0xE15bCB9E0EA69e6aB9FA080c4c4A5632896298C3"
+          }
+        },
+        "feeInfo": {
+          "43114": {
+            "minDstGas": 100000
           }
         }
       },
@@ -3793,9 +3795,6 @@
       "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xD533a949740bb3306d119CC777fa900bA034cd52/logo.png",
       "extensions": {
         "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0xD533a949740bb3306d119CC777fa900bA034cd52"
-          },
           "130": {
             "tokenAddress": "0xAC73671a1762FE835208Fb93b7aE7490d1c2cCb3"
           },
@@ -7648,11 +7647,13 @@
       "logoURI": "https://assets.coingecko.com/coins/images/21271/large/BednjMw.png?1638857799",
       "extensions": {
         "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0x83E9F223e1edb3486F876EE888d76bFba26c475A"
-          },
           "137": {
             "tokenAddress": "0xAfF41DA975501E5b71848C975834341777D1a473"
+          }
+        },
+        "feeInfo": {
+          "137": {
+            "minDstGas": 110000
           }
         }
       },
@@ -17721,11 +17722,13 @@
       "logoURI": "https://assets.coingecko.com/coins/images/20674/large/unix.png?1663499268",
       "extensions": {
         "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0xDDD6A0ECc3c6F6C102E5eA3d8Af7B801d1a77aC8"
-          },
           "43114": {
             "tokenAddress": "0x6f97D3F120fBbDaacF1c9da61a8aD126b7426861"
+          }
+        },
+        "feeInfo": {
+          "43114": {
+            "minDstGas": 110000
           }
         }
       },
@@ -18727,11 +18730,13 @@
       "logoURI": "https://assets.coingecko.com/coins/images/28903/large/WWlogoTransparent_200x200.png?1675241564",
       "extensions": {
         "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0x6BC08509B36A98E829dFfAD49Fde5e412645d0a3"
-          },
           "8453": {
             "tokenAddress": "0xB3a9bd4861454bA94931ebFF410c3D828525dCe2"
+          }
+        },
+        "feeInfo": {
+          "8453": {
+            "minDstGas": 200000
           }
         }
       },
@@ -23101,6 +23106,17 @@
           "1088": {
             "tokenAddress": "0x0000000000000000000000000000000000000000"
           }
+        },
+        "feeInfo": {
+          "1": {
+            "minDstGas": 0
+          },
+          "1088": {
+            "minDstGas": 100000
+          },
+          "43114": {
+            "minDstGas": 100000
+          }
         }
       },
       "isAcross": false,
@@ -23134,6 +23150,26 @@
         "bridgeInfo": {
           "1": {
             "tokenAddress": "0x99D8a9C45b2ecA8864373A26D1459e3Dff1e17F3"
+          }
+        },
+        "feeInfo": {
+          "1": {
+            "minDstGas": 100000
+          },
+          "10": {
+            "minDstGas": 100000
+          },
+          "137": {
+            "minDstGas": 100000
+          },
+          "8453": {
+            "minDstGas": 100000
+          },
+          "42161": {
+            "minDstGas": 100000
+          },
+          "43114": {
+            "minDstGas": 100000
           }
         }
       },
@@ -31056,6 +31092,26 @@
         "bridgeInfo": {
           "1": {
             "tokenAddress": "0x99D8a9C45b2ecA8864373A26D1459e3Dff1e17F3"
+          }
+        },
+        "feeInfo": {
+          "1": {
+            "minDstGas": 100000
+          },
+          "10": {
+            "minDstGas": 100000
+          },
+          "56": {
+            "minDstGas": 100000
+          },
+          "8453": {
+            "minDstGas": 100000
+          },
+          "42161": {
+            "minDstGas": 100000
+          },
+          "43114": {
+            "minDstGas": 100000
           }
         }
       },
@@ -43077,6 +43133,26 @@
         "bridgeInfo": {
           "1": {
             "tokenAddress": "0x99D8a9C45b2ecA8864373A26D1459e3Dff1e17F3"
+          }
+        },
+        "feeInfo": {
+          "1": {
+            "minDstGas": 100000
+          },
+          "10": {
+            "minDstGas": 100000
+          },
+          "56": {
+            "minDstGas": 100000
+          },
+          "137": {
+            "minDstGas": 100000
+          },
+          "8453": {
+            "minDstGas": 100000
+          },
+          "42161": {
+            "minDstGas": 100000
           }
         }
       },

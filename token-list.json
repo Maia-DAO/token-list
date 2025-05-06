@@ -1,8 +1,8 @@
 {
   "name": "Hermes Omnichain Token List",
-  "timestamp": "1746528242",
+  "timestamp": "1746540573",
   "version": {
-    "major": 26,
+    "major": 27,
     "minor": 0,
     "patch": 0
   },
@@ -170,9 +170,6 @@
       "extensions": {
         "coingeckoId": "balancer",
         "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0xba100000625a3754423978a60c9317c58a424e3D"
-          },
           "130": {
             "tokenAddress": "0x01625E26274Ed828Ac1d47694c97221b34a8ADdF"
           },
@@ -187,6 +184,11 @@
           },
           "43114": {
             "tokenAddress": "0xE15bCB9E0EA69e6aB9FA080c4c4A5632896298C3"
+          }
+        },
+        "feeInfo": {
+          "43114": {
+            "minDstGas": 100000
           }
         }
       },
@@ -286,9 +288,6 @@
       "extensions": {
         "coingeckoId": "dai",
         "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0x6B175474E89094C44Da98b954EedeAC495271d0F"
-          },
           "10": {
             "tokenAddress": "0xDA10009cBd5D07dd0CeCc66161FC93D7c9000da1"
           },
@@ -306,6 +305,14 @@
           },
           "43114": {
             "tokenAddress": "0xd586E7F844cEa2F87f50152665BCbc2C279D8d70"
+          }
+        },
+        "feeInfo": {
+          "10": {
+            "minDstGas": 0
+          },
+          "137": {
+            "minDstGas": 0
           }
         }
       },
@@ -958,9 +965,6 @@
       "extensions": {
         "coingeckoId": "usd-coin",
         "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48"
-          },
           "10": {
             "tokenAddress": "0x7F5c764cBc14f9669B88837ca1490cCa17c31607"
           },
@@ -993,6 +997,26 @@
           },
           "80094": {
             "tokenAddress": "0x549943e04f40284185054145c6E4e9568C1D3241"
+          }
+        },
+        "feeInfo": {
+          "10": {
+            "minDstGas": 0
+          },
+          "56": {
+            "minDstGas": 0
+          },
+          "137": {
+            "minDstGas": 0
+          },
+          "8453": {
+            "minDstGas": 0
+          },
+          "42161": {
+            "minDstGas": 0
+          },
+          "43114": {
+            "minDstGas": 0
           }
         }
       },
@@ -1484,9 +1508,6 @@
       "extensions": {
         "coingeckoId": "weth",
         "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
-          },
           "10": {
             "tokenAddress": "0x4200000000000000000000000000000000000006"
           },
@@ -1516,6 +1537,20 @@
           },
           "80094": {
             "tokenAddress": "0x2F6F07CDcf3588944Bf4C42aC74ff24bF56e7590"
+          }
+        },
+        "feeInfo": {
+          "10": {
+            "minDstGas": 0
+          },
+          "1088": {
+            "minDstGas": 0
+          },
+          "42161": {
+            "minDstGas": 0
+          },
+          "80094": {
+            "minDstGas": 0
           }
         }
       },
@@ -1898,6 +1933,26 @@
           "1": {
             "tokenAddress": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48"
           }
+        },
+        "feeInfo": {
+          "1": {
+            "minDstGas": 0
+          },
+          "10": {
+            "minDstGas": 0
+          },
+          "137": {
+            "minDstGas": 0
+          },
+          "8453": {
+            "minDstGas": 0
+          },
+          "42161": {
+            "minDstGas": 0
+          },
+          "43114": {
+            "minDstGas": 0
+          }
         }
       },
       "oftAdapter": "0x8d1ebcda83fd905b597bf6d3294766b64ecf2aa7",
@@ -1959,6 +2014,23 @@
         "bridgeInfo": {
           "1": {
             "tokenAddress": "0xdAC17F958D2ee523a2206206994597C13D831ec7"
+          }
+        },
+        "feeInfo": {
+          "1": {
+            "minDstGas": 0
+          },
+          "10": {
+            "minDstGas": 0
+          },
+          "137": {
+            "minDstGas": 0
+          },
+          "1088": {
+            "minDstGas": 0
+          },
+          "43114": {
+            "minDstGas": 0
           }
         }
       },
@@ -2099,7 +2171,12 @@
       "logoURI": "https://s2.coinmarketcap.com/static/img/coins/128x128/13244.png",
       "tags": [],
       "extensions": {
-        "coingeckoId": "beethoven-x"
+        "coingeckoId": "beethoven-x",
+        "feeInfo": {
+          "146": {
+            "minDstGas": 110000
+          }
+        }
       },
       "isAcross": false,
       "oftAdapter": "0xb4Bc46bc6cB217B59ea8F4530BaE26Bf69F677f0",
@@ -2118,7 +2195,13 @@
       "decimals": 18,
       "logoURI": "https://beethoven-assets.s3.eu-central-1.amazonaws.com/token-BEETS-sonic.png",
       "tags": [],
-      "extensions": {},
+      "extensions": {
+        "feeInfo": {
+          "10": {
+            "minDstGas": 110000
+          }
+        }
+      },
       "oftAdapter": "0x1E5fe95fB90ac0530F581C617272cd0864626795",
       "endpointId": 332,
       "oftSharedDecimals": 6
@@ -2227,14 +2310,19 @@
       "tags": [],
       "extensions": {
         "bridgeInfo": {
-          "56": {
-            "tokenAddress": "0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c"
-          },
           "42161": {
             "tokenAddress": "0xa9004A5421372E1D83fB1f85b0fc986c912f91f3"
           },
           "43114": {
             "tokenAddress": "0xa9004A5421372E1D83fB1f85b0fc986c912f91f3"
+          }
+        },
+        "feeInfo": {
+          "42161": {
+            "minDstGas": 2000000
+          },
+          "43114": {
+            "minDstGas": 100000
           }
         }
       },
@@ -2255,6 +2343,14 @@
         "bridgeInfo": {
           "56": {
             "tokenAddress": "0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c"
+          }
+        },
+        "feeInfo": {
+          "56": {
+            "minDstGas": 100000
+          },
+          "42161": {
+            "minDstGas": 2000000
           }
         }
       },
@@ -2312,9 +2408,6 @@
       "tags": [],
       "extensions": {
         "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0xD533a949740bb3306d119CC777fa900bA034cd52"
-          },
           "130": {
             "tokenAddress": "0xAC73671a1762FE835208Fb93b7aE7490d1c2cCb3"
           },
@@ -2471,13 +2564,7 @@
       "symbol": "crvUSD",
       "logoURI": "https://s2.coinmarketcap.com/static/img/coins/128x128/24927.png",
       "tags": [],
-      "extensions": {
-        "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0xf939E0A03FB07F59A73314E73794Be0E57ac1b4E"
-          }
-        }
-      },
+      "extensions": {},
       "isAcross": false,
       "oftAdapter": "0xaa798bf5ec09b6e3bc059ea4d36d4ca53e063ef7",
       "oftVersion": 2,
@@ -2494,9 +2581,6 @@
       "tags": [],
       "extensions": {
         "bridgeInfo": {
-          "56": {
-            "tokenAddress": "0x0b15Ddf19D47E6a86A56148fb4aFFFc6929BcB89"
-          },
           "137": {
             "tokenAddress": "0x8255775bea425f910044ddFb7681D6d87fD5489d"
           },
@@ -2505,6 +2589,17 @@
           },
           "42161": {
             "tokenAddress": "0x6Db8b088c4d41d622B44CD81B900bA690f2d496C"
+          }
+        },
+        "feeInfo": {
+          "137": {
+            "minDstGas": 110000
+          },
+          "8453": {
+            "minDstGas": 110000
+          },
+          "42161": {
+            "minDstGas": 1000000
           }
         }
       },
@@ -2527,6 +2622,17 @@
           "56": {
             "tokenAddress": "0x0b15ddf19d47e6a86a56148fb4afffc6929bcb89"
           }
+        },
+        "feeInfo": {
+          "56": {
+            "minDstGas": 110000
+          },
+          "8453": {
+            "minDstGas": 110000
+          },
+          "42161": {
+            "minDstGas": 1000000
+          }
         }
       },
       "isAcross": false,
@@ -2546,6 +2652,17 @@
         "bridgeInfo": {
           "56": {
             "tokenAddress": "0x0b15ddf19d47e6a86a56148fb4afffc6929bcb89"
+          }
+        },
+        "feeInfo": {
+          "56": {
+            "minDstGas": 110000
+          },
+          "137": {
+            "minDstGas": 110000
+          },
+          "42161": {
+            "minDstGas": 1000000
           }
         }
       },
@@ -2614,6 +2731,17 @@
           "42161": {
             "tokenAddress": "0x4591DBfF62656E7859Afe5e45f6f47D3669fBB28"
           }
+        },
+        "feeInfo": {
+          "10": {
+            "minDstGas": 110000
+          },
+          "8453": {
+            "minDstGas": 110000
+          },
+          "42161": {
+            "minDstGas": 1000000
+          }
         }
       },
       "isAcross": false,
@@ -2633,6 +2761,17 @@
         "bridgeInfo": {
           "1": {
             "tokenAddress": "0x4591dbff62656e7859afe5e45f6f47d3669fbb28"
+          }
+        },
+        "feeInfo": {
+          "1": {
+            "minDstGas": 110000
+          },
+          "8453": {
+            "minDstGas": 110000
+          },
+          "42161": {
+            "minDstGas": 1000000
           }
         }
       },
@@ -2654,6 +2793,17 @@
           "1": {
             "tokenAddress": "0x4591dbff62656e7859afe5e45f6f47d3669fbb28"
           }
+        },
+        "feeInfo": {
+          "1": {
+            "minDstGas": 110000
+          },
+          "10": {
+            "minDstGas": 110000
+          },
+          "42161": {
+            "minDstGas": 1000000
+          }
         }
       },
       "isAcross": false,
@@ -2674,6 +2824,11 @@
         "bridgeInfo": {
           "1": {
             "tokenAddress": "0xba100000625a3754423978a60c9317c58a424e3d"
+          }
+        },
+        "feeInfo": {
+          "1": {
+            "minDstGas": 100000
           }
         }
       },
@@ -2891,6 +3046,11 @@
           "42161": {
             "tokenAddress": "0xaf5db6e1cc585ca312e8c8f7c499033590cf5c98"
           }
+        },
+        "feeInfo": {
+          "42161": {
+            "minDstGas": 2000000
+          }
         }
       },
       "isAcross": false,
@@ -2911,11 +3071,16 @@
           "1": {
             "tokenAddress": "0x152649eA73beAb28c5b49B26eb48f7EAD6d4c898"
           },
-          "56": {
-            "tokenAddress": "0x0E09FaBB73Bd3Ade0a17ECC321fD13a19e81cE82"
-          },
           "42161": {
             "tokenAddress": "0x1b896893dfc86bb67Cf57767298b9073D2c1bA2c"
+          }
+        },
+        "feeInfo": {
+          "1": {
+            "minDstGas": 200000
+          },
+          "42161": {
+            "minDstGas": 200000
           }
         }
       },
@@ -2940,6 +3105,14 @@
           "56": {
             "tokenAddress": "0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82"
           }
+        },
+        "feeInfo": {
+          "56": {
+            "minDstGas": 200000
+          },
+          "42161": {
+            "minDstGas": 200000
+          }
         }
       },
       "isAcross": false,
@@ -2957,9 +3130,6 @@
       "tags": [],
       "extensions": {
         "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0x94025780a1aB58868D9B2dBBB775f44b32e8E6e5"
-          },
           "56": {
             "tokenAddress": "0x94025780a1aB58868D9B2dBBB775f44b32e8E6e5"
           },
@@ -2971,6 +3141,20 @@
           },
           "43114": {
             "tokenAddress": "0x94025780a1aB58868D9B2dBBB775f44b32e8E6e5"
+          }
+        },
+        "feeInfo": {
+          "56": {
+            "minDstGas": 110000
+          },
+          "137": {
+            "minDstGas": 110000
+          },
+          "42161": {
+            "minDstGas": 2000000
+          },
+          "43114": {
+            "minDstGas": 110000
           }
         }
       },
@@ -2993,6 +3177,20 @@
           "1": {
             "tokenAddress": "0x94025780a1ab58868d9b2dbbb775f44b32e8e6e5"
           }
+        },
+        "feeInfo": {
+          "1": {
+            "minDstGas": 110000
+          },
+          "137": {
+            "minDstGas": 110000
+          },
+          "42161": {
+            "minDstGas": 2000000
+          },
+          "43114": {
+            "minDstGas": 110000
+          }
         }
       },
       "isAcross": false,
@@ -3013,6 +3211,20 @@
         "bridgeInfo": {
           "1": {
             "tokenAddress": "0x94025780a1ab58868d9b2dbbb775f44b32e8e6e5"
+          }
+        },
+        "feeInfo": {
+          "1": {
+            "minDstGas": 110000
+          },
+          "56": {
+            "minDstGas": 110000
+          },
+          "137": {
+            "minDstGas": 110000
+          },
+          "42161": {
+            "minDstGas": 2000000
           }
         }
       },
@@ -3035,6 +3247,20 @@
           "1": {
             "tokenAddress": "0x94025780a1ab58868d9b2dbbb775f44b32e8e6e5"
           }
+        },
+        "feeInfo": {
+          "1": {
+            "minDstGas": 110000
+          },
+          "56": {
+            "minDstGas": 110000
+          },
+          "42161": {
+            "minDstGas": 2000000
+          },
+          "43114": {
+            "minDstGas": 110000
+          }
         }
       },
       "isAcross": false,
@@ -3053,11 +3279,13 @@
       "tags": [],
       "extensions": {
         "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0xf203Ca1769ca8e9e8FE1DA9D147DB68B6c919817"
-          },
           "56": {
             "tokenAddress": "0x52242cbAb41e290E9E17CCC50Cc437bB60020a9d"
+          }
+        },
+        "feeInfo": {
+          "56": {
+            "minDstGas": 100000
           }
         }
       },
@@ -3081,6 +3309,11 @@
           "1": {
             "tokenAddress": "0xf203ca1769ca8e9e8fe1da9d147db68b6c919817"
           }
+        },
+        "feeInfo": {
+          "1": {
+            "minDstGas": 100000
+          }
         }
       },
       "isAcross": false,
@@ -3098,11 +3331,13 @@
       "tags": [],
       "extensions": {
         "bridgeInfo": {
-          "56": {
-            "tokenAddress": "0xB92c5e0135A510A4a3A8803F143d2Cb085BBAf73"
-          },
           "1088": {
             "tokenAddress": "0x52b4FC2CA0D9b194769AB9a3dC36c2C6831f2520"
+          }
+        },
+        "feeInfo": {
+          "1088": {
+            "minDstGas": 140000
           }
         }
       },
@@ -3125,6 +3360,11 @@
           "56": {
             "tokenAddress": "0xb92c5e0135a510a4a3a8803f143d2cb085bbaf73"
           }
+        },
+        "feeInfo": {
+          "56": {
+            "minDstGas": 140000
+          }
         }
       },
       "isAcross": false,
@@ -3146,6 +3386,14 @@
           "56": {
             "tokenAddress": "0x477bc8d23c634c154061869478bce96be6045d12"
           }
+        },
+        "feeInfo": {
+          "56": {
+            "minDstGas": 110000
+          },
+          "42161": {
+            "minDstGas": 1000000
+          }
         }
       },
       "isAcross": false,
@@ -3166,11 +3414,16 @@
           "1": {
             "tokenAddress": "0x560363BdA52BC6A44CA6C8c9B4a5FadbDa32fa60"
           },
-          "56": {
-            "tokenAddress": "0x477bC8d23c634C154061869478bce96BE6045D12"
-          },
           "42161": {
             "tokenAddress": "0x560363BdA52BC6A44CA6C8c9B4a5FadbDa32fa60"
+          }
+        },
+        "feeInfo": {
+          "1": {
+            "minDstGas": 110000
+          },
+          "42161": {
+            "minDstGas": 1000000
           }
         }
       },
@@ -3251,11 +3504,13 @@
       "tags": [],
       "extensions": {
         "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0xf951E335afb289353dc249e82926178EaC7DEd78"
-          },
           "42161": {
             "tokenAddress": "0xbc011A12Da28e8F0f528d9eE5E7039E22F91cf18"
+          }
+        },
+        "feeInfo": {
+          "42161": {
+            "minDstGas": 200000
           }
         }
       },
@@ -3313,6 +3568,23 @@
           "43114": {
             "tokenAddress": "0x788D86E00ab31Db859C3d6b80d5a9375801d7f2A"
           }
+        },
+        "feeInfo": {
+          "10": {
+            "minDstGas": 100000
+          },
+          "56": {
+            "minDstGas": 100000
+          },
+          "137": {
+            "minDstGas": 100000
+          },
+          "42161": {
+            "minDstGas": 2000000
+          },
+          "43114": {
+            "minDstGas": 100000
+          }
         }
       },
       "isAcross": false,
@@ -3332,6 +3604,23 @@
         "bridgeInfo": {
           "1": {
             "tokenAddress": "0x788d86e00ab31db859c3d6b80d5a9375801d7f2a"
+          }
+        },
+        "feeInfo": {
+          "1": {
+            "minDstGas": 100000
+          },
+          "10": {
+            "minDstGas": 100000
+          },
+          "137": {
+            "minDstGas": 100000
+          },
+          "42161": {
+            "minDstGas": 2000000
+          },
+          "43114": {
+            "minDstGas": 100000
           }
         }
       },
@@ -3353,6 +3642,23 @@
           "1": {
             "tokenAddress": "0x788d86e00ab31db859c3d6b80d5a9375801d7f2a"
           }
+        },
+        "feeInfo": {
+          "1": {
+            "minDstGas": 100000
+          },
+          "10": {
+            "minDstGas": 100000
+          },
+          "56": {
+            "minDstGas": 100000
+          },
+          "137": {
+            "minDstGas": 100000
+          },
+          "42161": {
+            "minDstGas": 2000000
+          }
         }
       },
       "isAcross": false,
@@ -3372,6 +3678,23 @@
         "bridgeInfo": {
           "1": {
             "tokenAddress": "0x788d86e00ab31db859c3d6b80d5a9375801d7f2a"
+          }
+        },
+        "feeInfo": {
+          "1": {
+            "minDstGas": 100000
+          },
+          "10": {
+            "minDstGas": 100000
+          },
+          "56": {
+            "minDstGas": 100000
+          },
+          "42161": {
+            "minDstGas": 2000000
+          },
+          "43114": {
+            "minDstGas": 100000
           }
         }
       },
@@ -3393,6 +3716,23 @@
           "1": {
             "tokenAddress": "0x788d86e00ab31db859c3d6b80d5a9375801d7f2a"
           }
+        },
+        "feeInfo": {
+          "1": {
+            "minDstGas": 100000
+          },
+          "56": {
+            "minDstGas": 100000
+          },
+          "137": {
+            "minDstGas": 100000
+          },
+          "42161": {
+            "minDstGas": 2000000
+          },
+          "43114": {
+            "minDstGas": 100000
+          }
         }
       },
       "isAcross": false,
@@ -3413,6 +3753,14 @@
           "42161": {
             "tokenAddress": "0x982239d38af50b0168da33346d85fb12929c4c07"
           }
+        },
+        "feeInfo": {
+          "8453": {
+            "minDstGas": 110000
+          },
+          "42161": {
+            "minDstGas": 1000000
+          }
         }
       },
       "isAcross": false,
@@ -3432,6 +3780,14 @@
         "bridgeInfo": {
           "42161": {
             "tokenAddress": "0x982239d38af50b0168da33346d85fb12929c4c07"
+          }
+        },
+        "feeInfo": {
+          "10": {
+            "minDstGas": 110000
+          },
+          "42161": {
+            "minDstGas": 1000000
           }
         }
       },
@@ -3487,6 +3843,23 @@
           "1": {
             "tokenAddress": "0x92cc36d66e9d739d50673d1f27929a371fb83a67"
           }
+        },
+        "feeInfo": {
+          "1": {
+            "minDstGas": 0
+          },
+          "10": {
+            "minDstGas": 175000
+          },
+          "137": {
+            "minDstGas": 175000
+          },
+          "42161": {
+            "minDstGas": 175000
+          },
+          "43114": {
+            "minDstGas": 175000
+          }
         }
       },
       "isAcross": false,
@@ -3507,6 +3880,23 @@
         "bridgeInfo": {
           "1": {
             "tokenAddress": "0x92cc36d66e9d739d50673d1f27929a371fb83a67"
+          }
+        },
+        "feeInfo": {
+          "1": {
+            "minDstGas": 0
+          },
+          "10": {
+            "minDstGas": 175000
+          },
+          "56": {
+            "minDstGas": 175000
+          },
+          "137": {
+            "minDstGas": 175000
+          },
+          "42161": {
+            "minDstGas": 175000
           }
         }
       },
@@ -3529,6 +3919,23 @@
           "1": {
             "tokenAddress": "0x92cc36d66e9d739d50673d1f27929a371fb83a67"
           }
+        },
+        "feeInfo": {
+          "1": {
+            "minDstGas": 0
+          },
+          "10": {
+            "minDstGas": 175000
+          },
+          "56": {
+            "minDstGas": 175000
+          },
+          "42161": {
+            "minDstGas": 175000
+          },
+          "43114": {
+            "minDstGas": 175000
+          }
         }
       },
       "isAcross": false,
@@ -3549,6 +3956,23 @@
         "bridgeInfo": {
           "1": {
             "tokenAddress": "0x92cc36d66e9d739d50673d1f27929a371fb83a67"
+          }
+        },
+        "feeInfo": {
+          "1": {
+            "minDstGas": 0
+          },
+          "56": {
+            "minDstGas": 175000
+          },
+          "137": {
+            "minDstGas": 175000
+          },
+          "42161": {
+            "minDstGas": 175000
+          },
+          "43114": {
+            "minDstGas": 175000
           }
         }
       },
@@ -3606,9 +4030,6 @@
       "tags": [],
       "extensions": {
         "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0x559b7bfC48a5274754b08819F75C5F27aF53D53b"
-          },
           "10": {
             "tokenAddress": "0xD3FDCb837DAfdb7C9C3eBD48FE22a53F6Dd3d7D7"
           },
@@ -3629,6 +4050,29 @@
           },
           "43114": {
             "tokenAddress": "0xD3FDCb837DAfdb7C9C3eBD48FE22a53F6Dd3d7D7"
+          }
+        },
+        "feeInfo": {
+          "10": {
+            "minDstGas": 220000
+          },
+          "56": {
+            "minDstGas": 220000
+          },
+          "137": {
+            "minDstGas": 210000
+          },
+          "1088": {
+            "minDstGas": 220000
+          },
+          "8453": {
+            "minDstGas": 260000
+          },
+          "42161": {
+            "minDstGas": 1500000
+          },
+          "43114": {
+            "minDstGas": 240000
           }
         }
       },
@@ -3651,6 +4095,29 @@
           "1": {
             "tokenAddress": "0x559b7bfc48a5274754b08819f75c5f27af53d53b"
           }
+        },
+        "feeInfo": {
+          "1": {
+            "minDstGas": 500000
+          },
+          "10": {
+            "minDstGas": 220000
+          },
+          "137": {
+            "minDstGas": 210000
+          },
+          "1088": {
+            "minDstGas": 220000
+          },
+          "8453": {
+            "minDstGas": 260000
+          },
+          "42161": {
+            "minDstGas": 1500000
+          },
+          "43114": {
+            "minDstGas": 240000
+          }
         }
       },
       "isAcross": false,
@@ -3670,6 +4137,29 @@
         "bridgeInfo": {
           "1": {
             "tokenAddress": "0x559b7bfc48a5274754b08819f75c5f27af53d53b"
+          }
+        },
+        "feeInfo": {
+          "1": {
+            "minDstGas": 500000
+          },
+          "10": {
+            "minDstGas": 220000
+          },
+          "56": {
+            "minDstGas": 220000
+          },
+          "137": {
+            "minDstGas": 210000
+          },
+          "1088": {
+            "minDstGas": 220000
+          },
+          "8453": {
+            "minDstGas": 260000
+          },
+          "42161": {
+            "minDstGas": 1500000
           }
         }
       },
@@ -3691,6 +4181,29 @@
           "1": {
             "tokenAddress": "0x559b7bfc48a5274754b08819f75c5f27af53d53b"
           }
+        },
+        "feeInfo": {
+          "1": {
+            "minDstGas": 500000
+          },
+          "10": {
+            "minDstGas": 220000
+          },
+          "56": {
+            "minDstGas": 220000
+          },
+          "1088": {
+            "minDstGas": 220000
+          },
+          "8453": {
+            "minDstGas": 260000
+          },
+          "42161": {
+            "minDstGas": 1500000
+          },
+          "43114": {
+            "minDstGas": 240000
+          }
         }
       },
       "isAcross": false,
@@ -3711,6 +4224,29 @@
           "1": {
             "tokenAddress": "0x559b7bfc48a5274754b08819f75c5f27af53d53b"
           }
+        },
+        "feeInfo": {
+          "1": {
+            "minDstGas": 500000
+          },
+          "56": {
+            "minDstGas": 220000
+          },
+          "137": {
+            "minDstGas": 210000
+          },
+          "1088": {
+            "minDstGas": 220000
+          },
+          "8453": {
+            "minDstGas": 260000
+          },
+          "42161": {
+            "minDstGas": 1500000
+          },
+          "43114": {
+            "minDstGas": 240000
+          }
         }
       },
       "isAcross": false,
@@ -3730,6 +4266,29 @@
         "bridgeInfo": {
           "1": {
             "tokenAddress": "0x559b7bfc48a5274754b08819f75c5f27af53d53b"
+          }
+        },
+        "feeInfo": {
+          "1": {
+            "minDstGas": 500000
+          },
+          "10": {
+            "minDstGas": 220000
+          },
+          "56": {
+            "minDstGas": 220000
+          },
+          "137": {
+            "minDstGas": 210000
+          },
+          "8453": {
+            "minDstGas": 260000
+          },
+          "42161": {
+            "minDstGas": 1500000
+          },
+          "43114": {
+            "minDstGas": 240000
           }
         }
       },
@@ -3752,6 +4311,29 @@
           "1": {
             "tokenAddress": "0x559b7bfc48a5274754b08819f75c5f27af53d53b"
           }
+        },
+        "feeInfo": {
+          "1": {
+            "minDstGas": 500000
+          },
+          "10": {
+            "minDstGas": 220000
+          },
+          "56": {
+            "minDstGas": 220000
+          },
+          "137": {
+            "minDstGas": 210000
+          },
+          "1088": {
+            "minDstGas": 220000
+          },
+          "42161": {
+            "minDstGas": 1500000
+          },
+          "43114": {
+            "minDstGas": 240000
+          }
         }
       },
       "isAcross": false,
@@ -3773,6 +4355,14 @@
           "8453": {
             "tokenAddress": "0xbefd5c25a59ef2c1316c5a4944931171f30cd3e4"
           }
+        },
+        "feeInfo": {
+          "8453": {
+            "minDstGas": 200000
+          },
+          "42161": {
+            "minDstGas": 200000
+          }
         }
       },
       "isAcross": false,
@@ -3793,11 +4383,16 @@
           "1": {
             "tokenAddress": "0x9DeB0fc809955b79c85e82918E8586d3b7d2695a"
           },
-          "8453": {
-            "tokenAddress": "0xbeFD5C25A59ef2C1316c5A4944931171F30Cd3E4"
-          },
           "42161": {
             "tokenAddress": "0x8b5e4C9a188b1A187f2D1E80b1c2fB17fA2922e1"
+          }
+        },
+        "feeInfo": {
+          "1": {
+            "minDstGas": 200000
+          },
+          "42161": {
+            "minDstGas": 2000000
           }
         }
       },
@@ -3817,14 +4412,19 @@
       "tags": [],
       "extensions": {
         "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0xab5eB14c09D416F0aC63661E57EDB7AEcDb9BEfA"
-          },
           "10": {
             "tokenAddress": "0x9dAbAE7274D28A45F0B65Bf8ED201A5731492ca0"
           },
           "8453": {
             "tokenAddress": "0x526728DBc96689597F85ae4cd716d4f7fCcBAE9d"
+          }
+        },
+        "feeInfo": {
+          "10": {
+            "minDstGas": 200000
+          },
+          "8453": {
+            "minDstGas": 200000
           }
         }
       },
@@ -3847,6 +4447,14 @@
           "1": {
             "tokenAddress": "0xab5eb14c09d416f0ac63661e57edb7aecdb9befa"
           }
+        },
+        "feeInfo": {
+          "1": {
+            "minDstGas": 200000
+          },
+          "8453": {
+            "minDstGas": 200000
+          }
         }
       },
       "isAcross": false,
@@ -3868,6 +4476,14 @@
           "1": {
             "tokenAddress": "0xab5eb14c09d416f0ac63661e57edb7aecdb9befa"
           }
+        },
+        "feeInfo": {
+          "1": {
+            "minDstGas": 200000
+          },
+          "10": {
+            "minDstGas": 200000
+          }
         }
       },
       "isAcross": false,
@@ -3886,14 +4502,19 @@
       "tags": [],
       "extensions": {
         "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0x64351fC9810aDAd17A690E4e1717Df5e7e085160"
-          },
           "10": {
             "tokenAddress": "0x1610e3c85dd44Af31eD7f33a63642012Dca0C5A5"
           },
           "8453": {
             "tokenAddress": "0x7Ba6F01772924a82D9626c126347A28299E98c98"
+          }
+        },
+        "feeInfo": {
+          "10": {
+            "minDstGas": 200000
+          },
+          "8453": {
+            "minDstGas": 200000
           }
         }
       },
@@ -3916,6 +4537,14 @@
           "1": {
             "tokenAddress": "0x64351fc9810adad17a690e4e1717df5e7e085160"
           }
+        },
+        "feeInfo": {
+          "1": {
+            "minDstGas": 200000
+          },
+          "8453": {
+            "minDstGas": 200000
+          }
         }
       },
       "isAcross": false,
@@ -3936,6 +4565,14 @@
         "bridgeInfo": {
           "1": {
             "tokenAddress": "0x64351fc9810adad17a690e4e1717df5e7e085160"
+          }
+        },
+        "feeInfo": {
+          "1": {
+            "minDstGas": 200000
+          },
+          "10": {
+            "minDstGas": 200000
           }
         }
       },
@@ -3961,6 +4598,17 @@
           "1088": {
             "tokenAddress": "0x0000000000000000000000000000000000000000"
           }
+        },
+        "feeInfo": {
+          "1": {
+            "minDstGas": 0
+          },
+          "1088": {
+            "minDstGas": 100000
+          },
+          "43114": {
+            "minDstGas": 100000
+          }
         }
       },
       "isAcross": false,
@@ -3981,6 +4629,17 @@
         "bridgeInfo": {
           "1088": {
             "tokenAddress": "0x0000000000000000000000000000000000000000"
+          }
+        },
+        "feeInfo": {
+          "1": {
+            "minDstGas": 0
+          },
+          "56": {
+            "minDstGas": 100000
+          },
+          "1088": {
+            "minDstGas": 100000
           }
         }
       },
@@ -4025,6 +4684,14 @@
           "43114": {
             "tokenAddress": "0xd402298a793948698b9a63311404FBBEe944eAfD"
           }
+        },
+        "feeInfo": {
+          "56": {
+            "minDstGas": 0
+          },
+          "43114": {
+            "minDstGas": 0
+          }
         }
       },
       "isAcross": false,
@@ -4046,6 +4713,14 @@
           "1": {
             "tokenAddress": "0x31e4efe290973ebe91b3a875a7994f650942d28f"
           }
+        },
+        "feeInfo": {
+          "1": {
+            "minDstGas": 0
+          },
+          "43114": {
+            "minDstGas": 0
+          }
         }
       },
       "isAcross": false,
@@ -4066,6 +4741,14 @@
         "bridgeInfo": {
           "1": {
             "tokenAddress": "0x31e4efe290973ebe91b3a875a7994f650942d28f"
+          }
+        },
+        "feeInfo": {
+          "1": {
+            "minDstGas": 0
+          },
+          "56": {
+            "minDstGas": 0
           }
         }
       },
@@ -4149,6 +4832,14 @@
           "43114": {
             "tokenAddress": "0x6e84a6216ea6dacc71ee8e6b0a5b7322eebc0fdd"
           }
+        },
+        "feeInfo": {
+          "42161": {
+            "minDstGas": 2000000
+          },
+          "43114": {
+            "minDstGas": 100000
+          }
         }
       },
       "isAcross": false,
@@ -4171,9 +4862,14 @@
           },
           "42161": {
             "tokenAddress": "0x371c7ec6D8039ff7933a2AA28EB827Ffe1F52f07"
+          }
+        },
+        "feeInfo": {
+          "56": {
+            "minDstGas": 100000
           },
-          "43114": {
-            "tokenAddress": "0x6e84a6216eA6dACC71eE8E6b0a5B7322EEbC0fDd"
+          "42161": {
+            "minDstGas": 2000000
           }
         }
       },
@@ -4236,6 +4932,23 @@
           "43114": {
             "tokenAddress": "0x152b9d0fdc40c096757f570a51e494bd4b943e50"
           }
+        },
+        "feeInfo": {
+          "10": {
+            "minDstGas": 100000
+          },
+          "56": {
+            "minDstGas": 100000
+          },
+          "137": {
+            "minDstGas": 100000
+          },
+          "42161": {
+            "minDstGas": 2000000
+          },
+          "43114": {
+            "minDstGas": 100000
+          }
         }
       },
       "isAcross": false,
@@ -4255,6 +4968,23 @@
         "bridgeInfo": {
           "43114": {
             "tokenAddress": "0x152b9d0fdc40c096757f570a51e494bd4b943e50"
+          }
+        },
+        "feeInfo": {
+          "1": {
+            "minDstGas": 100000
+          },
+          "10": {
+            "minDstGas": 100000
+          },
+          "137": {
+            "minDstGas": 100000
+          },
+          "42161": {
+            "minDstGas": 2000000
+          },
+          "43114": {
+            "minDstGas": 100000
           }
         }
       },
@@ -4276,6 +5006,23 @@
           "43114": {
             "tokenAddress": "0x152b9d0fdc40c096757f570a51e494bd4b943e50"
           }
+        },
+        "feeInfo": {
+          "1": {
+            "minDstGas": 100000
+          },
+          "10": {
+            "minDstGas": 100000
+          },
+          "56": {
+            "minDstGas": 100000
+          },
+          "42161": {
+            "minDstGas": 2000000
+          },
+          "43114": {
+            "minDstGas": 100000
+          }
         }
       },
       "isAcross": false,
@@ -4295,6 +5042,23 @@
         "bridgeInfo": {
           "43114": {
             "tokenAddress": "0x152b9d0fdc40c096757f570a51e494bd4b943e50"
+          }
+        },
+        "feeInfo": {
+          "1": {
+            "minDstGas": 100000
+          },
+          "56": {
+            "minDstGas": 100000
+          },
+          "137": {
+            "minDstGas": 100000
+          },
+          "42161": {
+            "minDstGas": 2000000
+          },
+          "43114": {
+            "minDstGas": 100000
           }
         }
       },
@@ -4327,9 +5091,23 @@
           },
           "42161": {
             "tokenAddress": "0x2297aEbD383787A160DD0d9F71508148769342E3"
+          }
+        },
+        "feeInfo": {
+          "1": {
+            "minDstGas": 100000
           },
-          "43114": {
-            "tokenAddress": "0x152b9d0FdC40C096757F570A51E494bd4b943E50"
+          "10": {
+            "minDstGas": 100000
+          },
+          "56": {
+            "minDstGas": 100000
+          },
+          "137": {
+            "minDstGas": 100000
+          },
+          "42161": {
+            "minDstGas": 2000000
           }
         }
       },
@@ -4402,6 +5180,17 @@
           "42161": {
             "tokenAddress": "0x3082CC23568eA640225c2467653dB90e9250AaA0"
           }
+        },
+        "feeInfo": {
+          "56": {
+            "minDstGas": 100000
+          },
+          "8453": {
+            "minDstGas": 3200000
+          },
+          "42161": {
+            "minDstGas": 2000000
+          }
         }
       },
       "isAcross": false,
@@ -4423,6 +5212,17 @@
           "1": {
             "tokenAddress": "0x137ddb47ee24eaa998a535ab00378d6bfa84f893"
           }
+        },
+        "feeInfo": {
+          "1": {
+            "minDstGas": 100000
+          },
+          "8453": {
+            "minDstGas": 3200000
+          },
+          "42161": {
+            "minDstGas": 2000000
+          }
         }
       },
       "isAcross": false,
@@ -4443,6 +5243,17 @@
         "bridgeInfo": {
           "1": {
             "tokenAddress": "0x137ddb47ee24eaa998a535ab00378d6bfa84f893"
+          }
+        },
+        "feeInfo": {
+          "1": {
+            "minDstGas": 160000
+          },
+          "56": {
+            "minDstGas": 160000
+          },
+          "42161": {
+            "minDstGas": 100000
           }
         }
       },
@@ -4478,6 +5289,23 @@
           "43114": {
             "tokenAddress": "0x9ed7E4B1BFF939ad473dA5E7a218C771D1569456"
           }
+        },
+        "feeInfo": {
+          "10": {
+            "minDstGas": 250000
+          },
+          "56": {
+            "minDstGas": 250000
+          },
+          "137": {
+            "minDstGas": 250000
+          },
+          "42161": {
+            "minDstGas": 3000000
+          },
+          "43114": {
+            "minDstGas": 250000
+          }
         }
       },
       "isAcross": false,
@@ -4499,6 +5327,23 @@
           "1": {
             "tokenAddress": "0x9ed7e4b1bff939ad473da5e7a218c771d1569456"
           }
+        },
+        "feeInfo": {
+          "1": {
+            "minDstGas": 250000
+          },
+          "10": {
+            "minDstGas": 250000
+          },
+          "137": {
+            "minDstGas": 250000
+          },
+          "42161": {
+            "minDstGas": 3000000
+          },
+          "43114": {
+            "minDstGas": 250000
+          }
         }
       },
       "isAcross": false,
@@ -4518,6 +5363,23 @@
         "bridgeInfo": {
           "1": {
             "tokenAddress": "0x9ed7e4b1bff939ad473da5e7a218c771d1569456"
+          }
+        },
+        "feeInfo": {
+          "1": {
+            "minDstGas": 250000
+          },
+          "10": {
+            "minDstGas": 250000
+          },
+          "56": {
+            "minDstGas": 250000
+          },
+          "42161": {
+            "minDstGas": 3000000
+          },
+          "43114": {
+            "minDstGas": 250000
           }
         }
       },
@@ -4540,6 +5402,23 @@
           "1": {
             "tokenAddress": "0x9ed7e4b1bff939ad473da5e7a218c771d1569456"
           }
+        },
+        "feeInfo": {
+          "1": {
+            "minDstGas": 250000
+          },
+          "10": {
+            "minDstGas": 250000
+          },
+          "56": {
+            "minDstGas": 250000
+          },
+          "137": {
+            "minDstGas": 250000
+          },
+          "42161": {
+            "minDstGas": 3000000
+          }
         }
       },
       "isAcross": false,
@@ -4561,6 +5440,23 @@
           "1": {
             "tokenAddress": "0x9ed7e4b1bff939ad473da5e7a218c771d1569456"
           }
+        },
+        "feeInfo": {
+          "1": {
+            "minDstGas": 250000
+          },
+          "56": {
+            "minDstGas": 250000
+          },
+          "137": {
+            "minDstGas": 250000
+          },
+          "42161": {
+            "minDstGas": 3000000
+          },
+          "43114": {
+            "minDstGas": 250000
+          }
         }
       },
       "isAcross": false,
@@ -4578,14 +5474,19 @@
       "tags": [],
       "extensions": {
         "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0xE60779CC1b2c1d0580611c526a8DF0E3f870EC48"
-          },
           "56": {
             "tokenAddress": "0x91d6d6aF7635B7b23A8CED9508117965180e2362"
           },
           "42161": {
             "tokenAddress": "0x51A80238B5738725128d3a3e06Ab41c1d4C05C74"
+          }
+        },
+        "feeInfo": {
+          "56": {
+            "minDstGas": 200000
+          },
+          "42161": {
+            "minDstGas": 200000
           }
         }
       },
@@ -4609,6 +5510,14 @@
           "1": {
             "tokenAddress": "0xe60779cc1b2c1d0580611c526a8df0e3f870ec48"
           }
+        },
+        "feeInfo": {
+          "1": {
+            "minDstGas": 200000
+          },
+          "42161": {
+            "minDstGas": 200000
+          }
         }
       },
       "isAcross": false,
@@ -4626,14 +5535,19 @@
       "tags": [],
       "extensions": {
         "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0x0Ae38f7E10A43B5b2fB064B42a2f4514cbA909ef"
-          },
           "56": {
             "tokenAddress": "0x0Ae38f7E10A43B5b2fB064B42a2f4514cbA909ef"
           },
           "42161": {
             "tokenAddress": "0x0Ae38f7E10A43B5b2fB064B42a2f4514cbA909ef"
+          }
+        },
+        "feeInfo": {
+          "56": {
+            "minDstGas": 200000
+          },
+          "42161": {
+            "minDstGas": 200000
           }
         }
       },
@@ -4657,6 +5571,14 @@
           "1": {
             "tokenAddress": "0x0ae38f7e10a43b5b2fb064b42a2f4514cba909ef"
           }
+        },
+        "feeInfo": {
+          "1": {
+            "minDstGas": 200000
+          },
+          "42161": {
+            "minDstGas": 200000
+          }
         }
       },
       "isAcross": false,
@@ -4678,9 +5600,6 @@
       "tags": [],
       "extensions": {
         "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0x6982508145454Ce325dDbE47a25d4ec3d2311933"
-          },
           "56": {
             "tokenAddress": "0x25d887Ce7a35172C62FeBFD67a1856F20FaEbB00"
           },
@@ -4692,6 +5611,14 @@
           },
           "42161": {
             "tokenAddress": "0x35E6A59F786d9266c7961eA28c7b768B33959cbB"
+          }
+        },
+        "feeInfo": {
+          "56": {
+            "minDstGas": 100000
+          },
+          "42161": {
+            "minDstGas": 2000000
           }
         }
       },
@@ -4713,6 +5640,14 @@
         "bridgeInfo": {
           "1": {
             "tokenAddress": "0x6982508145454ce325ddbe47a25d4ec3d2311933"
+          }
+        },
+        "feeInfo": {
+          "1": {
+            "minDstGas": 100000
+          },
+          "42161": {
+            "minDstGas": 2000000
           }
         }
       },
@@ -4774,9 +5709,6 @@
       "tags": [],
       "extensions": {
         "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0x99D8a9C45b2ecA8864373A26D1459e3Dff1e17F3"
-          },
           "10": {
             "tokenAddress": "0xB153FB3d196A8eB25522705560ac152eeEc57901"
           },
@@ -4798,6 +5730,26 @@
           "43114": {
             "tokenAddress": "0x130966628846BFd36ff31a822705796e8cb8C18D"
           }
+        },
+        "feeInfo": {
+          "10": {
+            "minDstGas": 100000
+          },
+          "56": {
+            "minDstGas": 100000
+          },
+          "137": {
+            "minDstGas": 100000
+          },
+          "8453": {
+            "minDstGas": 100000
+          },
+          "42161": {
+            "minDstGas": 100000
+          },
+          "43114": {
+            "minDstGas": 100000
+          }
         }
       },
       "oftAdapter": "0x439a5f0f5e8d149dda9a0ca367d4a8e4d6f83c10",
@@ -4817,6 +5769,26 @@
         "bridgeInfo": {
           "1": {
             "tokenAddress": "0x99D8a9C45b2ecA8864373A26D1459e3Dff1e17F3"
+          }
+        },
+        "feeInfo": {
+          "1": {
+            "minDstGas": 100000
+          },
+          "10": {
+            "minDstGas": 100000
+          },
+          "137": {
+            "minDstGas": 100000
+          },
+          "8453": {
+            "minDstGas": 100000
+          },
+          "42161": {
+            "minDstGas": 100000
+          },
+          "43114": {
+            "minDstGas": 100000
           }
         }
       },
@@ -4840,6 +5812,26 @@
           "1": {
             "tokenAddress": "0x99D8a9C45b2ecA8864373A26D1459e3Dff1e17F3"
           }
+        },
+        "feeInfo": {
+          "1": {
+            "minDstGas": 100000
+          },
+          "10": {
+            "minDstGas": 100000
+          },
+          "56": {
+            "minDstGas": 100000
+          },
+          "137": {
+            "minDstGas": 100000
+          },
+          "8453": {
+            "minDstGas": 100000
+          },
+          "42161": {
+            "minDstGas": 100000
+          }
         }
       },
       "isAcross": false,
@@ -4861,6 +5853,26 @@
         "bridgeInfo": {
           "1": {
             "tokenAddress": "0x99D8a9C45b2ecA8864373A26D1459e3Dff1e17F3"
+          }
+        },
+        "feeInfo": {
+          "1": {
+            "minDstGas": 100000
+          },
+          "10": {
+            "minDstGas": 100000
+          },
+          "56": {
+            "minDstGas": 100000
+          },
+          "8453": {
+            "minDstGas": 100000
+          },
+          "42161": {
+            "minDstGas": 100000
+          },
+          "43114": {
+            "minDstGas": 100000
           }
         }
       },
@@ -4884,6 +5896,26 @@
           "1": {
             "tokenAddress": "0x99d8a9c45b2eca8864373a26d1459e3dff1e17f3"
           }
+        },
+        "feeInfo": {
+          "1": {
+            "minDstGas": 100000
+          },
+          "56": {
+            "minDstGas": 100000
+          },
+          "137": {
+            "minDstGas": 100000
+          },
+          "8453": {
+            "minDstGas": 100000
+          },
+          "42161": {
+            "minDstGas": 100000
+          },
+          "43114": {
+            "minDstGas": 100000
+          }
         }
       },
       "isAcross": false,
@@ -4904,6 +5936,26 @@
         "bridgeInfo": {
           "1": {
             "tokenAddress": "0x99d8a9c45b2eca8864373a26d1459e3dff1e17f3"
+          }
+        },
+        "feeInfo": {
+          "1": {
+            "minDstGas": 100000
+          },
+          "10": {
+            "minDstGas": 100000
+          },
+          "56": {
+            "minDstGas": 100000
+          },
+          "137": {
+            "minDstGas": 100000
+          },
+          "42161": {
+            "minDstGas": 100000
+          },
+          "43114": {
+            "minDstGas": 100000
           }
         }
       },
@@ -4973,11 +6025,13 @@
       "tags": [],
       "extensions": {
         "bridgeInfo": {
-          "56": {
-            "tokenAddress": "0x1a131F7B106D58f33eAf0fE5B47DB2f2045E5732"
-          },
           "42161": {
             "tokenAddress": "0x881ee52679537C6834fDeeB3673da2e3eCb50DF6"
+          }
+        },
+        "feeInfo": {
+          "42161": {
+            "minDstGas": 250000
           }
         }
       },
@@ -5014,7 +6068,12 @@
       "logoURI": "https://s2.coinmarketcap.com/static/img/coins/128x128/25653.png",
       "tags": [],
       "extensions": {
-        "coingeckoId": "dream-machine-token"
+        "coingeckoId": "dream-machine-token",
+        "feeInfo": {
+          "42161": {
+            "minDstGas": 2000000
+          }
+        }
       },
       "isAcross": false,
       "oftAdapter": "0x0B7f0e51Cd1739D6C96982D55aD8fA634dd43A9C",
@@ -5042,6 +6101,17 @@
           "42161": {
             "tokenAddress": "0x7448c7456a97769F6cD04F1E83A4a23cCdC46aBD"
           }
+        },
+        "feeInfo": {
+          "56": {
+            "minDstGas": 100000
+          },
+          "8453": {
+            "minDstGas": 200000
+          },
+          "42161": {
+            "minDstGas": 2000000
+          }
         }
       },
       "isAcross": false,
@@ -5062,6 +6132,17 @@
         "bridgeInfo": {
           "1": {
             "tokenAddress": "0x7448c7456a97769f6cd04f1e83a4a23ccdc46abd"
+          }
+        },
+        "feeInfo": {
+          "1": {
+            "minDstGas": 100000
+          },
+          "8453": {
+            "minDstGas": 200000
+          },
+          "42161": {
+            "minDstGas": 2000000
           }
         }
       },
@@ -5084,6 +6165,17 @@
           "1": {
             "tokenAddress": "0x7448c7456a97769f6cd04f1e83a4a23ccdc46abd"
           }
+        },
+        "feeInfo": {
+          "1": {
+            "minDstGas": 100000
+          },
+          "56": {
+            "minDstGas": 100000
+          },
+          "42161": {
+            "minDstGas": 2000000
+          }
         }
       },
       "isAcross": false,
@@ -5100,7 +6192,21 @@
       "logoURI": "https://s2.coinmarketcap.com/static/img/coins/128x128/4660.png",
       "tags": [],
       "extensions": {
-        "coingeckoId": "telos"
+        "coingeckoId": "telos",
+        "feeInfo": {
+          "56": {
+            "minDstGas": 100000
+          },
+          "137": {
+            "minDstGas": 100000
+          },
+          "42161": {
+            "minDstGas": 2000000
+          },
+          "43114": {
+            "minDstGas": 100000
+          }
+        }
       },
       "isAcross": false,
       "oftAdapter": "0x193f4A4a6ea24102F49b931DEeeb931f6E32405d",
@@ -5116,7 +6222,21 @@
       "logoURI": "https://s2.coinmarketcap.com/static/img/coins/128x128/4660.png",
       "tags": [],
       "extensions": {
-        "coingeckoId": "telos"
+        "coingeckoId": "telos",
+        "feeInfo": {
+          "1": {
+            "minDstGas": 100000
+          },
+          "137": {
+            "minDstGas": 100000
+          },
+          "42161": {
+            "minDstGas": 2000000
+          },
+          "43114": {
+            "minDstGas": 100000
+          }
+        }
       },
       "isAcross": false,
       "oftAdapter": "0x193f4A4a6ea24102F49b931DEeeb931f6E32405d",
@@ -5131,7 +6251,22 @@
       "symbol": "TLOS",
       "logoURI": "https://s2.coinmarketcap.com/static/img/coins/128x128/4660.png",
       "tags": [],
-      "extensions": {},
+      "extensions": {
+        "feeInfo": {
+          "1": {
+            "minDstGas": 100000
+          },
+          "56": {
+            "minDstGas": 100000
+          },
+          "137": {
+            "minDstGas": 100000
+          },
+          "42161": {
+            "minDstGas": 2000000
+          }
+        }
+      },
       "isAcross": false,
       "oftAdapter": "0xed667dC80a45b77305Cc395DB56D997597Dc6DdD",
       "endpointId": 106,
@@ -5146,7 +6281,21 @@
       "logoURI": "https://s2.coinmarketcap.com/static/img/coins/128x128/4660.png",
       "tags": [],
       "extensions": {
-        "coingeckoId": "telos"
+        "coingeckoId": "telos",
+        "feeInfo": {
+          "1": {
+            "minDstGas": 100000
+          },
+          "56": {
+            "minDstGas": 100000
+          },
+          "42161": {
+            "minDstGas": 2000000
+          },
+          "43114": {
+            "minDstGas": 100000
+          }
+        }
       },
       "isAcross": false,
       "oftAdapter": "0x193f4A4a6ea24102F49b931DEeeb931f6E32405d",
@@ -5210,6 +6359,14 @@
           "42161": {
             "tokenAddress": "0x7Be5Dd337CC6cE3e474F64E2A92A566445290864"
           }
+        },
+        "feeInfo": {
+          "56": {
+            "minDstGas": 110000
+          },
+          "42161": {
+            "minDstGas": 1000000
+          }
         }
       },
       "isAcross": false,
@@ -5231,6 +6388,14 @@
           "1": {
             "tokenAddress": "0x1b6e9c73bee68102d9dd4a2627f97bff4183ab0a"
           }
+        },
+        "feeInfo": {
+          "1": {
+            "minDstGas": 110000
+          },
+          "42161": {
+            "minDstGas": 1000000
+          }
         }
       },
       "isAcross": false,
@@ -5248,11 +6413,13 @@
       "tags": [],
       "extensions": {
         "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0x83E9F223e1edb3486F876EE888d76bFba26c475A"
-          },
           "137": {
             "tokenAddress": "0xAfF41DA975501E5b71848C975834341777D1a473"
+          }
+        },
+        "feeInfo": {
+          "137": {
+            "minDstGas": 110000
           }
         }
       },
@@ -5276,6 +6443,11 @@
           "1": {
             "tokenAddress": "0x83e9f223e1edb3486f876ee888d76bfba26c475a"
           }
+        },
+        "feeInfo": {
+          "1": {
+            "minDstGas": 110000
+          }
         }
       },
       "isAcross": false,
@@ -5293,14 +6465,19 @@
       "tags": [],
       "extensions": {
         "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0x7138Eb0d563f3F6722500936A11DcAe99D738A2c"
-          },
           "56": {
             "tokenAddress": "0x336f374198c872Ba760e85af9c6331C3c5A535d3"
           },
           "137": {
             "tokenAddress": "0x110B25D2B21eE73eB401F3aE7833f7072912A0Bf"
+          }
+        },
+        "feeInfo": {
+          "56": {
+            "minDstGas": 140000
+          },
+          "137": {
+            "minDstGas": 140000
           }
         }
       },
@@ -5324,6 +6501,14 @@
           "1": {
             "tokenAddress": "0x7138eb0d563f3f6722500936a11dcae99d738a2c"
           }
+        },
+        "feeInfo": {
+          "1": {
+            "minDstGas": 140000
+          },
+          "137": {
+            "minDstGas": 140000
+          }
         }
       },
       "isAcross": false,
@@ -5345,6 +6530,14 @@
           "1": {
             "tokenAddress": "0x7138eb0d563f3f6722500936a11dcae99d738a2c"
           }
+        },
+        "feeInfo": {
+          "1": {
+            "minDstGas": 140000
+          },
+          "56": {
+            "minDstGas": 140000
+          }
         }
       },
       "isAcross": false,
@@ -5362,9 +6555,6 @@
       "tags": [],
       "extensions": {
         "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0x8dB253a1943DdDf1AF9bcF8706ac9A0Ce939d922"
-          },
           "56": {
             "tokenAddress": "0xB2E787C6C83D6d75f466371a2966b27a8b700828"
           },
@@ -5373,6 +6563,17 @@
           },
           "42161": {
             "tokenAddress": "0xB2E787C6C83D6d75f466371a2966b27a8b700828"
+          }
+        },
+        "feeInfo": {
+          "56": {
+            "minDstGas": 110000
+          },
+          "137": {
+            "minDstGas": 110000
+          },
+          "42161": {
+            "minDstGas": 1000000
           }
         }
       },
@@ -5395,6 +6596,17 @@
           "1": {
             "tokenAddress": "0x8db253a1943dddf1af9bcf8706ac9a0ce939d922"
           }
+        },
+        "feeInfo": {
+          "1": {
+            "minDstGas": 110000
+          },
+          "137": {
+            "minDstGas": 110000
+          },
+          "42161": {
+            "minDstGas": 0
+          }
         }
       },
       "isAcross": false,
@@ -5414,6 +6626,17 @@
         "bridgeInfo": {
           "1": {
             "tokenAddress": "0x8db253a1943dddf1af9bcf8706ac9a0ce939d922"
+          }
+        },
+        "feeInfo": {
+          "1": {
+            "minDstGas": 110000
+          },
+          "56": {
+            "minDstGas": 110000
+          },
+          "42161": {
+            "minDstGas": 0
           }
         }
       },
@@ -5450,11 +6673,13 @@
       "tags": [],
       "extensions": {
         "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0xDDD6A0ECc3c6F6C102E5eA3d8Af7B801d1a77aC8"
-          },
           "43114": {
             "tokenAddress": "0x6f97D3F120fBbDaacF1c9da61a8aD126b7426861"
+          }
+        },
+        "feeInfo": {
+          "43114": {
+            "minDstGas": 110000
           }
         }
       },
@@ -5478,6 +6703,11 @@
           "1": {
             "tokenAddress": "0xddd6a0ecc3c6f6c102e5ea3d8af7b801d1a77ac8"
           }
+        },
+        "feeInfo": {
+          "1": {
+            "minDstGas": 110000
+          }
         }
       },
       "isAcross": false,
@@ -5495,9 +6725,6 @@
       "tags": [],
       "extensions": {
         "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0x9e20461bc2c4c980f62f1B279D71734207a6A356"
-          },
           "56": {
             "tokenAddress": "0x9e20461bc2c4c980f62f1B279D71734207a6A356"
           },
@@ -5512,6 +6739,20 @@
           },
           "42161": {
             "tokenAddress": "0x9e20461bc2c4c980f62f1B279D71734207a6A356"
+          }
+        },
+        "feeInfo": {
+          "56": {
+            "minDstGas": 110000
+          },
+          "137": {
+            "minDstGas": 110000
+          },
+          "8453": {
+            "minDstGas": 110000
+          },
+          "42161": {
+            "minDstGas": 1000000
           }
         }
       },
@@ -5536,6 +6777,20 @@
           "1": {
             "tokenAddress": "0x9e20461bc2c4c980f62f1b279d71734207a6a356"
           }
+        },
+        "feeInfo": {
+          "1": {
+            "minDstGas": 110000
+          },
+          "137": {
+            "minDstGas": 110000
+          },
+          "8453": {
+            "minDstGas": 110000
+          },
+          "42161": {
+            "minDstGas": 1000000
+          }
         }
       },
       "isAcross": false,
@@ -5557,6 +6812,20 @@
           "1": {
             "tokenAddress": "0x9e20461bc2c4c980f62f1b279d71734207a6a356"
           }
+        },
+        "feeInfo": {
+          "1": {
+            "minDstGas": 110000
+          },
+          "56": {
+            "minDstGas": 110000
+          },
+          "8453": {
+            "minDstGas": 110000
+          },
+          "42161": {
+            "minDstGas": 1000000
+          }
         }
       },
       "isAcross": false,
@@ -5577,6 +6846,20 @@
         "bridgeInfo": {
           "1": {
             "tokenAddress": "0x9e20461bc2c4c980f62f1b279d71734207a6a356"
+          }
+        },
+        "feeInfo": {
+          "1": {
+            "minDstGas": 110000
+          },
+          "56": {
+            "minDstGas": 110000
+          },
+          "137": {
+            "minDstGas": 110000
+          },
+          "42161": {
+            "minDstGas": 1000000
           }
         }
       },
@@ -5607,11 +6890,13 @@
       "tags": [],
       "extensions": {
         "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0xa80221D067603e30060F75E2458AA361f8eE5402"
-          },
           "56": {
             "tokenAddress": "0xa80221D067603e30060F75E2458AA361f8eE5402"
+          }
+        },
+        "feeInfo": {
+          "56": {
+            "minDstGas": 100000
           }
         }
       },
@@ -5634,6 +6919,11 @@
           "1": {
             "tokenAddress": "0xa80221d067603e30060f75e2458aa361f8ee5402"
           }
+        },
+        "feeInfo": {
+          "1": {
+            "minDstGas": 100000
+          }
         }
       },
       "isAcross": false,
@@ -5651,11 +6941,13 @@
       "tags": [],
       "extensions": {
         "bridgeInfo": {
-          "56": {
-            "tokenAddress": "0x8ea5219a16c2dbF1d6335A6aa0c6bd45c50347C5"
-          },
           "42161": {
             "tokenAddress": "0xDCbf4CB83d27C408B30dD7F39bfcabD7176B1Ba3"
+          }
+        },
+        "feeInfo": {
+          "42161": {
+            "minDstGas": 2000000
           }
         }
       },
@@ -5675,11 +6967,13 @@
       "tags": [],
       "extensions": {
         "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0x186eF81fd8E77EEC8BfFC3039e7eC41D5FC0b457"
-          },
           "56": {
             "tokenAddress": "0x8D279274789CceC8af94a430A5996eAaCE9609A9"
+          }
+        },
+        "feeInfo": {
+          "56": {
+            "minDstGas": 200000
           }
         }
       },
@@ -5703,6 +6997,11 @@
           "1": {
             "tokenAddress": "0x186ef81fd8e77eec8bffc3039e7ec41d5fc0b457"
           }
+        },
+        "feeInfo": {
+          "1": {
+            "minDstGas": 200000
+          }
         }
       },
       "isAcross": false,
@@ -5720,9 +7019,6 @@
       "tags": [],
       "extensions": {
         "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0xa21Af1050F7B26e0cfF45ee51548254C41ED6b5c"
-          },
           "10": {
             "tokenAddress": "0xbFd5206962267c7b4b4A8B3D76AC2E1b2A5c4d5e"
           },
@@ -5740,6 +7036,32 @@
           },
           "43114": {
             "tokenAddress": "0x96E1056a8814De39c8c3Cd0176042d6ceCD807d7"
+          }
+        },
+        "feeInfo": {
+          "10": {
+            "oftFee": 10,
+            "minDstGas": 200000
+          },
+          "56": {
+            "oftFee": 10,
+            "minDstGas": 200000
+          },
+          "137": {
+            "oftFee": 10,
+            "minDstGas": 200000
+          },
+          "8453": {
+            "oftFee": 10,
+            "minDstGas": 200000
+          },
+          "42161": {
+            "oftFee": 10,
+            "minDstGas": 200000
+          },
+          "43114": {
+            "oftFee": 10,
+            "minDstGas": 200000
           }
         }
       },
@@ -5763,6 +7085,32 @@
           "1": {
             "tokenAddress": "0xa21af1050f7b26e0cff45ee51548254c41ed6b5c"
           }
+        },
+        "feeInfo": {
+          "1": {
+            "oftFee": 10,
+            "minDstGas": 200000
+          },
+          "10": {
+            "oftFee": 10,
+            "minDstGas": 200000
+          },
+          "137": {
+            "oftFee": 10,
+            "minDstGas": 200000
+          },
+          "8453": {
+            "oftFee": 10,
+            "minDstGas": 200000
+          },
+          "42161": {
+            "oftFee": 10,
+            "minDstGas": 200000
+          },
+          "43114": {
+            "oftFee": 10,
+            "minDstGas": 200000
+          }
         }
       },
       "isAcross": false,
@@ -5783,6 +7131,32 @@
         "bridgeInfo": {
           "1": {
             "tokenAddress": "0xa21af1050f7b26e0cff45ee51548254c41ed6b5c"
+          }
+        },
+        "feeInfo": {
+          "1": {
+            "oftFee": 10,
+            "minDstGas": 200000
+          },
+          "10": {
+            "oftFee": 10,
+            "minDstGas": 200000
+          },
+          "56": {
+            "oftFee": 10,
+            "minDstGas": 200000
+          },
+          "137": {
+            "oftFee": 10,
+            "minDstGas": 200000
+          },
+          "8453": {
+            "oftFee": 10,
+            "minDstGas": 200000
+          },
+          "42161": {
+            "oftFee": 10,
+            "minDstGas": 200000
           }
         }
       },
@@ -5805,6 +7179,32 @@
           "1": {
             "tokenAddress": "0xa21af1050f7b26e0cff45ee51548254c41ed6b5c"
           }
+        },
+        "feeInfo": {
+          "1": {
+            "oftFee": 10,
+            "minDstGas": 200000
+          },
+          "10": {
+            "oftFee": 10,
+            "minDstGas": 200000
+          },
+          "56": {
+            "oftFee": 10,
+            "minDstGas": 200000
+          },
+          "8453": {
+            "oftFee": 10,
+            "minDstGas": 200000
+          },
+          "42161": {
+            "oftFee": 10,
+            "minDstGas": 200000
+          },
+          "43114": {
+            "oftFee": 10,
+            "minDstGas": 200000
+          }
         }
       },
       "isAcross": false,
@@ -5825,6 +7225,32 @@
         "bridgeInfo": {
           "1": {
             "tokenAddress": "0xa21af1050f7b26e0cff45ee51548254c41ed6b5c"
+          }
+        },
+        "feeInfo": {
+          "1": {
+            "oftFee": 10,
+            "minDstGas": 200000
+          },
+          "56": {
+            "oftFee": 10,
+            "minDstGas": 200000
+          },
+          "137": {
+            "oftFee": 10,
+            "minDstGas": 200000
+          },
+          "8453": {
+            "oftFee": 10,
+            "minDstGas": 200000
+          },
+          "42161": {
+            "oftFee": 10,
+            "minDstGas": 200000
+          },
+          "43114": {
+            "oftFee": 10,
+            "minDstGas": 200000
           }
         }
       },
@@ -5847,6 +7273,32 @@
           "1": {
             "tokenAddress": "0xa21af1050f7b26e0cff45ee51548254c41ed6b5c"
           }
+        },
+        "feeInfo": {
+          "1": {
+            "oftFee": 10,
+            "minDstGas": 200000
+          },
+          "10": {
+            "oftFee": 10,
+            "minDstGas": 200000
+          },
+          "56": {
+            "oftFee": 10,
+            "minDstGas": 200000
+          },
+          "137": {
+            "oftFee": 10,
+            "minDstGas": 200000
+          },
+          "42161": {
+            "oftFee": 10,
+            "minDstGas": 200000
+          },
+          "43114": {
+            "oftFee": 10,
+            "minDstGas": 200000
+          }
         }
       },
       "isAcross": false,
@@ -5868,6 +7320,11 @@
         "bridgeInfo": {
           "1088": {
             "tokenAddress": "0x6f05709bc91bad933346f9e159f0d3fdbc2c9dce"
+          }
+        },
+        "feeInfo": {
+          "1088": {
+            "minDstGas": 100000
           }
         }
       },
@@ -5892,9 +7349,11 @@
         "bridgeInfo": {
           "1": {
             "tokenAddress": "0xA2c2C937333165d4c5f2dC5f31a43E1239FeCfeB"
-          },
-          "1088": {
-            "tokenAddress": "0x6F05709bc91Bad933346F9E159f0D3FdBc2c9DCE"
+          }
+        },
+        "feeInfo": {
+          "1": {
+            "minDstGas": 100000
           }
         }
       },
@@ -5918,6 +7377,14 @@
           "56": {
             "tokenAddress": "0x34294afabcbaffc616ac6614f6d2e17260b78bed"
           }
+        },
+        "feeInfo": {
+          "56": {
+            "minDstGas": 110000
+          },
+          "137": {
+            "minDstGas": 110000
+          }
         }
       },
       "isAcross": false,
@@ -5938,11 +7405,16 @@
           "1": {
             "tokenAddress": "0xe6828D65bf5023AE1851D90D8783Cc821ba7eeE1"
           },
-          "56": {
-            "tokenAddress": "0x34294AfABCbaFfc616ac6614F6d2e17260b78BEd"
-          },
           "137": {
             "tokenAddress": "0xe6828D65bf5023AE1851D90D8783Cc821ba7eeE1"
+          }
+        },
+        "feeInfo": {
+          "1": {
+            "minDstGas": 110000
+          },
+          "137": {
+            "minDstGas": 110000
           }
         }
       },
@@ -5966,6 +7438,14 @@
           "56": {
             "tokenAddress": "0x34294afabcbaffc616ac6614f6d2e17260b78bed"
           }
+        },
+        "feeInfo": {
+          "1": {
+            "minDstGas": 110000
+          },
+          "56": {
+            "minDstGas": 110000
+          }
         }
       },
       "isAcross": false,
@@ -5987,6 +7467,11 @@
           "56": {
             "tokenAddress": "0xcC6f1e1B87cfCbe9221808d2d85C501aab0B5192"
           }
+        },
+        "feeInfo": {
+          "56": {
+            "minDstGas": 200000
+          }
         }
       },
       "isAcross": false,
@@ -6007,6 +7492,11 @@
         "bridgeInfo": {
           "1": {
             "tokenAddress": "0xcc6f1e1b87cfcbe9221808d2d85c501aab0b5192"
+          }
+        },
+        "feeInfo": {
+          "1": {
+            "minDstGas": 200000
           }
         }
       },
@@ -6145,9 +7635,6 @@
       "tags": [],
       "extensions": {
         "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0x2b1D36f5B61AdDAf7DA7ebbd11B35FD8cfb0DE31"
-          },
           "10": {
             "tokenAddress": "0x2b1D36f5B61AdDAf7DA7ebbd11B35FD8cfb0DE31"
           },
@@ -6165,6 +7652,26 @@
           },
           "43114": {
             "tokenAddress": "0x2b1D36f5B61AdDAf7DA7ebbd11B35FD8cfb0DE31"
+          }
+        },
+        "feeInfo": {
+          "10": {
+            "minDstGas": 100000
+          },
+          "56": {
+            "minDstGas": 100000
+          },
+          "137": {
+            "minDstGas": 100000
+          },
+          "8453": {
+            "minDstGas": 100000
+          },
+          "42161": {
+            "minDstGas": 100000
+          },
+          "43114": {
+            "minDstGas": 100000
           }
         }
       },
@@ -6188,6 +7695,26 @@
           "1": {
             "tokenAddress": "0x2b1d36f5b61addaf7da7ebbd11b35fd8cfb0de31"
           }
+        },
+        "feeInfo": {
+          "1": {
+            "minDstGas": 100000
+          },
+          "10": {
+            "minDstGas": 100000
+          },
+          "137": {
+            "minDstGas": 100000
+          },
+          "8453": {
+            "minDstGas": 100000
+          },
+          "42161": {
+            "minDstGas": 100000
+          },
+          "43114": {
+            "minDstGas": 100000
+          }
         }
       },
       "isAcross": false,
@@ -6208,6 +7735,26 @@
         "bridgeInfo": {
           "1": {
             "tokenAddress": "0x2b1d36f5b61addaf7da7ebbd11b35fd8cfb0de31"
+          }
+        },
+        "feeInfo": {
+          "1": {
+            "minDstGas": 100000
+          },
+          "10": {
+            "minDstGas": 100000
+          },
+          "56": {
+            "minDstGas": 100000
+          },
+          "137": {
+            "minDstGas": 100000
+          },
+          "8453": {
+            "minDstGas": 100000
+          },
+          "42161": {
+            "minDstGas": 100000
           }
         }
       },
@@ -6230,6 +7777,26 @@
           "1": {
             "tokenAddress": "0x2b1d36f5b61addaf7da7ebbd11b35fd8cfb0de31"
           }
+        },
+        "feeInfo": {
+          "1": {
+            "minDstGas": 100000
+          },
+          "10": {
+            "minDstGas": 100000
+          },
+          "56": {
+            "minDstGas": 100000
+          },
+          "8453": {
+            "minDstGas": 100000
+          },
+          "42161": {
+            "minDstGas": 100000
+          },
+          "43114": {
+            "minDstGas": 100000
+          }
         }
       },
       "isAcross": false,
@@ -6251,6 +7818,26 @@
           "1": {
             "tokenAddress": "0x2b1d36f5b61addaf7da7ebbd11b35fd8cfb0de31"
           }
+        },
+        "feeInfo": {
+          "1": {
+            "minDstGas": 100000
+          },
+          "56": {
+            "minDstGas": 100000
+          },
+          "137": {
+            "minDstGas": 100000
+          },
+          "8453": {
+            "minDstGas": 100000
+          },
+          "42161": {
+            "minDstGas": 100000
+          },
+          "43114": {
+            "minDstGas": 100000
+          }
         }
       },
       "isAcross": false,
@@ -6271,6 +7858,26 @@
         "bridgeInfo": {
           "1": {
             "tokenAddress": "0x2b1d36f5b61addaf7da7ebbd11b35fd8cfb0de31"
+          }
+        },
+        "feeInfo": {
+          "1": {
+            "minDstGas": 100000
+          },
+          "10": {
+            "minDstGas": 100000
+          },
+          "56": {
+            "minDstGas": 100000
+          },
+          "137": {
+            "minDstGas": 100000
+          },
+          "42161": {
+            "minDstGas": 100000
+          },
+          "43114": {
+            "minDstGas": 100000
           }
         }
       },
@@ -6379,6 +7986,14 @@
           "56": {
             "tokenAddress": "0xbdeae1ca48894a1759a8374d63925f21f2ee2639"
           }
+        },
+        "feeInfo": {
+          "56": {
+            "minDstGas": 200000
+          },
+          "42161": {
+            "minDstGas": 200000
+          }
         }
       },
       "isAcross": false,
@@ -6399,11 +8014,16 @@
           "1": {
             "tokenAddress": "0xf8173a39c56a554837C4C7f104153A005D284D11"
           },
-          "56": {
-            "tokenAddress": "0xBdEAe1cA48894A1759A8374D63925f21f2Ee2639"
-          },
           "42161": {
             "tokenAddress": "0xf8173a39c56a554837C4C7f104153A005D284D11"
+          }
+        },
+        "feeInfo": {
+          "1": {
+            "minDstGas": 200000
+          },
+          "42161": {
+            "minDstGas": 200000
           }
         }
       },
@@ -6423,9 +8043,6 @@
       "tags": [],
       "extensions": {
         "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0xba0Dda8762C24dA9487f5FA026a9B64b695A07Ea"
-          },
           "56": {
             "tokenAddress": "0xba0Dda8762C24dA9487f5FA026a9B64b695A07Ea"
           },
@@ -6440,6 +8057,23 @@
           },
           "43114": {
             "tokenAddress": "0xba0Dda8762C24dA9487f5FA026a9B64b695A07Ea"
+          }
+        },
+        "feeInfo": {
+          "56": {
+            "minDstGas": 210000
+          },
+          "137": {
+            "minDstGas": 210000
+          },
+          "8453": {
+            "minDstGas": 210000
+          },
+          "42161": {
+            "minDstGas": 210000
+          },
+          "43114": {
+            "minDstGas": 210000
           }
         }
       },
@@ -6463,6 +8097,23 @@
           "1": {
             "tokenAddress": "0xba0dda8762c24da9487f5fa026a9b64b695a07ea"
           }
+        },
+        "feeInfo": {
+          "1": {
+            "minDstGas": 210000
+          },
+          "137": {
+            "minDstGas": 210000
+          },
+          "8453": {
+            "minDstGas": 210000
+          },
+          "42161": {
+            "minDstGas": 210000
+          },
+          "43114": {
+            "minDstGas": 210000
+          }
         }
       },
       "isAcross": false,
@@ -6484,6 +8135,23 @@
           "1": {
             "tokenAddress": "0xba0dda8762c24da9487f5fa026a9b64b695a07ea"
           }
+        },
+        "feeInfo": {
+          "1": {
+            "minDstGas": 210000
+          },
+          "56": {
+            "minDstGas": 210000
+          },
+          "137": {
+            "minDstGas": 210000
+          },
+          "8453": {
+            "minDstGas": 210000
+          },
+          "42161": {
+            "minDstGas": 210000
+          }
         }
       },
       "isAcross": false,
@@ -6504,6 +8172,23 @@
         "bridgeInfo": {
           "1": {
             "tokenAddress": "0xba0dda8762c24da9487f5fa026a9b64b695a07ea"
+          }
+        },
+        "feeInfo": {
+          "1": {
+            "minDstGas": 210000
+          },
+          "56": {
+            "minDstGas": 210000
+          },
+          "8453": {
+            "minDstGas": 210000
+          },
+          "42161": {
+            "minDstGas": 210000
+          },
+          "43114": {
+            "minDstGas": 210000
           }
         }
       },
@@ -6526,6 +8211,23 @@
           "1": {
             "tokenAddress": "0xba0dda8762c24da9487f5fa026a9b64b695a07ea"
           }
+        },
+        "feeInfo": {
+          "1": {
+            "minDstGas": 210000
+          },
+          "56": {
+            "minDstGas": 210000
+          },
+          "137": {
+            "minDstGas": 210000
+          },
+          "42161": {
+            "minDstGas": 210000
+          },
+          "43114": {
+            "minDstGas": 210000
+          }
         }
       },
       "isAcross": false,
@@ -6543,9 +8245,6 @@
       "tags": [],
       "extensions": {
         "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0x78a0A62Fba6Fb21A83FE8a3433d44C73a4017A6f"
-          },
           "56": {
             "tokenAddress": "0x78a0A62Fba6Fb21A83FE8a3433d44C73a4017A6f"
           },
@@ -6557,6 +8256,20 @@
           },
           "43114": {
             "tokenAddress": "0x78a0A62Fba6Fb21A83FE8a3433d44C73a4017A6f"
+          }
+        },
+        "feeInfo": {
+          "56": {
+            "minDstGas": 210000
+          },
+          "137": {
+            "minDstGas": 210000
+          },
+          "42161": {
+            "minDstGas": 210000
+          },
+          "43114": {
+            "minDstGas": 210000
           }
         }
       },
@@ -6579,6 +8292,20 @@
           "1": {
             "tokenAddress": "0x78a0a62fba6fb21a83fe8a3433d44c73a4017a6f"
           }
+        },
+        "feeInfo": {
+          "1": {
+            "minDstGas": 210000
+          },
+          "137": {
+            "minDstGas": 210000
+          },
+          "42161": {
+            "minDstGas": 210000
+          },
+          "43114": {
+            "minDstGas": 210000
+          }
         }
       },
       "isAcross": false,
@@ -6598,6 +8325,20 @@
         "bridgeInfo": {
           "1": {
             "tokenAddress": "0x78a0a62fba6fb21a83fe8a3433d44c73a4017a6f"
+          }
+        },
+        "feeInfo": {
+          "1": {
+            "minDstGas": 210000
+          },
+          "56": {
+            "minDstGas": 210000
+          },
+          "137": {
+            "minDstGas": 210000
+          },
+          "42161": {
+            "minDstGas": 210000
           }
         }
       },
@@ -6619,6 +8360,20 @@
         "bridgeInfo": {
           "1": {
             "tokenAddress": "0x78a0a62fba6fb21a83fe8a3433d44c73a4017a6f"
+          }
+        },
+        "feeInfo": {
+          "1": {
+            "minDstGas": 210000
+          },
+          "56": {
+            "minDstGas": 210000
+          },
+          "42161": {
+            "minDstGas": 210000
+          },
+          "43114": {
+            "minDstGas": 210000
           }
         }
       },
@@ -6947,11 +8702,14 @@
       "tags": [],
       "extensions": {
         "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0xe3944AB788A60ca266f1eEc3C26925b95f6370aD"
-          },
           "8453": {
             "tokenAddress": "0x1F1aA4d239002bB818536c95E9b762a1FC8484C1"
+          }
+        },
+        "feeInfo": {
+          "8453": {
+            "oftFee": 10,
+            "minDstGas": 200000
           }
         }
       },
@@ -6974,6 +8732,12 @@
         "bridgeInfo": {
           "1": {
             "tokenAddress": "0xe3944ab788a60ca266f1eec3c26925b95f6370ad"
+          }
+        },
+        "feeInfo": {
+          "1": {
+            "oftFee": 10,
+            "minDstGas": 200000
           }
         }
       },
@@ -7555,14 +9319,21 @@
       "tags": [],
       "extensions": {
         "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0x3d000462Fb9826804a45c0EA869b83b69587F2dB"
-          },
           "8453": {
             "tokenAddress": "0x1883aF6b51fb7F69577880004a82c9d68582022C"
           },
           "42161": {
             "tokenAddress": "0x1883aF6b51fb7F69577880004a82c9d68582022C"
+          }
+        },
+        "feeInfo": {
+          "8453": {
+            "oftFee": 30,
+            "minDstGas": 200000
+          },
+          "42161": {
+            "oftFee": 30,
+            "minDstGas": 200000
           }
         }
       },
@@ -7584,6 +9355,16 @@
         "bridgeInfo": {
           "1": {
             "tokenAddress": "0x3d000462fb9826804a45c0ea869b83b69587f2db"
+          }
+        },
+        "feeInfo": {
+          "1": {
+            "oftFee": 30,
+            "minDstGas": 200000
+          },
+          "42161": {
+            "oftFee": 30,
+            "minDstGas": 200000
           }
         }
       },
@@ -7752,14 +9533,19 @@
       "tags": [],
       "extensions": {
         "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0xd3CC9d8f3689B83c91b7B59cAB4946B063EB894A"
-          },
           "56": {
             "tokenAddress": "0xcF6BB5389c92Bdda8a3747Ddb454cB7a64626C63"
           },
           "42161": {
             "tokenAddress": "0xc1Eb7689147C81aC840d4FF0D298489fc7986d52"
+          }
+        },
+        "feeInfo": {
+          "56": {
+            "minDstGas": 300000
+          },
+          "42161": {
+            "minDstGas": 300000
           }
         }
       },
@@ -7781,6 +9567,14 @@
         "bridgeInfo": {
           "1": {
             "tokenAddress": "0xd3cc9d8f3689b83c91b7b59cab4946b063eb894a"
+          }
+        },
+        "feeInfo": {
+          "1": {
+            "minDstGas": 300000
+          },
+          "42161": {
+            "minDstGas": 300000
           }
         }
       },
@@ -8988,11 +10782,13 @@
       "tags": [],
       "extensions": {
         "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0x6BC08509B36A98E829dFfAD49Fde5e412645d0a3"
-          },
           "8453": {
             "tokenAddress": "0xB3a9bd4861454bA94931ebFF410c3D828525dCe2"
+          }
+        },
+        "feeInfo": {
+          "8453": {
+            "minDstGas": 200000
           }
         }
       },
@@ -9015,6 +10811,11 @@
         "bridgeInfo": {
           "1": {
             "tokenAddress": "0x6bc08509b36a98e829dffad49fde5e412645d0a3"
+          }
+        },
+        "feeInfo": {
+          "1": {
+            "minDstGas": 200000
           }
         }
       },
@@ -10732,6 +12533,25 @@
       "logoURI": "https://s2.coinmarketcap.com/static/img/coins/128x128/31076.png",
       "tags": [],
       "extensions": {},
+      "isAcross": false,
+      "isOFT": false
+    },
+    {
+      "chainId": 1,
+      "address": "0xE6829d9a7eE3040e1276Fa75293Bde931859e8fA",
+      "name": "cmETH",
+      "decimals": 18,
+      "symbol": "cmETH",
+      "logoURI": "https://s2.coinmarketcap.com/static/img/coins/128x128/33978.png",
+      "tags": [],
+      "extensions": {
+        "coinMarketCapId": 33978,
+        "bridgeInfo": {
+          "1": {
+            "tokenAddress": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2"
+          }
+        }
+      },
       "isAcross": false,
       "isOFT": false
     },
@@ -28573,6 +30393,20 @@
           "1": {
             "tokenAddress": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48"
           }
+        },
+        "feeInfo": {
+          "10": {
+            "minDstGas": 0
+          },
+          "137": {
+            "minDstGas": 0
+          },
+          "146": {
+            "minDstGas": 0
+          },
+          "80094": {
+            "minDstGas": 0
+          }
         }
       },
       "isAcross": true,
@@ -28682,6 +30516,14 @@
           "56": {
             "tokenAddress": "0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c"
           }
+        },
+        "feeInfo": {
+          "56": {
+            "minDstGas": 100000
+          },
+          "43114": {
+            "minDstGas": 100000
+          }
         }
       },
       "isAcross": false,
@@ -28722,6 +30564,17 @@
           "56": {
             "tokenAddress": "0x0b15ddf19d47e6a86a56148fb4afffc6929bcb89"
           }
+        },
+        "feeInfo": {
+          "56": {
+            "minDstGas": 110000
+          },
+          "137": {
+            "minDstGas": 110000
+          },
+          "8453": {
+            "minDstGas": 110000
+          }
         }
       },
       "isAcross": false,
@@ -28741,6 +30594,17 @@
         "bridgeInfo": {
           "1": {
             "tokenAddress": "0x4591dbff62656e7859afe5e45f6f47d3669fbb28"
+          }
+        },
+        "feeInfo": {
+          "1": {
+            "minDstGas": 110000
+          },
+          "10": {
+            "minDstGas": 110000
+          },
+          "8453": {
+            "minDstGas": 110000
           }
         }
       },
@@ -28798,9 +30662,11 @@
         "bridgeInfo": {
           "56": {
             "tokenAddress": "0x1D4268a58ee7EC2cc2Af5d70a2fD2B3a896527a2"
-          },
-          "42161": {
-            "tokenAddress": "0xAf5db6E1CC585ca312E8c8F7c499033590cf5C98"
+          }
+        },
+        "feeInfo": {
+          "56": {
+            "minDstGas": 200000
           }
         }
       },
@@ -28824,6 +30690,14 @@
           "56": {
             "tokenAddress": "0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82"
           }
+        },
+        "feeInfo": {
+          "1": {
+            "minDstGas": 200000
+          },
+          "56": {
+            "minDstGas": 200000
+          }
         }
       },
       "isAcross": false,
@@ -28843,6 +30717,20 @@
         "bridgeInfo": {
           "1": {
             "tokenAddress": "0x94025780a1ab58868d9b2dbbb775f44b32e8e6e5"
+          }
+        },
+        "feeInfo": {
+          "1": {
+            "minDstGas": 110000
+          },
+          "56": {
+            "minDstGas": 110000
+          },
+          "137": {
+            "minDstGas": 110000
+          },
+          "43114": {
+            "minDstGas": 110000
           }
         }
       },
@@ -28866,6 +30754,14 @@
           "56": {
             "tokenAddress": "0x477bc8d23c634c154061869478bce96be6045d12"
           }
+        },
+        "feeInfo": {
+          "1": {
+            "minDstGas": 110000
+          },
+          "56": {
+            "minDstGas": 110000
+          }
         }
       },
       "isAcross": false,
@@ -28886,6 +30782,11 @@
         "bridgeInfo": {
           "1": {
             "tokenAddress": "0xf951e335afb289353dc249e82926178eac7ded78"
+          }
+        },
+        "feeInfo": {
+          "1": {
+            "minDstGas": 200000
           }
         }
       },
@@ -28925,6 +30826,23 @@
           "1": {
             "tokenAddress": "0x788d86e00ab31db859c3d6b80d5a9375801d7f2a"
           }
+        },
+        "feeInfo": {
+          "1": {
+            "minDstGas": 100000
+          },
+          "10": {
+            "minDstGas": 100000
+          },
+          "56": {
+            "minDstGas": 100000
+          },
+          "137": {
+            "minDstGas": 100000
+          },
+          "43114": {
+            "minDstGas": 100000
+          }
         }
       },
       "isAcross": false,
@@ -28950,6 +30868,14 @@
           "8453": {
             "tokenAddress": "0x348Fdfe2c35934A96C1353185F09D0F9efBAdA86"
           }
+        },
+        "feeInfo": {
+          "10": {
+            "minDstGas": 110000
+          },
+          "8453": {
+            "minDstGas": 110000
+          }
         }
       },
       "isAcross": false,
@@ -28971,6 +30897,23 @@
           "1": {
             "tokenAddress": "0x92cc36d66e9d739d50673d1f27929a371fb83a67"
           }
+        },
+        "feeInfo": {
+          "1": {
+            "minDstGas": 0
+          },
+          "10": {
+            "minDstGas": 175000
+          },
+          "56": {
+            "minDstGas": 175000
+          },
+          "137": {
+            "minDstGas": 175000
+          },
+          "43114": {
+            "minDstGas": 175000
+          }
         }
       },
       "isAcross": false,
@@ -28990,6 +30933,29 @@
         "bridgeInfo": {
           "1": {
             "tokenAddress": "0x559b7bfc48a5274754b08819f75c5f27af53d53b"
+          }
+        },
+        "feeInfo": {
+          "1": {
+            "minDstGas": 500000
+          },
+          "10": {
+            "minDstGas": 220000
+          },
+          "56": {
+            "minDstGas": 220000
+          },
+          "137": {
+            "minDstGas": 210000
+          },
+          "1088": {
+            "minDstGas": 220000
+          },
+          "8453": {
+            "minDstGas": 260000
+          },
+          "43114": {
+            "minDstGas": 240000
           }
         }
       },
@@ -29012,6 +30978,14 @@
           "8453": {
             "tokenAddress": "0xbefd5c25a59ef2c1316c5a4944931171f30cd3e4"
           }
+        },
+        "feeInfo": {
+          "1": {
+            "minDstGas": 200000
+          },
+          "8453": {
+            "minDstGas": 100000
+          }
         }
       },
       "isAcross": false,
@@ -29033,6 +31007,14 @@
           "43114": {
             "tokenAddress": "0x6e84a6216ea6dacc71ee8e6b0a5b7322eebc0fdd"
           }
+        },
+        "feeInfo": {
+          "56": {
+            "minDstGas": 100000
+          },
+          "43114": {
+            "minDstGas": 100000
+          }
         }
       },
       "isAcross": false,
@@ -29053,6 +31035,23 @@
         "bridgeInfo": {
           "43114": {
             "tokenAddress": "0x152b9d0fdc40c096757f570a51e494bd4b943e50"
+          }
+        },
+        "feeInfo": {
+          "1": {
+            "minDstGas": 100000
+          },
+          "10": {
+            "minDstGas": 100000
+          },
+          "56": {
+            "minDstGas": 100000
+          },
+          "137": {
+            "minDstGas": 100000
+          },
+          "43114": {
+            "minDstGas": 100000
           }
         }
       },
@@ -29093,6 +31092,17 @@
           "1": {
             "tokenAddress": "0x137ddb47ee24eaa998a535ab00378d6bfa84f893"
           }
+        },
+        "feeInfo": {
+          "1": {
+            "minDstGas": 100000
+          },
+          "56": {
+            "minDstGas": 100000
+          },
+          "8453": {
+            "minDstGas": 100000
+          }
         }
       },
       "isAcross": false,
@@ -29113,6 +31123,23 @@
         "bridgeInfo": {
           "1": {
             "tokenAddress": "0x9ed7e4b1bff939ad473da5e7a218c771d1569456"
+          }
+        },
+        "feeInfo": {
+          "1": {
+            "minDstGas": 230000
+          },
+          "10": {
+            "minDstGas": 250000
+          },
+          "56": {
+            "minDstGas": 230000
+          },
+          "137": {
+            "minDstGas": 250000
+          },
+          "43114": {
+            "minDstGas": 250000
           }
         }
       },
@@ -29135,6 +31162,14 @@
           "1": {
             "tokenAddress": "0xe60779cc1b2c1d0580611c526a8df0e3f870ec48"
           }
+        },
+        "feeInfo": {
+          "1": {
+            "minDstGas": 200000
+          },
+          "56": {
+            "minDstGas": 200000
+          }
         }
       },
       "isAcross": false,
@@ -29155,6 +31190,14 @@
         "bridgeInfo": {
           "1": {
             "tokenAddress": "0x0ae38f7e10a43b5b2fb064b42a2f4514cba909ef"
+          }
+        },
+        "feeInfo": {
+          "1": {
+            "minDstGas": 200000
+          },
+          "56": {
+            "minDstGas": 200000
           }
         }
       },
@@ -29177,6 +31220,14 @@
           "1": {
             "tokenAddress": "0x6982508145454Ce325dDbE47a25d4ec3d2311933"
           }
+        },
+        "feeInfo": {
+          "1": {
+            "minDstGas": 100000
+          },
+          "56": {
+            "minDstGas": 100000
+          }
         }
       },
       "isAcross": false,
@@ -29197,6 +31248,26 @@
         "bridgeInfo": {
           "1": {
             "tokenAddress": "0x99D8a9C45b2ecA8864373A26D1459e3Dff1e17F3"
+          }
+        },
+        "feeInfo": {
+          "1": {
+            "minDstGas": 100000
+          },
+          "10": {
+            "minDstGas": 100000
+          },
+          "56": {
+            "minDstGas": 100000
+          },
+          "137": {
+            "minDstGas": 100000
+          },
+          "8453": {
+            "minDstGas": 100000
+          },
+          "43114": {
+            "minDstGas": 100000
           }
         }
       },
@@ -29234,6 +31305,11 @@
           "56": {
             "tokenAddress": "0x1a131f7b106d58f33eaf0fe5b47db2f2045e5732"
           }
+        },
+        "feeInfo": {
+          "56": {
+            "minDstGas": 250000
+          }
         }
       },
       "isAcross": false,
@@ -29250,7 +31326,13 @@
       "symbol": "DMT",
       "logoURI": "https://s2.coinmarketcap.com/static/img/coins/128x128/25653.png",
       "tags": [],
-      "extensions": {},
+      "extensions": {
+        "feeInfo": {
+          "1": {
+            "minDstGas": 100000
+          }
+        }
+      },
       "isAcross": false,
       "oftAdapter": "0xa9aa07f082d9c15d0b6d7e9e5b68b1f898399c29",
       "oftVersion": 2,
@@ -29270,6 +31352,17 @@
           "1": {
             "tokenAddress": "0x7448c7456a97769f6cd04f1e83a4a23ccdc46abd"
           }
+        },
+        "feeInfo": {
+          "1": {
+            "minDstGas": 100000
+          },
+          "56": {
+            "minDstGas": 100000
+          },
+          "8453": {
+            "minDstGas": 200000
+          }
         }
       },
       "isAcross": false,
@@ -29286,7 +31379,21 @@
       "logoURI": "https://s2.coinmarketcap.com/static/img/coins/128x128/4660.png",
       "tags": [],
       "extensions": {
-        "coingeckoId": "telos"
+        "coingeckoId": "telos",
+        "feeInfo": {
+          "1": {
+            "minDstGas": 100000
+          },
+          "56": {
+            "minDstGas": 100000
+          },
+          "137": {
+            "minDstGas": 100000
+          },
+          "43114": {
+            "minDstGas": 100000
+          }
+        }
       },
       "isAcross": false,
       "oftAdapter": "0x193f4A4a6ea24102F49b931DEeeb931f6E32405d",
@@ -29307,6 +31414,14 @@
           "1": {
             "tokenAddress": "0x1b6e9c73bee68102d9dd4a2627f97bff4183ab0a"
           }
+        },
+        "feeInfo": {
+          "1": {
+            "minDstGas": 110000
+          },
+          "56": {
+            "minDstGas": 110000
+          }
         }
       },
       "isAcross": false,
@@ -29326,6 +31441,17 @@
         "bridgeInfo": {
           "1": {
             "tokenAddress": "0x8db253a1943dddf1af9bcf8706ac9a0ce939d922"
+          }
+        },
+        "feeInfo": {
+          "1": {
+            "minDstGas": 110000
+          },
+          "56": {
+            "minDstGas": 0
+          },
+          "137": {
+            "minDstGas": 0
           }
         }
       },
@@ -29348,6 +31474,20 @@
           "1": {
             "tokenAddress": "0x9e20461bc2c4c980f62f1b279d71734207a6a356"
           }
+        },
+        "feeInfo": {
+          "1": {
+            "minDstGas": 110000
+          },
+          "56": {
+            "minDstGas": 110000
+          },
+          "137": {
+            "minDstGas": 110000
+          },
+          "8453": {
+            "minDstGas": 110000
+          }
         }
       },
       "isAcross": false,
@@ -29369,6 +31509,11 @@
           "56": {
             "tokenAddress": "0x8ea5219a16c2dbf1d6335a6aa0c6bd45c50347c5"
           }
+        },
+        "feeInfo": {
+          "56": {
+            "minDstGas": 200000
+          }
         }
       },
       "isAcross": false,
@@ -29389,6 +31534,32 @@
         "bridgeInfo": {
           "1": {
             "tokenAddress": "0xa21af1050f7b26e0cff45ee51548254c41ed6b5c"
+          }
+        },
+        "feeInfo": {
+          "1": {
+            "oftFee": 10,
+            "minDstGas": 200000
+          },
+          "10": {
+            "oftFee": 10,
+            "minDstGas": 200000
+          },
+          "56": {
+            "oftFee": 10,
+            "minDstGas": 200000
+          },
+          "137": {
+            "oftFee": 10,
+            "minDstGas": 200000
+          },
+          "8453": {
+            "oftFee": 10,
+            "minDstGas": 200000
+          },
+          "43114": {
+            "oftFee": 10,
+            "minDstGas": 200000
           }
         }
       },
@@ -29430,6 +31601,26 @@
           "1": {
             "tokenAddress": "0x2b1d36f5b61addaf7da7ebbd11b35fd8cfb0de31"
           }
+        },
+        "feeInfo": {
+          "1": {
+            "minDstGas": 100000
+          },
+          "10": {
+            "minDstGas": 100000
+          },
+          "56": {
+            "minDstGas": 100000
+          },
+          "137": {
+            "minDstGas": 100000
+          },
+          "8453": {
+            "minDstGas": 100000
+          },
+          "43114": {
+            "minDstGas": 100000
+          }
         }
       },
       "isAcross": false,
@@ -29468,6 +31659,14 @@
           "56": {
             "tokenAddress": "0xbdeae1ca48894a1759a8374d63925f21f2ee2639"
           }
+        },
+        "feeInfo": {
+          "1": {
+            "minDstGas": 200000
+          },
+          "56": {
+            "minDstGas": 200000
+          }
         }
       },
       "isAcross": false,
@@ -29489,6 +31688,23 @@
           "1": {
             "tokenAddress": "0xba0dda8762c24da9487f5fa026a9b64b695a07ea"
           }
+        },
+        "feeInfo": {
+          "1": {
+            "minDstGas": 210000
+          },
+          "56": {
+            "minDstGas": 210000
+          },
+          "137": {
+            "minDstGas": 210000
+          },
+          "8453": {
+            "minDstGas": 210000
+          },
+          "43114": {
+            "minDstGas": 210000
+          }
         }
       },
       "isAcross": false,
@@ -29508,6 +31724,20 @@
         "bridgeInfo": {
           "1": {
             "tokenAddress": "0x78a0a62fba6fb21a83fe8a3433d44c73a4017a6f"
+          }
+        },
+        "feeInfo": {
+          "1": {
+            "minDstGas": 210000
+          },
+          "56": {
+            "minDstGas": 210000
+          },
+          "137": {
+            "minDstGas": 210000
+          },
+          "43114": {
+            "minDstGas": 210000
           }
         }
       },
@@ -29620,6 +31850,16 @@
           "1": {
             "tokenAddress": "0x3d000462fb9826804a45c0ea869b83b69587f2db"
           }
+        },
+        "feeInfo": {
+          "1": {
+            "oftFee": 30,
+            "minDstGas": 200000
+          },
+          "8453": {
+            "oftFee": 30,
+            "minDstGas": 200000
+          }
         }
       },
       "isAcross": false,
@@ -29676,6 +31916,14 @@
         "bridgeInfo": {
           "1": {
             "tokenAddress": "0xd3cc9d8f3689b83c91b7b59cab4946b063eb894a"
+          }
+        },
+        "feeInfo": {
+          "1": {
+            "minDstGas": 300000
+          },
+          "56": {
+            "minDstGas": 300000
           }
         }
       },

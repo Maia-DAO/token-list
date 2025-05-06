@@ -293,7 +293,7 @@ async function main() {
     const enhanced = tokens.map(t => {
 
         // Skip tokens that are not OFT
-        if (!t.isOFT) {
+        if (t.isOFT === false) {
             return t;
         }
 
