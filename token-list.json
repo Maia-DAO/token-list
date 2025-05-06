@@ -1,8 +1,8 @@
 {
   "name": "Hermes Omnichain Token List",
-  "timestamp": "1746540573",
+  "timestamp": "1746556327",
   "version": {
-    "major": 27,
+    "major": 34,
     "minor": 0,
     "patch": 0
   },
@@ -193,7 +193,7 @@
         }
       },
       "isAcross": true,
-      "isOFT": false,
+      "isOFT": true,
       "oftAdapter": "0xe15bcb9e0ea69e6ab9fa080c4c4a5632896298c3",
       "oftVersion": 2,
       "endpointId": 101,
@@ -309,14 +309,15 @@
         },
         "feeInfo": {
           "10": {
-            "minDstGas": 0
+            "minDstGas": 200000
           },
           "137": {
-            "minDstGas": 0
+            "minDstGas": 200000
           }
         }
       },
       "isAcross": true,
+      "isOFT": true,
       "oftAdapter": "0x91a40c733c97a6e1bf876eaf9ed8c08102eb491f",
       "oftVersion": 1,
       "endpointId": 101,
@@ -676,9 +677,6 @@
       "extensions": {
         "coingeckoId": "optimism",
         "bridgeInfo": {
-          "10": {
-            "tokenAddress": "0x4200000000000000000000000000000000000042"
-          },
           "42161": {
             "tokenAddress": "0xaC800FD6159c2a2CB8fC31EF74621eB430287a5A"
           },
@@ -688,7 +686,12 @@
         }
       },
       "isAcross": true,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0xac800fd6159c2a2cb8fc31ef74621eb430287a5a",
+      "oftVersion": 3,
+      "endpointVersion": 2,
+      "endpointId": 30111,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 1,
@@ -1001,26 +1004,27 @@
         },
         "feeInfo": {
           "10": {
-            "minDstGas": 0
+            "minDstGas": 200000
           },
           "56": {
-            "minDstGas": 0
+            "minDstGas": 200000
           },
           "137": {
-            "minDstGas": 0
+            "minDstGas": 200000
           },
           "8453": {
-            "minDstGas": 0
+            "minDstGas": 200000
           },
           "42161": {
-            "minDstGas": 0
+            "minDstGas": 2000000
           },
           "43114": {
-            "minDstGas": 0
+            "minDstGas": 200000
           }
         }
       },
       "isAcross": true,
+      "isOFT": true,
       "oftAdapter": "0x28a92dde19d9989f39a49905d7c9c2fac7799bdf",
       "oftVersion": 2,
       "endpointId": 101,
@@ -1311,9 +1315,6 @@
       "extensions": {
         "coingeckoId": "tether",
         "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0xdAC17F958D2ee523a2206206994597C13D831ec7"
-          },
           "10": {
             "tokenAddress": "0x94b008aA00579c1307B0EF2c499aD98a8ce58e58"
           },
@@ -1346,7 +1347,13 @@
           }
         }
       },
-      "isAcross": true
+      "isAcross": true,
+      "isOFT": true,
+      "oftAdapter": "0x811ed79db9d34e83bdb73df6c3e07961cfb0d5c0",
+      "oftVersion": 3,
+      "endpointVersion": 2,
+      "endpointId": 30101,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 10,
@@ -1428,9 +1435,6 @@
       "extensions": {
         "coingeckoId": "wrapped-bitcoin",
         "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599"
-          },
           "56": {
             "tokenAddress": "0x0555E30da8f98308EdB960aa94C0Db47230d2B9c"
           },
@@ -1458,7 +1462,12 @@
         }
       },
       "isAcross": true,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x0555e30da8f98308edb960aa94c0db47230d2b9c",
+      "oftVersion": 3,
+      "endpointVersion": 2,
+      "endpointId": 30101,
+      "oftSharedDecimals": 8
     },
     {
       "chainId": 10,
@@ -1541,20 +1550,21 @@
         },
         "feeInfo": {
           "10": {
-            "minDstGas": 0
+            "minDstGas": 200000
           },
           "1088": {
-            "minDstGas": 0
+            "minDstGas": 200000
           },
           "42161": {
-            "minDstGas": 0
+            "minDstGas": 2000000
           },
           "80094": {
-            "minDstGas": 0
+            "minDstGas": 200000
           }
         }
       },
       "isAcross": true,
+      "isOFT": true,
       "oftAdapter": "0x695921034f0387eac4e11620ee91b1b15a6a09fe",
       "oftVersion": 1,
       "endpointId": 101,
@@ -1791,12 +1801,7 @@
       "tags": [],
       "extensions": {
         "coingeckoId": "mantle-staked-ether",
-        "coinMarketCapId": 29035,
-        "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0x0000000000000000000000000000000000000000"
-          }
-        }
+        "coinMarketCapId": 29035
       },
       "isAcross": false,
       "isOFT": false
@@ -1936,25 +1941,26 @@
         },
         "feeInfo": {
           "1": {
-            "minDstGas": 0
+            "minDstGas": 200000
           },
           "10": {
-            "minDstGas": 0
+            "minDstGas": 200000
           },
           "137": {
-            "minDstGas": 0
+            "minDstGas": 200000
           },
           "8453": {
-            "minDstGas": 0
+            "minDstGas": 200000
           },
           "42161": {
-            "minDstGas": 0
+            "minDstGas": 2000000
           },
           "43114": {
-            "minDstGas": 0
+            "minDstGas": 200000
           }
         }
       },
+      "isOFT": true,
       "oftAdapter": "0x8d1ebcda83fd905b597bf6d3294766b64ecf2aa7",
       "endpointId": 102
     },
@@ -2018,22 +2024,23 @@
         },
         "feeInfo": {
           "1": {
-            "minDstGas": 0
+            "minDstGas": 200000
           },
           "10": {
-            "minDstGas": 0
+            "minDstGas": 200000
           },
           "137": {
-            "minDstGas": 0
+            "minDstGas": 200000
           },
           "1088": {
-            "minDstGas": 0
+            "minDstGas": 200000
           },
           "43114": {
-            "minDstGas": 0
+            "minDstGas": 200000
           }
         }
       },
+      "isOFT": true,
       "oftAdapter": "0x0551ca9e33bada0355dfce34685ad3b73cf3ad70",
       "endpointId": 102
     },
@@ -2071,12 +2078,7 @@
       "logoURI": "https://raw.githubusercontent.com/MaiaDAO/token-list/5adb27397a46b8ae3b79ab6f1efe878aa5ba085d/0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000.svg",
       "tags": [],
       "extensions": {
-        "coingeckoId": "metis-token",
-        "bridgeInfo": {
-          "1088": {
-            "tokenAddress": "0x0000000000000000000000000000000000000000"
-          }
-        }
+        "coingeckoId": "metis-token"
       }
     },
     {
@@ -2092,7 +2094,11 @@
         "coinMarketCapId": 35092
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x79bbF4508B1391af3A0F4B30bb5FC4aa9ab0E07C",
+      "endpointVersion": 2,
+      "endpointId": 30101,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 56,
@@ -2106,7 +2112,11 @@
         "coingeckoId": "heyanon"
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x79bbF4508B1391af3A0F4B30bb5FC4aa9ab0E07C",
+      "endpointVersion": 2,
+      "endpointId": 30102,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 1088,
@@ -2120,7 +2130,11 @@
         "coingeckoId": "heyanon"
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x79bbF4508B1391af3A0F4B30bb5FC4aa9ab0E07C",
+      "endpointVersion": 2,
+      "endpointId": 30151,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 146,
@@ -2134,7 +2148,12 @@
       "decimals": 18,
       "logoURI": "https://raw.githubusercontent.com/RealWagmi/tokenlists/main/logos/146/0x79bbF4508B1391af3A0F4B30bb5FC4aa9ab0E07C/logo.png",
       "tags": [],
-      "extensions": {}
+      "extensions": {},
+      "isOFT": true,
+      "oftAdapter": "0x79bbF4508B1391af3A0F4B30bb5FC4aa9ab0E07C",
+      "endpointVersion": 2,
+      "endpointId": 30332,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 8453,
@@ -2148,7 +2167,11 @@
         "coingeckoId": "heyanon"
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x79bbF4508B1391af3A0F4B30bb5FC4aa9ab0E07C",
+      "endpointVersion": 2,
+      "endpointId": 30184,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 43114,
@@ -2160,7 +2183,11 @@
       "tags": [],
       "extensions": {},
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x79bbF4508B1391af3A0F4B30bb5FC4aa9ab0E07C",
+      "endpointVersion": 2,
+      "endpointId": 30106,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 10,
@@ -2179,6 +2206,7 @@
         }
       },
       "isAcross": false,
+      "isOFT": true,
       "oftAdapter": "0xb4Bc46bc6cB217B59ea8F4530BaE26Bf69F677f0",
       "endpointId": 111,
       "oftSharedDecimals": 6
@@ -2202,6 +2230,7 @@
           }
         }
       },
+      "isOFT": true,
       "oftAdapter": "0x1E5fe95fB90ac0530F581C617272cd0864626795",
       "endpointId": 332,
       "oftSharedDecimals": 6
@@ -2222,7 +2251,11 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x0555E30da8f98308EdB960aa94C0Db47230d2B9c",
+      "endpointVersion": 2,
+      "endpointId": 30102,
+      "oftSharedDecimals": 8
     },
     {
       "chainId": 43114,
@@ -2240,7 +2273,11 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x0555E30da8f98308EdB960aa94C0Db47230d2B9c",
+      "endpointVersion": 2,
+      "endpointId": 30106,
+      "oftSharedDecimals": 8
     },
     {
       "chainId": 8453,
@@ -2258,7 +2295,11 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x0555E30da8f98308EdB960aa94C0Db47230d2B9c",
+      "endpointVersion": 2,
+      "endpointId": 30184,
+      "oftSharedDecimals": 8
     },
     {
       "chainId": 80094,
@@ -2276,7 +2317,11 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x0555E30da8f98308EdB960aa94C0Db47230d2B9c",
+      "endpointVersion": 2,
+      "endpointId": 30362,
+      "oftSharedDecimals": 8
     },
     {
       "chainId": 146,
@@ -2294,7 +2339,11 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x0555E30da8f98308EdB960aa94C0Db47230d2B9c",
+      "endpointVersion": 2,
+      "endpointId": 30332,
+      "oftSharedDecimals": 8
     },
     {
       "chainId": 56,
@@ -2326,6 +2375,7 @@
           }
         }
       },
+      "isOFT": true,
       "oftAdapter": "0xa9004a5421372e1d83fb1f85b0fc986c912f91f3",
       "oftVersion": 2,
       "endpointId": 102,
@@ -2355,6 +2405,7 @@
         }
       },
       "isAcross": false,
+      "isOFT": true,
       "oftAdapter": "0xa9004A5421372E1D83fB1f85b0fc986c912f91f3",
       "endpointId": 106,
       "oftSharedDecimals": 6
@@ -2369,16 +2420,18 @@
       "tags": [],
       "extensions": {
         "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0xC96dE26018A54D51c097160568752c4E3BD6C364"
-          },
           "80094": {
             "tokenAddress": "0xbAC93A69c62a1518136FF840B788Ba715cbDfE2B"
           }
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x0b835f07a2a54c0e80c1f585e5b6dd732816da3f",
+      "oftVersion": 3,
+      "endpointVersion": 2,
+      "endpointId": 30101,
+      "oftSharedDecimals": 8
     },
     {
       "chainId": 80094,
@@ -2396,7 +2449,12 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x0b835f07a2a54c0e80c1f585e5b6dd732816da3f",
+      "oftVersion": 3,
+      "endpointVersion": 2,
+      "endpointId": 30362,
+      "oftSharedDecimals": 8
     },
     {
       "chainId": 1,
@@ -2423,7 +2481,7 @@
         }
       },
       "isAcross": false,
-      "isOFT": false,
+      "isOFT": true,
       "oftAdapter": "0xc7ae4ab742f6b0b203f6710c87677005bc45ad01",
       "oftVersion": 2,
       "endpointId": 101,
@@ -2439,16 +2497,18 @@
       "tags": [],
       "extensions": {
         "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0x2dA719DB753dFA10a62E140f436E1d67F2ddB0d6"
-          },
           "8453": {
             "tokenAddress": "0x9886447Ff4c350f4600E4BF95Db756Bdc629b1cA"
           }
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x721c5cb57f5db41ffa8b276cae5ed9d58e7fa1c2",
+      "oftVersion": 3,
+      "endpointVersion": 2,
+      "endpointId": 30101,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 8453,
@@ -2466,7 +2526,11 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x9886447Ff4c350f4600E4BF95Db756Bdc629b1cA",
+      "endpointVersion": 2,
+      "endpointId": 30184,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 8453,
@@ -2486,7 +2550,11 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x0B3EAEAd748facDb9d943d3407011f16Eb17D0Cf",
+      "endpointVersion": 2,
+      "endpointId": 30184,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 56,
@@ -2505,7 +2573,11 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x0B3EAEAd748facDb9d943d3407011f16Eb17D0Cf",
+      "endpointVersion": 2,
+      "endpointId": 30102,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 1,
@@ -2517,9 +2589,6 @@
       "tags": [],
       "extensions": {
         "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0x0B3EAEAd748facDb9d943d3407011f16Eb17D0Cf"
-          },
           "56": {
             "tokenAddress": "0x0B3EAEAd748facDb9d943d3407011f16Eb17D0Cf"
           },
@@ -2535,7 +2604,12 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x1c3f687a5fe3b52178455378c893e317711388f6",
+      "oftVersion": 3,
+      "endpointVersion": 2,
+      "endpointId": 30101,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 137,
@@ -2554,7 +2628,11 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x0B3EAEAd748facDb9d943d3407011f16Eb17D0Cf",
+      "endpointVersion": 2,
+      "endpointId": 30109,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 1,
@@ -2566,6 +2644,7 @@
       "tags": [],
       "extensions": {},
       "isAcross": false,
+      "isOFT": true,
       "oftAdapter": "0xaa798bf5ec09b6e3bc059ea4d36d4ca53e063ef7",
       "oftVersion": 2,
       "endpointId": 101,
@@ -2604,6 +2683,7 @@
         }
       },
       "isAcross": false,
+      "isOFT": true,
       "oftAdapter": "0xcf7d4b692c478b77aff32bb1493c54c84f27f85a",
       "oftVersion": 2,
       "endpointId": 102,
@@ -2636,6 +2716,7 @@
         }
       },
       "isAcross": false,
+      "isOFT": true,
       "oftAdapter": "0x8255775bea425f910044ddFb7681D6d87fD5489d",
       "endpointId": 109,
       "oftSharedDecimals": 8
@@ -2667,6 +2748,7 @@
         }
       },
       "isAcross": false,
+      "isOFT": true,
       "oftAdapter": "0x8255775bea425f910044ddFb7681D6d87fD5489d",
       "endpointId": 184,
       "oftSharedDecimals": 8
@@ -2687,7 +2769,11 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x08BF7F2005Ab25A90d4f88eFd70Dbdf0EF6B7554",
+      "endpointVersion": 2,
+      "endpointId": 30184,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 56,
@@ -2699,16 +2785,18 @@
       "tags": [],
       "extensions": {
         "bridgeInfo": {
-          "56": {
-            "tokenAddress": "0x3C6256F234Ba638E5883c46b3fEdb00ea2e66b8A"
-          },
           "8453": {
             "tokenAddress": "0x08BF7F2005Ab25A90d4f88eFd70Dbdf0EF6B7554"
           }
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x08bf7f2005ab25a90d4f88efd70dbdf0ef6b7554",
+      "oftVersion": 3,
+      "endpointVersion": 2,
+      "endpointId": 30102,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 1,
@@ -2745,6 +2833,7 @@
         }
       },
       "isAcross": false,
+      "isOFT": true,
       "oftAdapter": "0x4591DBfF62656E7859Afe5e45f6f47D3669fBB28",
       "endpointId": 101,
       "oftSharedDecimals": 18
@@ -2776,6 +2865,7 @@
         }
       },
       "isAcross": false,
+      "isOFT": true,
       "oftAdapter": "0x4591DBfF62656E7859Afe5e45f6f47D3669fBB28",
       "endpointId": 111,
       "oftSharedDecimals": 18
@@ -2807,6 +2897,7 @@
         }
       },
       "isAcross": false,
+      "isOFT": true,
       "oftAdapter": "0x4591DBfF62656E7859Afe5e45f6f47D3669fBB28",
       "endpointId": 184,
       "oftSharedDecimals": 18
@@ -2833,6 +2924,7 @@
         }
       },
       "isAcross": false,
+      "isOFT": true,
       "oftAdapter": "0xE15bCB9E0EA69e6aB9FA080c4c4A5632896298C3",
       "endpointId": 106,
       "oftSharedDecimals": 6
@@ -2980,9 +3072,6 @@
       "tags": [],
       "extensions": {
         "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0x66a1E37c9b0eAddca17d3662D6c05F4DECf3e110"
-          },
           "8453": {
             "tokenAddress": "0x35E5dB674D8e93a03d814FA0ADa70731efe8a4b9"
           },
@@ -2995,7 +3084,12 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0xd2ee2776f34ef4e7325745b06e6d464b08d4be0e",
+      "oftVersion": 3,
+      "endpointVersion": 2,
+      "endpointId": 30101,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 8453,
@@ -3013,7 +3107,11 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x35E5dB674D8e93a03d814FA0ADa70731efe8a4b9",
+      "endpointVersion": 2,
+      "endpointId": 30184,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 80094,
@@ -3031,7 +3129,11 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x2492D0006411Af6C8bbb1c8afc1B0197350a79e9",
+      "endpointVersion": 2,
+      "endpointId": 30362,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 56,
@@ -3054,6 +3156,7 @@
         }
       },
       "isAcross": false,
+      "isOFT": true,
       "oftAdapter": "0x1D4268a58ee7EC2cc2Af5d70a2fD2B3a896527a2",
       "endpointId": 102,
       "oftSharedDecimals": 9
@@ -3085,6 +3188,7 @@
         }
       },
       "isAcross": false,
+      "isOFT": true,
       "oftAdapter": "0xb274202daba6ae180c665b4fbe59857b7c3a8091",
       "oftVersion": 2,
       "endpointId": 102,
@@ -3116,6 +3220,7 @@
         }
       },
       "isAcross": false,
+      "isOFT": true,
       "oftAdapter": "0x152649eA73beAb28c5b49B26eb48f7EAD6d4c898",
       "endpointId": 101,
       "oftSharedDecimals": 8
@@ -3159,6 +3264,7 @@
         }
       },
       "isAcross": false,
+      "isOFT": true,
       "oftAdapter": "0xb92d5ba343396599076a52bb95d0029286b8f463",
       "oftVersion": 1,
       "endpointId": 101,
@@ -3194,6 +3300,7 @@
         }
       },
       "isAcross": false,
+      "isOFT": true,
       "oftAdapter": "0xeb90e1256ab885067b4e3264ea431affbc8582e2",
       "oftVersion": 1,
       "endpointId": 102,
@@ -3229,6 +3336,7 @@
         }
       },
       "isAcross": false,
+      "isOFT": true,
       "oftAdapter": "0x73ddb67cb110012676fa3770fe595f85b9ee1ac3",
       "oftVersion": 1,
       "endpointId": 106,
@@ -3264,6 +3372,7 @@
         }
       },
       "isAcross": false,
+      "isOFT": true,
       "oftAdapter": "0xcf3f8622319ace86f1e877f4bf3f586329cdded8",
       "oftVersion": 1,
       "endpointId": 109,
@@ -3290,6 +3399,7 @@
         }
       },
       "isAcross": false,
+      "isOFT": true,
       "oftAdapter": "0x885f0a0e5cd0bdb3e58995aad80e6c6bc2823dcb",
       "oftVersion": 2,
       "endpointId": 101,
@@ -3317,6 +3427,7 @@
         }
       },
       "isAcross": false,
+      "isOFT": true,
       "oftAdapter": "0x52242cbAb41e290E9E17CCC50Cc437bB60020a9d",
       "endpointId": 102,
       "oftSharedDecimals": 2
@@ -3342,6 +3453,7 @@
         }
       },
       "isAcross": false,
+      "isOFT": true,
       "oftAdapter": "0x76326791a0d491cdb24a349354ec024756816d12",
       "oftVersion": 2,
       "endpointId": 102,
@@ -3368,6 +3480,7 @@
         }
       },
       "isAcross": false,
+      "isOFT": true,
       "oftAdapter": "0x52b4FC2CA0D9b194769AB9a3dC36c2C6831f2520",
       "endpointId": 151,
       "oftSharedDecimals": 9
@@ -3397,6 +3510,7 @@
         }
       },
       "isAcross": false,
+      "isOFT": true,
       "oftAdapter": "0x560363BdA52BC6A44CA6C8c9B4a5FadbDa32fa60",
       "endpointId": 101,
       "oftSharedDecimals": 18
@@ -3428,6 +3542,7 @@
         }
       },
       "isAcross": false,
+      "isOFT": true,
       "oftAdapter": "0x560363bda52bc6a44ca6c8c9b4a5fadbda32fa60",
       "oftVersion": 1,
       "endpointId": 102,
@@ -3454,7 +3569,11 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x915424Ac489433130d92B04096F3b96c82e92a9D",
+      "endpointVersion": 2,
+      "endpointId": 30101,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 56,
@@ -3473,7 +3592,11 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x915424Ac489433130d92B04096F3b96c82e92a9D",
+      "endpointVersion": 2,
+      "endpointId": 30102,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 8453,
@@ -3492,7 +3615,11 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x915424Ac489433130d92B04096F3b96c82e92a9D",
+      "endpointVersion": 2,
+      "endpointId": 30184,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 1,
@@ -3515,6 +3642,7 @@
         }
       },
       "isAcross": false,
+      "isOFT": true,
       "oftAdapter": "0x5c6392a69dc11f254457716c682f70e4b2ed7b05",
       "oftVersion": 1,
       "endpointId": 101,
@@ -3530,16 +3658,18 @@
       "tags": [],
       "extensions": {
         "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0x96F6eF951840721AdBF46Ac996b59E0235CB985C"
-          },
           "42161": {
             "tokenAddress": "0x35e050d3C0eC2d29D269a8EcEa763a183bDF9A9D"
           }
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0xa6275720b3fb1efe3e6ef2b5bf2293148852307d",
+      "oftVersion": 3,
+      "endpointVersion": 2,
+      "endpointId": 30101,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 1,
@@ -3588,6 +3718,7 @@
         }
       },
       "isAcross": false,
+      "isOFT": true,
       "oftAdapter": "0x788D86E00ab31Db859C3d6b80d5a9375801d7f2A",
       "endpointId": 101,
       "oftSharedDecimals": 6
@@ -3625,6 +3756,7 @@
         }
       },
       "isAcross": false,
+      "isOFT": true,
       "oftAdapter": "0x788D86E00ab31Db859C3d6b80d5a9375801d7f2A",
       "endpointId": 102,
       "oftSharedDecimals": 6
@@ -3662,6 +3794,7 @@
         }
       },
       "isAcross": false,
+      "isOFT": true,
       "oftAdapter": "0x788D86E00ab31Db859C3d6b80d5a9375801d7f2A",
       "endpointId": 106,
       "oftSharedDecimals": 6
@@ -3699,6 +3832,7 @@
         }
       },
       "isAcross": false,
+      "isOFT": true,
       "oftAdapter": "0x788D86E00ab31Db859C3d6b80d5a9375801d7f2A",
       "endpointId": 109,
       "oftSharedDecimals": 6
@@ -3736,6 +3870,7 @@
         }
       },
       "isAcross": false,
+      "isOFT": true,
       "oftAdapter": "0x788D86E00ab31Db859C3d6b80d5a9375801d7f2A",
       "endpointId": 111,
       "oftSharedDecimals": 6
@@ -3764,6 +3899,7 @@
         }
       },
       "isAcross": false,
+      "isOFT": true,
       "oftAdapter": "0x348Fdfe2c35934A96C1353185F09D0F9efBAdA86",
       "endpointId": 111,
       "oftSharedDecimals": 18
@@ -3792,6 +3928,7 @@
         }
       },
       "isAcross": false,
+      "isOFT": true,
       "oftAdapter": "0x348Fdfe2c35934A96C1353185F09D0F9efBAdA86",
       "endpointId": 184,
       "oftSharedDecimals": 18
@@ -3806,9 +3943,6 @@
       "tags": [],
       "extensions": {
         "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0x92CC36D66e9d739D50673d1f27929a371FB83a67"
-          },
           "10": {
             "tokenAddress": "0xaf20f5f19698f1D19351028cd7103B63D30DE7d7"
           },
@@ -3827,7 +3961,12 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0xf5ec00e770de25aef156d290c2504e163b22b4e4",
+      "oftVersion": 3,
+      "endpointVersion": 2,
+      "endpointId": 30101,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 56,
@@ -3846,7 +3985,7 @@
         },
         "feeInfo": {
           "1": {
-            "minDstGas": 0
+            "minDstGas": 200000
           },
           "10": {
             "minDstGas": 175000
@@ -3863,6 +4002,7 @@
         }
       },
       "isAcross": false,
+      "isOFT": true,
       "oftAdapter": "0xaf20f5f19698f1D19351028cd7103B63D30DE7d7",
       "endpointId": 102,
       "oftSharedDecimals": 18
@@ -3884,7 +4024,7 @@
         },
         "feeInfo": {
           "1": {
-            "minDstGas": 0
+            "minDstGas": 200000
           },
           "10": {
             "minDstGas": 175000
@@ -3901,6 +4041,7 @@
         }
       },
       "isAcross": false,
+      "isOFT": true,
       "oftAdapter": "0xaf20f5f19698f1D19351028cd7103B63D30DE7d7",
       "endpointId": 106,
       "oftSharedDecimals": 18
@@ -3922,7 +4063,7 @@
         },
         "feeInfo": {
           "1": {
-            "minDstGas": 0
+            "minDstGas": 200000
           },
           "10": {
             "minDstGas": 175000
@@ -3939,6 +4080,7 @@
         }
       },
       "isAcross": false,
+      "isOFT": true,
       "oftAdapter": "0x07Ed33a242BD9C08CA3C198e01189e35265024Da",
       "endpointId": 109,
       "oftSharedDecimals": 18
@@ -3960,7 +4102,7 @@
         },
         "feeInfo": {
           "1": {
-            "minDstGas": 0
+            "minDstGas": 200000
           },
           "56": {
             "minDstGas": 175000
@@ -3977,6 +4119,7 @@
         }
       },
       "isAcross": false,
+      "isOFT": true,
       "oftAdapter": "0xaf20f5f19698f1D19351028cd7103B63D30DE7d7",
       "endpointId": 111,
       "oftSharedDecimals": 18
@@ -3991,16 +4134,18 @@
       "tags": [],
       "extensions": {
         "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0x8236a87084f8B84306f72007F36F2618A5634494"
-          },
           "80094": {
             "tokenAddress": "0xecAc9C5F704e954931349Da37F60E39f515c11c1"
           }
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x1290a6b480f7ef14925229fdb66f5680ad8f44ad",
+      "oftVersion": 3,
+      "endpointVersion": 2,
+      "endpointId": 30101,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 80094,
@@ -4018,7 +4163,12 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x630e12d53d4e041b8c5451ad035ea841e08391d7",
+      "oftVersion": 3,
+      "endpointVersion": 2,
+      "endpointId": 30362,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 1,
@@ -4077,6 +4227,7 @@
         }
       },
       "isAcross": false,
+      "isOFT": true,
       "oftAdapter": "0xd3fdcb837dafdb7c9c3ebd48fe22a53f6dd3d7d7",
       "oftVersion": 2,
       "endpointId": 101,
@@ -4121,6 +4272,7 @@
         }
       },
       "isAcross": false,
+      "isOFT": true,
       "oftAdapter": "0xD3FDCb837DAfdb7C9C3eBD48FE22a53F6Dd3d7D7",
       "endpointId": 102,
       "oftSharedDecimals": 8
@@ -4164,6 +4316,7 @@
         }
       },
       "isAcross": false,
+      "isOFT": true,
       "oftAdapter": "0xD3FDCb837DAfdb7C9C3eBD48FE22a53F6Dd3d7D7",
       "endpointId": 106,
       "oftSharedDecimals": 8
@@ -4207,6 +4360,7 @@
         }
       },
       "isAcross": false,
+      "isOFT": true,
       "oftAdapter": "0xD3FDCb837DAfdb7C9C3eBD48FE22a53F6Dd3d7D7",
       "endpointId": 109,
       "oftSharedDecimals": 8
@@ -4250,6 +4404,7 @@
         }
       },
       "isAcross": false,
+      "isOFT": true,
       "oftAdapter": "0xD3FDCb837DAfdb7C9C3eBD48FE22a53F6Dd3d7D7",
       "endpointId": 111,
       "oftSharedDecimals": 8
@@ -4293,6 +4448,7 @@
         }
       },
       "isAcross": false,
+      "isOFT": true,
       "oftAdapter": "0xD3FDCb837DAfdb7C9C3eBD48FE22a53F6Dd3d7D7",
       "endpointId": 151,
       "oftSharedDecimals": 8
@@ -4337,6 +4493,7 @@
         }
       },
       "isAcross": false,
+      "isOFT": true,
       "oftAdapter": "0xD3FDCb837DAfdb7C9C3eBD48FE22a53F6Dd3d7D7",
       "endpointId": 184,
       "oftSharedDecimals": 8
@@ -4366,6 +4523,7 @@
         }
       },
       "isAcross": false,
+      "isOFT": true,
       "oftAdapter": "0x9DeB0fc809955b79c85e82918E8586d3b7d2695a",
       "endpointId": 101,
       "oftSharedDecimals": 6
@@ -4397,6 +4555,7 @@
         }
       },
       "isAcross": false,
+      "isOFT": true,
       "oftAdapter": "0xdee1b2dab488b0d71677200ea1330fdced01e144",
       "oftVersion": 2,
       "endpointId": 184,
@@ -4429,6 +4588,7 @@
         }
       },
       "isAcross": false,
+      "isOFT": true,
       "oftAdapter": "0xf37982e3f33ac007c690ed6266f3402d24aa27ea",
       "oftVersion": 1,
       "endpointId": 101,
@@ -4458,6 +4618,7 @@
         }
       },
       "isAcross": false,
+      "isOFT": true,
       "oftAdapter": "0xc2c433d36d7184192e442a243b351a9e3055fd5f",
       "oftVersion": 1,
       "endpointId": 111,
@@ -4487,6 +4648,7 @@
         }
       },
       "isAcross": false,
+      "isOFT": true,
       "oftAdapter": "0x2af13bf84f8b452cb86839330f514cc5c2899217",
       "oftVersion": 1,
       "endpointId": 184,
@@ -4519,6 +4681,7 @@
         }
       },
       "isAcross": false,
+      "isOFT": true,
       "oftAdapter": "0x5c574153b195ae284c063a84fb9c73d9fd37955f",
       "oftVersion": 1,
       "endpointId": 101,
@@ -4548,6 +4711,7 @@
         }
       },
       "isAcross": false,
+      "isOFT": true,
       "oftAdapter": "0x95dcff2bfd19af97267b8c9d516206dcc87eecdd",
       "oftVersion": 1,
       "endpointId": 111,
@@ -4577,6 +4741,7 @@
         }
       },
       "isAcross": false,
+      "isOFT": true,
       "oftAdapter": "0x30eac06d1e495411ee15cb59714eb9da29fc200e",
       "oftVersion": 1,
       "endpointId": 184,
@@ -4601,7 +4766,7 @@
         },
         "feeInfo": {
           "1": {
-            "minDstGas": 0
+            "minDstGas": 200000
           },
           "1088": {
             "minDstGas": 100000
@@ -4612,7 +4777,7 @@
         }
       },
       "isAcross": false,
-      "isOFT": false,
+      "isOFT": true,
       "oftAdapter": "0xceCB301c2e2A04dD631428C386DD21db70716F8a",
       "endpointId": 102,
       "oftSharedDecimals": 6
@@ -4633,7 +4798,7 @@
         },
         "feeInfo": {
           "1": {
-            "minDstGas": 0
+            "minDstGas": 200000
           },
           "56": {
             "minDstGas": 100000
@@ -4644,6 +4809,7 @@
         }
       },
       "isAcross": false,
+      "isOFT": true,
       "oftAdapter": "0xceCB301c2e2A04dD631428C386DD21db70716F8a",
       "endpointId": 106,
       "oftSharedDecimals": 6
@@ -4656,15 +4822,14 @@
       "symbol": "wstETH",
       "logoURI": "https://s2.coinmarketcap.com/static/img/coins/128x128/12409.png",
       "tags": [],
-      "extensions": {
-        "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0x7f39C581F595B53c5cb19bD0b3f8dA6c935E2Ca0"
-          }
-        }
-      },
+      "extensions": {},
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0xa2d339411624cfb6243f909b064e07320919ee3f",
+      "oftVersion": 3,
+      "endpointVersion": 2,
+      "endpointId": 30101,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 1,
@@ -4687,14 +4852,15 @@
         },
         "feeInfo": {
           "56": {
-            "minDstGas": 0
+            "minDstGas": 200000
           },
           "43114": {
-            "minDstGas": 0
+            "minDstGas": 200000
           }
         }
       },
       "isAcross": false,
+      "isOFT": true,
       "oftAdapter": "0x31e4efe290973ebE91b3a875a7994f650942D28F",
       "endpointId": 101,
       "oftSharedDecimals": 18
@@ -4716,14 +4882,15 @@
         },
         "feeInfo": {
           "1": {
-            "minDstGas": 0
+            "minDstGas": 200000
           },
           "43114": {
-            "minDstGas": 0
+            "minDstGas": 200000
           }
         }
       },
       "isAcross": false,
+      "isOFT": true,
       "oftAdapter": "0x31e4efe290973ebE91b3a875a7994f650942D28F",
       "endpointId": 102,
       "oftSharedDecimals": 18
@@ -4745,14 +4912,15 @@
         },
         "feeInfo": {
           "1": {
-            "minDstGas": 0
+            "minDstGas": 200000
           },
           "56": {
-            "minDstGas": 0
+            "minDstGas": 200000
           }
         }
       },
       "isAcross": false,
+      "isOFT": true,
       "oftAdapter": "0xd402298a793948698b9a63311404FBBEe944eAfD",
       "endpointId": 106,
       "oftSharedDecimals": 18
@@ -4774,7 +4942,11 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0xf9Fa60EF4F23F00CCE403cc4d2c11Baf4880A0d6",
+      "endpointVersion": 2,
+      "endpointId": 30101,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 137,
@@ -4791,14 +4963,16 @@
           },
           "56": {
             "tokenAddress": "0xDC816B6bd4786720e91Eb17D4DaBf0E1eEf5eE91"
-          },
-          "137": {
-            "tokenAddress": "0x5F32AbeeBD3c2fac1E7459A27e1AE9f1C16ccccA"
           }
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x1a53f62a8eeee5cea2aa822dd0c8b5ed1ff20159",
+      "oftVersion": 3,
+      "endpointVersion": 2,
+      "endpointId": 30109,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 56,
@@ -4816,7 +4990,11 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0xDC816B6bd4786720e91Eb17D4DaBf0E1eEf5eE91",
+      "endpointVersion": 2,
+      "endpointId": 30102,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 56,
@@ -4843,6 +5021,7 @@
         }
       },
       "isAcross": false,
+      "isOFT": true,
       "oftAdapter": "0x371c7ec6D8039ff7933a2AA28EB827Ffe1F52f07",
       "endpointId": 102,
       "oftSharedDecimals": 8
@@ -4874,6 +5053,7 @@
         }
       },
       "isAcross": false,
+      "isOFT": true,
       "oftAdapter": "0x371c7ec6d8039ff7933a2aa28eb827ffe1f52f07",
       "oftVersion": 2,
       "endpointId": 106,
@@ -4889,16 +5069,18 @@
       "tags": [],
       "extensions": {
         "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0xD6C7bB8531295e88D364EA67D5D1acC7D3F87454"
-          },
           "43114": {
             "tokenAddress": "0x61f23250451305f6C4426E81C50aE535Edf94A02"
           }
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0xbcc9a0c41fc42d55270fe45d45e6af9cc31f71ff",
+      "oftVersion": 3,
+      "endpointVersion": 2,
+      "endpointId": 30101,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 43114,
@@ -4917,7 +5099,11 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x61f23250451305f6C4426E81C50aE535Edf94A02",
+      "endpointVersion": 2,
+      "endpointId": 30106,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 1,
@@ -4952,6 +5138,7 @@
         }
       },
       "isAcross": false,
+      "isOFT": true,
       "oftAdapter": "0x2297aEbD383787A160DD0d9F71508148769342E3",
       "endpointId": 101,
       "oftSharedDecimals": 8
@@ -4989,6 +5176,7 @@
         }
       },
       "isAcross": false,
+      "isOFT": true,
       "oftAdapter": "0x2297aEbD383787A160DD0d9F71508148769342E3",
       "endpointId": 102,
       "oftSharedDecimals": 8
@@ -5026,6 +5214,7 @@
         }
       },
       "isAcross": false,
+      "isOFT": true,
       "oftAdapter": "0x2297aEbD383787A160DD0d9F71508148769342E3",
       "endpointId": 109,
       "oftSharedDecimals": 8
@@ -5063,6 +5252,7 @@
         }
       },
       "isAcross": false,
+      "isOFT": true,
       "oftAdapter": "0x2297aEbD383787A160DD0d9F71508148769342E3",
       "endpointId": 111,
       "oftSharedDecimals": 8
@@ -5112,6 +5302,7 @@
         }
       },
       "isAcross": false,
+      "isOFT": true,
       "oftAdapter": "0x2297aebd383787a160dd0d9f71508148769342e3",
       "oftVersion": 2,
       "endpointId": 106,
@@ -5138,7 +5329,11 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0xE2B1dc2D4A3b4E59FDF0c47B71A7A86391a8B35a",
+      "endpointVersion": 2,
+      "endpointId": 30102,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 8453,
@@ -5157,7 +5352,11 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0xE2B1dc2D4A3b4E59FDF0c47B71A7A86391a8B35a",
+      "endpointVersion": 2,
+      "endpointId": 30184,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 1,
@@ -5194,6 +5393,7 @@
         }
       },
       "isAcross": false,
+      "isOFT": true,
       "oftAdapter": "0x137dDB47Ee24EaA998a535Ab00378d6BFa84F893",
       "endpointId": 101,
       "oftSharedDecimals": 8
@@ -5226,6 +5426,7 @@
         }
       },
       "isAcross": false,
+      "isOFT": true,
       "oftAdapter": "0xf7DE7E8A6bd59ED41a4b5fe50278b3B7f31384dF",
       "endpointId": 102,
       "oftSharedDecimals": 8
@@ -5258,6 +5459,7 @@
         }
       },
       "isAcross": false,
+      "isOFT": true,
       "oftAdapter": "0xd722E55C1d9D9fA0021A5215Cbb904b92B3dC5d4",
       "endpointId": 184,
       "oftSharedDecimals": 8
@@ -5309,6 +5511,7 @@
         }
       },
       "isAcross": false,
+      "isOFT": true,
       "oftAdapter": "0x9ed7E4B1BFF939ad473dA5E7a218C771D1569456",
       "endpointId": 101,
       "oftSharedDecimals": 6
@@ -5347,6 +5550,7 @@
         }
       },
       "isAcross": false,
+      "isOFT": true,
       "oftAdapter": "0x9ed7E4B1BFF939ad473dA5E7a218C771D1569456",
       "endpointId": 102,
       "oftSharedDecimals": 6
@@ -5384,6 +5588,7 @@
         }
       },
       "isAcross": false,
+      "isOFT": true,
       "oftAdapter": "0x9ed7E4B1BFF939ad473dA5E7a218C771D1569456",
       "endpointId": 109,
       "oftSharedDecimals": 6
@@ -5422,6 +5627,7 @@
         }
       },
       "isAcross": false,
+      "isOFT": true,
       "oftAdapter": "0x9ed7E4B1BFF939ad473dA5E7a218C771D1569456",
       "endpointId": 106,
       "oftSharedDecimals": 6
@@ -5460,6 +5666,7 @@
         }
       },
       "isAcross": false,
+      "isOFT": true,
       "oftAdapter": "0x9ed7E4B1BFF939ad473dA5E7a218C771D1569456",
       "endpointId": 111,
       "oftSharedDecimals": 6
@@ -5491,6 +5698,7 @@
         }
       },
       "isAcross": false,
+      "isOFT": true,
       "oftAdapter": "0xa8b326ca02650ac968c554d6c534412e49c92bc4",
       "oftVersion": 1,
       "endpointId": 101,
@@ -5521,6 +5729,7 @@
         }
       },
       "isAcross": false,
+      "isOFT": true,
       "oftAdapter": "0x91d6d6aF7635B7b23A8CED9508117965180e2362",
       "endpointId": 102,
       "oftSharedDecimals": 18
@@ -5552,6 +5761,7 @@
         }
       },
       "isAcross": false,
+      "isOFT": true,
       "oftAdapter": "0x35f899ce6cc304aedfdb7835f623a30473b26457",
       "oftVersion": 1,
       "endpointId": 101,
@@ -5582,6 +5792,7 @@
         }
       },
       "isAcross": false,
+      "isOFT": true,
       "oftAdapter": "0x0Ae38f7E10A43B5b2fB064B42a2f4514cbA909ef",
       "endpointId": 102,
       "oftSharedDecimals": 18
@@ -5622,6 +5833,7 @@
           }
         }
       },
+      "isOFT": true,
       "oftAdapter": "0x25d887ce7a35172c62febfd67a1856f20faebb00",
       "oftVersion": 2,
       "endpointId": 101,
@@ -5652,6 +5864,7 @@
         }
       },
       "isAcross": false,
+      "isOFT": true,
       "oftAdapter": "0x25d887Ce7a35172C62FeBFD67a1856F20FaEbB00",
       "endpointId": 102,
       "oftSharedDecimals": 4
@@ -5666,16 +5879,18 @@
       "tags": [],
       "extensions": {
         "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0x7A56E1C57C7475CCf742a1832B028F0456652F97"
-          },
           "80094": {
             "tokenAddress": "0x541FD749419CA806a8bc7da8ac23D346f2dF8B77"
           }
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0xb12979ff302ac903849948037a51792cf7186e8e",
+      "oftVersion": 3,
+      "endpointVersion": 2,
+      "endpointId": 30101,
+      "oftSharedDecimals": 8
     },
     {
       "chainId": 80094,
@@ -5693,7 +5908,12 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0xb12979ff302ac903849948037a51792cf7186e8e",
+      "oftVersion": 3,
+      "endpointVersion": 2,
+      "endpointId": 30362,
+      "oftSharedDecimals": 8
     },
     {
       "chainId": 1,
@@ -5752,6 +5972,7 @@
           }
         }
       },
+      "isOFT": true,
       "oftAdapter": "0x439a5f0f5e8d149dda9a0ca367d4a8e4d6f83c10",
       "oftVersion": 2,
       "endpointId": 101,
@@ -5793,7 +6014,7 @@
         }
       },
       "isAcross": false,
-      "isOFT": false,
+      "isOFT": true,
       "oftAdapter": "0x41d5a04b4e03dc27dc1f5c5a576ad2187bc601af",
       "oftVersion": 2,
       "endpointId": 102,
@@ -5835,7 +6056,7 @@
         }
       },
       "isAcross": false,
-      "isOFT": false,
+      "isOFT": true,
       "oftAdapter": "0xb3a66127ccb143bfb01d3aecd3ce9d17381b130d",
       "oftVersion": 2,
       "endpointId": 106,
@@ -5877,7 +6098,7 @@
         }
       },
       "isAcross": false,
-      "isOFT": false,
+      "isOFT": true,
       "oftAdapter": "0xca0d86afc25c57a6d2acdf331cabd4c9cee05533",
       "oftVersion": 2,
       "endpointId": 109,
@@ -5919,6 +6140,7 @@
         }
       },
       "isAcross": false,
+      "isOFT": true,
       "oftAdapter": "0x48686c24697fe9042531b64d792304e514e74339",
       "oftVersion": 2,
       "endpointId": 111,
@@ -5960,6 +6182,7 @@
         }
       },
       "isAcross": false,
+      "isOFT": true,
       "oftAdapter": "0x4035957323fc05ad9704230e3dc1e7663091d262",
       "oftVersion": 2,
       "endpointId": 184,
@@ -5975,7 +6198,11 @@
       "tags": [],
       "extensions": {},
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0xA80F36BA18c7f721F3F7ACDbcDEfd3a86869A036",
+      "endpointVersion": 2,
+      "endpointId": 30106,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 8453,
@@ -5987,7 +6214,11 @@
       "tags": [],
       "extensions": {},
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0xc27468b12ffA6d714B1b5fBC87eF403F38b82AD4",
+      "endpointVersion": 2,
+      "endpointId": 30184,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 1,
@@ -6001,7 +6232,11 @@
         "coingeckoId": "degen-base"
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0xfee293840D23B0B2De8C55e1Cf7A9F01C157767c",
+      "endpointVersion": 2,
+      "endpointId": 30101,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 8453,
@@ -6013,7 +6248,12 @@
       "tags": [],
       "extensions": {},
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0xdb8e759859058952c34953c8469f464109826e52",
+      "oftVersion": 3,
+      "endpointVersion": 2,
+      "endpointId": 30184,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 56,
@@ -6036,6 +6276,7 @@
         }
       },
       "isAcross": false,
+      "isOFT": true,
       "oftAdapter": "0x5e6adf21e76f9d4258fc68fd5c8fcb826185f8ef",
       "oftVersion": 1,
       "endpointId": 102,
@@ -6049,15 +6290,14 @@
       "symbol": "CAT",
       "logoURI": "https://s2.coinmarketcap.com/static/img/coins/128x128/32724.png",
       "tags": [],
-      "extensions": {
-        "bridgeInfo": {
-          "56": {
-            "tokenAddress": "0x6894CDe390a3f51155ea41Ed24a33A4827d3063D"
-          }
-        }
-      },
+      "extensions": {},
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x27a2914fa4ba0ec60d42e2bc0726c3a8a6d7b000",
+      "oftVersion": 3,
+      "endpointVersion": 2,
+      "endpointId": 30102,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 1,
@@ -6076,6 +6316,7 @@
         }
       },
       "isAcross": false,
+      "isOFT": true,
       "oftAdapter": "0x0B7f0e51Cd1739D6C96982D55aD8fA634dd43A9C",
       "endpointId": 101,
       "oftSharedDecimals": 6
@@ -6115,6 +6356,7 @@
         }
       },
       "isAcross": false,
+      "isOFT": true,
       "oftAdapter": "0x7448c7456a97769F6cD04F1E83A4a23cCdC46aBD",
       "endpointId": 101,
       "oftSharedDecimals": 18
@@ -6147,6 +6389,7 @@
         }
       },
       "isAcross": false,
+      "isOFT": true,
       "oftAdapter": "0xd691d9a68C887BDF34DA8c36f63487333ACfD103",
       "endpointId": 102,
       "oftSharedDecimals": 18
@@ -6179,6 +6422,7 @@
         }
       },
       "isAcross": false,
+      "isOFT": true,
       "oftAdapter": "0x64b88c73A5DfA78D1713fE1b4c69a22d7E0faAa7",
       "endpointId": 184,
       "oftSharedDecimals": 18
@@ -6209,6 +6453,7 @@
         }
       },
       "isAcross": false,
+      "isOFT": true,
       "oftAdapter": "0x193f4A4a6ea24102F49b931DEeeb931f6E32405d",
       "endpointId": 101,
       "oftSharedDecimals": 4
@@ -6239,6 +6484,7 @@
         }
       },
       "isAcross": false,
+      "isOFT": true,
       "oftAdapter": "0x193f4A4a6ea24102F49b931DEeeb931f6E32405d",
       "endpointId": 102,
       "oftSharedDecimals": 4
@@ -6268,6 +6514,7 @@
         }
       },
       "isAcross": false,
+      "isOFT": true,
       "oftAdapter": "0xed667dC80a45b77305Cc395DB56D997597Dc6DdD",
       "endpointId": 106,
       "oftSharedDecimals": 4
@@ -6298,6 +6545,7 @@
         }
       },
       "isAcross": false,
+      "isOFT": true,
       "oftAdapter": "0x193f4A4a6ea24102F49b931DEeeb931f6E32405d",
       "endpointId": 109,
       "oftSharedDecimals": 4
@@ -6312,16 +6560,18 @@
       "tags": [],
       "extensions": {
         "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0xe3F28f11F76c62e965fFE5be8e62CDe3e8e7a7Cc"
-          },
           "56": {
             "tokenAddress": "0x9ff59ffc463736520aA465b2CA9C5D047bE919BA"
           }
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0xd100f83d565f03c9e74f454a683201fc1a882d08",
+      "oftVersion": 3,
+      "endpointVersion": 2,
+      "endpointId": 30101,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 56,
@@ -6339,7 +6589,11 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x9ff59ffc463736520aA465b2CA9C5D047bE919BA",
+      "endpointVersion": 2,
+      "endpointId": 30102,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 1,
@@ -6370,6 +6624,7 @@
         }
       },
       "isAcross": false,
+      "isOFT": true,
       "oftAdapter": "0x1B6e9c73beE68102d9dd4A2627f97bFf4183ab0A",
       "endpointId": 101,
       "oftSharedDecimals": 18
@@ -6399,6 +6654,7 @@
         }
       },
       "isAcross": false,
+      "isOFT": true,
       "oftAdapter": "0xB7E2713CF55cf4b469B5a8421Ae6Fc0ED18F1467",
       "endpointId": 102,
       "oftSharedDecimals": 18
@@ -6424,6 +6680,7 @@
         }
       },
       "isAcross": false,
+      "isOFT": true,
       "oftAdapter": "0x7bab349ba33d37ce6b56c117a9d0214e67806336",
       "oftVersion": 1,
       "endpointId": 101,
@@ -6451,6 +6708,7 @@
         }
       },
       "isAcross": false,
+      "isOFT": true,
       "oftAdapter": "0xAfF41DA975501E5b71848C975834341777D1a473",
       "endpointId": 109,
       "oftSharedDecimals": 18
@@ -6482,6 +6740,7 @@
         }
       },
       "isAcross": false,
+      "isOFT": true,
       "oftAdapter": "0xc31813c38b32c0f826c2dbf3360d5899740c9669",
       "oftVersion": 2,
       "endpointId": 101,
@@ -6512,6 +6771,7 @@
         }
       },
       "isAcross": false,
+      "isOFT": true,
       "oftAdapter": "0x336f374198c872Ba760e85af9c6331C3c5A535d3",
       "endpointId": 102,
       "oftSharedDecimals": 8
@@ -6541,6 +6801,7 @@
         }
       },
       "isAcross": false,
+      "isOFT": true,
       "oftAdapter": "0x110B25D2B21eE73eB401F3aE7833f7072912A0Bf",
       "endpointId": 109,
       "oftSharedDecimals": 8
@@ -6578,6 +6839,7 @@
         }
       },
       "isAcross": false,
+      "isOFT": true,
       "oftAdapter": "0xb2e787c6c83d6d75f466371a2966b27a8b700828",
       "oftVersion": 2,
       "endpointId": 101,
@@ -6605,11 +6867,12 @@
             "minDstGas": 110000
           },
           "42161": {
-            "minDstGas": 0
+            "minDstGas": 2000000
           }
         }
       },
       "isAcross": false,
+      "isOFT": true,
       "oftAdapter": "0xB2E787C6C83D6d75f466371a2966b27a8b700828",
       "endpointId": 102,
       "oftSharedDecimals": 9
@@ -6636,11 +6899,12 @@
             "minDstGas": 110000
           },
           "42161": {
-            "minDstGas": 0
+            "minDstGas": 2000000
           }
         }
       },
       "isAcross": false,
+      "isOFT": true,
       "oftAdapter": "0xB2E787C6C83D6d75f466371a2966b27a8b700828",
       "endpointId": 109,
       "oftSharedDecimals": 9
@@ -6653,15 +6917,14 @@
       "symbol": "LILY",
       "logoURI": "https://s2.coinmarketcap.com/static/img/coins/128x128/33718.png",
       "tags": [],
-      "extensions": {
-        "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0x7ce89243Cc0d9e746609c57845ECCbD9bB4B7315"
-          }
-        }
-      },
+      "extensions": {},
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0xb257f39ed1a8e195ff2cf69d477d53535e38160d",
+      "oftVersion": 3,
+      "endpointVersion": 2,
+      "endpointId": 30101,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 1,
@@ -6684,6 +6947,7 @@
         }
       },
       "isAcross": false,
+      "isOFT": true,
       "oftAdapter": "0x6f97d3f120fbbdaacf1c9da61a8ad126b7426861",
       "oftVersion": 1,
       "endpointId": 101,
@@ -6711,6 +6975,7 @@
         }
       },
       "isAcross": false,
+      "isOFT": true,
       "oftAdapter": "0x6f97D3F120fBbDaacF1c9da61a8aD126b7426861",
       "endpointId": 106,
       "oftSharedDecimals": 18
@@ -6757,7 +7022,7 @@
         }
       },
       "isAcross": false,
-      "isOFT": false,
+      "isOFT": true,
       "oftAdapter": "0xa0aa943666b4309c1989e3a7ebe7dbe11de36212",
       "oftVersion": 2,
       "endpointId": 101,
@@ -6794,6 +7059,7 @@
         }
       },
       "isAcross": false,
+      "isOFT": true,
       "oftAdapter": "0x9e20461bc2c4c980f62f1B279D71734207a6A356",
       "endpointId": 102,
       "oftSharedDecimals": 8
@@ -6829,6 +7095,7 @@
         }
       },
       "isAcross": false,
+      "isOFT": true,
       "oftAdapter": "0x9e20461bc2c4c980f62f1B279D71734207a6A356",
       "endpointId": 109,
       "oftSharedDecimals": 8
@@ -6864,6 +7131,7 @@
         }
       },
       "isAcross": false,
+      "isOFT": true,
       "oftAdapter": "0xC48E605c7b722a57277e087a6170B9E227e5AC0A",
       "endpointId": 184,
       "oftSharedDecimals": 8
@@ -6878,7 +7146,10 @@
       "tags": [],
       "extensions": {},
       "isAcross": false,
-      "isOFT": false
+      "oftAdapter": "0x813f392d21a55819Be5E78157BFCdBD25530f4E8",
+      "endpointVersion": 2,
+      "endpointId": 30184,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 1,
@@ -6901,6 +7172,7 @@
         }
       },
       "isAcross": false,
+      "isOFT": true,
       "oftAdapter": "0x02b88b31492c19d9e3145934cdb63a8a9b5b4b10",
       "oftVersion": 2,
       "endpointId": 101,
@@ -6927,6 +7199,7 @@
         }
       },
       "isAcross": false,
+      "isOFT": true,
       "oftAdapter": "0xa80221D067603e30060F75E2458AA361f8eE5402",
       "endpointId": 102,
       "oftSharedDecimals": 8
@@ -6952,6 +7225,7 @@
         }
       },
       "isAcross": false,
+      "isOFT": true,
       "oftAdapter": "0x9ba0b9c177846e6e447a5293c0f687e18df9da08",
       "oftVersion": 2,
       "endpointId": 102,
@@ -6978,6 +7252,7 @@
         }
       },
       "isAcross": false,
+      "isOFT": true,
       "oftAdapter": "0x8d279274789ccec8af94a430a5996eaace9609a9",
       "oftVersion": 2,
       "endpointId": 101,
@@ -7005,6 +7280,7 @@
         }
       },
       "isAcross": false,
+      "isOFT": true,
       "oftAdapter": "0x8D279274789CceC8af94a430A5996eAaCE9609A9",
       "endpointId": 102,
       "oftSharedDecimals": 8
@@ -7066,6 +7342,7 @@
         }
       },
       "isAcross": false,
+      "isOFT": true,
       "oftAdapter": "0x58ff71c056942600bc4acf8bdf48f82e6ad1f392",
       "oftVersion": 2,
       "endpointId": 101,
@@ -7114,6 +7391,7 @@
         }
       },
       "isAcross": false,
+      "isOFT": true,
       "oftAdapter": "0x11cd72f7A4B699c67f225ca8aBb20bC9F8DB90c7",
       "endpointId": 102,
       "oftSharedDecimals": 4
@@ -7161,6 +7439,7 @@
         }
       },
       "isAcross": false,
+      "isOFT": true,
       "oftAdapter": "0x96E1056a8814De39c8c3Cd0176042d6ceCD807d7",
       "endpointId": 106,
       "oftSharedDecimals": 4
@@ -7208,6 +7487,7 @@
         }
       },
       "isAcross": false,
+      "isOFT": true,
       "oftAdapter": "0x11cd72f7A4B699c67f225ca8aBb20bC9F8DB90c7",
       "endpointId": 109,
       "oftSharedDecimals": 4
@@ -7255,6 +7535,7 @@
         }
       },
       "isAcross": false,
+      "isOFT": true,
       "oftAdapter": "0xbFd5206962267c7b4b4A8B3D76AC2E1b2A5c4d5e",
       "endpointId": 111,
       "oftSharedDecimals": 4
@@ -7302,6 +7583,7 @@
         }
       },
       "isAcross": false,
+      "isOFT": true,
       "oftAdapter": "0xbFd5206962267c7b4b4A8B3D76AC2E1b2A5c4d5e",
       "endpointId": 184,
       "oftSharedDecimals": 4
@@ -7329,6 +7611,7 @@
         }
       },
       "isAcross": false,
+      "isOFT": true,
       "oftAdapter": "0xA2c2C937333165d4c5f2dC5f31a43E1239FeCfeB",
       "endpointId": 101,
       "oftSharedDecimals": 8
@@ -7357,6 +7640,7 @@
           }
         }
       },
+      "isOFT": true,
       "oftAdapter": "0x9c598da94c840147c9a1eabe1ae8df750674ddf6",
       "oftVersion": 2,
       "endpointId": 151,
@@ -7388,6 +7672,7 @@
         }
       },
       "isAcross": false,
+      "isOFT": true,
       "oftAdapter": "0xe6828D65bf5023AE1851D90D8783Cc821ba7eeE1",
       "endpointId": 101,
       "oftSharedDecimals": 8
@@ -7419,6 +7704,7 @@
         }
       },
       "isAcross": false,
+      "isOFT": true,
       "oftAdapter": "0xe6828d65bf5023ae1851d90d8783cc821ba7eee1",
       "oftVersion": 2,
       "endpointId": 102,
@@ -7449,6 +7735,7 @@
         }
       },
       "isAcross": false,
+      "isOFT": true,
       "oftAdapter": "0xe6828D65bf5023AE1851D90D8783Cc821ba7eeE1",
       "endpointId": 109,
       "oftSharedDecimals": 8
@@ -7475,6 +7762,7 @@
         }
       },
       "isAcross": false,
+      "isOFT": true,
       "oftAdapter": "0xcC6f1e1B87cfCbe9221808d2d85C501aab0B5192",
       "endpointId": 101,
       "oftSharedDecimals": 8
@@ -7501,6 +7789,7 @@
         }
       },
       "isAcross": false,
+      "isOFT": true,
       "oftAdapter": "0xcC6f1e1B87cfCbe9221808d2d85C501aab0B5192",
       "endpointId": 102,
       "oftSharedDecimals": 8
@@ -7515,9 +7804,6 @@
       "tags": [],
       "extensions": {
         "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0xA1290d69c65A6Fe4DF752f95823fae25cB99e5A7"
-          },
           "10": {
             "tokenAddress": "0x4186BFC76E2E237523CBC30FD220FE055156b41F"
           },
@@ -7536,7 +7822,12 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x85d456b2dff1fd8245387c0bfb64dfb700e98ef3",
+      "oftVersion": 3,
+      "endpointVersion": 2,
+      "endpointId": 30101,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 8453,
@@ -7555,7 +7846,11 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x1Bc71130A0e39942a7658878169764Bbd8A45993",
+      "endpointVersion": 2,
+      "endpointId": 30184,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 10,
@@ -7573,7 +7868,11 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x4186BFC76E2E237523CBC30FD220FE055156b41F",
+      "endpointVersion": 2,
+      "endpointId": 30111,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 80094,
@@ -7591,7 +7890,11 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x4186BFC76E2E237523CBC30FD220FE055156b41F",
+      "endpointVersion": 2,
+      "endpointId": 30362,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 146,
@@ -7609,7 +7912,11 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0xd75787bA9ABa324420d522BdA84c08c87e5099b1",
+      "endpointVersion": 2,
+      "endpointId": 30332,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 1,
@@ -7623,7 +7930,10 @@
         "coingeckoId": "layerzero-bridged-sei"
       },
       "isAcross": false,
-      "isOFT": false
+      "oftAdapter": "0xbdF43ecAdC5ceF51B7D1772F722E40596BC1788B",
+      "endpointVersion": 2,
+      "endpointId": 30101,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 1,
@@ -7676,6 +7986,7 @@
         }
       },
       "isAcross": false,
+      "isOFT": true,
       "oftAdapter": "0x8cfa44e930b7743123738eb2d7e78beaa964732e",
       "oftVersion": 2,
       "endpointId": 101,
@@ -7718,6 +8029,7 @@
         }
       },
       "isAcross": false,
+      "isOFT": true,
       "oftAdapter": "0x2b1D36f5B61AdDAf7DA7ebbd11B35FD8cfb0DE31",
       "endpointId": 102,
       "oftSharedDecimals": 8
@@ -7759,6 +8071,7 @@
         }
       },
       "isAcross": false,
+      "isOFT": true,
       "oftAdapter": "0x2b1D36f5B61AdDAf7DA7ebbd11B35FD8cfb0DE31",
       "endpointId": 106,
       "oftSharedDecimals": 8
@@ -7800,6 +8113,7 @@
         }
       },
       "isAcross": false,
+      "isOFT": true,
       "oftAdapter": "0x2b1D36f5B61AdDAf7DA7ebbd11B35FD8cfb0DE31",
       "endpointId": 109,
       "oftSharedDecimals": 8
@@ -7841,6 +8155,7 @@
         }
       },
       "isAcross": false,
+      "isOFT": true,
       "oftAdapter": "0x2b1D36f5B61AdDAf7DA7ebbd11B35FD8cfb0DE31",
       "endpointId": 111,
       "oftSharedDecimals": 8
@@ -7882,6 +8197,7 @@
         }
       },
       "isAcross": false,
+      "isOFT": true,
       "oftAdapter": "0x2b1D36f5B61AdDAf7DA7ebbd11B35FD8cfb0DE31",
       "endpointId": 184,
       "oftSharedDecimals": 8
@@ -7896,9 +8212,6 @@
       "tags": [],
       "extensions": {
         "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0x8457CA5040ad67fdebbCC8EdCE889A335Bc0fbFB"
-          },
           "10": {
             "tokenAddress": "0x85AF271d1DFCBF53486D996f61D7FF0bba5582eA"
           },
@@ -7917,7 +8230,12 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x85af271d1dfcbf53486d996f61d7ff0bba5582ea",
+      "oftVersion": 3,
+      "endpointVersion": 2,
+      "endpointId": 30101,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 8453,
@@ -7935,7 +8253,11 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x85AF271d1DFCBF53486D996f61D7FF0bba5582eA",
+      "endpointVersion": 2,
+      "endpointId": 30184,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 10,
@@ -7953,7 +8275,11 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x85AF271d1DFCBF53486D996f61D7FF0bba5582eA",
+      "endpointVersion": 2,
+      "endpointId": 30111,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 137,
@@ -7971,7 +8297,11 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x85AF271d1DFCBF53486D996f61D7FF0bba5582eA",
+      "endpointVersion": 2,
+      "endpointId": 30109,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 1,
@@ -7997,6 +8327,7 @@
         }
       },
       "isAcross": false,
+      "isOFT": true,
       "oftAdapter": "0xf8173a39c56a554837C4C7f104153A005D284D11",
       "endpointId": 101,
       "oftSharedDecimals": 8
@@ -8028,6 +8359,7 @@
         }
       },
       "isAcross": false,
+      "isOFT": true,
       "oftAdapter": "0x67fb304001ad03c282266b965b51e97aa54a2fab",
       "oftVersion": 2,
       "endpointId": 102,
@@ -8078,6 +8410,7 @@
         }
       },
       "isAcross": false,
+      "isOFT": true,
       "oftAdapter": "0x227dcc37d9a071d1a2adb7edc40b7ec38a2097b3",
       "oftVersion": 1,
       "endpointId": 101,
@@ -8117,6 +8450,7 @@
         }
       },
       "isAcross": false,
+      "isOFT": true,
       "oftAdapter": "0xba0Dda8762C24dA9487f5FA026a9B64b695A07Ea",
       "endpointId": 102,
       "oftSharedDecimals": 18
@@ -8155,6 +8489,7 @@
         }
       },
       "isAcross": false,
+      "isOFT": true,
       "oftAdapter": "0xba0Dda8762C24dA9487f5FA026a9B64b695A07Ea",
       "endpointId": 106,
       "oftSharedDecimals": 18
@@ -8193,6 +8528,7 @@
         }
       },
       "isAcross": false,
+      "isOFT": true,
       "oftAdapter": "0xba0Dda8762C24dA9487f5FA026a9B64b695A07Ea",
       "endpointId": 109,
       "oftSharedDecimals": 18
@@ -8231,6 +8567,7 @@
         }
       },
       "isAcross": false,
+      "isOFT": true,
       "oftAdapter": "0xba0Dda8762C24dA9487f5FA026a9B64b695A07Ea",
       "endpointId": 184,
       "oftSharedDecimals": 18
@@ -8274,6 +8611,7 @@
         }
       },
       "isAcross": false,
+      "isOFT": true,
       "oftAdapter": "0xcd5f17b1fe981ba260c40c67e740b7290b50ea50",
       "oftVersion": 1,
       "endpointId": 101,
@@ -8309,6 +8647,7 @@
         }
       },
       "isAcross": false,
+      "isOFT": true,
       "oftAdapter": "0x78a0A62Fba6Fb21A83FE8a3433d44C73a4017A6f",
       "endpointId": 102,
       "oftSharedDecimals": 18
@@ -8343,6 +8682,7 @@
         }
       },
       "isAcross": false,
+      "isOFT": true,
       "oftAdapter": "0x78a0A62Fba6Fb21A83FE8a3433d44C73a4017A6f",
       "endpointId": 106,
       "oftSharedDecimals": 18
@@ -8378,6 +8718,7 @@
         }
       },
       "isAcross": false,
+      "isOFT": true,
       "oftAdapter": "0x78a0A62Fba6Fb21A83FE8a3433d44C73a4017A6f",
       "endpointId": 109,
       "oftSharedDecimals": 18
@@ -8392,16 +8733,18 @@
       "tags": [],
       "extensions": {
         "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0x24fcFC492C1393274B6bcd568ac9e225BEc93584"
-          },
           "8453": {
             "tokenAddress": "0x24fcFC492C1393274B6bcd568ac9e225BEc93584"
           }
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0xe6c2b672b3eb64a1f460adcd9676a3b6c67abd4d",
+      "oftVersion": 3,
+      "endpointVersion": 2,
+      "endpointId": 30101,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 8453,
@@ -8420,7 +8763,11 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x24fcFC492C1393274B6bcd568ac9e225BEc93584",
+      "endpointVersion": 2,
+      "endpointId": 30184,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 43114,
@@ -8438,7 +8785,11 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0xaC800FD6159c2a2CB8fC31EF74621eB430287a5A",
+      "endpointVersion": 2,
+      "endpointId": 30106,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 1,
@@ -8450,9 +8801,6 @@
       "tags": [],
       "extensions": {
         "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0x4c9EDD5852cd905f086C759E8383e09bff1E68B3"
-          },
           "10": {
             "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
           },
@@ -8474,7 +8822,12 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x5d3a1ff2b6bab83b63cd9ad0787074081a52ef34",
+      "oftVersion": 3,
+      "endpointVersion": 2,
+      "endpointId": 30101,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 56,
@@ -8492,7 +8845,11 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34",
+      "endpointVersion": 2,
+      "endpointId": 30102,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 1088,
@@ -8510,7 +8867,11 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34",
+      "endpointVersion": 2,
+      "endpointId": 30151,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 10,
@@ -8528,7 +8889,11 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34",
+      "endpointVersion": 2,
+      "endpointId": 30111,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 8453,
@@ -8546,7 +8911,11 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34",
+      "endpointVersion": 2,
+      "endpointId": 30184,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 80094,
@@ -8564,7 +8933,11 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34",
+      "endpointVersion": 2,
+      "endpointId": 30362,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 1,
@@ -8576,9 +8949,6 @@
       "tags": [],
       "extensions": {
         "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0x9D39A5DE30e57443BfF2A8307A4256c8797A3497"
-          },
           "10": {
             "tokenAddress": "0x211Cc4DD073734dA055fbF44a2b4667d5E5fE5d2"
           },
@@ -8600,7 +8970,12 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x211cc4dd073734da055fbf44a2b4667d5e5fe5d2",
+      "oftVersion": 3,
+      "endpointVersion": 2,
+      "endpointId": 30101,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 56,
@@ -8618,7 +8993,11 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x211Cc4DD073734dA055fbF44a2b4667d5E5fE5d2",
+      "endpointVersion": 2,
+      "endpointId": 30102,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 1088,
@@ -8636,7 +9015,11 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x211Cc4DD073734dA055fbF44a2b4667d5E5fE5d2",
+      "endpointVersion": 2,
+      "endpointId": 30151,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 10,
@@ -8654,7 +9037,11 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x211Cc4DD073734dA055fbF44a2b4667d5E5fE5d2",
+      "endpointVersion": 2,
+      "endpointId": 30111,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 8453,
@@ -8672,7 +9059,11 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x211Cc4DD073734dA055fbF44a2b4667d5E5fE5d2",
+      "endpointVersion": 2,
+      "endpointId": 30184,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 80094,
@@ -8690,7 +9081,11 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x211Cc4DD073734dA055fbF44a2b4667d5E5fE5d2",
+      "endpointVersion": 2,
+      "endpointId": 30362,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 1,
@@ -8714,6 +9109,7 @@
         }
       },
       "isAcross": false,
+      "isOFT": true,
       "oftAdapter": "0x1f1aa4d239002bb818536c95e9b762a1fc8484c1",
       "oftVersion": 2,
       "endpointId": 101,
@@ -8742,6 +9138,7 @@
         }
       },
       "isAcross": false,
+      "isOFT": true,
       "oftAdapter": "0x1F1aA4d239002bB818536c95E9b762a1FC8484C1",
       "endpointId": 184,
       "oftSharedDecimals": 8
@@ -8756,16 +9153,18 @@
       "tags": [],
       "extensions": {
         "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0xe0bCEEF36F3a6eFDd5EEBFACD591423f8549B9D5"
-          },
           "42161": {
             "tokenAddress": "0xaB24c63bee518Ac956c8123389fc538c7e36d82C"
           }
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0xddb9a194722e8940f25adb87e343a100241ff8f6",
+      "oftVersion": 3,
+      "endpointVersion": 2,
+      "endpointId": 30101,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 1,
@@ -8781,9 +9180,6 @@
       "tags": [],
       "extensions": {
         "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0xac3E018457B222d93114458476f3E3416Abbe38F"
-          },
           "1088": {
             "tokenAddress": "0x1f55a02A049033E3419a8E2975cF3F572F4e6E9A"
           },
@@ -8791,7 +9187,13 @@
             "tokenAddress": "0x1f55a02A049033E3419a8E2975cF3F572F4e6E9A"
           }
         }
-      }
+      },
+      "isOFT": true,
+      "oftAdapter": "0x1f55a02a049033e3419a8e2975cf3f572f4e6e9a",
+      "oftVersion": 3,
+      "endpointVersion": 2,
+      "endpointId": 30101,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 1088,
@@ -8809,7 +9211,11 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x1f55a02A049033E3419a8E2975cF3F572F4e6E9A",
+      "endpointVersion": 2,
+      "endpointId": 30151,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 8453,
@@ -8827,7 +9233,11 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x1f55a02A049033E3419a8E2975cF3F572F4e6E9A",
+      "endpointVersion": 2,
+      "endpointId": 30184,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 8453,
@@ -8841,7 +9251,10 @@
         "coingeckoId": "kryptonite"
       },
       "isAcross": false,
-      "isOFT": false
+      "oftAdapter": "0x9bDE70Bad05b7D84dAc03024daE15aAce8C9CCa2",
+      "endpointVersion": 2,
+      "endpointId": 30184,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 1,
@@ -8853,9 +9266,6 @@
       "tags": [],
       "extensions": {
         "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0xA663B02CF0a4b149d2aD41910CB81e23e1c41c32"
-          },
           "1088": {
             "tokenAddress": "0xe4796cCB6bB5DE2290C417Ac337F2b66CA2E770E"
           },
@@ -8865,7 +9275,12 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0xe4796ccb6bb5de2290c417ac337f2b66ca2e770e",
+      "oftVersion": 3,
+      "endpointVersion": 2,
+      "endpointId": 30101,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 1088,
@@ -8883,7 +9298,11 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0xe4796cCB6bB5DE2290C417Ac337F2b66CA2E770E",
+      "endpointVersion": 2,
+      "endpointId": 30151,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 8453,
@@ -8901,7 +9320,11 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0xe4796cCB6bB5DE2290C417Ac337F2b66CA2E770E",
+      "endpointVersion": 2,
+      "endpointId": 30184,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 80094,
@@ -8919,7 +9342,11 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0xff12470a969Dd362EB6595FFB44C82c959Fe9ACc",
+      "endpointVersion": 2,
+      "endpointId": 30362,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 1,
@@ -8942,7 +9369,11 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x8A60E489004Ca22d775C5F2c657598278d17D9c2",
+      "endpointVersion": 2,
+      "endpointId": 30101,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 56,
@@ -8961,7 +9392,11 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x9356086146be5158E98aD827E21b5cF944699894",
+      "endpointVersion": 2,
+      "endpointId": 30102,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 1,
@@ -8973,9 +9408,6 @@
       "tags": [],
       "extensions": {
         "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0x3432B6A60D23Ca0dFCa7761B7ab56459D9C964D0"
-          },
           "10": {
             "tokenAddress": "0x64445f0aecC51E94aD52d8AC56b7190e764E561a"
           },
@@ -9006,7 +9438,12 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0xc6f59a4fd50cac677b51558489e03138ac1784ec",
+      "oftVersion": 3,
+      "endpointVersion": 2,
+      "endpointId": 30101,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 137,
@@ -9024,7 +9461,11 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x64445f0aecC51E94aD52d8AC56b7190e764E561a",
+      "endpointVersion": 2,
+      "endpointId": 30109,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 56,
@@ -9042,7 +9483,11 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x64445f0aecC51E94aD52d8AC56b7190e764E561a",
+      "endpointVersion": 2,
+      "endpointId": 30102,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 146,
@@ -9060,7 +9505,11 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x64445f0aecC51E94aD52d8AC56b7190e764E561a",
+      "endpointVersion": 2,
+      "endpointId": 30332,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 8453,
@@ -9078,7 +9527,11 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x0CEAC003B0d2479BebeC9f4b2EBAd0a803759bbf",
+      "endpointVersion": 2,
+      "endpointId": 30184,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 10,
@@ -9096,7 +9549,11 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x64445f0aecC51E94aD52d8AC56b7190e764E561a",
+      "endpointVersion": 2,
+      "endpointId": 30111,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 43114,
@@ -9114,7 +9571,11 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x64445f0aecC51E94aD52d8AC56b7190e764E561a",
+      "endpointVersion": 2,
+      "endpointId": 30106,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 8453,
@@ -9132,7 +9593,11 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x23432452B720C80553458496D4D9d7C5003280d0",
+      "endpointVersion": 2,
+      "endpointId": 30184,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 1088,
@@ -9150,7 +9615,11 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x23432452B720C80553458496D4D9d7C5003280d0",
+      "endpointVersion": 2,
+      "endpointId": 30151,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 56,
@@ -9164,7 +9633,10 @@
         "coingeckoId": "bubblemaps"
       },
       "isAcross": false,
-      "isOFT": false
+      "oftAdapter": "0x7d814b9eD370Ec0a502EdC3267393bF62d891B62",
+      "endpointVersion": 2,
+      "endpointId": 30102,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 1,
@@ -9176,9 +9648,6 @@
       "tags": [],
       "extensions": {
         "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0xCd5fE23C85820F7B72D0926FC9b05b43E359b7ee"
-          },
           "10": {
             "tokenAddress": "0x5A7fACB970D094B6C7FF1df0eA68D99E6e73CBFF"
           },
@@ -9194,7 +9663,12 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0xcd2eb13d6831d4602d80e5db9230a57596cdca63",
+      "oftVersion": 3,
+      "endpointVersion": 2,
+      "endpointId": 30101,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 8453,
@@ -9213,7 +9687,11 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x04C0599Ae5A44757c0af6F9eC3b93da8976c150A",
+      "endpointVersion": 2,
+      "endpointId": 30184,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 56,
@@ -9231,7 +9709,11 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x04C0599Ae5A44757c0af6F9eC3b93da8976c150A",
+      "endpointVersion": 2,
+      "endpointId": 30102,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 10,
@@ -9249,7 +9731,11 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x5A7fACB970D094B6C7FF1df0eA68D99E6e73CBFF",
+      "endpointVersion": 2,
+      "endpointId": 30111,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 80094,
@@ -9267,7 +9753,11 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x7DCC39B4d1C53CB31e1aBc0e358b43987FEF80f7",
+      "endpointVersion": 2,
+      "endpointId": 30362,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 137,
@@ -9281,14 +9771,16 @@
         "bridgeInfo": {
           "1": {
             "tokenAddress": "0xb51B97Dd5569FAB69495316B5a065CCcfF4B829d"
-          },
-          "137": {
-            "tokenAddress": "0xDfCe1e99A31C4597a3f8A8945cBfa9037655e335"
           }
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0xa7f18d7a493c80378253b8129cbcfdfa85ddb7c8",
+      "oftVersion": 3,
+      "endpointVersion": 2,
+      "endpointId": 30109,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 1,
@@ -9307,7 +9799,11 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0xb51B97Dd5569FAB69495316B5a065CCcfF4B829d",
+      "endpointVersion": 2,
+      "endpointId": 30101,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 1,
@@ -9338,6 +9834,7 @@
         }
       },
       "isAcross": false,
+      "isOFT": true,
       "oftAdapter": "0x1883af6b51fb7f69577880004a82c9d68582022c",
       "oftVersion": 2,
       "endpointId": 101,
@@ -9369,6 +9866,7 @@
         }
       },
       "isAcross": false,
+      "isOFT": true,
       "oftAdapter": "0x1883aF6b51fb7F69577880004a82c9d68582022C",
       "endpointId": 184,
       "oftSharedDecimals": 8
@@ -9389,7 +9887,11 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x58538e6A46E07434d7E7375Bc268D3cb839C0133",
+      "endpointVersion": 2,
+      "endpointId": 30102,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 1,
@@ -9401,9 +9903,6 @@
       "tags": [],
       "extensions": {
         "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0x57e114B691Db790C35207b2e685D4A43181e6061"
-          },
           "10": {
             "tokenAddress": "0x58538e6A46E07434d7E7375Bc268D3cb839C0133"
           },
@@ -9425,7 +9924,12 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x58538e6a46e07434d7e7375bc268d3cb839c0133",
+      "oftVersion": 3,
+      "endpointVersion": 2,
+      "endpointId": 30101,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 1088,
@@ -9443,7 +9947,11 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x58538e6A46E07434d7E7375Bc268D3cb839C0133",
+      "endpointVersion": 2,
+      "endpointId": 30151,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 10,
@@ -9461,7 +9969,11 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x58538e6A46E07434d7E7375Bc268D3cb839C0133",
+      "endpointVersion": 2,
+      "endpointId": 30111,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 8453,
@@ -9479,7 +9991,11 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x58538e6A46E07434d7E7375Bc268D3cb839C0133",
+      "endpointVersion": 2,
+      "endpointId": 30184,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 1,
@@ -9502,7 +10018,11 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x82a605D6D9114F4Ad6D5Ee461027477EeED31E34",
+      "endpointVersion": 2,
+      "endpointId": 30101,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 8453,
@@ -9521,7 +10041,11 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x3124678D62D2aa1f615B54525310fbfDa6DcF7AE",
+      "endpointVersion": 2,
+      "endpointId": 30184,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 1,
@@ -9550,6 +10074,7 @@
         }
       },
       "isAcross": false,
+      "isOFT": true,
       "oftAdapter": "0x888e317606b4c590bbad88653863e8b345702633",
       "oftVersion": 2,
       "endpointId": 101,
@@ -9579,6 +10104,7 @@
         }
       },
       "isAcross": false,
+      "isOFT": true,
       "oftAdapter": "0xf8f46791e3db29a029ec6c9d946226f3c613e854",
       "oftVersion": 2,
       "endpointId": 102,
@@ -9620,7 +10146,11 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x6985884C4392D348587B19cb9eAAf157F13271cd",
+      "endpointVersion": 2,
+      "endpointId": 30101,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 56,
@@ -9639,7 +10169,11 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x6985884C4392D348587B19cb9eAAf157F13271cd",
+      "endpointVersion": 2,
+      "endpointId": 30102,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 43114,
@@ -9658,7 +10192,11 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x6985884C4392D348587B19cb9eAAf157F13271cd",
+      "endpointVersion": 2,
+      "endpointId": 30106,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 137,
@@ -9677,7 +10215,11 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x6985884C4392D348587B19cb9eAAf157F13271cd",
+      "endpointVersion": 2,
+      "endpointId": 30109,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 10,
@@ -9696,7 +10238,11 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x6985884C4392D348587B19cb9eAAf157F13271cd",
+      "endpointVersion": 2,
+      "endpointId": 30111,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 8453,
@@ -9715,7 +10261,11 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x6985884C4392D348587B19cb9eAAf157F13271cd",
+      "endpointVersion": 2,
+      "endpointId": 30184,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 1,
@@ -9731,9 +10281,6 @@
       "tags": [],
       "extensions": {
         "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0x853d955aCEf822Db058eb8505911ED77F175b99e"
-          },
           "10": {
             "tokenAddress": "0x2E3D870790dC77A83DD1d18184Acc7439A53f475"
           },
@@ -9759,7 +10306,13 @@
             "tokenAddress": "0xD24C2Ad096400B6FBcd2ad8B24E7acBc21A1da64"
           }
         }
-      }
+      },
+      "isOFT": true,
+      "oftAdapter": "0x909dbde1ebe906af95660033e478d59efe831fed",
+      "oftVersion": 3,
+      "endpointVersion": 2,
+      "endpointId": 30101,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 8453,
@@ -9778,7 +10331,11 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x909DBdE1eBE906Af95660033e478D59EFe831fED",
+      "endpointVersion": 2,
+      "endpointId": 30184,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 1088,
@@ -9796,7 +10353,11 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x909DBdE1eBE906Af95660033e478D59EFe831fED",
+      "endpointVersion": 2,
+      "endpointId": 30151,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 1,
@@ -9808,9 +10369,6 @@
       "tags": [],
       "extensions": {
         "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0xFAe103DC9cf190eD75350761e95403b7b8aFa6c0"
-          },
           "42161": {
             "tokenAddress": "0xB1Fe27b32fFb5CE54E272C096547F1e86c19e72F"
           },
@@ -9820,7 +10378,12 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x1486d39646cdee84619bd05997319545a8575079",
+      "oftVersion": 3,
+      "endpointVersion": 2,
+      "endpointId": 30101,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 80094,
@@ -9838,7 +10401,11 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x850CDF416668210ED0c36bfFF5d21921C7adA3b8",
+      "endpointVersion": 2,
+      "endpointId": 30362,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 1088,
@@ -9856,7 +10423,11 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0xE41228a455700cAF09E551805A8aB37caa39D08c",
+      "endpointVersion": 2,
+      "endpointId": 30151,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 8453,
@@ -9874,7 +10445,11 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0xE41228a455700cAF09E551805A8aB37caa39D08c",
+      "endpointVersion": 2,
+      "endpointId": 30184,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 1,
@@ -9886,9 +10461,6 @@
       "tags": [],
       "extensions": {
         "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0x5E8422345238F34275888049021821E8E08CAa1f"
-          },
           "1088": {
             "tokenAddress": "0xF010a7c8877043681D59AD125EbF575633505942"
           },
@@ -9898,7 +10470,12 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0xf010a7c8877043681d59ad125ebf575633505942",
+      "oftVersion": 3,
+      "endpointVersion": 2,
+      "endpointId": 30101,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 1088,
@@ -9916,7 +10493,11 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0xF010a7c8877043681D59AD125EbF575633505942",
+      "endpointVersion": 2,
+      "endpointId": 30151,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 8453,
@@ -9934,7 +10515,11 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0xF010a7c8877043681D59AD125EbF575633505942",
+      "endpointVersion": 2,
+      "endpointId": 30184,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 8453,
@@ -9953,7 +10538,11 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0xC227717ef4Ae4D982E14789eB33bA942243c3FEe",
+      "endpointVersion": 2,
+      "endpointId": 30184,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 1,
@@ -9971,7 +10560,11 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x420FcA0121DC28039145009570975747295f2329",
+      "endpointVersion": 2,
+      "endpointId": 30101,
+      "oftSharedDecimals": 4
     },
     {
       "chainId": 43114,
@@ -9991,14 +10584,16 @@
           },
           "42161": {
             "tokenAddress": "0x420FcA0121DC28039145009570975747295f2329"
-          },
-          "43114": {
-            "tokenAddress": "0x420FcA0121DC28039145009570975747295f2329"
           }
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x347f7268ad43f3f7b68c4d64a8c0523830100c8b",
+      "oftVersion": 3,
+      "endpointVersion": 2,
+      "endpointId": 30106,
+      "oftSharedDecimals": 4
     },
     {
       "chainId": 8453,
@@ -10016,7 +10611,11 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x420FcA0121DC28039145009570975747295f2329",
+      "endpointVersion": 2,
+      "endpointId": 30184,
+      "oftSharedDecimals": 4
     },
     {
       "chainId": 1,
@@ -10028,7 +10627,11 @@
       "tags": [],
       "extensions": {},
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x084382D1cc4f4DFD1769b1cC1Ac2A9b1f8365e90",
+      "endpointVersion": 2,
+      "endpointId": 30101,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 8453,
@@ -10043,7 +10646,11 @@
         "coinMarketCapId": 31016
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x084382D1cc4f4DFD1769b1cC1Ac2A9b1f8365e90",
+      "endpointVersion": 2,
+      "endpointId": 30184,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 10,
@@ -10055,7 +10662,11 @@
       "tags": [],
       "extensions": {},
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x084382D1cc4f4DFD1769b1cC1Ac2A9b1f8365e90",
+      "endpointVersion": 2,
+      "endpointId": 30111,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 1,
@@ -10081,7 +10692,11 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x68ccACa9ADF1552B3316d6067690eC27397c8ea8",
+      "endpointVersion": 2,
+      "endpointId": 30101,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 137,
@@ -10099,7 +10714,11 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x50AA659E6aB263B77d61Ff44cF4A1090141e7111",
+      "endpointVersion": 2,
+      "endpointId": 30109,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 8453,
@@ -10117,7 +10736,11 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x883CFBd30bD076a063A453335414909545186275",
+      "endpointVersion": 2,
+      "endpointId": 30184,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 56,
@@ -10135,7 +10758,11 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x883CFBd30bD076a063A453335414909545186275",
+      "endpointVersion": 2,
+      "endpointId": 30102,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 8453,
@@ -10154,7 +10781,11 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x31ea904A7eca45122890dEb8dA3473A2081bc9d1",
+      "endpointVersion": 2,
+      "endpointId": 30184,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 1,
@@ -10174,7 +10805,11 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x31ea904A7eca45122890dEb8dA3473A2081bc9d1",
+      "endpointVersion": 2,
+      "endpointId": 30101,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 43114,
@@ -10194,14 +10829,16 @@
           },
           "42161": {
             "tokenAddress": "0x488ef48FF9D803087CC96b347FC250244A9e8260"
-          },
-          "43114": {
-            "tokenAddress": "0x5Ac04b69bDE6f67C0bd5D6bA6fD5D816548b066a"
           }
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0xe9a3b326c5b06fa848b11e07080c3ac926fbe787",
+      "oftVersion": 3,
+      "endpointVersion": 2,
+      "endpointId": 30106,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 1,
@@ -10219,7 +10856,11 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x835f2eb9B3dd2913f59019bfbC7B61A12Ef96cd6",
+      "endpointVersion": 2,
+      "endpointId": 30101,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 8453,
@@ -10237,7 +10878,11 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0xe9A3B326c5B06FA848b11E07080c3AC926fBe787",
+      "endpointVersion": 2,
+      "endpointId": 30184,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 56,
@@ -10255,7 +10900,11 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x2A73F85024f101F3FAC9FbCBcE60707B6b3A6203",
+      "endpointVersion": 2,
+      "endpointId": 30102,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 1,
@@ -10267,16 +10916,18 @@
       "tags": [],
       "extensions": {
         "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0xBe1a001FE942f96Eea22bA08783140B9Dcc09D28"
-          },
           "56": {
             "tokenAddress": "0x2A73F85024f101F3FAC9FbCBcE60707B6b3A6203"
           }
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x2a73f85024f101f3fac9fbcbce60707b6b3a6203",
+      "oftVersion": 3,
+      "endpointVersion": 2,
+      "endpointId": 30101,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 8453,
@@ -10296,7 +10947,11 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0xeD2d13A70acbD61074fC56bd0d0845e35f793e5E",
+      "endpointVersion": 2,
+      "endpointId": 30184,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 137,
@@ -10314,7 +10969,11 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0xeD2d13A70acbD61074fC56bd0d0845e35f793e5E",
+      "endpointVersion": 2,
+      "endpointId": 30109,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 1,
@@ -10328,13 +10987,13 @@
       "decimals": 18,
       "logoURI": "https://assets.coingecko.com/coins/images/30870/standard/staderx.png?1696529717",
       "tags": [],
-      "extensions": {
-        "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0xA35b1B31Ce002FBF2058D22F30f95D405200A15b"
-          }
-        }
-      }
+      "extensions": {},
+      "isOFT": true,
+      "oftAdapter": "0x39d0ce7d1509a4f22619d0f666978fbe820665e9",
+      "oftVersion": 3,
+      "endpointVersion": 2,
+      "endpointId": 30101,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 8453,
@@ -10352,7 +11011,11 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0xac531Eb26Ca1d21b85126De8FB87E80E09002DcF",
+      "endpointVersion": 2,
+      "endpointId": 30184,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 56,
@@ -10370,7 +11033,11 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0xac531Eb26Ca1d21b85126De8FB87E80E09002DcF",
+      "endpointVersion": 2,
+      "endpointId": 30102,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 1,
@@ -10382,9 +11049,6 @@
       "tags": [],
       "extensions": {
         "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0x3845badAde8e6dFF049820680d1F14bD3903a5d0"
-          },
           "56": {
             "tokenAddress": "0xac531Eb26Ca1d21b85126De8FB87E80E09002DcF"
           },
@@ -10403,7 +11067,12 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0xac531eb26ca1d21b85126de8fb87e80e09002dcf",
+      "oftVersion": 3,
+      "endpointVersion": 2,
+      "endpointId": 30101,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 10,
@@ -10421,7 +11090,12 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x9a9d5a29206dde4f70825032df32333de5f63921",
+      "oftVersion": 3,
+      "endpointVersion": 2,
+      "endpointId": 30111,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 1,
@@ -10433,9 +11107,6 @@
       "tags": [],
       "extensions": {
         "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0x14778860E937f509e651192a90589dE711Fb88a9"
-          },
           "10": {
             "tokenAddress": "0x14778860E937f509e651192a90589dE711Fb88a9"
           },
@@ -10445,7 +11116,12 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0xcb07992de144bdee56fdb66fff2454b43243b052",
+      "oftVersion": 3,
+      "endpointVersion": 2,
+      "endpointId": 30101,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 56,
@@ -10463,7 +11139,12 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x9a9d5a29206dde4f70825032df32333de5f63921",
+      "oftVersion": 3,
+      "endpointVersion": 2,
+      "endpointId": 30102,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 56,
@@ -10475,7 +11156,11 @@
       "tags": [],
       "extensions": {},
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x2DCE707c47Fd9C0f1833A281F45e3e41Ace2725B",
+      "endpointVersion": 2,
+      "endpointId": 30102,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 8453,
@@ -10487,7 +11172,11 @@
       "tags": [],
       "extensions": {},
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x1fba65dE0a9cBD2D1DF82d141897042d36Bb6c86",
+      "endpointVersion": 2,
+      "endpointId": 30184,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 1,
@@ -10499,16 +11188,18 @@
       "tags": [],
       "extensions": {
         "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0xe343167631d89B6Ffc58B88d6b7fB0228795491D"
-          },
           "130": {
             "tokenAddress": "0x2A22868610610199D43fE93A16661473A9f86f1E"
           }
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x147bde4f997f0d4c7544ed0c55eacf1e5e6bf9c4",
+      "oftVersion": 3,
+      "endpointVersion": 2,
+      "endpointId": 30101,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 1,
@@ -10532,7 +11223,12 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x5182fede730b31a9cf7f49c5781214b4a99f2370",
+      "oftVersion": 3,
+      "endpointVersion": 2,
+      "endpointId": 30101,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 1,
@@ -10544,9 +11240,6 @@
       "tags": [],
       "extensions": {
         "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0xABD4C63d2616A5201454168269031355f4764337"
-          },
           "10": {
             "tokenAddress": "0x4E200fE2f3eFb977d5fd9c430A41531FB04d97B8"
           },
@@ -10568,7 +11261,12 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x17435cc940e03aa52c349738c72c7aa44ffa6525",
+      "oftVersion": 3,
+      "endpointVersion": 2,
+      "endpointId": 30101,
+      "oftSharedDecimals": 18
     },
     {
       "chainId": 10,
@@ -10587,7 +11285,11 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x4E200fE2f3eFb977d5fd9c430A41531FB04d97B8",
+      "endpointVersion": 2,
+      "endpointId": 30111,
+      "oftSharedDecimals": 18
     },
     {
       "chainId": 8453,
@@ -10606,7 +11308,11 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x4E200fE2f3eFb977d5fd9c430A41531FB04d97B8",
+      "endpointVersion": 2,
+      "endpointId": 30184,
+      "oftSharedDecimals": 18
     },
     {
       "chainId": 137,
@@ -10625,7 +11331,11 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x4E200fE2f3eFb977d5fd9c430A41531FB04d97B8",
+      "endpointVersion": 2,
+      "endpointId": 30109,
+      "oftSharedDecimals": 18
     },
     {
       "chainId": 43114,
@@ -10643,7 +11353,11 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x4E200fE2f3eFb977d5fd9c430A41531FB04d97B8",
+      "endpointVersion": 2,
+      "endpointId": 30106,
+      "oftSharedDecimals": 18
     },
     {
       "chainId": 56,
@@ -10661,7 +11375,11 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x4E200fE2f3eFb977d5fd9c430A41531FB04d97B8",
+      "endpointVersion": 2,
+      "endpointId": 30102,
+      "oftSharedDecimals": 18
     },
     {
       "chainId": 56,
@@ -10680,7 +11398,11 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x6A661312938D22A2A0e27F585073E4406903990a",
+      "endpointVersion": 2,
+      "endpointId": 30102,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 1,
@@ -10692,9 +11414,6 @@
       "tags": [],
       "extensions": {
         "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0x745407c86DF8DB893011912d3aB28e68B62E49B0"
-          },
           "56": {
             "tokenAddress": "0x6A661312938D22A2A0e27F585073E4406903990a"
           },
@@ -10704,7 +11423,12 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x3a7b708e71ff72506afa674ea14881e39ce9fde2",
+      "oftVersion": 3,
+      "endpointVersion": 2,
+      "endpointId": 30101,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 8453,
@@ -10723,7 +11447,11 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x554bba833518793056CF105E66aBEA330672c0dE",
+      "endpointVersion": 2,
+      "endpointId": 30184,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 1,
@@ -10735,16 +11463,18 @@
       "tags": [],
       "extensions": {
         "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0xc555D625828c4527d477e595fF1Dd5801B4a600e"
-          },
           "42161": {
             "tokenAddress": "0xfc87D55bC8bF441AbfC24D04B2068a8f77BcFcC0"
           }
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x3c4a6a026b6545d06ca1bc1111ef900942f826a9",
+      "oftVersion": 3,
+      "endpointVersion": 2,
+      "endpointId": 30101,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 1,
@@ -10758,7 +11488,11 @@
         "coingeckoId": "puff-the-dragon"
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x31b6100F5F4466e6dAeb1edb2f2cE6e548cF8938",
+      "endpointVersion": 2,
+      "endpointId": 30101,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 8453,
@@ -10770,7 +11504,11 @@
       "tags": [],
       "extensions": {},
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x823C9E9f4C51C1a169CEF4bf7922F46bEB493D11",
+      "endpointVersion": 2,
+      "endpointId": 30184,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 1,
@@ -10793,6 +11531,7 @@
         }
       },
       "isAcross": false,
+      "isOFT": true,
       "oftAdapter": "0x395b362d87fe1b2bd801546314a172e05c87e362",
       "oftVersion": 2,
       "endpointId": 101,
@@ -10820,6 +11559,7 @@
         }
       },
       "isAcross": false,
+      "isOFT": true,
       "oftAdapter": "0xB3a9bd4861454bA94931ebFF410c3D828525dCe2",
       "endpointId": 184,
       "oftSharedDecimals": 8
@@ -10840,7 +11580,11 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x09D9420332bff75522a45FcFf4855F82a0a3ff50",
+      "endpointVersion": 2,
+      "endpointId": 30111,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 1,
@@ -10852,9 +11596,6 @@
       "tags": [],
       "extensions": {
         "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0x6DF0E641FC9847c0c6Fde39bE6253045440c14d3"
-          },
           "10": {
             "tokenAddress": "0x09D9420332bff75522a45FcFf4855F82a0a3ff50"
           },
@@ -10864,7 +11605,12 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x09d9420332bff75522a45fcff4855f82a0a3ff50",
+      "oftVersion": 3,
+      "endpointVersion": 2,
+      "endpointId": 30101,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 8453,
@@ -10882,7 +11628,11 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x09D9420332bff75522a45FcFf4855F82a0a3ff50",
+      "endpointVersion": 2,
+      "endpointId": 30184,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 8453,
@@ -10900,7 +11650,11 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0xC5ECB8c506898bd5eEeC63C5F69c7819E37084b8",
+      "endpointVersion": 2,
+      "endpointId": 30184,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 10,
@@ -10918,7 +11672,11 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0xC5ECB8c506898bd5eEeC63C5F69c7819E37084b8",
+      "endpointVersion": 2,
+      "endpointId": 30111,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 1,
@@ -10930,9 +11688,6 @@
       "tags": [],
       "extensions": {
         "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0x55769490c825CCb09b2A6Ae955203FaBF04857fd"
-          },
           "10": {
             "tokenAddress": "0xC5ECB8c506898bd5eEeC63C5F69c7819E37084b8"
           },
@@ -10942,7 +11697,12 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0xc5ecb8c506898bd5eeec63c5f69c7819e37084b8",
+      "oftVersion": 3,
+      "endpointVersion": 2,
+      "endpointId": 30101,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 1,
@@ -10954,16 +11714,18 @@
       "tags": [],
       "extensions": {
         "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0xd9D920AA40f578ab794426F5C90F6C731D159DEf"
-          },
           "80094": {
             "tokenAddress": "0xCC0966D8418d412c599A6421b760a847eB169A8c"
           }
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x94dabd84cd36c4d364fcdd5cdabf41e73dbc99e6",
+      "oftVersion": 3,
+      "endpointVersion": 2,
+      "endpointId": 30101,
+      "oftSharedDecimals": 8
     },
     {
       "chainId": 80094,
@@ -10981,7 +11743,12 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x94dabd84cd36c4d364fcdd5cdabf41e73dbc99e6",
+      "oftVersion": 3,
+      "endpointVersion": 2,
+      "endpointId": 30362,
+      "oftSharedDecimals": 8
     },
     {
       "chainId": 8453,
@@ -10991,15 +11758,14 @@
       "symbol": "INTOS",
       "logoURI": "https://s2.coinmarketcap.com/static/img/coins/128x128/35160.png",
       "tags": [],
-      "extensions": {
-        "bridgeInfo": {
-          "8453": {
-            "tokenAddress": "0x42e07fA3d31190731368Ca2F88D12D80139DCa42"
-          }
-        }
-      },
+      "extensions": {},
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0xd97e1d6051a2c36fd9cfd2e1640c699c29724860",
+      "oftVersion": 3,
+      "endpointVersion": 2,
+      "endpointId": 30184,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 1,
@@ -11018,7 +11784,11 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0xADc9c900b05F39f48bB6F402A1BAE60929F4f9A8",
+      "endpointVersion": 2,
+      "endpointId": 30101,
+      "oftSharedDecimals": 8
     },
     {
       "chainId": 80094,
@@ -11036,7 +11806,11 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x1fCca65fb6Ae3b2758b9b2B394CB227eAE404e1E",
+      "endpointVersion": 2,
+      "endpointId": 30362,
+      "oftSharedDecimals": 8
     },
     {
       "chainId": 1,
@@ -11048,7 +11822,11 @@
       "tags": [],
       "extensions": {},
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x285c48f6bEB6B7476bC05B2b8Cf3FAb93578e466",
+      "endpointVersion": 2,
+      "endpointId": 30101,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 8453,
@@ -11062,7 +11840,11 @@
         "coinMarketCapId": 31455
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x5dC25aA049837B696d1dc0F966aC8DF1491f819B",
+      "endpointVersion": 2,
+      "endpointId": 30184,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 10,
@@ -11074,7 +11856,11 @@
       "tags": [],
       "extensions": {},
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x5D1942345D63562fD38d17C28Dcd22e7b3E9Cfb4",
+      "endpointVersion": 2,
+      "endpointId": 30111,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 1,
@@ -11089,7 +11875,11 @@
         "coinMarketCapId": 33060
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0xD3C68968137317a57a9bAbeacC7707Ec433548B4",
+      "endpointVersion": 2,
+      "endpointId": 30101,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 8453,
@@ -11103,7 +11893,11 @@
         "coingeckoId": "phavercoin"
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0xD3C68968137317a57a9bAbeacC7707Ec433548B4",
+      "endpointVersion": 2,
+      "endpointId": 30184,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 146,
@@ -11119,7 +11913,11 @@
       "tags": [],
       "extensions": {
         "coinMarketCapId": 35320
-      }
+      },
+      "oftAdapter": "0x9fDbC3f8Abc05Fa8f3Ad3C17D2F806c1230c4564",
+      "endpointVersion": 2,
+      "endpointId": 30332,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 1,
@@ -11142,7 +11940,11 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0xcBB8f1BDA10b9696c57E13BC128Fe674769DCEc0",
+      "endpointVersion": 2,
+      "endpointId": 30101,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 8453,
@@ -11161,7 +11963,11 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x7431aDa8a591C955a994a21710752EF9b882b8e3",
+      "endpointVersion": 2,
+      "endpointId": 30184,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 1,
@@ -11190,7 +11996,11 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x968bE3F7bfeF0F8eDc3c1aD90232EbB0DA0867aA",
+      "endpointVersion": 2,
+      "endpointId": 30101,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 56,
@@ -11209,7 +12019,11 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x968bE3F7bfeF0F8eDc3c1aD90232EbB0DA0867aA",
+      "endpointVersion": 2,
+      "endpointId": 30102,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 43114,
@@ -11228,7 +12042,11 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x968bE3F7bfeF0F8eDc3c1aD90232EbB0DA0867aA",
+      "endpointVersion": 2,
+      "endpointId": 30106,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 8453,
@@ -11247,7 +12065,11 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x968bE3F7bfeF0F8eDc3c1aD90232EbB0DA0867aA",
+      "endpointVersion": 2,
+      "endpointId": 30184,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 8453,
@@ -11265,7 +12087,11 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x37d2Adc008118d04f259fc0c16ff66bF5a637D20",
+      "endpointVersion": 2,
+      "endpointId": 30184,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 56,
@@ -11283,7 +12109,11 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x6386Adc4BC9c21984E34fD916BB349dD861742af",
+      "endpointVersion": 2,
+      "endpointId": 30102,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 1,
@@ -11295,9 +12125,6 @@
       "tags": [],
       "extensions": {
         "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0x32B77729cD87F1EF2bEa4C650c16f89f08472c69"
-          },
           "56": {
             "tokenAddress": "0x6386Adc4BC9c21984E34fD916BB349dD861742af"
           },
@@ -11307,7 +12134,12 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0xe3b60790607afe418adcaadcb5e07f8124ed4b26",
+      "oftVersion": 3,
+      "endpointVersion": 2,
+      "endpointId": 30101,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 80094,
@@ -11325,7 +12157,12 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x3dc96399109df5ceb2c226664a086140bd0379cb",
+      "oftVersion": 3,
+      "endpointVersion": 2,
+      "endpointId": 30362,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 10,
@@ -11343,7 +12180,12 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x8efbdff3bae9a3ed3c0ac7ad86bebf9aee46086f",
+      "oftVersion": 3,
+      "endpointVersion": 2,
+      "endpointId": 30111,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 8453,
@@ -11357,14 +12199,16 @@
         "bridgeInfo": {
           "10": {
             "tokenAddress": "0x01bFF41798a0BcF287b996046Ca68b395DbC1071"
-          },
-          "8453": {
-            "tokenAddress": "0x102d758f688a4C1C5a80b116bD945d4455460282"
           }
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0xeab8fa7ab28f05d7600558b873d5c7f805412304",
+      "oftVersion": 3,
+      "endpointVersion": 2,
+      "endpointId": 30184,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 1,
@@ -11376,9 +12220,6 @@
       "tags": [],
       "extensions": {
         "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0x643C4E15d7d62Ad0aBeC4a9BD4b001aA3Ef52d66"
-          },
           "130": {
             "tokenAddress": "0x8f7F997ba304f426E3138999919c23f68cD6FA96"
           },
@@ -11388,7 +12229,12 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x688aee022aa544f150678b8e5720b6b96a9e9a2f",
+      "oftVersion": 3,
+      "endpointVersion": 2,
+      "endpointId": 30101,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 8453,
@@ -11407,7 +12253,11 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x688AEe022AA544f150678B8E5720b6b96a9E9a2F",
+      "endpointVersion": 2,
+      "endpointId": 30184,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 1,
@@ -11419,9 +12269,6 @@
       "tags": [],
       "extensions": {
         "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0x6c3ea9036406852006290770BEdFcAbA0e23A0e8"
-          },
           "130": {
             "tokenAddress": "0x0D2f98904D88909072eA6e61105CBBf78e6207c5"
           },
@@ -11431,7 +12278,12 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x688e72142674041f8f6af4c808a4045ca1d6ac82",
+      "oftVersion": 3,
+      "endpointVersion": 2,
+      "endpointId": 30101,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 80094,
@@ -11449,7 +12301,11 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x688e72142674041f8f6Af4c808a4045cA1D6aC82",
+      "endpointVersion": 2,
+      "endpointId": 30362,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 8453,
@@ -11463,7 +12319,10 @@
         "coingeckoId": "shark-cat"
       },
       "isAcross": false,
-      "isOFT": false
+      "oftAdapter": "0x49d803d2DF2295185610f44961F2Dcd40326F25C",
+      "endpointVersion": 2,
+      "endpointId": 30184,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 1,
@@ -11475,7 +12334,10 @@
       "tags": [],
       "extensions": {},
       "isAcross": false,
-      "isOFT": false
+      "oftAdapter": "0x1EeF208926667594E5136e89D0e9DD6907959197",
+      "endpointVersion": 2,
+      "endpointId": 30101,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 56,
@@ -11489,7 +12351,10 @@
         "coingeckoId": "happycat-2"
       },
       "isAcross": false,
-      "isOFT": false
+      "oftAdapter": "0x2E72393A57287b1A09857Db589B27bB0fd499922",
+      "endpointVersion": 2,
+      "endpointId": 30102,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 1,
@@ -11509,7 +12374,11 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x288741b45AD4042f7b124E38b53cEc5E9ccA0376",
+      "endpointVersion": 2,
+      "endpointId": 30101,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 8453,
@@ -11528,7 +12397,11 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x50CE4129Ca261CCDe4EB100c170843c2936Bc11b",
+      "endpointVersion": 2,
+      "endpointId": 30184,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 1,
@@ -11540,9 +12413,6 @@
       "tags": [],
       "extensions": {
         "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0xbe0Ed4138121EcFC5c0E56B40517da27E6c5226B"
-          },
           "130": {
             "tokenAddress": "0xa249732271cbA6E06Be4ac8B20f0D465FeE183Ab"
           },
@@ -11552,7 +12422,12 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x5786c150609a4ef8957bc614a13e8e29558eaba4",
+      "oftVersion": 3,
+      "endpointVersion": 2,
+      "endpointId": 30101,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 80094,
@@ -11570,7 +12445,11 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x2840F9d9f96321435Ab0f977E7FDBf32EA8b304f",
+      "endpointVersion": 2,
+      "endpointId": 30362,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 1,
@@ -11593,7 +12472,11 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x2B66AAdE1e9C062FF411bd47C44E0Ad696d43BD9",
+      "endpointVersion": 2,
+      "endpointId": 30101,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 56,
@@ -11612,7 +12495,11 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x73a325103935b0B5E7AA3acA6dba74AD22f82B03",
+      "endpointVersion": 2,
+      "endpointId": 30102,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 1,
@@ -11622,15 +12509,14 @@
       "symbol": "MCG",
       "logoURI": "https://s2.coinmarketcap.com/static/img/coins/128x128/31165.png",
       "tags": [],
-      "extensions": {
-        "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0xc9E503562d0Db0A2629288a5D3b1c94Ea7741869"
-          }
-        }
-      },
+      "extensions": {},
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x3be3f3efc077f8dd519b052fba78515470bc4567",
+      "oftVersion": 3,
+      "endpointVersion": 2,
+      "endpointId": 30101,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 1,
@@ -11642,16 +12528,18 @@
       "tags": [],
       "extensions": {
         "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0xd5EB7E91Ae88Ea2550F9bFD04208399c95dF4dC7"
-          },
           "8453": {
             "tokenAddress": "0xB757977bc882A14db86b048f2abb2F2a14D33184"
           }
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0xa80f36ba18c7f721f3f7acdbcdefd3a86869a036",
+      "oftVersion": 3,
+      "endpointVersion": 2,
+      "endpointId": 30101,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 8453,
@@ -11670,7 +12558,11 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0xB757977bc882A14db86b048f2abb2F2a14D33184",
+      "endpointVersion": 2,
+      "endpointId": 30184,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 56,
@@ -11680,15 +12572,14 @@
       "symbol": "DOGE",
       "logoURI": "https://s2.coinmarketcap.com/static/img/coins/128x128/74.png",
       "tags": [],
-      "extensions": {
-        "bridgeInfo": {
-          "56": {
-            "tokenAddress": "0xbA2aE424d960c26247Dd6c32edC70B295c744C43"
-          }
-        }
-      },
+      "extensions": {},
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x0e9a492bd9d4241028f794b9580847e5c3444776",
+      "oftVersion": 3,
+      "endpointVersion": 2,
+      "endpointId": 30102,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 1,
@@ -11703,7 +12594,11 @@
         "coinMarketCapId": 34794
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x157a6df6B74F4E5E45af4E4615FDe7B49225a662",
+      "endpointVersion": 2,
+      "endpointId": 30101,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 8453,
@@ -11717,7 +12612,11 @@
         "coingeckoId": "island-token"
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x157a6df6B74F4E5E45af4E4615FDe7B49225a662",
+      "endpointVersion": 2,
+      "endpointId": 30184,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 146,
@@ -11729,7 +12628,10 @@
       "tags": [],
       "extensions": {},
       "isAcross": false,
-      "isOFT": false
+      "oftAdapter": "0x7A0C53F7eb34C5BC8B01691723669adA9D6CB384",
+      "endpointVersion": 2,
+      "endpointId": 30332,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 1,
@@ -11741,9 +12643,6 @@
       "tags": [],
       "extensions": {
         "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0xC4441c2BE5d8fA8126822B9929CA0b81Ea0DE38E"
-          },
           "130": {
             "tokenAddress": "0xc7bA59c95ba747a7c374DC7208a0513798BC5950"
           },
@@ -11753,7 +12652,12 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0xd277cbcfe8cb37ca90129a33ec7ee590ee392b59",
+      "oftVersion": 3,
+      "endpointVersion": 2,
+      "endpointId": 30101,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 1,
@@ -11765,9 +12669,6 @@
       "tags": [],
       "extensions": {
         "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0x33333333FEde34409Fb7f67c6585047E1F653333"
-          },
           "56": {
             "tokenAddress": "0x333333C465a19C85f85c6CfbED7B16b0B26E3333"
           },
@@ -11780,7 +12681,12 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x5e1f75388dc768f6129b9ee859bfb1361631a77e",
+      "oftVersion": 3,
+      "endpointVersion": 2,
+      "endpointId": 30101,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 56,
@@ -11799,7 +12705,11 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x333333C465a19C85f85c6CfbED7B16b0B26E3333",
+      "endpointVersion": 2,
+      "endpointId": 30102,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 8453,
@@ -11818,7 +12728,11 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x333333C465a19C85f85c6CfbED7B16b0B26E3333",
+      "endpointVersion": 2,
+      "endpointId": 30184,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 1,
@@ -11828,15 +12742,14 @@
       "symbol": "GMEE",
       "logoURI": "https://s2.coinmarketcap.com/static/img/coins/128x128/9103.png",
       "tags": [],
-      "extensions": {
-        "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0xD9016A907Dc0ECfA3ca425ab20B6b785B42F2373"
-          }
-        }
-      },
+      "extensions": {},
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x66bd9b4a80a603a2bba8962bc210fe15a286426a",
+      "oftVersion": 3,
+      "endpointVersion": 2,
+      "endpointId": 30101,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 56,
@@ -11855,7 +12768,11 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x3C1B057cb7AcEB4F2c4D889A29fEBec30A6A3146",
+      "endpointVersion": 2,
+      "endpointId": 30102,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 1,
@@ -11867,16 +12784,18 @@
       "tags": [],
       "extensions": {
         "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0x298d492e8c1d909D3F63Bc4A36C66c64ACB3d695"
-          },
           "56": {
             "tokenAddress": "0x3C1B057cb7AcEB4F2c4D889A29fEBec30A6A3146"
           }
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x5cc16c5bd87d68ad459e895e886cd851cc5709ff",
+      "oftVersion": 3,
+      "endpointVersion": 2,
+      "endpointId": 30101,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 1,
@@ -11890,7 +12809,11 @@
         "coinMarketCapId": 34619
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x7FF7Fa94b8b66Ef313f7970d4EEbd2CB3103a2C0",
+      "endpointVersion": 2,
+      "endpointId": 30101,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 10,
@@ -11902,7 +12825,11 @@
       "tags": [],
       "extensions": {},
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x7FF7Fa94b8b66Ef313f7970d4EEbd2CB3103a2C0",
+      "endpointVersion": 2,
+      "endpointId": 30111,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 8453,
@@ -11914,7 +12841,11 @@
       "tags": [],
       "extensions": {},
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x7FF7Fa94b8b66Ef313f7970d4EEbd2CB3103a2C0",
+      "endpointVersion": 2,
+      "endpointId": 30184,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 43114,
@@ -11926,7 +12857,11 @@
       "tags": [],
       "extensions": {},
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x7FF7Fa94b8b66Ef313f7970d4EEbd2CB3103a2C0",
+      "endpointVersion": 2,
+      "endpointId": 30106,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 137,
@@ -11938,7 +12873,11 @@
       "tags": [],
       "extensions": {},
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x7FF7Fa94b8b66Ef313f7970d4EEbd2CB3103a2C0",
+      "endpointVersion": 2,
+      "endpointId": 30109,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 56,
@@ -11950,7 +12889,11 @@
       "tags": [],
       "extensions": {},
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x7FF7Fa94b8b66Ef313f7970d4EEbd2CB3103a2C0",
+      "endpointVersion": 2,
+      "endpointId": 30102,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 1,
@@ -11962,16 +12905,18 @@
       "tags": [],
       "extensions": {
         "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0x0bc37BEA9068a86C221B8bd71eA6228260DAD5A2"
-          },
           "8453": {
             "tokenAddress": "0x9CD44ecA3D1E0ADa6FbDaF5793031C3a500089B1"
           }
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0xc6c856ab43e76b304230a31ecd9ad916b8b6f8e1",
+      "oftVersion": 3,
+      "endpointVersion": 2,
+      "endpointId": 30101,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 8453,
@@ -11989,7 +12934,11 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x9CD44ecA3D1E0ADa6FbDaF5793031C3a500089B1",
+      "endpointVersion": 2,
+      "endpointId": 30184,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 56,
@@ -11999,15 +12948,14 @@
       "symbol": "GPT",
       "logoURI": "https://s2.coinmarketcap.com/static/img/coins/128x128/29576.png",
       "tags": [],
-      "extensions": {
-        "bridgeInfo": {
-          "56": {
-            "tokenAddress": "0x30842a9c941d9DE3AF582c41ad12b11D776ba69e"
-          }
-        }
-      },
+      "extensions": {},
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0xe99ae1beb4aae669f9c4ffcbb90263685fb4c8c3",
+      "oftVersion": 3,
+      "endpointVersion": 2,
+      "endpointId": 30102,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 56,
@@ -12019,7 +12967,11 @@
       "tags": [],
       "extensions": {},
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x0f1E2C34f688d68Af730cBd0b79bb4B5519e00e0",
+      "endpointVersion": 2,
+      "endpointId": 30102,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 1,
@@ -12031,7 +12983,11 @@
       "tags": [],
       "extensions": {},
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x63fE3EB27e98DA740Ee24AB5cc1a17Ebd20fEC1C",
+      "endpointVersion": 2,
+      "endpointId": 30101,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 8453,
@@ -12049,7 +13005,11 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0xBB146326778227A8498b105a18f84E0987A684b4",
+      "endpointVersion": 2,
+      "endpointId": 30184,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 137,
@@ -12061,16 +13021,18 @@
       "tags": [],
       "extensions": {
         "bridgeInfo": {
-          "137": {
-            "tokenAddress": "0xaA3717090CDDc9B227e49d0D84A28aC0a996e6Ff"
-          },
           "8453": {
             "tokenAddress": "0xBB146326778227A8498b105a18f84E0987A684b4"
           }
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0xbb146326778227a8498b105a18f84e0987a684b4",
+      "oftVersion": 3,
+      "endpointVersion": 2,
+      "endpointId": 30109,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 8453,
@@ -12084,14 +13046,16 @@
         "bridgeInfo": {
           "56": {
             "tokenAddress": "0x91dA780BC7f4B7Cf19ABE90411a2a296Ec5FF787"
-          },
-          "8453": {
-            "tokenAddress": "0x91dA780BC7f4B7Cf19ABE90411a2a296Ec5FF787"
           }
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0xc8de92105c01af3a58791cdbaf14f232621dbe17",
+      "oftVersion": 3,
+      "endpointVersion": 2,
+      "endpointId": 30184,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 56,
@@ -12109,7 +13073,11 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x91dA780BC7f4B7Cf19ABE90411a2a296Ec5FF787",
+      "endpointVersion": 2,
+      "endpointId": 30102,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 1,
@@ -12121,9 +13089,6 @@
       "tags": [],
       "extensions": {
         "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0x44709a920fCcF795fbC57BAA433cc3dd53C44DbE"
-          },
           "56": {
             "tokenAddress": "0x489580eB70a50515296eF31E8179fF3e77E24965"
           },
@@ -12133,7 +13098,12 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x1713bd4cd1b8f0342c48fbd68658605346386324",
+      "oftVersion": 3,
+      "endpointVersion": 2,
+      "endpointId": 30101,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 56,
@@ -12151,7 +13121,12 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x1713bd4cd1b8f0342c48fbd68658605346386324",
+      "oftVersion": 3,
+      "endpointVersion": 2,
+      "endpointId": 30102,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 137,
@@ -12169,7 +13144,12 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x1713bd4cd1b8f0342c48fbd68658605346386324",
+      "oftVersion": 3,
+      "endpointVersion": 2,
+      "endpointId": 30109,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 8453,
@@ -12181,7 +13161,10 @@
       "tags": [],
       "extensions": {},
       "isAcross": false,
-      "isOFT": false
+      "oftAdapter": "0x80CA9EdCE4583B8043351A1046F18244b24eF869",
+      "endpointVersion": 2,
+      "endpointId": 30184,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 8453,
@@ -12193,7 +13176,10 @@
       "tags": [],
       "extensions": {},
       "isAcross": false,
-      "isOFT": false
+      "oftAdapter": "0xD2e92077ad4d7d50D7d60be13FffE3FB52cc0B9f",
+      "endpointVersion": 2,
+      "endpointId": 30184,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 1,
@@ -12205,7 +13191,10 @@
       "tags": [],
       "extensions": {},
       "isAcross": false,
-      "isOFT": false
+      "oftAdapter": "0x7FA16cEd60019adE15edd0cDb03d689d557B6d1e",
+      "endpointVersion": 2,
+      "endpointId": 30101,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 1,
@@ -12217,16 +13206,18 @@
       "tags": [],
       "extensions": {
         "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0x5651fA7a726B9Ec0cAd00Ee140179912B6E73599"
-          },
           "56": {
             "tokenAddress": "0x5651fA7a726B9Ec0cAd00Ee140179912B6E73599"
           }
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0xbd26aa1903b29101b48a27f2cb8a2889fbbef223",
+      "oftVersion": 3,
+      "endpointVersion": 2,
+      "endpointId": 30101,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 56,
@@ -12244,7 +13235,12 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0xbd26aa1903b29101b48a27f2cb8a2889fbbef223",
+      "oftVersion": 3,
+      "endpointVersion": 2,
+      "endpointId": 30102,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 56,
@@ -12256,7 +13252,11 @@
       "tags": [],
       "extensions": {},
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0xFDfdFD005F127334F7c4eeFEF2252D2BF4B6E79E",
+      "endpointVersion": 2,
+      "endpointId": 30102,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 8453,
@@ -12268,7 +13268,11 @@
       "tags": [],
       "extensions": {},
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0xFDfdFD005F127334F7c4eeFEF2252D2BF4B6E79E",
+      "endpointVersion": 2,
+      "endpointId": 30184,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 43114,
@@ -12280,7 +13284,11 @@
       "tags": [],
       "extensions": {},
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0xFDfdFD005F127334F7c4eeFEF2252D2BF4B6E79E",
+      "endpointVersion": 2,
+      "endpointId": 30106,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 137,
@@ -12298,7 +13306,12 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0xb9d852a3f9b3a82e243faab0272604102a111e1a",
+      "oftVersion": 3,
+      "endpointVersion": 2,
+      "endpointId": 30109,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 1,
@@ -12310,9 +13323,6 @@
       "tags": [],
       "extensions": {
         "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0xf9FB20B8E097904f0aB7d12e9DbeE88f2dcd0F16"
-          },
           "10": {
             "tokenAddress": "0xf9FB20B8E097904f0aB7d12e9DbeE88f2dcd0F16"
           },
@@ -12331,7 +13341,12 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0xb9d852a3f9b3a82e243faab0272604102a111e1a",
+      "oftVersion": 3,
+      "endpointVersion": 2,
+      "endpointId": 30101,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 8453,
@@ -12349,7 +13364,12 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0xb9d852a3f9b3a82e243faab0272604102a111e1a",
+      "oftVersion": 3,
+      "endpointVersion": 2,
+      "endpointId": 30184,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 10,
@@ -12367,7 +13387,12 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0xb9d852a3f9b3a82e243faab0272604102a111e1a",
+      "oftVersion": 3,
+      "endpointVersion": 2,
+      "endpointId": 30111,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 43114,
@@ -12385,7 +13410,12 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x1bf472c38b00f6070abb61628d76870561890bba",
+      "oftVersion": 3,
+      "endpointVersion": 2,
+      "endpointId": 30106,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 56,
@@ -12397,7 +13427,11 @@
       "tags": [],
       "extensions": {},
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x6418c0dd099a9FDA397C766304CDd918233E8847",
+      "endpointVersion": 2,
+      "endpointId": 30102,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 1,
@@ -12409,7 +13443,11 @@
       "tags": [],
       "extensions": {},
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x6418c0dd099a9FDA397C766304CDd918233E8847",
+      "endpointVersion": 2,
+      "endpointId": 30101,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 1,
@@ -12424,7 +13462,11 @@
         "coinMarketCapId": 32224
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0xD58826d2C0bAbf1A60d8b508160b52E9C19AFf07",
+      "endpointVersion": 2,
+      "endpointId": 30101,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 56,
@@ -12438,7 +13480,11 @@
         "coingeckoId": "cybro"
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0xA9972b1fAC35fdd8cBdbaA315A002B2Ad91d2ad6",
+      "endpointVersion": 2,
+      "endpointId": 30102,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 1,
@@ -12461,7 +13507,11 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0xb5130F4767AB0ACC579f25a76e8f9E977CB3F948",
+      "endpointVersion": 2,
+      "endpointId": 30101,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 8453,
@@ -12480,7 +13530,11 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0xb5130F4767AB0ACC579f25a76e8f9E977CB3F948",
+      "endpointVersion": 2,
+      "endpointId": 30184,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 8453,
@@ -12490,15 +13544,14 @@
       "symbol": "VIRTUAL",
       "logoURI": "https://s2.coinmarketcap.com/static/img/coins/128x128/29420.png",
       "tags": [],
-      "extensions": {
-        "bridgeInfo": {
-          "8453": {
-            "tokenAddress": "0x0b3e328455c4059EEb9e3f84b5543F74E24e7E1b"
-          }
-        }
-      },
+      "extensions": {},
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0xa5a1afbff720f79f1f7833aafbdcee87770bbc93",
+      "oftVersion": 3,
+      "endpointVersion": 2,
+      "endpointId": 30184,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 1,
@@ -12510,7 +13563,11 @@
       "tags": [],
       "extensions": {},
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x2Da17fAf782ae884faf7dB2208BBC66b6E085C22",
+      "endpointVersion": 2,
+      "endpointId": 30101,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 8453,
@@ -12522,7 +13579,11 @@
       "tags": [],
       "extensions": {},
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x458AD5B487F4442245E4C5eA7249009E607A5583",
+      "endpointVersion": 2,
+      "endpointId": 30184,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 56,
@@ -12534,7 +13595,11 @@
       "tags": [],
       "extensions": {},
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x458AD5B487F4442245E4C5eA7249009E607A5583",
+      "endpointVersion": 2,
+      "endpointId": 30102,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 1,
@@ -12545,15 +13610,14 @@
       "logoURI": "https://s2.coinmarketcap.com/static/img/coins/128x128/33978.png",
       "tags": [],
       "extensions": {
-        "coinMarketCapId": 33978,
-        "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2"
-          }
-        }
+        "coinMarketCapId": 33978
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x4afa9620d0b79137383a7a9ab3477837d475e948",
+      "endpointVersion": 2,
+      "endpointId": 30101,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 8453,
@@ -12565,7 +13629,11 @@
       "tags": [],
       "extensions": {},
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x441Fcb23dFe8289cf572126FEDCf450974ADc891",
+      "endpointVersion": 2,
+      "endpointId": 30184,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 1,
@@ -12577,7 +13645,11 @@
       "tags": [],
       "extensions": {},
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x1e44f98cC78d505A61F63b26D13b116CF51dbB87",
+      "endpointVersion": 2,
+      "endpointId": 30101,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 1,
@@ -12589,16 +13661,18 @@
       "tags": [],
       "extensions": {
         "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0x60bE1e1fE41c1370ADaF5d8e66f07Cf1C2Df2268"
-          },
           "8453": {
             "tokenAddress": "0xF598797d9C160aeF2A14712C20b7731cBe5861da"
           }
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0xf598797d9c160aef2a14712c20b7731cbe5861da",
+      "oftVersion": 3,
+      "endpointVersion": 2,
+      "endpointId": 30101,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 8453,
@@ -12617,7 +13691,11 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0xF598797d9C160aeF2A14712C20b7731cBe5861da",
+      "endpointVersion": 2,
+      "endpointId": 30184,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 1,
@@ -12627,15 +13705,14 @@
       "symbol": "PLUME",
       "logoURI": "https://s2.coinmarketcap.com/static/img/coins/128x128/35364.png",
       "tags": [],
-      "extensions": {
-        "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0x4C1746A800D224393fE2470C70A35717eD4eA5F1"
-          }
-        }
-      },
+      "extensions": {},
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0xbda8a2285f4c3e75b37e467c4db9bc633ffbd29d",
+      "oftVersion": 3,
+      "endpointVersion": 2,
+      "endpointId": 30101,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 8453,
@@ -12647,7 +13724,11 @@
       "tags": [],
       "extensions": {},
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0xe5e851b01DD3Eda24FDe709a407dB44555B6d1E0",
+      "endpointVersion": 2,
+      "endpointId": 30184,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 1,
@@ -12659,7 +13740,11 @@
       "tags": [],
       "extensions": {},
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x01b603be3D545F096015741e6503440282BF45fb",
+      "endpointVersion": 2,
+      "endpointId": 30101,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 1,
@@ -12671,9 +13756,6 @@
       "tags": [],
       "extensions": {
         "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0xd9Fcd98c322942075A5C3860693e9f4f03AAE07b"
-          },
           "56": {
             "tokenAddress": "0x2117E8b79e8E176A670c9fCf945d4348556bfFad"
           },
@@ -12698,7 +13780,12 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x4d7e09f73843bd4735aaf7a74b6d877bac75a531",
+      "oftVersion": 3,
+      "endpointVersion": 2,
+      "endpointId": 30101,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 80094,
@@ -12716,7 +13803,12 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0xc1d31b2812cc920341349a717d14badfb1bcab11",
+      "oftVersion": 3,
+      "endpointVersion": 2,
+      "endpointId": 30362,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 56,
@@ -12734,7 +13826,12 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x1633269308f154fbecbb15f91d72d2afa6af95b4",
+      "oftVersion": 3,
+      "endpointVersion": 2,
+      "endpointId": 30102,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 146,
@@ -12752,7 +13849,12 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x31aa74232a0b0e50e5bf95780b2116710a34c7e9",
+      "oftVersion": 3,
+      "endpointVersion": 2,
+      "endpointId": 30332,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 8453,
@@ -12770,7 +13872,12 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x9ff7ea0cf94b8665c2f5d17560bd34ab9bbacd21",
+      "oftVersion": 3,
+      "endpointVersion": 2,
+      "endpointId": 30184,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 43114,
@@ -12788,7 +13895,12 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0xf1a5f97ab84158cf6d8ba8def68780fc2fd64310",
+      "oftVersion": 3,
+      "endpointVersion": 2,
+      "endpointId": 30106,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 1,
@@ -12798,15 +13910,14 @@
       "symbol": "LYM",
       "logoURI": "https://s2.coinmarketcap.com/static/img/coins/128x128/2554.png",
       "tags": [],
-      "extensions": {
-        "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0xc690F7C7FcfFA6a82b79faB7508c466FEfdfc8c5"
-          }
-        }
-      },
+      "extensions": {},
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x2dc2650ce5a4cc275403163f4a7681d7ec8ae8f0",
+      "oftVersion": 3,
+      "endpointVersion": 2,
+      "endpointId": 30101,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 43114,
@@ -12863,7 +13974,7 @@
         }
       },
       "isAcross": false,
-      "isOFT": false,
+      "isOFT": true,
       "oftAdapter": "0x98e871ab1cc7e3073b6cc1b661be7ca678a33f7f",
       "endpointId": 102
     },
@@ -30396,21 +31507,21 @@
         },
         "feeInfo": {
           "10": {
-            "minDstGas": 0
+            "minDstGas": 200000
           },
           "137": {
-            "minDstGas": 0
+            "minDstGas": 200000
           },
           "146": {
-            "minDstGas": 0
+            "minDstGas": 200000
           },
           "80094": {
-            "minDstGas": 0
+            "minDstGas": 200000
           }
         }
       },
       "isAcross": true,
-      "isOFT": false,
+      "isOFT": true,
       "oftAdapter": "0x1c3979c2bb4f0e6dcb75daf22ad0741cf7d5f160",
       "endpointId": 110
     },
@@ -30483,7 +31594,11 @@
         "coingeckoId": "heyanon"
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x79bbF4508B1391af3A0F4B30bb5FC4aa9ab0E07C",
+      "endpointVersion": 2,
+      "endpointId": 30110,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 42161,
@@ -30498,10 +31613,26 @@
           "1": {
             "tokenAddress": "0xdac17f958d2ee523a2206206994597c13d831ec7"
           }
+        },
+        "feeInfo": {
+          "10": {
+            "oftFee": 3
+          },
+          "8453": {
+            "oftFee": 3
+          },
+          "80094": {
+            "oftFee": 3
+          }
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x238a52455a1ef6c987cac94b28b4081afe50ba06",
+      "oftVersion": 3,
+      "endpointVersion": 2,
+      "endpointId": 30110,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 42161,
@@ -30527,6 +31658,7 @@
         }
       },
       "isAcross": false,
+      "isOFT": true,
       "oftAdapter": "0xa9004A5421372E1D83fB1f85b0fc986c912f91f3",
       "endpointId": 110,
       "oftSharedDecimals": 6
@@ -30548,7 +31680,11 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x0B3EAEAd748facDb9d943d3407011f16Eb17D0Cf",
+      "endpointVersion": 2,
+      "endpointId": 30110,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 42161,
@@ -30578,6 +31714,7 @@
         }
       },
       "isAcross": false,
+      "isOFT": true,
       "oftAdapter": "0x6Db8b088c4d41d622B44CD81B900bA690f2d496C",
       "endpointId": 110,
       "oftSharedDecimals": 8
@@ -30609,6 +31746,7 @@
         }
       },
       "isAcross": false,
+      "isOFT": true,
       "oftAdapter": "0x4591DBfF62656E7859Afe5e45f6f47D3669fBB28",
       "endpointId": 110,
       "oftSharedDecimals": 18
@@ -30648,7 +31786,11 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x2492D0006411Af6C8bbb1c8afc1B0197350a79e9",
+      "endpointVersion": 2,
+      "endpointId": 30110,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 42161,
@@ -30671,6 +31813,7 @@
         }
       },
       "isAcross": false,
+      "isOFT": true,
       "oftAdapter": "0x64f282290e8d0196c2929a9119250c361e025bab",
       "oftVersion": 2,
       "endpointId": 110,
@@ -30701,6 +31844,7 @@
         }
       },
       "isAcross": false,
+      "isOFT": true,
       "oftAdapter": "0x1b896893dfc86bb67Cf57767298b9073D2c1bA2c",
       "endpointId": 110,
       "oftSharedDecimals": 8
@@ -30735,6 +31879,7 @@
         }
       },
       "isAcross": false,
+      "isOFT": true,
       "oftAdapter": "0x63a28da45373619400f8df9a2f9858a845374864",
       "oftVersion": 1,
       "endpointId": 110,
@@ -30765,6 +31910,7 @@
         }
       },
       "isAcross": false,
+      "isOFT": true,
       "oftAdapter": "0x560363BdA52BC6A44CA6C8c9B4a5FadbDa32fa60",
       "endpointId": 110,
       "oftSharedDecimals": 18
@@ -30791,6 +31937,7 @@
         }
       },
       "isAcross": false,
+      "isOFT": true,
       "oftAdapter": "0xbc011A12Da28e8F0f528d9eE5E7039E22F91cf18",
       "endpointId": 110,
       "oftSharedDecimals": 18
@@ -30811,7 +31958,12 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x0be393dc46248e4285dc5caca3084bc7e9bfbb41",
+      "oftVersion": 3,
+      "endpointVersion": 2,
+      "endpointId": 30110,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 42161,
@@ -30846,6 +31998,7 @@
         }
       },
       "isAcross": false,
+      "isOFT": true,
       "oftAdapter": "0x788D86E00ab31Db859C3d6b80d5a9375801d7f2A",
       "endpointId": 110,
       "oftSharedDecimals": 6
@@ -30879,6 +32032,7 @@
         }
       },
       "isAcross": false,
+      "isOFT": true,
       "oftAdapter": "0x982239D38Af50B0168dA33346d85Fb12929c4c07",
       "endpointId": 110,
       "oftSharedDecimals": 18
@@ -30900,7 +32054,7 @@
         },
         "feeInfo": {
           "1": {
-            "minDstGas": 0
+            "minDstGas": 200000
           },
           "10": {
             "minDstGas": 175000
@@ -30917,6 +32071,7 @@
         }
       },
       "isAcross": false,
+      "isOFT": true,
       "oftAdapter": "0xaf20f5f19698f1D19351028cd7103B63D30DE7d7",
       "endpointId": 110,
       "oftSharedDecimals": 18
@@ -30960,6 +32115,7 @@
         }
       },
       "isAcross": false,
+      "isOFT": true,
       "oftAdapter": "0xD3FDCb837DAfdb7C9C3eBD48FE22a53F6Dd3d7D7",
       "endpointId": 110,
       "oftSharedDecimals": 8
@@ -30989,6 +32145,7 @@
         }
       },
       "isAcross": false,
+      "isOFT": true,
       "oftAdapter": "0x8b5e4C9a188b1A187f2D1E80b1c2fB17fA2922e1",
       "endpointId": 110,
       "oftSharedDecimals": 6
@@ -31018,6 +32175,7 @@
         }
       },
       "isAcross": false,
+      "isOFT": true,
       "oftAdapter": "0x371c7ec6D8039ff7933a2AA28EB827Ffe1F52f07",
       "endpointId": 110,
       "oftSharedDecimals": 8
@@ -31056,6 +32214,7 @@
         }
       },
       "isAcross": false,
+      "isOFT": true,
       "oftAdapter": "0x2297aEbD383787A160DD0d9F71508148769342E3",
       "endpointId": 110,
       "oftSharedDecimals": 8
@@ -31076,7 +32235,11 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0xE2B1dc2D4A3b4E59FDF0c47B71A7A86391a8B35a",
+      "endpointVersion": 2,
+      "endpointId": 30110,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 42161,
@@ -31106,6 +32269,7 @@
         }
       },
       "isAcross": false,
+      "isOFT": true,
       "oftAdapter": "0x3082CC23568eA640225c2467653dB90e9250AaA0",
       "endpointId": 110,
       "oftSharedDecimals": 8
@@ -31144,6 +32308,7 @@
         }
       },
       "isAcross": false,
+      "isOFT": true,
       "oftAdapter": "0x9ed7E4B1BFF939ad473dA5E7a218C771D1569456",
       "endpointId": 110,
       "oftSharedDecimals": 6
@@ -31173,6 +32338,7 @@
         }
       },
       "isAcross": false,
+      "isOFT": true,
       "oftAdapter": "0x51A80238B5738725128d3a3e06Ab41c1d4C05C74",
       "endpointId": 110,
       "oftSharedDecimals": 18
@@ -31202,6 +32368,7 @@
         }
       },
       "isAcross": false,
+      "isOFT": true,
       "oftAdapter": "0x0Ae38f7E10A43B5b2fB064B42a2f4514cbA909ef",
       "endpointId": 110,
       "oftSharedDecimals": 18
@@ -31231,7 +32398,7 @@
         }
       },
       "isAcross": false,
-      "isOFT": false,
+      "isOFT": true,
       "oftAdapter": "0x25d887Ce7a35172C62FeBFD67a1856F20FaEbB00",
       "endpointId": 110,
       "oftSharedDecimals": 4
@@ -31272,7 +32439,7 @@
         }
       },
       "isAcross": false,
-      "isOFT": false,
+      "isOFT": true,
       "oftAdapter": "0x957a8af7894e76e16db17c2a913496a4e60b7090",
       "oftVersion": 2,
       "endpointId": 110,
@@ -31290,7 +32457,11 @@
         "coingeckoId": "degen-base"
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x9F07F8A82cB1af1466252e505b7b7ddee103bC91",
+      "endpointVersion": 2,
+      "endpointId": 30110,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 42161,
@@ -31313,6 +32484,7 @@
         }
       },
       "isAcross": false,
+      "isOFT": true,
       "oftAdapter": "0xcbd78fb59cdae1cd70e4d27c2d9ceb8691589715",
       "oftVersion": 1,
       "endpointId": 110,
@@ -31334,6 +32506,7 @@
         }
       },
       "isAcross": false,
+      "isOFT": true,
       "oftAdapter": "0xa9aa07f082d9c15d0b6d7e9e5b68b1f898399c29",
       "oftVersion": 2,
       "endpointId": 110,
@@ -31366,6 +32539,7 @@
         }
       },
       "isAcross": false,
+      "isOFT": true,
       "oftAdapter": "0x7448c7456a97769F6cD04F1E83A4a23cCdC46aBD",
       "endpointId": 110,
       "oftSharedDecimals": 18
@@ -31396,6 +32570,7 @@
         }
       },
       "isAcross": false,
+      "isOFT": true,
       "oftAdapter": "0x193f4A4a6ea24102F49b931DEeeb931f6E32405d",
       "endpointId": 110,
       "oftSharedDecimals": 4
@@ -31425,6 +32600,7 @@
         }
       },
       "isAcross": false,
+      "isOFT": true,
       "oftAdapter": "0x7Be5Dd337CC6cE3e474F64E2A92A566445290864",
       "endpointId": 110,
       "oftSharedDecimals": 18
@@ -31448,14 +32624,15 @@
             "minDstGas": 110000
           },
           "56": {
-            "minDstGas": 0
+            "minDstGas": 200000
           },
           "137": {
-            "minDstGas": 0
+            "minDstGas": 200000
           }
         }
       },
       "isAcross": false,
+      "isOFT": true,
       "oftAdapter": "0xB2E787C6C83D6d75f466371a2966b27a8b700828",
       "endpointId": 110,
       "oftSharedDecimals": 9
@@ -31491,6 +32668,7 @@
         }
       },
       "isAcross": false,
+      "isOFT": true,
       "oftAdapter": "0x9e20461bc2c4c980f62f1B279D71734207a6A356",
       "endpointId": 110,
       "oftSharedDecimals": 8
@@ -31517,6 +32695,7 @@
         }
       },
       "isAcross": false,
+      "isOFT": true,
       "oftAdapter": "0xDCbf4CB83d27C408B30dD7F39bfcabD7176B1Ba3",
       "endpointId": 110,
       "oftSharedDecimals": 8
@@ -31564,6 +32743,7 @@
         }
       },
       "isAcross": false,
+      "isOFT": true,
       "oftAdapter": "0xbFd5206962267c7b4b4A8B3D76AC2E1b2A5c4d5e",
       "endpointId": 110,
       "oftSharedDecimals": 4
@@ -31585,7 +32765,11 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x4186BFC76E2E237523CBC30FD220FE055156b41F",
+      "endpointVersion": 2,
+      "endpointId": 30110,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 42161,
@@ -31624,6 +32808,7 @@
         }
       },
       "isAcross": false,
+      "isOFT": true,
       "oftAdapter": "0x2b1D36f5B61AdDAf7DA7ebbd11B35FD8cfb0DE31",
       "endpointId": 110,
       "oftSharedDecimals": 8
@@ -31644,7 +32829,11 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x85AF271d1DFCBF53486D996f61D7FF0bba5582eA",
+      "endpointVersion": 2,
+      "endpointId": 30110,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 42161,
@@ -31670,6 +32859,7 @@
         }
       },
       "isAcross": false,
+      "isOFT": true,
       "oftAdapter": "0xf8173a39c56a554837C4C7f104153A005D284D11",
       "endpointId": 110,
       "oftSharedDecimals": 8
@@ -31708,6 +32898,7 @@
         }
       },
       "isAcross": false,
+      "isOFT": true,
       "oftAdapter": "0xba0Dda8762C24dA9487f5FA026a9B64b695A07Ea",
       "endpointId": 110,
       "oftSharedDecimals": 18
@@ -31742,6 +32933,7 @@
         }
       },
       "isAcross": false,
+      "isOFT": true,
       "oftAdapter": "0x78a0A62Fba6Fb21A83FE8a3433d44C73a4017A6f",
       "endpointId": 110,
       "oftSharedDecimals": 18
@@ -31762,7 +32954,11 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0xaC800FD6159c2a2CB8fC31EF74621eB430287a5A",
+      "endpointVersion": 2,
+      "endpointId": 30110,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 42161,
@@ -31781,7 +32977,11 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34",
+      "endpointVersion": 2,
+      "endpointId": 30110,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 42161,
@@ -31799,7 +32999,11 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x211Cc4DD073734dA055fbF44a2b4667d5E5fE5d2",
+      "endpointVersion": 2,
+      "endpointId": 30110,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 42161,
@@ -31817,7 +33021,11 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0xaB24c63bee518Ac956c8123389fc538c7e36d82C",
+      "endpointVersion": 2,
+      "endpointId": 30110,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 42161,
@@ -31835,7 +33043,11 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x64445f0aecC51E94aD52d8AC56b7190e764E561a",
+      "endpointVersion": 2,
+      "endpointId": 30110,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 42161,
@@ -31863,6 +33075,7 @@
         }
       },
       "isAcross": false,
+      "isOFT": true,
       "oftAdapter": "0x1883aF6b51fb7F69577880004a82c9d68582022C",
       "endpointId": 110,
       "oftSharedDecimals": 8
@@ -31883,7 +33096,11 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x58538e6A46E07434d7E7375Bc268D3cb839C0133",
+      "endpointVersion": 2,
+      "endpointId": 30110,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 42161,
@@ -31902,7 +33119,11 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x3124678D62D2aa1f615B54525310fbfDa6DcF7AE",
+      "endpointVersion": 2,
+      "endpointId": 30110,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 42161,
@@ -31928,6 +33149,7 @@
         }
       },
       "isAcross": false,
+      "isOFT": true,
       "oftAdapter": "0x20cea49b5f7a6dbd78cae772ca5973ef360aa1e6",
       "oftVersion": 2,
       "endpointId": 110,
@@ -31950,7 +33172,11 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x6985884C4392D348587B19cb9eAAf157F13271cd",
+      "endpointVersion": 2,
+      "endpointId": 30110,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 42161,
@@ -31968,7 +33194,11 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0xB1Fe27b32fFb5CE54E272C096547F1e86c19e72F",
+      "endpointVersion": 2,
+      "endpointId": 30110,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 42161,
@@ -31982,14 +33212,16 @@
         "bridgeInfo": {
           "8453": {
             "tokenAddress": "0xC227717ef4Ae4D982E14789eB33bA942243c3FEe"
-          },
-          "42161": {
-            "tokenAddress": "0x20547341E58fB558637FA15379C92e11F7b7F710"
           }
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x80cf6a0dcfe90a2c8f89b842a7f71da78fe92c6e",
+      "oftVersion": 3,
+      "endpointVersion": 2,
+      "endpointId": 30110,
+      "oftSharedDecimals": 18
     },
     {
       "chainId": 42161,
@@ -32007,7 +33239,11 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x420FcA0121DC28039145009570975747295f2329",
+      "endpointVersion": 2,
+      "endpointId": 30110,
+      "oftSharedDecimals": 4
     },
     {
       "chainId": 42161,
@@ -32025,7 +33261,11 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x488ef48FF9D803087CC96b347FC250244A9e8260",
+      "endpointVersion": 2,
+      "endpointId": 30110,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 42161,
@@ -32043,7 +33283,11 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x7f9FBf9bDd3F4105C478b996B648FE6e828a1e98",
+      "endpointVersion": 2,
+      "endpointId": 30110,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 42161,
@@ -32062,7 +33306,11 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x4E200fE2f3eFb977d5fd9c430A41531FB04d97B8",
+      "endpointVersion": 2,
+      "endpointId": 30110,
+      "oftSharedDecimals": 18
     },
     {
       "chainId": 42161,
@@ -32080,7 +33328,11 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0xfc87D55bC8bF441AbfC24D04B2068a8f77BcFcC0",
+      "endpointVersion": 2,
+      "endpointId": 30110,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 42161,
@@ -32099,7 +33351,11 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x092bAaDB7DEf4C3981454dD9c0A0D7FF07bCFc86",
+      "endpointVersion": 2,
+      "endpointId": 30110,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 42161,
@@ -32118,7 +33374,11 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x968bE3F7bfeF0F8eDc3c1aD90232EbB0DA0867aA",
+      "endpointVersion": 2,
+      "endpointId": 30110,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 42161,
@@ -32133,7 +33393,10 @@
         "coinMarketCapId": 34376
       },
       "isAcross": false,
-      "isOFT": false
+      "oftAdapter": "0x6b43732a9AE9F8654d496c0A075Aa4Aa43057A0B",
+      "endpointVersion": 2,
+      "endpointId": 30110,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 42161,
@@ -32151,7 +33414,12 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0xd277cbcfe8cb37ca90129a33ec7ee590ee392b59",
+      "oftVersion": 3,
+      "endpointVersion": 2,
+      "endpointId": 30110,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 42161,
@@ -32169,7 +33437,11 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x333333C465a19C85f85c6CfbED7B16b0B26E3333",
+      "endpointVersion": 2,
+      "endpointId": 30110,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 42161,
@@ -32181,7 +33453,11 @@
       "tags": [],
       "extensions": {},
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x7FF7Fa94b8b66Ef313f7970d4EEbd2CB3103a2C0",
+      "endpointVersion": 2,
+      "endpointId": 30110,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 42161,
@@ -32193,7 +33469,11 @@
       "tags": [],
       "extensions": {},
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0xFDfdFD005F127334F7c4eeFEF2252D2BF4B6E79E",
+      "endpointVersion": 2,
+      "endpointId": 30110,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 42161,
@@ -32211,7 +33491,12 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0xb9d852a3f9b3a82e243faab0272604102a111e1a",
+      "oftVersion": 3,
+      "endpointVersion": 2,
+      "endpointId": 30110,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 42161,
@@ -32229,7 +33514,11 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0xb5130F4767AB0ACC579f25a76e8f9E977CB3F948",
+      "endpointVersion": 2,
+      "endpointId": 30110,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 42161,
@@ -32241,7 +33530,11 @@
       "tags": [],
       "extensions": {},
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x0Bd27617E20F09a8E7FFdaE281E383b4b2f7A742",
+      "endpointVersion": 2,
+      "endpointId": 30110,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 42161,
@@ -32253,7 +33546,11 @@
       "tags": [],
       "extensions": {},
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x441Fcb23dFe8289cf572126FEDCf450974ADc891",
+      "endpointVersion": 2,
+      "endpointId": 30110,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 42161,
@@ -32265,7 +33562,11 @@
       "tags": [],
       "extensions": {},
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0xe5e851b01DD3Eda24FDe709a407dB44555B6d1E0",
+      "endpointVersion": 2,
+      "endpointId": 30110,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 42161,
@@ -32283,7 +33584,12 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x174834a9de4c2f0c13c7353e62c229e8d607c808",
+      "oftVersion": 3,
+      "endpointVersion": 2,
+      "endpointId": 30110,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 42161,
