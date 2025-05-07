@@ -1,8 +1,8 @@
 {
   "name": "Hermes Omnichain Token List",
-  "timestamp": "1746556327",
+  "timestamp": "1746641000",
   "version": {
-    "major": 34,
+    "major": 36,
     "minor": 0,
     "patch": 0
   },
@@ -267,6 +267,9 @@
           },
           "137": {
             "tokenAddress": "0xa4B2B20b2C73c7046ED19AC6bfF5E5285c58F20a"
+          },
+          "8453": {
+            "tokenAddress": "0x1F9bD96DDB4Bd07d6061f8933e9bA9EDE9967550"
           }
         }
       },
@@ -299,6 +302,9 @@
           },
           "137": {
             "tokenAddress": "0x8f3Cf7ad23Cd3CaDbD9735AFf958023239c6A063"
+          },
+          "8453": {
+            "tokenAddress": "0x50c5725949A6F0c72E6C4a641F24049A917DB0Cb"
           },
           "42161": {
             "tokenAddress": "0xDA10009cBd5D07dd0CeCc66161FC93D7c9000da1"
@@ -373,7 +379,12 @@
       "logoURI": "https://ethereum-optimism.github.io/data/DAI/logo.svg",
       "tags": [],
       "extensions": {
-        "coingeckoId": "dai"
+        "coingeckoId": "dai",
+        "bridgeInfo": {
+          "1": {
+            "tokenAddress": "0x6B175474E89094C44Da98b954EedeAC495271d0F"
+          }
+        }
       },
       "isAcross": true,
       "isOFT": false
@@ -2096,6 +2107,7 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x79bbF4508B1391af3A0F4B30bb5FC4aa9ab0E07C",
+      "oftVersion": 3,
       "endpointVersion": 2,
       "endpointId": 30101,
       "oftSharedDecimals": 6
@@ -2114,6 +2126,7 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x79bbF4508B1391af3A0F4B30bb5FC4aa9ab0E07C",
+      "oftVersion": 3,
       "endpointVersion": 2,
       "endpointId": 30102,
       "oftSharedDecimals": 6
@@ -2132,6 +2145,7 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x79bbF4508B1391af3A0F4B30bb5FC4aa9ab0E07C",
+      "oftVersion": 3,
       "endpointVersion": 2,
       "endpointId": 30151,
       "oftSharedDecimals": 6
@@ -2151,6 +2165,7 @@
       "extensions": {},
       "isOFT": true,
       "oftAdapter": "0x79bbF4508B1391af3A0F4B30bb5FC4aa9ab0E07C",
+      "oftVersion": 3,
       "endpointVersion": 2,
       "endpointId": 30332,
       "oftSharedDecimals": 6
@@ -2169,6 +2184,7 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x79bbF4508B1391af3A0F4B30bb5FC4aa9ab0E07C",
+      "oftVersion": 3,
       "endpointVersion": 2,
       "endpointId": 30184,
       "oftSharedDecimals": 6
@@ -2185,6 +2201,7 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x79bbF4508B1391af3A0F4B30bb5FC4aa9ab0E07C",
+      "oftVersion": 3,
       "endpointVersion": 2,
       "endpointId": 30106,
       "oftSharedDecimals": 6
@@ -2253,6 +2270,7 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x0555E30da8f98308EdB960aa94C0Db47230d2B9c",
+      "oftVersion": 3,
       "endpointVersion": 2,
       "endpointId": 30102,
       "oftSharedDecimals": 8
@@ -2275,6 +2293,7 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x0555E30da8f98308EdB960aa94C0Db47230d2B9c",
+      "oftVersion": 3,
       "endpointVersion": 2,
       "endpointId": 30106,
       "oftSharedDecimals": 8
@@ -2297,6 +2316,7 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x0555E30da8f98308EdB960aa94C0Db47230d2B9c",
+      "oftVersion": 3,
       "endpointVersion": 2,
       "endpointId": 30184,
       "oftSharedDecimals": 8
@@ -2319,6 +2339,7 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x0555E30da8f98308EdB960aa94C0Db47230d2B9c",
+      "oftVersion": 3,
       "endpointVersion": 2,
       "endpointId": 30362,
       "oftSharedDecimals": 8
@@ -2341,6 +2362,7 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x0555E30da8f98308EdB960aa94C0Db47230d2B9c",
+      "oftVersion": 3,
       "endpointVersion": 2,
       "endpointId": 30332,
       "oftSharedDecimals": 8
@@ -2472,9 +2494,6 @@
           "137": {
             "tokenAddress": "0x172370d5Cd63279eFa6d502DAB29171933a610AF"
           },
-          "8453": {
-            "tokenAddress": "0x8Ee73c484A26e0A5df2Ee2a4960B789967dd0415"
-          },
           "42161": {
             "tokenAddress": "0x11cDb42B0EB46D95f990BeDD4695A6e3fA034978"
           }
@@ -2528,6 +2547,7 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x9886447Ff4c350f4600E4BF95Db756Bdc629b1cA",
+      "oftVersion": 3,
       "endpointVersion": 2,
       "endpointId": 30184,
       "oftSharedDecimals": 6
@@ -2552,6 +2572,7 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x0B3EAEAd748facDb9d943d3407011f16Eb17D0Cf",
+      "oftVersion": 3,
       "endpointVersion": 2,
       "endpointId": 30184,
       "oftSharedDecimals": 6
@@ -2575,6 +2596,7 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x0B3EAEAd748facDb9d943d3407011f16Eb17D0Cf",
+      "oftVersion": 3,
       "endpointVersion": 2,
       "endpointId": 30102,
       "oftSharedDecimals": 6
@@ -2630,6 +2652,7 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x0B3EAEAd748facDb9d943d3407011f16Eb17D0Cf",
+      "oftVersion": 3,
       "endpointVersion": 2,
       "endpointId": 30109,
       "oftSharedDecimals": 6
@@ -2771,6 +2794,7 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x08BF7F2005Ab25A90d4f88eFd70Dbdf0EF6B7554",
+      "oftVersion": 3,
       "endpointVersion": 2,
       "endpointId": 30184,
       "oftSharedDecimals": 6
@@ -3109,6 +3133,7 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x35E5dB674D8e93a03d814FA0ADa70731efe8a4b9",
+      "oftVersion": 3,
       "endpointVersion": 2,
       "endpointId": 30184,
       "oftSharedDecimals": 6
@@ -3131,6 +3156,7 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x2492D0006411Af6C8bbb1c8afc1B0197350a79e9",
+      "oftVersion": 3,
       "endpointVersion": 2,
       "endpointId": 30362,
       "oftSharedDecimals": 6
@@ -3571,6 +3597,7 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x915424Ac489433130d92B04096F3b96c82e92a9D",
+      "oftVersion": 3,
       "endpointVersion": 2,
       "endpointId": 30101,
       "oftSharedDecimals": 6
@@ -3594,6 +3621,7 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x915424Ac489433130d92B04096F3b96c82e92a9D",
+      "oftVersion": 3,
       "endpointVersion": 2,
       "endpointId": 30102,
       "oftSharedDecimals": 6
@@ -3617,6 +3645,7 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x915424Ac489433130d92B04096F3b96c82e92a9D",
+      "oftVersion": 3,
       "endpointVersion": 2,
       "endpointId": 30184,
       "oftSharedDecimals": 6
@@ -4944,6 +4973,7 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0xf9Fa60EF4F23F00CCE403cc4d2c11Baf4880A0d6",
+      "oftVersion": 3,
       "endpointVersion": 2,
       "endpointId": 30101,
       "oftSharedDecimals": 6
@@ -4992,6 +5022,7 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0xDC816B6bd4786720e91Eb17D4DaBf0E1eEf5eE91",
+      "oftVersion": 3,
       "endpointVersion": 2,
       "endpointId": 30102,
       "oftSharedDecimals": 6
@@ -5101,6 +5132,7 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x61f23250451305f6C4426E81C50aE535Edf94A02",
+      "oftVersion": 3,
       "endpointVersion": 2,
       "endpointId": 30106,
       "oftSharedDecimals": 6
@@ -5331,6 +5363,7 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0xE2B1dc2D4A3b4E59FDF0c47B71A7A86391a8B35a",
+      "oftVersion": 3,
       "endpointVersion": 2,
       "endpointId": 30102,
       "oftSharedDecimals": 6
@@ -5354,6 +5387,7 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0xE2B1dc2D4A3b4E59FDF0c47B71A7A86391a8B35a",
+      "oftVersion": 3,
       "endpointVersion": 2,
       "endpointId": 30184,
       "oftSharedDecimals": 6
@@ -6200,6 +6234,7 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0xA80F36BA18c7f721F3F7ACDbcDEfd3a86869A036",
+      "oftVersion": 3,
       "endpointVersion": 2,
       "endpointId": 30106,
       "oftSharedDecimals": 6
@@ -6216,6 +6251,7 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0xc27468b12ffA6d714B1b5fBC87eF403F38b82AD4",
+      "oftVersion": 3,
       "endpointVersion": 2,
       "endpointId": 30184,
       "oftSharedDecimals": 6
@@ -6234,6 +6270,7 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0xfee293840D23B0B2De8C55e1Cf7A9F01C157767c",
+      "oftVersion": 3,
       "endpointVersion": 2,
       "endpointId": 30101,
       "oftSharedDecimals": 6
@@ -6591,6 +6628,7 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x9ff59ffc463736520aA465b2CA9C5D047bE919BA",
+      "oftVersion": 3,
       "endpointVersion": 2,
       "endpointId": 30102,
       "oftSharedDecimals": 6
@@ -7848,6 +7886,7 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x1Bc71130A0e39942a7658878169764Bbd8A45993",
+      "oftVersion": 3,
       "endpointVersion": 2,
       "endpointId": 30184,
       "oftSharedDecimals": 6
@@ -7870,6 +7909,7 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x4186BFC76E2E237523CBC30FD220FE055156b41F",
+      "oftVersion": 3,
       "endpointVersion": 2,
       "endpointId": 30111,
       "oftSharedDecimals": 6
@@ -7892,6 +7932,7 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x4186BFC76E2E237523CBC30FD220FE055156b41F",
+      "oftVersion": 3,
       "endpointVersion": 2,
       "endpointId": 30362,
       "oftSharedDecimals": 6
@@ -7914,6 +7955,7 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0xd75787bA9ABa324420d522BdA84c08c87e5099b1",
+      "oftVersion": 3,
       "endpointVersion": 2,
       "endpointId": 30332,
       "oftSharedDecimals": 6
@@ -8255,6 +8297,7 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x85AF271d1DFCBF53486D996f61D7FF0bba5582eA",
+      "oftVersion": 3,
       "endpointVersion": 2,
       "endpointId": 30184,
       "oftSharedDecimals": 6
@@ -8277,6 +8320,7 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x85AF271d1DFCBF53486D996f61D7FF0bba5582eA",
+      "oftVersion": 3,
       "endpointVersion": 2,
       "endpointId": 30111,
       "oftSharedDecimals": 6
@@ -8299,6 +8343,7 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x85AF271d1DFCBF53486D996f61D7FF0bba5582eA",
+      "oftVersion": 3,
       "endpointVersion": 2,
       "endpointId": 30109,
       "oftSharedDecimals": 6
@@ -8765,6 +8810,7 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x24fcFC492C1393274B6bcd568ac9e225BEc93584",
+      "oftVersion": 3,
       "endpointVersion": 2,
       "endpointId": 30184,
       "oftSharedDecimals": 6
@@ -8787,6 +8833,7 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0xaC800FD6159c2a2CB8fC31EF74621eB430287a5A",
+      "oftVersion": 3,
       "endpointVersion": 2,
       "endpointId": 30106,
       "oftSharedDecimals": 6
@@ -8847,6 +8894,7 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34",
+      "oftVersion": 3,
       "endpointVersion": 2,
       "endpointId": 30102,
       "oftSharedDecimals": 6
@@ -8869,6 +8917,7 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34",
+      "oftVersion": 3,
       "endpointVersion": 2,
       "endpointId": 30151,
       "oftSharedDecimals": 6
@@ -8891,6 +8940,7 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34",
+      "oftVersion": 3,
       "endpointVersion": 2,
       "endpointId": 30111,
       "oftSharedDecimals": 6
@@ -8913,6 +8963,7 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34",
+      "oftVersion": 3,
       "endpointVersion": 2,
       "endpointId": 30184,
       "oftSharedDecimals": 6
@@ -8935,6 +8986,7 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34",
+      "oftVersion": 3,
       "endpointVersion": 2,
       "endpointId": 30362,
       "oftSharedDecimals": 6
@@ -8995,6 +9047,7 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x211Cc4DD073734dA055fbF44a2b4667d5E5fE5d2",
+      "oftVersion": 3,
       "endpointVersion": 2,
       "endpointId": 30102,
       "oftSharedDecimals": 6
@@ -9017,6 +9070,7 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x211Cc4DD073734dA055fbF44a2b4667d5E5fE5d2",
+      "oftVersion": 3,
       "endpointVersion": 2,
       "endpointId": 30151,
       "oftSharedDecimals": 6
@@ -9039,6 +9093,7 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x211Cc4DD073734dA055fbF44a2b4667d5E5fE5d2",
+      "oftVersion": 3,
       "endpointVersion": 2,
       "endpointId": 30111,
       "oftSharedDecimals": 6
@@ -9061,6 +9116,7 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x211Cc4DD073734dA055fbF44a2b4667d5E5fE5d2",
+      "oftVersion": 3,
       "endpointVersion": 2,
       "endpointId": 30184,
       "oftSharedDecimals": 6
@@ -9083,6 +9139,7 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x211Cc4DD073734dA055fbF44a2b4667d5E5fE5d2",
+      "oftVersion": 3,
       "endpointVersion": 2,
       "endpointId": 30362,
       "oftSharedDecimals": 6
@@ -9213,6 +9270,7 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x1f55a02A049033E3419a8E2975cF3F572F4e6E9A",
+      "oftVersion": 3,
       "endpointVersion": 2,
       "endpointId": 30151,
       "oftSharedDecimals": 6
@@ -9235,6 +9293,7 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x1f55a02A049033E3419a8E2975cF3F572F4e6E9A",
+      "oftVersion": 3,
       "endpointVersion": 2,
       "endpointId": 30184,
       "oftSharedDecimals": 6
@@ -9300,6 +9359,7 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0xe4796cCB6bB5DE2290C417Ac337F2b66CA2E770E",
+      "oftVersion": 3,
       "endpointVersion": 2,
       "endpointId": 30151,
       "oftSharedDecimals": 6
@@ -9322,6 +9382,7 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0xe4796cCB6bB5DE2290C417Ac337F2b66CA2E770E",
+      "oftVersion": 3,
       "endpointVersion": 2,
       "endpointId": 30184,
       "oftSharedDecimals": 6
@@ -9344,6 +9405,7 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0xff12470a969Dd362EB6595FFB44C82c959Fe9ACc",
+      "oftVersion": 3,
       "endpointVersion": 2,
       "endpointId": 30362,
       "oftSharedDecimals": 6
@@ -9371,6 +9433,7 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x8A60E489004Ca22d775C5F2c657598278d17D9c2",
+      "oftVersion": 3,
       "endpointVersion": 2,
       "endpointId": 30101,
       "oftSharedDecimals": 6
@@ -9394,6 +9457,7 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x9356086146be5158E98aD827E21b5cF944699894",
+      "oftVersion": 3,
       "endpointVersion": 2,
       "endpointId": 30102,
       "oftSharedDecimals": 6
@@ -9463,6 +9527,7 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x64445f0aecC51E94aD52d8AC56b7190e764E561a",
+      "oftVersion": 3,
       "endpointVersion": 2,
       "endpointId": 30109,
       "oftSharedDecimals": 6
@@ -9485,6 +9550,7 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x64445f0aecC51E94aD52d8AC56b7190e764E561a",
+      "oftVersion": 3,
       "endpointVersion": 2,
       "endpointId": 30102,
       "oftSharedDecimals": 6
@@ -9507,6 +9573,7 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x64445f0aecC51E94aD52d8AC56b7190e764E561a",
+      "oftVersion": 3,
       "endpointVersion": 2,
       "endpointId": 30332,
       "oftSharedDecimals": 6
@@ -9529,6 +9596,7 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x0CEAC003B0d2479BebeC9f4b2EBAd0a803759bbf",
+      "oftVersion": 3,
       "endpointVersion": 2,
       "endpointId": 30184,
       "oftSharedDecimals": 6
@@ -9551,6 +9619,7 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x64445f0aecC51E94aD52d8AC56b7190e764E561a",
+      "oftVersion": 3,
       "endpointVersion": 2,
       "endpointId": 30111,
       "oftSharedDecimals": 6
@@ -9573,6 +9642,7 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x64445f0aecC51E94aD52d8AC56b7190e764E561a",
+      "oftVersion": 3,
       "endpointVersion": 2,
       "endpointId": 30106,
       "oftSharedDecimals": 6
@@ -9595,6 +9665,7 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x23432452B720C80553458496D4D9d7C5003280d0",
+      "oftVersion": 3,
       "endpointVersion": 2,
       "endpointId": 30184,
       "oftSharedDecimals": 6
@@ -9617,6 +9688,7 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x23432452B720C80553458496D4D9d7C5003280d0",
+      "oftVersion": 3,
       "endpointVersion": 2,
       "endpointId": 30151,
       "oftSharedDecimals": 6
@@ -9689,6 +9761,7 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x04C0599Ae5A44757c0af6F9eC3b93da8976c150A",
+      "oftVersion": 3,
       "endpointVersion": 2,
       "endpointId": 30184,
       "oftSharedDecimals": 6
@@ -9711,6 +9784,7 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x04C0599Ae5A44757c0af6F9eC3b93da8976c150A",
+      "oftVersion": 3,
       "endpointVersion": 2,
       "endpointId": 30102,
       "oftSharedDecimals": 6
@@ -9733,6 +9807,7 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x5A7fACB970D094B6C7FF1df0eA68D99E6e73CBFF",
+      "oftVersion": 3,
       "endpointVersion": 2,
       "endpointId": 30111,
       "oftSharedDecimals": 6
@@ -9755,6 +9830,7 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x7DCC39B4d1C53CB31e1aBc0e358b43987FEF80f7",
+      "oftVersion": 3,
       "endpointVersion": 2,
       "endpointId": 30362,
       "oftSharedDecimals": 6
@@ -9801,6 +9877,7 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0xb51B97Dd5569FAB69495316B5a065CCcfF4B829d",
+      "oftVersion": 3,
       "endpointVersion": 2,
       "endpointId": 30101,
       "oftSharedDecimals": 6
@@ -9889,6 +9966,7 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x58538e6A46E07434d7E7375Bc268D3cb839C0133",
+      "oftVersion": 3,
       "endpointVersion": 2,
       "endpointId": 30102,
       "oftSharedDecimals": 6
@@ -9949,6 +10027,7 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x58538e6A46E07434d7E7375Bc268D3cb839C0133",
+      "oftVersion": 3,
       "endpointVersion": 2,
       "endpointId": 30151,
       "oftSharedDecimals": 6
@@ -9971,6 +10050,7 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x58538e6A46E07434d7E7375Bc268D3cb839C0133",
+      "oftVersion": 3,
       "endpointVersion": 2,
       "endpointId": 30111,
       "oftSharedDecimals": 6
@@ -9993,6 +10073,7 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x58538e6A46E07434d7E7375Bc268D3cb839C0133",
+      "oftVersion": 3,
       "endpointVersion": 2,
       "endpointId": 30184,
       "oftSharedDecimals": 6
@@ -10020,6 +10101,7 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x82a605D6D9114F4Ad6D5Ee461027477EeED31E34",
+      "oftVersion": 3,
       "endpointVersion": 2,
       "endpointId": 30101,
       "oftSharedDecimals": 6
@@ -10043,6 +10125,7 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x3124678D62D2aa1f615B54525310fbfDa6DcF7AE",
+      "oftVersion": 3,
       "endpointVersion": 2,
       "endpointId": 30184,
       "oftSharedDecimals": 6
@@ -10148,6 +10231,7 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x6985884C4392D348587B19cb9eAAf157F13271cd",
+      "oftVersion": 3,
       "endpointVersion": 2,
       "endpointId": 30101,
       "oftSharedDecimals": 6
@@ -10171,6 +10255,7 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x6985884C4392D348587B19cb9eAAf157F13271cd",
+      "oftVersion": 3,
       "endpointVersion": 2,
       "endpointId": 30102,
       "oftSharedDecimals": 6
@@ -10194,6 +10279,7 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x6985884C4392D348587B19cb9eAAf157F13271cd",
+      "oftVersion": 3,
       "endpointVersion": 2,
       "endpointId": 30106,
       "oftSharedDecimals": 6
@@ -10217,6 +10303,7 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x6985884C4392D348587B19cb9eAAf157F13271cd",
+      "oftVersion": 3,
       "endpointVersion": 2,
       "endpointId": 30109,
       "oftSharedDecimals": 6
@@ -10240,6 +10327,7 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x6985884C4392D348587B19cb9eAAf157F13271cd",
+      "oftVersion": 3,
       "endpointVersion": 2,
       "endpointId": 30111,
       "oftSharedDecimals": 6
@@ -10263,6 +10351,7 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x6985884C4392D348587B19cb9eAAf157F13271cd",
+      "oftVersion": 3,
       "endpointVersion": 2,
       "endpointId": 30184,
       "oftSharedDecimals": 6
@@ -10333,6 +10422,7 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x909DBdE1eBE906Af95660033e478D59EFe831fED",
+      "oftVersion": 3,
       "endpointVersion": 2,
       "endpointId": 30184,
       "oftSharedDecimals": 6
@@ -10355,6 +10445,7 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x909DBdE1eBE906Af95660033e478D59EFe831fED",
+      "oftVersion": 3,
       "endpointVersion": 2,
       "endpointId": 30151,
       "oftSharedDecimals": 6
@@ -10403,6 +10494,7 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x850CDF416668210ED0c36bfFF5d21921C7adA3b8",
+      "oftVersion": 3,
       "endpointVersion": 2,
       "endpointId": 30362,
       "oftSharedDecimals": 6
@@ -10425,6 +10517,7 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0xE41228a455700cAF09E551805A8aB37caa39D08c",
+      "oftVersion": 3,
       "endpointVersion": 2,
       "endpointId": 30151,
       "oftSharedDecimals": 6
@@ -10447,6 +10540,7 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0xE41228a455700cAF09E551805A8aB37caa39D08c",
+      "oftVersion": 3,
       "endpointVersion": 2,
       "endpointId": 30184,
       "oftSharedDecimals": 6
@@ -10495,6 +10589,7 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0xF010a7c8877043681D59AD125EbF575633505942",
+      "oftVersion": 3,
       "endpointVersion": 2,
       "endpointId": 30151,
       "oftSharedDecimals": 6
@@ -10517,6 +10612,7 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0xF010a7c8877043681D59AD125EbF575633505942",
+      "oftVersion": 3,
       "endpointVersion": 2,
       "endpointId": 30184,
       "oftSharedDecimals": 6
@@ -10540,6 +10636,7 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0xC227717ef4Ae4D982E14789eB33bA942243c3FEe",
+      "oftVersion": 3,
       "endpointVersion": 2,
       "endpointId": 30184,
       "oftSharedDecimals": 6
@@ -10562,6 +10659,7 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x420FcA0121DC28039145009570975747295f2329",
+      "oftVersion": 3,
       "endpointVersion": 2,
       "endpointId": 30101,
       "oftSharedDecimals": 4
@@ -10613,6 +10711,7 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x420FcA0121DC28039145009570975747295f2329",
+      "oftVersion": 3,
       "endpointVersion": 2,
       "endpointId": 30184,
       "oftSharedDecimals": 4
@@ -10629,6 +10728,7 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x084382D1cc4f4DFD1769b1cC1Ac2A9b1f8365e90",
+      "oftVersion": 3,
       "endpointVersion": 2,
       "endpointId": 30101,
       "oftSharedDecimals": 6
@@ -10648,6 +10748,7 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x084382D1cc4f4DFD1769b1cC1Ac2A9b1f8365e90",
+      "oftVersion": 3,
       "endpointVersion": 2,
       "endpointId": 30184,
       "oftSharedDecimals": 6
@@ -10664,6 +10765,7 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x084382D1cc4f4DFD1769b1cC1Ac2A9b1f8365e90",
+      "oftVersion": 3,
       "endpointVersion": 2,
       "endpointId": 30111,
       "oftSharedDecimals": 6
@@ -10694,6 +10796,7 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x68ccACa9ADF1552B3316d6067690eC27397c8ea8",
+      "oftVersion": 3,
       "endpointVersion": 2,
       "endpointId": 30101,
       "oftSharedDecimals": 6
@@ -10716,6 +10819,7 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x50AA659E6aB263B77d61Ff44cF4A1090141e7111",
+      "oftVersion": 3,
       "endpointVersion": 2,
       "endpointId": 30109,
       "oftSharedDecimals": 6
@@ -10738,6 +10842,7 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x883CFBd30bD076a063A453335414909545186275",
+      "oftVersion": 3,
       "endpointVersion": 2,
       "endpointId": 30184,
       "oftSharedDecimals": 6
@@ -10760,6 +10865,7 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x883CFBd30bD076a063A453335414909545186275",
+      "oftVersion": 3,
       "endpointVersion": 2,
       "endpointId": 30102,
       "oftSharedDecimals": 6
@@ -10783,6 +10889,7 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x31ea904A7eca45122890dEb8dA3473A2081bc9d1",
+      "oftVersion": 3,
       "endpointVersion": 2,
       "endpointId": 30184,
       "oftSharedDecimals": 6
@@ -10807,6 +10914,7 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x31ea904A7eca45122890dEb8dA3473A2081bc9d1",
+      "oftVersion": 3,
       "endpointVersion": 2,
       "endpointId": 30101,
       "oftSharedDecimals": 6
@@ -10858,6 +10966,7 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x835f2eb9B3dd2913f59019bfbC7B61A12Ef96cd6",
+      "oftVersion": 3,
       "endpointVersion": 2,
       "endpointId": 30101,
       "oftSharedDecimals": 6
@@ -10880,6 +10989,7 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0xe9A3B326c5B06FA848b11E07080c3AC926fBe787",
+      "oftVersion": 3,
       "endpointVersion": 2,
       "endpointId": 30184,
       "oftSharedDecimals": 6
@@ -10902,6 +11012,7 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x2A73F85024f101F3FAC9FbCBcE60707B6b3A6203",
+      "oftVersion": 3,
       "endpointVersion": 2,
       "endpointId": 30102,
       "oftSharedDecimals": 6
@@ -10949,6 +11060,7 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0xeD2d13A70acbD61074fC56bd0d0845e35f793e5E",
+      "oftVersion": 3,
       "endpointVersion": 2,
       "endpointId": 30184,
       "oftSharedDecimals": 6
@@ -10971,6 +11083,7 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0xeD2d13A70acbD61074fC56bd0d0845e35f793e5E",
+      "oftVersion": 3,
       "endpointVersion": 2,
       "endpointId": 30109,
       "oftSharedDecimals": 6
@@ -11013,6 +11126,7 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0xac531Eb26Ca1d21b85126De8FB87E80E09002DcF",
+      "oftVersion": 3,
       "endpointVersion": 2,
       "endpointId": 30184,
       "oftSharedDecimals": 6
@@ -11035,6 +11149,7 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0xac531Eb26Ca1d21b85126De8FB87E80E09002DcF",
+      "oftVersion": 3,
       "endpointVersion": 2,
       "endpointId": 30102,
       "oftSharedDecimals": 6
@@ -11158,6 +11273,7 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x2DCE707c47Fd9C0f1833A281F45e3e41Ace2725B",
+      "oftVersion": 3,
       "endpointVersion": 2,
       "endpointId": 30102,
       "oftSharedDecimals": 6
@@ -11174,6 +11290,7 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x1fba65dE0a9cBD2D1DF82d141897042d36Bb6c86",
+      "oftVersion": 3,
       "endpointVersion": 2,
       "endpointId": 30184,
       "oftSharedDecimals": 6
@@ -11287,6 +11404,7 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x4E200fE2f3eFb977d5fd9c430A41531FB04d97B8",
+      "oftVersion": 3,
       "endpointVersion": 2,
       "endpointId": 30111,
       "oftSharedDecimals": 18
@@ -11310,6 +11428,7 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x4E200fE2f3eFb977d5fd9c430A41531FB04d97B8",
+      "oftVersion": 3,
       "endpointVersion": 2,
       "endpointId": 30184,
       "oftSharedDecimals": 18
@@ -11333,6 +11452,7 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x4E200fE2f3eFb977d5fd9c430A41531FB04d97B8",
+      "oftVersion": 3,
       "endpointVersion": 2,
       "endpointId": 30109,
       "oftSharedDecimals": 18
@@ -11355,6 +11475,7 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x4E200fE2f3eFb977d5fd9c430A41531FB04d97B8",
+      "oftVersion": 3,
       "endpointVersion": 2,
       "endpointId": 30106,
       "oftSharedDecimals": 18
@@ -11377,6 +11498,7 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x4E200fE2f3eFb977d5fd9c430A41531FB04d97B8",
+      "oftVersion": 3,
       "endpointVersion": 2,
       "endpointId": 30102,
       "oftSharedDecimals": 18
@@ -11400,6 +11522,7 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x6A661312938D22A2A0e27F585073E4406903990a",
+      "oftVersion": 3,
       "endpointVersion": 2,
       "endpointId": 30102,
       "oftSharedDecimals": 6
@@ -11449,6 +11572,7 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x554bba833518793056CF105E66aBEA330672c0dE",
+      "oftVersion": 3,
       "endpointVersion": 2,
       "endpointId": 30184,
       "oftSharedDecimals": 6
@@ -11490,6 +11614,7 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x31b6100F5F4466e6dAeb1edb2f2cE6e548cF8938",
+      "oftVersion": 3,
       "endpointVersion": 2,
       "endpointId": 30101,
       "oftSharedDecimals": 6
@@ -11506,6 +11631,7 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x823C9E9f4C51C1a169CEF4bf7922F46bEB493D11",
+      "oftVersion": 3,
       "endpointVersion": 2,
       "endpointId": 30184,
       "oftSharedDecimals": 6
@@ -11582,6 +11708,7 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x09D9420332bff75522a45FcFf4855F82a0a3ff50",
+      "oftVersion": 3,
       "endpointVersion": 2,
       "endpointId": 30111,
       "oftSharedDecimals": 6
@@ -11630,6 +11757,7 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x09D9420332bff75522a45FcFf4855F82a0a3ff50",
+      "oftVersion": 3,
       "endpointVersion": 2,
       "endpointId": 30184,
       "oftSharedDecimals": 6
@@ -11652,6 +11780,7 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0xC5ECB8c506898bd5eEeC63C5F69c7819E37084b8",
+      "oftVersion": 3,
       "endpointVersion": 2,
       "endpointId": 30184,
       "oftSharedDecimals": 6
@@ -11674,6 +11803,7 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0xC5ECB8c506898bd5eEeC63C5F69c7819E37084b8",
+      "oftVersion": 3,
       "endpointVersion": 2,
       "endpointId": 30111,
       "oftSharedDecimals": 6
@@ -11786,6 +11916,7 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0xADc9c900b05F39f48bB6F402A1BAE60929F4f9A8",
+      "oftVersion": 3,
       "endpointVersion": 2,
       "endpointId": 30101,
       "oftSharedDecimals": 8
@@ -11808,6 +11939,7 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x1fCca65fb6Ae3b2758b9b2B394CB227eAE404e1E",
+      "oftVersion": 3,
       "endpointVersion": 2,
       "endpointId": 30362,
       "oftSharedDecimals": 8
@@ -11824,6 +11956,7 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x285c48f6bEB6B7476bC05B2b8Cf3FAb93578e466",
+      "oftVersion": 3,
       "endpointVersion": 2,
       "endpointId": 30101,
       "oftSharedDecimals": 6
@@ -11842,6 +11975,7 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x5dC25aA049837B696d1dc0F966aC8DF1491f819B",
+      "oftVersion": 3,
       "endpointVersion": 2,
       "endpointId": 30184,
       "oftSharedDecimals": 6
@@ -11858,6 +11992,7 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x5D1942345D63562fD38d17C28Dcd22e7b3E9Cfb4",
+      "oftVersion": 3,
       "endpointVersion": 2,
       "endpointId": 30111,
       "oftSharedDecimals": 6
@@ -11877,6 +12012,7 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0xD3C68968137317a57a9bAbeacC7707Ec433548B4",
+      "oftVersion": 3,
       "endpointVersion": 2,
       "endpointId": 30101,
       "oftSharedDecimals": 6
@@ -11895,6 +12031,7 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0xD3C68968137317a57a9bAbeacC7707Ec433548B4",
+      "oftVersion": 3,
       "endpointVersion": 2,
       "endpointId": 30184,
       "oftSharedDecimals": 6
@@ -11942,6 +12079,7 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0xcBB8f1BDA10b9696c57E13BC128Fe674769DCEc0",
+      "oftVersion": 3,
       "endpointVersion": 2,
       "endpointId": 30101,
       "oftSharedDecimals": 6
@@ -11965,6 +12103,7 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x7431aDa8a591C955a994a21710752EF9b882b8e3",
+      "oftVersion": 3,
       "endpointVersion": 2,
       "endpointId": 30184,
       "oftSharedDecimals": 6
@@ -11998,6 +12137,7 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x968bE3F7bfeF0F8eDc3c1aD90232EbB0DA0867aA",
+      "oftVersion": 3,
       "endpointVersion": 2,
       "endpointId": 30101,
       "oftSharedDecimals": 6
@@ -12021,6 +12161,7 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x968bE3F7bfeF0F8eDc3c1aD90232EbB0DA0867aA",
+      "oftVersion": 3,
       "endpointVersion": 2,
       "endpointId": 30102,
       "oftSharedDecimals": 6
@@ -12044,6 +12185,7 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x968bE3F7bfeF0F8eDc3c1aD90232EbB0DA0867aA",
+      "oftVersion": 3,
       "endpointVersion": 2,
       "endpointId": 30106,
       "oftSharedDecimals": 6
@@ -12067,6 +12209,7 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x968bE3F7bfeF0F8eDc3c1aD90232EbB0DA0867aA",
+      "oftVersion": 3,
       "endpointVersion": 2,
       "endpointId": 30184,
       "oftSharedDecimals": 6
@@ -12089,6 +12232,7 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x37d2Adc008118d04f259fc0c16ff66bF5a637D20",
+      "oftVersion": 3,
       "endpointVersion": 2,
       "endpointId": 30184,
       "oftSharedDecimals": 6
@@ -12111,6 +12255,7 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x6386Adc4BC9c21984E34fD916BB349dD861742af",
+      "oftVersion": 3,
       "endpointVersion": 2,
       "endpointId": 30102,
       "oftSharedDecimals": 6
@@ -12255,6 +12400,7 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x688AEe022AA544f150678B8E5720b6b96a9E9a2F",
+      "oftVersion": 3,
       "endpointVersion": 2,
       "endpointId": 30184,
       "oftSharedDecimals": 6
@@ -12303,6 +12449,7 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x688e72142674041f8f6Af4c808a4045cA1D6aC82",
+      "oftVersion": 3,
       "endpointVersion": 2,
       "endpointId": 30362,
       "oftSharedDecimals": 6
@@ -12376,6 +12523,7 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x288741b45AD4042f7b124E38b53cEc5E9ccA0376",
+      "oftVersion": 3,
       "endpointVersion": 2,
       "endpointId": 30101,
       "oftSharedDecimals": 6
@@ -12399,6 +12547,7 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x50CE4129Ca261CCDe4EB100c170843c2936Bc11b",
+      "oftVersion": 3,
       "endpointVersion": 2,
       "endpointId": 30184,
       "oftSharedDecimals": 6
@@ -12447,6 +12596,7 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x2840F9d9f96321435Ab0f977E7FDBf32EA8b304f",
+      "oftVersion": 3,
       "endpointVersion": 2,
       "endpointId": 30362,
       "oftSharedDecimals": 6
@@ -12474,6 +12624,7 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x2B66AAdE1e9C062FF411bd47C44E0Ad696d43BD9",
+      "oftVersion": 3,
       "endpointVersion": 2,
       "endpointId": 30101,
       "oftSharedDecimals": 6
@@ -12497,6 +12648,7 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x73a325103935b0B5E7AA3acA6dba74AD22f82B03",
+      "oftVersion": 3,
       "endpointVersion": 2,
       "endpointId": 30102,
       "oftSharedDecimals": 6
@@ -12560,6 +12712,7 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0xB757977bc882A14db86b048f2abb2F2a14D33184",
+      "oftVersion": 3,
       "endpointVersion": 2,
       "endpointId": 30184,
       "oftSharedDecimals": 6
@@ -12596,6 +12749,7 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x157a6df6B74F4E5E45af4E4615FDe7B49225a662",
+      "oftVersion": 3,
       "endpointVersion": 2,
       "endpointId": 30101,
       "oftSharedDecimals": 6
@@ -12614,6 +12768,7 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x157a6df6B74F4E5E45af4E4615FDe7B49225a662",
+      "oftVersion": 3,
       "endpointVersion": 2,
       "endpointId": 30184,
       "oftSharedDecimals": 6
@@ -12707,6 +12862,7 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x333333C465a19C85f85c6CfbED7B16b0B26E3333",
+      "oftVersion": 3,
       "endpointVersion": 2,
       "endpointId": 30102,
       "oftSharedDecimals": 6
@@ -12730,6 +12886,7 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x333333C465a19C85f85c6CfbED7B16b0B26E3333",
+      "oftVersion": 3,
       "endpointVersion": 2,
       "endpointId": 30184,
       "oftSharedDecimals": 6
@@ -12770,6 +12927,7 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x3C1B057cb7AcEB4F2c4D889A29fEBec30A6A3146",
+      "oftVersion": 3,
       "endpointVersion": 2,
       "endpointId": 30102,
       "oftSharedDecimals": 6
@@ -12811,6 +12969,7 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x7FF7Fa94b8b66Ef313f7970d4EEbd2CB3103a2C0",
+      "oftVersion": 3,
       "endpointVersion": 2,
       "endpointId": 30101,
       "oftSharedDecimals": 6
@@ -12827,6 +12986,7 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x7FF7Fa94b8b66Ef313f7970d4EEbd2CB3103a2C0",
+      "oftVersion": 3,
       "endpointVersion": 2,
       "endpointId": 30111,
       "oftSharedDecimals": 6
@@ -12843,6 +13003,7 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x7FF7Fa94b8b66Ef313f7970d4EEbd2CB3103a2C0",
+      "oftVersion": 3,
       "endpointVersion": 2,
       "endpointId": 30184,
       "oftSharedDecimals": 6
@@ -12859,6 +13020,7 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x7FF7Fa94b8b66Ef313f7970d4EEbd2CB3103a2C0",
+      "oftVersion": 3,
       "endpointVersion": 2,
       "endpointId": 30106,
       "oftSharedDecimals": 6
@@ -12875,6 +13037,7 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x7FF7Fa94b8b66Ef313f7970d4EEbd2CB3103a2C0",
+      "oftVersion": 3,
       "endpointVersion": 2,
       "endpointId": 30109,
       "oftSharedDecimals": 6
@@ -12891,6 +13054,7 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x7FF7Fa94b8b66Ef313f7970d4EEbd2CB3103a2C0",
+      "oftVersion": 3,
       "endpointVersion": 2,
       "endpointId": 30102,
       "oftSharedDecimals": 6
@@ -12936,6 +13100,7 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x9CD44ecA3D1E0ADa6FbDaF5793031C3a500089B1",
+      "oftVersion": 3,
       "endpointVersion": 2,
       "endpointId": 30184,
       "oftSharedDecimals": 6
@@ -12969,6 +13134,7 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x0f1E2C34f688d68Af730cBd0b79bb4B5519e00e0",
+      "oftVersion": 3,
       "endpointVersion": 2,
       "endpointId": 30102,
       "oftSharedDecimals": 6
@@ -12985,6 +13151,7 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x63fE3EB27e98DA740Ee24AB5cc1a17Ebd20fEC1C",
+      "oftVersion": 3,
       "endpointVersion": 2,
       "endpointId": 30101,
       "oftSharedDecimals": 6
@@ -13007,6 +13174,7 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0xBB146326778227A8498b105a18f84E0987A684b4",
+      "oftVersion": 3,
       "endpointVersion": 2,
       "endpointId": 30184,
       "oftSharedDecimals": 6
@@ -13075,6 +13243,7 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x91dA780BC7f4B7Cf19ABE90411a2a296Ec5FF787",
+      "oftVersion": 3,
       "endpointVersion": 2,
       "endpointId": 30102,
       "oftSharedDecimals": 6
@@ -13254,6 +13423,7 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0xFDfdFD005F127334F7c4eeFEF2252D2BF4B6E79E",
+      "oftVersion": 3,
       "endpointVersion": 2,
       "endpointId": 30102,
       "oftSharedDecimals": 6
@@ -13270,6 +13440,7 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0xFDfdFD005F127334F7c4eeFEF2252D2BF4B6E79E",
+      "oftVersion": 3,
       "endpointVersion": 2,
       "endpointId": 30184,
       "oftSharedDecimals": 6
@@ -13286,6 +13457,7 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0xFDfdFD005F127334F7c4eeFEF2252D2BF4B6E79E",
+      "oftVersion": 3,
       "endpointVersion": 2,
       "endpointId": 30106,
       "oftSharedDecimals": 6
@@ -13429,6 +13601,7 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x6418c0dd099a9FDA397C766304CDd918233E8847",
+      "oftVersion": 3,
       "endpointVersion": 2,
       "endpointId": 30102,
       "oftSharedDecimals": 6
@@ -13445,6 +13618,7 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x6418c0dd099a9FDA397C766304CDd918233E8847",
+      "oftVersion": 3,
       "endpointVersion": 2,
       "endpointId": 30101,
       "oftSharedDecimals": 6
@@ -13464,6 +13638,7 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0xD58826d2C0bAbf1A60d8b508160b52E9C19AFf07",
+      "oftVersion": 3,
       "endpointVersion": 2,
       "endpointId": 30101,
       "oftSharedDecimals": 6
@@ -13482,6 +13657,7 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0xA9972b1fAC35fdd8cBdbaA315A002B2Ad91d2ad6",
+      "oftVersion": 3,
       "endpointVersion": 2,
       "endpointId": 30102,
       "oftSharedDecimals": 6
@@ -13509,6 +13685,7 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0xb5130F4767AB0ACC579f25a76e8f9E977CB3F948",
+      "oftVersion": 3,
       "endpointVersion": 2,
       "endpointId": 30101,
       "oftSharedDecimals": 6
@@ -13532,6 +13709,7 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0xb5130F4767AB0ACC579f25a76e8f9E977CB3F948",
+      "oftVersion": 3,
       "endpointVersion": 2,
       "endpointId": 30184,
       "oftSharedDecimals": 6
@@ -13565,6 +13743,7 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x2Da17fAf782ae884faf7dB2208BBC66b6E085C22",
+      "oftVersion": 3,
       "endpointVersion": 2,
       "endpointId": 30101,
       "oftSharedDecimals": 6
@@ -13581,6 +13760,7 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x458AD5B487F4442245E4C5eA7249009E607A5583",
+      "oftVersion": 3,
       "endpointVersion": 2,
       "endpointId": 30184,
       "oftSharedDecimals": 6
@@ -13597,6 +13777,7 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x458AD5B487F4442245E4C5eA7249009E607A5583",
+      "oftVersion": 3,
       "endpointVersion": 2,
       "endpointId": 30102,
       "oftSharedDecimals": 6
@@ -13615,6 +13796,7 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x4afa9620d0b79137383a7a9ab3477837d475e948",
+      "oftVersion": 3,
       "endpointVersion": 2,
       "endpointId": 30101,
       "oftSharedDecimals": 6
@@ -13631,6 +13813,7 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x441Fcb23dFe8289cf572126FEDCf450974ADc891",
+      "oftVersion": 3,
       "endpointVersion": 2,
       "endpointId": 30184,
       "oftSharedDecimals": 6
@@ -13647,6 +13830,7 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x1e44f98cC78d505A61F63b26D13b116CF51dbB87",
+      "oftVersion": 3,
       "endpointVersion": 2,
       "endpointId": 30101,
       "oftSharedDecimals": 6
@@ -13693,6 +13877,7 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0xF598797d9C160aeF2A14712C20b7731cBe5861da",
+      "oftVersion": 3,
       "endpointVersion": 2,
       "endpointId": 30184,
       "oftSharedDecimals": 6
@@ -13726,6 +13911,7 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0xe5e851b01DD3Eda24FDe709a407dB44555B6d1E0",
+      "oftVersion": 3,
       "endpointVersion": 2,
       "endpointId": 30184,
       "oftSharedDecimals": 6
@@ -13742,6 +13928,7 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x01b603be3D545F096015741e6503440282BF45fb",
+      "oftVersion": 3,
       "endpointVersion": 2,
       "endpointId": 30101,
       "oftSharedDecimals": 6
@@ -14092,9 +14279,6 @@
           "137": {
             "tokenAddress": "0x23001f892c0C82b79303EDC9B9033cD190BB21c7"
           },
-          "8453": {
-            "tokenAddress": "0x368181499736d0c0CC614DBB145E2EC1AC86b8c6"
-          },
           "42161": {
             "tokenAddress": "0x93b346b6BC2548dA6A1E7d98E9a421B42541425b"
           }
@@ -14377,6 +14561,9 @@
           },
           "137": {
             "tokenAddress": "0xdDa7b23D2D72746663E7939743f929a3d85FC975"
+          },
+          "8453": {
+            "tokenAddress": "0x3c87e7AF3cDBAe5bB56b4936325Ea95CA3E0EfD9"
           }
         }
       },
@@ -14559,6 +14746,9 @@
           "137": {
             "tokenAddress": "0xbFc70507384047Aa74c29Cdc8c5Cb88D0f7213AC"
           },
+          "8453": {
+            "tokenAddress": "0x97c806e7665d3AFd84A8Fe1837921403D59F3Dcc"
+          },
           "42161": {
             "tokenAddress": "0xeF6124368c0B56556667e0de77eA008DfC0a71d1"
           }
@@ -14726,9 +14916,6 @@
         "bridgeInfo": {
           "130": {
             "tokenAddress": "0xcDfcE5eb357E8976A80Be84E94a03BA963b9e379"
-          },
-          "8453": {
-            "tokenAddress": "0x7A2C5e7788E55Ec0a7ba4aEeC5B3da322718Fb5e"
           }
         }
       }
@@ -15040,6 +15227,9 @@
           "137": {
             "tokenAddress": "0x91c89A94567980f0e9723b487b0beD586eE96aa7"
           },
+          "8453": {
+            "tokenAddress": "0xf5Dbaa3DFC5e81405c7306039fB037a3DCD57Ce2"
+          },
           "42161": {
             "tokenAddress": "0xa68Ec98D7ca870cF1Dd0b00EBbb7c4bF60A8e74d"
           }
@@ -15313,9 +15503,6 @@
           "130": {
             "tokenAddress": "0xEb64b50FeF2A363940369285F86Ae9a68211db59"
           },
-          "8453": {
-            "tokenAddress": "0x2Ae3F1Ec7F1F5012CFEab0185bfc7aa3cf0DEc22"
-          },
           "42161": {
             "tokenAddress": "0x1DEBd73E752bEaF79865Fd6446b0c970EaE7732f"
           }
@@ -15450,9 +15637,6 @@
           },
           "137": {
             "tokenAddress": "0x8505b9d2254A7Ae468c0E9dd10Ccea3A837aef5c"
-          },
-          "8453": {
-            "tokenAddress": "0x9e1028F5F1D5eDE59748FFceE5532509976840E0"
           },
           "42161": {
             "tokenAddress": "0x354A6dA3fcde098F8389cad84b0182725c6C91dE"
@@ -15661,9 +15845,6 @@
           },
           "137": {
             "tokenAddress": "0x8c208BC2A808a088a78398fed8f2640cab0b6EDb"
-          },
-          "8453": {
-            "tokenAddress": "0xBB22Ff867F8Ca3D5F2251B4084F6Ec86D4666E14"
           },
           "42161": {
             "tokenAddress": "0x84F5c2cFba754E76DD5aE4fB369CfC920425E12b"
@@ -16253,6 +16434,9 @@
           "137": {
             "tokenAddress": "0x7583FEDDbceFA813dc18259940F76a02710A8905"
           },
+          "8453": {
+            "tokenAddress": "0x74F804B4140ee70830B3Eef4e690325841575F89"
+          },
           "42161": {
             "tokenAddress": "0x4BE87C766A7CE11D5Cc864b6C3Abb7457dCC4cC9"
           }
@@ -16319,6 +16503,9 @@
       "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x720CD16b011b987Da3518fbf38c3071d4F0D1495/logo.png",
       "extensions": {
         "bridgeInfo": {
+          "8453": {
+            "tokenAddress": "0xb008BDCF9CdFf9da684a190941dC3dCa8C2Cdd44"
+          },
           "42161": {
             "tokenAddress": "0x63806C056Fa458c548Fb416B15E358A9D685710A"
           }
@@ -16364,9 +16551,6 @@
           },
           "137": {
             "tokenAddress": "0x5eCbA59DAcc1ADc5bDEA35f38A732823fc3dE977"
-          },
-          "8453": {
-            "tokenAddress": "0x968B2323d4b005C7D39c67D31774FE83c9943A60"
           }
         }
       },
@@ -16530,9 +16714,6 @@
           },
           "137": {
             "tokenAddress": "0x385Eeac5cB85A38A9a07A70c73e0a3271CfB54A7"
-          },
-          "8453": {
-            "tokenAddress": "0xcD2F22236DD9Dfe2356D7C543161D4d260FD9BcB"
           }
         }
       },
@@ -17080,6 +17261,9 @@
           "130": {
             "tokenAddress": "0x14CFFAD448AeB0876c56B7aa28999C9a4f002943"
           },
+          "8453": {
+            "tokenAddress": "0xDAE49C25fAd3a62a8e8bFB6dA12c46bE611f9f7a"
+          },
           "42161": {
             "tokenAddress": "0xf75eE6D319741057a82a88Eeff1DbAFAB7307b69"
           }
@@ -17406,9 +17590,6 @@
           "137": {
             "tokenAddress": "0x2B9E7ccDF0F4e5B24757c1E1a80e311E34Cb10c7"
           },
-          "8453": {
-            "tokenAddress": "0xD0a4D1889BbE483273f29b4aCdfAA567A67F99E1"
-          },
           "42161": {
             "tokenAddress": "0x533A7B414CD1236815a5e09F1E97FC7d5c313739"
           }
@@ -17578,11 +17759,25 @@
           "137": {
             "tokenAddress": "0xa9f37D84c856fDa3812ad0519Dad44FA0a3Fe207"
           },
-          "8453": {
-            "tokenAddress": "0x7C298664BD6582f6f264c2Cb5a4B9cC09b6E3889"
-          },
           "42161": {
             "tokenAddress": "0x8f5c1A99b1df736Ad685006Cb6ADCA7B7Ae4b514"
+          }
+        }
+      },
+      "isAcross": false,
+      "isOFT": false
+    },
+    {
+      "chainId": 1,
+      "address": "0x3c3a81e81dc49A522A592e7622A7E711c06bf354",
+      "name": "Mantle",
+      "symbol": "MNT",
+      "decimals": 18,
+      "logoURI": "https://coin-images.coingecko.com/coins/images/30980/large/Mantle-Logo-mark.png?1739213200",
+      "extensions": {
+        "bridgeInfo": {
+          "42161": {
+            "tokenAddress": "0x9c1a1C7bA9c2602123FD7EF3eb41a769edf6C53A"
           }
         }
       },
@@ -17604,9 +17799,6 @@
         "bridgeInfo": {
           "130": {
             "tokenAddress": "0x58d68e179864605fEA06EAADF1185c6e78921Ebd"
-          },
-          "8453": {
-            "tokenAddress": "0x2Da56AcB9Ea78330f947bD57C54119Debda7AF71"
           },
           "42161": {
             "tokenAddress": "0x96c42662820F6Ea32f0A61A06a38a72B206aABaC"
@@ -17816,9 +18008,6 @@
           "137": {
             "tokenAddress": "0x4985E0B13554fB521840e893574D3848C10Fcc6f"
           },
-          "8453": {
-            "tokenAddress": "0xE6bAA3Fedb5Dc88b2c59ba4812388Bb0906D19dB"
-          },
           "42161": {
             "tokenAddress": "0x53236015A675fcB937485F1AE58040e4Fb920d5b"
           }
@@ -17941,6 +18130,9 @@
           },
           "137": {
             "tokenAddress": "0xa63Beffd33AB3a2EfD92a39A7D2361CEE14cEbA8"
+          },
+          "8453": {
+            "tokenAddress": "0x7002458B1DF59EccB57387bC79fFc7C29E22e6f7"
           },
           "42161": {
             "tokenAddress": "0x6FEb262FEb0f775B5312D2e009923f7f58AE423E"
@@ -18374,9 +18566,6 @@
           },
           "137": {
             "tokenAddress": "0x82FFdFD1d8699E8886a4e77CeFA9dd9710a7FefD"
-          },
-          "8453": {
-            "tokenAddress": "0x18dD5B087bCA9920562aFf7A0199b96B9230438b"
           }
         }
       },
@@ -20046,9 +20235,6 @@
           },
           "137": {
             "tokenAddress": "0x82617aA52dddf5Ed9Bb7B370ED777b3182A30fd1"
-          },
-          "8453": {
-            "tokenAddress": "0xaAC78d1219c08AecC8e37e03858FE885f5EF1799"
           }
         }
       },
@@ -20089,9 +20275,6 @@
           },
           "137": {
             "tokenAddress": "0x5559Edb74751A0edE9DeA4DC23aeE72cCA6bE3D5"
-          },
-          "8453": {
-            "tokenAddress": "0x3bB4445D30AC020a84c1b5A8A2C6248ebC9779D0"
           },
           "42161": {
             "tokenAddress": "0xBD591Bd4DdB64b77B5f76Eab8f03d02519235Ae2"
@@ -29438,6 +29621,23 @@
     },
     {
       "chainId": 8453,
+      "address": "0x3c87e7AF3cDBAe5bB56b4936325Ea95CA3E0EfD9",
+      "name": "Ambire AdEx",
+      "symbol": "ADX",
+      "decimals": 18,
+      "logoURI": "https://assets.coingecko.com/coins/images/847/thumb/Ambire_AdEx_Symbol_color.png?1655432540",
+      "extensions": {
+        "bridgeInfo": {
+          "1": {
+            "tokenAddress": "0xADE00C28244d5CE17D72E40330B1c318cD12B7c3"
+          }
+        }
+      },
+      "isAcross": false,
+      "isOFT": false
+    },
+    {
+      "chainId": 8453,
       "address": "0x940181a94A35A4569E4529A3CDfB74e38FD98631",
       "name": "Aerodrome Finance",
       "symbol": "AERO",
@@ -29458,15 +29658,15 @@
     },
     {
       "chainId": 8453,
-      "address": "0x7A2C5e7788E55Ec0a7ba4aEeC5B3da322718Fb5e",
-      "name": "Apu Apustaja",
-      "symbol": "APU",
+      "address": "0x97c806e7665d3AFd84A8Fe1837921403D59F3Dcc",
+      "name": "Alethea Artificial Liquid Intelligence",
+      "symbol": "ALI",
       "decimals": 18,
-      "logoURI": "https://coin-images.coingecko.com/coins/images/35986/large/200x200.png?1710308147",
+      "logoURI": "https://assets.coingecko.com/coins/images/22062/thumb/alethea-logo-transparent-colored.png?1642748848",
       "extensions": {
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0x594DaaD7D77592a2b97b725A7AD59D7E188b5bFa"
+            "tokenAddress": "0x6B0b3a982b4634aC68dD83a4DBF02311cE324181"
           }
         }
       },
@@ -29485,6 +29685,23 @@
     },
     {
       "chainId": 8453,
+      "address": "0xf5Dbaa3DFC5e81405c7306039fB037a3DCD57Ce2",
+      "name": "Biconomy",
+      "symbol": "BICO",
+      "decimals": 18,
+      "logoURI": "https://assets.coingecko.com/coins/images/21061/thumb/biconomy_logo.jpg?1638269749",
+      "extensions": {
+        "bridgeInfo": {
+          "1": {
+            "tokenAddress": "0xF17e65822b568B3903685a7c9F496CF7656Cc6C2"
+          }
+        }
+      },
+      "isAcross": false,
+      "isOFT": false
+    },
+    {
+      "chainId": 8453,
       "address": "0x2a06A17CBC6d0032Cac2c6696DA90f29D39a1a29",
       "name": "HarryPotterObamaSonic10Inu",
       "symbol": "BITCOIN",
@@ -29494,6 +29711,23 @@
         "bridgeInfo": {
           "1": {
             "tokenAddress": "0x72e4f9F808C49A2a61dE9C5896298920Dc4EEEa9"
+          }
+        }
+      },
+      "isAcross": false,
+      "isOFT": false
+    },
+    {
+      "chainId": 8453,
+      "address": "0x1F9bD96DDB4Bd07d6061f8933e9bA9EDE9967550",
+      "name": "Boba Network",
+      "symbol": "BOBA",
+      "decimals": 18,
+      "logoURI": "https://assets.coingecko.com/coins/images/20285/thumb/BOBA.png?1636811576",
+      "extensions": {
+        "bridgeInfo": {
+          "1": {
+            "tokenAddress": "0x42bBFa2e77757C645eeaAd1655E0911a7553Efbc"
           }
         }
       },
@@ -29534,13 +29768,6 @@
       "symbol": "cbETH",
       "decimals": 18,
       "logoURI": "https://ethereum-optimism.github.io/data/cbETH/logo.svg",
-      "extensions": {
-        "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0xBe9895146f7AF43049ca1c1AE358B0541Ea49704"
-          }
-        }
-      },
       "isAcross": false,
       "isOFT": false
     },
@@ -29555,19 +29782,12 @@
       "isOFT": false
     },
     {
-      "name": "Compound",
+      "chainId": 8453,
       "address": "0x9e1028F5F1D5eDE59748FFceE5532509976840E0",
+      "name": "Compound",
       "symbol": "COMP",
       "decimals": 18,
-      "chainId": 8453,
       "logoURI": "https://ethereum-optimism.github.io/data/COMP/logo.svg",
-      "extensions": {
-        "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0xc00e94Cb662C3520282E6f5717214004A7f26888"
-          }
-        }
-      },
       "isAcross": false,
       "isOFT": false
     },
@@ -29578,40 +29798,6 @@
       "symbol": "COOKIE",
       "decimals": 18,
       "logoURI": "https://coin-images.coingecko.com/coins/images/38450/large/cookie_token_logo_200x200.png?1733194528",
-      "isAcross": false,
-      "isOFT": false
-    },
-    {
-      "name": "Curve DAO Token",
-      "address": "0x8Ee73c484A26e0A5df2Ee2a4960B789967dd0415",
-      "symbol": "CRV",
-      "decimals": 18,
-      "chainId": 8453,
-      "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xD533a949740bb3306d119CC777fa900bA034cd52/logo.png",
-      "extensions": {
-        "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0xD533a949740bb3306d119CC777fa900bA034cd52"
-          }
-        }
-      },
-      "isAcross": false,
-      "isOFT": false
-    },
-    {
-      "chainId": 8453,
-      "address": "0xBB22Ff867F8Ca3D5F2251B4084F6Ec86D4666E14",
-      "name": "Cryptex Finance",
-      "symbol": "CTX",
-      "decimals": 18,
-      "logoURI": "https://assets.coingecko.com/coins/images/14932/thumb/glossy_icon_-_C200px.png?1619073171",
-      "extensions": {
-        "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0x321C2fE4446C7c963dc41Dd58879AF648838f98D"
-          }
-        }
-      },
       "isAcross": false,
       "isOFT": false
     },
@@ -29701,15 +29887,15 @@
     },
     {
       "chainId": 8453,
-      "address": "0x968B2323d4b005C7D39c67D31774FE83c9943A60",
-      "name": "Ampleforth Governance Token",
-      "symbol": "FORTH",
+      "address": "0x74F804B4140ee70830B3Eef4e690325841575F89",
+      "name": "Fetch ai",
+      "symbol": "FET",
       "decimals": 18,
-      "logoURI": "https://assets.coingecko.com/coins/images/14917/thumb/photo_2021-04-22_00.00.03.jpeg?1619020835",
+      "logoURI": "https://assets.coingecko.com/coins/images/5681/thumb/Fetch.jpg?1572098136",
       "extensions": {
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0x77FbA179C79De5B7653F68b5039Af940AdA60ce0"
+            "tokenAddress": "0xaea46A60368A7bD060eec7DF8CBa43b7EF41Ad85"
           }
         }
       },
@@ -29718,15 +29904,15 @@
     },
     {
       "chainId": 8453,
-      "address": "0xcD2F22236DD9Dfe2356D7C543161D4d260FD9BcB",
-      "name": "Aavegotchi",
-      "symbol": "GHST",
+      "address": "0xb008BDCF9CdFf9da684a190941dC3dCa8C2Cdd44",
+      "name": "Flux",
+      "symbol": "FLUX",
       "decimals": 18,
-      "logoURI": "https://assets.coingecko.com/coins/images/12467/thumb/ghst_200.png?1600750321",
+      "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x720CD16b011b987Da3518fbf38c3071d4F0D1495/logo.png",
       "extensions": {
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0x3F382DbD960E3a9bbCeaE22651E88158d2791550"
+            "tokenAddress": "0x720CD16b011b987Da3518fbf38c3071d4F0D1495"
           }
         }
       },
@@ -29806,6 +29992,23 @@
     },
     {
       "chainId": 8453,
+      "address": "0xDAE49C25fAd3a62a8e8bFB6dA12c46bE611f9f7a",
+      "name": "KRYLL",
+      "symbol": "KRL",
+      "decimals": 18,
+      "logoURI": "https://assets.coingecko.com/coins/images/2807/thumb/krl.png?1547036979",
+      "extensions": {
+        "bridgeInfo": {
+          "1": {
+            "tokenAddress": "0x464eBE77c293E473B48cFe96dDCf88fcF7bFDAC0"
+          }
+        }
+      },
+      "isAcross": false,
+      "isOFT": false
+    },
+    {
+      "chainId": 8453,
       "address": "0xd7468c14ae76C3Fc308aEAdC223D5D1F71d3c171",
       "name": "LCX",
       "symbol": "LCX",
@@ -29823,98 +30026,28 @@
     },
     {
       "chainId": 8453,
-      "globalAddress": "0x36d2b5764293499AC56E1C66D662c599CE93082E",
-      "localAddress": {
-        "8453": "0x9745362d4f3C37D5Aa1499F26AFacD0854D7D051"
-      },
-      "underlyingAddress": "0x368181499736d0c0CC614DBB145E2EC1AC86b8c6",
-      "name": "LUSD Stablecoin",
-      "symbol": "LUSD",
-      "decimals": 18,
-      "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/refs/heads/master/blockchains/ethereum/assets/0x5f98805A4E8be255a32880FDeC7F6728C6568bA0/logo.png",
-      "extensions": {
-        "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0x5f98805A4E8be255a32880FDeC7F6728C6568bA0"
-          }
-        }
-      }
-    },
-    {
-      "chainId": 8453,
-      "address": "0xD0a4D1889BbE483273f29b4aCdfAA567A67F99E1",
-      "name": "Mask Network",
-      "symbol": "MASK",
-      "decimals": 18,
-      "logoURI": "https://assets.coingecko.com/coins/images/14051/thumb/Mask_Network.jpg?1614050316",
-      "extensions": {
-        "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0x69af81e73A73B40adF4f3d4223Cd9b1ECE623074"
-          }
-        }
-      },
-      "isAcross": false,
-      "isOFT": false
-    },
-    {
-      "chainId": 8453,
-      "address": "0x7C298664BD6582f6f264c2Cb5a4B9cC09b6E3889",
-      "name": "Melon",
-      "symbol": "MLN",
-      "decimals": 18,
-      "logoURI": "https://assets.coingecko.com/coins/images/605/thumb/melon.png?1547034295",
-      "extensions": {
-        "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0xec67005c4E498Ec7f55E092bd1d35cbC47C91892"
-          }
-        }
-      },
-      "isAcross": false,
-      "isOFT": false
-    },
-    {
-      "chainId": 8453,
-      "address": "0x2Da56AcB9Ea78330f947bD57C54119Debda7AF71",
-      "name": "Mog Coin",
-      "symbol": "MOG",
-      "decimals": 18,
-      "logoURI": "https://assets.coingecko.com/coins/images/31059/large/MOG_LOGO_200x200.png",
-      "extensions": {
-        "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0xaaeE1A9723aaDB7afA2810263653A34bA2C21C7a"
-          }
-        }
-      },
-      "isAcross": false,
-      "isOFT": false
-    },
-    {
-      "chainId": 8453,
-      "address": "0xE6bAA3Fedb5Dc88b2c59ba4812388Bb0906D19dB",
-      "name": "PolySwarm",
-      "symbol": "NCT",
-      "decimals": 18,
-      "logoURI": "https://assets.coingecko.com/coins/images/2843/thumb/ImcYCVfX_400x400.jpg?1628519767",
-      "extensions": {
-        "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0x9E46A38F5DaaBe8683E10793b06749EEF7D733d1"
-          }
-        }
-      },
-      "isAcross": false,
-      "isOFT": false
-    },
-    {
-      "chainId": 8453,
       "address": "0xca73ed1815e5915489570014e024b7EbE65dE679",
       "name": "Odos Token",
       "symbol": "ODOS",
       "decimals": 18,
       "logoURI": "https://coin-images.coingecko.com/coins/images/52914/large/odos.jpg?1734678948",
+      "isAcross": false,
+      "isOFT": false
+    },
+    {
+      "chainId": 8453,
+      "address": "0x7002458B1DF59EccB57387bC79fFc7C29E22e6f7",
+      "name": "Origin Protocol",
+      "symbol": "OGN",
+      "decimals": 18,
+      "logoURI": "https://assets.coingecko.com/coins/images/3296/thumb/op.jpg?1547037878",
+      "extensions": {
+        "bridgeInfo": {
+          "1": {
+            "tokenAddress": "0x8207c1FfC5B6804F6024322CcF34F29c3541Ae26"
+          }
+        }
+      },
       "isAcross": false,
       "isOFT": false
     },
@@ -29980,23 +30113,6 @@
         "bridgeInfo": {
           "1": {
             "tokenAddress": "0xb23d80f5FefcDDaa212212F028021B41DEd428CF"
-          }
-        }
-      },
-      "isAcross": false,
-      "isOFT": false
-    },
-    {
-      "chainId": 8453,
-      "address": "0x18dD5B087bCA9920562aFf7A0199b96B9230438b",
-      "name": "Propy",
-      "symbol": "PRO",
-      "decimals": 8,
-      "logoURI": "https://assets.coingecko.com/coins/images/869/thumb/propy.png?1548332100",
-      "extensions": {
-        "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0x226bb599a12C826476e3A771454697EA52E9E220"
           }
         }
       },
@@ -30150,23 +30266,6 @@
     },
     {
       "chainId": 8453,
-      "name": "Yield Guild Games",
-      "symbol": "YGG",
-      "logoURI": "https://assets.coingecko.com/coins/images/17358/thumb/le1nzlO6_400x400.jpg?1632465691",
-      "address": "0xaAC78d1219c08AecC8e37e03858FE885f5EF1799",
-      "decimals": 18,
-      "extensions": {
-        "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0x25f8087EAD173b73D6e8B84329989A8eEA16CF73"
-          }
-        }
-      },
-      "isAcross": false,
-      "isOFT": false
-    },
-    {
-      "chainId": 8453,
       "address": "0x1111111111166b7FE7bd91427724B487980aFc69",
       "name": "Zora",
       "symbol": "ZORA",
@@ -30176,19 +30275,12 @@
       "isOFT": false
     },
     {
-      "name": "0x Protocol Token",
+      "chainId": 8453,
       "address": "0x3bB4445D30AC020a84c1b5A8A2C6248ebC9779D0",
+      "name": "0x Protocol Token",
       "symbol": "ZRX",
       "decimals": 18,
-      "chainId": 8453,
       "logoURI": "https://ethereum-optimism.github.io/data/ZRX/logo.png",
-      "extensions": {
-        "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0xE41d2489571d322189246DaFA5ebDe1F4699F498"
-          }
-        }
-      },
       "isAcross": false,
       "isOFT": false
     },
@@ -30933,6 +31025,18 @@
     },
     {
       "chainId": 8453,
+      "globalAddress": "0x36d2b5764293499AC56E1C66D662c599CE93082E",
+      "localAddress": {
+        "8453": "0x9745362d4f3C37D5Aa1499F26AFacD0854D7D051"
+      },
+      "underlyingAddress": "0x368181499736d0c0CC614DBB145E2EC1AC86b8c6",
+      "name": "LUSD Stablecoin",
+      "decimals": 18,
+      "symbol": "LUSD",
+      "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/refs/heads/master/blockchains/ethereum/assets/0x5f98805A4E8be255a32880FDeC7F6728C6568bA0/logo.png"
+    },
+    {
+      "chainId": 8453,
       "globalAddress": "0xf40C521489a48E85613078a699FB6acc6fB7A547",
       "localAddress": {
         "8453": "0x68D5eEAb80f13B5E6d64B1cCDF6ee7171dce3a53"
@@ -31596,6 +31700,7 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x79bbF4508B1391af3A0F4B30bb5FC4aa9ab0E07C",
+      "oftVersion": 3,
       "endpointVersion": 2,
       "endpointId": 30110,
       "oftSharedDecimals": 6
@@ -31682,6 +31787,7 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x0B3EAEAd748facDb9d943d3407011f16Eb17D0Cf",
+      "oftVersion": 3,
       "endpointVersion": 2,
       "endpointId": 30110,
       "oftSharedDecimals": 6
@@ -31788,6 +31894,7 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x2492D0006411Af6C8bbb1c8afc1B0197350a79e9",
+      "oftVersion": 3,
       "endpointVersion": 2,
       "endpointId": 30110,
       "oftSharedDecimals": 6
@@ -32237,6 +32344,7 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0xE2B1dc2D4A3b4E59FDF0c47B71A7A86391a8B35a",
+      "oftVersion": 3,
       "endpointVersion": 2,
       "endpointId": 30110,
       "oftSharedDecimals": 6
@@ -32459,6 +32567,7 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x9F07F8A82cB1af1466252e505b7b7ddee103bC91",
+      "oftVersion": 3,
       "endpointVersion": 2,
       "endpointId": 30110,
       "oftSharedDecimals": 6
@@ -32767,6 +32876,7 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x4186BFC76E2E237523CBC30FD220FE055156b41F",
+      "oftVersion": 3,
       "endpointVersion": 2,
       "endpointId": 30110,
       "oftSharedDecimals": 6
@@ -32831,6 +32941,7 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x85AF271d1DFCBF53486D996f61D7FF0bba5582eA",
+      "oftVersion": 3,
       "endpointVersion": 2,
       "endpointId": 30110,
       "oftSharedDecimals": 6
@@ -32956,6 +33067,7 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0xaC800FD6159c2a2CB8fC31EF74621eB430287a5A",
+      "oftVersion": 3,
       "endpointVersion": 2,
       "endpointId": 30110,
       "oftSharedDecimals": 6
@@ -32979,6 +33091,7 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34",
+      "oftVersion": 3,
       "endpointVersion": 2,
       "endpointId": 30110,
       "oftSharedDecimals": 6
@@ -33001,6 +33114,7 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x211Cc4DD073734dA055fbF44a2b4667d5E5fE5d2",
+      "oftVersion": 3,
       "endpointVersion": 2,
       "endpointId": 30110,
       "oftSharedDecimals": 6
@@ -33023,6 +33137,7 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0xaB24c63bee518Ac956c8123389fc538c7e36d82C",
+      "oftVersion": 3,
       "endpointVersion": 2,
       "endpointId": 30110,
       "oftSharedDecimals": 6
@@ -33045,6 +33160,7 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x64445f0aecC51E94aD52d8AC56b7190e764E561a",
+      "oftVersion": 3,
       "endpointVersion": 2,
       "endpointId": 30110,
       "oftSharedDecimals": 6
@@ -33098,6 +33214,7 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x58538e6A46E07434d7E7375Bc268D3cb839C0133",
+      "oftVersion": 3,
       "endpointVersion": 2,
       "endpointId": 30110,
       "oftSharedDecimals": 6
@@ -33121,6 +33238,7 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x3124678D62D2aa1f615B54525310fbfDa6DcF7AE",
+      "oftVersion": 3,
       "endpointVersion": 2,
       "endpointId": 30110,
       "oftSharedDecimals": 6
@@ -33174,6 +33292,7 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x6985884C4392D348587B19cb9eAAf157F13271cd",
+      "oftVersion": 3,
       "endpointVersion": 2,
       "endpointId": 30110,
       "oftSharedDecimals": 6
@@ -33196,6 +33315,7 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0xB1Fe27b32fFb5CE54E272C096547F1e86c19e72F",
+      "oftVersion": 3,
       "endpointVersion": 2,
       "endpointId": 30110,
       "oftSharedDecimals": 6
@@ -33241,6 +33361,7 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x420FcA0121DC28039145009570975747295f2329",
+      "oftVersion": 3,
       "endpointVersion": 2,
       "endpointId": 30110,
       "oftSharedDecimals": 4
@@ -33263,6 +33384,7 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x488ef48FF9D803087CC96b347FC250244A9e8260",
+      "oftVersion": 3,
       "endpointVersion": 2,
       "endpointId": 30110,
       "oftSharedDecimals": 6
@@ -33285,6 +33407,7 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x7f9FBf9bDd3F4105C478b996B648FE6e828a1e98",
+      "oftVersion": 3,
       "endpointVersion": 2,
       "endpointId": 30110,
       "oftSharedDecimals": 6
@@ -33308,6 +33431,7 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x4E200fE2f3eFb977d5fd9c430A41531FB04d97B8",
+      "oftVersion": 3,
       "endpointVersion": 2,
       "endpointId": 30110,
       "oftSharedDecimals": 18
@@ -33330,6 +33454,7 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0xfc87D55bC8bF441AbfC24D04B2068a8f77BcFcC0",
+      "oftVersion": 3,
       "endpointVersion": 2,
       "endpointId": 30110,
       "oftSharedDecimals": 6
@@ -33353,6 +33478,7 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x092bAaDB7DEf4C3981454dD9c0A0D7FF07bCFc86",
+      "oftVersion": 3,
       "endpointVersion": 2,
       "endpointId": 30110,
       "oftSharedDecimals": 6
@@ -33376,6 +33502,7 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x968bE3F7bfeF0F8eDc3c1aD90232EbB0DA0867aA",
+      "oftVersion": 3,
       "endpointVersion": 2,
       "endpointId": 30110,
       "oftSharedDecimals": 6
@@ -33439,6 +33566,7 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x333333C465a19C85f85c6CfbED7B16b0B26E3333",
+      "oftVersion": 3,
       "endpointVersion": 2,
       "endpointId": 30110,
       "oftSharedDecimals": 6
@@ -33455,6 +33583,7 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x7FF7Fa94b8b66Ef313f7970d4EEbd2CB3103a2C0",
+      "oftVersion": 3,
       "endpointVersion": 2,
       "endpointId": 30110,
       "oftSharedDecimals": 6
@@ -33471,6 +33600,7 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0xFDfdFD005F127334F7c4eeFEF2252D2BF4B6E79E",
+      "oftVersion": 3,
       "endpointVersion": 2,
       "endpointId": 30110,
       "oftSharedDecimals": 6
@@ -33516,6 +33646,7 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0xb5130F4767AB0ACC579f25a76e8f9E977CB3F948",
+      "oftVersion": 3,
       "endpointVersion": 2,
       "endpointId": 30110,
       "oftSharedDecimals": 6
@@ -33532,6 +33663,7 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x0Bd27617E20F09a8E7FFdaE281E383b4b2f7A742",
+      "oftVersion": 3,
       "endpointVersion": 2,
       "endpointId": 30110,
       "oftSharedDecimals": 6
@@ -33548,6 +33680,7 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x441Fcb23dFe8289cf572126FEDCf450974ADc891",
+      "oftVersion": 3,
       "endpointVersion": 2,
       "endpointId": 30110,
       "oftSharedDecimals": 6
@@ -33564,6 +33697,7 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0xe5e851b01DD3Eda24FDe709a407dB44555B6d1E0",
+      "oftVersion": 3,
       "endpointVersion": 2,
       "endpointId": 30110,
       "oftSharedDecimals": 6
@@ -35120,6 +35254,23 @@
         "bridgeInfo": {
           "1": {
             "tokenAddress": "0xec67005c4E498Ec7f55E092bd1d35cbC47C91892"
+          }
+        }
+      },
+      "isAcross": false,
+      "isOFT": false
+    },
+    {
+      "chainId": 42161,
+      "address": "0x9c1a1C7bA9c2602123FD7EF3eb41a769edf6C53A",
+      "name": "Mantle",
+      "symbol": "MNT",
+      "decimals": 18,
+      "logoURI": "https://coin-images.coingecko.com/coins/images/30980/large/Mantle-Logo-mark.png?1739213200",
+      "extensions": {
+        "bridgeInfo": {
+          "1": {
+            "tokenAddress": "0x3c3a81e81dc49A522A592e7622A7E711c06bf354"
           }
         }
       },

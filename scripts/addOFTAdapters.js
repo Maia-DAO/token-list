@@ -9,6 +9,8 @@
     node addOFTAdapters.js input.json ofts.json
 */
 
+// TODO: we should make sure we haven't missed any tokens in ofts.json we are using filteredStargateTokens.json as main source
+
 const fs = require('fs');
 const { CHAIN_KEYS, CHAIN_KEY_TO_ID, SUPPORTED_CHAINS } = require('../constants');
 

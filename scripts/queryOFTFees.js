@@ -322,6 +322,9 @@ async function main() {
         if (bridgeInfo?.[selfChain]) delete bridgeInfo[selfChain];
         if (feeInfo?.[selfChain]) delete feeInfo[selfChain];
 
+        // If endpointVersion === 2 and there is no field for oftVersion we should populate it as version 3
+        if (!("oftVersion" in t) && t.endpointVersion === 2) t.oftVersion = 3;
+
 
         // Update extensions
         if (bridgeInfo) existingExt.bridgeInfo = bridgeInfo;
