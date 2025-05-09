@@ -12,7 +12,7 @@
 // TODO: we should make sure we haven't missed any tokens in ofts.json we are using filteredStargateTokens.json as main source
 
 const fs = require('fs');
-const { CHAIN_KEYS, CHAIN_KEY_TO_ID, SUPPORTED_CHAINS } = require('../constants');
+const { CHAIN_KEYS, CHAIN_KEY_TO_ID, SUPPORTED_CHAINS, OVERRIDE_PEG } = require('../constants');
 
 function mergeExtensions(ext1 = {}, ext2 = {}) {
     const merged = { ...ext1 };
@@ -87,14 +87,16 @@ async function main() {
             coinMarketCapId: appInfo.cmcId
         });
 
+        const peg = OVERRIDE_PEG[entry.symbol] ?? appInfo.peggedTo
+
         // record bridge mapping: map main token to list of OFTs
-        if (appInfo.peggedTo) {
-            const mainAddr = appInfo.peggedTo.address;
-            bridgeMap[mainAddr + appInfo.peggedTo.chainName] = bridgeMap[mainAddr + appInfo.peggedTo.chainName] || {};
-            bridgeMap[mainAddr + appInfo.peggedTo.chainName][chainId] = { tokenAddress: address };
+        if (peg) {
+            const mainAddr = peg.address;
+            bridgeMap[mainAddr + peg.chainName] = bridgeMap[mainAddr + peg.chainName] || {};
+            bridgeMap[mainAddr + peg.chainName][chainId] = { tokenAddress: address };
             // Ensure link to pegged token when possible
-            if (SUPPORTED_CHAINS.includes(appInfo.peggedTo.chainName)) {
-                extensions.bridgeInfo = { [CHAIN_KEY_TO_ID[appInfo.peggedTo.chainName]]: { tokenAddress: appInfo.peggedTo.address } };
+            if (SUPPORTED_CHAINS.includes(peg.chainName)) {
+                extensions.bridgeInfo = { [CHAIN_KEY_TO_ID[peg.chainName]]: { tokenAddress: peg.address } };
             }
         }
 

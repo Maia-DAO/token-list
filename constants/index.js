@@ -29,4 +29,9 @@ const CHAIN_KEY_TO_ID = {
     polygon: 137
 };
 
-module.exports = { CHAIN_KEYS, CHAIN_KEY_TO_ID, SUPPORTED_CHAINS };
+// Override Stargate Peg
+const OVERRIDE_PEG = {
+    'USD₮0': { chainName: 'arbitrum', address: '0xfd086bc7cd5c481dcc9c85ebe478a1c0b69fcbb9' },
+};
+
+module.exports = { CHAIN_KEYS, CHAIN_KEY_TO_ID, SUPPORTED_CHAINS, OVERRIDE_PEG };
