@@ -1,8 +1,8 @@
 {
   "name": "Hermes Omnichain Token List",
-  "timestamp": "1746818186",
+  "timestamp": "1747145903",
   "version": {
-    "major": 41,
+    "major": 42,
     "minor": 0,
     "patch": 0
   },
@@ -196,6 +196,7 @@
       "isOFT": true,
       "oftAdapter": "0xe15bcb9e0ea69e6ab9fa080c4c4a5632896298c3",
       "oftVersion": 2,
+      "endpointVersion": 1,
       "endpointId": 101,
       "oftSharedDecimals": 6
     },
@@ -346,7 +347,9 @@
           }
         }
       },
-      "isAcross": true
+      "isAcross": true,
+      "oftVersion": 1,
+      "endpointVersion": 1
     },
     {
       "chainId": 137,
@@ -365,7 +368,9 @@
         }
       },
       "isAcross": true,
-      "isOFT": false
+      "isOFT": false,
+      "oftVersion": 1,
+      "endpointVersion": 1
     },
     {
       "chainId": 8453,
@@ -1030,6 +1035,7 @@
       "isOFT": true,
       "oftAdapter": "0x28a92dde19d9989f39a49905d7c9c2fac7799bdf",
       "oftVersion": 2,
+      "endpointVersion": 1,
       "endpointId": 101,
       "oftSharedDecimals": 6
     },
@@ -1053,7 +1059,9 @@
           }
         }
       },
-      "isAcross": true
+      "isAcross": true,
+      "oftVersion": 1,
+      "endpointVersion": 1
     },
     {
       "chainId": 137,
@@ -1072,7 +1080,9 @@
         }
       },
       "isAcross": true,
-      "isOFT": false
+      "isOFT": false,
+      "oftVersion": 1,
+      "endpointVersion": 1
     },
     {
       "chainId": 8453,
@@ -1094,7 +1104,9 @@
           }
         }
       },
-      "isAcross": true
+      "isAcross": true,
+      "oftVersion": 1,
+      "endpointVersion": 1
     },
     {
       "chainId": 80002,
@@ -1206,7 +1218,9 @@
         }
       },
       "isAcross": true,
-      "isOFT": false
+      "isOFT": false,
+      "oftVersion": 1,
+      "endpointVersion": 1
     },
     {
       "chainId": 137,
@@ -1225,7 +1239,9 @@
         }
       },
       "isAcross": true,
-      "isOFT": false
+      "isOFT": false,
+      "oftVersion": 1,
+      "endpointVersion": 1
     },
     {
       "chainId": 11155420,
@@ -1273,7 +1289,9 @@
         }
       },
       "isAcross": true,
-      "isOFT": false
+      "isOFT": false,
+      "oftVersion": 1,
+      "endpointVersion": 1
     },
     {
       "chainId": 84532,
@@ -1378,7 +1396,9 @@
           }
         }
       },
-      "isAcross": true
+      "isAcross": true,
+      "oftVersion": 1,
+      "endpointVersion": 1
     },
     {
       "chainId": 137,
@@ -1397,7 +1417,9 @@
         }
       },
       "isAcross": true,
-      "isOFT": false
+      "isOFT": false,
+      "oftVersion": 1,
+      "endpointVersion": 1
     },
     {
       "chainId": 11155111,
@@ -1596,7 +1618,9 @@
           }
         }
       },
-      "isAcross": true
+      "isAcross": true,
+      "oftVersion": 1,
+      "endpointVersion": 1
     },
     {
       "chainId": 137,
@@ -1815,7 +1839,9 @@
         "coinMarketCapId": 29035
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": false,
+      "oftVersion": 1,
+      "endpointVersion": 1
     },
     {
       "chainId": 1,
@@ -1849,7 +1875,9 @@
             "tokenAddress": "0x7F728F3595db17B0B359f4FC47aE80FAd2e33769"
           }
         }
-      }
+      },
+      "oftVersion": 1,
+      "endpointVersion": 1
     },
     {
       "chainId": 80094,
@@ -1869,7 +1897,9 @@
             "tokenAddress": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2"
           }
         }
-      }
+      },
+      "oftVersion": 1,
+      "endpointVersion": 1
     },
     {
       "chainId": 1088,
@@ -1890,7 +1920,9 @@
             "tokenAddress": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2"
           }
         }
-      }
+      },
+      "oftVersion": 1,
+      "endpointVersion": 1
     },
     {
       "chainId": 43114,
@@ -1911,7 +1943,9 @@
             "tokenAddress": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48"
           }
         }
-      }
+      },
+      "oftVersion": 1,
+      "endpointVersion": 1
     },
     {
       "chainId": 80094,
@@ -1929,7 +1963,9 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": false,
+      "oftVersion": 1,
+      "endpointVersion": 1
     },
     {
       "chainId": 56,
@@ -1973,6 +2009,8 @@
       },
       "isOFT": true,
       "oftAdapter": "0x8d1ebcda83fd905b597bf6d3294766b64ecf2aa7",
+      "oftVersion": 1,
+      "endpointVersion": 1,
       "endpointId": 102
     },
     {
@@ -1991,7 +2029,9 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": false,
+      "oftVersion": 1,
+      "endpointVersion": 1
     },
     {
       "chainId": 43114,
@@ -2012,7 +2052,9 @@
             "tokenAddress": "0xdAC17F958D2ee523a2206206994597C13D831ec7"
           }
         }
-      }
+      },
+      "oftVersion": 1,
+      "endpointVersion": 1
     },
     {
       "chainId": 56,
@@ -2053,6 +2095,8 @@
       },
       "isOFT": true,
       "oftAdapter": "0x0551ca9e33bada0355dfce34685ad3b73cf3ad70",
+      "oftVersion": 1,
+      "endpointVersion": 1,
       "endpointId": 102
     },
     {
@@ -2074,7 +2118,9 @@
             "tokenAddress": "0xdac17f958d2ee523a2206206994597c13d831ec7"
           }
         }
-      }
+      },
+      "oftVersion": 1,
+      "endpointVersion": 1
     },
     {
       "chainId": 1088,
@@ -2090,7 +2136,9 @@
       "tags": [],
       "extensions": {
         "coingeckoId": "metis-token"
-      }
+      },
+      "oftVersion": 1,
+      "endpointVersion": 1
     },
     {
       "chainId": 1,
@@ -2225,6 +2273,8 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0xb4Bc46bc6cB217B59ea8F4530BaE26Bf69F677f0",
+      "oftVersion": 1,
+      "endpointVersion": 1,
       "endpointId": 111,
       "oftSharedDecimals": 6
     },
@@ -2249,6 +2299,8 @@
       },
       "isOFT": true,
       "oftAdapter": "0x1E5fe95fB90ac0530F581C617272cd0864626795",
+      "oftVersion": 1,
+      "endpointVersion": 1,
       "endpointId": 332,
       "oftSharedDecimals": 6
     },
@@ -2400,6 +2452,7 @@
       "isOFT": true,
       "oftAdapter": "0xa9004a5421372e1d83fb1f85b0fc986c912f91f3",
       "oftVersion": 2,
+      "endpointVersion": 1,
       "endpointId": 102,
       "oftSharedDecimals": 6
     },
@@ -2429,6 +2482,8 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0xa9004A5421372E1D83fB1f85b0fc986c912f91f3",
+      "oftVersion": 1,
+      "endpointVersion": 1,
       "endpointId": 106,
       "oftSharedDecimals": 6
     },
@@ -2503,6 +2558,7 @@
       "isOFT": true,
       "oftAdapter": "0xc7ae4ab742f6b0b203f6710c87677005bc45ad01",
       "oftVersion": 2,
+      "endpointVersion": 1,
       "endpointId": 101,
       "oftSharedDecimals": 6
     },
@@ -2670,6 +2726,7 @@
       "isOFT": true,
       "oftAdapter": "0xaa798bf5ec09b6e3bc059ea4d36d4ca53e063ef7",
       "oftVersion": 2,
+      "endpointVersion": 1,
       "endpointId": 101,
       "oftSharedDecimals": 6
     },
@@ -2709,6 +2766,7 @@
       "isOFT": true,
       "oftAdapter": "0xcf7d4b692c478b77aff32bb1493c54c84f27f85a",
       "oftVersion": 2,
+      "endpointVersion": 1,
       "endpointId": 102,
       "oftSharedDecimals": 8
     },
@@ -2741,6 +2799,8 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x8255775bea425f910044ddFb7681D6d87fD5489d",
+      "oftVersion": 1,
+      "endpointVersion": 1,
       "endpointId": 109,
       "oftSharedDecimals": 8
     },
@@ -2773,6 +2833,8 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x8255775bea425f910044ddFb7681D6d87fD5489d",
+      "oftVersion": 1,
+      "endpointVersion": 1,
       "endpointId": 184,
       "oftSharedDecimals": 8
     },
@@ -2859,6 +2921,8 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x4591DBfF62656E7859Afe5e45f6f47D3669fBB28",
+      "oftVersion": 1,
+      "endpointVersion": 1,
       "endpointId": 101,
       "oftSharedDecimals": 18
     },
@@ -2891,6 +2955,8 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x4591DBfF62656E7859Afe5e45f6f47D3669fBB28",
+      "oftVersion": 1,
+      "endpointVersion": 1,
       "endpointId": 111,
       "oftSharedDecimals": 18
     },
@@ -2923,6 +2989,8 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x4591DBfF62656E7859Afe5e45f6f47D3669fBB28",
+      "oftVersion": 1,
+      "endpointVersion": 1,
       "endpointId": 184,
       "oftSharedDecimals": 18
     },
@@ -2950,6 +3018,8 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0xE15bCB9E0EA69e6aB9FA080c4c4A5632896298C3",
+      "oftVersion": 1,
+      "endpointVersion": 1,
       "endpointId": 106,
       "oftSharedDecimals": 6
     },
@@ -2989,7 +3059,9 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": false,
+      "oftVersion": 1,
+      "endpointVersion": 1
     },
     {
       "chainId": 56,
@@ -3008,7 +3080,9 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": false,
+      "oftVersion": 1,
+      "endpointVersion": 1
     },
     {
       "chainId": 43114,
@@ -3027,7 +3101,9 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": false,
+      "oftVersion": 1,
+      "endpointVersion": 1
     },
     {
       "chainId": 137,
@@ -3046,7 +3122,9 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": false,
+      "oftVersion": 1,
+      "endpointVersion": 1
     },
     {
       "chainId": 10,
@@ -3065,7 +3143,9 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": false,
+      "oftVersion": 1,
+      "endpointVersion": 1
     },
     {
       "chainId": 8453,
@@ -3084,7 +3164,9 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": false,
+      "oftVersion": 1,
+      "endpointVersion": 1
     },
     {
       "chainId": 1,
@@ -3184,6 +3266,8 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x1D4268a58ee7EC2cc2Af5d70a2fD2B3a896527a2",
+      "oftVersion": 1,
+      "endpointVersion": 1,
       "endpointId": 102,
       "oftSharedDecimals": 9
     },
@@ -3217,6 +3301,7 @@
       "isOFT": true,
       "oftAdapter": "0xb274202daba6ae180c665b4fbe59857b7c3a8091",
       "oftVersion": 2,
+      "endpointVersion": 1,
       "endpointId": 102,
       "oftSharedDecimals": 8
     },
@@ -3248,6 +3333,8 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x152649eA73beAb28c5b49B26eb48f7EAD6d4c898",
+      "oftVersion": 1,
+      "endpointVersion": 1,
       "endpointId": 101,
       "oftSharedDecimals": 8
     },
@@ -3428,6 +3515,7 @@
       "isOFT": true,
       "oftAdapter": "0x885f0a0e5cd0bdb3e58995aad80e6c6bc2823dcb",
       "oftVersion": 2,
+      "endpointVersion": 1,
       "endpointId": 101,
       "oftSharedDecimals": 2
     },
@@ -3455,6 +3543,8 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x52242cbAb41e290E9E17CCC50Cc437bB60020a9d",
+      "oftVersion": 1,
+      "endpointVersion": 1,
       "endpointId": 102,
       "oftSharedDecimals": 2
     },
@@ -3482,6 +3572,7 @@
       "isOFT": true,
       "oftAdapter": "0x76326791a0d491cdb24a349354ec024756816d12",
       "oftVersion": 2,
+      "endpointVersion": 1,
       "endpointId": 102,
       "oftSharedDecimals": 9
     },
@@ -3508,6 +3599,8 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x52b4FC2CA0D9b194769AB9a3dC36c2C6831f2520",
+      "oftVersion": 1,
+      "endpointVersion": 1,
       "endpointId": 151,
       "oftSharedDecimals": 9
     },
@@ -3538,6 +3631,8 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x560363BdA52BC6A44CA6C8c9B4a5FadbDa32fa60",
+      "oftVersion": 1,
+      "endpointVersion": 1,
       "endpointId": 101,
       "oftSharedDecimals": 18
     },
@@ -3749,6 +3844,8 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x788D86E00ab31Db859C3d6b80d5a9375801d7f2A",
+      "oftVersion": 1,
+      "endpointVersion": 1,
       "endpointId": 101,
       "oftSharedDecimals": 6
     },
@@ -3787,6 +3884,8 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x788D86E00ab31Db859C3d6b80d5a9375801d7f2A",
+      "oftVersion": 1,
+      "endpointVersion": 1,
       "endpointId": 102,
       "oftSharedDecimals": 6
     },
@@ -3825,6 +3924,8 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x788D86E00ab31Db859C3d6b80d5a9375801d7f2A",
+      "oftVersion": 1,
+      "endpointVersion": 1,
       "endpointId": 106,
       "oftSharedDecimals": 6
     },
@@ -3863,6 +3964,8 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x788D86E00ab31Db859C3d6b80d5a9375801d7f2A",
+      "oftVersion": 1,
+      "endpointVersion": 1,
       "endpointId": 109,
       "oftSharedDecimals": 6
     },
@@ -3901,6 +4004,8 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x788D86E00ab31Db859C3d6b80d5a9375801d7f2A",
+      "oftVersion": 1,
+      "endpointVersion": 1,
       "endpointId": 111,
       "oftSharedDecimals": 6
     },
@@ -3930,6 +4035,8 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x348Fdfe2c35934A96C1353185F09D0F9efBAdA86",
+      "oftVersion": 1,
+      "endpointVersion": 1,
       "endpointId": 111,
       "oftSharedDecimals": 18
     },
@@ -3959,6 +4066,8 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x348Fdfe2c35934A96C1353185F09D0F9efBAdA86",
+      "oftVersion": 1,
+      "endpointVersion": 1,
       "endpointId": 184,
       "oftSharedDecimals": 18
     },
@@ -4033,6 +4142,8 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0xaf20f5f19698f1D19351028cd7103B63D30DE7d7",
+      "oftVersion": 1,
+      "endpointVersion": 1,
       "endpointId": 102,
       "oftSharedDecimals": 18
     },
@@ -4072,6 +4183,8 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0xaf20f5f19698f1D19351028cd7103B63D30DE7d7",
+      "oftVersion": 1,
+      "endpointVersion": 1,
       "endpointId": 106,
       "oftSharedDecimals": 18
     },
@@ -4111,6 +4224,8 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x07Ed33a242BD9C08CA3C198e01189e35265024Da",
+      "oftVersion": 1,
+      "endpointVersion": 1,
       "endpointId": 109,
       "oftSharedDecimals": 18
     },
@@ -4150,6 +4265,8 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0xaf20f5f19698f1D19351028cd7103B63D30DE7d7",
+      "oftVersion": 1,
+      "endpointVersion": 1,
       "endpointId": 111,
       "oftSharedDecimals": 18
     },
@@ -4259,6 +4376,7 @@
       "isOFT": true,
       "oftAdapter": "0xd3fdcb837dafdb7c9c3ebd48fe22a53f6dd3d7d7",
       "oftVersion": 2,
+      "endpointVersion": 1,
       "endpointId": 101,
       "oftSharedDecimals": 8
     },
@@ -4303,6 +4421,8 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0xD3FDCb837DAfdb7C9C3eBD48FE22a53F6Dd3d7D7",
+      "oftVersion": 1,
+      "endpointVersion": 1,
       "endpointId": 102,
       "oftSharedDecimals": 8
     },
@@ -4347,6 +4467,8 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0xD3FDCb837DAfdb7C9C3eBD48FE22a53F6Dd3d7D7",
+      "oftVersion": 1,
+      "endpointVersion": 1,
       "endpointId": 106,
       "oftSharedDecimals": 8
     },
@@ -4391,6 +4513,8 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0xD3FDCb837DAfdb7C9C3eBD48FE22a53F6Dd3d7D7",
+      "oftVersion": 1,
+      "endpointVersion": 1,
       "endpointId": 109,
       "oftSharedDecimals": 8
     },
@@ -4435,6 +4559,8 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0xD3FDCb837DAfdb7C9C3eBD48FE22a53F6Dd3d7D7",
+      "oftVersion": 1,
+      "endpointVersion": 1,
       "endpointId": 111,
       "oftSharedDecimals": 8
     },
@@ -4479,6 +4605,8 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0xD3FDCb837DAfdb7C9C3eBD48FE22a53F6Dd3d7D7",
+      "oftVersion": 1,
+      "endpointVersion": 1,
       "endpointId": 151,
       "oftSharedDecimals": 8
     },
@@ -4524,6 +4652,8 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0xD3FDCb837DAfdb7C9C3eBD48FE22a53F6Dd3d7D7",
+      "oftVersion": 1,
+      "endpointVersion": 1,
       "endpointId": 184,
       "oftSharedDecimals": 8
     },
@@ -4554,6 +4684,8 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x9DeB0fc809955b79c85e82918E8586d3b7d2695a",
+      "oftVersion": 1,
+      "endpointVersion": 1,
       "endpointId": 101,
       "oftSharedDecimals": 6
     },
@@ -4587,6 +4719,7 @@
       "isOFT": true,
       "oftAdapter": "0xdee1b2dab488b0d71677200ea1330fdced01e144",
       "oftVersion": 2,
+      "endpointVersion": 1,
       "endpointId": 184,
       "oftSharedDecimals": 6
     },
@@ -4808,6 +4941,8 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0xceCB301c2e2A04dD631428C386DD21db70716F8a",
+      "oftVersion": 1,
+      "endpointVersion": 1,
       "endpointId": 102,
       "oftSharedDecimals": 6
     },
@@ -4840,6 +4975,8 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0xceCB301c2e2A04dD631428C386DD21db70716F8a",
+      "oftVersion": 1,
+      "endpointVersion": 1,
       "endpointId": 106,
       "oftSharedDecimals": 6
     },
@@ -4891,6 +5028,8 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x31e4efe290973ebE91b3a875a7994f650942D28F",
+      "oftVersion": 1,
+      "endpointVersion": 1,
       "endpointId": 101,
       "oftSharedDecimals": 18
     },
@@ -4921,6 +5060,8 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x31e4efe290973ebE91b3a875a7994f650942D28F",
+      "oftVersion": 1,
+      "endpointVersion": 1,
       "endpointId": 102,
       "oftSharedDecimals": 18
     },
@@ -4951,6 +5092,8 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0xd402298a793948698b9a63311404FBBEe944eAfD",
+      "oftVersion": 1,
+      "endpointVersion": 1,
       "endpointId": 106,
       "oftSharedDecimals": 18
     },
@@ -5054,6 +5197,8 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x371c7ec6D8039ff7933a2AA28EB827Ffe1F52f07",
+      "oftVersion": 1,
+      "endpointVersion": 1,
       "endpointId": 102,
       "oftSharedDecimals": 8
     },
@@ -5087,6 +5232,7 @@
       "isOFT": true,
       "oftAdapter": "0x371c7ec6d8039ff7933a2aa28eb827ffe1f52f07",
       "oftVersion": 2,
+      "endpointVersion": 1,
       "endpointId": 106,
       "oftSharedDecimals": 8
     },
@@ -5172,6 +5318,8 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x2297aEbD383787A160DD0d9F71508148769342E3",
+      "oftVersion": 1,
+      "endpointVersion": 1,
       "endpointId": 101,
       "oftSharedDecimals": 8
     },
@@ -5210,6 +5358,8 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x2297aEbD383787A160DD0d9F71508148769342E3",
+      "oftVersion": 1,
+      "endpointVersion": 1,
       "endpointId": 102,
       "oftSharedDecimals": 8
     },
@@ -5248,6 +5398,8 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x2297aEbD383787A160DD0d9F71508148769342E3",
+      "oftVersion": 1,
+      "endpointVersion": 1,
       "endpointId": 109,
       "oftSharedDecimals": 8
     },
@@ -5286,6 +5438,8 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x2297aEbD383787A160DD0d9F71508148769342E3",
+      "oftVersion": 1,
+      "endpointVersion": 1,
       "endpointId": 111,
       "oftSharedDecimals": 8
     },
@@ -5337,6 +5491,7 @@
       "isOFT": true,
       "oftAdapter": "0x2297aebd383787a160dd0d9f71508148769342e3",
       "oftVersion": 2,
+      "endpointVersion": 1,
       "endpointId": 106,
       "oftSharedDecimals": 8
     },
@@ -5429,6 +5584,8 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x137dDB47Ee24EaA998a535Ab00378d6BFa84F893",
+      "oftVersion": 1,
+      "endpointVersion": 1,
       "endpointId": 101,
       "oftSharedDecimals": 8
     },
@@ -5462,6 +5619,8 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0xf7DE7E8A6bd59ED41a4b5fe50278b3B7f31384dF",
+      "oftVersion": 1,
+      "endpointVersion": 1,
       "endpointId": 102,
       "oftSharedDecimals": 8
     },
@@ -5495,6 +5654,8 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0xd722E55C1d9D9fA0021A5215Cbb904b92B3dC5d4",
+      "oftVersion": 1,
+      "endpointVersion": 1,
       "endpointId": 184,
       "oftSharedDecimals": 8
     },
@@ -5547,6 +5708,8 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x9ed7E4B1BFF939ad473dA5E7a218C771D1569456",
+      "oftVersion": 1,
+      "endpointVersion": 1,
       "endpointId": 101,
       "oftSharedDecimals": 6
     },
@@ -5586,6 +5749,8 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x9ed7E4B1BFF939ad473dA5E7a218C771D1569456",
+      "oftVersion": 1,
+      "endpointVersion": 1,
       "endpointId": 102,
       "oftSharedDecimals": 6
     },
@@ -5624,6 +5789,8 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x9ed7E4B1BFF939ad473dA5E7a218C771D1569456",
+      "oftVersion": 1,
+      "endpointVersion": 1,
       "endpointId": 109,
       "oftSharedDecimals": 6
     },
@@ -5663,6 +5830,8 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x9ed7E4B1BFF939ad473dA5E7a218C771D1569456",
+      "oftVersion": 1,
+      "endpointVersion": 1,
       "endpointId": 106,
       "oftSharedDecimals": 6
     },
@@ -5702,6 +5871,8 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x9ed7E4B1BFF939ad473dA5E7a218C771D1569456",
+      "oftVersion": 1,
+      "endpointVersion": 1,
       "endpointId": 111,
       "oftSharedDecimals": 6
     },
@@ -5765,6 +5936,8 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x91d6d6aF7635B7b23A8CED9508117965180e2362",
+      "oftVersion": 1,
+      "endpointVersion": 1,
       "endpointId": 102,
       "oftSharedDecimals": 18
     },
@@ -5828,6 +6001,8 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x0Ae38f7E10A43B5b2fB064B42a2f4514cbA909ef",
+      "oftVersion": 1,
+      "endpointVersion": 1,
       "endpointId": 102,
       "oftSharedDecimals": 18
     },
@@ -5870,6 +6045,7 @@
       "isOFT": true,
       "oftAdapter": "0x25d887ce7a35172c62febfd67a1856f20faebb00",
       "oftVersion": 2,
+      "endpointVersion": 1,
       "endpointId": 101,
       "oftSharedDecimals": 4
     },
@@ -5900,6 +6076,8 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x25d887Ce7a35172C62FeBFD67a1856F20FaEbB00",
+      "oftVersion": 1,
+      "endpointVersion": 1,
       "endpointId": 102,
       "oftSharedDecimals": 4
     },
@@ -6009,6 +6187,7 @@
       "isOFT": true,
       "oftAdapter": "0x439a5f0f5e8d149dda9a0ca367d4a8e4d6f83c10",
       "oftVersion": 2,
+      "endpointVersion": 1,
       "endpointId": 101,
       "oftSharedDecimals": 8
     },
@@ -6051,6 +6230,7 @@
       "isOFT": true,
       "oftAdapter": "0x41d5a04b4e03dc27dc1f5c5a576ad2187bc601af",
       "oftVersion": 2,
+      "endpointVersion": 1,
       "endpointId": 102,
       "oftSharedDecimals": 8
     },
@@ -6093,6 +6273,7 @@
       "isOFT": true,
       "oftAdapter": "0xb3a66127ccb143bfb01d3aecd3ce9d17381b130d",
       "oftVersion": 2,
+      "endpointVersion": 1,
       "endpointId": 106,
       "oftSharedDecimals": 8
     },
@@ -6135,6 +6316,7 @@
       "isOFT": true,
       "oftAdapter": "0xca0d86afc25c57a6d2acdf331cabd4c9cee05533",
       "oftVersion": 2,
+      "endpointVersion": 1,
       "endpointId": 109,
       "oftSharedDecimals": 8
     },
@@ -6177,6 +6359,7 @@
       "isOFT": true,
       "oftAdapter": "0x48686c24697fe9042531b64d792304e514e74339",
       "oftVersion": 2,
+      "endpointVersion": 1,
       "endpointId": 111,
       "oftSharedDecimals": 8
     },
@@ -6219,6 +6402,7 @@
       "isOFT": true,
       "oftAdapter": "0x4035957323fc05ad9704230e3dc1e7663091d262",
       "oftVersion": 2,
+      "endpointVersion": 1,
       "endpointId": 184,
       "oftSharedDecimals": 8
     },
@@ -6355,6 +6539,8 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x0B7f0e51Cd1739D6C96982D55aD8fA634dd43A9C",
+      "oftVersion": 1,
+      "endpointVersion": 1,
       "endpointId": 101,
       "oftSharedDecimals": 6
     },
@@ -6395,6 +6581,8 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x7448c7456a97769F6cD04F1E83A4a23cCdC46aBD",
+      "oftVersion": 1,
+      "endpointVersion": 1,
       "endpointId": 101,
       "oftSharedDecimals": 18
     },
@@ -6428,6 +6616,8 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0xd691d9a68C887BDF34DA8c36f63487333ACfD103",
+      "oftVersion": 1,
+      "endpointVersion": 1,
       "endpointId": 102,
       "oftSharedDecimals": 18
     },
@@ -6461,6 +6651,8 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x64b88c73A5DfA78D1713fE1b4c69a22d7E0faAa7",
+      "oftVersion": 1,
+      "endpointVersion": 1,
       "endpointId": 184,
       "oftSharedDecimals": 18
     },
@@ -6492,6 +6684,8 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x193f4A4a6ea24102F49b931DEeeb931f6E32405d",
+      "oftVersion": 1,
+      "endpointVersion": 1,
       "endpointId": 101,
       "oftSharedDecimals": 4
     },
@@ -6523,6 +6717,8 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x193f4A4a6ea24102F49b931DEeeb931f6E32405d",
+      "oftVersion": 1,
+      "endpointVersion": 1,
       "endpointId": 102,
       "oftSharedDecimals": 4
     },
@@ -6553,6 +6749,8 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0xed667dC80a45b77305Cc395DB56D997597Dc6DdD",
+      "oftVersion": 1,
+      "endpointVersion": 1,
       "endpointId": 106,
       "oftSharedDecimals": 4
     },
@@ -6584,6 +6782,8 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x193f4A4a6ea24102F49b931DEeeb931f6E32405d",
+      "oftVersion": 1,
+      "endpointVersion": 1,
       "endpointId": 109,
       "oftSharedDecimals": 4
     },
@@ -6664,6 +6864,8 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x1B6e9c73beE68102d9dd4A2627f97bFf4183ab0A",
+      "oftVersion": 1,
+      "endpointVersion": 1,
       "endpointId": 101,
       "oftSharedDecimals": 18
     },
@@ -6694,6 +6896,8 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0xB7E2713CF55cf4b469B5a8421Ae6Fc0ED18F1467",
+      "oftVersion": 1,
+      "endpointVersion": 1,
       "endpointId": 102,
       "oftSharedDecimals": 18
     },
@@ -6748,6 +6952,8 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0xAfF41DA975501E5b71848C975834341777D1a473",
+      "oftVersion": 1,
+      "endpointVersion": 1,
       "endpointId": 109,
       "oftSharedDecimals": 18
     },
@@ -6781,6 +6987,7 @@
       "isOFT": true,
       "oftAdapter": "0xc31813c38b32c0f826c2dbf3360d5899740c9669",
       "oftVersion": 2,
+      "endpointVersion": 1,
       "endpointId": 101,
       "oftSharedDecimals": 8
     },
@@ -6811,6 +7018,8 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x336f374198c872Ba760e85af9c6331C3c5A535d3",
+      "oftVersion": 1,
+      "endpointVersion": 1,
       "endpointId": 102,
       "oftSharedDecimals": 8
     },
@@ -6841,6 +7050,8 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x110B25D2B21eE73eB401F3aE7833f7072912A0Bf",
+      "oftVersion": 1,
+      "endpointVersion": 1,
       "endpointId": 109,
       "oftSharedDecimals": 8
     },
@@ -6880,6 +7091,7 @@
       "isOFT": true,
       "oftAdapter": "0xb2e787c6c83d6d75f466371a2966b27a8b700828",
       "oftVersion": 2,
+      "endpointVersion": 1,
       "endpointId": 101,
       "oftSharedDecimals": 9
     },
@@ -6912,6 +7124,8 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0xB2E787C6C83D6d75f466371a2966b27a8b700828",
+      "oftVersion": 1,
+      "endpointVersion": 1,
       "endpointId": 102,
       "oftSharedDecimals": 9
     },
@@ -6944,6 +7158,8 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0xB2E787C6C83D6d75f466371a2966b27a8b700828",
+      "oftVersion": 1,
+      "endpointVersion": 1,
       "endpointId": 109,
       "oftSharedDecimals": 9
     },
@@ -7015,6 +7231,8 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x6f97D3F120fBbDaacF1c9da61a8aD126b7426861",
+      "oftVersion": 1,
+      "endpointVersion": 1,
       "endpointId": 106,
       "oftSharedDecimals": 18
     },
@@ -7063,6 +7281,7 @@
       "isOFT": true,
       "oftAdapter": "0xa0aa943666b4309c1989e3a7ebe7dbe11de36212",
       "oftVersion": 2,
+      "endpointVersion": 1,
       "endpointId": 101,
       "oftSharedDecimals": 8
     },
@@ -7099,6 +7318,8 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x9e20461bc2c4c980f62f1B279D71734207a6A356",
+      "oftVersion": 1,
+      "endpointVersion": 1,
       "endpointId": 102,
       "oftSharedDecimals": 8
     },
@@ -7135,6 +7356,8 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x9e20461bc2c4c980f62f1B279D71734207a6A356",
+      "oftVersion": 1,
+      "endpointVersion": 1,
       "endpointId": 109,
       "oftSharedDecimals": 8
     },
@@ -7171,6 +7394,8 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0xC48E605c7b722a57277e087a6170B9E227e5AC0A",
+      "oftVersion": 1,
+      "endpointVersion": 1,
       "endpointId": 184,
       "oftSharedDecimals": 8
     },
@@ -7213,6 +7438,7 @@
       "isOFT": true,
       "oftAdapter": "0x02b88b31492c19d9e3145934cdb63a8a9b5b4b10",
       "oftVersion": 2,
+      "endpointVersion": 1,
       "endpointId": 101,
       "oftSharedDecimals": 8
     },
@@ -7239,6 +7465,8 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0xa80221D067603e30060F75E2458AA361f8eE5402",
+      "oftVersion": 1,
+      "endpointVersion": 1,
       "endpointId": 102,
       "oftSharedDecimals": 8
     },
@@ -7266,6 +7494,7 @@
       "isOFT": true,
       "oftAdapter": "0x9ba0b9c177846e6e447a5293c0f687e18df9da08",
       "oftVersion": 2,
+      "endpointVersion": 1,
       "endpointId": 102,
       "oftSharedDecimals": 8
     },
@@ -7293,6 +7522,7 @@
       "isOFT": true,
       "oftAdapter": "0x8d279274789ccec8af94a430a5996eaace9609a9",
       "oftVersion": 2,
+      "endpointVersion": 1,
       "endpointId": 101,
       "oftSharedDecimals": 8
     },
@@ -7320,6 +7550,8 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x8D279274789CceC8af94a430A5996eAaCE9609A9",
+      "oftVersion": 1,
+      "endpointVersion": 1,
       "endpointId": 102,
       "oftSharedDecimals": 8
     },
@@ -7383,6 +7615,7 @@
       "isOFT": true,
       "oftAdapter": "0x58ff71c056942600bc4acf8bdf48f82e6ad1f392",
       "oftVersion": 2,
+      "endpointVersion": 1,
       "endpointId": 101,
       "oftSharedDecimals": 4
     },
@@ -7431,6 +7664,8 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x11cd72f7A4B699c67f225ca8aBb20bC9F8DB90c7",
+      "oftVersion": 1,
+      "endpointVersion": 1,
       "endpointId": 102,
       "oftSharedDecimals": 4
     },
@@ -7479,6 +7714,8 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x96E1056a8814De39c8c3Cd0176042d6ceCD807d7",
+      "oftVersion": 1,
+      "endpointVersion": 1,
       "endpointId": 106,
       "oftSharedDecimals": 4
     },
@@ -7527,6 +7764,8 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x11cd72f7A4B699c67f225ca8aBb20bC9F8DB90c7",
+      "oftVersion": 1,
+      "endpointVersion": 1,
       "endpointId": 109,
       "oftSharedDecimals": 4
     },
@@ -7575,6 +7814,8 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0xbFd5206962267c7b4b4A8B3D76AC2E1b2A5c4d5e",
+      "oftVersion": 1,
+      "endpointVersion": 1,
       "endpointId": 111,
       "oftSharedDecimals": 4
     },
@@ -7623,6 +7864,8 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0xbFd5206962267c7b4b4A8B3D76AC2E1b2A5c4d5e",
+      "oftVersion": 1,
+      "endpointVersion": 1,
       "endpointId": 184,
       "oftSharedDecimals": 4
     },
@@ -7651,6 +7894,8 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0xA2c2C937333165d4c5f2dC5f31a43E1239FeCfeB",
+      "oftVersion": 1,
+      "endpointVersion": 1,
       "endpointId": 101,
       "oftSharedDecimals": 8
     },
@@ -7681,6 +7926,7 @@
       "isOFT": true,
       "oftAdapter": "0x9c598da94c840147c9a1eabe1ae8df750674ddf6",
       "oftVersion": 2,
+      "endpointVersion": 1,
       "endpointId": 151,
       "oftSharedDecimals": 8
     },
@@ -7712,6 +7958,8 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0xe6828D65bf5023AE1851D90D8783Cc821ba7eeE1",
+      "oftVersion": 1,
+      "endpointVersion": 1,
       "endpointId": 101,
       "oftSharedDecimals": 8
     },
@@ -7745,6 +7993,7 @@
       "isOFT": true,
       "oftAdapter": "0xe6828d65bf5023ae1851d90d8783cc821ba7eee1",
       "oftVersion": 2,
+      "endpointVersion": 1,
       "endpointId": 102,
       "oftSharedDecimals": 8
     },
@@ -7775,6 +8024,8 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0xe6828D65bf5023AE1851D90D8783Cc821ba7eeE1",
+      "oftVersion": 1,
+      "endpointVersion": 1,
       "endpointId": 109,
       "oftSharedDecimals": 8
     },
@@ -7802,6 +8053,8 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0xcC6f1e1B87cfCbe9221808d2d85C501aab0B5192",
+      "oftVersion": 1,
+      "endpointVersion": 1,
       "endpointId": 101,
       "oftSharedDecimals": 8
     },
@@ -7829,6 +8082,8 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0xcC6f1e1B87cfCbe9221808d2d85C501aab0B5192",
+      "oftVersion": 1,
+      "endpointVersion": 1,
       "endpointId": 102,
       "oftSharedDecimals": 8
     },
@@ -8031,6 +8286,7 @@
       "isOFT": true,
       "oftAdapter": "0x8cfa44e930b7743123738eb2d7e78beaa964732e",
       "oftVersion": 2,
+      "endpointVersion": 1,
       "endpointId": 101,
       "oftSharedDecimals": 8
     },
@@ -8073,6 +8329,8 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x2b1D36f5B61AdDAf7DA7ebbd11B35FD8cfb0DE31",
+      "oftVersion": 1,
+      "endpointVersion": 1,
       "endpointId": 102,
       "oftSharedDecimals": 8
     },
@@ -8115,6 +8373,8 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x2b1D36f5B61AdDAf7DA7ebbd11B35FD8cfb0DE31",
+      "oftVersion": 1,
+      "endpointVersion": 1,
       "endpointId": 106,
       "oftSharedDecimals": 8
     },
@@ -8157,6 +8417,8 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x2b1D36f5B61AdDAf7DA7ebbd11B35FD8cfb0DE31",
+      "oftVersion": 1,
+      "endpointVersion": 1,
       "endpointId": 109,
       "oftSharedDecimals": 8
     },
@@ -8199,6 +8461,8 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x2b1D36f5B61AdDAf7DA7ebbd11B35FD8cfb0DE31",
+      "oftVersion": 1,
+      "endpointVersion": 1,
       "endpointId": 111,
       "oftSharedDecimals": 8
     },
@@ -8241,6 +8505,8 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x2b1D36f5B61AdDAf7DA7ebbd11B35FD8cfb0DE31",
+      "oftVersion": 1,
+      "endpointVersion": 1,
       "endpointId": 184,
       "oftSharedDecimals": 8
     },
@@ -8374,6 +8640,8 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0xf8173a39c56a554837C4C7f104153A005D284D11",
+      "oftVersion": 1,
+      "endpointVersion": 1,
       "endpointId": 101,
       "oftSharedDecimals": 8
     },
@@ -8407,6 +8675,7 @@
       "isOFT": true,
       "oftAdapter": "0x67fb304001ad03c282266b965b51e97aa54a2fab",
       "oftVersion": 2,
+      "endpointVersion": 1,
       "endpointId": 102,
       "oftSharedDecimals": 8
     },
@@ -8497,6 +8766,8 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0xba0Dda8762C24dA9487f5FA026a9B64b695A07Ea",
+      "oftVersion": 1,
+      "endpointVersion": 1,
       "endpointId": 102,
       "oftSharedDecimals": 18
     },
@@ -8536,6 +8807,8 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0xba0Dda8762C24dA9487f5FA026a9B64b695A07Ea",
+      "oftVersion": 1,
+      "endpointVersion": 1,
       "endpointId": 106,
       "oftSharedDecimals": 18
     },
@@ -8575,6 +8848,8 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0xba0Dda8762C24dA9487f5FA026a9B64b695A07Ea",
+      "oftVersion": 1,
+      "endpointVersion": 1,
       "endpointId": 109,
       "oftSharedDecimals": 18
     },
@@ -8614,6 +8889,8 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0xba0Dda8762C24dA9487f5FA026a9B64b695A07Ea",
+      "oftVersion": 1,
+      "endpointVersion": 1,
       "endpointId": 184,
       "oftSharedDecimals": 18
     },
@@ -8694,6 +8971,8 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x78a0A62Fba6Fb21A83FE8a3433d44C73a4017A6f",
+      "oftVersion": 1,
+      "endpointVersion": 1,
       "endpointId": 102,
       "oftSharedDecimals": 18
     },
@@ -8729,6 +9008,8 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x78a0A62Fba6Fb21A83FE8a3433d44C73a4017A6f",
+      "oftVersion": 1,
+      "endpointVersion": 1,
       "endpointId": 106,
       "oftSharedDecimals": 18
     },
@@ -8765,6 +9046,8 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x78a0A62Fba6Fb21A83FE8a3433d44C73a4017A6f",
+      "oftVersion": 1,
+      "endpointVersion": 1,
       "endpointId": 109,
       "oftSharedDecimals": 18
     },
@@ -9169,6 +9452,7 @@
       "isOFT": true,
       "oftAdapter": "0x1f1aa4d239002bb818536c95e9b762a1fc8484c1",
       "oftVersion": 2,
+      "endpointVersion": 1,
       "endpointId": 101,
       "oftSharedDecimals": 8
     },
@@ -9197,6 +9481,8 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x1F1aA4d239002bB818536c95E9b762a1FC8484C1",
+      "oftVersion": 1,
+      "endpointVersion": 1,
       "endpointId": 184,
       "oftSharedDecimals": 8
     },
@@ -9914,6 +10200,7 @@
       "isOFT": true,
       "oftAdapter": "0x1883af6b51fb7f69577880004a82c9d68582022c",
       "oftVersion": 2,
+      "endpointVersion": 1,
       "endpointId": 101,
       "oftSharedDecimals": 8
     },
@@ -9945,6 +10232,8 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x1883aF6b51fb7F69577880004a82c9d68582022C",
+      "oftVersion": 1,
+      "endpointVersion": 1,
       "endpointId": 184,
       "oftSharedDecimals": 8
     },
@@ -10160,6 +10449,7 @@
       "isOFT": true,
       "oftAdapter": "0x888e317606b4c590bbad88653863e8b345702633",
       "oftVersion": 2,
+      "endpointVersion": 1,
       "endpointId": 101,
       "oftSharedDecimals": 8
     },
@@ -10190,6 +10480,7 @@
       "isOFT": true,
       "oftAdapter": "0xf8f46791e3db29a029ec6c9d946226f3c613e854",
       "oftVersion": 2,
+      "endpointVersion": 1,
       "endpointId": 102,
       "oftSharedDecimals": 8
     },
@@ -11660,6 +11951,7 @@
       "isOFT": true,
       "oftAdapter": "0x395b362d87fe1b2bd801546314a172e05c87e362",
       "oftVersion": 2,
+      "endpointVersion": 1,
       "endpointId": 101,
       "oftSharedDecimals": 8
     },
@@ -11687,6 +11979,8 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0xB3a9bd4861454bA94931ebFF410c3D828525dCe2",
+      "oftVersion": 1,
+      "endpointVersion": 1,
       "endpointId": 184,
       "oftSharedDecimals": 8
     },
@@ -12049,6 +12343,7 @@
       "logoURI": "https://i.ibb.co/Ksp9CcT/Goggles.png",
       "tags": [],
       "extensions": {
+        "coingeckoId": "googles",
         "coinMarketCapId": 35320
       },
       "oftAdapter": "0x9fDbC3f8Abc05Fa8f3Ad3C17D2F806c1230c4564",
@@ -14123,7 +14418,9 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": false,
+      "oftVersion": 1,
+      "endpointVersion": 1
     },
     {
       "chainId": 43114,
@@ -14142,7 +14439,9 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": false,
+      "oftVersion": 1,
+      "endpointVersion": 1
     },
     {
       "chainId": 56,
@@ -14163,6 +14462,8 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x98e871ab1cc7e3073b6cc1b661be7ca678a33f7f",
+      "oftVersion": 1,
+      "endpointVersion": 1,
       "endpointId": 102
     },
     {
@@ -14182,7 +14483,9 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": false,
+      "oftVersion": 1,
+      "endpointVersion": 1
     },
     {
       "chainId": 56,
@@ -14201,7 +14504,9 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": false,
+      "oftVersion": 1,
+      "endpointVersion": 1
     },
     {
       "chainId": 1,
@@ -14221,7 +14526,9 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": false,
+      "oftVersion": 1,
+      "endpointVersion": 1
     },
     {
       "chainId": 1,
@@ -14252,7 +14559,9 @@
             "tokenAddress": "0xA970AF1a584579B618be4d69aD6F73459D112F95"
           }
         }
-      }
+      },
+      "oftVersion": 1,
+      "endpointVersion": 1
     },
     {
       "chainId": 1,
@@ -14283,7 +14592,9 @@
             "tokenAddress": "0x93b346b6BC2548dA6A1E7d98E9a421B42541425b"
           }
         }
-      }
+      },
+      "oftVersion": 1,
+      "endpointVersion": 1
     },
     {
       "chainId": 1,
@@ -14318,7 +14629,9 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": false,
+      "oftVersion": 1,
+      "endpointVersion": 1
     },
     {
       "chainId": 10,
@@ -14339,7 +14652,9 @@
             "tokenAddress": "0x853d955acef822db058eb8505911ed77f175b99e"
           }
         }
-      }
+      },
+      "oftVersion": 1,
+      "endpointVersion": 1
     },
     {
       "chainId": 10,
@@ -14360,7 +14675,9 @@
             "tokenAddress": "0x57ab1ec28d129707052df4df418d58a2d46d5f51"
           }
         }
-      }
+      },
+      "oftVersion": 1,
+      "endpointVersion": 1
     },
     {
       "chainId": 10,
@@ -14381,7 +14698,9 @@
             "tokenAddress": "0x5f98805a4e8be255a32880fdec7f6728c6568ba0"
           }
         }
-      }
+      },
+      "oftVersion": 1,
+      "endpointVersion": 1
     },
     {
       "chainId": 10,
@@ -14399,7 +14718,9 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": false,
+      "oftVersion": 1,
+      "endpointVersion": 1
     },
     {
       "chainId": 137,
@@ -14418,7 +14739,9 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": false,
+      "oftVersion": 1,
+      "endpointVersion": 1
     },
     {
       "chainId": 1,
@@ -31689,7 +32012,9 @@
         }
       },
       "isAcross": true,
-      "isOFT": false
+      "isOFT": false,
+      "oftVersion": 1,
+      "endpointVersion": 1
     },
     {
       "chainId": 42161,
@@ -31724,6 +32049,8 @@
       "isAcross": true,
       "isOFT": true,
       "oftAdapter": "0x1c3979c2bb4f0e6dcb75daf22ad0741cf7d5f160",
+      "oftVersion": 1,
+      "endpointVersion": 1,
       "endpointId": 110
     },
     {
@@ -31781,7 +32108,9 @@
         }
       },
       "isAcross": true,
-      "isOFT": false
+      "isOFT": false,
+      "oftVersion": 1,
+      "endpointVersion": 1
     },
     {
       "chainId": 42161,
@@ -31868,6 +32197,8 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0xa9004A5421372E1D83fB1f85b0fc986c912f91f3",
+      "oftVersion": 1,
+      "endpointVersion": 1,
       "endpointId": 110,
       "oftSharedDecimals": 6
     },
@@ -31925,6 +32256,8 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x6Db8b088c4d41d622B44CD81B900bA690f2d496C",
+      "oftVersion": 1,
+      "endpointVersion": 1,
       "endpointId": 110,
       "oftSharedDecimals": 8
     },
@@ -31957,6 +32290,8 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x4591DBfF62656E7859Afe5e45f6f47D3669fBB28",
+      "oftVersion": 1,
+      "endpointVersion": 1,
       "endpointId": 110,
       "oftSharedDecimals": 18
     },
@@ -31977,7 +32312,9 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": false,
+      "oftVersion": 1,
+      "endpointVersion": 1
     },
     {
       "chainId": 42161,
@@ -32026,6 +32363,7 @@
       "isOFT": true,
       "oftAdapter": "0x64f282290e8d0196c2929a9119250c361e025bab",
       "oftVersion": 2,
+      "endpointVersion": 1,
       "endpointId": 110,
       "oftSharedDecimals": 9
     },
@@ -32056,6 +32394,8 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x1b896893dfc86bb67Cf57767298b9073D2c1bA2c",
+      "oftVersion": 1,
+      "endpointVersion": 1,
       "endpointId": 110,
       "oftSharedDecimals": 8
     },
@@ -32122,6 +32462,8 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x560363BdA52BC6A44CA6C8c9B4a5FadbDa32fa60",
+      "oftVersion": 1,
+      "endpointVersion": 1,
       "endpointId": 110,
       "oftSharedDecimals": 18
     },
@@ -32149,6 +32491,8 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0xbc011A12Da28e8F0f528d9eE5E7039E22F91cf18",
+      "oftVersion": 1,
+      "endpointVersion": 1,
       "endpointId": 110,
       "oftSharedDecimals": 18
     },
@@ -32210,6 +32554,8 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x788D86E00ab31Db859C3d6b80d5a9375801d7f2A",
+      "oftVersion": 1,
+      "endpointVersion": 1,
       "endpointId": 110,
       "oftSharedDecimals": 6
     },
@@ -32244,6 +32590,8 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x982239D38Af50B0168dA33346d85Fb12929c4c07",
+      "oftVersion": 1,
+      "endpointVersion": 1,
       "endpointId": 110,
       "oftSharedDecimals": 18
     },
@@ -32283,6 +32631,8 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0xaf20f5f19698f1D19351028cd7103B63D30DE7d7",
+      "oftVersion": 1,
+      "endpointVersion": 1,
       "endpointId": 110,
       "oftSharedDecimals": 18
     },
@@ -32327,6 +32677,8 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0xD3FDCb837DAfdb7C9C3eBD48FE22a53F6Dd3d7D7",
+      "oftVersion": 1,
+      "endpointVersion": 1,
       "endpointId": 110,
       "oftSharedDecimals": 8
     },
@@ -32357,6 +32709,8 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x8b5e4C9a188b1A187f2D1E80b1c2fB17fA2922e1",
+      "oftVersion": 1,
+      "endpointVersion": 1,
       "endpointId": 110,
       "oftSharedDecimals": 6
     },
@@ -32387,6 +32741,8 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x371c7ec6D8039ff7933a2AA28EB827Ffe1F52f07",
+      "oftVersion": 1,
+      "endpointVersion": 1,
       "endpointId": 110,
       "oftSharedDecimals": 8
     },
@@ -32426,6 +32782,8 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x2297aEbD383787A160DD0d9F71508148769342E3",
+      "oftVersion": 1,
+      "endpointVersion": 1,
       "endpointId": 110,
       "oftSharedDecimals": 8
     },
@@ -32482,6 +32840,8 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x3082CC23568eA640225c2467653dB90e9250AaA0",
+      "oftVersion": 1,
+      "endpointVersion": 1,
       "endpointId": 110,
       "oftSharedDecimals": 8
     },
@@ -32521,6 +32881,8 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x9ed7E4B1BFF939ad473dA5E7a218C771D1569456",
+      "oftVersion": 1,
+      "endpointVersion": 1,
       "endpointId": 110,
       "oftSharedDecimals": 6
     },
@@ -32551,6 +32913,8 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x51A80238B5738725128d3a3e06Ab41c1d4C05C74",
+      "oftVersion": 1,
+      "endpointVersion": 1,
       "endpointId": 110,
       "oftSharedDecimals": 18
     },
@@ -32581,6 +32945,8 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x0Ae38f7E10A43B5b2fB064B42a2f4514cbA909ef",
+      "oftVersion": 1,
+      "endpointVersion": 1,
       "endpointId": 110,
       "oftSharedDecimals": 18
     },
@@ -32611,6 +32977,8 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x25d887Ce7a35172C62FeBFD67a1856F20FaEbB00",
+      "oftVersion": 1,
+      "endpointVersion": 1,
       "endpointId": 110,
       "oftSharedDecimals": 4
     },
@@ -32653,6 +33021,7 @@
       "isOFT": true,
       "oftAdapter": "0x957a8af7894e76e16db17c2a913496a4e60b7090",
       "oftVersion": 2,
+      "endpointVersion": 1,
       "endpointId": 110,
       "oftSharedDecimals": 8
     },
@@ -32721,6 +33090,7 @@
       "isOFT": true,
       "oftAdapter": "0xa9aa07f082d9c15d0b6d7e9e5b68b1f898399c29",
       "oftVersion": 2,
+      "endpointVersion": 1,
       "endpointId": 110,
       "oftSharedDecimals": 6
     },
@@ -32753,6 +33123,8 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x7448c7456a97769F6cD04F1E83A4a23cCdC46aBD",
+      "oftVersion": 1,
+      "endpointVersion": 1,
       "endpointId": 110,
       "oftSharedDecimals": 18
     },
@@ -32784,6 +33156,8 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x193f4A4a6ea24102F49b931DEeeb931f6E32405d",
+      "oftVersion": 1,
+      "endpointVersion": 1,
       "endpointId": 110,
       "oftSharedDecimals": 4
     },
@@ -32814,6 +33188,8 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x7Be5Dd337CC6cE3e474F64E2A92A566445290864",
+      "oftVersion": 1,
+      "endpointVersion": 1,
       "endpointId": 110,
       "oftSharedDecimals": 18
     },
@@ -32846,6 +33222,8 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0xB2E787C6C83D6d75f466371a2966b27a8b700828",
+      "oftVersion": 1,
+      "endpointVersion": 1,
       "endpointId": 110,
       "oftSharedDecimals": 9
     },
@@ -32882,6 +33260,8 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x9e20461bc2c4c980f62f1B279D71734207a6A356",
+      "oftVersion": 1,
+      "endpointVersion": 1,
       "endpointId": 110,
       "oftSharedDecimals": 8
     },
@@ -32909,6 +33289,8 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0xDCbf4CB83d27C408B30dD7F39bfcabD7176B1Ba3",
+      "oftVersion": 1,
+      "endpointVersion": 1,
       "endpointId": 110,
       "oftSharedDecimals": 8
     },
@@ -32957,6 +33339,8 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0xbFd5206962267c7b4b4A8B3D76AC2E1b2A5c4d5e",
+      "oftVersion": 1,
+      "endpointVersion": 1,
       "endpointId": 110,
       "oftSharedDecimals": 4
     },
@@ -33023,6 +33407,8 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x2b1D36f5B61AdDAf7DA7ebbd11B35FD8cfb0DE31",
+      "oftVersion": 1,
+      "endpointVersion": 1,
       "endpointId": 110,
       "oftSharedDecimals": 8
     },
@@ -33075,6 +33461,8 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0xf8173a39c56a554837C4C7f104153A005D284D11",
+      "oftVersion": 1,
+      "endpointVersion": 1,
       "endpointId": 110,
       "oftSharedDecimals": 8
     },
@@ -33114,6 +33502,8 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0xba0Dda8762C24dA9487f5FA026a9B64b695A07Ea",
+      "oftVersion": 1,
+      "endpointVersion": 1,
       "endpointId": 110,
       "oftSharedDecimals": 18
     },
@@ -33149,6 +33539,8 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x78a0A62Fba6Fb21A83FE8a3433d44C73a4017A6f",
+      "oftVersion": 1,
+      "endpointVersion": 1,
       "endpointId": 110,
       "oftSharedDecimals": 18
     },
@@ -33296,6 +33688,8 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x1883aF6b51fb7F69577880004a82c9d68582022C",
+      "oftVersion": 1,
+      "endpointVersion": 1,
       "endpointId": 110,
       "oftSharedDecimals": 8
     },
@@ -33373,6 +33767,7 @@
       "isOFT": true,
       "oftAdapter": "0x20cea49b5f7a6dbd78cae772ca5973ef360aa1e6",
       "oftVersion": 2,
+      "endpointVersion": 1,
       "endpointId": 110,
       "oftSharedDecimals": 8
     },
@@ -33845,7 +34240,9 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": false,
+      "oftVersion": 1,
+      "endpointVersion": 1
     },
     {
       "chainId": 42161,
@@ -33864,7 +34261,9 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": false,
+      "oftVersion": 1,
+      "endpointVersion": 1
     },
     {
       "chainId": 42161,
@@ -33883,7 +34282,9 @@
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": false,
+      "oftVersion": 1,
+      "endpointVersion": 1
     },
     {
       "chainId": 42161,
