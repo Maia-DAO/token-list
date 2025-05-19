@@ -85,7 +85,7 @@ async function main() {
             let callData;
             if (src.oftVersion === 3 || src.endpointVersion === 2) {
                 const sendParam = [
-                    src.endpointId,
+                    dst.endpointId,
                     ethers.zeroPadValue(dst.address, 32),
                     ethers.parseUnits('1', src.decimals),
                     ethers.parseUnits('0', src.decimals),
@@ -322,8 +322,33 @@ async function main() {
         if (bridgeInfo?.[selfChain]) delete bridgeInfo[selfChain];
         if (feeInfo?.[selfChain]) delete feeInfo[selfChain];
 
-        // If endpointVersion === 2 and there is no field for oftVersion we should populate it as version 3
-        if (!("oftVersion" in t) && t.endpointVersion === 2) t.oftVersion = 3;
+        // // If only 1 bridgeInfo we go check if that token has useful bridgeInfo since it may be main token
+        // if (bridgeInfo && Object.keys(bridgeInfo).length === 1) {
+        //     const [[bridgeChainIdStr, { tokenAddress }]] = Object.entries(bridgeInfo);
+        //     const bridgeChainId = parseInt(bridgeChainIdStr);
+
+        //     const mainToken = tokens.find(m => m.address.toLowerCase() === tokenAddress.toLowerCase() && m.chainId === bridgeChainId)
+
+        //     if (mainToken) {
+        //         const extraBridgeInfo = mainToken.extensions.bridgeInfo || undefined
+        //         if (extraBridgeInfo) {
+        //             bridgeInfo = { ...bridgeInfo, ...extraBridgeInfo }
+        //         }
+        //     }
+        // }
+
+        // // Make sure we haven't reintroduced self, remove self-references
+        // if (bridgeInfo?.[selfChain]) delete bridgeInfo[selfChain];
+
+        // Populate missing OFT fields
+        if (t.isOFT !== false) {
+            // If endpointVersion === 2 and there is no field for oftVersion we should populate it as version 3
+            if (!("oftVersion" in t) && t.endpointVersion === 2) t.oftVersion = 3;
+            // If oftVersion === 2 and there is no field for endpointVersion we should populate it as version 1
+            if (t.oftVersion === 2 && (!("endpointVersion" in t))) t.endpointVersion = 1;
+            // If there is no field for endpointVersion and oftVersion we should populate them as version 1
+            if (!("oftVersion" in t) && (!("endpointVersion" in t))) { t.oftVersion = 1; t.endpointVersion = 1; }
+        }
 
 
         // Update extensions
