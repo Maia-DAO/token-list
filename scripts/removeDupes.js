@@ -7,11 +7,11 @@ function mergeTokenData(existing, incoming) {
     const merged = {
         ...existing,
         ...incoming,
-        name: incoming.name,
-        symbol: incoming.symbol,
+        name: existing.name,
+        symbol: existing.symbol,
         isAcross: existing.isAcross || incoming.isAcross,
         isOFT: existing.isOFT || incoming.isOFT,
-        logoURI: incoming.logoURI || existing.logoURI,
+        logoURI: incoming.logoURI ?? existing.logoURI,
         extensions: mergeExtensions(existing.extensions, incoming.extensions)
     };
 
