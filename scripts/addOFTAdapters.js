@@ -69,7 +69,7 @@ async function main() {
             const isNative = tokenInfo.type === 'NativeOFT' || !Array.isArray(proxies) || proxies.length === 0;
             adapterAddress = isNative
                 ? address
-                : proxies[proxies.length - 1];
+                : proxies[proxies.length - 1]; // TODO: support multiple proxies (e.g. USDT / USDT0)
         }
 
         // lookup OApp info

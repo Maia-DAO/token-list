@@ -9,8 +9,9 @@
     "filter": "node scripts/filterStargateTokens.js && node scripts/filterAcrossTokens.js && node scripts/addOFTAdapters.js && node scripts/queryOFTFees.js",
     "merge": "node scripts/mergeActiveLists.js",
     "merge-others": "node scripts/mergeInactiveLists.js",
-    "all": "yarn fetch && yarn filter && yarn merge && yarn merge-others",
-    "dev": "yarn filter && yarn merge && yarn merge-others"
+    "removeDupes": "node scripts/removeDupes.js",
+    "all": "yarn fetch && yarn filter && yarn merge && yarn merge-others && yarn removeDupes",
+    "dev": "yarn filter && yarn merge && yarn merge-others && yarn removeDupes"
   },
   "dependencies": {
     "@across-protocol/constants": "^3.1.52",
