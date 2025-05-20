@@ -322,6 +322,8 @@ async function main() {
         if (bridgeInfo?.[selfChain]) delete bridgeInfo[selfChain];
         if (feeInfo?.[selfChain]) delete feeInfo[selfChain];
 
+        // TODO: Get peers dynamically from contracts instead of relying on layerzero metadata
+
         // // If only 1 bridgeInfo we go check if that token has useful bridgeInfo since it may be main token
         // if (bridgeInfo && Object.keys(bridgeInfo).length === 1) {
         //     const [[bridgeChainIdStr, { tokenAddress }]] = Object.entries(bridgeInfo);
@@ -354,6 +356,10 @@ async function main() {
         // Update extensions
         if (bridgeInfo) existingExt.bridgeInfo = bridgeInfo;
         if (t.isOFT !== false && feeInfo) existingExt.feeInfo = feeInfo;
+
+        // Fix for error in Layer Zero Metadata
+        if (t?.address === '0xFd086bC7CD5C481DCC9C85ebE478A1C0b69FCbb9' && t?.chainId === 42161) t.oftAdapter = '0x14E4A1B13bf7F943c8ff7C51fb60FA964A298D92'
+
 
         return {
             ...t,
