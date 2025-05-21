@@ -3,7 +3,7 @@ name: Scheduled Weekly Run
 on:
   schedule:
     # Runs at 11:00 PM UTC every Wednesday (midnight CEST)
-    - cron: '0 23 * * 3'
+    - cron: '0 23 1 * *'
   workflow_dispatch:
 
 env:
