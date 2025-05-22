@@ -1,8 +1,8 @@
 {
   "name": "Hermes Omnichain Inactive Token List",
-  "timestamp": "1747765762",
+  "timestamp": "1747925365",
   "version": {
-    "major": 1,
+    "major": 2,
     "minor": 0,
     "patch": 0
   },
@@ -4154,9 +4154,25 @@
       "chainId": 1,
       "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x6B175474E89094C44Da98b954EedeAC495271d0F/logo.png",
       "extensions": {
-        "coingeckoId": "usdb"
+        "bridgeInfo": {
+          "10": {
+            "tokenAddress": "0xDA10009cBd5D07dd0CeCc66161FC93D7c9000da1"
+          },
+          "56": {
+            "tokenAddress": "0x1AF3F329e8BE154074D8769D1FFa4eE058B1DBc3"
+          },
+          "137": {
+            "tokenAddress": "0x8f3Cf7ad23Cd3CaDbD9735AFf958023239c6A063"
+          },
+          "42161": {
+            "tokenAddress": "0xDA10009cBd5D07dd0CeCc66161FC93D7c9000da1"
+          },
+          "43114": {
+            "tokenAddress": "0xd586E7F844cEa2F87f50152665BCbc2C279D8d70"
+          }
+        }
       },
-      "isAcross": true,
+      "isAcross": false,
       "isOFT": false
     },
     {
@@ -10200,7 +10216,21 @@
       "decimals": 18,
       "logoURI": "https://assets.coingecko.com/coins/images/4713/thumb/matic-token-icon.png?1624446912",
       "extensions": {
-        "coingeckoId": "wmatic"
+        "coingeckoId": "wmatic",
+        "bridgeInfo": {
+          "56": {
+            "tokenAddress": "0xCC42724C6683B7E57334c4E856f4c9965ED682bD"
+          },
+          "130": {
+            "tokenAddress": "0xF6AC97B05B3bC92f829c7584b25839906507176b"
+          },
+          "137": {
+            "tokenAddress": "0x0000000000000000000000000000000000001010"
+          },
+          "42161": {
+            "tokenAddress": "0x561877b6b3DD7651313794e5F2894B2F18bE0766"
+          }
+        }
       },
       "isAcross": true,
       "isOFT": false
@@ -17819,9 +17849,25 @@
       "chainId": 1,
       "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48/logo.png",
       "extensions": {
-        "coingeckoId": "usd-coin-ethereum-bridged"
+        "bridgeInfo": {
+          "10": {
+            "tokenAddress": "0x7F5c764cBc14f9669B88837ca1490cCa17c31607"
+          },
+          "56": {
+            "tokenAddress": "0x8AC76a51cc950d9822D68b83fE1Ad97B32Cd580d"
+          },
+          "137": {
+            "tokenAddress": "0x2791Bca1f2de4661ED88A30C99A7a9449Aa84174"
+          },
+          "42161": {
+            "tokenAddress": "0xaf88d065e77c8cC2239327C5EDb3A432268e5831"
+          },
+          "43114": {
+            "tokenAddress": "0xB97EF9Ef8734C71904D8002F8b6Bc66Dd9c48a6E"
+          }
+        }
       },
-      "isAcross": true,
+      "isAcross": false,
       "isOFT": false
     },
     {
@@ -18507,9 +18553,28 @@
       "chainId": 1,
       "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2/logo.png",
       "extensions": {
-        "coingeckoId": "ethereum"
+        "bridgeInfo": {
+          "10": {
+            "tokenAddress": "0x4200000000000000000000000000000000000006"
+          },
+          "56": {
+            "tokenAddress": "0x2170Ed0880ac9A755fd29B2688956BD959F933F8"
+          },
+          "137": {
+            "tokenAddress": "0x7ceB23fD6bC0adD59E62ac25578270cFf1b9f619"
+          },
+          "42161": {
+            "tokenAddress": "0x82aF49447D8a07e3bd95BD0d56f35241523fBab1"
+          },
+          "42220": {
+            "tokenAddress": "0x2DEf4285787d58a2f811AF24755A8150622f4361"
+          },
+          "43114": {
+            "tokenAddress": "0x49D5c2BdFfac6CE2BFdB6640F4F80f226bc10bAB"
+          }
+        }
       },
-      "isAcross": true,
+      "isAcross": false,
       "isOFT": false
     },
     {
@@ -20235,9 +20300,13 @@
       "chainId": 10,
       "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2/logo.png",
       "extensions": {
-        "coingeckoId": "ethereum"
+        "bridgeInfo": {
+          "1": {
+            "tokenAddress": "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
+          }
+        }
       },
-      "isAcross": true,
+      "isAcross": false,
       "isOFT": false
     },
     {
@@ -22200,7 +22269,7 @@
         }
       },
       "isAcross": false,
-      "isOFT": true
+      "isOFT": false
     },
     {
       "chainId": 56,
@@ -23063,25 +23132,11 @@
         "bridgeInfo": {
           "1": {
             "tokenAddress": "0x9E32b13ce7f2E80A01932B42553652E053D6ed8e"
-          },
-          "1088": {
-            "tokenAddress": "0x0000000000000000000000000000000000000000"
-          }
-        },
-        "feeInfo": {
-          "1": {
-            "minDstGas": 200000
-          },
-          "1088": {
-            "minDstGas": 100000
-          },
-          "43114": {
-            "minDstGas": 100000
           }
         }
       },
       "isAcross": false,
-      "isOFT": true
+      "isOFT": false
     },
     {
       "chainId": 56,
@@ -29323,7 +29378,7 @@
         }
       },
       "isAcross": false,
-      "isOFT": true
+      "isOFT": false
     },
     {
       "chainId": 137,
@@ -31054,30 +31109,10 @@
           "1": {
             "tokenAddress": "0x99D8a9C45b2ecA8864373A26D1459e3Dff1e17F3"
           }
-        },
-        "feeInfo": {
-          "1": {
-            "minDstGas": 100000
-          },
-          "10": {
-            "minDstGas": 100000
-          },
-          "56": {
-            "minDstGas": 100000
-          },
-          "8453": {
-            "minDstGas": 100000
-          },
-          "42161": {
-            "minDstGas": 100000
-          },
-          "43114": {
-            "minDstGas": 100000
-          }
         }
       },
       "isAcross": false,
-      "isOFT": true
+      "isOFT": false
     },
     {
       "chainId": 137,
@@ -42952,7 +42987,7 @@
         }
       },
       "isAcross": false,
-      "isOFT": true
+      "isOFT": false
     },
     {
       "chainId": 43114,
@@ -43551,7 +43586,7 @@
         }
       },
       "isAcross": false,
-      "isOFT": true
+      "isOFT": false
     },
     {
       "name": "Wrapped Ether",
@@ -43578,6 +43613,7 @@
       "address": "0xaBC9547B534519fF73921b1FBA6E672b5f58D083",
       "decimals": 18,
       "extensions": {
+        "coingeckoId": "woo-network",
         "bridgeInfo": {
           "1": {
             "tokenAddress": "0x4691937a7508860F876c9c0a2a617E7d9E945D4B"
