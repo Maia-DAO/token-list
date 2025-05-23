@@ -1,8 +1,8 @@
 {
   "name": "Hermes Omnichain Token List",
-  "timestamp": "1747925305",
+  "timestamp": "1748020065",
   "version": {
-    "major": 52,
+    "major": 53,
     "minor": 0,
     "patch": 0
   },
@@ -31515,6 +31515,66 @@
       "isOFT": false
     },
     {
+      "chainId": 11155111,
+      "address": "0x6f79350e44a35225870e5fddf55b17574fd77d1a",
+      "name": "USDCoin",
+      "symbol": "USDC",
+      "decimals": 6,
+      "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48/logo.png",
+      "isAcross": false,
+      "isOFT": false
+    },
+    {
+      "chainId": 11155111,
+      "address": "0x9FEf309890e0501cB2231a0Dc429CB06C68419a2",
+      "name": "Dai Stablecoin",
+      "symbol": "DAI",
+      "decimals": 18,
+      "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x6B175474E89094C44Da98b954EedeAC495271d0F/logo.png",
+      "isAcross": false,
+      "isOFT": false
+    },
+    {
+      "chainId": 11155111,
+      "address": "0x4179710a60F578ca2b2b219B1c3ea8b2891D88E7",
+      "name": "USD Tether",
+      "symbol": "USDT",
+      "decimals": 6,
+      "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xdAC17F958D2ee523a2206206994597C13D831ec7/logo.png",
+      "isAcross": false,
+      "isOFT": false
+    },
+    {
+      "chainId": 11155111,
+      "address": "0x3f3A23BE22926fDd261A8AFA480EEE667A1Adf69",
+      "name": "Wrapped Ulysses Dai",
+      "symbol": "WuDAI",
+      "decimals": 18,
+      "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x6B175474E89094C44Da98b954EedeAC495271d0F/logo.png",
+      "isAcross": false,
+      "isOFT": false
+    },
+    {
+      "chainId": 11155111,
+      "address": "0x4fA0d00564D940bF7e9198bFb61a0EDdb0D6bE82",
+      "name": "Wrapped Ulysses USDC",
+      "symbol": "WuUSDC",
+      "decimals": 18,
+      "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48/logo.png",
+      "isAcross": false,
+      "isOFT": false
+    },
+    {
+      "chainId": 11155111,
+      "address": "0x57712Be38A547274182C5A6b15bf2025a63717b8",
+      "name": "Wrapped Ulysses USDT",
+      "symbol": "WuUSDT",
+      "decimals": 18,
+      "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xdAC17F958D2ee523a2206206994597C13D831ec7/logo.png",
+      "isAcross": false,
+      "isOFT": false
+    },
+    {
       "chainId": 42161,
       "globalAddress": "0x45940000009600102A1c002F0097C4A500fa00AB",
       "underlyingAddress": "0x45940000009600102A1c002F0097C4A500fa00AB",
@@ -32310,7 +32370,7 @@
     {
       "chainId": 42161,
       "address": "0xFd086bC7CD5C481DCC9C85ebE478A1C0b69FCbb9",
-      "name": "Tether USD",
+      "name": "USD Tether",
       "symbol": "USDT",
       "decimals": 6,
       "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xdAC17F958D2ee523a2206206994597C13D831ec7/logo.png",
@@ -33201,10 +33261,10 @@
     {
       "chainId": 42161,
       "address": "0xFEa7a6a0B346362BF88A9e4A88416B77a57D6c2A",
-      "name": "MIM",
-      "decimals": 18,
+      "name": "Magic Internet Money",
       "symbol": "MIM",
-      "logoURI": "https://s2.coinmarketcap.com/static/img/coins/128x128/162.png",
+      "decimals": 18,
+      "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/refs/heads/master/blockchains/arbitrum/assets/0xFEa7a6a0B346362BF88A9e4A88416B77a57D6c2A/logo.png",
       "tags": [],
       "extensions": {
         "bridgeInfo": {
@@ -34483,11 +34543,11 @@
     },
     {
       "chainId": 42161,
-      "address": "0x17FC002b466eEc40DaE837Fc4bE5c67993ddBd6F",
+      "address": "0x17fc002b466eec40dae837fc4be5c67993ddbd6f",
       "name": "Frax",
-      "decimals": 18,
       "symbol": "FRAX",
-      "logoURI": "https://s2.coinmarketcap.com/static/img/coins/128x128/6952.png",
+      "decimals": 18,
+      "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/refs/heads/master/blockchains/ethereum/assets/0x853d955aCEf822Db058eb8505911ED77F175b99e/logo.png",
       "tags": [],
       "extensions": {
         "coingeckoId": "frax",
@@ -36935,12 +36995,12 @@
       "isOFT": false
     },
     {
-      "name": "Synth sUSD",
+      "chainId": 42161,
       "address": "0xA970AF1a584579B618be4d69aD6F73459D112F95",
+      "name": "Synth sUSD",
       "symbol": "sUSD",
       "decimals": 18,
-      "chainId": 42161,
-      "logoURI": "https://assets.coingecko.com/coins/images/5013/thumb/sUSD.png?1616150765",
+      "logoURI": "https://assets.coingecko.com/coins/images/5013/standard/sUSD.png?1696505546",
       "extensions": {
         "bridgeInfo": {
           "1": {
@@ -37237,6 +37297,196 @@
           }
         }
       },
+      "isAcross": false,
+      "isOFT": false
+    },
+    {
+      "chainId": 42161,
+      "address": "0xc6e54f2a194D8f08DFD5a19D012D5A80A1Cc9395",
+      "name": "Wrapped Ulysses Optimism Stack USDC",
+      "symbol": "WuOPs-USDC",
+      "decimals": 18,
+      "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48/logo.png",
+      "isAcross": false,
+      "isOFT": false
+    },
+    {
+      "chainId": 42161,
+      "address": "0x3e926849b99dfCCEA2D1527d86f1ce6102ab11e8",
+      "name": "Wrapped Ulysses Optimism Stack ETH",
+      "symbol": "WuOPs-ETH",
+      "decimals": 18,
+      "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/c6108b1a2708c01a8c637b80e0f69e77085d4174/blockchains/ethereum/assets/0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2/logo.png",
+      "isAcross": false,
+      "isOFT": false
+    },
+    {
+      "chainId": 42161,
+      "address": "0x984CcfafE1426342D24258a72E2dbEBa1660A386",
+      "name": "Wrapped Ulysses Alt L1 USDC",
+      "symbol": "WuL1s-USDC",
+      "decimals": 18,
+      "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48/logo.png",
+      "isAcross": false,
+      "isOFT": false
+    },
+    {
+      "chainId": 42161,
+      "address": "0x12c9aBDf9493ab84ccDBbBBEF885753f42f59c42",
+      "name": "Wrapped Ulysses Alt L1 USDT",
+      "symbol": "WuL1s-USDT",
+      "decimals": 18,
+      "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xdAC17F958D2ee523a2206206994597C13D831ec7/logo.png",
+      "isAcross": false,
+      "isOFT": false
+    },
+    {
+      "chainId": 42161,
+      "address": "0xAcDd57300F214E2530Db0F5283036686BB85d67c",
+      "name": "Ulysses Optimism Stack USDC",
+      "symbol": "uOPs-USDC",
+      "decimals": 18,
+      "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xba100000625a3754423978a60c9317c58a424e3D/logo.png",
+      "isAcross": false,
+      "isOFT": false
+    },
+    {
+      "chainId": 42161,
+      "address": "0x9eCf98B64986277d53E8c8dBfA1B48b1d4A3df75",
+      "name": "Ulysses Optimism Stack ETH",
+      "symbol": "uOPs-ETH",
+      "decimals": 18,
+      "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xba100000625a3754423978a60c9317c58a424e3D/logo.png",
+      "isAcross": false,
+      "isOFT": false
+    },
+    {
+      "chainId": 42161,
+      "address": "0x72dF281E860117dBf60400D7C5EA770D2379072C",
+      "name": "Ulysses Alt L1 USDC",
+      "symbol": "uL1s-USDC",
+      "decimals": 18,
+      "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xba100000625a3754423978a60c9317c58a424e3D/logo.png",
+      "isAcross": false,
+      "isOFT": false
+    },
+    {
+      "chainId": 42161,
+      "address": "0xF4D4D470C8BA20Ff97fdafc2dFa0e744a8d90467",
+      "name": "Ulysses Alt L1 USDT",
+      "symbol": "uL1s-USDT",
+      "decimals": 18,
+      "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xba100000625a3754423978a60c9317c58a424e3D/logo.png",
+      "isAcross": false,
+      "isOFT": false
+    },
+    {
+      "chainId": 42161,
+      "address": "0x7189fb5B6504bbfF6a852B13B7B82a3c118fDc27",
+      "name": "ether.fi governance token",
+      "symbol": "ETHFI",
+      "decimals": 18,
+      "logoURI": "https://assets.coingecko.com/coins/images/35958/standard/etherfi.jpeg",
+      "isAcross": false,
+      "isOFT": false
+    },
+    {
+      "chainId": 42161,
+      "address": "0x35751007a407ca6FEFfE80b3cB397736D2cf4dbe",
+      "name": "Wrapped eETH",
+      "symbol": "weETH",
+      "decimals": 18,
+      "logoURI": "https://coin-images.coingecko.com/coins/images/33033/large/weETH.png",
+      "isAcross": false,
+      "isOFT": false
+    },
+    {
+      "chainId": 42161,
+      "address": "0x5979D7b546E38E414F7E9822514be443A4800529",
+      "name": "Wrapped liquid staked Ether 2.0",
+      "symbol": "wstETH",
+      "decimals": 18,
+      "logoURI": "https://assets.coingecko.com/coins/images/18834/standard/wstETH.png?1696518295",
+      "isAcross": false,
+      "isOFT": false
+    },
+    {
+      "chainId": 42161,
+      "address": "0x13A7DeDb7169a17bE92B0E3C7C2315B46f4772B3",
+      "name": "Boop",
+      "symbol": "Boop",
+      "decimals": 18,
+      "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/refs/heads/master/blockchains/arbitrum/assets/0x13A7DeDb7169a17bE92B0E3C7C2315B46f4772B3/logo.png",
+      "isAcross": false,
+      "isOFT": false
+    },
+    {
+      "chainId": 42161,
+      "address": "0xd8E9e0Ed6F6782CbfEE67A1c25C5E514901f4d89",
+      "name": "AraFi",
+      "symbol": "ARA",
+      "decimals": 18,
+      "logoURI": "https://raw.githubusercontent.com/AraFiEco/mediapack/main/AraFi_tokenlogo_C_150x150px.svg",
+      "isAcross": false,
+      "isOFT": false
+    },
+    {
+      "chainId": 42161,
+      "address": "0xd5Bf08e15A795De5092C20dFe346BC7B5Dffa972",
+      "name": "Ara wrapped Hermes",
+      "symbol": "aHERMES",
+      "decimals": 18,
+      "logoURI": "https://raw.githubusercontent.com/AraFiEco/mediapack/main/aHermes.svg",
+      "isAcross": false,
+      "isOFT": false
+    },
+    {
+      "chainId": 42161,
+      "address": "0x25aC1fE9F1c7f043969F1F912bE0506db4C2e52B",
+      "name": "Ara wrapped Maia",
+      "symbol": "aMAIA",
+      "decimals": 18,
+      "logoURI": "https://raw.githubusercontent.com/AraFiEco/mediapack/main/aMaia.svg",
+      "isAcross": false,
+      "isOFT": false
+    },
+    {
+      "chainId": 42161,
+      "address": "0x178412e79c25968a32e89b11f63B33F733770c2A",
+      "name": "Frax Ether",
+      "symbol": "frxETH",
+      "decimals": 18,
+      "logoURI": "https://fraxscan.com/token/images/frxeth_64.png",
+      "isAcross": false,
+      "isOFT": false
+    },
+    {
+      "chainId": 42161,
+      "address": "0x95aB45875cFFdba1E5f451B950bC2E42c0053f39",
+      "name": "Staked Frax Ether",
+      "symbol": "sfrxETH",
+      "decimals": 18,
+      "logoURI": "https://assets.coingecko.com/coins/images/28285/standard/sfrxETH_icon.png?1696527285",
+      "isAcross": false,
+      "isOFT": false
+    },
+    {
+      "chainId": 42161,
+      "address": "0x7dff72693f6a4149b17e7c6314655f6a9f7c8b33",
+      "name": "Gho Token",
+      "symbol": "GHO",
+      "decimals": 18,
+      "logoURI": "https://assets.coingecko.com/coins/images/30663/standard/gho-token-logo.png?1720517092",
+      "isAcross": false,
+      "isOFT": false
+    },
+    {
+      "chainId": 42161,
+      "address": "0x28d5116b52eF0668Aa75cAF51f79840999DcCDdd",
+      "name": "AUSD Token",
+      "symbol": "AUSD",
+      "decimals": 18,
+      "logoURI": "https://assets.coingecko.com/coins/images/39146/standard/rsz_64036a48422e3abd31bca6b2_agio-logo-a_1-p-1080.png?1720766707",
       "isAcross": false,
       "isOFT": false
     }

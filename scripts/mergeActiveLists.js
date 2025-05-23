@@ -252,7 +252,7 @@ async function main() {
                 if (!token.logoURI) return
                 if (token.chainId === 42161) {
                     // Merge into rootTokensMap.
-                    const rootKey = token.symbol.toUpperCase();
+                    const rootKey = token.address.toLowerCase();
                     if (!rootTokensMap[rootKey]) {
                         rootTokensMap[rootKey] = token;
                     } else {
@@ -261,7 +261,7 @@ async function main() {
                     }
                 } else {
                     // Merge into normalizedMap.
-                    const key = token.symbol.toUpperCase() + "_" + token.chainId;
+                    const key = token.address.toLowerCase() + "_" + token.chainId;
                     if (!normalizedMap[key]) {
                         normalizedMap[key] = token;
                     } else {
@@ -277,14 +277,14 @@ async function main() {
             normalizedArray.forEach(token => {
                 if (!token.logoURI) return
                 if (token.chainId === 42161) {
-                    const rootKey = token.symbol.toUpperCase();
+                    const rootKey = token.address.toLowerCase();
                     if (!rootTokensMap[rootKey]) {
                         rootTokensMap[rootKey] = token;
                     } else {
                         rootTokensMap[rootKey] = mergeTokenData(rootTokensMap[rootKey], token);
                     }
                 } else {
-                    const key = token.symbol.toUpperCase() + "_" + token.chainId;
+                    const key = token.address.toLowerCase() + "_" + token.chainId;
                     if (!normalizedMap[key]) {
                         normalizedMap[key] = token;
                     } else {
@@ -295,15 +295,15 @@ async function main() {
         });
 
 
-        // 2. Incorporate Uniswap tokens (Format B).
-        if (Array.isArray(uniswapTokens)) {
-            uniswapTokens.forEach(token => {
+        // 2. Incorporate Uniswap tokens and Ulysses Root Tokens.
+        if (Array.isArray(uniswapTokens) && ulyssesData.rootTokens && Array.isArray(ulyssesData.rootTokens)) {
+            uniswapTokens.concat(ulyssesData.rootTokens).forEach(token => {
                 if (!token.logoURI) return
                 // Default flags if undefined.
                 if (typeof token.isAcross === 'undefined') token.isAcross = false;
                 if (typeof token.isOFT === 'undefined') token.isOFT = false;
                 if (token.chainId === 42161) {
-                    const rootKey = token.symbol.toUpperCase();
+                    const rootKey = token.address.toLowerCase();
                     if (rootTokensMap[rootKey]) {
                         const existing = rootTokensMap[rootKey];
                         rootTokensMap[rootKey] = mergeTokenData(existing, token);
@@ -311,7 +311,7 @@ async function main() {
                         rootTokensMap[rootKey] = token;
                     }
                 } else {
-                    const key = token.symbol.toUpperCase() + "_" + token.chainId;
+                    const key = token.address.toLowerCase() + "_" + token.chainId;
                     if (normalizedMap[key]) {
                         const existing = normalizedMap[key];
                         normalizedMap[key] = mergeTokenData(existing, token);
@@ -322,11 +322,11 @@ async function main() {
             });
         }
 
-        // 3. Incorporate Ulysses tokens (Format B).
+        // 3. Incorporate Ulysses tokens.
         if (ulyssesData.tokens && Array.isArray(ulyssesData.tokens)) {
             ulyssesData.tokens.forEach(token => {
                 if (!token.logoURI) return
-                const key = token.symbol.toUpperCase() + "_" + token.chainId;
+                const key = token.underlyingAddress.toLowerCase() + "_" + token.chainId;
                 if (normalizedMap[key]) {
                     const existing = normalizedMap[key];
                     normalizedMap[key] = mergeTokenDataUlysses(existing, token);
