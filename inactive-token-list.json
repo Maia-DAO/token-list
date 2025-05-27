@@ -1,6 +1,6 @@
 {
   "name": "Hermes Omnichain Inactive Token List",
-  "timestamp": "1748020125",
+  "timestamp": "1748369262",
   "version": {
     "major": 1,
     "minor": 0,
@@ -871,6 +871,11 @@
       "decimals": 18,
       "logoURI": "https://assets.coingecko.com/coins/images/24383/small/apecoin.jpg?1647476455",
       "extensions": {
+        "peersInfo": {
+          "42161": {
+            "tokenAddress": "0x7f9fbf9bdd3f4105c478b996b648fe6e828a1e98"
+          }
+        },
         "bridgeInfo": {
           "130": {
             "tokenAddress": "0xD1b8423FdE5F37464FadE603f80903cB314046cf"
@@ -1579,14 +1584,50 @@
             "tokenAddress": "0x040d1EdC9569d4Bab2D15287Dc5A4F10F56a56B8"
           },
           "43114": {
-            "tokenAddress": "0xE15bCB9E0EA69e6aB9FA080c4c4A5632896298C3"
+            "tokenAddress": "0xe15bcb9e0ea69e6ab9fa080c4c4a5632896298c3"
+          }
+        },
+        "peersInfo": {
+          "10": {
+            "tokenAddress": "0xe241c6e48ca045c7f631600a0f1403b2bfea05ad"
+          },
+          "56": {
+            "tokenAddress": "0xcf6bb5389c92bdda8a3747ddb454cb7a64626c63"
+          },
+          "137": {
+            "tokenAddress": "0xe241c6e48ca045c7f631600a0f1403b2bfea05ad"
+          },
+          "8453": {
+            "tokenAddress": "0xe241c6e48ca045c7f631600a0f1403b2bfea05ad"
+          },
+          "42161": {
+            "tokenAddress": "0xe241c6e48ca045c7f631600a0f1403b2bfea05ad"
+          },
+          "43114": {
+            "tokenAddress": "0xe15bcb9e0ea69e6ab9fa080c4c4a5632896298c3"
           }
         },
         "feeInfo": {
+          "10": {
+            "minDstGas": 200000
+          },
+          "56": {
+            "minDstGas": 200000
+          },
+          "137": {
+            "minDstGas": 200000
+          },
+          "8453": {
+            "minDstGas": 200000
+          },
+          "42161": {
+            "minDstGas": 2000000
+          },
           "43114": {
-            "minDstGas": 100000
+            "minDstGas": 200000
           }
-        }
+        },
+        "coinMarketCapId": 5728
       },
       "isAcross": true,
       "isOFT": true
@@ -1904,7 +1945,12 @@
       "extensions": {
         "bridgeInfo": {
           "56": {
-            "tokenAddress": "0x2A73F85024f101F3FAC9FbCBcE60707B6b3A6203"
+            "tokenAddress": "0x2a73f85024f101f3fac9fbcbce60707b6b3a6203"
+          }
+        },
+        "peersInfo": {
+          "56": {
+            "tokenAddress": "0x2a73f85024f101f3fac9fbcbce60707b6b3a6203"
           }
         }
       },
@@ -3021,7 +3067,12 @@
       "extensions": {
         "bridgeInfo": {
           "8453": {
-            "tokenAddress": "0x9886447Ff4c350f4600E4BF95Db756Bdc629b1cA"
+            "tokenAddress": "0x9886447ff4c350f4600e4bf95db756bdc629b1ca"
+          }
+        },
+        "peersInfo": {
+          "8453": {
+            "tokenAddress": "0x9886447ff4c350f4600e4bf95db756bdc629b1ca"
           }
         }
       },
@@ -3794,6 +3845,24 @@
       "chainId": 1,
       "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xD533a949740bb3306d119CC777fa900bA034cd52/logo.png",
       "extensions": {
+        "coingeckoId": "curve-dao-token",
+        "coinMarketCapId": 6538,
+        "peersInfo": {
+          "56": {
+            "tokenAddress": "0xcf6bb5389c92bdda8a3747ddb454cb7a64626c63"
+          },
+          "42161": {
+            "tokenAddress": "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8"
+          }
+        },
+        "feeInfo": {
+          "56": {
+            "minDstGas": 200000
+          },
+          "42161": {
+            "minDstGas": 2000000
+          }
+        },
         "bridgeInfo": {
           "130": {
             "tokenAddress": "0xAC73671a1762FE835208Fb93b7aE7490d1c2cCb3"
@@ -5934,25 +6003,51 @@
       "extensions": {
         "bridgeInfo": {
           "56": {
-            "tokenAddress": "0x2117E8b79e8E176A670c9fCf945d4348556bfFad"
+            "tokenAddress": "0x2117e8b79e8e176a670c9fcf945d4348556bffad"
           },
           "130": {
             "tokenAddress": "0x6319F47719b6713b1624C1b3A8e2DBf15b5D03FE"
           },
           "146": {
-            "tokenAddress": "0x8e15C8D399e86d4FD7B427D42f06c60cDD9397e7"
+            "tokenAddress": "0x8e15c8d399e86d4fd7b427d42f06c60cdd9397e7"
           },
           "8453": {
-            "tokenAddress": "0xa153Ad732F831a79b5575Fa02e793EC4E99181b0"
+            "tokenAddress": "0xa153ad732f831a79b5575fa02e793ec4e99181b0"
           },
           "42161": {
-            "tokenAddress": "0x462cD9E0247b2e63831c3189aE738E5E9a5a4b64"
+            "tokenAddress": "0x462cd9e0247b2e63831c3189ae738e5e9a5a4b64"
           },
           "43114": {
-            "tokenAddress": "0x9ceeD3A7f753608372eeAb300486cc7c2F38AC68"
+            "tokenAddress": "0x9ceed3a7f753608372eeab300486cc7c2f38ac68"
           },
           "80094": {
-            "tokenAddress": "0xEb9b5f4EB023aE754fF59A04c9C038D58606DAC6"
+            "tokenAddress": "0xeb9b5f4eb023ae754ff59a04c9c038d58606dac6"
+          }
+        },
+        "peersInfo": {
+          "10": {
+            "tokenAddress": "0xf932863e538af568df9c79da379fd8ffd8525342"
+          },
+          "56": {
+            "tokenAddress": "0x2117e8b79e8e176a670c9fcf945d4348556bffad"
+          },
+          "137": {
+            "tokenAddress": "0x357727718d2a9ce83b877f503f56ded39719dcb9"
+          },
+          "146": {
+            "tokenAddress": "0x8e15c8d399e86d4fd7b427d42f06c60cdd9397e7"
+          },
+          "8453": {
+            "tokenAddress": "0xa153ad732f831a79b5575fa02e793ec4e99181b0"
+          },
+          "42161": {
+            "tokenAddress": "0x462cd9e0247b2e63831c3189ae738e5e9a5a4b64"
+          },
+          "43114": {
+            "tokenAddress": "0x9ceed3a7f753608372eeab300486cc7c2f38ac68"
+          },
+          "80094": {
+            "tokenAddress": "0xeb9b5f4eb023ae754ff59a04c9c038d58606dac6"
           }
         }
       },
@@ -6093,7 +6188,12 @@
       "extensions": {
         "bridgeInfo": {
           "42161": {
-            "tokenAddress": "0xaB24c63bee518Ac956c8123389fc538c7e36d82C"
+            "tokenAddress": "0xab24c63bee518ac956c8123389fc538c7e36d82c"
+          }
+        },
+        "peersInfo": {
+          "42161": {
+            "tokenAddress": "0xab24c63bee518ac956c8123389fc538c7e36d82c"
           }
         }
       },
@@ -6938,7 +7038,7 @@
       "extensions": {
         "bridgeInfo": {
           "10": {
-            "tokenAddress": "0x64445f0aecC51E94aD52d8AC56b7190e764E561a"
+            "tokenAddress": "0x64445f0aecc51e94ad52d8ac56b7190e764e561a"
           },
           "56": {
             "tokenAddress": "0xe48A3d7d0Bc88d552f730B62c006bC925eadB9eE"
@@ -6950,13 +7050,13 @@
             "tokenAddress": "0x3e121107F6F22DA4911079845a470757aF4e1A1b"
           },
           "146": {
-            "tokenAddress": "0x64445f0aecC51E94aD52d8AC56b7190e764E561a"
+            "tokenAddress": "0x64445f0aecc51e94ad52d8ac56b7190e764e561a"
           },
           "1088": {
-            "tokenAddress": "0x23432452B720C80553458496D4D9d7C5003280d0"
+            "tokenAddress": "0x23432452b720c80553458496d4d9d7c5003280d0"
           },
           "8453": {
-            "tokenAddress": "0x23432452B720C80553458496D4D9d7C5003280d0"
+            "tokenAddress": "0x0ceac003b0d2479bebec9f4b2ebad0a803759bbf"
           },
           "42161": {
             "tokenAddress": "0xd9f9d2Ee2d3EFE420699079f16D9e924affFdEA4"
@@ -6964,7 +7064,67 @@
           "43114": {
             "tokenAddress": "0x214DB107654fF987AD859F34125307783fC8e387"
           }
-        }
+        },
+        "peersInfo": {
+          "10": {
+            "tokenAddress": "0x43edd7f3831b08fe70b7555ddd373c8bf65a9050"
+          },
+          "56": {
+            "tokenAddress": "0xcf6bb5389c92bdda8a3747ddb454cb7a64626c63"
+          },
+          "137": {
+            "tokenAddress": "0x43edd7f3831b08fe70b7555ddd373c8bf65a9050"
+          },
+          "146": {
+            "tokenAddress": "0x43edd7f3831b08fe70b7555ddd373c8bf65a9050"
+          },
+          "1088": {
+            "tokenAddress": "0x1f55a02a049033e3419a8e2975cf3f572f4e6e9a"
+          },
+          "8453": {
+            "tokenAddress": "0xf010a7c8877043681d59ad125ebf575633505942"
+          },
+          "42161": {
+            "tokenAddress": "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8"
+          },
+          "43114": {
+            "tokenAddress": "0x43edd7f3831b08fe70b7555ddd373c8bf65a9050"
+          },
+          "80094": {
+            "tokenAddress": "0x80eede496655fb9047dd39d9f418d5483ed600df"
+          }
+        },
+        "feeInfo": {
+          "10": {
+            "minDstGas": 200000
+          },
+          "56": {
+            "minDstGas": 200000
+          },
+          "137": {
+            "minDstGas": 200000
+          },
+          "146": {
+            "minDstGas": 200000
+          },
+          "1088": {
+            "minDstGas": 200000
+          },
+          "8453": {
+            "minDstGas": 200000
+          },
+          "42161": {
+            "minDstGas": 2000000
+          },
+          "43114": {
+            "minDstGas": 200000
+          },
+          "80094": {
+            "minDstGas": 200000
+          }
+        },
+        "coingeckoId": "frax-share",
+        "coinMarketCapId": 6953
       },
       "isAcross": false,
       "isOFT": true
@@ -7643,7 +7803,12 @@
       "extensions": {
         "bridgeInfo": {
           "137": {
-            "tokenAddress": "0xAfF41DA975501E5b71848C975834341777D1a473"
+            "tokenAddress": "0xaff41da975501e5b71848c975834341777d1a473"
+          }
+        },
+        "peersInfo": {
+          "137": {
+            "tokenAddress": "0xaff41da975501e5b71848c975834341777d1a473"
           }
         },
         "feeInfo": {
@@ -8105,10 +8270,18 @@
       "extensions": {
         "bridgeInfo": {
           "8453": {
-            "tokenAddress": "0xf3dD141109Dfe8e4c006F88a2A8747a086e7C1f8"
+            "tokenAddress": "0xf3dd141109dfe8e4c006f88a2a8747a086e7c1f8"
           },
           "42161": {
-            "tokenAddress": "0x17E1E5c6bc9ebb11647C94e1c5e3Ba619F2781ea"
+            "tokenAddress": "0x17e1e5c6bc9ebb11647c94e1c5e3ba619f2781ea"
+          }
+        },
+        "peersInfo": {
+          "8453": {
+            "tokenAddress": "0xf3dd141109dfe8e4c006f88a2a8747a086e7c1f8"
+          },
+          "42161": {
+            "tokenAddress": "0x17e1e5c6bc9ebb11647c94e1c5e3ba619f2781ea"
           }
         }
       },
@@ -12533,7 +12706,12 @@
       "extensions": {
         "bridgeInfo": {
           "56": {
-            "tokenAddress": "0x3C1B057cb7AcEB4F2c4D889A29fEBec30A6A3146"
+            "tokenAddress": "0x3c1b057cb7aceb4f2c4d889a29febec30a6a3146"
+          }
+        },
+        "peersInfo": {
+          "56": {
+            "tokenAddress": "0x3c1b057cb7aceb4f2c4d889a29febec30a6a3146"
           }
         }
       },
@@ -13714,10 +13892,18 @@
       "extensions": {
         "bridgeInfo": {
           "56": {
-            "tokenAddress": "0x489580eB70a50515296eF31E8179fF3e77E24965"
+            "tokenAddress": "0x489580eb70a50515296ef31e8179ff3e77e24965"
           },
           "137": {
-            "tokenAddress": "0xdCb72AE4d5dc6Ae274461d57E65dB8D50d0a33AD"
+            "tokenAddress": "0xdcb72ae4d5dc6ae274461d57e65db8d50d0a33ad"
+          }
+        },
+        "peersInfo": {
+          "56": {
+            "tokenAddress": "0x5b72b8b9c65b1214c356e5b5f6e6f62ddedd1cd9"
+          },
+          "137": {
+            "tokenAddress": "0xdcb72ae4d5dc6ae274461d57e65db8d50d0a33ad"
           }
         }
       },
@@ -14817,7 +15003,7 @@
       "extensions": {
         "bridgeInfo": {
           "56": {
-            "tokenAddress": "0xac531Eb26Ca1d21b85126De8FB87E80E09002DcF"
+            "tokenAddress": "0xac531eb26ca1d21b85126de8fb87e80e09002dcf"
           },
           "130": {
             "tokenAddress": "0x6A654A2ec95fB988Ea37746dBCca10772CAf25CA"
@@ -14826,10 +15012,18 @@
             "tokenAddress": "0xBbba073C31bF03b8ACf7c28EF0738DeCF3695683"
           },
           "8453": {
-            "tokenAddress": "0xac531Eb26Ca1d21b85126De8FB87E80E09002DcF"
+            "tokenAddress": "0xac531eb26ca1d21b85126de8fb87e80e09002dcf"
           },
           "42161": {
             "tokenAddress": "0xd1318eb19DBF2647743c720ed35174efd64e3DAC"
+          }
+        },
+        "peersInfo": {
+          "56": {
+            "tokenAddress": "0xac531eb26ca1d21b85126de8fb87e80e09002dcf"
+          },
+          "8453": {
+            "tokenAddress": "0xac531eb26ca1d21b85126de8fb87e80e09002dcf"
           }
         }
       },
@@ -16124,7 +16318,7 @@
         "coinMarketCapId": 18934,
         "bridgeInfo": {
           "10": {
-            "tokenAddress": "0x296F55F8Fb28E498B858d0BcDA06D955B2Cb3f97"
+            "tokenAddress": "0x296f55f8fb28e498b858d0bcda06d955b2cb3f97"
           },
           "56": {
             "tokenAddress": "0xB0D502E938ed5f4df2E681fE6E419ff29631d62b"
@@ -16133,10 +16327,10 @@
             "tokenAddress": "0x77c8A8E1dd3b5270d3Ab589543e9A83319373135"
           },
           "137": {
-            "tokenAddress": "0x2F6F07CDcf3588944Bf4C42aC74ff24bF56e7590"
+            "tokenAddress": "0x2f6f07cdcf3588944bf4c42ac74ff24bf56e7590"
           },
           "8453": {
-            "tokenAddress": "0xE3B53AF74a4BF62Ae5511055290838050bf764Df"
+            "tokenAddress": "0xe3b53af74a4bf62ae5511055290838050bf764df"
           },
           "42161": {
             "tokenAddress": "0xe018C7a3d175Fb0fE15D70Da2c874d3CA16313EC"
@@ -16145,7 +16339,7 @@
             "tokenAddress": "0x2F6F07CDcf3588944Bf4C42aC74ff24bF56e7590"
           },
           "80094": {
-            "tokenAddress": "0x9895D81bB462A195b4922ED7De0e3ACD007c32CB"
+            "tokenAddress": "0x9895d81bb462a195b4922ed7de0e3acd007c32cb"
           }
         }
       },
@@ -17718,7 +17912,12 @@
       "extensions": {
         "bridgeInfo": {
           "43114": {
-            "tokenAddress": "0x6f97D3F120fBbDaacF1c9da61a8aD126b7426861"
+            "tokenAddress": "0x6f97d3f120fbbdaacf1c9da61a8ad126b7426861"
+          }
+        },
+        "peersInfo": {
+          "43114": {
+            "tokenAddress": "0x6f97d3f120fbbdaacf1c9da61a8ad126b7426861"
           }
         },
         "feeInfo": {
@@ -18486,7 +18685,7 @@
         "coingeckoId": "wrapped-bitcoin",
         "bridgeInfo": {
           "56": {
-            "tokenAddress": "0x0555E30da8f98308EdB960aa94C0Db47230d2B9c"
+            "tokenAddress": "0x0555e30da8f98308edb960aa94c0db47230d2b9c"
           },
           "130": {
             "tokenAddress": "0x927B51f251480a681271180DA4de28D44EC4AfB8"
@@ -18495,10 +18694,10 @@
             "tokenAddress": "0x1BFD67037B42Cf73acF2047067bd4F2C47D9BfD6"
           },
           "146": {
-            "tokenAddress": "0x0555E30da8f98308EdB960aa94C0Db47230d2B9c"
+            "tokenAddress": "0x0555e30da8f98308edb960aa94c0db47230d2b9c"
           },
           "8453": {
-            "tokenAddress": "0x0555E30da8f98308EdB960aa94C0Db47230d2B9c"
+            "tokenAddress": "0x0555e30da8f98308edb960aa94c0db47230d2b9c"
           },
           "42161": {
             "tokenAddress": "0x2f2a2543B76A4166549F7aaB2e75Bef0aefC5B0f"
@@ -18507,9 +18706,62 @@
             "tokenAddress": "0x50b7545627a5162F82A992c33b87aDc75187B218"
           },
           "80094": {
-            "tokenAddress": "0x0555E30da8f98308EdB960aa94C0Db47230d2B9c"
+            "tokenAddress": "0x0555e30da8f98308edb960aa94c0db47230d2b9c"
           }
-        }
+        },
+        "peersInfo": {
+          "10": {
+            "tokenAddress": "0x96337cde309d8a36c90186a46a37fcb97f746567"
+          },
+          "56": {
+            "tokenAddress": "0xf2600c9e67ca17a638c3195938c7f8a1f16665c0"
+          },
+          "137": {
+            "tokenAddress": "0x19a9fc65c10b6530afd23d76bb68f60f2e9510f8"
+          },
+          "146": {
+            "tokenAddress": "0x0555e30da8f98308edb960aa94c0db47230d2b9c"
+          },
+          "8453": {
+            "tokenAddress": "0xd7a7010587a06f4f70830b039b945df77f36580b"
+          },
+          "42161": {
+            "tokenAddress": "0xdfa78fa680a070c00b28b74a512c1366b3590655"
+          },
+          "43114": {
+            "tokenAddress": "0xcbab34bd4463641e88daa11927e6ea6fbe310cc8"
+          },
+          "80094": {
+            "tokenAddress": "0x0555e30da8f98308edb960aa94c0db47230d2b9c"
+          }
+        },
+        "feeInfo": {
+          "10": {
+            "minDstGas": 200000
+          },
+          "56": {
+            "minDstGas": 200000
+          },
+          "137": {
+            "minDstGas": 200000
+          },
+          "146": {
+            "minDstGas": 200000
+          },
+          "8453": {
+            "minDstGas": 200000
+          },
+          "42161": {
+            "minDstGas": 2000000
+          },
+          "43114": {
+            "minDstGas": 200000
+          },
+          "80094": {
+            "minDstGas": 200000
+          }
+        },
+        "coinMarketCapId": 3717
       },
       "isAcross": true,
       "isOFT": true
@@ -18649,10 +18901,18 @@
       "extensions": {
         "bridgeInfo": {
           "137": {
-            "tokenAddress": "0xaFdE2490236bc64950def5472296aa0D9758Db0d"
+            "tokenAddress": "0xafde2490236bc64950def5472296aa0d9758db0d"
           },
           "8453": {
-            "tokenAddress": "0xaFdE2490236bc64950def5472296aa0D9758Db0d"
+            "tokenAddress": "0xafde2490236bc64950def5472296aa0d9758db0d"
+          }
+        },
+        "peersInfo": {
+          "137": {
+            "tokenAddress": "0xafde2490236bc64950def5472296aa0d9758db0d"
+          },
+          "8453": {
+            "tokenAddress": "0xafde2490236bc64950def5472296aa0d9758db0d"
           }
         }
       },
@@ -18729,12 +18989,7 @@
       "address": "0x4691937a7508860F876c9c0a2a617E7d9E945D4B",
       "decimals": 18,
       "extensions": {
-        "coingeckoId": "woo-network",
-        "coinMarketCapId": 7501,
         "bridgeInfo": {
-          "10": {
-            "tokenAddress": "0x871f2F2ff935FD1eD867842FF2a7bfD051A5E527"
-          },
           "56": {
             "tokenAddress": "0x4691937a7508860F876c9c0a2a617E7d9E945D4B"
           },
@@ -18765,7 +19020,12 @@
       "extensions": {
         "bridgeInfo": {
           "8453": {
-            "tokenAddress": "0xB3a9bd4861454bA94931ebFF410c3D828525dCe2"
+            "tokenAddress": "0xb3a9bd4861454ba94931ebff410c3d828525dce2"
+          }
+        },
+        "peersInfo": {
+          "8453": {
+            "tokenAddress": "0xb3a9bd4861454ba94931ebff410c3d828525dce2"
           }
         },
         "feeInfo": {
@@ -18863,7 +19123,56 @@
       "symbol": "WSTETH",
       "decimals": 18,
       "logoURI": "https://assets.coingecko.com/coins/images/18834/large/wstETH.png?1633565443",
-      "extensions": {},
+      "extensions": {
+        "bridgeInfo": {
+          "56": {
+            "tokenAddress": "0x2bbbdf97295f73175b12cc087cf446765931e1c3"
+          },
+          "43114": {
+            "tokenAddress": "0x2bbbdf97295f73175b12cc087cf446765931e1c3"
+          }
+        },
+        "peersInfo": {
+          "10": {
+            "tokenAddress": "0x96337cde309d8a36c90186a46a37fcb97f746567"
+          },
+          "56": {
+            "tokenAddress": "0xf2600c9e67ca17a638c3195938c7f8a1f16665c0"
+          },
+          "137": {
+            "tokenAddress": "0x19a9fc65c10b6530afd23d76bb68f60f2e9510f8"
+          },
+          "8453": {
+            "tokenAddress": "0xd7a7010587a06f4f70830b039b945df77f36580b"
+          },
+          "42161": {
+            "tokenAddress": "0xdfa78fa680a070c00b28b74a512c1366b3590655"
+          },
+          "43114": {
+            "tokenAddress": "0xcbab34bd4463641e88daa11927e6ea6fbe310cc8"
+          }
+        },
+        "feeInfo": {
+          "10": {
+            "minDstGas": 200000
+          },
+          "56": {
+            "minDstGas": 200000
+          },
+          "137": {
+            "minDstGas": 200000
+          },
+          "8453": {
+            "minDstGas": 200000
+          },
+          "42161": {
+            "minDstGas": 2000000
+          },
+          "43114": {
+            "minDstGas": 200000
+          }
+        }
+      },
       "isAcross": false,
       "isOFT": true
     },
@@ -20140,10 +20449,21 @@
         "coingeckoId": "optimism",
         "bridgeInfo": {
           "42161": {
-            "tokenAddress": "0xaC800FD6159c2a2CB8fC31EF74621eB430287a5A"
+            "tokenAddress": "0xac800fd6159c2a2cb8fc31ef74621eb430287a5a"
           },
           "43114": {
-            "tokenAddress": "0xaC800FD6159c2a2CB8fC31EF74621eB430287a5A"
+            "tokenAddress": "0xac800fd6159c2a2cb8fc31ef74621eb430287a5a"
+          }
+        },
+        "peersInfo": {
+          "56": {
+            "tokenAddress": "0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c"
+          },
+          "42161": {
+            "tokenAddress": "0xac800fd6159c2a2cb8fc31ef74621eb430287a5a"
+          },
+          "43114": {
+            "tokenAddress": "0xac800fd6159c2a2cb8fc31ef74621eb430287a5a"
           }
         }
       },
@@ -20252,12 +20572,7 @@
       "chainId": 10,
       "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48/logo.png",
       "extensions": {
-        "coingeckoId": "bridged-usd-coin-optimism",
-        "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48"
-          }
-        }
+        "coingeckoId": "usd-coin-ethereum-bridged"
       },
       "isAcross": true,
       "isOFT": false
@@ -21024,6 +21339,22 @@
         "bridgeInfo": {
           "1": {
             "tokenAddress": "0x4Fabb145d64652a948d72533023f6E7A623C7C53"
+          }
+        },
+        "peersInfo": {
+          "1": {
+            "tokenAddress": "0x2260fac5e5542a773aa44fbcfedf7c193bc2c599"
+          },
+          "42161": {
+            "tokenAddress": "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8"
+          }
+        },
+        "feeInfo": {
+          "1": {
+            "minDstGas": 200000
+          },
+          "42161": {
+            "minDstGas": 2000000
           }
         }
       },
@@ -23168,6 +23499,29 @@
             "tokenAddress": "0x99D8a9C45b2ecA8864373A26D1459e3Dff1e17F3"
           }
         },
+        "peersInfo": {
+          "1": {
+            "tokenAddress": "0xfc2796c47063d6fcb98006081778c7b45b13a4c0"
+          },
+          "10": {
+            "tokenAddress": "0xb153fb3d196a8eb25522705560ac152eeec57901"
+          },
+          "137": {
+            "tokenAddress": "0x49a0400587a7f65072c87c4910449fdcc5c47242"
+          },
+          "8453": {
+            "tokenAddress": "0x4a3a6dd60a34bb2aba60d73b4c88315e9ceb6a3d"
+          },
+          "42161": {
+            "tokenAddress": "0xf33eb640773827afbbb886fa2d60b071d51d2d85"
+          },
+          "43114": {
+            "tokenAddress": "0x130966628846bfd36ff31a822705796e8cb8c18d"
+          },
+          "80094": {
+            "tokenAddress": "0x22581e7e93d66977849d094006fc2cf3ab9c8ffa"
+          }
+        },
         "feeInfo": {
           "1": {
             "minDstGas": 100000
@@ -23186,6 +23540,9 @@
           },
           "43114": {
             "minDstGas": 100000
+          },
+          "80094": {
+            "minDstGas": 200000
           }
         }
       },
@@ -24070,6 +24427,14 @@
         "bridgeInfo": {
           "1": {
             "tokenAddress": "0x44709a920fccf795fbc57baa433cc3dd53c44dbe"
+          }
+        },
+        "peersInfo": {
+          "1": {
+            "tokenAddress": "0xd1f28371b32c64975a7bfad9592d36d5a8db1fc1"
+          },
+          "137": {
+            "tokenAddress": "0xdcb72ae4d5dc6ae274461d57e65db8d50d0a33ad"
           }
         }
       },
@@ -25286,7 +25651,6 @@
       "address": "0x4691937a7508860F876c9c0a2a617E7d9E945D4B",
       "decimals": 18,
       "extensions": {
-        "coingeckoId": "woo-network",
         "bridgeInfo": {
           "1": {
             "tokenAddress": "0x4691937a7508860F876c9c0a2a617E7d9E945D4B"
@@ -27993,7 +28357,7 @@
       "chainId": 137,
       "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x6B175474E89094C44Da98b954EedeAC495271d0F/logo.png",
       "extensions": {
-        "coingeckoId": "polygon-pos-bridged-dai-polygon-pos",
+        "coingeckoId": "dai",
         "bridgeInfo": {
           "1": {
             "tokenAddress": "0x6B175474E89094C44Da98b954EedeAC495271d0F"
@@ -34757,7 +35121,7 @@
       "chainId": 137,
       "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48/logo.png",
       "extensions": {
-        "coingeckoId": "bridged-usdc-polygon-pos-bridge",
+        "coingeckoId": "usd-coin-ethereum-bridged",
         "bridgeInfo": {
           "1": {
             "tokenAddress": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48"
@@ -34792,7 +35156,7 @@
       "chainId": 137,
       "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xdAC17F958D2ee523a2206206994597C13D831ec7/logo.png",
       "extensions": {
-        "coingeckoId": "polygon-bridged-usdt-polygon",
+        "coingeckoId": "tether",
         "bridgeInfo": {
           "1": {
             "tokenAddress": "0xdAC17F958D2ee523a2206206994597C13D831ec7"
@@ -35209,7 +35573,6 @@
       "address": "0x1B815d120B3eF02039Ee11dC2d33DE7aA4a8C603",
       "decimals": 18,
       "extensions": {
-        "coingeckoId": "woo-network",
         "bridgeInfo": {
           "1": {
             "tokenAddress": "0x4691937a7508860F876c9c0a2a617E7d9E945D4B"
@@ -42945,7 +43308,6 @@
       "decimals": 18,
       "logoURI": "https://assets.coingecko.com/coins/images/13422/thumb/frax_logo.png?1608476506",
       "extensions": {
-        "coingeckoId": "frax",
         "bridgeInfo": {
           "1": {
             "tokenAddress": "0x853d955aCEf822Db058eb8505911ED77F175b99e"
@@ -43138,6 +43500,29 @@
             "tokenAddress": "0x99D8a9C45b2ecA8864373A26D1459e3Dff1e17F3"
           }
         },
+        "peersInfo": {
+          "1": {
+            "tokenAddress": "0xfc2796c47063d6fcb98006081778c7b45b13a4c0"
+          },
+          "10": {
+            "tokenAddress": "0xb153fb3d196a8eb25522705560ac152eeec57901"
+          },
+          "56": {
+            "tokenAddress": "0xfe19f0b51438fd612f6fd59c1dbb3ea319f433ba"
+          },
+          "137": {
+            "tokenAddress": "0x49a0400587a7f65072c87c4910449fdcc5c47242"
+          },
+          "8453": {
+            "tokenAddress": "0x4a3a6dd60a34bb2aba60d73b4c88315e9ceb6a3d"
+          },
+          "42161": {
+            "tokenAddress": "0xf33eb640773827afbbb886fa2d60b071d51d2d85"
+          },
+          "80094": {
+            "tokenAddress": "0x22581e7e93d66977849d094006fc2cf3ab9c8ffa"
+          }
+        },
         "feeInfo": {
           "1": {
             "minDstGas": 100000
@@ -43156,6 +43541,9 @@
           },
           "42161": {
             "minDstGas": 100000
+          },
+          "80094": {
+            "minDstGas": 200000
           }
         }
       },
@@ -43613,7 +44001,6 @@
       "address": "0xaBC9547B534519fF73921b1FBA6E672b5f58D083",
       "decimals": 18,
       "extensions": {
-        "coingeckoId": "woo-network",
         "bridgeInfo": {
           "1": {
             "tokenAddress": "0x4691937a7508860F876c9c0a2a617E7d9E945D4B"

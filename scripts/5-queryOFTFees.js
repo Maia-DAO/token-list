@@ -2,25 +2,11 @@ require('dotenv').config();
 const fs = require('fs');
 const { ethers } = require('ethers');
 
-const OAPP_ABI = [
-    'function endpoint() view returns (address)',
-    'function lzEndpoint() view returns (address)',
-];
-
-const OFT_V3_ABI = [
-    'function quoteOFT((uint32,bytes32,uint256,uint256,bytes,bytes,bytes)) view returns ((uint256 nativeFee,uint256 lzTokenFee),(int256,string)[],(uint256 sent,uint256 received))'
-];
-const OFT_V2_ABI = [
-    'function quoteOFTFee(uint16 dstChainId,uint256 amount) view returns (uint256 fee)'
-];
-const MULTICALL3_ABI = [
-    'function tryAggregate(bool requireSuccess, tuple(address target, bytes callData)[] calls) view returns (tuple(bool,bytes)[])'
-];
+const { OAPP_ABI, OFT_V3_ABI, OFT_V2_ABI, MULTICALL3_ABI, MULTICALL3_ADDRESS } = require('../constants');
 
 const TOKENS_FILE = 'output/usableStargateTokens.json';
 const OUT_FILE = 'output/usableStargateTokensEnhanced.json';
 const CHAINS_METADATA_FILE = 'output/ofts.json';
-const MULTICALL3_ADDRESS = '0xcA11bde05977b3631167028862bE2a173976CA11';
 
 async function main() {
     // Load input data
@@ -75,9 +61,17 @@ async function main() {
     const feeInfoCallsByChain = {};
     for (const src of feeInfoTokens) {
         for (const dst of feeInfoTokens) {
-            // skip self and mismatched symbols
+            // skip self 
             if (src.address === dst.address && src.chainId === dst.chainId) continue;
-            if (src.symbol !== dst.symbol) continue;
+
+            // skip if dst isn’t actually listed as a peer of src
+            const peersInfo = src.extensions?.peersInfo || {};
+            const peerEntry = peersInfo[dst.chainId];
+            // peerEntry should exist and match dst.address
+            if (!peerEntry || peerEntry.tokenAddress.toLowerCase() !== dst.address.toLowerCase()) {
+                continue;
+            }
+
             const chainKey = src.chainKey;
             const providerUrl = rpcUrls[chainKey];
             if (!providerUrl) continue;
@@ -109,9 +103,16 @@ async function main() {
     ]);
     for (const src of tokens) {
         for (const dst of tokens) {
-            // skip self and mismatched symbols
+            // skip self 
             if (src.address === dst.address && src.chainId === dst.chainId) continue;
-            if (src.symbol !== dst.symbol) continue;
+
+            // skip if dst isn’t actually listed as a peer of src
+            const peersInfo = src.extensions?.peersInfo || {};
+            const peerEntry = peersInfo[dst.chainId];
+            // peerEntry should exist and match dst.address
+            if (!peerEntry || peerEntry?.tokenAddress?.toLowerCase() !== dst.address.toLowerCase()) {
+                continue;
+            }
 
             // Only relevant for OFT v1 and v2 (1.2)
             if (src.oftVersion === 3 || src.endpointVersion === 2) continue;
@@ -265,7 +266,8 @@ async function main() {
 
             const { src } = isOAppCallsByChain[chainKey][idx];
 
-            if (!hex || hex === '0x') {
+            if (!hex || hex === '0x' || src.symbol === 'USDC' || src.symbol === 'DAI' || src.symbol === 'WETH') {
+                console.log("🚀 ~ oAppData.forEach ~ src:", src)
                 console.warn(`Empty lzEndpoint return for ${src.chainKey} - ${src.oftAdapter}`);
                 isOApp = false;
             }
@@ -292,6 +294,7 @@ async function main() {
                         if (tokens[tokenIndex]?.oftSharedDecimals) delete tokens[tokenIndex].oftSharedDecimals;
                         if (tokens[tokenIndex]?.extensions) {
                             if (tokens[tokenIndex]?.extensions?.feeInfo) delete tokens[tokenIndex].extensions?.feeInfo;
+                            if (tokens[tokenIndex]?.extensions?.peersInfo) delete tokens[tokenIndex].extensions?.peersInfo;
                         }
                         if (tokens[tokenIndex]?.isBridgeable) delete tokens[tokenIndex].isBridgeable;
                         // Set isOFT to false

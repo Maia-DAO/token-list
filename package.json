@@ -5,11 +5,11 @@
   "license": "MIT",
   "description": "Fetch and manage token lists",
   "scripts": {
-    "fetch": "node scripts/fetchLists.js",
-    "filter": "node scripts/filterStargateTokens.js && node scripts/filterAcrossTokens.js && node scripts/addOFTAdapters.js && node scripts/queryOFTFees.js",
-    "merge": "node scripts/mergeActiveLists.js",
-    "merge-others": "node scripts/mergeInactiveLists.js",
-    "removeDupes": "node scripts/removeDupes.js",
+    "fetch": "node scripts/1-fetchLists.js",
+    "filter": "node scripts/2-filterStargateTokens.js && node scripts/3-filterAcrossTokens.js && node scripts/4-addOFTAdapters.js && node scripts/5-queryOFTFees.js",
+    "merge": "node scripts/6-mergeActiveLists.js",
+    "merge-others": "node scripts/7-mergeInactiveLists.js",
+    "removeDupes": "node scripts/8-removeDupes.js",
     "all": "yarn fetch && yarn filter && yarn merge && yarn merge-others && yarn removeDupes",
     "dev": "yarn filter && yarn merge && yarn merge-others && yarn removeDupes"
   },
