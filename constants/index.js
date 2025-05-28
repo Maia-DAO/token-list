@@ -91,28 +91,32 @@ async function multiCallWithFallback(chainKey, calls, batchSize = undefined, del
     // Build mappings / lookups
     const rpcUrls = {};
     for (const [chainKey, meta] of Object.entries(chainsMeta)) {
-        if (Array.isArray(meta.rpcs) && meta.rpcs.length) rpcUrls[chainKey] = meta.rpcs[0].url;
+        if (Array.isArray(meta.rpcs) && meta.rpcs.length) rpcUrls[chainKey] = meta.rpcs.map(rpc => rpc.url);
     }
 
     // Fetch missing RPC URLs
     const allChains = await fetch('https://chainid.network/chains.json').then(r => r.json());
-    // build a map: chainId → first RPC URL
+    // build a map: chainId → all RPC URLs
     const extraRpcMap = Object.fromEntries(
-        allChains.map(c => [c.chainId, c.rpc[0]])
+        allChains.map(c => [c.chainId, c.rpc])
     );
 
     // build RPC list
     const rpcList = [];
-    if (rpcUrls[chainKey]) rpcList.push(rpcUrls[chainKey]);
+    if (rpcUrls[chainKey]) rpcList.push(...rpcUrls[chainKey]);
     const extra = extraRpcMap[CHAIN_KEY_TO_ID[chainKey]];
-    if (extra) rpcList.push(extra);
+    if (extra) rpcList.push(...extra);
     if (!rpcList.length) throw new Error(`No RPC URLs available for chain ${chainKey}`);
 
     const BATCH = batchSize || calls.length;
 
     for (const rpcUrl of rpcList) {
+        let provider
         try {
-            const provider = new ethers.JsonRpcProvider(rpcUrl);  // specify chainKey to help provider detect network
+            provider = new ethers.JsonRpcProvider(rpcUrl, null, {
+                skipFetchSetup: true,
+                batchMaxCount: 1
+            });
             const mc = new ethers.Contract(MULTICALL3_ADDRESS, MULTICALL3_ABI, provider);
             const returnData = [];
 
@@ -130,6 +134,10 @@ async function multiCallWithFallback(chainKey, calls, batchSize = undefined, del
         } catch (err) {
             console.warn(`RPC ${rpcUrl} failed for chain ${chainKey}: ${err.message}`);
             // try next rpcUrl
+        } finally {
+            if (provider && typeof provider.destroy === 'function') {
+                try { provider.destroy(); } catch { }
+            }
         }
     }
 

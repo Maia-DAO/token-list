@@ -2,7 +2,7 @@ require('dotenv').config();
 const fs = require('fs');
 const { ethers } = require('ethers');
 
-const { OAPP_ABI, OFT_V3_ABI, OFT_V2_ABI, MULTICALL3_ABI, MULTICALL3_ADDRESS } = require('../constants');
+const { OAPP_ABI, OFT_V3_ABI, OFT_V2_ABI, multiCallWithFallback } = require('../constants');
 
 const TOKENS_FILE = 'output/usableStargateTokens.json';
 const OUT_FILE = 'output/usableStargateTokensEnhanced.json';
@@ -14,10 +14,8 @@ async function main() {
     const chainsMeta = JSON.parse(fs.readFileSync(CHAINS_METADATA_FILE, 'utf8'));
 
     // Build mappings / lookups
-    const rpcUrls = {};
     const endpointIds = {};
     for (const [chainKey, meta] of Object.entries(chainsMeta)) {
-        if (Array.isArray(meta.rpcs) && meta.rpcs.length) rpcUrls[chainKey] = meta.rpcs[0].url;
         const validEids = (meta.deployments || []).map(d => parseInt(d.eid, 10)).filter(e => !isNaN(e));
         if (validEids.length) endpointIds[chainKey] = validEids;
     }
@@ -30,26 +28,9 @@ async function main() {
         t.endpointId = (t.oftVersion === 3 || t.endpointVersion === 2) ? base + 30000 : base;
     });
 
-    // Fetch missing RPC URLs
-    const allChains = await fetch('https://chainid.network/chains.json').then(r => r.json());
-    // build a map: chainId → first RPC URL
-    const extraRpcMap = Object.fromEntries(
-        allChains.map(c => [c.chainId, c.rpc[0]])
-    );
-
-    // Populate missing rpcUrls
-    for (const t of tokens) {
-        if (rpcUrls[t.chainKey]) continue;
-        const nativeId = t.chainId;
-        if (nativeId && extraRpcMap[nativeId]) {
-            rpcUrls[t.chainKey] = extraRpcMap[nativeId];
-        }
-    }
-
     // Filter relevant tokens for fee info collection
     const feeInfoTokens = tokens.filter(t =>
         (t.fee || t.oftVersion === 3 || t.endpointVersion === 2 || t.oftVersion === 2) &&
-        rpcUrls[t.chainKey] &&
         Array.isArray(endpointIds[t.chainKey])
     );
 
@@ -73,8 +54,6 @@ async function main() {
             }
 
             const chainKey = src.chainKey;
-            const providerUrl = rpcUrls[chainKey];
-            if (!providerUrl) continue;
 
             let callData;
             if (src.oftVersion === 3 || src.endpointVersion === 2) {
@@ -91,7 +70,7 @@ async function main() {
             }
 
             feeInfoCallsByChain[chainKey] ||= [];
-            feeInfoCallsByChain[chainKey].push({ src, dst, callData, providerUrl });
+            feeInfoCallsByChain[chainKey].push({ src, dst, callData });
         }
     }
 
@@ -118,8 +97,6 @@ async function main() {
             if (src.oftVersion === 3 || src.endpointVersion === 2) continue;
 
             const chainKey = src.chainKey;
-            const providerUrl = rpcUrls[chainKey];
-            if (!providerUrl) continue;
 
             const callData = minGasIface.encodeFunctionData(
                 'minDstGasLookup',
@@ -133,8 +110,7 @@ async function main() {
             minGasCallsByChain[chainKey].push({
                 src,
                 dst,
-                callData,
-                providerUrl
+                callData
             });
         }
     }
@@ -146,13 +122,11 @@ async function main() {
     const oAppInterface = new ethers.Interface(OAPP_ABI);
     for (const src of tokens) {
         const chainKey = src.chainKey;
-        const providerUrl = rpcUrls[chainKey];
-        if (!providerUrl) continue;
 
         const callData = src.oftVersion === 3 || src.endpointVersion === 2 ? oAppInterface.encodeFunctionData('endpoint', []) : oAppInterface.encodeFunctionData('lzEndpoint', []);
 
         isOAppCallsByChain[chainKey] ||= [];
-        isOAppCallsByChain[chainKey].push({ src, callData, providerUrl });
+        isOAppCallsByChain[chainKey].push({ src, callData});
     }
 
     // Output mapping for all fee related info
@@ -167,11 +141,6 @@ async function main() {
 
     // Multicall on each chain and decode outputs
     for (const chainKey of allChainKeys) {
-        const providerUrl = rpcUrls[chainKey];
-        if (!providerUrl) console.error('Missing RPC for necessary chain!')
-        const provider = new ethers.JsonRpcProvider(providerUrl);
-        const mcContract = new ethers.Contract(MULTICALL3_ADDRESS, MULTICALL3_ABI, provider);
-
         const feeCalls = feeInfoCallsByChain[chainKey].map(c => ({ target: c.src.oftAdapter, callData: c.callData }));
         const gasCalls = minGasCallsByChain[chainKey].map(c => ({ target: c.src.oftAdapter, callData: c.callData }));
         const oAppCalls = isOAppCallsByChain[chainKey].map(c => ({ target: c.src.oftAdapter, callData: c.callData }));
@@ -181,16 +150,7 @@ async function main() {
 
         console.log(`==> Aggregating on ${chainKey}…`);
         // Use tryAggregate to allow individual call failures without reverting batch
-        const returnData = (await mcContract.tryAggregate(false, aggregateCalls))
-            .map(res => {
-                // res is [success, returnData]
-                const success = res[0];
-                const data = res[1];
-                if (!success) {
-                    console.warn(`Multicall sub-call failed for ${chainKey}`);
-                }
-                return data;
-            });
+        const returnData = (await multiCallWithFallback(chainKey, aggregateCalls))
 
         // Split results
         const feeData = returnData.slice(0, feeCalls.length);
