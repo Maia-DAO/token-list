@@ -2,8 +2,7 @@ const fs = require('fs');
 const { ethers } = require('ethers');
 
 // Supported chains List.
-const SUPPORTED_CHAINS = ['ethereum', 'arbitrum', 'base', 'bsc', 'bera', 'optimism', 'metis', 'avalanche', 'sonic'];
-// const SUPPORTED_CHAINS = ['ethereum', 'arbitrum', 'base', 'bsc', 'bera', 'optimism', 'metis', 'avalanche', 'sonic', 'polygon'];
+const SUPPORTED_CHAINS = ['ethereum', 'arbitrum', 'base', 'bsc', 'bera', 'optimism', 'metis', 'avalanche', 'sonic', 'polygon'];
 
 // map chainId to key in ofts.json
 const CHAIN_KEYS = {
@@ -36,6 +35,10 @@ const CHAIN_KEY_TO_ID = {
 // Override Stargate Peg
 const OVERRIDE_PEG = {
     'USD₮0': { chainName: 'arbitrum', address: '0xfd086bc7cd5c481dcc9c85ebe478a1c0b69fcbb9' },
+};
+
+const OVERRIDE_URI = {
+    'FRAX': 'https://assets.coingecko.com/coins/images/13423/standard/frax.png?1745921071',
 };
 
 const ERC20_MINIMAL_ABI = [
@@ -134,4 +137,4 @@ async function multiCallWithFallback(chainKey, calls, batchSize = undefined, del
 }
 
 
-module.exports = { CHAIN_KEYS, CHAIN_KEY_TO_ID, SUPPORTED_CHAINS, OVERRIDE_PEG, OAPP_ABI, OFT_V3_ABI, OFT_V2_ABI, MULTICALL3_ABI, MULTICALL3_ADDRESS, multiCallWithFallback, ERC20_MINIMAL_ABI, mergeExtensions, cleanAddress };
+module.exports = { CHAIN_KEYS, CHAIN_KEY_TO_ID, SUPPORTED_CHAINS, OVERRIDE_PEG, OVERRIDE_URI, OAPP_ABI, OFT_V3_ABI, OFT_V2_ABI, MULTICALL3_ABI, MULTICALL3_ADDRESS, multiCallWithFallback, ERC20_MINIMAL_ABI, mergeExtensions, cleanAddress };
