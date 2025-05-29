@@ -1,8 +1,8 @@
 {
   "name": "Hermes Omnichain Inactive Token List",
-  "timestamp": "1748443126",
+  "timestamp": "1748544275",
   "version": {
-    "major": 1,
+    "major": 5,
     "minor": 0,
     "patch": 0
   },
@@ -1588,43 +1588,25 @@
           }
         },
         "peersInfo": {
-          "10": {
-            "tokenAddress": "0xe241c6e48ca045c7f631600a0f1403b2bfea05ad"
-          },
           "56": {
             "tokenAddress": "0xcf6bb5389c92bdda8a3747ddb454cb7a64626c63"
           },
-          "137": {
-            "tokenAddress": "0xe241c6e48ca045c7f631600a0f1403b2bfea05ad"
-          },
-          "8453": {
-            "tokenAddress": "0xe241c6e48ca045c7f631600a0f1403b2bfea05ad"
-          },
           "42161": {
-            "tokenAddress": "0xe241c6e48ca045c7f631600a0f1403b2bfea05ad"
+            "tokenAddress": "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8"
           },
           "43114": {
             "tokenAddress": "0xe15bcb9e0ea69e6ab9fa080c4c4a5632896298c3"
           }
         },
         "feeInfo": {
-          "10": {
-            "minDstGas": 200000
-          },
           "56": {
-            "minDstGas": 200000
-          },
-          "137": {
-            "minDstGas": 200000
-          },
-          "8453": {
             "minDstGas": 200000
           },
           "42161": {
             "minDstGas": 2000000
           },
           "43114": {
-            "minDstGas": 200000
+            "minDstGas": 100000
           }
         },
         "coinMarketCapId": 5728
@@ -6025,14 +6007,8 @@
           }
         },
         "peersInfo": {
-          "10": {
-            "tokenAddress": "0xf932863e538af568df9c79da379fd8ffd8525342"
-          },
           "56": {
             "tokenAddress": "0x2117e8b79e8e176a670c9fcf945d4348556bffad"
-          },
-          "137": {
-            "tokenAddress": "0x357727718d2a9ce83b877f503f56ded39719dcb9"
           },
           "146": {
             "tokenAddress": "0x8e15c8d399e86d4fd7b427d42f06c60cdd9397e7"
@@ -7066,17 +7042,14 @@
           }
         },
         "peersInfo": {
-          "10": {
-            "tokenAddress": "0x43edd7f3831b08fe70b7555ddd373c8bf65a9050"
-          },
           "56": {
             "tokenAddress": "0xcf6bb5389c92bdda8a3747ddb454cb7a64626c63"
           },
           "137": {
-            "tokenAddress": "0x43edd7f3831b08fe70b7555ddd373c8bf65a9050"
+            "tokenAddress": "0x64445f0aecc51e94ad52d8ac56b7190e764e561a"
           },
           "146": {
-            "tokenAddress": "0x43edd7f3831b08fe70b7555ddd373c8bf65a9050"
+            "tokenAddress": "0x64445f0aecc51e94ad52d8ac56b7190e764e561a"
           },
           "1088": {
             "tokenAddress": "0x1f55a02a049033e3419a8e2975cf3f572f4e6e9a"
@@ -7088,39 +7061,15 @@
             "tokenAddress": "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8"
           },
           "43114": {
-            "tokenAddress": "0x43edd7f3831b08fe70b7555ddd373c8bf65a9050"
-          },
-          "80094": {
-            "tokenAddress": "0x80eede496655fb9047dd39d9f418d5483ed600df"
+            "tokenAddress": "0x64445f0aecc51e94ad52d8ac56b7190e764e561a"
           }
         },
         "feeInfo": {
-          "10": {
-            "minDstGas": 200000
-          },
           "56": {
-            "minDstGas": 200000
-          },
-          "137": {
-            "minDstGas": 200000
-          },
-          "146": {
-            "minDstGas": 200000
-          },
-          "1088": {
-            "minDstGas": 200000
-          },
-          "8453": {
             "minDstGas": 200000
           },
           "42161": {
             "minDstGas": 2000000
-          },
-          "43114": {
-            "minDstGas": 200000
-          },
-          "80094": {
-            "minDstGas": 200000
           }
         },
         "coingeckoId": "frax-share",
@@ -7548,8 +7497,7 @@
       "decimals": 18,
       "logoURI": "https://assets.coingecko.com/coins/images/14716/large/gmee-200x200.png?1621827468",
       "extensions": {},
-      "isAcross": false,
-      "isOFT": true
+      "isAcross": false
     },
     {
       "name": "Gnosis Token",
@@ -10174,8 +10122,7 @@
       "decimals": 18,
       "logoURI": "https://assets.coingecko.com/coins/images/2620/large/lympo_token.png?1547036775",
       "extensions": {},
-      "isAcross": false,
-      "isOFT": true
+      "isAcross": false
     },
     {
       "chainId": 1,
@@ -13900,7 +13847,7 @@
         },
         "peersInfo": {
           "56": {
-            "tokenAddress": "0x5b72b8b9c65b1214c356e5b5f6e6f62ddedd1cd9"
+            "tokenAddress": "0x489580eb70a50515296ef31e8179ff3e77e24965"
           },
           "137": {
             "tokenAddress": "0xdcb72ae4d5dc6ae274461d57e65db8d50d0a33ad"
@@ -14500,7 +14447,7 @@
         }
       },
       "isAcross": false,
-      "isOFT": true
+      "isOFT": false
     },
     {
       "chainId": 1,
@@ -18710,54 +18657,33 @@
           }
         },
         "peersInfo": {
-          "10": {
-            "tokenAddress": "0x96337cde309d8a36c90186a46a37fcb97f746567"
-          },
           "56": {
-            "tokenAddress": "0xf2600c9e67ca17a638c3195938c7f8a1f16665c0"
-          },
-          "137": {
-            "tokenAddress": "0x19a9fc65c10b6530afd23d76bb68f60f2e9510f8"
+            "tokenAddress": "0xcf6bb5389c92bdda8a3747ddb454cb7a64626c63"
           },
           "146": {
             "tokenAddress": "0x0555e30da8f98308edb960aa94c0db47230d2b9c"
           },
           "8453": {
-            "tokenAddress": "0xd7a7010587a06f4f70830b039b945df77f36580b"
+            "tokenAddress": "0x0555e30da8f98308edb960aa94c0db47230d2b9c"
           },
           "42161": {
-            "tokenAddress": "0xdfa78fa680a070c00b28b74a512c1366b3590655"
+            "tokenAddress": "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8"
           },
           "43114": {
-            "tokenAddress": "0xcbab34bd4463641e88daa11927e6ea6fbe310cc8"
+            "tokenAddress": "0x2bbbdf97295f73175b12cc087cf446765931e1c3"
           },
           "80094": {
             "tokenAddress": "0x0555e30da8f98308edb960aa94c0db47230d2b9c"
           }
         },
         "feeInfo": {
-          "10": {
-            "minDstGas": 200000
-          },
           "56": {
-            "minDstGas": 200000
-          },
-          "137": {
-            "minDstGas": 200000
-          },
-          "146": {
-            "minDstGas": 200000
-          },
-          "8453": {
             "minDstGas": 200000
           },
           "42161": {
             "minDstGas": 2000000
           },
           "43114": {
-            "minDstGas": 200000
-          },
-          "80094": {
             "minDstGas": 200000
           }
         },
@@ -19133,40 +19059,16 @@
           }
         },
         "peersInfo": {
-          "10": {
-            "tokenAddress": "0x96337cde309d8a36c90186a46a37fcb97f746567"
-          },
           "56": {
-            "tokenAddress": "0xf2600c9e67ca17a638c3195938c7f8a1f16665c0"
-          },
-          "137": {
-            "tokenAddress": "0x19a9fc65c10b6530afd23d76bb68f60f2e9510f8"
-          },
-          "8453": {
-            "tokenAddress": "0xd7a7010587a06f4f70830b039b945df77f36580b"
-          },
-          "42161": {
-            "tokenAddress": "0xdfa78fa680a070c00b28b74a512c1366b3590655"
+            "tokenAddress": "0x2bbbdf97295f73175b12cc087cf446765931e1c3"
           },
           "43114": {
-            "tokenAddress": "0xcbab34bd4463641e88daa11927e6ea6fbe310cc8"
+            "tokenAddress": "0x2bbbdf97295f73175b12cc087cf446765931e1c3"
           }
         },
         "feeInfo": {
-          "10": {
-            "minDstGas": 200000
-          },
           "56": {
             "minDstGas": 200000
-          },
-          "137": {
-            "minDstGas": 200000
-          },
-          "8453": {
-            "minDstGas": 200000
-          },
-          "42161": {
-            "minDstGas": 2000000
           },
           "43114": {
             "minDstGas": 200000
@@ -21343,7 +21245,7 @@
         },
         "peersInfo": {
           "1": {
-            "tokenAddress": "0x2260fac5e5542a773aa44fbcfedf7c193bc2c599"
+            "tokenAddress": "0x8798249c2e607446efb7ad49ec89dd1865ff4272"
           },
           "42161": {
             "tokenAddress": "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8"
@@ -23501,7 +23403,7 @@
         },
         "peersInfo": {
           "1": {
-            "tokenAddress": "0xfc2796c47063d6fcb98006081778c7b45b13a4c0"
+            "tokenAddress": "0x99d8a9c45b2eca8864373a26d1459e3dff1e17f3"
           },
           "10": {
             "tokenAddress": "0xb153fb3d196a8eb25522705560ac152eeec57901"
@@ -23513,13 +23415,13 @@
             "tokenAddress": "0x4a3a6dd60a34bb2aba60d73b4c88315e9ceb6a3d"
           },
           "42161": {
-            "tokenAddress": "0xf33eb640773827afbbb886fa2d60b071d51d2d85"
+            "tokenAddress": "0xfea7a6a0b346362bf88a9e4a88416b77a57d6c2a"
           },
           "43114": {
             "tokenAddress": "0x130966628846bfd36ff31a822705796e8cb8c18d"
           },
           "80094": {
-            "tokenAddress": "0x22581e7e93d66977849d094006fc2cf3ab9c8ffa"
+            "tokenAddress": "0x5b82028cfc477c4e7dda7ff33d59a23fa7be002a"
           }
         },
         "feeInfo": {
@@ -24431,7 +24333,7 @@
         },
         "peersInfo": {
           "1": {
-            "tokenAddress": "0xd1f28371b32c64975a7bfad9592d36d5a8db1fc1"
+            "tokenAddress": "0x44709a920fccf795fbc57baa433cc3dd53c44dbe"
           },
           "137": {
             "tokenAddress": "0xdcb72ae4d5dc6ae274461d57e65db8d50d0a33ad"
@@ -43502,7 +43404,7 @@
         },
         "peersInfo": {
           "1": {
-            "tokenAddress": "0xfc2796c47063d6fcb98006081778c7b45b13a4c0"
+            "tokenAddress": "0x99d8a9c45b2eca8864373a26d1459e3dff1e17f3"
           },
           "10": {
             "tokenAddress": "0xb153fb3d196a8eb25522705560ac152eeec57901"
@@ -43517,10 +43419,10 @@
             "tokenAddress": "0x4a3a6dd60a34bb2aba60d73b4c88315e9ceb6a3d"
           },
           "42161": {
-            "tokenAddress": "0xf33eb640773827afbbb886fa2d60b071d51d2d85"
+            "tokenAddress": "0xfea7a6a0b346362bf88a9e4a88416b77a57d6c2a"
           },
           "80094": {
-            "tokenAddress": "0x22581e7e93d66977849d094006fc2cf3ab9c8ffa"
+            "tokenAddress": "0x5b82028cfc477c4e7dda7ff33d59a23fa7be002a"
           }
         },
         "feeInfo": {
