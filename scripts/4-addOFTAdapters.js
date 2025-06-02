@@ -1,13 +1,3 @@
-/**
- * Updated Script: enrichOFTTokens.js
- * Description: Expands from `ofts.json` instead of limiting to `filteredStargateTokens.json`.
- * - Covers all tokens on supported chains.
- * - Builds adapter, version, bridgeInfo, and peersInfo.
- * - Output:
- *   - output/usableStargateTokens.json
- *   - output/missingAdapters.json
- */
-
 const fs = require('fs');
 const { CHAIN_KEY_TO_ID, SUPPORTED_CHAINS, CHAIN_KEYS, OVERRIDE_PEG, mergeExtensions, cleanAddress } = require('../constants');
 const { ZERO_ADDRESS } = require('maia-core-sdk');
@@ -37,61 +27,56 @@ async function main() {
     if (!chainData) continue;
 
     // Iterate each token entry in OFT
-    for (let [adapterAddr, oAppInfo] of Object.entries(
+    for (let [adapter, oAppInfo] of Object.entries(
       chainData.addressToOApp
     )) {
 
-      let tokenInfo = ofts[chainKey].tokens?.[adapterAddr.toLowerCase()];
+      let adapterInfo = ofts[chainKey].tokens?.[adapter];
 
-      if (!tokenInfo) {
-        console.warn(`no token info for adapter ${adapterAddr} on chain ${chainKey}`);
+      if (!adapterInfo) {
+        console.warn(`no adapterInfo for adapter ${oAppInfo.id} - ${adapter} on chain ${chainKey}`);
       }
 
-      let adapter = adapterAddr !== ZERO_ADDRESS ? cleanAddress(adapterAddr) : undefined;
-      let tokenAddress = adapter;
+      let adapterAddress = adapter !== ZERO_ADDRESS ? cleanAddress(adapter) : undefined;
+      let tokenAddress = adapterAddress;
 
-      if (!adapter) {
-        console.warn(`skipping zero-address adapter for chain ${chainKey}`);
+      if (!adapterAddress) {
+        console.warn(`skipping zero-address adapter ${oAppInfo.id} - ${adapter} on chain ${chainKey}`);
         continue;
       }
 
-      // Determine output token address: native vs proxy
-      // if (
-      //   tokenInfo.type !== 'NativeOFT' &&
-      //   Array.isArray(tokenInfo.proxyAddresses) &&
-      //   tokenInfo.proxyAddresses.length > 0
-      // ) {
-      //   adapter = cleanAddress(tokenInfo.proxyAddresses[
-      //     tokenInfo.proxyAddresses.length - 1
-      //   ]);
-      // } else 
-
-      if (tokenInfo?.erc20TokenAddress) {
+      if (adapterInfo?.erc20TokenAddress) {
         // Fallback to erc20TokenAddress if available
-        tokenAddress = cleanAddress(tokenInfo.erc20TokenAddress);
+        tokenAddress = cleanAddress(adapterInfo.erc20TokenAddress);
+      }
+
+      // Skip invalid zero-address placeholders
+      if (!tokenAddress || tokenAddress === ZERO_ADDRESS) {
+        console.warn(`skipping zero-address token for adapter ${oAppInfo.id} - ${adapter} on chain ${chainKey}`);
+        continue;
       }
 
       // If already processed in results, skip
-      const tokenInfoToUse = adapter === tokenAddress ? tokenInfo : ofts[chainKey].tokens?.[adapter.toLowerCase()];
+      const tokenInfo = adapterAddress === tokenAddress ? adapterInfo : ofts[chainKey].tokens?.[adapterInfo?.erc20TokenAddress];
 
-      // Skip invalid zero-address placeholders
-      if (!tokenAddress || tokenAddress === '0x0000000000000000000000000000000000000000') {
-        console.warn(`skipping zero-address token for adapter ${adapterAddr} on chain ${chainKey}`);
+      // Skip invalid tokenInfoToUse
+      if (!tokenInfo) {
+        console.warn(`skipping undefined tokenInfo for adapter ${oAppInfo.id} - ${adapter} on chain ${chainKey}`);
         continue;
       }
 
       // Get existing or new baseline
       const key = `${chainId}:${tokenAddress}`;
-      const base = existing.get(key) || { chainId, address: tokenAddress, extensions: {} };
+      const base = existing.get(key) || { chainId, address: tokenAddress, name: tokenInfo.name, symbol: tokenInfo.symbol, decimals: tokenInfo.decimals, extensions: {} };
 
       // Build extensions
       let extensions = mergeExtensions(base.extensions, {
-        coingeckoId: tokenInfoToUse?.cgId,
-        coinMarketCapId: tokenInfoToUse?.cmcId
+        coingeckoId: adapterInfo?.cgId,
+        coinMarketCapId: adapterInfo?.cmcId
       });
 
       // Bridge mapping
-      const peg = OVERRIDE_PEG[base.symbol] ?? tokenInfoToUse?.peggedTo;
+      const peg = OVERRIDE_PEG[base.symbol] ?? tokenInfo?.peggedTo;
       if (peg?.address) {
         const pegKey = peg.address.toLowerCase() + peg.chainName;
         bridgeMap[pegKey] = bridgeMap[pegKey] || {};
@@ -105,10 +90,16 @@ async function main() {
         }
       }
 
+      if (tokenInfo?.symbol === 'weETH') {
+        console.log('weETH token', oAppInfo.id, chainId, tokenAddress, tokenInfo, oAppInfo);
+      }
+
       // Record oApp peers
       if (oAppInfo) {
-        oappMap[oAppInfo.id] = oappMap[oAppInfo.id] || [];
-        oappMap[oAppInfo.id].push({ chainId, address: tokenAddress });
+        if (!oappMap[oAppInfo.id]?.[chainId]) {
+          oappMap[oAppInfo.id] = oappMap[oAppInfo.id] || [];
+          oappMap[oAppInfo.id].push({ chainId, address: tokenAddress });
+        }
       }
 
       // Assemble enriched token
@@ -117,15 +108,16 @@ async function main() {
         chainId,
         address: tokenAddress,
         chainKey,
-        oftAdapter: adapter,
-        oftVersion: tokenInfoToUse?.oftVersion,
-        endpointVersion: tokenInfoToUse?.endpointVersion,
-        oftSharedDecimals: tokenInfoToUse?.sharedDecimals,
+        oftAdapter: adapterAddress,
+        oftVersion: adapterInfo?.oftVersion,
+        endpointVersion: adapterInfo?.endpointVersion,
+        oftSharedDecimals: adapterInfo?.sharedDecimals,
         // Ensure essential fields
-        symbol: base?.symbol ?? tokenInfo?.symbol ?? tokenInfoToUse?.symbol,
-        name: base?.name ?? tokenInfo?.name ?? tokenInfo?.symbol ?? tokenInfoToUse?.symbol,
-        decimals: base?.decimals != null ? base?.decimals : tokenInfo?.decimals ?? tokenInfoToUse?.decimals,
-        extensions
+        symbol: base?.symbol ?? adapterInfo?.symbol ?? tokenInfo?.symbol,
+        name: base?.name ?? adapterInfo?.name ?? adapterInfo?.symbol ?? tokenInfo?.symbol,
+        decimals: base?.decimals ?? adapterInfo?.decimals ?? tokenInfo?.decimals,
+        extensions,
+        oAppId: oAppInfo?.id
       };
       if (tokenInfo?.fee) enriched.fee = tokenInfo.fee;
 
@@ -144,23 +136,33 @@ async function main() {
 
   // Attach peersInfo
   for (const token of results) {
-    for (const [appId, peers] of Object.entries(oappMap)) {
-      if (
-        peers.some(
-          (p) => p.chainId === token.chainId && p.address === token.address
+    // Get oApp peers
+    const peers = oappMap[token.oAppId];
+    if (!peers) continue;
+
+    // If no peers, skip
+    if (!peers.length) {
+      console.warn(`No peers found for token ${token.symbol} on chain ${token.chainKey}`);
+      continue;
+    }
+
+    // If only self, skip
+    if (peers.length === 1 && peers[0].chainId === token.chainId && peers[0].address === token.address) {
+      console.warn(`Only self peer found for token ${token.symbol} on chain ${token.chainKey}`);
+      continue;
+    }
+
+    // Filter self peer and merge to extensions
+    const others = peers.filter(
+      (p) => p.chainId !== token.chainId
+    );
+
+    if (others.length) {
+      token.extensions = mergeExtensions(token.extensions, {
+        peersInfo: Object.fromEntries(
+          others.map((p) => [p.chainId, { tokenAddress: p.address }])
         )
-      ) {
-        const other = peers.filter(
-          (p) => p.chainId !== token.chainId
-        );
-        if (other.length) {
-          token.extensions = mergeExtensions(token.extensions, {
-            peersInfo: Object.fromEntries(
-              other.map((p) => [p.chainId, { tokenAddress: p.address }])
-            )
-          });
-        }
-      }
+      });
     }
   }
 
