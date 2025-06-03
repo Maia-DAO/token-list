@@ -1,8 +1,17 @@
 const fs = require("fs").promises;
 const { SupportedChainId } = require("maia-core-sdk");
-const { TOKEN_SYMBOLS_MAP } = require("@across-protocol/constants");
+const {
+  TOKEN_SYMBOLS_MAP,
+  TOKEN_EQUIVALENCE_REMAPPING,
+} = require("@across-protocol/constants");
 
-// TODO: ADD INFO FROM TOKEN_EQUIVALENCE_REMAPPING (from across sdk)
+const TESTNET_CHAIN_IDS = [
+  SupportedChainId.SEPOLIA,
+  SupportedChainId.ARBITRUM_SEPOLIA,
+  SupportedChainId.OPTIMISM_SEPOLIA,
+  SupportedChainId.BASE_SEPOLIA,
+  SupportedChainId.POLYGON_AMOY,
+];
 
 const TOKEN_SYMBOLS_TO_IGNORE = {
   ["CAKE"]: true,
@@ -10,21 +19,35 @@ const TOKEN_SYMBOLS_TO_IGNORE = {
   ["WBNB"]: true,
 };
 
+function filterAddressMap(allAddresses, supportedChains) {
+  return Object.entries(allAddresses).reduce((memo, [chain, address]) => {
+    if (supportedChains.includes(Number(chain))) {
+      memo[chain] = address;
+    }
+    return memo;
+  }, {});
+}
+
+function equivalentTokens(tokens) {
+  return TOKEN_SYMBOLS_MAP[TOKEN_EQUIVALENCE_REMAPPING[tokens.symbol]] ?? {};
+}
+
 async function filterAcrossTokens() {
   try {
-    const tokens = TOKEN_SYMBOLS_MAP;
-
     // Create an output object with filtered addresses per token.
     const filteredAcross = {};
 
     // Convert SupportedChainId to an array of numbers.
-    const supportedChains = Object.values(SupportedChainId).map(Number);
+    const supportedChains = Object.values(SupportedChainId)
+      .map(Number)
+      .filter((value) => !TESTNET_CHAIN_IDS.includes(value));
 
     // Iterate over each token in across.json.
-    for (const symbol in tokens) {
+    for (const symbol in TOKEN_SYMBOLS_MAP) {
       if (TOKEN_SYMBOLS_TO_IGNORE[symbol]) continue;
 
-      const token = tokens[symbol];
+      const token = TOKEN_SYMBOLS_MAP[symbol];
+
       // Filter the addresses: only keep keys that are in the supportedChains array.
       const filteredAddresses = {};
       for (const chain in token.addresses) {
@@ -36,11 +59,24 @@ async function filterAcrossTokens() {
           filteredAddresses[chain] = token.addresses[chain];
         }
       }
+
+      const supportedFilteredAddresses = filterAddressMap(
+        filteredAddresses,
+        supportedChains
+      );
+
       // Only include token if it has at least one supported address.
-      if (Object.keys(filteredAddresses).length > 0) {
+      if (Object.keys(supportedFilteredAddresses).length > 1) {
+        const allAddresses = {
+          ...equivalentTokens(token).addresses,
+          ...supportedFilteredAddresses,
+        };
+
+        const addresses = filterAddressMap(allAddresses, supportedChains);
+
         filteredAcross[symbol] = {
           ...token,
-          addresses: filteredAddresses,
+          addresses,
         };
       }
     }
