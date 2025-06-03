@@ -15,7 +15,7 @@ async function filterStargateTokens() {
             .filter(token => token?.address)
             .map(token => {
                 // Create a new token object without the "price" property
-                const { price, ...rest } = token;
+                const { price, isBridgeable, isVerified, ...rest } = token;
                 rest.chainId = CHAIN_KEY_TO_ID[token.chainKey]; // Convert chain name to chain ID
                 if (!rest.name) rest.name = token.symbol; // Fallback to symbol if name is not available
                 return rest;
