@@ -126,7 +126,18 @@ async function normalizeAcrossToken(data) {
             symbol: data.symbol,
             logoURI: await getCoinLogo(data.coingeckoId) || null,
             tags: [],
-            extensions: { coingeckoId: data.coingeckoId },
+            extensions: {
+                acrossInfo: Object.entries(data.addresses).reduce(
+                    (memo, [chain, value]) => {
+                        if (chain !== chainId) {
+                            memo[chain] = value;
+                        }
+                        return memo;
+                    },
+                    {}
+                ),
+                coingeckoId: data.coingeckoId,
+            },
             isAcross: true,   // from across list
             isOFT: false
         });

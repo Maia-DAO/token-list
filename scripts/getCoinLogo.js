@@ -92,5 +92,4 @@ async function getCoinLogo(slug) {
   }
 }
 
-module.exports = getCoinLogo;
-module.exports.getCoinLogo = getCoinLogo;
+module.exports = { getCoinLogo };
