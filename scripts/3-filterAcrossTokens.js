@@ -5,6 +5,65 @@ const {
   TOKEN_EQUIVALENCE_REMAPPING,
 } = require("@across-protocol/constants");
 
+function mergeRemappings() {
+  const tokensMap = Object.entries(TOKEN_SYMBOLS_MAP).reduce(
+    (memo, [symbol, tokens]) => {
+      memo[symbol] = {
+        ...tokens,
+        addresses: {
+          ...Object.entries(tokens.addresses).reduce(
+            (memo, [chain, address]) => {
+              if (
+                Number(chain) === SupportedChainId.MAINNET &&
+                tokens.l1TokenDecimals &&
+                tokens.l1TokenDecimals !== tokens.decimals
+              ) {
+                memo[chain] = { address, decimals: tokens.l1TokenDecimals };
+              } else {
+                memo[chain] = { address };
+              }
+              return memo;
+            },
+            {}
+          ),
+        },
+      };
+
+      return memo;
+    },
+    {}
+  );
+
+  const remappings = Object.keys(TOKEN_EQUIVALENCE_REMAPPING);
+  return remappings.reduce((memo, symbolToAdd) => {
+    const tokensToAdd = memo[symbolToAdd];
+    const mainSymbol = TOKEN_EQUIVALENCE_REMAPPING[symbolToAdd];
+    if (tokensToAdd) {
+      const tokensMain = memo[mainSymbol];
+      const sameDecimals = tokensToAdd.decimals === tokensMain.decimals;
+
+      const addressesToAdd = sameDecimals
+        ? tokensToAdd.addresses
+        : Object.entries(tokensToAdd.addresses).reduce(
+            (memo, [chain, { address }]) => {
+              memo[chain] = { address, decimals: tokensToAdd.decimals };
+              return memo;
+            },
+            {}
+          );
+
+      memo[mainSymbol].addresses = {
+        ...addressesToAdd,
+        ...tokensMain.addresses,
+      };
+    }
+
+    return memo;
+  }, tokensMap);
+}
+
+const TOKENS_MAP = mergeRemappings();
+
 const TESTNET_CHAIN_IDS = [
   SupportedChainId.SEPOLIA,
   SupportedChainId.ARBITRUM_SEPOLIA,
@@ -13,23 +72,49 @@ const TESTNET_CHAIN_IDS = [
   SupportedChainId.POLYGON_AMOY,
 ];
 
+// Convert SupportedChainId to an array of numbers.
+const SUPPORTED_CHAINS = Object.values(SupportedChainId)
+  .map(Number)
+  .filter((value) => !TESTNET_CHAIN_IDS.includes(value));
+
 const TOKEN_SYMBOLS_TO_IGNORE = {
   ["CAKE"]: true,
+  ["ETH"]: true,
   ["BNB"]: true,
   ["WBNB"]: true,
 };
 
-function filterAddressMap(allAddresses, supportedChains) {
-  return Object.entries(allAddresses).reduce((memo, [chain, address]) => {
-    if (supportedChains.includes(Number(chain))) {
-      memo[chain] = address;
+function filterMap(allAddresses, notUSDT, modifyValueFn) {
+  return Object.entries(allAddresses).reduce((memo, [chain, value]) => {
+    const chainId = Number(chain);
+    if (
+      SUPPORTED_CHAINS.includes(chainId) &&
+      (notUSDT || SupportedChainId.ARBITRUM_ONE !== chainId)
+    ) {
+      memo[chainId] = modifyValueFn ? modifyValueFn(value) : value;
     }
     return memo;
   }, {});
 }
 
-function equivalentTokens(tokens) {
-  return TOKEN_SYMBOLS_MAP[TOKEN_EQUIVALENCE_REMAPPING[tokens.symbol]] ?? {};
+function equivalentAddresses(tokens, notUSDT) {
+  const equivalent = TOKENS_MAP[TOKEN_EQUIVALENCE_REMAPPING[tokens.symbol]];
+
+  if (!equivalent) return {};
+
+  const differentDecimals = tokens.decimals !== equivalent.decimals;
+
+  const createAddressEntryWithDecimals = differentDecimals
+    ? ({ address }) => {
+        return { address, decimals: equivalent.decimals };
+      }
+    : undefined;
+
+  return filterMap(
+    equivalent.addresses,
+    notUSDT,
+    createAddressEntryWithDecimals
+  );
 }
 
 async function filterAcrossTokens() {
@@ -37,42 +122,22 @@ async function filterAcrossTokens() {
     // Create an output object with filtered addresses per token.
     const filteredAcross = {};
 
-    // Convert SupportedChainId to an array of numbers.
-    const supportedChains = Object.values(SupportedChainId)
-      .map(Number)
-      .filter((value) => !TESTNET_CHAIN_IDS.includes(value));
-
     // Iterate over each token in across.json.
-    for (const symbol in TOKEN_SYMBOLS_MAP) {
+    for (const symbol in TOKENS_MAP) {
       if (TOKEN_SYMBOLS_TO_IGNORE[symbol]) continue;
 
-      const token = TOKEN_SYMBOLS_MAP[symbol];
+      const notUSDT = symbol !== "USDT";
+      const token = TOKENS_MAP[symbol];
 
       // Filter the addresses: only keep keys that are in the supportedChains array.
-      const filteredAddresses = {};
-      for (const chain in token.addresses) {
-        if (
-          supportedChains.includes(Number(chain)) &&
-          // ! REMOVE THIS TO ACCEPT USDT ON ARBITRUM AS AN ACROSS TOKEN
-          (SupportedChainId.ARBITRUM_ONE !== Number(chain) || symbol !== "USDT")
-        ) {
-          filteredAddresses[chain] = token.addresses[chain];
-        }
-      }
-
-      const supportedFilteredAddresses = filterAddressMap(
-        filteredAddresses,
-        supportedChains
-      );
+      const filteredAddresses = filterMap(token.addresses, notUSDT);
 
       // Only include token if it has at least one supported address.
-      if (Object.keys(supportedFilteredAddresses).length > 1) {
-        const allAddresses = {
-          ...equivalentTokens(token).addresses,
-          ...supportedFilteredAddresses,
+      if (Object.keys(filteredAddresses).length > 1) {
+        const addresses = {
+          ...equivalentAddresses(token, notUSDT),
+          ...filteredAddresses,
         };
-
-        const addresses = filterAddressMap(allAddresses, supportedChains);
 
         filteredAcross[symbol] = {
           ...token,

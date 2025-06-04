@@ -117,7 +117,10 @@ async function normalizeAcrossToken(data) {
     // Convert addresses keys to numbers.
     for (const key in data.addresses) {
         const chainId = Number(key);
-        const address = data.addresses[key];
+        const decimals = data.addresses[key].decimals;
+        if (decimals) continue
+        const address = data.addresses[key].address;
+        if (!!tokens.find(({ tokenAddress }) => tokenAddress === address)) continue;
         tokens.push({
             chainId,
             address,
