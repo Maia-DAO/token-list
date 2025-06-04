@@ -131,7 +131,7 @@ async function normalizeAcrossToken(data) {
             extensions: {
                 acrossInfo: Object.entries(data.addresses).reduce(
                     (memo, [chain, value]) => {
-                        if (chain !== chainId) {
+                        if (Number(chain) !== chainId) {
                             memo[chain] = value;
                         }
                         return memo;
