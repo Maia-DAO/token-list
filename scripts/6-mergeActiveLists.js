@@ -120,7 +120,6 @@ async function normalizeAcrossToken(data) {
         const decimals = data.addresses[key].decimals;
         if (decimals) continue
         const address = data.addresses[key].address;
-        if (!!tokens.find(({ tokenAddress }) => tokenAddress === address)) continue;
         tokens.push({
             chainId,
             address,
@@ -262,7 +261,7 @@ async function main() {
         // Process Across tokens.
         for (const symbol in acrossData) {
             const tokenData = acrossData[symbol];
-            const normalizedArray = await normalizeAcrossToken(tokenData);
+            const normalizedArray = await normalizeAcrossToken(tokenData, normalizedMap, rootTokensMap);
             normalizedArray.forEach(token => {
                 if (!token.logoURI) return
                 if (token.chainId === 42161) {
@@ -270,17 +269,12 @@ async function main() {
                     const rootKey = token.address.toLowerCase();
                     if (!rootTokensMap[rootKey]) {
                         rootTokensMap[rootKey] = token;
-                    } else {
-                        const existing = rootTokensMap[rootKey];
-                        rootTokensMap[rootKey] = mergeTokenData(existing, token);
                     }
                 } else {
                     // Merge into normalizedMap.
                     const key = token.address.toLowerCase() + "_" + token.chainId;
                     if (!normalizedMap[key]) {
                         normalizedMap[key] = token;
-                    } else {
-                        normalizedMap[key] = mergeTokenData(normalizedMap[key], token);
                     }
                 }
             });
