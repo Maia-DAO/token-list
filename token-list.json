@@ -1,8 +1,8 @@
 {
   "name": "Hermes Omnichain Token List",
-  "timestamp": "1749163232",
+  "timestamp": "1749164305",
   "version": {
-    "major": 75,
+    "major": 76,
     "minor": 0,
     "patch": 0
   },
@@ -906,8 +906,8 @@
             "tokenAddress": "0xB97EF9Ef8734C71904D8002F8b6Bc66Dd9c48a6E"
           }
         },
-        "coinMarketCapId": 3408,
-        "peersInfo": {}
+        "peersInfo": {},
+        "coinMarketCapId": 3408
       },
       "isAcross": true,
       "isOFT": true,
@@ -2297,10 +2297,43 @@
           "42161": {
             "tokenAddress": "0x9e20461bc2c4c980f62f1b279d71734207a6a356"
           }
+        },
+        "peersInfo": {
+          "56": {
+            "tokenAddress": "0x9e20461bc2c4c980f62f1B279D71734207a6A356"
+          },
+          "137": {
+            "tokenAddress": "0x9e20461bc2c4c980f62f1B279D71734207a6A356"
+          },
+          "8453": {
+            "tokenAddress": "0xC48E605c7b722a57277e087a6170B9E227e5AC0A"
+          },
+          "42161": {
+            "tokenAddress": "0x9e20461bc2c4c980f62f1B279D71734207a6A356"
+          }
+        },
+        "feeInfo": {
+          "56": {
+            "minDstGas": 110000
+          },
+          "137": {
+            "minDstGas": 110000
+          },
+          "8453": {
+            "minDstGas": 110000
+          },
+          "42161": {
+            "minDstGas": 1000000
+          }
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0xa0aa943666b4309c1989e3a7ebe7dbe11de36212",
+      "oftVersion": 2,
+      "endpointVersion": 1,
+      "endpointId": 101,
+      "oftSharedDecimals": 8
     },
     {
       "chainId": 1,
@@ -2409,10 +2442,31 @@
           "8453": {
             "tokenAddress": "0xbefd5c25a59ef2c1316c5a4944931171f30cd3e4"
           }
+        },
+        "peersInfo": {
+          "8453": {
+            "tokenAddress": "0xbeFD5C25A59ef2C1316c5A4944931171F30Cd3E4"
+          },
+          "42161": {
+            "tokenAddress": "0x8b5e4C9a188b1A187f2D1E80b1c2fB17fA2922e1"
+          }
+        },
+        "feeInfo": {
+          "8453": {
+            "minDstGas": 200000
+          },
+          "42161": {
+            "minDstGas": 200000
+          }
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x9deb0fc809955b79c85e82918e8586d3b7d2695a",
+      "oftVersion": 2,
+      "endpointVersion": 1,
+      "endpointId": 101,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 1,
@@ -2558,10 +2612,31 @@
           "43114": {
             "tokenAddress": "0x2bbbdf97295f73175b12cc087cf446765931e1c3"
           }
+        },
+        "peersInfo": {
+          "56": {
+            "tokenAddress": "0x2Bbbdf97295F73175b12CC087cF446765931e1C3"
+          },
+          "43114": {
+            "tokenAddress": "0x2Bbbdf97295F73175b12CC087cF446765931e1C3"
+          }
+        },
+        "feeInfo": {
+          "56": {
+            "minDstGas": 200000
+          },
+          "43114": {
+            "minDstGas": 200000
+          }
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x2bbbdf97295f73175b12cc087cf446765931e1c3",
+      "oftVersion": 2,
+      "endpointVersion": 1,
+      "endpointId": 101,
+      "oftSharedDecimals": 8
     },
     {
       "chainId": 1,
@@ -2610,10 +2685,43 @@
           "42161": {
             "tokenAddress": "0xc1eb7689147c81ac840d4ff0d298489fc7986d52"
           }
+        },
+        "peersInfo": {
+          "10": {
+            "tokenAddress": "0x4a971e87ad1F61f7f3081645f52a99277AE917cF"
+          },
+          "56": {
+            "tokenAddress": "0xcF6BB5389c92Bdda8a3747Ddb454cB7a64626C63"
+          },
+          "8453": {
+            "tokenAddress": "0xebB7873213c8d1d9913D8eA39Aa12d74cB107995"
+          },
+          "42161": {
+            "tokenAddress": "0xc1Eb7689147C81aC840d4FF0D298489fc7986d52"
+          }
+        },
+        "feeInfo": {
+          "10": {
+            "minDstGas": 300000
+          },
+          "56": {
+            "minDstGas": 300000
+          },
+          "8453": {
+            "minDstGas": 300000
+          },
+          "42161": {
+            "minDstGas": 300000
+          }
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x888e317606b4c590bbad88653863e8b345702633",
+      "oftVersion": 2,
+      "endpointVersion": 1,
+      "endpointId": 101,
+      "oftSharedDecimals": 8
     },
     {
       "chainId": 1,
@@ -2949,10 +3057,25 @@
           "1088": {
             "tokenAddress": "0x6f05709bc91bad933346f9e159f0d3fdbc2c9dce"
           }
+        },
+        "peersInfo": {
+          "1088": {
+            "tokenAddress": "0x6F05709bc91Bad933346F9E159f0D3FdBc2c9DCE"
+          }
+        },
+        "feeInfo": {
+          "1088": {
+            "minDstGas": 100000
+          }
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0xa2c2c937333165d4c5f2dc5f31a43e1239fecfeb",
+      "oftVersion": 2,
+      "endpointVersion": 1,
+      "endpointId": 101,
+      "oftSharedDecimals": 8
     },
     {
       "chainId": 1,
@@ -3243,10 +3366,25 @@
           "56": {
             "tokenAddress": "0xcc6f1e1b87cfcbe9221808d2d85c501aab0b5192"
           }
+        },
+        "peersInfo": {
+          "56": {
+            "tokenAddress": "0xcC6f1e1B87cfCbe9221808d2d85C501aab0B5192"
+          }
+        },
+        "feeInfo": {
+          "56": {
+            "minDstGas": 200000
+          }
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0xcc6f1e1b87cfcbe9221808d2d85c501aab0b5192",
+      "oftVersion": 2,
+      "endpointVersion": 1,
+      "endpointId": 101,
+      "oftSharedDecimals": 8
     },
     {
       "chainId": 1,
@@ -3421,10 +3559,25 @@
           "56": {
             "tokenAddress": "0x8d279274789ccec8af94a430a5996eaace9609a9"
           }
+        },
+        "peersInfo": {
+          "56": {
+            "tokenAddress": "0x8D279274789CceC8af94a430A5996eAaCE9609A9"
+          }
+        },
+        "feeInfo": {
+          "56": {
+            "minDstGas": 200000
+          }
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x8d279274789ccec8af94a430a5996eaace9609a9",
+      "oftVersion": 2,
+      "endpointVersion": 1,
+      "endpointId": 101,
+      "oftSharedDecimals": 8
     },
     {
       "chainId": 1,
@@ -3698,10 +3851,37 @@
           "42161": {
             "tokenAddress": "0x3082cc23568ea640225c2467653db90e9250aaa0"
           }
+        },
+        "peersInfo": {
+          "56": {
+            "tokenAddress": "0xf7DE7E8A6bd59ED41a4b5fe50278b3B7f31384dF"
+          },
+          "8453": {
+            "tokenAddress": "0xd722E55C1d9D9fA0021A5215Cbb904b92B3dC5d4"
+          },
+          "42161": {
+            "tokenAddress": "0x3082CC23568eA640225c2467653dB90e9250AaA0"
+          }
+        },
+        "feeInfo": {
+          "56": {
+            "minDstGas": 100000
+          },
+          "8453": {
+            "minDstGas": 3200000
+          },
+          "42161": {
+            "minDstGas": 2000000
+          }
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x137ddb47ee24eaa998a535ab00378d6bfa84f893",
+      "oftVersion": 2,
+      "endpointVersion": 1,
+      "endpointId": 101,
+      "oftSharedDecimals": 8
     },
     {
       "chainId": 1,
@@ -3827,10 +4007,37 @@
           "42161": {
             "tokenAddress": "0xb2e787c6c83d6d75f466371a2966b27a8b700828"
           }
+        },
+        "peersInfo": {
+          "56": {
+            "tokenAddress": "0xB2E787C6C83D6d75f466371a2966b27a8b700828"
+          },
+          "137": {
+            "tokenAddress": "0xB2E787C6C83D6d75f466371a2966b27a8b700828"
+          },
+          "42161": {
+            "tokenAddress": "0xB2E787C6C83D6d75f466371a2966b27a8b700828"
+          }
+        },
+        "feeInfo": {
+          "56": {
+            "minDstGas": 110000
+          },
+          "137": {
+            "minDstGas": 110000
+          },
+          "42161": {
+            "minDstGas": 1000000
+          }
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0xb2e787c6c83d6d75f466371a2966b27a8b700828",
+      "oftVersion": 2,
+      "endpointVersion": 1,
+      "endpointId": 101,
+      "oftSharedDecimals": 9
     },
     {
       "chainId": 1,
@@ -4391,10 +4598,31 @@
           "56": {
             "tokenAddress": "0xbdeae1ca48894a1759a8374d63925f21f2ee2639"
           }
+        },
+        "peersInfo": {
+          "56": {
+            "tokenAddress": "0xBdEAe1cA48894A1759A8374D63925f21f2Ee2639"
+          },
+          "42161": {
+            "tokenAddress": "0xf8173a39c56a554837C4C7f104153A005D284D11"
+          }
+        },
+        "feeInfo": {
+          "56": {
+            "minDstGas": 200000
+          },
+          "42161": {
+            "minDstGas": 200000
+          }
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0xf8173a39c56a554837c4c7f104153a005d284d11",
+      "oftVersion": 2,
+      "endpointVersion": 1,
+      "endpointId": 101,
+      "oftSharedDecimals": 8
     },
     {
       "chainId": 1,
@@ -4576,10 +4804,31 @@
           "56": {
             "tokenAddress": "0x34294afabcbaffc616ac6614f6d2e17260b78bed"
           }
+        },
+        "peersInfo": {
+          "56": {
+            "tokenAddress": "0x34294AfABCbaFfc616ac6614F6d2e17260b78BEd"
+          },
+          "137": {
+            "tokenAddress": "0xe6828D65bf5023AE1851D90D8783Cc821ba7eeE1"
+          }
+        },
+        "feeInfo": {
+          "56": {
+            "minDstGas": 110000
+          },
+          "137": {
+            "minDstGas": 110000
+          }
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0xe6828d65bf5023ae1851d90d8783cc821ba7eee1",
+      "oftVersion": 2,
+      "endpointVersion": 1,
+      "endpointId": 101,
+      "oftSharedDecimals": 8
     },
     {
       "chainId": 1,
@@ -4592,6 +4841,7 @@
       "extensions": {
         "coingeckoId": "curve-dao-token",
         "coinMarketCapId": 6538,
+        "peersInfo": {},
         "bridgeInfo": {
           "130": {
             "tokenAddress": "0xAC73671a1762FE835208Fb93b7aE7490d1c2cCb3"
@@ -4608,8 +4858,8 @@
       "isOFT": false,
       "oftAdapter": "0xc7ae4ab742f6b0b203f6710c87677005bc45ad01",
       "oftVersion": 2,
-      "endpointVersion": 2,
-      "endpointId": 30101,
+      "endpointVersion": 1,
+      "endpointId": 101,
       "oftSharedDecimals": 6
     },
     {
@@ -5024,8 +5274,54 @@
           "80094": {
             "tokenAddress": "0x5b82028cfc477c4e7dda7ff33d59a23fa7be002a"
           }
+        },
+        "peersInfo": {
+          "10": {
+            "tokenAddress": "0xB153FB3d196A8eB25522705560ac152eeEc57901"
+          },
+          "56": {
+            "tokenAddress": "0xfE19F0B51438fd612f6FD59C1dbB3eA319f433Ba"
+          },
+          "137": {
+            "tokenAddress": "0x49a0400587A7F65072c87c4910449fDcC5c47242"
+          },
+          "8453": {
+            "tokenAddress": "0x4A3A6Dd60A34bB2Aba60D73B4C88315E9CeB6A3D"
+          },
+          "42161": {
+            "tokenAddress": "0xFEa7a6a0B346362BF88A9e4A88416B77a57D6c2A"
+          },
+          "43114": {
+            "tokenAddress": "0x130966628846BFd36ff31a822705796e8cb8C18D"
+          }
+        },
+        "feeInfo": {
+          "10": {
+            "minDstGas": 100000
+          },
+          "56": {
+            "minDstGas": 100000
+          },
+          "137": {
+            "minDstGas": 100000
+          },
+          "8453": {
+            "minDstGas": 100000
+          },
+          "42161": {
+            "minDstGas": 100000
+          },
+          "43114": {
+            "minDstGas": 100000
+          }
         }
-      }
+      },
+      "isOFT": true,
+      "oftAdapter": "0x439a5f0f5e8d149dda9a0ca367d4a8e4d6f83c10",
+      "oftVersion": 2,
+      "endpointVersion": 1,
+      "endpointId": 101,
+      "oftSharedDecimals": 8
     },
     {
       "chainId": 1,
@@ -5803,10 +6099,43 @@
       "logoURI": "https://s2.coinmarketcap.com/static/img/coins/128x128/4660.png",
       "tags": [],
       "extensions": {
-        "coingeckoId": "telos"
+        "coingeckoId": "telos",
+        "peersInfo": {
+          "56": {
+            "tokenAddress": "0x193f4A4a6ea24102F49b931DEeeb931f6E32405d"
+          },
+          "137": {
+            "tokenAddress": "0x193f4A4a6ea24102F49b931DEeeb931f6E32405d"
+          },
+          "42161": {
+            "tokenAddress": "0x193f4A4a6ea24102F49b931DEeeb931f6E32405d"
+          },
+          "43114": {
+            "tokenAddress": "0xed667dC80a45b77305Cc395DB56D997597Dc6DdD"
+          }
+        },
+        "feeInfo": {
+          "56": {
+            "minDstGas": 100000
+          },
+          "137": {
+            "minDstGas": 100000
+          },
+          "42161": {
+            "minDstGas": 2000000
+          },
+          "43114": {
+            "minDstGas": 100000
+          }
+        }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x193f4a4a6ea24102f49b931deeeb931f6e32405d",
+      "oftVersion": 2,
+      "endpointVersion": 1,
+      "endpointId": 101,
+      "oftSharedDecimals": 4
     },
     {
       "chainId": 1,
@@ -6153,10 +6482,25 @@
           "56": {
             "tokenAddress": "0xa80221d067603e30060f75e2458aa361f8ee5402"
           }
+        },
+        "peersInfo": {
+          "56": {
+            "tokenAddress": "0xa80221D067603e30060F75E2458AA361f8eE5402"
+          }
+        },
+        "feeInfo": {
+          "56": {
+            "minDstGas": 100000
+          }
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x02b88b31492c19d9e3145934cdb63a8a9b5b4b10",
+      "oftVersion": 2,
+      "endpointVersion": 1,
+      "endpointId": 101,
+      "oftSharedDecimals": 8
     },
     {
       "chainId": 1,
@@ -6442,10 +6786,55 @@
           "43114": {
             "tokenAddress": "0x2b1d36f5b61addaf7da7ebbd11b35fd8cfb0de31"
           }
+        },
+        "peersInfo": {
+          "10": {
+            "tokenAddress": "0x2b1D36f5B61AdDAf7DA7ebbd11B35FD8cfb0DE31"
+          },
+          "56": {
+            "tokenAddress": "0x2b1D36f5B61AdDAf7DA7ebbd11B35FD8cfb0DE31"
+          },
+          "137": {
+            "tokenAddress": "0x2b1D36f5B61AdDAf7DA7ebbd11B35FD8cfb0DE31"
+          },
+          "8453": {
+            "tokenAddress": "0x2b1D36f5B61AdDAf7DA7ebbd11B35FD8cfb0DE31"
+          },
+          "42161": {
+            "tokenAddress": "0x2b1D36f5B61AdDAf7DA7ebbd11B35FD8cfb0DE31"
+          },
+          "43114": {
+            "tokenAddress": "0x2b1D36f5B61AdDAf7DA7ebbd11B35FD8cfb0DE31"
+          }
+        },
+        "feeInfo": {
+          "10": {
+            "minDstGas": 100000
+          },
+          "56": {
+            "minDstGas": 100000
+          },
+          "137": {
+            "minDstGas": 100000
+          },
+          "8453": {
+            "minDstGas": 100000
+          },
+          "42161": {
+            "minDstGas": 100000
+          },
+          "43114": {
+            "minDstGas": 100000
+          }
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x8cfa44e930b7743123738eb2d7e78beaa964732e",
+      "oftVersion": 2,
+      "endpointVersion": 1,
+      "endpointId": 101,
+      "oftSharedDecimals": 8
     },
     {
       "chainId": 1,
@@ -6456,10 +6845,25 @@
       "logoURI": "https://s2.coinmarketcap.com/static/img/coins/128x128/25653.png",
       "tags": [],
       "extensions": {
-        "coingeckoId": "dream-machine-token"
+        "coingeckoId": "dream-machine-token",
+        "peersInfo": {
+          "42161": {
+            "tokenAddress": "0x8B0E6f19Ee57089F7649A455D89D7bC6314D04e8"
+          }
+        },
+        "feeInfo": {
+          "42161": {
+            "minDstGas": 2000000
+          }
+        }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x0b7f0e51cd1739d6c96982d55ad8fa634dd43a9c",
+      "oftVersion": 2,
+      "endpointVersion": 1,
+      "endpointId": 101,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 1,
@@ -6572,10 +6976,61 @@
           "43114": {
             "tokenAddress": "0xd3fdcb837dafdb7c9c3ebd48fe22a53f6dd3d7d7"
           }
+        },
+        "peersInfo": {
+          "10": {
+            "tokenAddress": "0xD3FDCb837DAfdb7C9C3eBD48FE22a53F6Dd3d7D7"
+          },
+          "56": {
+            "tokenAddress": "0xD3FDCb837DAfdb7C9C3eBD48FE22a53F6Dd3d7D7"
+          },
+          "137": {
+            "tokenAddress": "0xD3FDCb837DAfdb7C9C3eBD48FE22a53F6Dd3d7D7"
+          },
+          "1088": {
+            "tokenAddress": "0xD3FDCb837DAfdb7C9C3eBD48FE22a53F6Dd3d7D7"
+          },
+          "8453": {
+            "tokenAddress": "0xD3FDCb837DAfdb7C9C3eBD48FE22a53F6Dd3d7D7"
+          },
+          "42161": {
+            "tokenAddress": "0xD3FDCb837DAfdb7C9C3eBD48FE22a53F6Dd3d7D7"
+          },
+          "43114": {
+            "tokenAddress": "0xD3FDCb837DAfdb7C9C3eBD48FE22a53F6Dd3d7D7"
+          }
+        },
+        "feeInfo": {
+          "10": {
+            "minDstGas": 220000
+          },
+          "56": {
+            "minDstGas": 220000
+          },
+          "137": {
+            "minDstGas": 210000
+          },
+          "1088": {
+            "minDstGas": 220000
+          },
+          "8453": {
+            "minDstGas": 260000
+          },
+          "42161": {
+            "minDstGas": 1500000
+          },
+          "43114": {
+            "minDstGas": 240000
+          }
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0xd3fdcb837dafdb7c9c3ebd48fe22a53f6dd3d7d7",
+      "oftVersion": 2,
+      "endpointVersion": 1,
+      "endpointId": 101,
+      "oftSharedDecimals": 8
     },
     {
       "chainId": 1,
@@ -6890,10 +7345,37 @@
           "56": {
             "tokenAddress": "0x0b15ddf19d47e6a86a56148fb4afffc6929bcb89"
           }
+        },
+        "peersInfo": {
+          "56": {
+            "tokenAddress": "0x0b15Ddf19D47E6a86A56148fb4aFFFc6929BcB89"
+          },
+          "137": {
+            "tokenAddress": "0x8255775bea425f910044ddFb7681D6d87fD5489d"
+          },
+          "42161": {
+            "tokenAddress": "0x6Db8b088c4d41d622B44CD81B900bA690f2d496C"
+          }
+        },
+        "feeInfo": {
+          "56": {
+            "minDstGas": 110000
+          },
+          "137": {
+            "minDstGas": 110000
+          },
+          "42161": {
+            "minDstGas": 1000000
+          }
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x8255775bea425f910044ddfb7681d6d87fd5489d",
+      "oftVersion": 2,
+      "endpointVersion": 1,
+      "endpointId": 184,
+      "oftSharedDecimals": 8
     },
     {
       "chainId": 8453,
@@ -7066,10 +7548,43 @@
           "1": {
             "tokenAddress": "0x9e20461bc2c4c980f62f1b279d71734207a6a356"
           }
+        },
+        "peersInfo": {
+          "1": {
+            "tokenAddress": "0x9e20461bc2c4c980f62f1B279D71734207a6A356"
+          },
+          "56": {
+            "tokenAddress": "0x9e20461bc2c4c980f62f1B279D71734207a6A356"
+          },
+          "137": {
+            "tokenAddress": "0x9e20461bc2c4c980f62f1B279D71734207a6A356"
+          },
+          "42161": {
+            "tokenAddress": "0x9e20461bc2c4c980f62f1B279D71734207a6A356"
+          }
+        },
+        "feeInfo": {
+          "1": {
+            "minDstGas": 110000
+          },
+          "56": {
+            "minDstGas": 110000
+          },
+          "137": {
+            "minDstGas": 110000
+          },
+          "42161": {
+            "minDstGas": 1000000
+          }
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0xc48e605c7b722a57277e087a6170b9e227e5ac0a",
+      "oftVersion": 2,
+      "endpointVersion": 1,
+      "endpointId": 184,
+      "oftSharedDecimals": 8
     },
     {
       "chainId": 8453,
@@ -7587,10 +8102,37 @@
           "1": {
             "tokenAddress": "0x137ddb47ee24eaa998a535ab00378d6bfa84f893"
           }
+        },
+        "peersInfo": {
+          "1": {
+            "tokenAddress": "0x137dDB47Ee24EaA998a535Ab00378d6BFa84F893"
+          },
+          "56": {
+            "tokenAddress": "0xf7DE7E8A6bd59ED41a4b5fe50278b3B7f31384dF"
+          },
+          "42161": {
+            "tokenAddress": "0x3082CC23568eA640225c2467653dB90e9250AaA0"
+          }
+        },
+        "feeInfo": {
+          "1": {
+            "minDstGas": 160000
+          },
+          "56": {
+            "minDstGas": 160000
+          },
+          "42161": {
+            "minDstGas": 100000
+          }
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0xd722e55c1d9d9fa0021a5215cbb904b92b3dc5d4",
+      "oftVersion": 2,
+      "endpointVersion": 1,
+      "endpointId": 184,
+      "oftSharedDecimals": 8
     },
     {
       "chainId": 8453,
@@ -7680,10 +8222,55 @@
           "1": {
             "tokenAddress": "0x2b1d36f5b61addaf7da7ebbd11b35fd8cfb0de31"
           }
+        },
+        "peersInfo": {
+          "1": {
+            "tokenAddress": "0x2b1D36f5B61AdDAf7DA7ebbd11B35FD8cfb0DE31"
+          },
+          "10": {
+            "tokenAddress": "0x2b1D36f5B61AdDAf7DA7ebbd11B35FD8cfb0DE31"
+          },
+          "56": {
+            "tokenAddress": "0x2b1D36f5B61AdDAf7DA7ebbd11B35FD8cfb0DE31"
+          },
+          "137": {
+            "tokenAddress": "0x2b1D36f5B61AdDAf7DA7ebbd11B35FD8cfb0DE31"
+          },
+          "42161": {
+            "tokenAddress": "0x2b1D36f5B61AdDAf7DA7ebbd11B35FD8cfb0DE31"
+          },
+          "43114": {
+            "tokenAddress": "0x2b1D36f5B61AdDAf7DA7ebbd11B35FD8cfb0DE31"
+          }
+        },
+        "feeInfo": {
+          "1": {
+            "minDstGas": 100000
+          },
+          "10": {
+            "minDstGas": 100000
+          },
+          "56": {
+            "minDstGas": 100000
+          },
+          "137": {
+            "minDstGas": 100000
+          },
+          "42161": {
+            "minDstGas": 100000
+          },
+          "43114": {
+            "minDstGas": 100000
+          }
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x2b1d36f5b61addaf7da7ebbd11b35fd8cfb0de31",
+      "oftVersion": 2,
+      "endpointVersion": 1,
+      "endpointId": 184,
+      "oftSharedDecimals": 8
     },
     {
       "chainId": 8453,
@@ -8259,10 +8846,31 @@
           "42161": {
             "tokenAddress": "0x8b5e4c9a188b1a187f2d1e80b1c2fb17fa2922e1"
           }
+        },
+        "peersInfo": {
+          "1": {
+            "tokenAddress": "0x9DeB0fc809955b79c85e82918E8586d3b7d2695a"
+          },
+          "42161": {
+            "tokenAddress": "0x8b5e4C9a188b1A187f2D1E80b1c2fB17fA2922e1"
+          }
+        },
+        "feeInfo": {
+          "1": {
+            "minDstGas": 200000
+          },
+          "42161": {
+            "minDstGas": 2000000
+          }
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0xdee1b2dab488b0d71677200ea1330fdced01e144",
+      "oftVersion": 2,
+      "endpointVersion": 1,
+      "endpointId": 184,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 8453,
@@ -9353,10 +9961,55 @@
           "1": {
             "tokenAddress": "0x99d8a9c45b2eca8864373a26d1459e3dff1e17f3"
           }
+        },
+        "peersInfo": {
+          "1": {
+            "tokenAddress": "0x99D8a9C45b2ecA8864373A26D1459e3Dff1e17F3"
+          },
+          "10": {
+            "tokenAddress": "0xB153FB3d196A8eB25522705560ac152eeEc57901"
+          },
+          "56": {
+            "tokenAddress": "0xfE19F0B51438fd612f6FD59C1dbB3eA319f433Ba"
+          },
+          "137": {
+            "tokenAddress": "0x49a0400587A7F65072c87c4910449fDcC5c47242"
+          },
+          "42161": {
+            "tokenAddress": "0xFEa7a6a0B346362BF88A9e4A88416B77a57D6c2A"
+          },
+          "43114": {
+            "tokenAddress": "0x130966628846BFd36ff31a822705796e8cb8C18D"
+          }
+        },
+        "feeInfo": {
+          "1": {
+            "minDstGas": 100000
+          },
+          "10": {
+            "minDstGas": 100000
+          },
+          "56": {
+            "minDstGas": 100000
+          },
+          "137": {
+            "minDstGas": 100000
+          },
+          "42161": {
+            "minDstGas": 100000
+          },
+          "43114": {
+            "minDstGas": 100000
+          }
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x4035957323fc05ad9704230e3dc1e7663091d262",
+      "oftVersion": 2,
+      "endpointVersion": 1,
+      "endpointId": 184,
+      "oftSharedDecimals": 8
     },
     {
       "chainId": 8453,
@@ -9459,10 +10112,61 @@
           "1": {
             "tokenAddress": "0x559b7bfc48a5274754b08819f75c5f27af53d53b"
           }
+        },
+        "peersInfo": {
+          "1": {
+            "tokenAddress": "0x559b7bfC48a5274754b08819F75C5F27aF53D53b"
+          },
+          "10": {
+            "tokenAddress": "0xD3FDCb837DAfdb7C9C3eBD48FE22a53F6Dd3d7D7"
+          },
+          "56": {
+            "tokenAddress": "0xD3FDCb837DAfdb7C9C3eBD48FE22a53F6Dd3d7D7"
+          },
+          "137": {
+            "tokenAddress": "0xD3FDCb837DAfdb7C9C3eBD48FE22a53F6Dd3d7D7"
+          },
+          "1088": {
+            "tokenAddress": "0xD3FDCb837DAfdb7C9C3eBD48FE22a53F6Dd3d7D7"
+          },
+          "42161": {
+            "tokenAddress": "0xD3FDCb837DAfdb7C9C3eBD48FE22a53F6Dd3d7D7"
+          },
+          "43114": {
+            "tokenAddress": "0xD3FDCb837DAfdb7C9C3eBD48FE22a53F6Dd3d7D7"
+          }
+        },
+        "feeInfo": {
+          "1": {
+            "minDstGas": 500000
+          },
+          "10": {
+            "minDstGas": 220000
+          },
+          "56": {
+            "minDstGas": 220000
+          },
+          "137": {
+            "minDstGas": 210000
+          },
+          "1088": {
+            "minDstGas": 220000
+          },
+          "42161": {
+            "minDstGas": 1500000
+          },
+          "43114": {
+            "minDstGas": 240000
+          }
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0xd3fdcb837dafdb7c9c3ebd48fe22a53f6dd3d7d7",
+      "oftVersion": 2,
+      "endpointVersion": 1,
+      "endpointId": 184,
+      "oftSharedDecimals": 8
     },
     {
       "chainId": 8453,
@@ -9752,10 +10456,25 @@
           "42161": {
             "tokenAddress": "0xaf5db6e1cc585ca312e8c8f7c499033590cf5c98"
           }
+        },
+        "peersInfo": {
+          "42161": {
+            "tokenAddress": "0xAf5db6E1CC585ca312E8c8F7c499033590cf5C98"
+          }
+        },
+        "feeInfo": {
+          "42161": {
+            "minDstGas": 2000000
+          }
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x1d4268a58ee7ec2cc2af5d70a2fd2b3a896527a2",
+      "oftVersion": 2,
+      "endpointVersion": 1,
+      "endpointId": 102,
+      "oftSharedDecimals": 9
     },
     {
       "chainId": 56,
@@ -9770,10 +10489,25 @@
           "1088": {
             "tokenAddress": "0x52b4fc2ca0d9b194769ab9a3dc36c2c6831f2520"
           }
+        },
+        "peersInfo": {
+          "1088": {
+            "tokenAddress": "0x52b4FC2CA0D9b194769AB9a3dC36c2C6831f2520"
+          }
+        },
+        "feeInfo": {
+          "1088": {
+            "minDstGas": 140000
+          }
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x76326791a0d491cdb24a349354ec024756816d12",
+      "oftVersion": 2,
+      "endpointVersion": 1,
+      "endpointId": 102,
+      "oftSharedDecimals": 9
     },
     {
       "chainId": 56,
@@ -10114,10 +10848,37 @@
           "1": {
             "tokenAddress": "0x137ddb47ee24eaa998a535ab00378d6bfa84f893"
           }
+        },
+        "peersInfo": {
+          "1": {
+            "tokenAddress": "0x137dDB47Ee24EaA998a535Ab00378d6BFa84F893"
+          },
+          "8453": {
+            "tokenAddress": "0xd722E55C1d9D9fA0021A5215Cbb904b92B3dC5d4"
+          },
+          "42161": {
+            "tokenAddress": "0x3082CC23568eA640225c2467653dB90e9250AaA0"
+          }
+        },
+        "feeInfo": {
+          "1": {
+            "minDstGas": 100000
+          },
+          "8453": {
+            "minDstGas": 3200000
+          },
+          "42161": {
+            "minDstGas": 2000000
+          }
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0xf7de7e8a6bd59ed41a4b5fe50278b3b7f31384df",
+      "oftVersion": 2,
+      "endpointVersion": 1,
+      "endpointId": 102,
+      "oftSharedDecimals": 8
     },
     {
       "chainId": 56,
@@ -10152,10 +10913,25 @@
           "1": {
             "tokenAddress": "0xcc6f1e1b87cfcbe9221808d2d85c501aab0b5192"
           }
+        },
+        "peersInfo": {
+          "1": {
+            "tokenAddress": "0xcC6f1e1B87cfCbe9221808d2d85C501aab0B5192"
+          }
+        },
+        "feeInfo": {
+          "1": {
+            "minDstGas": 200000
+          }
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0xcc6f1e1b87cfcbe9221808d2d85c501aab0b5192",
+      "oftVersion": 2,
+      "endpointVersion": 1,
+      "endpointId": 102,
+      "oftSharedDecimals": 8
     },
     {
       "chainId": 56,
@@ -10170,10 +10946,25 @@
           "1": {
             "tokenAddress": "0xa80221d067603e30060f75e2458aa361f8ee5402"
           }
+        },
+        "peersInfo": {
+          "1": {
+            "tokenAddress": "0xa80221D067603e30060F75E2458AA361f8eE5402"
+          }
+        },
+        "feeInfo": {
+          "1": {
+            "minDstGas": 100000
+          }
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0xa80221d067603e30060f75e2458aa361f8ee5402",
+      "oftVersion": 2,
+      "endpointVersion": 1,
+      "endpointId": 102,
+      "oftSharedDecimals": 8
     },
     {
       "chainId": 56,
@@ -10296,10 +11087,25 @@
           "1": {
             "tokenAddress": "0x186ef81fd8e77eec8bffc3039e7ec41d5fc0b457"
           }
+        },
+        "peersInfo": {
+          "1": {
+            "tokenAddress": "0x186eF81fd8E77EEC8BfFC3039e7eC41D5FC0b457"
+          }
+        },
+        "feeInfo": {
+          "1": {
+            "minDstGas": 200000
+          }
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x8d279274789ccec8af94a430a5996eaace9609a9",
+      "oftVersion": 2,
+      "endpointVersion": 1,
+      "endpointId": 102,
+      "oftSharedDecimals": 8
     },
     {
       "chainId": 56,
@@ -10362,10 +11168,55 @@
           "1": {
             "tokenAddress": "0x2b1d36f5b61addaf7da7ebbd11b35fd8cfb0de31"
           }
+        },
+        "peersInfo": {
+          "1": {
+            "tokenAddress": "0x2b1D36f5B61AdDAf7DA7ebbd11B35FD8cfb0DE31"
+          },
+          "10": {
+            "tokenAddress": "0x2b1D36f5B61AdDAf7DA7ebbd11B35FD8cfb0DE31"
+          },
+          "137": {
+            "tokenAddress": "0x2b1D36f5B61AdDAf7DA7ebbd11B35FD8cfb0DE31"
+          },
+          "8453": {
+            "tokenAddress": "0x2b1D36f5B61AdDAf7DA7ebbd11B35FD8cfb0DE31"
+          },
+          "42161": {
+            "tokenAddress": "0x2b1D36f5B61AdDAf7DA7ebbd11B35FD8cfb0DE31"
+          },
+          "43114": {
+            "tokenAddress": "0x2b1D36f5B61AdDAf7DA7ebbd11B35FD8cfb0DE31"
+          }
+        },
+        "feeInfo": {
+          "1": {
+            "minDstGas": 100000
+          },
+          "10": {
+            "minDstGas": 100000
+          },
+          "137": {
+            "minDstGas": 100000
+          },
+          "8453": {
+            "minDstGas": 100000
+          },
+          "42161": {
+            "minDstGas": 100000
+          },
+          "43114": {
+            "minDstGas": 100000
+          }
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x2b1d36f5b61addaf7da7ebbd11b35fd8cfb0de31",
+      "oftVersion": 2,
+      "endpointVersion": 1,
+      "endpointId": 102,
+      "oftSharedDecimals": 8
     },
     {
       "chainId": 56,
@@ -10419,16 +11270,44 @@
             "tokenAddress": "0xd3cc9d8f3689b83c91b7b59cab4946b063eb894a"
           }
         },
+        "peersInfo": {
+          "1": {
+            "tokenAddress": "0xd3CC9d8f3689B83c91b7B59cAB4946B063EB894A"
+          },
+          "10": {
+            "tokenAddress": "0x4a971e87ad1F61f7f3081645f52a99277AE917cF"
+          },
+          "8453": {
+            "tokenAddress": "0xebB7873213c8d1d9913D8eA39Aa12d74cB107995"
+          },
+          "42161": {
+            "tokenAddress": "0xc1Eb7689147C81aC840d4FF0D298489fc7986d52"
+          }
+        },
+        "feeInfo": {
+          "1": {
+            "minDstGas": 300000
+          },
+          "10": {
+            "minDstGas": 300000
+          },
+          "8453": {
+            "minDstGas": 300000
+          },
+          "42161": {
+            "minDstGas": 300000
+          }
+        },
         "coingeckoId": "venus",
-        "coinMarketCapId": 7288,
-        "peersInfo": {}
+        "coinMarketCapId": 7288
       },
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x00795a3fd0d895a3507d43316da07376c7cb36d0",
       "oftVersion": 1,
       "endpointVersion": 1,
-      "endpointId": 102
+      "endpointId": 102,
+      "oftSharedDecimals": 8
     },
     {
       "chainId": 56,
@@ -10580,10 +11459,31 @@
           "1": {
             "tokenAddress": "0x8db253a1943dddf1af9bcf8706ac9a0ce939d922"
           }
+        },
+        "peersInfo": {
+          "1": {
+            "tokenAddress": "0x8dB253a1943DdDf1AF9bcF8706ac9A0Ce939d922"
+          },
+          "137": {
+            "tokenAddress": "0xB2E787C6C83D6d75f466371a2966b27a8b700828"
+          }
+        },
+        "feeInfo": {
+          "1": {
+            "minDstGas": 110000
+          },
+          "137": {
+            "minDstGas": 110000
+          }
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0xb2e787c6c83d6d75f466371a2966b27a8b700828",
+      "oftVersion": 2,
+      "endpointVersion": 1,
+      "endpointId": 102,
+      "oftSharedDecimals": 9
     },
     {
       "chainId": 56,
@@ -10670,10 +11570,43 @@
           "1": {
             "tokenAddress": "0x9e20461bc2c4c980f62f1b279d71734207a6a356"
           }
+        },
+        "peersInfo": {
+          "1": {
+            "tokenAddress": "0x9e20461bc2c4c980f62f1B279D71734207a6A356"
+          },
+          "137": {
+            "tokenAddress": "0x9e20461bc2c4c980f62f1B279D71734207a6A356"
+          },
+          "8453": {
+            "tokenAddress": "0xC48E605c7b722a57277e087a6170B9E227e5AC0A"
+          },
+          "42161": {
+            "tokenAddress": "0x9e20461bc2c4c980f62f1B279D71734207a6A356"
+          }
+        },
+        "feeInfo": {
+          "1": {
+            "minDstGas": 110000
+          },
+          "137": {
+            "minDstGas": 110000
+          },
+          "8453": {
+            "minDstGas": 110000
+          },
+          "42161": {
+            "minDstGas": 1000000
+          }
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x9e20461bc2c4c980f62f1b279d71734207a6a356",
+      "oftVersion": 2,
+      "endpointVersion": 1,
+      "endpointId": 102,
+      "oftSharedDecimals": 8
     },
     {
       "chainId": 56,
@@ -11003,10 +11936,31 @@
           "137": {
             "tokenAddress": "0xe6828d65bf5023ae1851d90d8783cc821ba7eee1"
           }
+        },
+        "peersInfo": {
+          "1": {
+            "tokenAddress": "0xe6828D65bf5023AE1851D90D8783Cc821ba7eeE1"
+          },
+          "137": {
+            "tokenAddress": "0xe6828D65bf5023AE1851D90D8783Cc821ba7eeE1"
+          }
+        },
+        "feeInfo": {
+          "1": {
+            "minDstGas": 110000
+          },
+          "137": {
+            "minDstGas": 110000
+          }
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0xe6828d65bf5023ae1851d90d8783cc821ba7eee1",
+      "oftVersion": 2,
+      "endpointVersion": 1,
+      "endpointId": 102,
+      "oftSharedDecimals": 8
     },
     {
       "chainId": 56,
@@ -11129,10 +12083,55 @@
           "1": {
             "tokenAddress": "0x99D8a9C45b2ecA8864373A26D1459e3Dff1e17F3"
           }
+        },
+        "peersInfo": {
+          "1": {
+            "tokenAddress": "0x99D8a9C45b2ecA8864373A26D1459e3Dff1e17F3"
+          },
+          "10": {
+            "tokenAddress": "0xB153FB3d196A8eB25522705560ac152eeEc57901"
+          },
+          "137": {
+            "tokenAddress": "0x49a0400587A7F65072c87c4910449fDcC5c47242"
+          },
+          "8453": {
+            "tokenAddress": "0x4A3A6Dd60A34bB2Aba60D73B4C88315E9CeB6A3D"
+          },
+          "42161": {
+            "tokenAddress": "0xFEa7a6a0B346362BF88A9e4A88416B77a57D6c2A"
+          },
+          "43114": {
+            "tokenAddress": "0x130966628846BFd36ff31a822705796e8cb8C18D"
+          }
+        },
+        "feeInfo": {
+          "1": {
+            "minDstGas": 100000
+          },
+          "10": {
+            "minDstGas": 100000
+          },
+          "137": {
+            "minDstGas": 100000
+          },
+          "8453": {
+            "minDstGas": 100000
+          },
+          "42161": {
+            "minDstGas": 100000
+          },
+          "43114": {
+            "minDstGas": 100000
+          }
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x41d5a04b4e03dc27dc1f5c5a576ad2187bc601af",
+      "oftVersion": 2,
+      "endpointVersion": 1,
+      "endpointId": 102,
+      "oftSharedDecimals": 8
     },
     {
       "chainId": 56,
@@ -11738,10 +12737,43 @@
       "logoURI": "https://s2.coinmarketcap.com/static/img/coins/128x128/4660.png",
       "tags": [],
       "extensions": {
-        "coingeckoId": "telos"
+        "coingeckoId": "telos",
+        "peersInfo": {
+          "1": {
+            "tokenAddress": "0x193f4A4a6ea24102F49b931DEeeb931f6E32405d"
+          },
+          "137": {
+            "tokenAddress": "0x193f4A4a6ea24102F49b931DEeeb931f6E32405d"
+          },
+          "42161": {
+            "tokenAddress": "0x193f4A4a6ea24102F49b931DEeeb931f6E32405d"
+          },
+          "43114": {
+            "tokenAddress": "0xed667dC80a45b77305Cc395DB56D997597Dc6DdD"
+          }
+        },
+        "feeInfo": {
+          "1": {
+            "minDstGas": 100000
+          },
+          "137": {
+            "minDstGas": 100000
+          },
+          "42161": {
+            "minDstGas": 2000000
+          },
+          "43114": {
+            "minDstGas": 100000
+          }
+        }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x193f4a4a6ea24102f49b931deeeb931f6e32405d",
+      "oftVersion": 2,
+      "endpointVersion": 1,
+      "endpointId": 102,
+      "oftSharedDecimals": 4
     },
     {
       "chainId": 56,
@@ -11808,10 +12840,25 @@
           "42161": {
             "tokenAddress": "0xdcbf4cb83d27c408b30dd7f39bfcabd7176b1ba3"
           }
+        },
+        "peersInfo": {
+          "42161": {
+            "tokenAddress": "0xDCbf4CB83d27C408B30dD7F39bfcabD7176B1Ba3"
+          }
+        },
+        "feeInfo": {
+          "42161": {
+            "minDstGas": 2000000
+          }
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x9ba0b9c177846e6e447a5293c0f687e18df9da08",
+      "oftVersion": 2,
+      "endpointVersion": 1,
+      "endpointId": 102,
+      "oftSharedDecimals": 8
     },
     {
       "chainId": 56,
@@ -11936,10 +12983,31 @@
           "42161": {
             "tokenAddress": "0xf8173a39c56a554837c4c7f104153a005d284d11"
           }
+        },
+        "peersInfo": {
+          "1": {
+            "tokenAddress": "0xf8173a39c56a554837C4C7f104153A005D284D11"
+          },
+          "42161": {
+            "tokenAddress": "0xf8173a39c56a554837C4C7f104153A005D284D11"
+          }
+        },
+        "feeInfo": {
+          "1": {
+            "minDstGas": 200000
+          },
+          "42161": {
+            "minDstGas": 200000
+          }
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x67fb304001ad03c282266b965b51e97aa54a2fab",
+      "oftVersion": 2,
+      "endpointVersion": 1,
+      "endpointId": 102,
+      "oftSharedDecimals": 8
     },
     {
       "chainId": 56,
@@ -12075,10 +13143,61 @@
           "1": {
             "tokenAddress": "0x559b7bfc48a5274754b08819f75c5f27af53d53b"
           }
+        },
+        "peersInfo": {
+          "1": {
+            "tokenAddress": "0x559b7bfC48a5274754b08819F75C5F27aF53D53b"
+          },
+          "10": {
+            "tokenAddress": "0xD3FDCb837DAfdb7C9C3eBD48FE22a53F6Dd3d7D7"
+          },
+          "137": {
+            "tokenAddress": "0xD3FDCb837DAfdb7C9C3eBD48FE22a53F6Dd3d7D7"
+          },
+          "1088": {
+            "tokenAddress": "0xD3FDCb837DAfdb7C9C3eBD48FE22a53F6Dd3d7D7"
+          },
+          "8453": {
+            "tokenAddress": "0xD3FDCb837DAfdb7C9C3eBD48FE22a53F6Dd3d7D7"
+          },
+          "42161": {
+            "tokenAddress": "0xD3FDCb837DAfdb7C9C3eBD48FE22a53F6Dd3d7D7"
+          },
+          "43114": {
+            "tokenAddress": "0xD3FDCb837DAfdb7C9C3eBD48FE22a53F6Dd3d7D7"
+          }
+        },
+        "feeInfo": {
+          "1": {
+            "minDstGas": 500000
+          },
+          "10": {
+            "minDstGas": 220000
+          },
+          "137": {
+            "minDstGas": 210000
+          },
+          "1088": {
+            "minDstGas": 220000
+          },
+          "8453": {
+            "minDstGas": 260000
+          },
+          "42161": {
+            "minDstGas": 1500000
+          },
+          "43114": {
+            "minDstGas": 240000
+          }
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0xd3fdcb837dafdb7c9c3ebd48fe22a53f6dd3d7d7",
+      "oftVersion": 2,
+      "endpointVersion": 1,
+      "endpointId": 102,
+      "oftSharedDecimals": 8
     },
     {
       "chainId": 56,
@@ -12191,10 +13310,37 @@
           "42161": {
             "tokenAddress": "0x6db8b088c4d41d622b44cd81b900ba690f2d496c"
           }
+        },
+        "peersInfo": {
+          "137": {
+            "tokenAddress": "0x8255775bea425f910044ddFb7681D6d87fD5489d"
+          },
+          "8453": {
+            "tokenAddress": "0x8255775bea425f910044ddFb7681D6d87fD5489d"
+          },
+          "42161": {
+            "tokenAddress": "0x6Db8b088c4d41d622B44CD81B900bA690f2d496C"
+          }
+        },
+        "feeInfo": {
+          "137": {
+            "minDstGas": 110000
+          },
+          "8453": {
+            "minDstGas": 110000
+          },
+          "42161": {
+            "minDstGas": 1000000
+          }
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0xcf7d4b692c478b77aff32bb1493c54c84f27f85a",
+      "oftVersion": 2,
+      "endpointVersion": 1,
+      "endpointId": 102,
+      "oftSharedDecimals": 8
     },
     {
       "chainId": 80094,
@@ -13447,10 +14593,55 @@
           "1": {
             "tokenAddress": "0x2b1d36f5b61addaf7da7ebbd11b35fd8cfb0de31"
           }
+        },
+        "peersInfo": {
+          "1": {
+            "tokenAddress": "0x2b1D36f5B61AdDAf7DA7ebbd11B35FD8cfb0DE31"
+          },
+          "56": {
+            "tokenAddress": "0x2b1D36f5B61AdDAf7DA7ebbd11B35FD8cfb0DE31"
+          },
+          "137": {
+            "tokenAddress": "0x2b1D36f5B61AdDAf7DA7ebbd11B35FD8cfb0DE31"
+          },
+          "8453": {
+            "tokenAddress": "0x2b1D36f5B61AdDAf7DA7ebbd11B35FD8cfb0DE31"
+          },
+          "42161": {
+            "tokenAddress": "0x2b1D36f5B61AdDAf7DA7ebbd11B35FD8cfb0DE31"
+          },
+          "43114": {
+            "tokenAddress": "0x2b1D36f5B61AdDAf7DA7ebbd11B35FD8cfb0DE31"
+          }
+        },
+        "feeInfo": {
+          "1": {
+            "minDstGas": 100000
+          },
+          "56": {
+            "minDstGas": 100000
+          },
+          "137": {
+            "minDstGas": 100000
+          },
+          "8453": {
+            "minDstGas": 100000
+          },
+          "42161": {
+            "minDstGas": 100000
+          },
+          "43114": {
+            "minDstGas": 100000
+          }
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x2b1d36f5b61addaf7da7ebbd11b35fd8cfb0de31",
+      "oftVersion": 2,
+      "endpointVersion": 1,
+      "endpointId": 111,
+      "oftSharedDecimals": 8
     },
     {
       "chainId": 10,
@@ -13638,10 +14829,25 @@
       "logoURI": "https://s2.coinmarketcap.com/static/img/coins/128x128/13244.png",
       "tags": [],
       "extensions": {
-        "coingeckoId": "beethoven-x"
+        "coingeckoId": "beethoven-x",
+        "peersInfo": {
+          "146": {
+            "tokenAddress": "0x1E5fe95fB90ac0530F581C617272cd0864626795"
+          }
+        },
+        "feeInfo": {
+          "146": {
+            "minDstGas": 110000
+          }
+        }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0xb4bc46bc6cb217b59ea8f4530bae26bf69f677f0",
+      "oftVersion": 2,
+      "endpointVersion": 1,
+      "endpointId": 111,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 10,
@@ -13782,10 +14988,61 @@
           "1": {
             "tokenAddress": "0x559b7bfc48a5274754b08819f75c5f27af53d53b"
           }
+        },
+        "peersInfo": {
+          "1": {
+            "tokenAddress": "0x559b7bfC48a5274754b08819F75C5F27aF53D53b"
+          },
+          "56": {
+            "tokenAddress": "0xD3FDCb837DAfdb7C9C3eBD48FE22a53F6Dd3d7D7"
+          },
+          "137": {
+            "tokenAddress": "0xD3FDCb837DAfdb7C9C3eBD48FE22a53F6Dd3d7D7"
+          },
+          "1088": {
+            "tokenAddress": "0xD3FDCb837DAfdb7C9C3eBD48FE22a53F6Dd3d7D7"
+          },
+          "8453": {
+            "tokenAddress": "0xD3FDCb837DAfdb7C9C3eBD48FE22a53F6Dd3d7D7"
+          },
+          "42161": {
+            "tokenAddress": "0xD3FDCb837DAfdb7C9C3eBD48FE22a53F6Dd3d7D7"
+          },
+          "43114": {
+            "tokenAddress": "0xD3FDCb837DAfdb7C9C3eBD48FE22a53F6Dd3d7D7"
+          }
+        },
+        "feeInfo": {
+          "1": {
+            "minDstGas": 500000
+          },
+          "56": {
+            "minDstGas": 220000
+          },
+          "137": {
+            "minDstGas": 210000
+          },
+          "1088": {
+            "minDstGas": 220000
+          },
+          "8453": {
+            "minDstGas": 260000
+          },
+          "42161": {
+            "minDstGas": 1500000
+          },
+          "43114": {
+            "minDstGas": 240000
+          }
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0xd3fdcb837dafdb7c9c3ebd48fe22a53f6dd3d7d7",
+      "oftVersion": 2,
+      "endpointVersion": 1,
+      "endpointId": 111,
+      "oftSharedDecimals": 8
     },
     {
       "chainId": 10,
@@ -13800,10 +15057,55 @@
           "1": {
             "tokenAddress": "0x99d8a9c45b2eca8864373a26d1459e3dff1e17f3"
           }
+        },
+        "peersInfo": {
+          "1": {
+            "tokenAddress": "0x99D8a9C45b2ecA8864373A26D1459e3Dff1e17F3"
+          },
+          "56": {
+            "tokenAddress": "0xfE19F0B51438fd612f6FD59C1dbB3eA319f433Ba"
+          },
+          "137": {
+            "tokenAddress": "0x49a0400587A7F65072c87c4910449fDcC5c47242"
+          },
+          "8453": {
+            "tokenAddress": "0x4A3A6Dd60A34bB2Aba60D73B4C88315E9CeB6A3D"
+          },
+          "42161": {
+            "tokenAddress": "0xFEa7a6a0B346362BF88A9e4A88416B77a57D6c2A"
+          },
+          "43114": {
+            "tokenAddress": "0x130966628846BFd36ff31a822705796e8cb8C18D"
+          }
+        },
+        "feeInfo": {
+          "1": {
+            "minDstGas": 100000
+          },
+          "56": {
+            "minDstGas": 100000
+          },
+          "137": {
+            "minDstGas": 100000
+          },
+          "8453": {
+            "minDstGas": 100000
+          },
+          "42161": {
+            "minDstGas": 100000
+          },
+          "43114": {
+            "minDstGas": 100000
+          }
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x48686c24697fe9042531b64d792304e514e74339",
+      "oftVersion": 2,
+      "endpointVersion": 1,
+      "endpointId": 111,
+      "oftSharedDecimals": 8
     },
     {
       "chainId": 10,
@@ -14001,8 +15303,24 @@
           "1": {
             "tokenAddress": "0xa2c2c937333165d4c5f2dc5f31a43e1239fecfeb"
           }
+        },
+        "peersInfo": {
+          "1": {
+            "tokenAddress": "0xA2c2C937333165d4c5f2dC5f31a43E1239FeCfeB"
+          }
+        },
+        "feeInfo": {
+          "1": {
+            "minDstGas": 100000
+          }
         }
-      }
+      },
+      "isOFT": true,
+      "oftAdapter": "0x9c598da94c840147c9a1eabe1ae8df750674ddf6",
+      "oftVersion": 2,
+      "endpointVersion": 1,
+      "endpointId": 151,
+      "oftSharedDecimals": 8
     },
     {
       "chainId": 1088,
@@ -14244,10 +15562,61 @@
           "1": {
             "tokenAddress": "0x559b7bfc48a5274754b08819f75c5f27af53d53b"
           }
+        },
+        "peersInfo": {
+          "1": {
+            "tokenAddress": "0x559b7bfC48a5274754b08819F75C5F27aF53D53b"
+          },
+          "10": {
+            "tokenAddress": "0xD3FDCb837DAfdb7C9C3eBD48FE22a53F6Dd3d7D7"
+          },
+          "56": {
+            "tokenAddress": "0xD3FDCb837DAfdb7C9C3eBD48FE22a53F6Dd3d7D7"
+          },
+          "137": {
+            "tokenAddress": "0xD3FDCb837DAfdb7C9C3eBD48FE22a53F6Dd3d7D7"
+          },
+          "8453": {
+            "tokenAddress": "0xD3FDCb837DAfdb7C9C3eBD48FE22a53F6Dd3d7D7"
+          },
+          "42161": {
+            "tokenAddress": "0xD3FDCb837DAfdb7C9C3eBD48FE22a53F6Dd3d7D7"
+          },
+          "43114": {
+            "tokenAddress": "0xD3FDCb837DAfdb7C9C3eBD48FE22a53F6Dd3d7D7"
+          }
+        },
+        "feeInfo": {
+          "1": {
+            "minDstGas": 500000
+          },
+          "10": {
+            "minDstGas": 220000
+          },
+          "56": {
+            "minDstGas": 220000
+          },
+          "137": {
+            "minDstGas": 210000
+          },
+          "8453": {
+            "minDstGas": 260000
+          },
+          "42161": {
+            "minDstGas": 1500000
+          },
+          "43114": {
+            "minDstGas": 240000
+          }
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0xd3fdcb837dafdb7c9c3ebd48fe22a53f6dd3d7d7",
+      "oftVersion": 2,
+      "endpointVersion": 1,
+      "endpointId": 151,
+      "oftSharedDecimals": 8
     },
     {
       "chainId": 1088,
@@ -14262,10 +15631,25 @@
           "56": {
             "tokenAddress": "0xb92c5e0135a510a4a3a8803f143d2cb085bbaf73"
           }
+        },
+        "peersInfo": {
+          "56": {
+            "tokenAddress": "0xB92c5e0135A510A4a3A8803F143d2Cb085BBAf73"
+          }
+        },
+        "feeInfo": {
+          "56": {
+            "minDstGas": 140000
+          }
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x52b4fc2ca0d9b194769ab9a3dc36c2c6831f2520",
+      "oftVersion": 2,
+      "endpointVersion": 1,
+      "endpointId": 151,
+      "oftSharedDecimals": 9
     },
     {
       "chainId": 1088,
@@ -14560,9 +15944,43 @@
       "symbol": "TLOS",
       "logoURI": "https://s2.coinmarketcap.com/static/img/coins/128x128/4660.png",
       "tags": [],
-      "extensions": {},
+      "extensions": {
+        "peersInfo": {
+          "1": {
+            "tokenAddress": "0x193f4A4a6ea24102F49b931DEeeb931f6E32405d"
+          },
+          "56": {
+            "tokenAddress": "0x193f4A4a6ea24102F49b931DEeeb931f6E32405d"
+          },
+          "137": {
+            "tokenAddress": "0x193f4A4a6ea24102F49b931DEeeb931f6E32405d"
+          },
+          "42161": {
+            "tokenAddress": "0x193f4A4a6ea24102F49b931DEeeb931f6E32405d"
+          }
+        },
+        "feeInfo": {
+          "1": {
+            "minDstGas": 100000
+          },
+          "56": {
+            "minDstGas": 100000
+          },
+          "137": {
+            "minDstGas": 100000
+          },
+          "42161": {
+            "minDstGas": 2000000
+          }
+        }
+      },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0xed667dc80a45b77305cc395db56d997597dc6ddd",
+      "oftVersion": 2,
+      "endpointVersion": 1,
+      "endpointId": 106,
+      "oftSharedDecimals": 4
     },
     {
       "chainId": 43114,
@@ -15030,10 +16448,55 @@
           "1": {
             "tokenAddress": "0x2b1d36f5b61addaf7da7ebbd11b35fd8cfb0de31"
           }
+        },
+        "peersInfo": {
+          "1": {
+            "tokenAddress": "0x2b1D36f5B61AdDAf7DA7ebbd11B35FD8cfb0DE31"
+          },
+          "10": {
+            "tokenAddress": "0x2b1D36f5B61AdDAf7DA7ebbd11B35FD8cfb0DE31"
+          },
+          "56": {
+            "tokenAddress": "0x2b1D36f5B61AdDAf7DA7ebbd11B35FD8cfb0DE31"
+          },
+          "137": {
+            "tokenAddress": "0x2b1D36f5B61AdDAf7DA7ebbd11B35FD8cfb0DE31"
+          },
+          "8453": {
+            "tokenAddress": "0x2b1D36f5B61AdDAf7DA7ebbd11B35FD8cfb0DE31"
+          },
+          "42161": {
+            "tokenAddress": "0x2b1D36f5B61AdDAf7DA7ebbd11B35FD8cfb0DE31"
+          }
+        },
+        "feeInfo": {
+          "1": {
+            "minDstGas": 100000
+          },
+          "10": {
+            "minDstGas": 100000
+          },
+          "56": {
+            "minDstGas": 100000
+          },
+          "137": {
+            "minDstGas": 100000
+          },
+          "8453": {
+            "minDstGas": 100000
+          },
+          "42161": {
+            "minDstGas": 100000
+          }
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x2b1d36f5b61addaf7da7ebbd11b35fd8cfb0de31",
+      "oftVersion": 2,
+      "endpointVersion": 1,
+      "endpointId": 106,
+      "oftSharedDecimals": 8
     },
     {
       "chainId": 43114,
@@ -15418,10 +16881,61 @@
           "1": {
             "tokenAddress": "0x559b7bfc48a5274754b08819f75c5f27af53d53b"
           }
+        },
+        "peersInfo": {
+          "1": {
+            "tokenAddress": "0x559b7bfC48a5274754b08819F75C5F27aF53D53b"
+          },
+          "10": {
+            "tokenAddress": "0xD3FDCb837DAfdb7C9C3eBD48FE22a53F6Dd3d7D7"
+          },
+          "56": {
+            "tokenAddress": "0xD3FDCb837DAfdb7C9C3eBD48FE22a53F6Dd3d7D7"
+          },
+          "137": {
+            "tokenAddress": "0xD3FDCb837DAfdb7C9C3eBD48FE22a53F6Dd3d7D7"
+          },
+          "1088": {
+            "tokenAddress": "0xD3FDCb837DAfdb7C9C3eBD48FE22a53F6Dd3d7D7"
+          },
+          "8453": {
+            "tokenAddress": "0xD3FDCb837DAfdb7C9C3eBD48FE22a53F6Dd3d7D7"
+          },
+          "42161": {
+            "tokenAddress": "0xD3FDCb837DAfdb7C9C3eBD48FE22a53F6Dd3d7D7"
+          }
+        },
+        "feeInfo": {
+          "1": {
+            "minDstGas": 500000
+          },
+          "10": {
+            "minDstGas": 220000
+          },
+          "56": {
+            "minDstGas": 220000
+          },
+          "137": {
+            "minDstGas": 210000
+          },
+          "1088": {
+            "minDstGas": 220000
+          },
+          "8453": {
+            "minDstGas": 260000
+          },
+          "42161": {
+            "minDstGas": 1500000
+          }
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0xd3fdcb837dafdb7c9c3ebd48fe22a53f6dd3d7d7",
+      "oftVersion": 2,
+      "endpointVersion": 1,
+      "endpointId": 106,
+      "oftSharedDecimals": 8
     },
     {
       "chainId": 43114,
@@ -15436,10 +16950,55 @@
           "1": {
             "tokenAddress": "0x99D8a9C45b2ecA8864373A26D1459e3Dff1e17F3"
           }
+        },
+        "peersInfo": {
+          "1": {
+            "tokenAddress": "0x99D8a9C45b2ecA8864373A26D1459e3Dff1e17F3"
+          },
+          "10": {
+            "tokenAddress": "0xB153FB3d196A8eB25522705560ac152eeEc57901"
+          },
+          "56": {
+            "tokenAddress": "0xfE19F0B51438fd612f6FD59C1dbB3eA319f433Ba"
+          },
+          "137": {
+            "tokenAddress": "0x49a0400587A7F65072c87c4910449fDcC5c47242"
+          },
+          "8453": {
+            "tokenAddress": "0x4A3A6Dd60A34bB2Aba60D73B4C88315E9CeB6A3D"
+          },
+          "42161": {
+            "tokenAddress": "0xFEa7a6a0B346362BF88A9e4A88416B77a57D6c2A"
+          }
+        },
+        "feeInfo": {
+          "1": {
+            "minDstGas": 100000
+          },
+          "10": {
+            "minDstGas": 100000
+          },
+          "56": {
+            "minDstGas": 100000
+          },
+          "137": {
+            "minDstGas": 100000
+          },
+          "8453": {
+            "minDstGas": 100000
+          },
+          "42161": {
+            "minDstGas": 100000
+          }
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0xb3a66127ccb143bfb01d3aecd3ce9d17381b130d",
+      "oftVersion": 2,
+      "endpointVersion": 1,
+      "endpointId": 106,
+      "oftSharedDecimals": 8
     },
     {
       "chainId": 146,
@@ -15521,9 +17080,25 @@
       "symbol": "BEETS",
       "logoURI": "https://s2.coinmarketcap.com/static/img/coins/128x128/13244.png",
       "tags": [],
-      "extensions": {},
+      "extensions": {
+        "peersInfo": {
+          "10": {
+            "tokenAddress": "0xb4Bc46bc6cB217B59ea8F4530BaE26Bf69F677f0"
+          }
+        },
+        "feeInfo": {
+          "10": {
+            "minDstGas": 110000
+          }
+        }
+      },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x1e5fe95fb90ac0530f581c617272cd0864626795",
+      "oftVersion": 2,
+      "endpointVersion": 1,
+      "endpointId": 332,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 146,
@@ -15693,10 +17268,31 @@
           "56": {
             "tokenAddress": "0x34294afabcbaffc616ac6614f6d2e17260b78bed"
           }
+        },
+        "peersInfo": {
+          "1": {
+            "tokenAddress": "0xe6828D65bf5023AE1851D90D8783Cc821ba7eeE1"
+          },
+          "56": {
+            "tokenAddress": "0x34294AfABCbaFfc616ac6614F6d2e17260b78BEd"
+          }
+        },
+        "feeInfo": {
+          "1": {
+            "minDstGas": 110000
+          },
+          "56": {
+            "minDstGas": 110000
+          }
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0xe6828d65bf5023ae1851d90d8783cc821ba7eee1",
+      "oftVersion": 2,
+      "endpointVersion": 1,
+      "endpointId": 109,
+      "oftSharedDecimals": 8
     },
     {
       "chainId": 137,
@@ -15711,10 +17307,37 @@
           "56": {
             "tokenAddress": "0x0b15ddf19d47e6a86a56148fb4afffc6929bcb89"
           }
+        },
+        "peersInfo": {
+          "56": {
+            "tokenAddress": "0x0b15Ddf19D47E6a86A56148fb4aFFFc6929BcB89"
+          },
+          "8453": {
+            "tokenAddress": "0x8255775bea425f910044ddFb7681D6d87fD5489d"
+          },
+          "42161": {
+            "tokenAddress": "0x6Db8b088c4d41d622B44CD81B900bA690f2d496C"
+          }
+        },
+        "feeInfo": {
+          "56": {
+            "minDstGas": 110000
+          },
+          "8453": {
+            "minDstGas": 110000
+          },
+          "42161": {
+            "minDstGas": 1000000
+          }
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x8255775bea425f910044ddfb7681d6d87fd5489d",
+      "oftVersion": 2,
+      "endpointVersion": 1,
+      "endpointId": 109,
+      "oftSharedDecimals": 8
     },
     {
       "chainId": 137,
@@ -15996,10 +17619,55 @@
           "1": {
             "tokenAddress": "0x99d8a9c45b2eca8864373a26d1459e3dff1e17f3"
           }
+        },
+        "peersInfo": {
+          "1": {
+            "tokenAddress": "0x99D8a9C45b2ecA8864373A26D1459e3Dff1e17F3"
+          },
+          "10": {
+            "tokenAddress": "0xB153FB3d196A8eB25522705560ac152eeEc57901"
+          },
+          "56": {
+            "tokenAddress": "0xfE19F0B51438fd612f6FD59C1dbB3eA319f433Ba"
+          },
+          "8453": {
+            "tokenAddress": "0x4A3A6Dd60A34bB2Aba60D73B4C88315E9CeB6A3D"
+          },
+          "42161": {
+            "tokenAddress": "0xFEa7a6a0B346362BF88A9e4A88416B77a57D6c2A"
+          },
+          "43114": {
+            "tokenAddress": "0x130966628846BFd36ff31a822705796e8cb8C18D"
+          }
+        },
+        "feeInfo": {
+          "1": {
+            "minDstGas": 100000
+          },
+          "10": {
+            "minDstGas": 100000
+          },
+          "56": {
+            "minDstGas": 100000
+          },
+          "8453": {
+            "minDstGas": 100000
+          },
+          "42161": {
+            "minDstGas": 100000
+          },
+          "43114": {
+            "minDstGas": 100000
+          }
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0xca0d86afc25c57a6d2acdf331cabd4c9cee05533",
+      "oftVersion": 2,
+      "endpointVersion": 1,
+      "endpointId": 109,
+      "oftSharedDecimals": 8
     },
     {
       "chainId": 137,
@@ -16228,10 +17896,55 @@
           "1": {
             "tokenAddress": "0x2b1d36f5b61addaf7da7ebbd11b35fd8cfb0de31"
           }
+        },
+        "peersInfo": {
+          "1": {
+            "tokenAddress": "0x2b1D36f5B61AdDAf7DA7ebbd11B35FD8cfb0DE31"
+          },
+          "10": {
+            "tokenAddress": "0x2b1D36f5B61AdDAf7DA7ebbd11B35FD8cfb0DE31"
+          },
+          "56": {
+            "tokenAddress": "0x2b1D36f5B61AdDAf7DA7ebbd11B35FD8cfb0DE31"
+          },
+          "8453": {
+            "tokenAddress": "0x2b1D36f5B61AdDAf7DA7ebbd11B35FD8cfb0DE31"
+          },
+          "42161": {
+            "tokenAddress": "0x2b1D36f5B61AdDAf7DA7ebbd11B35FD8cfb0DE31"
+          },
+          "43114": {
+            "tokenAddress": "0x2b1D36f5B61AdDAf7DA7ebbd11B35FD8cfb0DE31"
+          }
+        },
+        "feeInfo": {
+          "1": {
+            "minDstGas": 100000
+          },
+          "10": {
+            "minDstGas": 100000
+          },
+          "56": {
+            "minDstGas": 100000
+          },
+          "8453": {
+            "minDstGas": 100000
+          },
+          "42161": {
+            "minDstGas": 100000
+          },
+          "43114": {
+            "minDstGas": 100000
+          }
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x2b1d36f5b61addaf7da7ebbd11b35fd8cfb0de31",
+      "oftVersion": 2,
+      "endpointVersion": 1,
+      "endpointId": 109,
+      "oftSharedDecimals": 8
     },
     {
       "chainId": 137,
@@ -16399,10 +18112,43 @@
       "logoURI": "https://s2.coinmarketcap.com/static/img/coins/128x128/4660.png",
       "tags": [],
       "extensions": {
-        "coingeckoId": "telos"
+        "coingeckoId": "telos",
+        "peersInfo": {
+          "1": {
+            "tokenAddress": "0x193f4A4a6ea24102F49b931DEeeb931f6E32405d"
+          },
+          "56": {
+            "tokenAddress": "0x193f4A4a6ea24102F49b931DEeeb931f6E32405d"
+          },
+          "42161": {
+            "tokenAddress": "0x193f4A4a6ea24102F49b931DEeeb931f6E32405d"
+          },
+          "43114": {
+            "tokenAddress": "0xed667dC80a45b77305Cc395DB56D997597Dc6DdD"
+          }
+        },
+        "feeInfo": {
+          "1": {
+            "minDstGas": 100000
+          },
+          "56": {
+            "minDstGas": 100000
+          },
+          "42161": {
+            "minDstGas": 2000000
+          },
+          "43114": {
+            "minDstGas": 100000
+          }
+        }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x193f4a4a6ea24102f49b931deeeb931f6e32405d",
+      "oftVersion": 2,
+      "endpointVersion": 1,
+      "endpointId": 109,
+      "oftSharedDecimals": 4
     },
     {
       "chainId": 137,
@@ -16497,10 +18243,31 @@
           "1": {
             "tokenAddress": "0x8db253a1943dddf1af9bcf8706ac9a0ce939d922"
           }
+        },
+        "peersInfo": {
+          "1": {
+            "tokenAddress": "0x8dB253a1943DdDf1AF9bcF8706ac9A0Ce939d922"
+          },
+          "56": {
+            "tokenAddress": "0xB2E787C6C83D6d75f466371a2966b27a8b700828"
+          }
+        },
+        "feeInfo": {
+          "1": {
+            "minDstGas": 110000
+          },
+          "56": {
+            "minDstGas": 110000
+          }
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0xb2e787c6c83d6d75f466371a2966b27a8b700828",
+      "oftVersion": 2,
+      "endpointVersion": 1,
+      "endpointId": 109,
+      "oftSharedDecimals": 9
     },
     {
       "chainId": 137,
@@ -16547,10 +18314,43 @@
           "1": {
             "tokenAddress": "0x9e20461bc2c4c980f62f1b279d71734207a6a356"
           }
+        },
+        "peersInfo": {
+          "1": {
+            "tokenAddress": "0x9e20461bc2c4c980f62f1B279D71734207a6A356"
+          },
+          "56": {
+            "tokenAddress": "0x9e20461bc2c4c980f62f1B279D71734207a6A356"
+          },
+          "8453": {
+            "tokenAddress": "0xC48E605c7b722a57277e087a6170B9E227e5AC0A"
+          },
+          "42161": {
+            "tokenAddress": "0x9e20461bc2c4c980f62f1B279D71734207a6A356"
+          }
+        },
+        "feeInfo": {
+          "1": {
+            "minDstGas": 110000
+          },
+          "56": {
+            "minDstGas": 110000
+          },
+          "8453": {
+            "minDstGas": 110000
+          },
+          "42161": {
+            "minDstGas": 1000000
+          }
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x9e20461bc2c4c980f62f1b279d71734207a6a356",
+      "oftVersion": 2,
+      "endpointVersion": 1,
+      "endpointId": 109,
+      "oftSharedDecimals": 8
     },
     {
       "chainId": 137,
@@ -16688,10 +18488,61 @@
           "1": {
             "tokenAddress": "0x559b7bfc48a5274754b08819f75c5f27af53d53b"
           }
+        },
+        "peersInfo": {
+          "1": {
+            "tokenAddress": "0x559b7bfC48a5274754b08819F75C5F27aF53D53b"
+          },
+          "10": {
+            "tokenAddress": "0xD3FDCb837DAfdb7C9C3eBD48FE22a53F6Dd3d7D7"
+          },
+          "56": {
+            "tokenAddress": "0xD3FDCb837DAfdb7C9C3eBD48FE22a53F6Dd3d7D7"
+          },
+          "1088": {
+            "tokenAddress": "0xD3FDCb837DAfdb7C9C3eBD48FE22a53F6Dd3d7D7"
+          },
+          "8453": {
+            "tokenAddress": "0xD3FDCb837DAfdb7C9C3eBD48FE22a53F6Dd3d7D7"
+          },
+          "42161": {
+            "tokenAddress": "0xD3FDCb837DAfdb7C9C3eBD48FE22a53F6Dd3d7D7"
+          },
+          "43114": {
+            "tokenAddress": "0xD3FDCb837DAfdb7C9C3eBD48FE22a53F6Dd3d7D7"
+          }
+        },
+        "feeInfo": {
+          "1": {
+            "minDstGas": 500000
+          },
+          "10": {
+            "minDstGas": 220000
+          },
+          "56": {
+            "minDstGas": 220000
+          },
+          "1088": {
+            "minDstGas": 220000
+          },
+          "8453": {
+            "minDstGas": 260000
+          },
+          "42161": {
+            "minDstGas": 1500000
+          },
+          "43114": {
+            "minDstGas": 240000
+          }
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0xd3fdcb837dafdb7c9c3ebd48fe22a53f6dd3d7d7",
+      "oftVersion": 2,
+      "endpointVersion": 1,
+      "endpointId": 109,
+      "oftSharedDecimals": 8
     },
     {
       "chainId": 137,
@@ -35263,13 +37114,24 @@
       "tags": [],
       "extensions": {
         "coingeckoId": "dream-machine-token",
-        "coinMarketCapId": 25653
+        "coinMarketCapId": 25653,
+        "peersInfo": {
+          "1": {
+            "tokenAddress": "0x0B7f0e51Cd1739D6C96982D55aD8fA634dd43A9C"
+          }
+        },
+        "feeInfo": {
+          "1": {
+            "minDstGas": 100000
+          }
+        }
       },
       "isAcross": false,
+      "isOFT": true,
       "oftAdapter": "0xa9aa07f082d9c15d0b6d7e9e5b68b1f898399c29",
       "oftVersion": 2,
-      "endpointVersion": 2,
-      "endpointId": 30110,
+      "endpointVersion": 1,
+      "endpointId": 110,
       "oftSharedDecimals": 6
     },
     {
@@ -35862,10 +37724,25 @@
           "56": {
             "tokenAddress": "0x1d4268a58ee7ec2cc2af5d70a2fd2b3a896527a2"
           }
+        },
+        "peersInfo": {
+          "56": {
+            "tokenAddress": "0x1D4268a58ee7EC2cc2Af5d70a2fD2B3a896527a2"
+          }
+        },
+        "feeInfo": {
+          "56": {
+            "minDstGas": 200000
+          }
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x64f282290e8d0196c2929a9119250c361e025bab",
+      "oftVersion": 2,
+      "endpointVersion": 1,
+      "endpointId": 110,
+      "oftSharedDecimals": 9
     },
     {
       "chainId": 42161,
@@ -35881,10 +37758,55 @@
           "1": {
             "tokenAddress": "0x2b1d36f5b61addaf7da7ebbd11b35fd8cfb0de31"
           }
+        },
+        "peersInfo": {
+          "1": {
+            "tokenAddress": "0x2b1D36f5B61AdDAf7DA7ebbd11B35FD8cfb0DE31"
+          },
+          "10": {
+            "tokenAddress": "0x2b1D36f5B61AdDAf7DA7ebbd11B35FD8cfb0DE31"
+          },
+          "56": {
+            "tokenAddress": "0x2b1D36f5B61AdDAf7DA7ebbd11B35FD8cfb0DE31"
+          },
+          "137": {
+            "tokenAddress": "0x2b1D36f5B61AdDAf7DA7ebbd11B35FD8cfb0DE31"
+          },
+          "8453": {
+            "tokenAddress": "0x2b1D36f5B61AdDAf7DA7ebbd11B35FD8cfb0DE31"
+          },
+          "43114": {
+            "tokenAddress": "0x2b1D36f5B61AdDAf7DA7ebbd11B35FD8cfb0DE31"
+          }
+        },
+        "feeInfo": {
+          "1": {
+            "minDstGas": 100000
+          },
+          "10": {
+            "minDstGas": 100000
+          },
+          "56": {
+            "minDstGas": 100000
+          },
+          "137": {
+            "minDstGas": 100000
+          },
+          "8453": {
+            "minDstGas": 100000
+          },
+          "43114": {
+            "minDstGas": 100000
+          }
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x2b1d36f5b61addaf7da7ebbd11b35fd8cfb0de31",
+      "oftVersion": 2,
+      "endpointVersion": 1,
+      "endpointId": 110,
+      "oftSharedDecimals": 8
     },
     {
       "chainId": 42161,
@@ -35962,10 +37884,25 @@
           "56": {
             "tokenAddress": "0x8ea5219a16c2dbf1d6335a6aa0c6bd45c50347c5"
           }
+        },
+        "peersInfo": {
+          "56": {
+            "tokenAddress": "0x8ea5219a16c2dbF1d6335A6aa0c6bd45c50347C5"
+          }
+        },
+        "feeInfo": {
+          "56": {
+            "minDstGas": 200000
+          }
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0xdcbf4cb83d27c408b30dd7f39bfcabd7176b1ba3",
+      "oftVersion": 2,
+      "endpointVersion": 1,
+      "endpointId": 110,
+      "oftSharedDecimals": 8
     },
     {
       "chainId": 42161,
@@ -35981,10 +37918,37 @@
           "56": {
             "tokenAddress": "0x0b15ddf19d47e6a86a56148fb4afffc6929bcb89"
           }
+        },
+        "peersInfo": {
+          "56": {
+            "tokenAddress": "0x0b15Ddf19D47E6a86A56148fb4aFFFc6929BcB89"
+          },
+          "137": {
+            "tokenAddress": "0x8255775bea425f910044ddFb7681D6d87fD5489d"
+          },
+          "8453": {
+            "tokenAddress": "0x8255775bea425f910044ddFb7681D6d87fD5489d"
+          }
+        },
+        "feeInfo": {
+          "56": {
+            "minDstGas": 110000
+          },
+          "137": {
+            "minDstGas": 110000
+          },
+          "8453": {
+            "minDstGas": 110000
+          }
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x6db8b088c4d41d622b44cd81b900ba690f2d496c",
+      "oftVersion": 2,
+      "endpointVersion": 1,
+      "endpointId": 110,
+      "oftSharedDecimals": 8
     },
     {
       "chainId": 42161,
@@ -36018,10 +37982,25 @@
           "1": {
             "tokenAddress": "0x8db253a1943dddf1af9bcf8706ac9a0ce939d922"
           }
+        },
+        "peersInfo": {
+          "1": {
+            "tokenAddress": "0x8dB253a1943DdDf1AF9bcF8706ac9A0Ce939d922"
+          }
+        },
+        "feeInfo": {
+          "1": {
+            "minDstGas": 110000
+          }
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0xb2e787c6c83d6d75f466371a2966b27a8b700828",
+      "oftVersion": 2,
+      "endpointVersion": 1,
+      "endpointId": 110,
+      "oftSharedDecimals": 9
     },
     {
       "chainId": 42161,
@@ -36037,10 +38016,43 @@
           "1": {
             "tokenAddress": "0x9e20461bc2c4c980f62f1b279d71734207a6a356"
           }
+        },
+        "peersInfo": {
+          "1": {
+            "tokenAddress": "0x9e20461bc2c4c980f62f1B279D71734207a6A356"
+          },
+          "56": {
+            "tokenAddress": "0x9e20461bc2c4c980f62f1B279D71734207a6A356"
+          },
+          "137": {
+            "tokenAddress": "0x9e20461bc2c4c980f62f1B279D71734207a6A356"
+          },
+          "8453": {
+            "tokenAddress": "0xC48E605c7b722a57277e087a6170B9E227e5AC0A"
+          }
+        },
+        "feeInfo": {
+          "1": {
+            "minDstGas": 110000
+          },
+          "56": {
+            "minDstGas": 110000
+          },
+          "137": {
+            "minDstGas": 110000
+          },
+          "8453": {
+            "minDstGas": 110000
+          }
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x9e20461bc2c4c980f62f1b279d71734207a6a356",
+      "oftVersion": 2,
+      "endpointVersion": 1,
+      "endpointId": 110,
+      "oftSharedDecimals": 8
     },
     {
       "chainId": 42161,
@@ -36408,10 +38420,31 @@
           "56": {
             "tokenAddress": "0xbdeae1ca48894a1759a8374d63925f21f2ee2639"
           }
+        },
+        "peersInfo": {
+          "1": {
+            "tokenAddress": "0xf8173a39c56a554837C4C7f104153A005D284D11"
+          },
+          "56": {
+            "tokenAddress": "0xBdEAe1cA48894A1759A8374D63925f21f2Ee2639"
+          }
+        },
+        "feeInfo": {
+          "1": {
+            "minDstGas": 200000
+          },
+          "56": {
+            "minDstGas": 200000
+          }
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0xf8173a39c56a554837c4c7f104153a005d284d11",
+      "oftVersion": 2,
+      "endpointVersion": 1,
+      "endpointId": 110,
+      "oftSharedDecimals": 8
     },
     {
       "chainId": 42161,
@@ -36620,10 +38653,37 @@
           "1": {
             "tokenAddress": "0x137ddb47ee24eaa998a535ab00378d6bfa84f893"
           }
+        },
+        "peersInfo": {
+          "1": {
+            "tokenAddress": "0x137dDB47Ee24EaA998a535Ab00378d6BFa84F893"
+          },
+          "56": {
+            "tokenAddress": "0xf7DE7E8A6bd59ED41a4b5fe50278b3B7f31384dF"
+          },
+          "8453": {
+            "tokenAddress": "0xd722E55C1d9D9fA0021A5215Cbb904b92B3dC5d4"
+          }
+        },
+        "feeInfo": {
+          "1": {
+            "minDstGas": 100000
+          },
+          "56": {
+            "minDstGas": 100000
+          },
+          "8453": {
+            "minDstGas": 100000
+          }
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x3082cc23568ea640225c2467653db90e9250aaa0",
+      "oftVersion": 2,
+      "endpointVersion": 1,
+      "endpointId": 110,
+      "oftSharedDecimals": 8
     },
     {
       "chainId": 42161,
@@ -36691,6 +38751,16 @@
             "tokenAddress": "0xc227717ef4ae4d982e14789eb33ba942243c3fee"
           }
         },
+        "peersInfo": {
+          "8453": {
+            "tokenAddress": "0x18410716eF7d89e837D3e0275b3B234cAF8b09e6"
+          }
+        },
+        "feeInfo": {
+          "8453": {
+            "minDstGas": 1100000
+          }
+        },
         "coingeckoId": "mozaic",
         "coinMarketCapId": 24839
       },
@@ -36698,8 +38768,8 @@
       "isOFT": true,
       "oftAdapter": "0x20547341e58fb558637fa15379c92e11f7b7f710",
       "oftVersion": 2,
-      "endpointVersion": 2,
-      "endpointId": 30110,
+      "endpointVersion": 1,
+      "endpointId": 110,
       "oftSharedDecimals": 18
     },
     {
@@ -36925,10 +38995,55 @@
           "1": {
             "tokenAddress": "0x99d8a9c45b2eca8864373a26d1459e3dff1e17f3"
           }
+        },
+        "peersInfo": {
+          "1": {
+            "tokenAddress": "0x99D8a9C45b2ecA8864373A26D1459e3Dff1e17F3"
+          },
+          "10": {
+            "tokenAddress": "0xB153FB3d196A8eB25522705560ac152eeEc57901"
+          },
+          "56": {
+            "tokenAddress": "0xfE19F0B51438fd612f6FD59C1dbB3eA319f433Ba"
+          },
+          "137": {
+            "tokenAddress": "0x49a0400587A7F65072c87c4910449fDcC5c47242"
+          },
+          "8453": {
+            "tokenAddress": "0x4A3A6Dd60A34bB2Aba60D73B4C88315E9CeB6A3D"
+          },
+          "43114": {
+            "tokenAddress": "0x130966628846BFd36ff31a822705796e8cb8C18D"
+          }
+        },
+        "feeInfo": {
+          "1": {
+            "minDstGas": 100000
+          },
+          "10": {
+            "minDstGas": 100000
+          },
+          "56": {
+            "minDstGas": 100000
+          },
+          "137": {
+            "minDstGas": 100000
+          },
+          "8453": {
+            "minDstGas": 100000
+          },
+          "43114": {
+            "minDstGas": 100000
+          }
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x957a8af7894e76e16db17c2a913496a4e60b7090",
+      "oftVersion": 2,
+      "endpointVersion": 1,
+      "endpointId": 110,
+      "oftSharedDecimals": 8
     },
     {
       "chainId": 42161,
@@ -37131,10 +39246,43 @@
       "logoURI": "https://s2.coinmarketcap.com/static/img/coins/128x128/4660.png",
       "tags": [],
       "extensions": {
-        "coingeckoId": "telos"
+        "coingeckoId": "telos",
+        "peersInfo": {
+          "1": {
+            "tokenAddress": "0x193f4A4a6ea24102F49b931DEeeb931f6E32405d"
+          },
+          "56": {
+            "tokenAddress": "0x193f4A4a6ea24102F49b931DEeeb931f6E32405d"
+          },
+          "137": {
+            "tokenAddress": "0x193f4A4a6ea24102F49b931DEeeb931f6E32405d"
+          },
+          "43114": {
+            "tokenAddress": "0xed667dC80a45b77305Cc395DB56D997597Dc6DdD"
+          }
+        },
+        "feeInfo": {
+          "1": {
+            "minDstGas": 100000
+          },
+          "56": {
+            "minDstGas": 100000
+          },
+          "137": {
+            "minDstGas": 100000
+          },
+          "43114": {
+            "minDstGas": 100000
+          }
+        }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x193f4a4a6ea24102f49b931deeeb931f6e32405d",
+      "oftVersion": 2,
+      "endpointVersion": 1,
+      "endpointId": 110,
+      "oftSharedDecimals": 4
     },
     {
       "chainId": 42161,
@@ -37168,10 +39316,43 @@
           "1": {
             "tokenAddress": "0xd3cc9d8f3689b83c91b7b59cab4946b063eb894a"
           }
+        },
+        "peersInfo": {
+          "1": {
+            "tokenAddress": "0xd3CC9d8f3689B83c91b7B59cAB4946B063EB894A"
+          },
+          "10": {
+            "tokenAddress": "0x4a971e87ad1F61f7f3081645f52a99277AE917cF"
+          },
+          "56": {
+            "tokenAddress": "0xcF6BB5389c92Bdda8a3747Ddb454cB7a64626C63"
+          },
+          "8453": {
+            "tokenAddress": "0xebB7873213c8d1d9913D8eA39Aa12d74cB107995"
+          }
+        },
+        "feeInfo": {
+          "1": {
+            "minDstGas": 300000
+          },
+          "10": {
+            "minDstGas": 300000
+          },
+          "56": {
+            "minDstGas": 300000
+          },
+          "8453": {
+            "minDstGas": 300000
+          }
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x20cea49b5f7a6dbd78cae772ca5973ef360aa1e6",
+      "oftVersion": 2,
+      "endpointVersion": 1,
+      "endpointId": 110,
+      "oftSharedDecimals": 8
     },
     {
       "chainId": 42161,
@@ -37541,10 +39722,31 @@
           "8453": {
             "tokenAddress": "0xbefd5c25a59ef2c1316c5a4944931171f30cd3e4"
           }
+        },
+        "peersInfo": {
+          "1": {
+            "tokenAddress": "0x9DeB0fc809955b79c85e82918E8586d3b7d2695a"
+          },
+          "8453": {
+            "tokenAddress": "0xbeFD5C25A59ef2C1316c5A4944931171F30Cd3E4"
+          }
+        },
+        "feeInfo": {
+          "1": {
+            "minDstGas": 200000
+          },
+          "8453": {
+            "minDstGas": 100000
+          }
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0x8b5e4c9a188b1a187f2d1e80b1c2fb17fa2922e1",
+      "oftVersion": 2,
+      "endpointVersion": 1,
+      "endpointId": 110,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 42161,
@@ -37559,10 +39761,61 @@
           "1": {
             "tokenAddress": "0x559b7bfc48a5274754b08819f75c5f27af53d53b"
           }
+        },
+        "peersInfo": {
+          "1": {
+            "tokenAddress": "0x559b7bfC48a5274754b08819F75C5F27aF53D53b"
+          },
+          "10": {
+            "tokenAddress": "0xD3FDCb837DAfdb7C9C3eBD48FE22a53F6Dd3d7D7"
+          },
+          "56": {
+            "tokenAddress": "0xD3FDCb837DAfdb7C9C3eBD48FE22a53F6Dd3d7D7"
+          },
+          "137": {
+            "tokenAddress": "0xD3FDCb837DAfdb7C9C3eBD48FE22a53F6Dd3d7D7"
+          },
+          "1088": {
+            "tokenAddress": "0xD3FDCb837DAfdb7C9C3eBD48FE22a53F6Dd3d7D7"
+          },
+          "8453": {
+            "tokenAddress": "0xD3FDCb837DAfdb7C9C3eBD48FE22a53F6Dd3d7D7"
+          },
+          "43114": {
+            "tokenAddress": "0xD3FDCb837DAfdb7C9C3eBD48FE22a53F6Dd3d7D7"
+          }
+        },
+        "feeInfo": {
+          "1": {
+            "minDstGas": 500000
+          },
+          "10": {
+            "minDstGas": 220000
+          },
+          "56": {
+            "minDstGas": 220000
+          },
+          "137": {
+            "minDstGas": 210000
+          },
+          "1088": {
+            "minDstGas": 220000
+          },
+          "8453": {
+            "minDstGas": 260000
+          },
+          "43114": {
+            "minDstGas": 240000
+          }
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true,
+      "oftAdapter": "0xd3fdcb837dafdb7c9c3ebd48fe22a53f6dd3d7d7",
+      "oftVersion": 2,
+      "endpointVersion": 1,
+      "endpointId": 110,
+      "oftSharedDecimals": 8
     },
     {
       "chainId": 42161,
