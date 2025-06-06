@@ -485,6 +485,8 @@ async function main() {
     for (const t of finalTokens) {
         if (!t.extensions || !t.extensions.peersInfo) continue;
 
+        const needsIcon = !(t?.icon && t?.icon?.length > 0)
+
         for (const [chainId, peerInfo] of Object.entries(t.extensions.peersInfo)) {
             const peerAddress = peerInfo.tokenAddress;
             const matchingToken = tokens.find(
@@ -494,6 +496,9 @@ async function main() {
             if (matchingToken) {
                 t.extensions.peersInfo[chainId].tokenAddress = matchingToken.address;
                 console.log(`✅ Found matching token for ${peerAddress} on chain ${chainId}: ${matchingToken.name} (${matchingToken.symbol} new address: ${matchingToken.address})`);
+
+                if (needsIcon && matchingToken?.icon && matchingToken?.icon?.length > 0) t.icon = matchingToken.icon;
+
             } else {
                 console.warn(`⚠️ Token ${t.address}: No matching token found for peer address ${peerAddress} on chain ${chainId}`);
             }
