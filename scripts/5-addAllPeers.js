@@ -251,6 +251,8 @@ async function main() {
                                     token.endpointId = CHAIN_KEY_TO_EID[token.chainKey].v2;
                                 }
                             }
+                        } else {
+                            if (token.oftSharedDecimals) delete token.oftSharedDecimals; // remove if not returned
                         }
                     } else if (type === 'ercName') {
                         if (raw && raw !== '0x') {

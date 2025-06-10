@@ -205,12 +205,12 @@ async function main() {
 
             const { src } = isOAppCallsByChain[chainKey][idx];
 
-            if (!hex || hex === '0x' || src.symbol === 'USDC' || src.symbol === 'DAI' || src.symbol === 'WETH') {
+            if (!hex || hex === '0x' || src.symbol === 'USDC' || src.symbol === 'DAI' || src.symbol === 'WETH' || Object.keys(src.extensions?.peersInfo || {}).length === 0) {
                 console.warn(`Empty lzEndpoint return for ${src.chainKey} - ${src.oftAdapter}`);
                 isOApp = false;
             }
             try {
-                // No need to decode if already set as false due to no return
+                // No need to decode if already set as false due to no return 
                 if (hex && hex !== '0x') {
                     const [endpointAddr] = oAppInterface.decodeFunctionResult('lzEndpoint', hex);
                     isOApp = endpointAddr && endpointAddr !== '' && endpointAddr !== '0x';
