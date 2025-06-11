@@ -5,6 +5,31 @@ const {
   TOKEN_EQUIVALENCE_REMAPPING,
 } = require("@across-protocol/constants");
 
+const ACROSS_API_ENDPOINT = "https://across.to/api";
+
+async function fetchOriginRoutes(address) {
+  const url = `${ACROSS_API_ENDPOINT}/available-routes?originChainId=1&originToken=${address}`;
+  const response = await fetch(url);
+  return await response.json();
+}
+
+async function fetchDestRoutes(address) {
+  const url = `${ACROSS_API_ENDPOINT}/available-routes?destinationChainId=1&destinationToken=${address}`;
+  const response = await fetch(url);
+  return await response.json();
+}
+
+async function fetchRoutes(address) {
+  if (!address) return [];
+
+  const [originRoutes, destRoutes] = await Promise.all([
+    fetchOriginRoutes(address),
+    fetchDestRoutes(address),
+  ]);
+
+  return [...originRoutes, ...destRoutes];
+}
+
 function mergeRemappings() {
   const tokensMap = Object.entries(TOKEN_SYMBOLS_MAP).reduce(
     (memo, [symbol, tokens]) => {
@@ -77,19 +102,26 @@ const SUPPORTED_CHAINS = Object.values(SupportedChainId)
   .map(Number)
   .filter((value) => !TESTNET_CHAIN_IDS.includes(value));
 
-const TOKEN_SYMBOLS_TO_IGNORE = {
-  ["CAKE"]: true,
-  ["ETH"]: true,
-  ["BNB"]: true,
-  ["WBNB"]: true,
-};
+function tokenHasRoutes(routes, chainId, address) {
+  return routes.some(
+    ({ originChainId, originToken, destinationChainId, destinationToken }) =>
+      (chainId === originChainId && address === originToken) ||
+      (chainId === destinationChainId && address === destinationToken)
+  );
+}
 
-function filterMap(allAddresses, notUSDT, modifyValueFn) {
+async function filterMap(allAddresses, modifyValueFn) {
+  const routes = await fetchRoutes(allAddresses["1"]?.address);
+
+  if (!routes || routes.length === 0) {
+    return [];
+  }
+
   return Object.entries(allAddresses).reduce((memo, [chain, value]) => {
     const chainId = Number(chain);
     if (
       SUPPORTED_CHAINS.includes(chainId) &&
-      (notUSDT || SupportedChainId.ARBITRUM_ONE !== chainId)
+      tokenHasRoutes(routes, chainId, value.address)
     ) {
       memo[chainId] = modifyValueFn ? modifyValueFn(value) : value;
     }
@@ -97,7 +129,7 @@ function filterMap(allAddresses, notUSDT, modifyValueFn) {
   }, {});
 }
 
-function equivalentAddresses(tokens, notUSDT) {
+async function equivalentAddresses(tokens) {
   const equivalent = TOKENS_MAP[TOKEN_EQUIVALENCE_REMAPPING[tokens.symbol]];
 
   if (!equivalent) return {};
@@ -110,11 +142,7 @@ function equivalentAddresses(tokens, notUSDT) {
       }
     : undefined;
 
-  return filterMap(
-    equivalent.addresses,
-    notUSDT,
-    createAddressEntryWithDecimals
-  );
+  return await filterMap(equivalent.addresses, createAddressEntryWithDecimals);
 }
 
 async function filterAcrossTokens() {
@@ -124,18 +152,15 @@ async function filterAcrossTokens() {
 
     // Iterate over each token in across.json.
     for (const symbol in TOKENS_MAP) {
-      if (TOKEN_SYMBOLS_TO_IGNORE[symbol]) continue;
-
-      const notUSDT = symbol !== "USDT";
       const token = TOKENS_MAP[symbol];
 
       // Filter the addresses: only keep keys that are in the supportedChains array.
-      const filteredAddresses = filterMap(token.addresses, notUSDT);
+      const filteredAddresses = await filterMap(token.addresses);
 
       // Only include token if it has at least one supported address.
       if (Object.keys(filteredAddresses).length > 1) {
         const addresses = {
-          ...equivalentAddresses(token, notUSDT),
+          ...(await equivalentAddresses(token)),
           ...filteredAddresses,
         };
 
