@@ -131,7 +131,7 @@ async function main() {
 
       if (
         !isEqual(oldComparable, newComparable) ||
-        finalTokens.length !== existingData.tokens.length
+        finalTokens.length !== existingInactive.tokens.length
       ) {
         // Differences exist – bump patch version
         finalInactiveOutput.version = bumpVersion(existingInactive.version);
@@ -145,6 +145,7 @@ async function main() {
       }
     } catch (err) {
       // File doesn't exist; we'll use the default version.
+      console.log("Error with inactive list:", err);
     }
 
     await fs.writeFile(
