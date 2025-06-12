@@ -483,11 +483,18 @@ async function main() {
         finalTokens[i].index = i;
     }
 
+    // TODO: Add Bridge Info Population loop where we find main token by peer amount and chain priority (TVL ranking) with easy overrides for off-cases
     // For each peersInfo token address find a matching token address in the tokens array that has that token address as oftAdapter and same chainId
     for (const t of finalTokens) {
         if (!t.extensions || !t.extensions.peersInfo) continue;
 
         const needsIcon = !(t?.icon && t?.icon?.length > 0)
+        let needsBridgeInfo = (!t?.extensions?.bridgeInfo || Object.keys(t?.extensions?.bridgeInfo || {}).length === 0);
+
+        if (needsBridgeInfo && Object.keys(t?.extensions?.peersInfo || {}).length === 1) {
+            t.extensions.bridgeInfo = t.extensions.peersInfo;
+            needsBridgeInfo = false;
+        }
 
         for (const [chainId, peerInfo] of Object.entries(t.extensions.peersInfo)) {
             const peerAddress = peerInfo.tokenAddress;
@@ -500,6 +507,10 @@ async function main() {
                 console.log(`✅ Found matching token for ${peerAddress} on chain ${chainId}: ${matchingToken.name} (${matchingToken.symbol} new address: ${matchingToken.address})`);
 
                 if (needsIcon && matchingToken?.icon && matchingToken?.icon?.length > 0) t.icon = matchingToken.icon;
+                if (needsBridgeInfo && matchingToken?.extensions?.bridgeInfo && Object.keys(matchingToken?.extensions?.bridgeInfo || {}).length === 1) {
+                    t.extensions.bridgeInfo = matchingToken.extensions.bridgeInfo;
+                    needsBridgeInfo = false;
+                }
 
             } else {
                 console.warn(`⚠️ Token ${t.address}: No matching token found for peer address ${peerAddress} on chain ${chainId}`);
