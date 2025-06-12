@@ -1,6 +1,7 @@
 const fs = require('fs');
 const { CHAIN_KEY_TO_ID, CHAIN_KEY_TO_EID, SUPPORTED_CHAINS, CHAIN_KEYS, OVERRIDE_PEG, mergeExtensions, cleanAddress } = require('../constants');
 const { ZERO_ADDRESS } = require('maia-core-sdk');
+const { ethers } = require('ethers');
 
 async function main() {
   // Load baseline and OFT data
@@ -90,11 +91,11 @@ async function main() {
       if (peg?.address) {
         const pegKey = peg.address.toLowerCase() + peg.chainName;
         bridgeMap[pegKey] = bridgeMap[pegKey] || {};
-        bridgeMap[pegKey][chainId] = { tokenAddress: tokenAddress };
+        bridgeMap[pegKey][chainId] = { tokenAddress: ethers.getAddress(tokenAddress) };
         if (SUPPORTED_CHAINS.includes(peg.chainName)) {
           extensions = mergeExtensions(extensions, {
             bridgeInfo: {
-              [CHAIN_KEY_TO_ID[peg.chainName]]: { tokenAddress: peg.address }
+              [CHAIN_KEY_TO_ID[peg.chainName]]: { tokenAddress: ethers.getAddress(peg.address) }
             }
           });
         }
