@@ -1,8 +1,8 @@
 {
   "name": "Hermes Omnichain Token List",
-  "timestamp": "1749665957",
+  "timestamp": "1749731109",
   "version": {
-    "major": 80,
+    "major": 81,
     "minor": 0,
     "patch": 0
   },
@@ -136,7 +136,7 @@
             "tokenAddress": "0x040d1EdC9569d4Bab2D15287Dc5A4F10F56a56B8"
           },
           "43114": {
-            "tokenAddress": "0xe15bcb9e0ea69e6ab9fa080c4c4a5632896298c3"
+            "tokenAddress": "0xE15bCB9E0EA69e6aB9FA080c4c4A5632896298C3"
           }
         },
         "coinMarketCapId": 5728,
@@ -242,6 +242,70 @@
       },
       "isAcross": true,
       "isOFT": false
+    },
+    {
+      "chainId": 1,
+      "address": "0x152649eA73beAb28c5b49B26eb48f7EAD6d4c898",
+      "name": "PancakeSwap",
+      "symbol": "CAKE",
+      "decimals": 18,
+      "logoURI": "https://coin-images.coingecko.com/coins/images/12632/large/pancakeswap-cake-logo_%281%29.png?1696512440",
+      "tags": [],
+      "extensions": {
+        "acrossInfo": {
+          "56": {
+            "address": "0x0E09FaBB73Bd3Ade0a17ECC321fD13a19e81cE82"
+          }
+        },
+        "coingeckoId": "pancakeswap-token",
+        "coinMarketCapId": 7186,
+        "bridgeInfo": {
+          "56": {
+            "tokenAddress": "0x0E09FaBB73Bd3Ade0a17ECC321fD13a19e81cE82"
+          },
+          "42161": {
+            "tokenAddress": "0xCdc343ebf71e38F003eD6c80171F5B8D7cF58860"
+          }
+        }
+      },
+      "isAcross": true,
+      "isOFT": false
+    },
+    {
+      "chainId": 56,
+      "address": "0x0E09FaBB73Bd3Ade0a17ECC321fD13a19e81cE82",
+      "name": "PancakeSwap Token",
+      "symbol": "Cake",
+      "decimals": 18,
+      "logoURI": "https://s2.coinmarketcap.com/static/img/coins/128x128/7186.png",
+      "tags": [],
+      "extensions": {
+        "acrossInfo": {
+          "1": {
+            "address": "0x152649eA73beAb28c5b49B26eb48f7EAD6d4c898"
+          }
+        },
+        "coingeckoId": "pancakeswap-token",
+        "bridgeInfo": {
+          "1": {
+            "tokenAddress": "0x152649eA73beAb28c5b49B26eb48f7EAD6d4c898"
+          },
+          "8453": {
+            "tokenAddress": "0x3055913c90Fcc1A6CE9a358911721eEb942013A1"
+          },
+          "42161": {
+            "tokenAddress": "0x1b896893dfc86bb67Cf57767298b9073D2c1bA2c"
+          }
+        },
+        "coinMarketCapId": 7186,
+        "peersInfo": {}
+      },
+      "isAcross": true,
+      "isOFT": true,
+      "oftAdapter": "0x9876993e7e1750cc375a569731ca0583d0849f65",
+      "oftVersion": 1,
+      "endpointVersion": 1,
+      "endpointId": 102
     },
     {
       "chainId": 1,
@@ -1447,7 +1511,7 @@
         "coingeckoId": "wrapped-bitcoin",
         "bridgeInfo": {
           "56": {
-            "tokenAddress": "0x0555e30da8f98308edb960aa94c0db47230d2b9c"
+            "tokenAddress": "0x0555E30da8f98308EdB960aa94C0Db47230d2B9c"
           },
           "130": {
             "tokenAddress": "0x927B51f251480a681271180DA4de28D44EC4AfB8"
@@ -1456,10 +1520,10 @@
             "tokenAddress": "0x1BFD67037B42Cf73acF2047067bd4F2C47D9BfD6"
           },
           "146": {
-            "tokenAddress": "0x0555e30da8f98308edb960aa94c0db47230d2b9c"
+            "tokenAddress": "0x0555E30da8f98308EdB960aa94C0Db47230d2B9c"
           },
           "8453": {
-            "tokenAddress": "0x0555e30da8f98308edb960aa94c0db47230d2b9c"
+            "tokenAddress": "0x0555E30da8f98308EdB960aa94C0Db47230d2B9c"
           },
           "42161": {
             "tokenAddress": "0x2f2a2543B76A4166549F7aaB2e75Bef0aefC5B0f"
@@ -1468,7 +1532,7 @@
             "tokenAddress": "0x50b7545627a5162F82A992c33b87aDc75187B218"
           },
           "80094": {
-            "tokenAddress": "0x0555e30da8f98308edb960aa94c0db47230d2b9c"
+            "tokenAddress": "0x0555E30da8f98308EdB960aa94C0Db47230d2B9c"
           }
         },
         "peersInfo": {
@@ -1608,7 +1672,7 @@
       "extensions": {
         "bridgeInfo": {
           "10": {
-            "tokenAddress": "0x64445f0aecc51e94ad52d8ac56b7190e764e561a"
+            "tokenAddress": "0x64445f0aecC51E94aD52d8AC56b7190e764E561a"
           },
           "56": {
             "tokenAddress": "0xe48A3d7d0Bc88d552f730B62c006bC925eadB9eE"
@@ -1620,16 +1684,16 @@
             "tokenAddress": "0x3e121107F6F22DA4911079845a470757aF4e1A1b"
           },
           "146": {
-            "tokenAddress": "0x64445f0aecc51e94ad52d8ac56b7190e764e561a"
+            "tokenAddress": "0x64445f0aecC51E94aD52d8AC56b7190e764E561a"
           },
           "252": {
-            "tokenAddress": "0xfc00000000000000000000000000000000000002"
+            "tokenAddress": "0xFc00000000000000000000000000000000000002"
           },
           "1088": {
-            "tokenAddress": "0x23432452b720c80553458496d4d9d7c5003280d0"
+            "tokenAddress": "0x23432452B720C80553458496D4D9d7C5003280d0"
           },
           "8453": {
-            "tokenAddress": "0x0ceac003b0d2479bebec9f4b2ebad0a803759bbf"
+            "tokenAddress": "0x0CEAC003B0d2479BebeC9f4b2EBAd0a803759bbf"
           },
           "42161": {
             "tokenAddress": "0xd9f9d2Ee2d3EFE420699079f16D9e924affFdEA4"
@@ -1689,10 +1753,10 @@
       "extensions": {
         "bridgeInfo": {
           "10": {
-            "tokenAddress": "0xc5ecb8c506898bd5eeec63c5f69c7819e37084b8"
+            "tokenAddress": "0xC5ECB8c506898bd5eEeC63C5F69c7819E37084b8"
           },
           "8453": {
-            "tokenAddress": "0xc5ecb8c506898bd5eeec63c5f69c7819e37084b8"
+            "tokenAddress": "0xC5ECB8c506898bd5eEeC63C5F69c7819E37084b8"
           }
         },
         "peersInfo": {
@@ -1727,7 +1791,7 @@
         "coingeckoId": "farcana",
         "bridgeInfo": {
           "137": {
-            "tokenAddress": "0x5f32abeebd3c2fac1e7459a27e1ae9f1c16cccca"
+            "tokenAddress": "0x5F32AbeeBD3c2fac1E7459A27e1AE9f1C16ccccA"
           }
         },
         "peersInfo": {
@@ -1758,22 +1822,22 @@
       "extensions": {
         "bridgeInfo": {
           "10": {
-            "tokenAddress": "0x4e200fe2f3efb977d5fd9c430a41531fb04d97b8"
+            "tokenAddress": "0x4E200fE2f3eFb977d5fd9c430A41531FB04d97B8"
           },
           "56": {
-            "tokenAddress": "0x4e200fe2f3efb977d5fd9c430a41531fb04d97b8"
+            "tokenAddress": "0x4E200fE2f3eFb977d5fd9c430A41531FB04d97B8"
           },
           "137": {
-            "tokenAddress": "0x4e200fe2f3efb977d5fd9c430a41531fb04d97b8"
+            "tokenAddress": "0x4E200fE2f3eFb977d5fd9c430A41531FB04d97B8"
           },
           "8453": {
-            "tokenAddress": "0x4e200fe2f3efb977d5fd9c430a41531fb04d97b8"
+            "tokenAddress": "0x4E200fE2f3eFb977d5fd9c430A41531FB04d97B8"
           },
           "42161": {
-            "tokenAddress": "0x4e200fe2f3efb977d5fd9c430a41531fb04d97b8"
+            "tokenAddress": "0x4E200fE2f3eFb977d5fd9c430A41531FB04d97B8"
           },
           "43114": {
-            "tokenAddress": "0x4e200fe2f3efb977d5fd9c430a41531fb04d97b8"
+            "tokenAddress": "0x4E200fE2f3eFb977d5fd9c430A41531FB04d97B8"
           }
         },
         "peersInfo": {
@@ -1818,10 +1882,10 @@
         "coinMarketCapId": 20719,
         "bridgeInfo": {
           "56": {
-            "tokenAddress": "0xb7e2713cf55cf4b469b5a8421ae6fc0ed18f1467"
+            "tokenAddress": "0xB7E2713CF55cf4b469B5a8421Ae6Fc0ED18F1467"
           },
           "42161": {
-            "tokenAddress": "0x7be5dd337cc6ce3e474f64e2a92a566445290864"
+            "tokenAddress": "0x7Be5Dd337CC6cE3e474F64E2A92A566445290864"
           }
         },
         "peersInfo": {
@@ -1859,16 +1923,16 @@
       "extensions": {
         "bridgeInfo": {
           "56": {
-            "tokenAddress": "0x0b3eaead748facdb9d943d3407011f16eb17d0cf"
+            "tokenAddress": "0x0B3EAEAd748facDb9d943d3407011f16Eb17D0Cf"
           },
           "137": {
-            "tokenAddress": "0x0b3eaead748facdb9d943d3407011f16eb17d0cf"
+            "tokenAddress": "0x0B3EAEAd748facDb9d943d3407011f16Eb17D0Cf"
           },
           "8453": {
-            "tokenAddress": "0x0b3eaead748facdb9d943d3407011f16eb17d0cf"
+            "tokenAddress": "0x0B3EAEAd748facDb9d943d3407011f16Eb17D0Cf"
           },
           "42161": {
-            "tokenAddress": "0x0b3eaead748facdb9d943d3407011f16eb17d0cf"
+            "tokenAddress": "0x0B3EAEAd748facDb9d943d3407011f16Eb17D0Cf"
           }
         },
         "peersInfo": {
@@ -1905,7 +1969,7 @@
       "extensions": {
         "bridgeInfo": {
           "8453": {
-            "tokenAddress": "0x9cd44eca3d1e0ada6fbdaf5793031c3a500089b1"
+            "tokenAddress": "0x9CD44ecA3D1E0ADa6FbDaF5793031C3a500089B1"
           }
         },
         "peersInfo": {
@@ -1933,16 +1997,16 @@
       "extensions": {
         "bridgeInfo": {
           "56": {
-            "tokenAddress": "0x9e20461bc2c4c980f62f1b279d71734207a6a356"
+            "tokenAddress": "0x9e20461bc2c4c980f62f1B279D71734207a6A356"
           },
           "137": {
-            "tokenAddress": "0x9e20461bc2c4c980f62f1b279d71734207a6a356"
+            "tokenAddress": "0x9e20461bc2c4c980f62f1B279D71734207a6A356"
           },
           "8453": {
-            "tokenAddress": "0xc48e605c7b722a57277e087a6170b9e227e5ac0a"
+            "tokenAddress": "0xC48E605c7b722a57277e087a6170B9E227e5AC0A"
           },
           "42161": {
-            "tokenAddress": "0x9e20461bc2c4c980f62f1b279d71734207a6a356"
+            "tokenAddress": "0x9e20461bc2c4c980f62f1B279D71734207a6A356"
           }
         },
         "peersInfo": {
@@ -1995,10 +2059,10 @@
         "coinMarketCapId": 31656,
         "bridgeInfo": {
           "8453": {
-            "tokenAddress": "0x7431ada8a591c955a994a21710752ef9b882b8e3"
+            "tokenAddress": "0x7431aDa8a591C955a994a21710752EF9b882b8e3"
           },
           "42161": {
-            "tokenAddress": "0x092baadb7def4c3981454dd9c0a0d7ff07bcfc86"
+            "tokenAddress": "0x092bAaDB7DEf4C3981454dD9c0A0D7FF07bCFc86"
           }
         },
         "peersInfo": {
@@ -2029,19 +2093,19 @@
       "extensions": {
         "bridgeInfo": {
           "10": {
-            "tokenAddress": "0x5a7facb970d094b6c7ff1df0ea68d99e6e73cbff"
+            "tokenAddress": "0x5A7fACB970D094B6C7FF1df0eA68D99E6e73CBFF"
           },
           "56": {
-            "tokenAddress": "0x04c0599ae5a44757c0af6f9ec3b93da8976c150a"
+            "tokenAddress": "0x04C0599Ae5A44757c0af6F9eC3b93da8976c150A"
           },
           "1923": {
-            "tokenAddress": "0xa6cb988942610f6731e664379d15ffcfbf282b44"
+            "tokenAddress": "0xA6cB988942610f6731e664379D15fFcfBf282b44"
           },
           "8453": {
-            "tokenAddress": "0x04c0599ae5a44757c0af6f9ec3b93da8976c150a"
+            "tokenAddress": "0x04C0599Ae5A44757c0af6F9eC3b93da8976c150A"
           },
           "80094": {
-            "tokenAddress": "0x7dcc39b4d1c53cb31e1abc0e358b43987fef80f7"
+            "tokenAddress": "0x7DCC39B4d1C53CB31e1aBc0e358b43987FEF80f7"
           }
         },
         "peersInfo": {
@@ -2090,7 +2154,7 @@
         "coingeckoId": "goldenboys",
         "bridgeInfo": {
           "8453": {
-            "tokenAddress": "0xbefd5c25a59ef2c1316c5a4944931171f30cd3e4"
+            "tokenAddress": "0xbeFD5C25A59ef2C1316c5A4944931171F30Cd3E4"
           }
         },
         "peersInfo": {
@@ -2129,19 +2193,19 @@
       "extensions": {
         "bridgeInfo": {
           "10": {
-            "tokenAddress": "0xf9fb20b8e097904f0ab7d12e9dbee88f2dcd0f16"
+            "tokenAddress": "0xf9FB20B8E097904f0aB7d12e9DbeE88f2dcd0F16"
           },
           "137": {
-            "tokenAddress": "0xfdcc3dd6671eab0709a4c0f3f53de9a333d80798"
+            "tokenAddress": "0xfdcC3dd6671eaB0709A4C0f3F53De9a333d80798"
           },
           "8453": {
-            "tokenAddress": "0xfdcc3dd6671eab0709a4c0f3f53de9a333d80798"
+            "tokenAddress": "0xfdcC3dd6671eaB0709A4C0f3F53De9a333d80798"
           },
           "42161": {
-            "tokenAddress": "0xfdcc3dd6671eab0709a4c0f3f53de9a333d80798"
+            "tokenAddress": "0xfdcC3dd6671eaB0709A4C0f3F53De9a333d80798"
           },
           "43114": {
-            "tokenAddress": "0xf9fb20b8e097904f0ab7d12e9dbee88f2dcd0f16"
+            "tokenAddress": "0xf9FB20B8E097904f0aB7d12e9DbeE88f2dcd0F16"
           }
         },
         "peersInfo": {
@@ -2183,13 +2247,13 @@
         "coinMarketCapId": 18037,
         "bridgeInfo": {
           "56": {
-            "tokenAddress": "0xd691d9a68c887bdf34da8c36f63487333acfd103"
+            "tokenAddress": "0xd691d9a68C887BDF34DA8c36f63487333ACfD103"
           },
           "8453": {
-            "tokenAddress": "0x64b88c73a5dfa78d1713fe1b4c69a22d7e0faaa7"
+            "tokenAddress": "0x64b88c73A5DfA78D1713fE1b4c69a22d7E0faAa7"
           },
           "42161": {
-            "tokenAddress": "0x7448c7456a97769f6cd04f1e83a4a23ccdc46abd"
+            "tokenAddress": "0x7448c7456a97769F6cD04F1E83A4a23cCdC46aBD"
           }
         },
         "peersInfo": {
@@ -2256,10 +2320,10 @@
       "extensions": {
         "bridgeInfo": {
           "56": {
-            "tokenAddress": "0x2bbbdf97295f73175b12cc087cf446765931e1c3"
+            "tokenAddress": "0x2Bbbdf97295F73175b12CC087cF446765931e1C3"
           },
           "43114": {
-            "tokenAddress": "0x2bbbdf97295f73175b12cc087cf446765931e1c3"
+            "tokenAddress": "0x2Bbbdf97295F73175b12CC087cF446765931e1C3"
           }
         },
         "peersInfo": {
@@ -2301,7 +2365,7 @@
             "tokenAddress": "0x0D2f98904D88909072eA6e61105CBBf78e6207c5"
           },
           "80094": {
-            "tokenAddress": "0x688e72142674041f8f6af4c808a4045ca1d6ac82"
+            "tokenAddress": "0x688e72142674041f8f6Af4c808a4045cA1D6aC82"
           }
         },
         "peersInfo": {
@@ -2329,10 +2393,10 @@
       "extensions": {
         "bridgeInfo": {
           "56": {
-            "tokenAddress": "0xcf6bb5389c92bdda8a3747ddb454cb7a64626c63"
+            "tokenAddress": "0xcF6BB5389c92Bdda8a3747Ddb454cB7a64626C63"
           },
           "42161": {
-            "tokenAddress": "0xc1eb7689147c81ac840d4ff0d298489fc7986d52"
+            "tokenAddress": "0xc1Eb7689147C81aC840d4FF0D298489fc7986d52"
           }
         },
         "peersInfo": {
@@ -2385,7 +2449,7 @@
         "coinMarketCapId": 28503,
         "bridgeInfo": {
           "8453": {
-            "tokenAddress": "0x31ea904a7eca45122890deb8da3473a2081bc9d1"
+            "tokenAddress": "0x31ea904A7eca45122890dEb8dA3473A2081bc9d1"
           }
         },
         "peersInfo": {
@@ -2413,22 +2477,22 @@
       "extensions": {
         "bridgeInfo": {
           "10": {
-            "tokenAddress": "0xbfd5206962267c7b4b4a8b3d76ac2e1b2a5c4d5e"
+            "tokenAddress": "0xbFd5206962267c7b4b4A8B3D76AC2E1b2A5c4d5e"
           },
           "56": {
-            "tokenAddress": "0x11cd72f7a4b699c67f225ca8abb20bc9f8db90c7"
+            "tokenAddress": "0x11cd72f7A4B699c67f225ca8aBb20bC9F8DB90c7"
           },
           "137": {
-            "tokenAddress": "0x11cd72f7a4b699c67f225ca8abb20bc9f8db90c7"
+            "tokenAddress": "0x11cd72f7A4B699c67f225ca8aBb20bC9F8DB90c7"
           },
           "8453": {
-            "tokenAddress": "0xbfd5206962267c7b4b4a8b3d76ac2e1b2a5c4d5e"
+            "tokenAddress": "0xbFd5206962267c7b4b4A8B3D76AC2E1b2A5c4d5e"
           },
           "42161": {
-            "tokenAddress": "0xbfd5206962267c7b4b4a8b3d76ac2e1b2a5c4d5e"
+            "tokenAddress": "0xbFd5206962267c7b4b4A8B3D76AC2E1b2A5c4d5e"
           },
           "43114": {
-            "tokenAddress": "0x96e1056a8814de39c8c3cd0176042d6cecd807d7"
+            "tokenAddress": "0x96E1056a8814De39c8c3Cd0176042d6ceCD807d7"
           }
         }
       },
@@ -2448,10 +2512,10 @@
         "coinMarketCapId": 8255,
         "bridgeInfo": {
           "56": {
-            "tokenAddress": "0x915424ac489433130d92b04096f3b96c82e92a9d"
+            "tokenAddress": "0x915424Ac489433130d92B04096F3b96c82e92a9D"
           },
           "8453": {
-            "tokenAddress": "0x915424ac489433130d92b04096f3b96c82e92a9d"
+            "tokenAddress": "0x915424Ac489433130d92B04096F3b96c82e92a9D"
           }
         },
         "peersInfo": {
@@ -2482,28 +2546,28 @@
       "extensions": {
         "bridgeInfo": {
           "10": {
-            "tokenAddress": "0x211cc4dd073734da055fbf44a2b4667d5e5fe5d2"
+            "tokenAddress": "0x211Cc4DD073734dA055fbF44a2b4667d5E5fE5d2"
           },
           "56": {
-            "tokenAddress": "0x211cc4dd073734da055fbf44a2b4667d5e5fe5d2"
+            "tokenAddress": "0x211Cc4DD073734dA055fbF44a2b4667d5E5fE5d2"
           },
           "252": {
-            "tokenAddress": "0x211cc4dd073734da055fbf44a2b4667d5e5fe5d2"
+            "tokenAddress": "0x211Cc4DD073734dA055fbF44a2b4667d5E5fE5d2"
           },
           "1088": {
-            "tokenAddress": "0x211cc4dd073734da055fbf44a2b4667d5e5fe5d2"
+            "tokenAddress": "0x211Cc4DD073734dA055fbF44a2b4667d5E5fE5d2"
           },
           "1923": {
-            "tokenAddress": "0x211cc4dd073734da055fbf44a2b4667d5e5fe5d2"
+            "tokenAddress": "0x211Cc4DD073734dA055fbF44a2b4667d5E5fE5d2"
           },
           "8453": {
-            "tokenAddress": "0x211cc4dd073734da055fbf44a2b4667d5e5fe5d2"
+            "tokenAddress": "0x211Cc4DD073734dA055fbF44a2b4667d5E5fE5d2"
           },
           "42161": {
-            "tokenAddress": "0x211cc4dd073734da055fbf44a2b4667d5e5fe5d2"
+            "tokenAddress": "0x211Cc4DD073734dA055fbF44a2b4667d5E5fE5d2"
           },
           "80094": {
-            "tokenAddress": "0x211cc4dd073734da055fbf44a2b4667d5e5fe5d2"
+            "tokenAddress": "0x211Cc4DD073734dA055fbF44a2b4667d5E5fE5d2"
           }
         },
         "peersInfo": {
@@ -2552,28 +2616,28 @@
       "extensions": {
         "bridgeInfo": {
           "10": {
-            "tokenAddress": "0x5d3a1ff2b6bab83b63cd9ad0787074081a52ef34"
+            "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
           },
           "56": {
-            "tokenAddress": "0x5d3a1ff2b6bab83b63cd9ad0787074081a52ef34"
+            "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
           },
           "252": {
-            "tokenAddress": "0x5d3a1ff2b6bab83b63cd9ad0787074081a52ef34"
+            "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
           },
           "1088": {
-            "tokenAddress": "0x5d3a1ff2b6bab83b63cd9ad0787074081a52ef34"
+            "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
           },
           "1923": {
-            "tokenAddress": "0x5d3a1ff2b6bab83b63cd9ad0787074081a52ef34"
+            "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
           },
           "8453": {
-            "tokenAddress": "0x5d3a1ff2b6bab83b63cd9ad0787074081a52ef34"
+            "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
           },
           "42161": {
-            "tokenAddress": "0x5d3a1ff2b6bab83b63cd9ad0787074081a52ef34"
+            "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
           },
           "80094": {
-            "tokenAddress": "0x5d3a1ff2b6bab83b63cd9ad0787074081a52ef34"
+            "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
           }
         },
         "peersInfo": {
@@ -2622,7 +2686,7 @@
       "extensions": {
         "bridgeInfo": {
           "43114": {
-            "tokenAddress": "0x420fca0121dc28039145009570975747295f2329"
+            "tokenAddress": "0x420FcA0121DC28039145009570975747295f2329"
           }
         },
         "peersInfo": {
@@ -2658,7 +2722,7 @@
         "coinMarketCapId": 18934,
         "bridgeInfo": {
           "10": {
-            "tokenAddress": "0x296f55f8fb28e498b858d0bcda06d955b2cb3f97"
+            "tokenAddress": "0x296F55F8Fb28E498B858d0BcDA06D955B2Cb3f97"
           },
           "56": {
             "tokenAddress": "0xB0D502E938ed5f4df2E681fE6E419ff29631d62b"
@@ -2667,10 +2731,10 @@
             "tokenAddress": "0x77c8A8E1dd3b5270d3Ab589543e9A83319373135"
           },
           "137": {
-            "tokenAddress": "0x2f6f07cdcf3588944bf4c42ac74ff24bf56e7590"
+            "tokenAddress": "0x2F6F07CDcf3588944Bf4C42aC74ff24bF56e7590"
           },
           "8453": {
-            "tokenAddress": "0xe3b53af74a4bf62ae5511055290838050bf764df"
+            "tokenAddress": "0xE3B53AF74a4BF62Ae5511055290838050bf764Df"
           },
           "42161": {
             "tokenAddress": "0xe018C7a3d175Fb0fE15D70Da2c874d3CA16313EC"
@@ -2679,7 +2743,7 @@
             "tokenAddress": "0x2F6F07CDcf3588944Bf4C42aC74ff24bF56e7590"
           },
           "80094": {
-            "tokenAddress": "0x9895d81bb462a195b4922ed7de0e3acd007c32cb"
+            "tokenAddress": "0x9895D81bB462A195b4922ED7De0e3ACD007c32CB"
           }
         }
       },
@@ -2703,7 +2767,7 @@
         "coinMarketCapId": 19225,
         "bridgeInfo": {
           "1088": {
-            "tokenAddress": "0x6f05709bc91bad933346f9e159f0d3fdbc2c9dce"
+            "tokenAddress": "0x6F05709bc91Bad933346F9E159f0D3FdBc2c9DCE"
           }
         },
         "peersInfo": {
@@ -2749,10 +2813,10 @@
             "tokenAddress": "0x104592a158490a9228070E0A8e5343B499e125D0"
           },
           "1088": {
-            "tokenAddress": "0x909dbde1ebe906af95660033e478d59efe831fed"
+            "tokenAddress": "0x909DBdE1eBE906Af95660033e478D59EFe831fED"
           },
           "8453": {
-            "tokenAddress": "0xe41228a455700caf09e551805a8ab37caa39d08c"
+            "tokenAddress": "0xE41228a455700cAF09E551805A8aB37caa39D08c"
           },
           "42161": {
             "tokenAddress": "0x7468a5d8E02245B00E8C0217fCE021C70Bc51305"
@@ -2793,7 +2857,7 @@
       "extensions": {
         "bridgeInfo": {
           "80094": {
-            "tokenAddress": "0x541fd749419ca806a8bc7da8ac23d346f2df8b77"
+            "tokenAddress": "0x541FD749419CA806a8bc7da8ac23D346f2dF8B77"
           }
         },
         "peersInfo": {
@@ -2823,10 +2887,10 @@
         "coinMarketCapId": 35538,
         "bridgeInfo": {
           "56": {
-            "tokenAddress": "0x73a325103935b0b5e7aa3aca6dba74ad22f82b03"
+            "tokenAddress": "0x73a325103935b0B5E7AA3acA6dba74AD22f82B03"
           },
           "80094": {
-            "tokenAddress": "0x2840f9d9f96321435ab0f977e7fdbf32ea8b304f"
+            "tokenAddress": "0x2840F9d9f96321435Ab0f977E7FDBf32EA8b304f"
           }
         },
         "peersInfo": {
@@ -2870,10 +2934,10 @@
       "extensions": {
         "bridgeInfo": {
           "1088": {
-            "tokenAddress": "0x1f55a02a049033e3419a8e2975cf3f572f4e6e9a"
+            "tokenAddress": "0x1f55a02A049033E3419a8E2975cF3F572F4e6E9A"
           },
           "8453": {
-            "tokenAddress": "0x1f55a02a049033e3419a8e2975cf3f572f4e6e9a"
+            "tokenAddress": "0x1f55a02A049033E3419a8E2975cF3F572F4e6E9A"
           }
         },
         "peersInfo": {
@@ -2903,10 +2967,10 @@
       "extensions": {
         "bridgeInfo": {
           "137": {
-            "tokenAddress": "0xafde2490236bc64950def5472296aa0d9758db0d"
+            "tokenAddress": "0xaFdE2490236bc64950def5472296aa0D9758Db0d"
           },
           "8453": {
-            "tokenAddress": "0xafde2490236bc64950def5472296aa0d9758db0d"
+            "tokenAddress": "0xaFdE2490236bc64950def5472296aa0D9758Db0d"
           }
         },
         "peersInfo": {
@@ -2937,7 +3001,7 @@
       "extensions": {
         "bridgeInfo": {
           "80094": {
-            "tokenAddress": "0xbac93a69c62a1518136ff840b788ba715cbdfe2b"
+            "tokenAddress": "0xbAC93A69c62a1518136FF840B788Ba715cbDfE2B"
           }
         },
         "peersInfo": {
@@ -2965,16 +3029,16 @@
       "extensions": {
         "bridgeInfo": {
           "10": {
-            "tokenAddress": "0x6a661312938d22a2a0e27f585073e4406903990a"
+            "tokenAddress": "0x6A661312938D22A2A0e27F585073E4406903990a"
           },
           "56": {
-            "tokenAddress": "0x6a661312938d22a2a0e27f585073e4406903990a"
+            "tokenAddress": "0x6A661312938D22A2A0e27F585073E4406903990a"
           },
           "8453": {
-            "tokenAddress": "0x554bba833518793056cf105e66abea330672c0de"
+            "tokenAddress": "0x554bba833518793056CF105E66aBEA330672c0dE"
           },
           "42161": {
-            "tokenAddress": "0xdd2f41340a1ffcf1c22c7a8be4e525d7a2de642b"
+            "tokenAddress": "0xdd2F41340A1fFcf1c22C7a8Be4E525D7A2De642b"
           }
         },
         "peersInfo": {
@@ -3012,7 +3076,7 @@
         "coinMarketCapId": 19779,
         "bridgeInfo": {
           "56": {
-            "tokenAddress": "0xcc6f1e1b87cfcbe9221808d2d85c501aab0b5192"
+            "tokenAddress": "0xcC6f1e1B87cfCbe9221808d2d85C501aab0B5192"
           }
         },
         "peersInfo": {
@@ -3045,7 +3109,7 @@
       "extensions": {
         "bridgeInfo": {
           "8453": {
-            "tokenAddress": "0xf598797d9c160aef2a14712c20b7731cbe5861da"
+            "tokenAddress": "0xF598797d9C160aeF2A14712C20b7731cBe5861da"
           }
         },
         "peersInfo": {
@@ -3075,10 +3139,10 @@
         "coinMarketCapId": 30156,
         "bridgeInfo": {
           "8453": {
-            "tokenAddress": "0x3124678d62d2aa1f615b54525310fbfda6dcf7ae"
+            "tokenAddress": "0x3124678D62D2aa1f615B54525310fbfDa6DcF7AE"
           },
           "42161": {
-            "tokenAddress": "0x3124678d62d2aa1f615b54525310fbfda6dcf7ae"
+            "tokenAddress": "0x3124678D62D2aa1f615B54525310fbfDa6DcF7AE"
           }
         },
         "peersInfo": {
@@ -3111,19 +3175,19 @@
         "coinMarketCapId": 23996,
         "bridgeInfo": {
           "10": {
-            "tokenAddress": "0x9ed7e4b1bff939ad473da5e7a218c771d1569456"
+            "tokenAddress": "0x9ed7E4B1BFF939ad473dA5E7a218C771D1569456"
           },
           "56": {
-            "tokenAddress": "0x9ed7e4b1bff939ad473da5e7a218c771d1569456"
+            "tokenAddress": "0x9ed7E4B1BFF939ad473dA5E7a218C771D1569456"
           },
           "137": {
-            "tokenAddress": "0x9ed7e4b1bff939ad473da5e7a218c771d1569456"
+            "tokenAddress": "0x9ed7E4B1BFF939ad473dA5E7a218C771D1569456"
           },
           "42161": {
-            "tokenAddress": "0x9ed7e4b1bff939ad473da5e7a218c771d1569456"
+            "tokenAddress": "0x9ed7E4B1BFF939ad473dA5E7a218C771D1569456"
           },
           "43114": {
-            "tokenAddress": "0x9ed7e4b1bff939ad473da5e7a218c771d1569456"
+            "tokenAddress": "0x9ed7E4B1BFF939ad473dA5E7a218C771D1569456"
           }
         },
         "peersInfo": {
@@ -3204,7 +3268,7 @@
       "extensions": {
         "bridgeInfo": {
           "56": {
-            "tokenAddress": "0x8d279274789ccec8af94a430a5996eaace9609a9"
+            "tokenAddress": "0x8D279274789CceC8af94a430A5996eAaCE9609A9"
           }
         },
         "peersInfo": {
@@ -3237,10 +3301,10 @@
       "extensions": {
         "bridgeInfo": {
           "8453": {
-            "tokenAddress": "0xf3dd141109dfe8e4c006f88a2a8747a086e7c1f8"
+            "tokenAddress": "0xf3dD141109Dfe8e4c006F88a2A8747a086e7C1f8"
           },
           "42161": {
-            "tokenAddress": "0x17e1e5c6bc9ebb11647c94e1c5e3ba619f2781ea"
+            "tokenAddress": "0x17E1E5c6bc9ebb11647C94e1c5e3Ba619F2781ea"
           }
         },
         "peersInfo": {
@@ -3271,7 +3335,7 @@
       "extensions": {
         "bridgeInfo": {
           "56": {
-            "tokenAddress": "0xdac991621fd8048d9f235324780abd6c3ad26421"
+            "tokenAddress": "0xDaC991621fd8048D9f235324780ABD6c3aD26421"
           }
         },
         "peersInfo": {
@@ -3301,7 +3365,7 @@
         "coinMarketCapId": 11222,
         "bridgeInfo": {
           "56": {
-            "tokenAddress": "0x52242cbab41e290e9e17ccc50cc437bb60020a9d"
+            "tokenAddress": "0x52242cbAb41e290E9E17CCC50Cc437bB60020a9d"
           }
         }
       },
@@ -3319,7 +3383,7 @@
       "extensions": {
         "bridgeInfo": {
           "56": {
-            "tokenAddress": "0x2a73f85024f101f3fac9fbcbce60707b6b3a6203"
+            "tokenAddress": "0x2A73F85024f101F3FAC9FbCBcE60707B6b3A6203"
           }
         },
         "peersInfo": {
@@ -3347,7 +3411,7 @@
       "extensions": {
         "bridgeInfo": {
           "8453": {
-            "tokenAddress": "0x2b11834ed1feaed4b4b3a86a6f571315e25a884d"
+            "tokenAddress": "0x2B11834Ed1FeAEd4b4b3a86A6F571315E25A884D"
           }
         },
         "peersInfo": {
@@ -3378,10 +3442,10 @@
       "extensions": {
         "bridgeInfo": {
           "1088": {
-            "tokenAddress": "0xe4796ccb6bb5de2290c417ac337f2b66ca2e770e"
+            "tokenAddress": "0xe4796cCB6bB5DE2290C417Ac337F2b66CA2E770E"
           },
           "8453": {
-            "tokenAddress": "0xe4796ccb6bb5de2290c417ac337f2b66ca2e770e"
+            "tokenAddress": "0xe4796cCB6bB5DE2290C417Ac337F2b66CA2E770E"
           }
         },
         "peersInfo": {
@@ -3485,7 +3549,7 @@
       "extensions": {
         "bridgeInfo": {
           "42161": {
-            "tokenAddress": "0xfc87d55bc8bf441abfc24d04b2068a8f77bcfcc0"
+            "tokenAddress": "0xfc87D55bC8bF441AbfC24D04B2068a8f77BcFcC0"
           }
         },
         "peersInfo": {
@@ -3518,13 +3582,13 @@
         "coinMarketCapId": 21106,
         "bridgeInfo": {
           "56": {
-            "tokenAddress": "0xf7de7e8a6bd59ed41a4b5fe50278b3b7f31384df"
+            "tokenAddress": "0xf7DE7E8A6bd59ED41a4b5fe50278b3B7f31384dF"
           },
           "8453": {
-            "tokenAddress": "0xd722e55c1d9d9fa0021a5215cbb904b92b3dc5d4"
+            "tokenAddress": "0xd722E55C1d9D9fA0021A5215Cbb904b92B3dC5d4"
           },
           "42161": {
-            "tokenAddress": "0x3082cc23568ea640225c2467653db90e9250aaa0"
+            "tokenAddress": "0x3082CC23568eA640225c2467653dB90e9250AaA0"
           }
         },
         "peersInfo": {
@@ -3569,7 +3633,7 @@
       "extensions": {
         "bridgeInfo": {
           "43114": {
-            "tokenAddress": "0x152b9d0fdc40c096757f570a51e494bd4b943e50"
+            "tokenAddress": "0x152b9d0FdC40C096757F570A51E494bd4b943E50"
           }
         }
       },
@@ -3587,7 +3651,7 @@
       "extensions": {
         "bridgeInfo": {
           "56": {
-            "tokenAddress": "0x87d00066cf131ff54b72b134a217d5401e5392b6"
+            "tokenAddress": "0x87d00066cf131ff54B72B134a217D5401E5392b6"
           },
           "130": {
             "tokenAddress": "0xAdf70dc4AaeFbC6D1E7A6cF0B02b0F2138b560d2"
@@ -3641,10 +3705,10 @@
       "extensions": {
         "bridgeInfo": {
           "10": {
-            "tokenAddress": "0x09d9420332bff75522a45fcff4855f82a0a3ff50"
+            "tokenAddress": "0x09D9420332bff75522a45FcFf4855F82a0a3ff50"
           },
           "8453": {
-            "tokenAddress": "0x09d9420332bff75522a45fcff4855f82a0a3ff50"
+            "tokenAddress": "0x09D9420332bff75522a45FcFf4855F82a0a3ff50"
           }
         },
         "peersInfo": {
@@ -3697,13 +3761,13 @@
       "extensions": {
         "bridgeInfo": {
           "56": {
-            "tokenAddress": "0xb2e787c6c83d6d75f466371a2966b27a8b700828"
+            "tokenAddress": "0xB2E787C6C83D6d75f466371a2966b27a8b700828"
           },
           "137": {
-            "tokenAddress": "0xb2e787c6c83d6d75f466371a2966b27a8b700828"
+            "tokenAddress": "0xB2E787C6C83D6d75f466371a2966b27a8b700828"
           },
           "42161": {
-            "tokenAddress": "0xb2e787c6c83d6d75f466371a2966b27a8b700828"
+            "tokenAddress": "0xB2E787C6C83D6d75f466371a2966b27a8b700828"
           }
         },
         "peersInfo": {
@@ -3748,10 +3812,10 @@
       "extensions": {
         "bridgeInfo": {
           "56": {
-            "tokenAddress": "0x489580eb70a50515296ef31e8179ff3e77e24965"
+            "tokenAddress": "0x489580eB70a50515296eF31E8179fF3e77E24965"
           },
           "137": {
-            "tokenAddress": "0xdcb72ae4d5dc6ae274461d57e65db8d50d0a33ad"
+            "tokenAddress": "0xdCb72AE4d5dc6Ae274461d57E65dB8D50d0a33AD"
           }
         },
         "peersInfo": {
@@ -3782,7 +3846,7 @@
       "extensions": {
         "bridgeInfo": {
           "80094": {
-            "tokenAddress": "0xecac9c5f704e954931349da37f60e39f515c11c1"
+            "tokenAddress": "0xecAc9C5F704e954931349Da37F60E39f515c11c1"
           }
         },
         "peersInfo": {
@@ -3810,7 +3874,7 @@
       "extensions": {
         "bridgeInfo": {
           "8453": {
-            "tokenAddress": "0x9886447ff4c350f4600e4bf95db756bdc629b1ca"
+            "tokenAddress": "0x9886447Ff4c350f4600E4BF95Db756Bdc629b1cA"
           }
         },
         "peersInfo": {
@@ -3866,10 +3930,10 @@
         "coinMarketCapId": 28363,
         "bridgeInfo": {
           "56": {
-            "tokenAddress": "0x31e4efe290973ebe91b3a875a7994f650942d28f"
+            "tokenAddress": "0x31e4efe290973ebE91b3a875a7994f650942D28F"
           },
           "43114": {
-            "tokenAddress": "0xd402298a793948698b9a63311404fbbee944eafd"
+            "tokenAddress": "0xd402298a793948698b9a63311404FBBEe944eAfD"
           }
         },
         "peersInfo": {
@@ -3924,7 +3988,7 @@
         "coinMarketCapId": 32722,
         "bridgeInfo": {
           "80094": {
-            "tokenAddress": "0x1fcca65fb6ae3b2758b9b2b394cb227eae404e1e"
+            "tokenAddress": "0x1fCca65fb6Ae3b2758b9b2B394CB227eAE404e1E"
           }
         },
         "peersInfo": {
@@ -3952,7 +4016,7 @@
       "extensions": {
         "bridgeInfo": {
           "43114": {
-            "tokenAddress": "0x61f23250451305f6c4426e81c50ae535edf94a02"
+            "tokenAddress": "0x61f23250451305f6C4426E81C50aE535Edf94A02"
           }
         },
         "peersInfo": {
@@ -3982,10 +4046,10 @@
         "coinMarketCapId": 35368,
         "bridgeInfo": {
           "56": {
-            "tokenAddress": "0x9356086146be5158e98ad827e21b5cf944699894"
+            "tokenAddress": "0x9356086146be5158E98aD827E21b5cF944699894"
           },
           "80094": {
-            "tokenAddress": "0xff12470a969dd362eb6595ffb44c82c959fe9acc"
+            "tokenAddress": "0xff12470a969Dd362EB6595FFB44C82c959Fe9ACc"
           }
         },
         "peersInfo": {
@@ -4051,10 +4115,10 @@
       "extensions": {
         "bridgeInfo": {
           "10": {
-            "tokenAddress": "0x14778860e937f509e651192a90589de711fb88a9"
+            "tokenAddress": "0x14778860E937f509e651192a90589dE711Fb88a9"
           },
           "56": {
-            "tokenAddress": "0x14778860e937f509e651192a90589de711fb88a9"
+            "tokenAddress": "0x14778860E937f509e651192a90589dE711Fb88a9"
           }
         },
         "peersInfo": {
@@ -4167,19 +4231,19 @@
       "extensions": {
         "bridgeInfo": {
           "10": {
-            "tokenAddress": "0x85af271d1dfcbf53486d996f61d7ff0bba5582ea"
+            "tokenAddress": "0x85AF271d1DFCBF53486D996f61D7FF0bba5582eA"
           },
           "130": {
             "tokenAddress": "0x6D5De04F1a3E0e554B9A15059d03e20cb3589153"
           },
           "137": {
-            "tokenAddress": "0x85af271d1dfcbf53486d996f61d7ff0bba5582ea"
+            "tokenAddress": "0x85AF271d1DFCBF53486D996f61D7FF0bba5582eA"
           },
           "8453": {
-            "tokenAddress": "0x85af271d1dfcbf53486d996f61d7ff0bba5582ea"
+            "tokenAddress": "0x85AF271d1DFCBF53486D996f61D7FF0bba5582eA"
           },
           "42161": {
-            "tokenAddress": "0x85af271d1dfcbf53486d996f61d7ff0bba5582ea"
+            "tokenAddress": "0x85AF271d1DFCBF53486D996f61D7FF0bba5582eA"
           }
         },
         "peersInfo": {
@@ -4216,7 +4280,7 @@
       "extensions": {
         "bridgeInfo": {
           "43114": {
-            "tokenAddress": "0x6f97d3f120fbbdaacf1c9da61a8ad126b7426861"
+            "tokenAddress": "0x6f97D3F120fBbDaacF1c9da61a8aD126b7426861"
           }
         },
         "peersInfo": {
@@ -4248,7 +4312,7 @@
       "extensions": {
         "bridgeInfo": {
           "80094": {
-            "tokenAddress": "0xcc0966d8418d412c599a6421b760a847eb169a8c"
+            "tokenAddress": "0xCC0966D8418d412c599A6421b760a847eB169A8c"
           }
         },
         "peersInfo": {
@@ -4276,7 +4340,7 @@
       "extensions": {
         "bridgeInfo": {
           "42161": {
-            "tokenAddress": "0xbc011a12da28e8f0f528d9ee5e7039e22f91cf18"
+            "tokenAddress": "0xbc011A12Da28e8F0f528d9eE5E7039E22F91cf18"
           }
         },
         "peersInfo": {
@@ -4314,7 +4378,7 @@
       "extensions": {
         "bridgeInfo": {
           "56": {
-            "tokenAddress": "0xbdeae1ca48894a1759a8374d63925f21f2ee2639"
+            "tokenAddress": "0xBdEAe1cA48894A1759A8374D63925f21f2Ee2639"
           }
         },
         "peersInfo": {
@@ -4353,7 +4417,7 @@
       "extensions": {
         "bridgeInfo": {
           "56": {
-            "tokenAddress": "0xc9ccbd76c2353e593cc975f13295e8289d04d3bb"
+            "tokenAddress": "0xc9cCbd76c2353e593Cc975F13295e8289d04D3Bb"
           }
         },
         "peersInfo": {
@@ -4372,6 +4436,56 @@
     },
     {
       "chainId": 1,
+      "address": "0x0fc2a55d5BD13033f1ee0cdd11f60F7eFe66f467",
+      "name": "Lagrange",
+      "symbol": "LA",
+      "decimals": 18,
+      "logoURI": "https://s2.coinmarketcap.com/static/img/coins/64x64/36510.png",
+      "tags": [],
+      "extensions": {
+        "coinMarketCapId": 36510,
+        "bridgeInfo": {
+          "10": {
+            "tokenAddress": "0x0fc2a55d5BD13033f1ee0cdd11f60F7eFe66f467"
+          },
+          "137": {
+            "tokenAddress": "0x0fc2a55d5BD13033f1ee0cdd11f60F7eFe66f467"
+          },
+          "8453": {
+            "tokenAddress": "0x0fc2a55d5BD13033f1ee0cdd11f60F7eFe66f467"
+          },
+          "42161": {
+            "tokenAddress": "0x0fc2a55d5BD13033f1ee0cdd11f60F7eFe66f467"
+          }
+        },
+        "peersInfo": {
+          "10": {
+            "tokenAddress": "0x0fc2a55d5BD13033f1ee0cdd11f60F7eFe66f467"
+          },
+          "56": {
+            "tokenAddress": "0x389AD4bb96d0D6EE5B6eF0EFAF4b7db0bA2e02a0"
+          },
+          "137": {
+            "tokenAddress": "0x0fc2a55d5BD13033f1ee0cdd11f60F7eFe66f467"
+          },
+          "8453": {
+            "tokenAddress": "0x0fc2a55d5BD13033f1ee0cdd11f60F7eFe66f467"
+          },
+          "42161": {
+            "tokenAddress": "0x0fc2a55d5BD13033f1ee0cdd11f60F7eFe66f467"
+          }
+        }
+      },
+      "isAcross": false,
+      "isOFT": true,
+      "oftAdapter": "0x0fc2a55d5bd13033f1ee0cdd11f60f7efe66f467",
+      "oftVersion": 3,
+      "endpointVersion": 2,
+      "endpointId": 30101,
+      "oftSharedDecimals": 6
+    },
+    {
+      "chainId": 1,
       "address": "0x66a1E37c9b0eAddca17d3662D6c05F4DECf3e110",
       "name": "Resolv USD",
       "decimals": 18,
@@ -4381,16 +4495,16 @@
       "extensions": {
         "bridgeInfo": {
           "56": {
-            "tokenAddress": "0x2492d0006411af6c8bbb1c8afc1b0197350a79e9"
+            "tokenAddress": "0x2492D0006411Af6C8bbb1c8afc1B0197350a79e9"
           },
           "8453": {
-            "tokenAddress": "0x35e5db674d8e93a03d814fa0ada70731efe8a4b9"
+            "tokenAddress": "0x35E5dB674D8e93a03d814FA0ADa70731efe8a4b9"
           },
           "42161": {
-            "tokenAddress": "0x2492d0006411af6c8bbb1c8afc1b0197350a79e9"
+            "tokenAddress": "0x2492D0006411Af6C8bbb1c8afc1B0197350a79e9"
           },
           "80094": {
-            "tokenAddress": "0x2492d0006411af6c8bbb1c8afc1b0197350a79e9"
+            "tokenAddress": "0x2492D0006411Af6C8bbb1c8afc1B0197350a79e9"
           }
         },
         "peersInfo": {
@@ -4498,10 +4612,10 @@
       "extensions": {
         "bridgeInfo": {
           "8453": {
-            "tokenAddress": "0x1883af6b51fb7f69577880004a82c9d68582022c"
+            "tokenAddress": "0x1883aF6b51fb7F69577880004a82c9d68582022C"
           },
           "42161": {
-            "tokenAddress": "0x1883af6b51fb7f69577880004a82c9d68582022c"
+            "tokenAddress": "0x1883aF6b51fb7F69577880004a82c9d68582022C"
           }
         }
       },
@@ -4548,7 +4662,7 @@
         "coinMarketCapId": 29157,
         "bridgeInfo": {
           "56": {
-            "tokenAddress": "0x34294afabcbaffc616ac6614f6d2e17260b78bed"
+            "tokenAddress": "0x34294AfABCbaFfc616ac6614F6d2e17260b78BEd"
           }
         },
         "peersInfo": {
@@ -4622,7 +4736,7 @@
       "extensions": {
         "bridgeInfo": {
           "56": {
-            "tokenAddress": "0x3c1b057cb7aceb4f2c4d889a29febec30a6a3146"
+            "tokenAddress": "0x3C1B057cb7AcEB4F2c4D889A29fEBec30A6A3146"
           }
         },
         "peersInfo": {
@@ -4652,7 +4766,7 @@
         "coinMarketCapId": 36223,
         "bridgeInfo": {
           "8453": {
-            "tokenAddress": "0x30c7235866872213f68cb1f08c37cb9eccb93452"
+            "tokenAddress": "0x30c7235866872213F68cb1F08c37Cb9eCCB93452"
           }
         },
         "peersInfo": {
@@ -4683,7 +4797,7 @@
       "extensions": {
         "bridgeInfo": {
           "42161": {
-            "tokenAddress": "0xab24c63bee518ac956c8123389fc538c7e36d82c"
+            "tokenAddress": "0xaB24c63bee518Ac956c8123389fc538c7e36d82C"
           }
         },
         "peersInfo": {
@@ -4711,10 +4825,10 @@
       "extensions": {
         "bridgeInfo": {
           "10": {
-            "tokenAddress": "0x1610e3c85dd44af31ed7f33a63642012dca0c5a5"
+            "tokenAddress": "0x1610e3c85dd44Af31eD7f33a63642012Dca0C5A5"
           },
           "8453": {
-            "tokenAddress": "0x7ba6f01772924a82d9626c126347a28299e98c98"
+            "tokenAddress": "0x7Ba6F01772924a82D9626c126347A28299E98c98"
           }
         },
         "peersInfo": {
@@ -4752,7 +4866,7 @@
       "extensions": {
         "bridgeInfo": {
           "42161": {
-            "tokenAddress": "0x35e050d3c0ec2d29d269a8ecea763a183bdf9a9d"
+            "tokenAddress": "0x35e050d3C0eC2d29D269a8EcEa763a183bDF9A9D"
           }
         },
         "peersInfo": {
@@ -4780,19 +4894,19 @@
       "extensions": {
         "bridgeInfo": {
           "10": {
-            "tokenAddress": "0xaf20f5f19698f1d19351028cd7103b63d30de7d7"
+            "tokenAddress": "0xaf20f5f19698f1D19351028cd7103B63D30DE7d7"
           },
           "56": {
-            "tokenAddress": "0xaf20f5f19698f1d19351028cd7103b63d30de7d7"
+            "tokenAddress": "0xaf20f5f19698f1D19351028cd7103B63D30DE7d7"
           },
           "137": {
-            "tokenAddress": "0x07ed33a242bd9c08ca3c198e01189e35265024da"
+            "tokenAddress": "0x07Ed33a242BD9C08CA3C198e01189e35265024Da"
           },
           "42161": {
-            "tokenAddress": "0xaf20f5f19698f1d19351028cd7103b63d30de7d7"
+            "tokenAddress": "0xaf20f5f19698f1D19351028cd7103B63D30DE7d7"
           },
           "43114": {
-            "tokenAddress": "0xaf20f5f19698f1d19351028cd7103b63d30de7d7"
+            "tokenAddress": "0xaf20f5f19698f1D19351028cd7103B63D30DE7d7"
           }
         },
         "feeInfo": {
@@ -4869,7 +4983,7 @@
       "extensions": {
         "bridgeInfo": {
           "56": {
-            "tokenAddress": "0xac531eb26ca1d21b85126de8fb87e80e09002dcf"
+            "tokenAddress": "0xac531Eb26Ca1d21b85126De8FB87E80E09002DcF"
           },
           "130": {
             "tokenAddress": "0x6A654A2ec95fB988Ea37746dBCca10772CAf25CA"
@@ -4878,7 +4992,7 @@
             "tokenAddress": "0xBbba073C31bF03b8ACf7c28EF0738DeCF3695683"
           },
           "8453": {
-            "tokenAddress": "0xac531eb26ca1d21b85126de8fb87e80e09002dcf"
+            "tokenAddress": "0xac531Eb26Ca1d21b85126De8FB87E80E09002DcF"
           },
           "42161": {
             "tokenAddress": "0xd1318eb19DBF2647743c720ed35174efd64e3DAC"
@@ -4915,7 +5029,7 @@
             "tokenAddress": "0x8f7F997ba304f426E3138999919c23f68cD6FA96"
           },
           "8453": {
-            "tokenAddress": "0x688aee022aa544f150678b8e5720b6b96a9e9a2f"
+            "tokenAddress": "0x688AEe022AA544f150678B8E5720b6b96a9E9a2F"
           }
         },
         "peersInfo": {
@@ -4944,7 +5058,7 @@
         "coinMarketCapId": 30083,
         "bridgeInfo": {
           "42161": {
-            "tokenAddress": "0x1903aa5b603819b9debd2f4b202b686e9e393aff"
+            "tokenAddress": "0x1903aa5b603819B9dEbd2F4b202B686e9e393AfF"
           }
         },
         "peersInfo": {
@@ -4973,7 +5087,7 @@
         "coingeckoId": "seedify-fund",
         "bridgeInfo": {
           "56": {
-            "tokenAddress": "0x477bc8d23c634c154061869478bce96be6045d12"
+            "tokenAddress": "0x477bC8d23c634C154061869478bce96BE6045D12"
           }
         },
         "peersInfo": {
@@ -5027,7 +5141,7 @@
       "extensions": {
         "bridgeInfo": {
           "10": {
-            "tokenAddress": "0xb153fb3d196a8eb25522705560ac152eeec57901"
+            "tokenAddress": "0xB153FB3d196A8eB25522705560ac152eeEc57901"
           },
           "56": {
             "tokenAddress": "0xfE19F0B51438fd612f6FD59C1dbB3eA319f433Ba"
@@ -5039,7 +5153,7 @@
             "tokenAddress": "0x01288e04435bFcd4718FF203D6eD18146C17Cd4b"
           },
           "8453": {
-            "tokenAddress": "0x4a3a6dd60a34bb2aba60d73b4c88315e9ceb6a3d"
+            "tokenAddress": "0x4A3A6Dd60A34bB2Aba60D73B4C88315E9CeB6A3D"
           },
           "42161": {
             "tokenAddress": "0xB20A02dfFb172C474BC4bDa3fD6f4eE70C04daf2"
@@ -5048,7 +5162,7 @@
             "tokenAddress": "0x130966628846BFd36ff31a822705796e8cb8C18D"
           },
           "80094": {
-            "tokenAddress": "0x5b82028cfc477c4e7dda7ff33d59a23fa7be002a"
+            "tokenAddress": "0x5B82028cfc477C4E7ddA7FF33d59A23FA7Be002a"
           }
         },
         "peersInfo": {
@@ -5110,7 +5224,7 @@
       "extensions": {
         "bridgeInfo": {
           "8453": {
-            "tokenAddress": "0x24fcfc492c1393274b6bcd568ac9e225bec93584"
+            "tokenAddress": "0x24fcFC492C1393274B6bcd568ac9e225BEc93584"
           }
         },
         "peersInfo": {
@@ -5129,29 +5243,6 @@
     },
     {
       "chainId": 1,
-      "address": "0x152649eA73beAb28c5b49B26eb48f7EAD6d4c898",
-      "name": "PancakeSwap",
-      "symbol": "CAKE",
-      "decimals": 18,
-      "logoURI": "https://coin-images.coingecko.com/coins/images/12632/large/pancakeswap-cake-logo_%281%29.png?1696512440",
-      "tags": [],
-      "extensions": {
-        "coingeckoId": "pancakeswap-token",
-        "coinMarketCapId": 7186,
-        "bridgeInfo": {
-          "56": {
-            "tokenAddress": "0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82"
-          },
-          "42161": {
-            "tokenAddress": "0xCdc343ebf71e38F003eD6c80171F5B8D7cF58860"
-          }
-        }
-      },
-      "isAcross": false,
-      "isOFT": false
-    },
-    {
-      "chainId": 1,
       "address": "0xd5EB7E91Ae88Ea2550F9bFD04208399c95dF4dC7",
       "name": "DogLibre",
       "decimals": 18,
@@ -5161,7 +5252,7 @@
       "extensions": {
         "bridgeInfo": {
           "8453": {
-            "tokenAddress": "0xb757977bc882a14db86b048f2abb2f2a14d33184"
+            "tokenAddress": "0xB757977bc882A14db86b048f2abb2F2a14D33184"
           }
         },
         "peersInfo": {
@@ -5242,19 +5333,19 @@
         "coinMarketCapId": 24892,
         "bridgeInfo": {
           "10": {
-            "tokenAddress": "0x788d86e00ab31db859c3d6b80d5a9375801d7f2a"
+            "tokenAddress": "0x788D86E00ab31Db859C3d6b80d5a9375801d7f2A"
           },
           "56": {
-            "tokenAddress": "0x788d86e00ab31db859c3d6b80d5a9375801d7f2a"
+            "tokenAddress": "0x788D86E00ab31Db859C3d6b80d5a9375801d7f2A"
           },
           "137": {
-            "tokenAddress": "0x788d86e00ab31db859c3d6b80d5a9375801d7f2a"
+            "tokenAddress": "0x788D86E00ab31Db859C3d6b80d5a9375801d7f2A"
           },
           "42161": {
-            "tokenAddress": "0x788d86e00ab31db859c3d6b80d5a9375801d7f2a"
+            "tokenAddress": "0x788D86E00ab31Db859C3d6b80d5a9375801d7f2A"
           },
           "43114": {
-            "tokenAddress": "0x788d86e00ab31db859c3d6b80d5a9375801d7f2a"
+            "tokenAddress": "0x788D86E00ab31Db859C3d6b80d5a9375801d7f2A"
           }
         }
       },
@@ -5272,13 +5363,13 @@
       "extensions": {
         "bridgeInfo": {
           "56": {
-            "tokenAddress": "0x333333c465a19c85f85c6cfbed7b16b0b26e3333"
+            "tokenAddress": "0x333333C465a19C85f85c6CfbED7B16b0B26E3333"
           },
           "8453": {
-            "tokenAddress": "0x333333c465a19c85f85c6cfbed7b16b0b26e3333"
+            "tokenAddress": "0x333333C465a19C85f85c6CfbED7B16b0B26E3333"
           },
           "42161": {
-            "tokenAddress": "0x333333c465a19c85f85c6cfbed7b16b0b26e3333"
+            "tokenAddress": "0x333333C465a19C85f85c6CfbED7B16b0B26E3333"
           }
         },
         "peersInfo": {
@@ -5324,10 +5415,10 @@
       "extensions": {
         "bridgeInfo": {
           "137": {
-            "tokenAddress": "0x3e12b9d6a4d12cd9b4a6d613872d0eb32f68b380"
+            "tokenAddress": "0x3E12b9d6A4D12cd9b4a6d613872d0Eb32f68b380"
           },
           "8453": {
-            "tokenAddress": "0x3e12b9d6a4d12cd9b4a6d613872d0eb32f68b380"
+            "tokenAddress": "0x3E12b9d6A4D12cd9b4a6d613872d0Eb32f68b380"
           }
         },
         "peersInfo": {
@@ -5389,7 +5480,7 @@
       "extensions": {
         "bridgeInfo": {
           "56": {
-            "tokenAddress": "0x5651fa7a726b9ec0cad00ee140179912b6e73599"
+            "tokenAddress": "0x5651fA7a726B9Ec0cAd00Ee140179912B6E73599"
           }
         },
         "peersInfo": {
@@ -5417,10 +5508,10 @@
       "extensions": {
         "bridgeInfo": {
           "56": {
-            "tokenAddress": "0x6386adc4bc9c21984e34fd916bb349dd861742af"
+            "tokenAddress": "0x6386Adc4BC9c21984E34fD916BB349dD861742af"
           },
           "8453": {
-            "tokenAddress": "0x37d2adc008118d04f259fc0c16ff66bf5a637d20"
+            "tokenAddress": "0x37d2Adc008118d04f259fc0c16ff66bF5a637D20"
           }
         },
         "peersInfo": {
@@ -5453,13 +5544,13 @@
         "coinMarketCapId": 28094,
         "bridgeInfo": {
           "10": {
-            "tokenAddress": "0x4591dbff62656e7859afe5e45f6f47d3669fbb28"
+            "tokenAddress": "0x4591DBfF62656E7859Afe5e45f6f47D3669fBB28"
           },
           "8453": {
-            "tokenAddress": "0x4591dbff62656e7859afe5e45f6f47d3669fbb28"
+            "tokenAddress": "0x4591DBfF62656E7859Afe5e45f6f47D3669fBB28"
           },
           "42161": {
-            "tokenAddress": "0x4591dbff62656e7859afe5e45f6f47d3669fbb28"
+            "tokenAddress": "0x4591DBfF62656E7859Afe5e45f6f47D3669fBB28"
           }
         },
         "peersInfo": {
@@ -5505,10 +5596,10 @@
         "coinMarketCapId": 35489,
         "bridgeInfo": {
           "8453": {
-            "tokenAddress": "0xb5130f4767ab0acc579f25a76e8f9e977cb3f948"
+            "tokenAddress": "0xb5130F4767AB0ACC579f25a76e8f9E977CB3F948"
           },
           "42161": {
-            "tokenAddress": "0xb5130f4767ab0acc579f25a76e8f9e977cb3f948"
+            "tokenAddress": "0xb5130F4767AB0ACC579f25a76e8f9E977CB3F948"
           }
         },
         "peersInfo": {
@@ -5539,16 +5630,16 @@
       "extensions": {
         "bridgeInfo": {
           "56": {
-            "tokenAddress": "0x78a0a62fba6fb21a83fe8a3433d44c73a4017a6f"
+            "tokenAddress": "0x78a0A62Fba6Fb21A83FE8a3433d44C73a4017A6f"
           },
           "137": {
-            "tokenAddress": "0x78a0a62fba6fb21a83fe8a3433d44c73a4017a6f"
+            "tokenAddress": "0x78a0A62Fba6Fb21A83FE8a3433d44C73a4017A6f"
           },
           "42161": {
-            "tokenAddress": "0x78a0a62fba6fb21a83fe8a3433d44c73a4017a6f"
+            "tokenAddress": "0x78a0A62Fba6Fb21A83FE8a3433d44C73a4017A6f"
           },
           "43114": {
-            "tokenAddress": "0x78a0a62fba6fb21a83fe8a3433d44c73a4017a6f"
+            "tokenAddress": "0x78a0A62Fba6Fb21A83FE8a3433d44C73a4017A6f"
           }
         },
         "peersInfo": {
@@ -5599,7 +5690,7 @@
         "coingeckoId": "astrafer",
         "bridgeInfo": {
           "137": {
-            "tokenAddress": "0xdfce1e99a31c4597a3f8a8945cbfa9037655e335"
+            "tokenAddress": "0xDfCe1e99A31C4597a3f8A8945cBfa9037655e335"
           }
         },
         "peersInfo": {
@@ -5702,25 +5793,25 @@
         "coinMarketCapId": 26997,
         "bridgeInfo": {
           "10": {
-            "tokenAddress": "0x6985884c4392d348587b19cb9eaaf157f13271cd"
+            "tokenAddress": "0x6985884C4392D348587B19cb9eAAf157F13271cd"
           },
           "56": {
-            "tokenAddress": "0x6985884c4392d348587b19cb9eaaf157f13271cd"
+            "tokenAddress": "0x6985884C4392D348587B19cb9eAAf157F13271cd"
           },
           "130": {
             "tokenAddress": "0x00ad3704d1e101DF76f87738bEfE67737eD29cFb"
           },
           "137": {
-            "tokenAddress": "0x6985884c4392d348587b19cb9eaaf157f13271cd"
+            "tokenAddress": "0x6985884C4392D348587B19cb9eAAf157F13271cd"
           },
           "8453": {
-            "tokenAddress": "0x6985884c4392d348587b19cb9eaaf157f13271cd"
+            "tokenAddress": "0x6985884C4392D348587B19cb9eAAf157F13271cd"
           },
           "42161": {
             "tokenAddress": "0x6985884C4392D348587B19cb9eAAf157F13271cd"
           },
           "43114": {
-            "tokenAddress": "0x6985884c4392d348587b19cb9eaaf157f13271cd"
+            "tokenAddress": "0x6985884C4392D348587B19cb9eAAf157F13271cd"
           }
         },
         "peersInfo": {
@@ -5764,7 +5855,7 @@
         "coinMarketCapId": 36149,
         "bridgeInfo": {
           "146": {
-            "tokenAddress": "0x6bede1c6009a78c222d9bdb7974bb67847fdb68c"
+            "tokenAddress": "0x6bedE1c6009a78c222D9BDb7974bb67847fdB68c"
           }
         },
         "peersInfo": {
@@ -5819,7 +5910,7 @@
         "coinMarketCapId": 34067,
         "bridgeInfo": {
           "8453": {
-            "tokenAddress": "0x50ce4129ca261ccde4eb100c170843c2936bc11b"
+            "tokenAddress": "0x50CE4129Ca261CCDe4EB100c170843c2936Bc11b"
           }
         },
         "peersInfo": {
@@ -5847,7 +5938,7 @@
       "extensions": {
         "bridgeInfo": {
           "8453": {
-            "tokenAddress": "0x1f1aa4d239002bb818536c95e9b762a1fc8484c1"
+            "tokenAddress": "0x1F1aA4d239002bB818536c95E9b762a1FC8484C1"
           }
         }
       },
@@ -5865,10 +5956,10 @@
       "extensions": {
         "bridgeInfo": {
           "10": {
-            "tokenAddress": "0x9dabae7274d28a45f0b65bf8ed201a5731492ca0"
+            "tokenAddress": "0x9dAbAE7274D28A45F0B65Bf8ED201A5731492ca0"
           },
           "8453": {
-            "tokenAddress": "0x526728dbc96689597f85ae4cd716d4f7fccbae9d"
+            "tokenAddress": "0x526728DBc96689597F85ae4cd716d4f7fCcBAE9d"
           }
         },
         "peersInfo": {
@@ -5953,7 +6044,7 @@
       "extensions": {
         "bridgeInfo": {
           "8453": {
-            "tokenAddress": "0xb3a9bd4861454ba94931ebff410c3d828525dce2"
+            "tokenAddress": "0xB3a9bd4861454bA94931ebFF410c3D828525dCe2"
           }
         }
       },
@@ -6000,10 +6091,10 @@
       "extensions": {
         "bridgeInfo": {
           "1088": {
-            "tokenAddress": "0xf010a7c8877043681d59ad125ebf575633505942"
+            "tokenAddress": "0xF010a7c8877043681D59AD125EbF575633505942"
           },
           "8453": {
-            "tokenAddress": "0xf010a7c8877043681d59ad125ebf575633505942"
+            "tokenAddress": "0xF010a7c8877043681D59AD125EbF575633505942"
           }
         },
         "peersInfo": {
@@ -6050,10 +6141,10 @@
       "extensions": {
         "bridgeInfo": {
           "42161": {
-            "tokenAddress": "0xb1fe27b32ffb5ce54e272c096547f1e86c19e72f"
+            "tokenAddress": "0xB1Fe27b32fFb5CE54E272C096547F1e86c19e72F"
           },
           "80094": {
-            "tokenAddress": "0x850cdf416668210ed0c36bfff5d21921c7ada3b8"
+            "tokenAddress": "0x850CDF416668210ED0c36bfFF5d21921C7adA3b8"
           }
         },
         "peersInfo": {
@@ -6090,7 +6181,7 @@
       "extensions": {
         "bridgeInfo": {
           "56": {
-            "tokenAddress": "0x9ff59ffc463736520aa465b2ca9c5d047be919ba"
+            "tokenAddress": "0x9ff59ffc463736520aA465b2CA9C5D047bE919BA"
           }
         },
         "peersInfo": {
@@ -6193,19 +6284,19 @@
       "extensions": {
         "bridgeInfo": {
           "56": {
-            "tokenAddress": "0xba0dda8762c24da9487f5fa026a9b64b695a07ea"
+            "tokenAddress": "0xba0Dda8762C24dA9487f5FA026a9B64b695A07Ea"
           },
           "137": {
-            "tokenAddress": "0xba0dda8762c24da9487f5fa026a9b64b695a07ea"
+            "tokenAddress": "0xba0Dda8762C24dA9487f5FA026a9B64b695A07Ea"
           },
           "8453": {
-            "tokenAddress": "0xba0dda8762c24da9487f5fa026a9b64b695a07ea"
+            "tokenAddress": "0xba0Dda8762C24dA9487f5FA026a9B64b695A07Ea"
           },
           "42161": {
-            "tokenAddress": "0xba0dda8762c24da9487f5fa026a9b64b695a07ea"
+            "tokenAddress": "0xba0Dda8762C24dA9487f5FA026a9B64b695A07Ea"
           },
           "43114": {
-            "tokenAddress": "0xba0dda8762c24da9487f5fa026a9b64b695a07ea"
+            "tokenAddress": "0xba0Dda8762C24dA9487f5FA026a9B64b695A07Ea"
           }
         },
         "peersInfo": {
@@ -6280,7 +6371,7 @@
       "extensions": {
         "bridgeInfo": {
           "137": {
-            "tokenAddress": "0xaff41da975501e5b71848c975834341777d1a473"
+            "tokenAddress": "0xAfF41DA975501E5b71848C975834341777D1a473"
           }
         },
         "peersInfo": {
@@ -6312,7 +6403,7 @@
       "extensions": {
         "bridgeInfo": {
           "56": {
-            "tokenAddress": "0xa80221d067603e30060f75e2458aa361f8ee5402"
+            "tokenAddress": "0xa80221D067603e30060F75E2458AA361f8eE5402"
           }
         },
         "peersInfo": {
@@ -6347,13 +6438,13 @@
         "coinMarketCapId": 21066,
         "bridgeInfo": {
           "56": {
-            "tokenAddress": "0x883cfbd30bd076a063a453335414909545186275"
+            "tokenAddress": "0x883CFBd30bD076a063A453335414909545186275"
           },
           "137": {
-            "tokenAddress": "0x50aa659e6ab263b77d61ff44cf4a1090141e7111"
+            "tokenAddress": "0x50AA659E6aB263B77d61Ff44cF4A1090141e7111"
           },
           "8453": {
-            "tokenAddress": "0x883cfbd30bd076a063a453335414909545186275"
+            "tokenAddress": "0x883CFBd30bD076a063A453335414909545186275"
           }
         },
         "peersInfo": {
@@ -6387,10 +6478,10 @@
       "extensions": {
         "bridgeInfo": {
           "56": {
-            "tokenAddress": "0x0ae38f7e10a43b5b2fb064b42a2f4514cba909ef"
+            "tokenAddress": "0x0Ae38f7E10A43B5b2fB064B42a2f4514cbA909ef"
           },
           "42161": {
-            "tokenAddress": "0x0ae38f7e10a43b5b2fb064b42a2f4514cba909ef"
+            "tokenAddress": "0x0Ae38f7E10A43B5b2fB064B42a2f4514cbA909ef"
           }
         },
         "peersInfo": {
@@ -6440,22 +6531,22 @@
       "extensions": {
         "bridgeInfo": {
           "10": {
-            "tokenAddress": "0x4186bfc76e2e237523cbc30fd220fe055156b41f"
+            "tokenAddress": "0x4186BFC76E2E237523CBC30FD220FE055156b41F"
           },
           "146": {
-            "tokenAddress": "0xd75787ba9aba324420d522bda84c08c87e5099b1"
+            "tokenAddress": "0xd75787bA9ABa324420d522BdA84c08c87e5099b1"
           },
           "1923": {
-            "tokenAddress": "0xc3eacf0612346366db554c991d7858716db09f58"
+            "tokenAddress": "0xc3eACf0612346366Db554C991D7858716db09f58"
           },
           "8453": {
-            "tokenAddress": "0x1bc71130a0e39942a7658878169764bbd8a45993"
+            "tokenAddress": "0x1Bc71130A0e39942a7658878169764Bbd8A45993"
           },
           "42161": {
-            "tokenAddress": "0x4186bfc76e2e237523cbc30fd220fe055156b41f"
+            "tokenAddress": "0x4186BFC76E2E237523CBC30FD220FE055156b41F"
           },
           "80094": {
-            "tokenAddress": "0x4186bfc76e2e237523cbc30fd220fe055156b41f"
+            "tokenAddress": "0x4186BFC76E2E237523CBC30FD220FE055156b41F"
           }
         },
         "peersInfo": {
@@ -6527,28 +6618,28 @@
       "extensions": {
         "bridgeInfo": {
           "56": {
-            "tokenAddress": "0x2117e8b79e8e176a670c9fcf945d4348556bffad"
+            "tokenAddress": "0x2117E8b79e8E176A670c9fCf945d4348556bfFad"
           },
           "130": {
             "tokenAddress": "0x6319F47719b6713b1624C1b3A8e2DBf15b5D03FE"
           },
           "146": {
-            "tokenAddress": "0x8e15c8d399e86d4fd7b427d42f06c60cdd9397e7"
+            "tokenAddress": "0x8e15C8D399e86d4FD7B427D42f06c60cDD9397e7"
           },
           "1923": {
-            "tokenAddress": "0x80ccfbec4b8c82265abdc226ad3df84c0726e7a3"
+            "tokenAddress": "0x80ccFBec4b8c82265abdc226Ad3Df84C0726E7A3"
           },
           "8453": {
-            "tokenAddress": "0xa153ad732f831a79b5575fa02e793ec4e99181b0"
+            "tokenAddress": "0xa153Ad732F831a79b5575Fa02e793EC4E99181b0"
           },
           "42161": {
-            "tokenAddress": "0x462cd9e0247b2e63831c3189ae738e5e9a5a4b64"
+            "tokenAddress": "0x462cD9E0247b2e63831c3189aE738E5E9a5a4b64"
           },
           "43114": {
-            "tokenAddress": "0x9ceed3a7f753608372eeab300486cc7c2f38ac68"
+            "tokenAddress": "0x9ceeD3A7f753608372eeAb300486cc7c2F38AC68"
           },
           "80094": {
-            "tokenAddress": "0xeb9b5f4eb023ae754ff59a04c9c038d58606dac6"
+            "tokenAddress": "0xEb9b5f4EB023aE754fF59A04c9C038D58606DAC6"
           }
         },
         "peersInfo": {
@@ -6600,22 +6691,22 @@
       "extensions": {
         "bridgeInfo": {
           "10": {
-            "tokenAddress": "0x2b1d36f5b61addaf7da7ebbd11b35fd8cfb0de31"
+            "tokenAddress": "0x2b1D36f5B61AdDAf7DA7ebbd11B35FD8cfb0DE31"
           },
           "56": {
-            "tokenAddress": "0x2b1d36f5b61addaf7da7ebbd11b35fd8cfb0de31"
+            "tokenAddress": "0x2b1D36f5B61AdDAf7DA7ebbd11B35FD8cfb0DE31"
           },
           "137": {
-            "tokenAddress": "0x2b1d36f5b61addaf7da7ebbd11b35fd8cfb0de31"
+            "tokenAddress": "0x2b1D36f5B61AdDAf7DA7ebbd11B35FD8cfb0DE31"
           },
           "8453": {
-            "tokenAddress": "0x2b1d36f5b61addaf7da7ebbd11b35fd8cfb0de31"
+            "tokenAddress": "0x2b1D36f5B61AdDAf7DA7ebbd11B35FD8cfb0DE31"
           },
           "42161": {
-            "tokenAddress": "0x2b1d36f5b61addaf7da7ebbd11b35fd8cfb0de31"
+            "tokenAddress": "0x2b1D36f5B61AdDAf7DA7ebbd11B35FD8cfb0DE31"
           },
           "43114": {
-            "tokenAddress": "0x2b1d36f5b61addaf7da7ebbd11b35fd8cfb0de31"
+            "tokenAddress": "0x2b1D36f5B61AdDAf7DA7ebbd11B35FD8cfb0DE31"
           }
         },
         "peersInfo": {
@@ -6711,7 +6802,7 @@
       "extensions": {
         "bridgeInfo": {
           "56": {
-            "tokenAddress": "0x25d887ce7a35172c62febfd67a1856f20faebb00"
+            "tokenAddress": "0x25d887Ce7a35172C62FeBFD67a1856F20FaEbB00"
           },
           "130": {
             "tokenAddress": "0xD9b5DA95B3D97c3E9872102fDb47d4c09074952B"
@@ -6733,16 +6824,16 @@
       "extensions": {
         "bridgeInfo": {
           "56": {
-            "tokenAddress": "0x94025780a1ab58868d9b2dbbb775f44b32e8e6e5"
+            "tokenAddress": "0x94025780a1aB58868D9B2dBBB775f44b32e8E6e5"
           },
           "137": {
-            "tokenAddress": "0x94025780a1ab58868d9b2dbbb775f44b32e8e6e5"
+            "tokenAddress": "0x94025780a1aB58868D9B2dBBB775f44b32e8E6e5"
           },
           "42161": {
-            "tokenAddress": "0x94025780a1ab58868d9b2dbbb775f44b32e8e6e5"
+            "tokenAddress": "0x94025780a1aB58868D9B2dBBB775f44b32e8E6e5"
           },
           "43114": {
-            "tokenAddress": "0x94025780a1ab58868d9b2dbbb775f44b32e8e6e5"
+            "tokenAddress": "0x94025780a1aB58868D9B2dBBB775f44b32e8E6e5"
           }
         },
         "peersInfo": {}
@@ -6783,25 +6874,25 @@
       "extensions": {
         "bridgeInfo": {
           "10": {
-            "tokenAddress": "0xd3fdcb837dafdb7c9c3ebd48fe22a53f6dd3d7d7"
+            "tokenAddress": "0xD3FDCb837DAfdb7C9C3eBD48FE22a53F6Dd3d7D7"
           },
           "56": {
-            "tokenAddress": "0xd3fdcb837dafdb7c9c3ebd48fe22a53f6dd3d7d7"
+            "tokenAddress": "0xD3FDCb837DAfdb7C9C3eBD48FE22a53F6Dd3d7D7"
           },
           "137": {
-            "tokenAddress": "0xd3fdcb837dafdb7c9c3ebd48fe22a53f6dd3d7d7"
+            "tokenAddress": "0xD3FDCb837DAfdb7C9C3eBD48FE22a53F6Dd3d7D7"
           },
           "1088": {
-            "tokenAddress": "0xd3fdcb837dafdb7c9c3ebd48fe22a53f6dd3d7d7"
+            "tokenAddress": "0xD3FDCb837DAfdb7C9C3eBD48FE22a53F6Dd3d7D7"
           },
           "8453": {
-            "tokenAddress": "0xd3fdcb837dafdb7c9c3ebd48fe22a53f6dd3d7d7"
+            "tokenAddress": "0xD3FDCb837DAfdb7C9C3eBD48FE22a53F6Dd3d7D7"
           },
           "42161": {
-            "tokenAddress": "0xd3fdcb837dafdb7c9c3ebd48fe22a53f6dd3d7d7"
+            "tokenAddress": "0xD3FDCb837DAfdb7C9C3eBD48FE22a53F6Dd3d7D7"
           },
           "43114": {
-            "tokenAddress": "0xd3fdcb837dafdb7c9c3ebd48fe22a53f6dd3d7d7"
+            "tokenAddress": "0xD3FDCb837DAfdb7C9C3eBD48FE22a53F6Dd3d7D7"
           }
         },
         "peersInfo": {
@@ -6870,7 +6961,7 @@
       "extensions": {
         "bridgeInfo": {
           "43114": {
-            "tokenAddress": "0x5ac04b69bde6f67c0bd5d6ba6fd5d816548b066a"
+            "tokenAddress": "0x5Ac04b69bDE6f67C0bd5D6bA6fD5D816548b066a"
           }
         },
         "peersInfo": {
@@ -6904,10 +6995,10 @@
       "extensions": {
         "bridgeInfo": {
           "56": {
-            "tokenAddress": "0x336f374198c872ba760e85af9c6331c3c5a535d3"
+            "tokenAddress": "0x336f374198c872Ba760e85af9c6331C3c5A535d3"
           },
           "137": {
-            "tokenAddress": "0x110b25d2b21ee73eb401f3ae7833f7072912a0bf"
+            "tokenAddress": "0x110B25D2B21eE73eB401F3aE7833f7072912A0Bf"
           }
         }
       },
@@ -6925,25 +7016,25 @@
       "extensions": {
         "bridgeInfo": {
           "10": {
-            "tokenAddress": "0x58538e6a46e07434d7e7375bc268d3cb839c0133"
+            "tokenAddress": "0x58538e6A46E07434d7E7375Bc268D3cb839C0133"
           },
           "56": {
-            "tokenAddress": "0x58538e6a46e07434d7e7375bc268d3cb839c0133"
+            "tokenAddress": "0x58538e6A46E07434d7E7375Bc268D3cb839C0133"
           },
           "130": {
             "tokenAddress": "0x9116E70d613860D349495d9Ef8e2AE1cA6cBD2dd"
           },
           "252": {
-            "tokenAddress": "0x58538e6a46e07434d7e7375bc268d3cb839c0133"
+            "tokenAddress": "0x58538e6A46E07434d7E7375Bc268D3cb839C0133"
           },
           "1088": {
-            "tokenAddress": "0x58538e6a46e07434d7e7375bc268d3cb839c0133"
+            "tokenAddress": "0x58538e6A46E07434d7E7375Bc268D3cb839C0133"
           },
           "1923": {
-            "tokenAddress": "0x58538e6a46e07434d7e7375bc268d3cb839c0133"
+            "tokenAddress": "0x58538e6A46E07434d7E7375Bc268D3cb839C0133"
           },
           "8453": {
-            "tokenAddress": "0x58538e6a46e07434d7e7375bc268d3cb839c0133"
+            "tokenAddress": "0x58538e6A46E07434d7E7375Bc268D3cb839C0133"
           },
           "42161": {
             "tokenAddress": "0xdf8F0c63D9335A0AbD89F9F752d293A98EA977d8"
@@ -6992,10 +7083,10 @@
       "extensions": {
         "bridgeInfo": {
           "56": {
-            "tokenAddress": "0x91d6d6af7635b7b23a8ced9508117965180e2362"
+            "tokenAddress": "0x91d6d6aF7635B7b23A8CED9508117965180e2362"
           },
           "42161": {
-            "tokenAddress": "0x51a80238b5738725128d3a3e06ab41c1d4c05c74"
+            "tokenAddress": "0x51A80238B5738725128d3a3e06Ab41c1d4C05C74"
           }
         },
         "peersInfo": {
@@ -7056,7 +7147,7 @@
       "extensions": {
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0x3432b6a60d23ca0dfca7761b7ab56459d9c964d0"
+            "tokenAddress": "0x3432B6A60D23Ca0dFCa7761B7ab56459D9C964D0"
           }
         },
         "peersInfo": {
@@ -7103,7 +7194,7 @@
         },
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0xab5eb14c09d416f0ac63661e57edb7aecdb9befa"
+            "tokenAddress": "0xab5eB14c09D416F0aC63661E57EDB7AEcDb9BEfA"
           }
         }
       },
@@ -7125,7 +7216,7 @@
       "extensions": {
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0x55769490c825ccb09b2a6ae955203fabf04857fd"
+            "tokenAddress": "0x55769490c825CCb09b2A6Ae955203FaBF04857fd"
           }
         },
         "peersInfo": {
@@ -7176,7 +7267,7 @@
         "coingeckoId": "doglibre",
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0xd5eb7e91ae88ea2550f9bfd04208399c95df4dc7"
+            "tokenAddress": "0xd5EB7E91Ae88Ea2550F9bFD04208399c95dF4dC7"
           }
         },
         "peersInfo": {
@@ -7207,7 +7298,7 @@
       "extensions": {
         "bridgeInfo": {
           "56": {
-            "tokenAddress": "0x0b15ddf19d47e6a86a56148fb4afffc6929bcb89"
+            "tokenAddress": "0x0b15Ddf19D47E6a86A56148fb4aFFFc6929BcB89"
           }
         },
         "peersInfo": {
@@ -7364,7 +7455,7 @@
         "coingeckoId": "permission-coin",
         "bridgeInfo": {
           "137": {
-            "tokenAddress": "0xaa3717090cddc9b227e49d0d84a28ac0a996e6ff"
+            "tokenAddress": "0xaA3717090CDDc9B227e49d0D84A28aC0a996e6Ff"
           }
         },
         "peersInfo": {
@@ -7392,7 +7483,7 @@
       "extensions": {
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0xf9fb20b8e097904f0ab7d12e9dbee88f2dcd0f16"
+            "tokenAddress": "0xf9FB20B8E097904f0aB7d12e9DbeE88f2dcd0F16"
           }
         },
         "peersInfo": {
@@ -7432,7 +7523,7 @@
       "extensions": {
         "bridgeInfo": {
           "56": {
-            "tokenAddress": "0x3c6256f234ba638e5883c46b3fedb00ea2e66b8a"
+            "tokenAddress": "0x3C6256F234Ba638E5883c46b3fEdb00ea2e66b8A"
           }
         },
         "peersInfo": {
@@ -7460,7 +7551,7 @@
       "extensions": {
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0x66a1e37c9b0eaddca17d3662d6c05f4decf3e110"
+            "tokenAddress": "0x66a1E37c9b0eAddca17d3662D6c05F4DECf3e110"
           }
         },
         "peersInfo": {
@@ -7498,7 +7589,7 @@
         "coingeckoId": "omnicat",
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0x9e20461bc2c4c980f62f1b279d71734207a6a356"
+            "tokenAddress": "0x9e20461bc2c4c980f62f1B279D71734207a6A356"
           }
         },
         "peersInfo": {
@@ -7549,7 +7640,7 @@
       "extensions": {
         "bridgeInfo": {
           "42161": {
-            "tokenAddress": "0x982239d38af50b0168da33346d85fb12929c4c07"
+            "tokenAddress": "0x982239D38Af50B0168dA33346d85Fb12929c4c07"
           }
         },
         "peersInfo": {
@@ -7613,7 +7704,7 @@
       "extensions": {
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0x2260fac5e5542a773aa44fbcfedf7c193bc2c599"
+            "tokenAddress": "0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599"
           }
         },
         "peersInfo": {
@@ -7660,7 +7751,7 @@
         "coingeckoId": "bonsai3",
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0x31ea904a7eca45122890deb8da3473a2081bc9d1"
+            "tokenAddress": "0x31ea904A7eca45122890dEb8dA3473A2081bc9d1"
           }
         },
         "peersInfo": {
@@ -7688,7 +7779,7 @@
       "extensions": {
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0x0bc37bea9068a86c221b8bd71ea6228260dad5a2"
+            "tokenAddress": "0x0bc37BEA9068a86C221B8bd71eA6228260DAD5A2"
           }
         },
         "peersInfo": {
@@ -7717,7 +7808,7 @@
         "coingeckoId": "morpheusai",
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0xcbb8f1bda10b9696c57e13bc128fe674769dcec0"
+            "tokenAddress": "0xcBB8f1BDA10b9696c57E13BC128Fe674769DCEc0"
           }
         },
         "peersInfo": {
@@ -7749,7 +7840,7 @@
         "coingeckoId": "prosper-2",
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0x915424ac489433130d92b04096f3b96c82e92a9d"
+            "tokenAddress": "0x915424Ac489433130d92B04096F3b96c82e92a9D"
           }
         },
         "peersInfo": {
@@ -7780,7 +7871,7 @@
       "extensions": {
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0x9d39a5de30e57443bff2a8307a4256c8797a3497"
+            "tokenAddress": "0x9D39A5DE30e57443BfF2A8307A4256c8797A3497"
           }
         },
         "peersInfo": {
@@ -7827,7 +7918,7 @@
         "coingeckoId": "rwa-inc",
         "bridgeInfo": {
           "56": {
-            "tokenAddress": "0xe2b1dc2d4a3b4e59fdf0c47b71a7a86391a8b35a"
+            "tokenAddress": "0xE2B1dc2D4A3b4E59FDF0c47B71A7A86391a8B35a"
           }
         },
         "peersInfo": {
@@ -7858,7 +7949,7 @@
       "extensions": {
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0x4c9edd5852cd905f086c759e8383e09bff1e68b3"
+            "tokenAddress": "0x4c9EDD5852cd905f086C759E8383e09bff1E68B3"
           }
         },
         "peersInfo": {
@@ -7904,7 +7995,7 @@
       "extensions": {
         "bridgeInfo": {
           "43114": {
-            "tokenAddress": "0x420fca0121dc28039145009570975747295f2329"
+            "tokenAddress": "0x420FcA0121DC28039145009570975747295f2329"
           }
         },
         "peersInfo": {
@@ -7957,7 +8048,7 @@
         "coingeckoId": "bridged-frax",
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0x853d955acef822db058eb8505911ed77f175b99e"
+            "tokenAddress": "0x853d955aCEf822Db058eb8505911ED77F175b99e"
           }
         },
         "peersInfo": {
@@ -7988,7 +8079,7 @@
       "extensions": {
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0xac3e018457b222d93114458476f3e3416abbe38f"
+            "tokenAddress": "0xac3E018457B222d93114458476f3E3416Abbe38F"
           }
         },
         "peersInfo": {
@@ -8019,7 +8110,7 @@
       "extensions": {
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0x2a3bff78b79a009976eea096a51a948a3dc00e34"
+            "tokenAddress": "0x2a3bFF78B79A009976EeA096a51A948a3dC00e34"
           }
         },
         "peersInfo": {
@@ -8051,7 +8142,7 @@
         "coingeckoId": "radiant-capital",
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0x137ddb47ee24eaa998a535ab00378d6bfa84f893"
+            "tokenAddress": "0x137dDB47Ee24EaA998a535Ab00378d6BFa84F893"
           }
         },
         "peersInfo": {
@@ -8136,7 +8227,7 @@
         "coingeckoId": "perion",
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0x60be1e1fe41c1370adaf5d8e66f07cf1c2df2268"
+            "tokenAddress": "0x60bE1e1fE41c1370ADaF5d8e66f07Cf1C2Df2268"
           }
         },
         "peersInfo": {
@@ -8207,7 +8298,7 @@
         "coingeckoId": "mocaverse",
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0xf944e35f95e819e752f3ccb5faf40957d311e8c5"
+            "tokenAddress": "0xF944e35f95E819E752f3cCB5Faf40957d311e8c5"
           }
         },
         "peersInfo": {
@@ -8236,7 +8327,7 @@
         "coingeckoId": "interport-token",
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0x2b1d36f5b61addaf7da7ebbd11b35fd8cfb0de31"
+            "tokenAddress": "0x2b1D36f5B61AdDAf7DA7ebbd11B35FD8cfb0DE31"
           }
         },
         "peersInfo": {
@@ -8299,7 +8390,7 @@
       "extensions": {
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0xa663b02cf0a4b149d2ad41910cb81e23e1c41c32"
+            "tokenAddress": "0xA663B02CF0a4b149d2aD41910CB81e23e1c41c32"
           }
         },
         "peersInfo": {
@@ -8398,7 +8489,7 @@
         "coingeckoId": "flower-2",
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0x3e12b9d6a4d12cd9b4a6d613872d0eb32f68b380"
+            "tokenAddress": "0x3E12b9d6A4D12cd9b4a6d613872d0Eb32f68b380"
           }
         },
         "peersInfo": {
@@ -8460,7 +8551,7 @@
         "coingeckoId": "mahadao",
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0x745407c86df8db893011912d3ab28e68b62e49b0"
+            "tokenAddress": "0x745407c86DF8DB893011912d3aB28e68B62E49B0"
           }
         },
         "peersInfo": {
@@ -8499,7 +8590,7 @@
         "coinMarketCapId": 30490,
         "bridgeInfo": {
           "137": {
-            "tokenAddress": "0xed2d13a70acbd61074fc56bd0d0845e35f793e5e"
+            "tokenAddress": "0xeD2d13A70acbD61074fC56bd0d0845e35f793e5E"
           }
         },
         "peersInfo": {
@@ -8527,7 +8618,7 @@
       "extensions": {
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0x6df0e641fc9847c0c6fde39be6253045440c14d3"
+            "tokenAddress": "0x6DF0E641FC9847c0c6Fde39bE6253045440c14d3"
           }
         },
         "peersInfo": {
@@ -8632,7 +8723,7 @@
       "extensions": {
         "bridgeInfo": {
           "43114": {
-            "tokenAddress": "0x5ac04b69bde6f67c0bd5d6ba6fd5d816548b066a"
+            "tokenAddress": "0x5Ac04b69bDE6f67C0bd5D6bA6fD5D816548b066a"
           }
         },
         "peersInfo": {
@@ -8694,7 +8785,7 @@
         "coingeckoId": "kolz",
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0x288741b45ad4042f7b124e38b53cec5e9cca0376"
+            "tokenAddress": "0x288741b45AD4042f7b124E38b53cEc5E9ccA0376"
           }
         },
         "peersInfo": {
@@ -8785,7 +8876,7 @@
         "coingeckoId": "mozaic",
         "bridgeInfo": {
           "42161": {
-            "tokenAddress": "0x20547341e58fb558637fa15379c92e11f7b7f710"
+            "tokenAddress": "0x20547341E58fB558637FA15379C92e11F7b7F710"
           }
         },
         "peersInfo": {
@@ -8813,7 +8904,7 @@
       "extensions": {
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0x8457ca5040ad67fdebbcc8edce889a335bc0fbfb"
+            "tokenAddress": "0x8457CA5040ad67fdebbCC8EdCE889A335Bc0fbFB"
           }
         },
         "peersInfo": {
@@ -8850,7 +8941,7 @@
       "extensions": {
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0x32b77729cd87f1ef2bea4c650c16f89f08472c69"
+            "tokenAddress": "0x32B77729cD87F1EF2bEa4C650c16f89f08472c69"
           }
         },
         "peersInfo": {
@@ -8883,7 +8974,7 @@
         "coinMarketCapId": 20738,
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0x0b3eaead748facdb9d943d3407011f16eb17d0cf"
+            "tokenAddress": "0x0B3EAEAd748facDb9d943d3407011f16Eb17D0Cf"
           }
         },
         "peersInfo": {
@@ -8904,6 +8995,43 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x0b3eaead748facdb9d943d3407011f16eb17d0cf",
+      "oftVersion": 3,
+      "endpointVersion": 2,
+      "endpointId": 30184,
+      "oftSharedDecimals": 6
+    },
+    {
+      "chainId": 8453,
+      "address": "0x0fc2a55d5BD13033f1ee0cdd11f60F7eFe66f467",
+      "name": "Lagrange",
+      "decimals": 18,
+      "symbol": "LA",
+      "logoURI": "https://s2.coinmarketcap.com/static/img/coins/128x128/36510.png",
+      "tags": [],
+      "extensions": {
+        "bridgeInfo": {
+          "1": {
+            "tokenAddress": "0x0fc2a55d5BD13033f1ee0cdd11f60F7eFe66f467"
+          }
+        },
+        "peersInfo": {
+          "1": {
+            "tokenAddress": "0x0fc2a55d5BD13033f1ee0cdd11f60F7eFe66f467"
+          },
+          "10": {
+            "tokenAddress": "0x0fc2a55d5BD13033f1ee0cdd11f60F7eFe66f467"
+          },
+          "137": {
+            "tokenAddress": "0x0fc2a55d5BD13033f1ee0cdd11f60F7eFe66f467"
+          },
+          "42161": {
+            "tokenAddress": "0x0fc2a55d5BD13033f1ee0cdd11f60F7eFe66f467"
+          }
+        }
+      },
+      "isAcross": false,
+      "isOFT": true,
+      "oftAdapter": "0x0fc2a55d5bd13033f1ee0cdd11f60f7efe66f467",
       "oftVersion": 3,
       "endpointVersion": 2,
       "endpointId": 30184,
@@ -8943,7 +9071,7 @@
         "coingeckoId": "woofwork-io",
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0x6bc08509b36a98e829dffad49fde5e412645d0a3"
+            "tokenAddress": "0x6BC08509B36A98E829dFfAD49Fde5e412645d0a3"
           }
         }
       },
@@ -8961,10 +9089,10 @@
       "extensions": {
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0x9deb0fc809955b79c85e82918e8586d3b7d2695a"
+            "tokenAddress": "0x9DeB0fc809955b79c85e82918E8586d3b7d2695a"
           },
           "42161": {
-            "tokenAddress": "0x8b5e4c9a188b1a187f2d1e80b1c2fb17fa2922e1"
+            "tokenAddress": "0x8b5e4C9a188b1A187f2D1E80b1c2fB17fA2922e1"
           }
         },
         "peersInfo": {
@@ -9022,7 +9150,7 @@
       "extensions": {
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0x3d000462fb9826804a45c0ea869b83b69587f2db"
+            "tokenAddress": "0x3d000462Fb9826804a45c0EA869b83b69587F2dB"
           }
         }
       },
@@ -9041,6 +9169,9 @@
         "peersInfo": {
           "1": {
             "tokenAddress": "0xc555D625828c4527d477e595fF1Dd5801B4a600e"
+          },
+          "43114": {
+            "tokenAddress": "0xfc87D55bC8bF441AbfC24D04B2068a8f77BcFcC0"
           }
         }
       },
@@ -9063,7 +9194,7 @@
       "extensions": {
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0xd9fcd98c322942075a5c3860693e9f4f03aae07b"
+            "tokenAddress": "0xd9Fcd98c322942075A5C3860693e9f4f03AAE07b"
           }
         },
         "peersInfo": {
@@ -9116,7 +9247,7 @@
         "coingeckoId": "ox-fun",
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0xba0dda8762c24da9487f5fa026a9b64b695a07ea"
+            "tokenAddress": "0xba0Dda8762C24dA9487f5FA026a9B64b695A07Ea"
           }
         },
         "peersInfo": {
@@ -9188,7 +9319,7 @@
       "extensions": {
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0x3845badade8e6dff049820680d1f14bd3903a5d0"
+            "tokenAddress": "0x3845badAde8e6dFF049820680d1F14bD3903a5d0"
           }
         },
         "peersInfo": {
@@ -9220,7 +9351,7 @@
         "coingeckoId": "syrup",
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0x643c4e15d7d62ad0abec4a9bd4b001aa3ef52d66"
+            "tokenAddress": "0x643C4E15d7d62Ad0aBeC4a9BD4b001aA3Ef52d66"
           }
         },
         "peersInfo": {
@@ -9281,7 +9412,7 @@
       "extensions": {
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0x2da719db753dfa10a62e140f436e1d67f2ddb0d6"
+            "tokenAddress": "0x2dA719DB753dFA10a62E140f436E1d67F2ddB0d6"
           }
         },
         "peersInfo": {
@@ -9309,7 +9440,7 @@
       "extensions": {
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0x853d955acef822db058eb8505911ed77f175b99e"
+            "tokenAddress": "0x853d955aCEf822Db058eb8505911ED77F175b99e"
           }
         },
         "peersInfo": {
@@ -9344,7 +9475,7 @@
         "coingeckoId": "holotoken",
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0x6c6ee5e31d828de241282b9606c8e98ea48526e2"
+            "tokenAddress": "0x6c6EE5e31d828De241282B9606C8e98Ea48526E2"
           }
         },
         "peersInfo": {
@@ -9376,7 +9507,7 @@
         "coingeckoId": "wayfinder",
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0x28d38df637db75533bd3f71426f3410a82041544"
+            "tokenAddress": "0x28d38dF637dB75533bD3F71426F3410a82041544"
           }
         },
         "peersInfo": {
@@ -9468,7 +9599,7 @@
       "extensions": {
         "bridgeInfo": {
           "56": {
-            "tokenAddress": "0xdfbea88c4842d30c26669602888d746d30f9d60d"
+            "tokenAddress": "0xdfBEA88C4842d30c26669602888d746D30F9D60d"
           }
         },
         "peersInfo": {
@@ -9501,7 +9632,7 @@
       "extensions": {
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0x4591dbff62656e7859afe5e45f6f47d3669fbb28"
+            "tokenAddress": "0x4591DBfF62656E7859Afe5e45f6f47D3669fBB28"
           }
         },
         "peersInfo": {
@@ -9546,7 +9677,7 @@
         "coingeckoId": "godcoin-2",
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0xb5130f4767ab0acc579f25a76e8f9e977cb3f948"
+            "tokenAddress": "0xb5130F4767AB0ACC579f25a76e8f9E977CB3F948"
           }
         },
         "peersInfo": {
@@ -9604,7 +9735,7 @@
         "coingeckoId": "orderly-network",
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0xabd4c63d2616a5201454168269031355f4764337"
+            "tokenAddress": "0xABD4C63d2616A5201454168269031355f4764337"
           }
         },
         "peersInfo": {
@@ -9648,7 +9779,7 @@
         "coingeckoId": "kelpdao-bridged-rseth-base",
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0xa1290d69c65a6fe4df752f95823fae25cb99e5a7"
+            "tokenAddress": "0xA1290d69c65A6Fe4DF752f95823fae25cB99e5A7"
           }
         },
         "peersInfo": {
@@ -9688,7 +9819,7 @@
       "extensions": {
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0x3432b6a60d23ca0dfca7761b7ab56459d9c964d0"
+            "tokenAddress": "0x3432B6A60D23Ca0dFCa7761B7ab56459D9C964D0"
           }
         },
         "peersInfo": {
@@ -9756,7 +9887,7 @@
         "coingeckoId": "maverick-protocol",
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0x7448c7456a97769f6cd04f1e83a4a23ccdc46abd"
+            "tokenAddress": "0x7448c7456a97769F6cD04F1E83A4a23cCdC46aBD"
           }
         },
         "peersInfo": {
@@ -9801,7 +9932,7 @@
         "coingeckoId": "layerzero",
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0x6985884c4392d348587b19cb9eaaf157f13271cd"
+            "tokenAddress": "0x6985884C4392D348587B19cb9eAAf157F13271cd"
           }
         },
         "peersInfo": {
@@ -9869,7 +10000,7 @@
         "coingeckoId": "ora-coin",
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0x33333333fede34409fb7f67c6585047e1f653333"
+            "tokenAddress": "0x33333333FEde34409Fb7f67c6585047E1F653333"
           }
         },
         "peersInfo": {
@@ -9904,7 +10035,7 @@
         "coingeckoId": "precipitate-ai",
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0xe3944ab788a60ca266f1eec3c26925b95f6370ad"
+            "tokenAddress": "0xe3944AB788A60ca266f1eEc3C26925b95f6370aD"
           }
         }
       },
@@ -9922,7 +10053,7 @@
       "extensions": {
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0x5e8422345238f34275888049021821e8e08caa1f"
+            "tokenAddress": "0x5E8422345238F34275888049021821E8E08CAa1f"
           }
         },
         "peersInfo": {
@@ -9977,7 +10108,7 @@
         "coingeckoId": "sensay",
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0x82a605d6d9114f4ad6d5ee461027477eeed31e34"
+            "tokenAddress": "0x82a605D6D9114F4Ad6D5Ee461027477EeED31E34"
           }
         },
         "peersInfo": {
@@ -10081,7 +10212,7 @@
       "extensions": {
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0x68ccaca9adf1552b3316d6067690ec27397c8ea8"
+            "tokenAddress": "0x68ccACa9ADF1552B3316d6067690eC27397c8ea8"
           }
         },
         "peersInfo": {
@@ -10116,7 +10247,7 @@
         "coingeckoId": "stargate-finance",
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0xaf5191b0de278c7286d6c7cc6ab6bb8a73ba2cd6"
+            "tokenAddress": "0xAf5191B0De278C7286d6C7CC6ab6BB8A73bA2Cd6"
           }
         }
       },
@@ -10138,7 +10269,7 @@
       "extensions": {
         "bridgeInfo": {
           "56": {
-            "tokenAddress": "0x91da780bc7f4b7cf19abe90411a2a296ec5ff787"
+            "tokenAddress": "0x91dA780BC7f4B7Cf19ABE90411a2a296Ec5FF787"
           }
         },
         "peersInfo": {
@@ -10183,7 +10314,7 @@
         "coingeckoId": "ether-fi-bridged-weeth-base",
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0xcd5fe23c85820f7b72d0926fc9b05b43e359b7ee"
+            "tokenAddress": "0xCd5fE23C85820F7B72D0926FC9b05b43E359b7ee"
           }
         },
         "peersInfo": {
@@ -10226,7 +10357,7 @@
       "extensions": {
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0x99d8a9c45b2eca8864373a26d1459e3dff1e17f3"
+            "tokenAddress": "0x99D8a9C45b2ecA8864373A26D1459e3Dff1e17F3"
           }
         },
         "peersInfo": {
@@ -10319,7 +10450,7 @@
         "coingeckoId": "osaka-protocol",
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0xa21af1050f7b26e0cff45ee51548254c41ed6b5c"
+            "tokenAddress": "0xa21Af1050F7B26e0cfF45ee51548254C41ED6b5c"
           }
         }
       },
@@ -10338,7 +10469,7 @@
         "coingeckoId": "qi-dao",
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0x559b7bfc48a5274754b08819f75c5f27af53d53b"
+            "tokenAddress": "0x559b7bfC48a5274754b08819F75C5F27aF53D53b"
           }
         },
         "peersInfo": {
@@ -10407,7 +10538,7 @@
       "extensions": {
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0x64351fc9810adad17a690e4e1717df5e7e085160"
+            "tokenAddress": "0x64351fC9810aDAd17A690E4e1717Df5e7e085160"
           }
         },
         "peersInfo": {
@@ -10491,7 +10622,7 @@
       "extensions": {
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0x57e114b691db790c35207b2e685d4a43181e6061"
+            "tokenAddress": "0x57e114B691Db790C35207b2e685D4A43181e6061"
           }
         },
         "peersInfo": {
@@ -10538,7 +10669,7 @@
         "coingeckoId": "heroes-of-mavia",
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0x24fcfc492c1393274b6bcd568ac9e225bec93584"
+            "tokenAddress": "0x24fcFC492C1393274B6bcd568ac9e225BEc93584"
           }
         },
         "peersInfo": {
@@ -10593,7 +10724,7 @@
         "coingeckoId": "wagmi-2",
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0x92cc36d66e9d739d50673d1f27929a371fb83a67"
+            "tokenAddress": "0x92CC36D66e9d739D50673d1f27929a371FB83a67"
           }
         },
         "peersInfo": {
@@ -10667,7 +10798,7 @@
       "extensions": {
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0x32b77729cd87f1ef2bea4c650c16f89f08472c69"
+            "tokenAddress": "0x32B77729cD87F1EF2bEa4C650c16f89f08472c69"
           }
         },
         "peersInfo": {
@@ -10698,7 +10829,7 @@
       "extensions": {
         "bridgeInfo": {
           "8453": {
-            "tokenAddress": "0x08bf7f2005ab25a90d4f88efd70dbdf0ef6b7554"
+            "tokenAddress": "0x08BF7F2005Ab25A90d4f88eFd70Dbdf0EF6B7554"
           }
         },
         "peersInfo": {
@@ -10726,7 +10857,7 @@
       "extensions": {
         "bridgeInfo": {
           "42161": {
-            "tokenAddress": "0xaf5db6e1cc585ca312e8c8f7c499033590cf5c98"
+            "tokenAddress": "0xAf5db6E1CC585ca312E8c8F7c499033590cf5C98"
           }
         },
         "peersInfo": {
@@ -10759,7 +10890,7 @@
       "extensions": {
         "bridgeInfo": {
           "1088": {
-            "tokenAddress": "0x52b4fc2ca0d9b194769ab9a3dc36c2c6831f2520"
+            "tokenAddress": "0x52b4FC2CA0D9b194769AB9a3dC36c2C6831f2520"
           }
         },
         "peersInfo": {
@@ -10811,7 +10942,7 @@
       "extensions": {
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0x7f39c581f595b53c5cb19bd0b3f8da6c935e2ca0"
+            "tokenAddress": "0x7f39C581F595B53c5cb19bD0b3f8dA6c935E2Ca0"
           }
         },
         "peersInfo": {
@@ -10850,7 +10981,7 @@
       "extensions": {
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0x2260fac5e5542a773aa44fbcfedf7c193bc2c599"
+            "tokenAddress": "0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599"
           }
         },
         "peersInfo": {
@@ -10910,37 +11041,6 @@
     },
     {
       "chainId": 56,
-      "address": "0x0E09FaBB73Bd3Ade0a17ECC321fD13a19e81cE82",
-      "name": "PancakeSwap Token",
-      "symbol": "Cake",
-      "decimals": 18,
-      "logoURI": "https://s2.coinmarketcap.com/static/img/coins/128x128/7186.png",
-      "tags": [],
-      "extensions": {
-        "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0x152649ea73beab28c5b49b26eb48f7ead6d4c898"
-          },
-          "8453": {
-            "tokenAddress": "0x3055913c90fcc1a6ce9a358911721eeb942013a1"
-          },
-          "42161": {
-            "tokenAddress": "0x1b896893dfc86bb67cf57767298b9073d2c1ba2c"
-          }
-        },
-        "coingeckoId": "pancakeswap-token",
-        "coinMarketCapId": 7186,
-        "peersInfo": {}
-      },
-      "isAcross": false,
-      "isOFT": true,
-      "oftAdapter": "0x9876993e7e1750cc375a569731ca0583d0849f65",
-      "oftVersion": 1,
-      "endpointVersion": 1,
-      "endpointId": 102
-    },
-    {
-      "chainId": 56,
       "address": "0x915424Ac489433130d92B04096F3b96c82e92a9D",
       "name": "Prosper",
       "decimals": 18,
@@ -10951,7 +11051,7 @@
         "coingeckoId": "prosper-2",
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0x915424ac489433130d92b04096f3b96c82e92a9d"
+            "tokenAddress": "0x915424Ac489433130d92B04096F3b96c82e92a9D"
           }
         },
         "peersInfo": {
@@ -10982,7 +11082,7 @@
       "extensions": {
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0x9d39a5de30e57443bff2a8307a4256c8797a3497"
+            "tokenAddress": "0x9D39A5DE30e57443BfF2A8307A4256c8797A3497"
           }
         },
         "peersInfo": {
@@ -11030,10 +11130,10 @@
         "coinMarketCapId": 33611,
         "bridgeInfo": {
           "8453": {
-            "tokenAddress": "0xe2b1dc2d4a3b4e59fdf0c47b71a7a86391a8b35a"
+            "tokenAddress": "0xE2B1dc2D4A3b4E59FDF0c47B71A7A86391a8B35a"
           },
           "42161": {
-            "tokenAddress": "0xe2b1dc2d4a3b4e59fdf0c47b71a7a86391a8b35a"
+            "tokenAddress": "0xE2B1dc2D4A3b4E59FDF0c47B71A7A86391a8B35a"
           }
         },
         "peersInfo": {
@@ -11065,7 +11165,7 @@
         "coingeckoId": "usda-2",
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0x8a60e489004ca22d775c5f2c657598278d17d9c2"
+            "tokenAddress": "0x8A60E489004Ca22d775C5F2c657598278d17D9c2"
           }
         },
         "peersInfo": {
@@ -11105,7 +11205,7 @@
       "extensions": {
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0x4c9edd5852cd905f086c759e8383e09bff1e68b3"
+            "tokenAddress": "0x4c9EDD5852cd905f086C759E8383e09bff1E68B3"
           }
         },
         "peersInfo": {
@@ -11151,7 +11251,7 @@
       "extensions": {
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0x94025780a1ab58868d9b2dbbb775f44b32e8e6e5"
+            "tokenAddress": "0x94025780a1aB58868D9B2dBBB775f44b32e8E6e5"
           }
         },
         "peersInfo": {}
@@ -11175,7 +11275,7 @@
         "coingeckoId": "radiant-capital",
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0x137ddb47ee24eaa998a535ab00378d6bfa84f893"
+            "tokenAddress": "0x137dDB47Ee24EaA998a535Ab00378d6BFa84F893"
           }
         },
         "peersInfo": {
@@ -11221,7 +11321,7 @@
         "coingeckoId": "joe",
         "bridgeInfo": {
           "43114": {
-            "tokenAddress": "0x6e84a6216ea6dacc71ee8e6b0a5b7322eebc0fdd"
+            "tokenAddress": "0x6e84a6216eA6dACC71eE8E6b0a5B7322EEbC0fDd"
           }
         }
       },
@@ -11240,7 +11340,7 @@
         "coingeckoId": "dmail-network",
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0xcc6f1e1b87cfcbe9221808d2d85c501aab0b5192"
+            "tokenAddress": "0xcC6f1e1B87cfCbe9221808d2d85C501aab0B5192"
           }
         },
         "peersInfo": {
@@ -11273,7 +11373,7 @@
       "extensions": {
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0xa80221d067603e30060f75e2458aa361f8ee5402"
+            "tokenAddress": "0xa80221D067603e30060F75E2458AA361f8eE5402"
           }
         },
         "peersInfo": {
@@ -11307,7 +11407,7 @@
         "coingeckoId": "reunit-wallet",
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0x9ed7e4b1bff939ad473da5e7a218c771d1569456"
+            "tokenAddress": "0x9ed7E4B1BFF939ad473dA5E7a218C771D1569456"
           }
         },
         "peersInfo": {
@@ -11363,7 +11463,7 @@
       "extensions": {
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0x3432b6a60d23ca0dfca7761b7ab56459d9c964d0"
+            "tokenAddress": "0x3432B6A60D23Ca0dFCa7761B7ab56459D9C964D0"
           }
         },
         "peersInfo": {
@@ -11413,7 +11513,7 @@
         "coingeckoId": "inspect",
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0x186ef81fd8e77eec8bffc3039e7ec41d5fc0b457"
+            "tokenAddress": "0x186eF81fd8E77EEC8BfFC3039e7eC41D5FC0b457"
           }
         },
         "peersInfo": {
@@ -11447,7 +11547,7 @@
         "coingeckoId": "osaka-protocol",
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0xa21af1050f7b26e0cff45ee51548254c41ed6b5c"
+            "tokenAddress": "0xa21Af1050F7B26e0cfF45ee51548254C41ED6b5c"
           }
         }
       },
@@ -11465,7 +11565,7 @@
       "extensions": {
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0xbe1a001fe942f96eea22ba08783140b9dcc09d28"
+            "tokenAddress": "0xBe1a001FE942f96Eea22bA08783140B9Dcc09D28"
           }
         },
         "peersInfo": {
@@ -11494,7 +11594,7 @@
         "coingeckoId": "interport-token",
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0x2b1d36f5b61addaf7da7ebbd11b35fd8cfb0de31"
+            "tokenAddress": "0x2b1D36f5B61AdDAf7DA7ebbd11B35FD8cfb0DE31"
           }
         },
         "peersInfo": {
@@ -11595,7 +11695,7 @@
       "extensions": {
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0xd3cc9d8f3689b83c91b7b59cab4946b063eb894a"
+            "tokenAddress": "0xd3CC9d8f3689B83c91b7B59cAB4946B063EB894A"
           }
         },
         "peersInfo": {
@@ -11649,7 +11749,7 @@
         "coingeckoId": "polkabridge",
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0x298d492e8c1d909d3f63bc4a36c66c64acb3d695"
+            "tokenAddress": "0x298d492e8c1d909D3F63Bc4A36C66c64ACB3d695"
           }
         },
         "peersInfo": {
@@ -11707,7 +11807,7 @@
       "extensions": {
         "bridgeInfo": {
           "43114": {
-            "tokenAddress": "0x152b9d0fdc40c096757f570a51e494bd4b943e50"
+            "tokenAddress": "0x152b9d0FdC40C096757F570A51E494bd4b943E50"
           }
         }
       },
@@ -11726,7 +11826,7 @@
         "coingeckoId": "wrapped-ncg",
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0xf203ca1769ca8e9e8fe1da9d147db68b6c919817"
+            "tokenAddress": "0xf203Ca1769ca8e9e8FE1DA9D147DB68B6c919817"
           }
         }
       },
@@ -11745,7 +11845,7 @@
         "coingeckoId": "unsheth",
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0xe60779cc1b2c1d0580611c526a8df0e3f870ec48"
+            "tokenAddress": "0xE60779CC1b2c1d0580611c526a8DF0E3f870EC48"
           }
         },
         "peersInfo": {
@@ -11783,7 +11883,7 @@
       "extensions": {
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0xd9fcd98c322942075a5c3860693e9f4f03aae07b"
+            "tokenAddress": "0xd9Fcd98c322942075A5C3860693e9f4f03AAE07b"
           }
         },
         "peersInfo": {
@@ -11814,7 +11914,7 @@
       "extensions": {
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0x8db253a1943dddf1af9bcf8706ac9a0ce939d922"
+            "tokenAddress": "0x8dB253a1943DdDf1AF9bcF8706ac9A0Ce939d922"
           }
         },
         "peersInfo": {
@@ -11853,7 +11953,7 @@
       "extensions": {
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0x44709a920fccf795fbc57baa433cc3dd53c44dbe"
+            "tokenAddress": "0x44709a920fCcF795fbC57BAA433cc3dd53C44DbE"
           }
         },
         "peersInfo": {
@@ -11885,7 +11985,7 @@
         "coingeckoId": "shrapnel-2",
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0x31e4efe290973ebe91b3a875a7994f650942d28f"
+            "tokenAddress": "0x31e4efe290973ebE91b3a875a7994f650942D28F"
           }
         },
         "peersInfo": {
@@ -11924,7 +12024,7 @@
         "coingeckoId": "omnicat",
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0x9e20461bc2c4c980f62f1b279d71734207a6a356"
+            "tokenAddress": "0x9e20461bc2c4c980f62f1B279D71734207a6A356"
           }
         },
         "peersInfo": {
@@ -11994,7 +12094,7 @@
         "coingeckoId": "lif3-2",
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0x7138eb0d563f3f6722500936a11dcae99d738a2c"
+            "tokenAddress": "0x7138Eb0d563f3F6722500936A11DcAe99D738A2c"
           }
         }
       },
@@ -12012,7 +12112,7 @@
       "extensions": {
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0x14778860e937f509e651192a90589de711fb88a9"
+            "tokenAddress": "0x14778860E937f509e651192a90589dE711Fb88a9"
           }
         },
         "peersInfo": {
@@ -12083,7 +12183,7 @@
         "coingeckoId": "maverick-protocol",
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0x7448c7456a97769f6cd04f1e83a4a23ccdc46abd"
+            "tokenAddress": "0x7448c7456a97769F6cD04F1E83A4a23cCdC46aBD"
           }
         },
         "peersInfo": {
@@ -12127,7 +12227,7 @@
       "extensions": {
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0x78a0a62fba6fb21a83fe8a3433d44c73a4017a6f"
+            "tokenAddress": "0x78a0A62Fba6Fb21A83FE8a3433d44C73a4017A6f"
           }
         },
         "peersInfo": {
@@ -12201,7 +12301,7 @@
         "coingeckoId": "synfutures",
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0x6e15a54b5ecac17e58dadeddbe8506a7560252f9"
+            "tokenAddress": "0x6e15A54B5EcAc17e58daDedDbe8506a7560252F9"
           }
         },
         "peersInfo": {
@@ -12230,7 +12330,7 @@
         "coingeckoId": "primex-finance",
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0x0b3eaead748facdb9d943d3407011f16eb17d0cf"
+            "tokenAddress": "0x0B3EAEAd748facDb9d943d3407011f16Eb17D0Cf"
           }
         },
         "peersInfo": {
@@ -12271,10 +12371,10 @@
       "extensions": {
         "bridgeInfo": {
           "42161": {
-            "tokenAddress": "0xa9004a5421372e1d83fb1f85b0fc986c912f91f3"
+            "tokenAddress": "0xa9004A5421372E1D83fB1f85b0fc986c912f91f3"
           },
           "43114": {
-            "tokenAddress": "0xa9004a5421372e1d83fb1f85b0fc986c912f91f3"
+            "tokenAddress": "0xa9004A5421372E1D83fB1f85b0fc986c912f91f3"
           }
         }
       }
@@ -12313,10 +12413,10 @@
       "extensions": {
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0xe6828d65bf5023ae1851d90d8783cc821ba7eee1"
+            "tokenAddress": "0xe6828D65bf5023AE1851D90D8783Cc821ba7eeE1"
           },
           "137": {
-            "tokenAddress": "0xe6828d65bf5023ae1851d90d8783cc821ba7eee1"
+            "tokenAddress": "0xe6828D65bf5023AE1851D90D8783Cc821ba7eeE1"
           }
         },
         "peersInfo": {
@@ -12356,7 +12456,7 @@
         "coingeckoId": "ox-fun",
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0xba0dda8762c24da9487f5fa026a9b64b695a07ea"
+            "tokenAddress": "0xba0Dda8762C24dA9487f5FA026a9B64b695A07Ea"
           }
         },
         "peersInfo": {
@@ -12457,7 +12557,7 @@
       "extensions": {
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0x3845badade8e6dff049820680d1f14bd3903a5d0"
+            "tokenAddress": "0x3845badAde8e6dFF049820680d1F14bD3903a5d0"
           }
         },
         "peersInfo": {
@@ -12551,10 +12651,10 @@
       "extensions": {
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0x560363bda52bc6a44ca6c8c9b4a5fadbda32fa60"
+            "tokenAddress": "0x560363BdA52BC6A44CA6C8c9B4a5FadbDa32fa60"
           },
           "42161": {
-            "tokenAddress": "0x560363bda52bc6a44ca6c8c9b4a5fadbda32fa60"
+            "tokenAddress": "0x560363BdA52BC6A44CA6C8c9B4a5FadbDa32fa60"
           }
         },
         "peersInfo": {
@@ -12629,7 +12729,7 @@
       "extensions": {
         "bridgeInfo": {
           "42161": {
-            "tokenAddress": "0x881ee52679537c6834fdeeb3673da2e3ecb50df6"
+            "tokenAddress": "0x881ee52679537C6834fDeeB3673da2e3eCb50DF6"
           }
         },
         "peersInfo": {
@@ -12661,7 +12761,7 @@
       "extensions": {
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0x788d86e00ab31db859c3d6b80d5a9375801d7f2a"
+            "tokenAddress": "0x788D86E00ab31Db859C3d6b80d5a9375801d7f2A"
           }
         }
       },
@@ -12695,7 +12795,7 @@
       "extensions": {
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0xe3f28f11f76c62e965ffe5be8e62cde3e8e7a7cc"
+            "tokenAddress": "0xe3F28f11F76c62e965fFE5be8e62CDe3e8e7a7Cc"
           }
         },
         "peersInfo": {
@@ -12724,7 +12824,7 @@
         "coingeckoId": "susda",
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0x2b66aade1e9c062ff411bd47c44e0ad696d43bd9"
+            "tokenAddress": "0x2B66AAdE1e9C062FF411bd47C44E0Ad696d43BD9"
           }
         },
         "peersInfo": {
@@ -12821,7 +12921,7 @@
         "coingeckoId": "openleverage",
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0x1b6e9c73bee68102d9dd4a2627f97bff4183ab0a"
+            "tokenAddress": "0x1B6e9c73beE68102d9dd4A2627f97bFf4183ab0A"
           }
         },
         "peersInfo": {
@@ -12931,7 +13031,7 @@
         "coingeckoId": "mahadao",
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0x745407c86df8db893011912d3ab28e68b62e49b0"
+            "tokenAddress": "0x745407c86DF8DB893011912d3aB28e68B62E49B0"
           }
         },
         "peersInfo": {
@@ -12968,13 +13068,13 @@
       "extensions": {
         "bridgeInfo": {
           "137": {
-            "tokenAddress": "0xbbbbbbbbb7949dcc7d1539c91b81a5bf09e37bdb"
+            "tokenAddress": "0xbbBBbBbBB7949dcC7d1539c91b81A5BF09E37bDB"
           },
           "8453": {
-            "tokenAddress": "0xdfbea88c4842d30c26669602888d746d30f9d60d"
+            "tokenAddress": "0xdfBEA88C4842d30c26669602888d746D30F9D60d"
           },
           "42161": {
-            "tokenAddress": "0x16f1967565aad72dd77588a332ce445e7cef752b"
+            "tokenAddress": "0x16f1967565aaD72DD77588a332CE445e7cEF752b"
           }
         },
         "peersInfo": {
@@ -13031,7 +13131,7 @@
       "extensions": {
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0x5651fa7a726b9ec0cad00ee140179912b6e73599"
+            "tokenAddress": "0x5651fA7a726B9Ec0cAd00Ee140179912B6E73599"
           }
         },
         "peersInfo": {
@@ -13060,7 +13160,7 @@
         "coingeckoId": "orderly-network",
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0xabd4c63d2616a5201454168269031355f4764337"
+            "tokenAddress": "0xABD4C63d2616A5201454168269031355f4764337"
           }
         },
         "peersInfo": {
@@ -13104,7 +13204,7 @@
         "coingeckoId": "puffer-finance",
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0x4d1c297d39c5c1277964d0e3f8aa901493664530"
+            "tokenAddress": "0x4d1C297d39C5c1277964D0E3f8Aa901493664530"
           }
         },
         "peersInfo": {
@@ -13156,7 +13256,7 @@
         "coingeckoId": "layerzero",
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0x6985884c4392d348587b19cb9eaaf157f13271cd"
+            "tokenAddress": "0x6985884C4392D348587B19cb9eAAf157F13271cd"
           }
         },
         "peersInfo": {
@@ -13199,7 +13299,7 @@
       "extensions": {
         "bridgeInfo": {
           "137": {
-            "tokenAddress": "0x5f32abeebd3c2fac1e7459a27e1ae9f1c16cccca"
+            "tokenAddress": "0x5F32AbeeBD3c2fac1E7459A27e1AE9f1C16ccccA"
           }
         },
         "peersInfo": {
@@ -13231,7 +13331,7 @@
         "coingeckoId": "ora-coin",
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0x33333333fede34409fb7f67c6585047e1f653333"
+            "tokenAddress": "0x33333333FEde34409Fb7f67c6585047E1F653333"
           }
         },
         "peersInfo": {
@@ -13313,7 +13413,7 @@
         "coingeckoId": "unsheth-unsheth",
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0x0ae38f7e10a43b5b2fb064b42a2f4514cba909ef"
+            "tokenAddress": "0x0Ae38f7E10A43B5b2fB064B42a2f4514cbA909ef"
           }
         },
         "peersInfo": {
@@ -13363,7 +13463,7 @@
       "extensions": {
         "bridgeInfo": {
           "42161": {
-            "tokenAddress": "0xdcbf4cb83d27c408b30dd7f39bfcabd7176b1ba3"
+            "tokenAddress": "0xDCbf4CB83d27C408B30dD7F39bfcabD7176B1Ba3"
           }
         },
         "peersInfo": {
@@ -13429,7 +13529,7 @@
       "extensions": {
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0x68ccaca9adf1552b3316d6067690ec27397c8ea8"
+            "tokenAddress": "0x68ccACa9ADF1552B3316d6067690eC27397c8ea8"
           }
         },
         "peersInfo": {
@@ -13464,7 +13564,7 @@
         "coingeckoId": "zircuit",
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0xfd418e42783382e86ae91e445406600ba144d162"
+            "tokenAddress": "0xfd418e42783382E86Ae91e445406600Ba144D162"
           }
         },
         "peersInfo": {
@@ -13492,7 +13592,7 @@
       "extensions": {
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0xcd5fe23c85820f7b72d0926fc9b05b43e359b7ee"
+            "tokenAddress": "0xCd5fE23C85820F7B72D0926FC9b05b43E359b7ee"
           }
         },
         "peersInfo": {
@@ -13532,10 +13632,10 @@
       "extensions": {
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0xf8173a39c56a554837c4c7f104153a005d284d11"
+            "tokenAddress": "0xf8173a39c56a554837C4C7f104153A005D284D11"
           },
           "42161": {
-            "tokenAddress": "0xf8173a39c56a554837c4c7f104153a005d284d11"
+            "tokenAddress": "0xf8173a39c56a554837C4C7f104153A005D284D11"
           }
         },
         "peersInfo": {
@@ -13639,7 +13739,7 @@
       "extensions": {
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0x66a1e37c9b0eaddca17d3662d6c05f4decf3e110"
+            "tokenAddress": "0x66a1E37c9b0eAddca17d3662D6c05F4DECf3e110"
           }
         },
         "peersInfo": {
@@ -13677,7 +13777,7 @@
         "coingeckoId": "pepe",
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0x6982508145454ce325ddbe47a25d4ec3d2311933"
+            "tokenAddress": "0x6982508145454Ce325dDbE47a25d4ec3d2311933"
           }
         }
       },
@@ -13695,7 +13795,7 @@
       "extensions": {
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0x559b7bfc48a5274754b08819f75c5f27af53d53b"
+            "tokenAddress": "0x559b7bfC48a5274754b08819F75C5F27aF53D53b"
           }
         },
         "peersInfo": {
@@ -13764,7 +13864,7 @@
       "extensions": {
         "bridgeInfo": {
           "8453": {
-            "tokenAddress": "0x91da780bc7f4b7cf19abe90411a2a296ec5ff787"
+            "tokenAddress": "0x91dA780BC7f4B7Cf19ABE90411a2a296Ec5FF787"
           }
         },
         "peersInfo": {
@@ -13792,7 +13892,7 @@
       "extensions": {
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0x57e114b691db790c35207b2e685d4a43181e6061"
+            "tokenAddress": "0x57e114B691Db790C35207b2e685D4A43181e6061"
           }
         },
         "peersInfo": {
@@ -13856,13 +13956,13 @@
       "extensions": {
         "bridgeInfo": {
           "137": {
-            "tokenAddress": "0x8255775bea425f910044ddfb7681d6d87fd5489d"
+            "tokenAddress": "0x8255775bea425f910044ddFb7681D6d87fD5489d"
           },
           "8453": {
-            "tokenAddress": "0x8255775bea425f910044ddfb7681d6d87fd5489d"
+            "tokenAddress": "0x8255775bea425f910044ddFb7681D6d87fD5489d"
           },
           "42161": {
-            "tokenAddress": "0x6db8b088c4d41d622b44cd81b900ba690f2d496c"
+            "tokenAddress": "0x6Db8b088c4d41d622B44CD81B900bA690f2d496C"
           }
         },
         "peersInfo": {
@@ -13907,7 +14007,7 @@
       "extensions": {
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0xfae103dc9cf190ed75350761e95403b7b8afa6c0"
+            "tokenAddress": "0xFAe103DC9cf190eD75350761e95403b7b8aFa6c0"
           }
         },
         "peersInfo": {
@@ -13935,7 +14035,7 @@
       "extensions": {
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0x9d39a5de30e57443bff2a8307a4256c8797a3497"
+            "tokenAddress": "0x9D39A5DE30e57443BfF2A8307A4256c8797A3497"
           }
         },
         "peersInfo": {
@@ -13963,7 +14063,7 @@
       "extensions": {
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0xcd5fe23c85820f7b72d0926fc9b05b43e359b7ee"
+            "tokenAddress": "0xCd5fE23C85820F7B72D0926FC9b05b43E359b7ee"
           }
         },
         "peersInfo": {
@@ -14003,7 +14103,7 @@
       "extensions": {
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0x8236a87084f8b84306f72007f36f2618a5634494"
+            "tokenAddress": "0x8236a87084f8B84306f72007F36F2618A5634494"
           }
         },
         "peersInfo": {
@@ -14031,7 +14131,7 @@
       "extensions": {
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0xd9fcd98c322942075a5c3860693e9f4f03aae07b"
+            "tokenAddress": "0xd9Fcd98c322942075A5C3860693e9f4f03AAE07b"
           }
         },
         "peersInfo": {
@@ -14062,7 +14162,7 @@
       "extensions": {
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0xa1290d69c65a6fe4df752f95823fae25cb99e5a7"
+            "tokenAddress": "0xA1290d69c65A6Fe4DF752f95823fae25cB99e5A7"
           }
         },
         "peersInfo": {
@@ -14090,7 +14190,7 @@
       "extensions": {
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0x4c9edd5852cd905f086c759e8383e09bff1e68b3"
+            "tokenAddress": "0x4c9EDD5852cd905f086C759E8383e09bff1E68B3"
           }
         },
         "peersInfo": {
@@ -14118,7 +14218,7 @@
       "extensions": {
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0x8a60e489004ca22d775c5f2c657598278d17d9c2"
+            "tokenAddress": "0x8A60E489004Ca22d775C5F2c657598278d17D9c2"
           }
         },
         "peersInfo": {
@@ -14181,7 +14281,7 @@
       "extensions": {
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0x7a56e1c57c7475ccf742a1832b028f0456652f97"
+            "tokenAddress": "0x7A56E1C57C7475CCf742a1832B028F0456652F97"
           }
         },
         "peersInfo": {
@@ -14225,7 +14325,7 @@
       "extensions": {
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0x66a1e37c9b0eaddca17d3662d6c05f4decf3e110"
+            "tokenAddress": "0x66a1E37c9b0eAddca17d3662D6c05F4DECf3e110"
           }
         },
         "peersInfo": {
@@ -14262,7 +14362,7 @@
       "extensions": {
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0xc96de26018a54d51c097160568752c4e3bd6c364"
+            "tokenAddress": "0xC96dE26018A54D51c097160568752c4E3BD6C364"
           }
         },
         "peersInfo": {
@@ -14290,7 +14390,7 @@
       "extensions": {
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0xadc9c900b05f39f48bb6f402a1bae60929f4f9a8"
+            "tokenAddress": "0xADc9c900b05F39f48bB6F402A1BAE60929F4f9A8"
           }
         },
         "peersInfo": {
@@ -14318,7 +14418,7 @@
       "extensions": {
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0x2b66aade1e9c062ff411bd47c44e0ad696d43bd9"
+            "tokenAddress": "0x2B66AAdE1e9C062FF411bd47C44E0Ad696d43BD9"
           }
         },
         "peersInfo": {
@@ -14349,7 +14449,7 @@
       "extensions": {
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0xaf5191b0de278c7286d6c7cc6ab6bb8a73ba2cd6"
+            "tokenAddress": "0xAf5191B0De278C7286d6C7CC6ab6BB8A73bA2Cd6"
           }
         }
       },
@@ -14403,7 +14503,7 @@
       "extensions": {
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0xd9d920aa40f578ab794426f5c90f6c731d159def"
+            "tokenAddress": "0xd9D920AA40f578ab794426F5C90F6C731D159DEf"
           }
         },
         "peersInfo": {
@@ -14454,7 +14554,7 @@
       "extensions": {
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0x6c3ea9036406852006290770bedfcaba0e23a0e8"
+            "tokenAddress": "0x6c3ea9036406852006290770BEdFcAbA0e23A0e8"
           }
         },
         "peersInfo": {
@@ -14482,7 +14582,7 @@
       "extensions": {
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0x2260fac5e5542a773aa44fbcfedf7c193bc2c599"
+            "tokenAddress": "0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599"
           }
         },
         "peersInfo": {
@@ -14528,7 +14628,7 @@
       "extensions": {
         "bridgeInfo": {
           "42161": {
-            "tokenAddress": "0xfd086bc7cd5c481dcc9c85ebe478a1c0b69fcbb9"
+            "tokenAddress": "0xFd086bC7CD5C481DCC9C85ebE478A1C0b69FCbb9"
           }
         },
         "peersInfo": {
@@ -14578,7 +14678,7 @@
       "extensions": {
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0xab5eb14c09d416f0ac63661e57edb7aecdb9befa"
+            "tokenAddress": "0xab5eB14c09D416F0aC63661E57EDB7AEcDb9BEfA"
           }
         },
         "peersInfo": {
@@ -14662,7 +14762,7 @@
       "extensions": {
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0x55769490c825ccb09b2a6ae955203fabf04857fd"
+            "tokenAddress": "0x55769490c825CCb09b2A6Ae955203FaBF04857fd"
           }
         },
         "peersInfo": {
@@ -14697,7 +14797,7 @@
         "coingeckoId": "wagmi-2",
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0x92cc36d66e9d739d50673d1f27929a371fb83a67"
+            "tokenAddress": "0x92CC36D66e9d739D50673d1f27929a371FB83a67"
           }
         },
         "peersInfo": {
@@ -14771,7 +14871,7 @@
       "extensions": {
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0xf9fb20b8e097904f0ab7d12e9dbee88f2dcd0f16"
+            "tokenAddress": "0xf9FB20B8E097904f0aB7d12e9DbeE88f2dcd0F16"
           }
         },
         "peersInfo": {
@@ -14853,7 +14953,7 @@
       "extensions": {
         "bridgeInfo": {
           "42161": {
-            "tokenAddress": "0x982239d38af50b0168da33346d85fb12929c4c07"
+            "tokenAddress": "0x982239D38Af50B0168dA33346d85Fb12929c4c07"
           }
         },
         "peersInfo": {
@@ -14891,7 +14991,7 @@
       "extensions": {
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0x788d86e00ab31db859c3d6b80d5a9375801d7f2a"
+            "tokenAddress": "0x788D86E00ab31Db859C3d6b80d5a9375801d7f2A"
           }
         }
       },
@@ -14909,7 +15009,7 @@
       "extensions": {
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0x9d39a5de30e57443bff2a8307a4256c8797a3497"
+            "tokenAddress": "0x9D39A5DE30e57443BfF2A8307A4256c8797A3497"
           }
         },
         "peersInfo": {
@@ -14955,7 +15055,7 @@
       "extensions": {
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0xa1290d69c65a6fe4df752f95823fae25cb99e5a7"
+            "tokenAddress": "0xA1290d69c65A6Fe4DF752f95823fae25cB99e5A7"
           }
         },
         "peersInfo": {
@@ -14995,7 +15095,7 @@
       "extensions": {
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0x4c9edd5852cd905f086c759e8383e09bff1e68b3"
+            "tokenAddress": "0x4c9EDD5852cd905f086C759E8383e09bff1E68B3"
           }
         },
         "peersInfo": {
@@ -15041,10 +15141,10 @@
       "extensions": {
         "bridgeInfo": {
           "42161": {
-            "tokenAddress": "0xac800fd6159c2a2cb8fc31ef74621eb430287a5a"
+            "tokenAddress": "0xaC800FD6159c2a2CB8fC31EF74621eB430287a5A"
           },
           "43114": {
-            "tokenAddress": "0xac800fd6159c2a2cb8fc31ef74621eb430287a5a"
+            "tokenAddress": "0xaC800FD6159c2a2CB8fC31EF74621eB430287a5A"
           }
         },
         "peersInfo": {
@@ -15075,7 +15175,7 @@
       "extensions": {
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0x745407c86df8db893011912d3ab28e68b62e49b0"
+            "tokenAddress": "0x745407c86DF8DB893011912d3aB28e68B62E49B0"
           }
         },
         "peersInfo": {
@@ -15112,7 +15212,7 @@
       "extensions": {
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0x4591dbff62656e7859afe5e45f6f47d3669fbb28"
+            "tokenAddress": "0x4591DBfF62656E7859Afe5e45f6f47D3669fBB28"
           }
         },
         "peersInfo": {
@@ -15157,7 +15257,7 @@
         "coingeckoId": "orderly-network",
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0xabd4c63d2616a5201454168269031355f4764337"
+            "tokenAddress": "0xABD4C63d2616A5201454168269031355f4764337"
           }
         },
         "peersInfo": {
@@ -15201,7 +15301,7 @@
         "coingeckoId": "reunit-wallet",
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0x9ed7e4b1bff939ad473da5e7a218c771d1569456"
+            "tokenAddress": "0x9ed7E4B1BFF939ad473dA5E7a218C771D1569456"
           }
         },
         "peersInfo": {
@@ -15257,7 +15357,7 @@
       "extensions": {
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0x3432b6a60d23ca0dfca7761b7ab56459d9c964d0"
+            "tokenAddress": "0x3432B6A60D23Ca0dFCa7761B7ab56459D9C964D0"
           }
         },
         "peersInfo": {
@@ -15307,7 +15407,7 @@
         "coingeckoId": "layerzero",
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0x6985884c4392d348587b19cb9eaaf157f13271cd"
+            "tokenAddress": "0x6985884C4392D348587B19cb9eAAf157F13271cd"
           }
         },
         "peersInfo": {
@@ -15351,7 +15451,7 @@
         "coingeckoId": "interport-token",
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0x2b1d36f5b61addaf7da7ebbd11b35fd8cfb0de31"
+            "tokenAddress": "0x2b1D36f5B61AdDAf7DA7ebbd11B35FD8cfb0DE31"
           }
         },
         "peersInfo": {
@@ -15452,7 +15552,7 @@
       "extensions": {
         "bridgeInfo": {
           "42161": {
-            "tokenAddress": "0xfd086bc7cd5c481dcc9c85ebe478a1c0b69fcbb9"
+            "tokenAddress": "0xFd086bC7CD5C481DCC9C85ebE478A1C0b69FCbb9"
           }
         },
         "peersInfo": {
@@ -15486,7 +15586,7 @@
       "extensions": {
         "bridgeInfo": {
           "43114": {
-            "tokenAddress": "0x152b9d0fdc40c096757f570a51e494bd4b943e50"
+            "tokenAddress": "0x152b9d0FdC40C096757F570A51E494bd4b943E50"
           }
         }
       },
@@ -15530,7 +15630,7 @@
       "extensions": {
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0x6df0e641fc9847c0c6fde39be6253045440c14d3"
+            "tokenAddress": "0x6DF0E641FC9847c0c6Fde39bE6253045440c14d3"
           }
         },
         "peersInfo": {
@@ -15568,7 +15668,7 @@
         "coingeckoId": "stargate-finance",
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0xaf5191b0de278c7286d6c7cc6ab6bb8a73ba2cd6"
+            "tokenAddress": "0xAf5191B0De278C7286d6C7CC6ab6BB8A73bA2Cd6"
           }
         }
       },
@@ -15645,7 +15745,7 @@
       "extensions": {
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0x14778860e937f509e651192a90589de711fb88a9"
+            "tokenAddress": "0x14778860E937f509e651192a90589dE711Fb88a9"
           }
         },
         "peersInfo": {
@@ -15677,7 +15777,7 @@
         "coingeckoId": "osaka-protocol",
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0xa21af1050f7b26e0cff45ee51548254c41ed6b5c"
+            "tokenAddress": "0xa21Af1050F7B26e0cfF45ee51548254C41ED6b5c"
           }
         }
       },
@@ -15695,7 +15795,7 @@
       "extensions": {
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0x8457ca5040ad67fdebbcc8edce889a335bc0fbfb"
+            "tokenAddress": "0x8457CA5040ad67fdebbCC8EdCE889A335Bc0fbFB"
           }
         },
         "peersInfo": {
@@ -15732,7 +15832,7 @@
       "extensions": {
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0x64351fc9810adad17a690e4e1717df5e7e085160"
+            "tokenAddress": "0x64351fC9810aDAd17A690E4e1717Df5e7e085160"
           }
         },
         "peersInfo": {
@@ -15770,7 +15870,7 @@
       "extensions": {
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0x559b7bfc48a5274754b08819f75c5f27af53d53b"
+            "tokenAddress": "0x559b7bfC48a5274754b08819F75C5F27aF53D53b"
           }
         },
         "peersInfo": {
@@ -15839,7 +15939,7 @@
       "extensions": {
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0x99d8a9c45b2eca8864373a26d1459e3dff1e17f3"
+            "tokenAddress": "0x99D8a9C45b2ecA8864373A26D1459e3Dff1e17F3"
           }
         },
         "peersInfo": {
@@ -15902,7 +16002,7 @@
       "extensions": {
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0x57e114b691db790c35207b2e685d4a43181e6061"
+            "tokenAddress": "0x57e114B691Db790C35207b2e685D4A43181e6061"
           }
         },
         "peersInfo": {
@@ -15948,7 +16048,7 @@
       "extensions": {
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0xcd5fe23c85820f7b72d0926fc9b05b43e359b7ee"
+            "tokenAddress": "0xCd5fE23C85820F7B72D0926FC9b05b43E359b7ee"
           }
         },
         "peersInfo": {
@@ -15978,6 +16078,43 @@
       "oftSharedDecimals": 6
     },
     {
+      "chainId": 10,
+      "address": "0x0fc2a55d5BD13033f1ee0cdd11f60F7eFe66f467",
+      "name": "Lagrange",
+      "decimals": 18,
+      "symbol": "LA",
+      "logoURI": "https://s2.coinmarketcap.com/static/img/coins/128x128/36510.png",
+      "tags": [],
+      "extensions": {
+        "bridgeInfo": {
+          "1": {
+            "tokenAddress": "0x0fc2a55d5BD13033f1ee0cdd11f60F7eFe66f467"
+          }
+        },
+        "peersInfo": {
+          "1": {
+            "tokenAddress": "0x0fc2a55d5BD13033f1ee0cdd11f60F7eFe66f467"
+          },
+          "137": {
+            "tokenAddress": "0x0fc2a55d5BD13033f1ee0cdd11f60F7eFe66f467"
+          },
+          "8453": {
+            "tokenAddress": "0x0fc2a55d5BD13033f1ee0cdd11f60F7eFe66f467"
+          },
+          "42161": {
+            "tokenAddress": "0x0fc2a55d5BD13033f1ee0cdd11f60F7eFe66f467"
+          }
+        }
+      },
+      "isAcross": false,
+      "isOFT": true,
+      "oftAdapter": "0x0fc2a55d5bd13033f1ee0cdd11f60f7efe66f467",
+      "oftVersion": 3,
+      "endpointVersion": 2,
+      "endpointId": 30111,
+      "oftSharedDecimals": 6
+    },
+    {
       "chainId": 1088,
       "address": "0xe4796cCB6bB5DE2290C417Ac337F2b66CA2E770E",
       "name": "Staked FRAX",
@@ -15988,7 +16125,7 @@
       "extensions": {
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0xa663b02cf0a4b149d2ad41910cb81e23e1c41c32"
+            "tokenAddress": "0xA663B02CF0a4b149d2aD41910CB81e23e1c41c32"
           }
         },
         "peersInfo": {
@@ -16019,7 +16156,7 @@
       "extensions": {
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0x3432b6a60d23ca0dfca7761b7ab56459d9c964d0"
+            "tokenAddress": "0x3432B6A60D23Ca0dFCa7761B7ab56459D9C964D0"
           }
         },
         "peersInfo": {
@@ -16119,7 +16256,7 @@
       "extensions": {
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0x5e8422345238f34275888049021821e8e08caa1f"
+            "tokenAddress": "0x5E8422345238F34275888049021821E8E08CAa1f"
           }
         },
         "peersInfo": {
@@ -16154,7 +16291,7 @@
       "extensions": {
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0xa2c2c937333165d4c5f2dc5f31a43e1239fecfeb"
+            "tokenAddress": "0xA2c2C937333165d4c5f2dC5f31a43E1239FeCfeB"
           }
         },
         "peersInfo": {
@@ -16186,7 +16323,7 @@
       "extensions": {
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0x853d955acef822db058eb8505911ed77f175b99e"
+            "tokenAddress": "0x853d955aCEf822Db058eb8505911ED77F175b99e"
           }
         },
         "peersInfo": {
@@ -16220,7 +16357,7 @@
       "extensions": {
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0x9d39a5de30e57443bff2a8307a4256c8797a3497"
+            "tokenAddress": "0x9D39A5DE30e57443BfF2A8307A4256c8797A3497"
           }
         },
         "peersInfo": {
@@ -16266,7 +16403,7 @@
       "extensions": {
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0x4c9edd5852cd905f086c759e8383e09bff1e68b3"
+            "tokenAddress": "0x4c9EDD5852cd905f086C759E8383e09bff1E68B3"
           }
         },
         "peersInfo": {
@@ -16351,7 +16488,7 @@
       "extensions": {
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0x853d955acef822db058eb8505911ed77f175b99e"
+            "tokenAddress": "0x853d955aCEf822Db058eb8505911ED77F175b99e"
           }
         },
         "peersInfo": {
@@ -16382,7 +16519,7 @@
       "extensions": {
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0xac3e018457b222d93114458476f3e3416abbe38f"
+            "tokenAddress": "0xac3E018457B222d93114458476f3E3416Abbe38F"
           }
         },
         "peersInfo": {
@@ -16413,7 +16550,7 @@
       "extensions": {
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0x559b7bfc48a5274754b08819f75c5f27af53d53b"
+            "tokenAddress": "0x559b7bfC48a5274754b08819F75C5F27aF53D53b"
           }
         },
         "peersInfo": {
@@ -16482,7 +16619,7 @@
       "extensions": {
         "bridgeInfo": {
           "56": {
-            "tokenAddress": "0xb92c5e0135a510a4a3a8803f143d2cb085bbaf73"
+            "tokenAddress": "0xB92c5e0135A510A4a3A8803F143d2Cb085BBAf73"
           }
         },
         "peersInfo": {
@@ -16515,7 +16652,7 @@
       "extensions": {
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0x57e114b691db790c35207b2e685d4a43181e6061"
+            "tokenAddress": "0x57e114B691Db790C35207b2e685D4A43181e6061"
           }
         },
         "peersInfo": {
@@ -16602,7 +16739,7 @@
         "coingeckoId": "osaka-protocol",
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0xa21af1050f7b26e0cff45ee51548254c41ed6b5c"
+            "tokenAddress": "0xa21Af1050F7B26e0cfF45ee51548254C41ED6b5c"
           }
         }
       },
@@ -16620,7 +16757,7 @@
       "extensions": {
         "bridgeInfo": {
           "56": {
-            "tokenAddress": "0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c"
+            "tokenAddress": "0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c"
           }
         }
       },
@@ -16639,7 +16776,7 @@
         "coingeckoId": "fautor",
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0xd6c7bb8531295e88d364ea67d5d1acc7d3f87454"
+            "tokenAddress": "0xD6C7bB8531295e88D364EA67D5D1acC7D3F87454"
           }
         },
         "peersInfo": {
@@ -16668,7 +16805,7 @@
         "coingeckoId": "wagmi-2",
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0x92cc36d66e9d739d50673d1f27929a371fb83a67"
+            "tokenAddress": "0x92CC36D66e9d739D50673d1f27929a371FB83a67"
           }
         },
         "peersInfo": {
@@ -16743,7 +16880,7 @@
         "coingeckoId": "ox-fun",
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0xba0dda8762c24da9487f5fa026a9b64b695a07ea"
+            "tokenAddress": "0xba0Dda8762C24dA9487f5FA026a9B64b695A07Ea"
           }
         },
         "peersInfo": {
@@ -16800,7 +16937,7 @@
         "coingeckoId": "shrapnel-2",
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0x31e4efe290973ebe91b3a875a7994f650942d28f"
+            "tokenAddress": "0x31e4efe290973ebE91b3a875a7994f650942D28F"
           }
         },
         "peersInfo": {
@@ -16922,7 +17059,7 @@
       "extensions": {
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0x7f39c581f595b53c5cb19bd0b3f8da6c935e2ca0"
+            "tokenAddress": "0x7f39C581F595B53c5cb19bD0b3f8dA6c935E2Ca0"
           }
         },
         "peersInfo": {
@@ -16961,7 +17098,7 @@
       "extensions": {
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0x2260fac5e5542a773aa44fbcfedf7c193bc2c599"
+            "tokenAddress": "0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599"
           }
         },
         "peersInfo": {
@@ -17030,7 +17167,7 @@
       "extensions": {
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0x788d86e00ab31db859c3d6b80d5a9375801d7f2a"
+            "tokenAddress": "0x788D86E00ab31Db859C3d6b80d5a9375801d7f2A"
           }
         }
       },
@@ -17048,7 +17185,7 @@
       "extensions": {
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0x94025780a1ab58868d9b2dbbb775f44b32e8e6e5"
+            "tokenAddress": "0x94025780a1aB58868D9B2dBBB775f44b32e8E6e5"
           }
         },
         "peersInfo": {}
@@ -17071,7 +17208,7 @@
       "extensions": {
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0xf9fb20b8e097904f0ab7d12e9dbee88f2dcd0f16"
+            "tokenAddress": "0xf9FB20B8E097904f0aB7d12e9DbeE88f2dcd0F16"
           }
         },
         "peersInfo": {
@@ -17095,6 +17232,32 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x1bf472c38b00f6070abb61628d76870561890bba",
+      "oftVersion": 3,
+      "endpointVersion": 2,
+      "endpointId": 30106,
+      "oftSharedDecimals": 6
+    },
+    {
+      "chainId": 43114,
+      "address": "0xA3D68b74bF0528fdD07263c60d6488749044914b",
+      "name": "Wrapped eETH",
+      "decimals": 18,
+      "symbol": "weETH",
+      "logoURI": "https://s2.coinmarketcap.com/static/img/coins/128x128/28568.png",
+      "tags": [],
+      "extensions": {
+        "peersInfo": {
+          "1": {
+            "tokenAddress": "0xCd5fE23C85820F7B72D0926FC9b05b43E359b7ee"
+          },
+          "8453": {
+            "tokenAddress": "0x04C0599Ae5A44757c0af6F9eC3b93da8976c150A"
+          }
+        }
+      },
+      "isAcross": false,
+      "isOFT": true,
+      "oftAdapter": "0xa3d68b74bf0528fdd07263c60d6488749044914b",
       "oftVersion": 3,
       "endpointVersion": 2,
       "endpointId": 30106,
@@ -17142,7 +17305,7 @@
       "extensions": {
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0xd9fcd98c322942075a5c3860693e9f4f03aae07b"
+            "tokenAddress": "0xd9Fcd98c322942075A5C3860693e9f4f03AAE07b"
           }
         },
         "peersInfo": {
@@ -17225,10 +17388,10 @@
       "extensions": {
         "bridgeInfo": {
           "56": {
-            "tokenAddress": "0x371c7ec6d8039ff7933a2aa28eb827ffe1f52f07"
+            "tokenAddress": "0x371c7ec6D8039ff7933a2AA28EB827Ffe1F52f07"
           },
           "42161": {
-            "tokenAddress": "0x371c7ec6d8039ff7933a2aa28eb827ffe1f52f07"
+            "tokenAddress": "0x371c7ec6D8039ff7933a2AA28EB827Ffe1F52f07"
           }
         }
       },
@@ -17272,7 +17435,7 @@
       "extensions": {
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0xabd4c63d2616a5201454168269031355f4764337"
+            "tokenAddress": "0xABD4C63d2616A5201454168269031355f4764337"
           }
         },
         "peersInfo": {
@@ -17316,7 +17479,7 @@
         "coingeckoId": "reunit-wallet",
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0x9ed7e4b1bff939ad473da5e7a218c771d1569456"
+            "tokenAddress": "0x9ed7E4B1BFF939ad473dA5E7a218C771D1569456"
           }
         },
         "peersInfo": {
@@ -17372,7 +17535,7 @@
       "extensions": {
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0x3432b6a60d23ca0dfca7761b7ab56459d9c964d0"
+            "tokenAddress": "0x3432B6A60D23Ca0dFCa7761B7ab56459D9C964D0"
           }
         },
         "peersInfo": {
@@ -17422,7 +17585,7 @@
         "coingeckoId": "layerzero",
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0x6985884c4392d348587b19cb9eaaf157f13271cd"
+            "tokenAddress": "0x6985884C4392D348587B19cb9eAAf157F13271cd"
           }
         },
         "peersInfo": {
@@ -17466,7 +17629,7 @@
         "coingeckoId": "interport-token",
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0x2b1d36f5b61addaf7da7ebbd11b35fd8cfb0de31"
+            "tokenAddress": "0x2b1D36f5B61AdDAf7DA7ebbd11B35FD8cfb0DE31"
           }
         },
         "peersInfo": {
@@ -17593,13 +17756,13 @@
       "extensions": {
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0x420fca0121dc28039145009570975747295f2329"
+            "tokenAddress": "0x420FcA0121DC28039145009570975747295f2329"
           },
           "8453": {
-            "tokenAddress": "0x420fca0121dc28039145009570975747295f2329"
+            "tokenAddress": "0x420FcA0121DC28039145009570975747295f2329"
           },
           "42161": {
-            "tokenAddress": "0x420fca0121dc28039145009570975747295f2329"
+            "tokenAddress": "0x420FcA0121DC28039145009570975747295f2329"
           }
         },
         "peersInfo": {
@@ -17633,19 +17796,19 @@
       "extensions": {
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0x2297aebd383787a160dd0d9f71508148769342e3"
+            "tokenAddress": "0x2297aEbD383787A160DD0d9F71508148769342E3"
           },
           "10": {
-            "tokenAddress": "0x2297aebd383787a160dd0d9f71508148769342e3"
+            "tokenAddress": "0x2297aEbD383787A160DD0d9F71508148769342E3"
           },
           "56": {
-            "tokenAddress": "0x2297aebd383787a160dd0d9f71508148769342e3"
+            "tokenAddress": "0x2297aEbD383787A160DD0d9F71508148769342E3"
           },
           "137": {
-            "tokenAddress": "0x2297aebd383787a160dd0d9f71508148769342e3"
+            "tokenAddress": "0x2297aEbD383787A160DD0d9F71508148769342E3"
           },
           "42161": {
-            "tokenAddress": "0x2297aebd383787a160dd0d9f71508148769342e3"
+            "tokenAddress": "0x2297aEbD383787A160DD0d9F71508148769342E3"
           }
         }
       },
@@ -17697,7 +17860,7 @@
         "coingeckoId": "balancer",
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0xba100000625a3754423978a60c9317c58a424e3d"
+            "tokenAddress": "0xba100000625a3754423978a60c9317c58a424e3D"
           }
         }
       },
@@ -17715,13 +17878,13 @@
       "extensions": {
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0x835f2eb9b3dd2913f59019bfbc7b61a12ef96cd6"
+            "tokenAddress": "0x835f2eb9B3dd2913f59019bfbC7B61A12Ef96cd6"
           },
           "8453": {
-            "tokenAddress": "0xe9a3b326c5b06fa848b11e07080c3ac926fbe787"
+            "tokenAddress": "0xe9A3B326c5B06FA848b11E07080c3AC926fBe787"
           },
           "42161": {
-            "tokenAddress": "0x488ef48ff9d803087cc96b347fc250244a9e8260"
+            "tokenAddress": "0x488ef48FF9D803087CC96b347FC250244A9e8260"
           }
         },
         "peersInfo": {
@@ -17811,7 +17974,7 @@
       "extensions": {
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0x78a0a62fba6fb21a83fe8a3433d44c73a4017a6f"
+            "tokenAddress": "0x78a0A62Fba6Fb21A83FE8a3433d44C73a4017A6f"
           }
         },
         "peersInfo": {
@@ -17891,7 +18054,7 @@
         "coingeckoId": "unix",
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0xddd6a0ecc3c6f6c102e5ea3d8af7b801d1a77ac8"
+            "tokenAddress": "0xDDD6A0ECc3c6F6C102E5eA3d8Af7B801d1a77aC8"
           }
         },
         "peersInfo": {
@@ -17923,7 +18086,7 @@
       "extensions": {
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0x559b7bfc48a5274754b08819f75c5f27af53d53b"
+            "tokenAddress": "0x559b7bfC48a5274754b08819F75C5F27aF53D53b"
           }
         },
         "peersInfo": {
@@ -18124,7 +18287,7 @@
       "extensions": {
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0xd9fcd98c322942075a5c3860693e9f4f03aae07b"
+            "tokenAddress": "0xd9Fcd98c322942075A5C3860693e9f4f03AAE07b"
           }
         },
         "peersInfo": {
@@ -18292,7 +18455,7 @@
       "extensions": {
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0x3432b6a60d23ca0dfca7761b7ab56459d9c964d0"
+            "tokenAddress": "0x3432B6A60D23Ca0dFCa7761B7ab56459D9C964D0"
           }
         },
         "peersInfo": {
@@ -18341,7 +18504,7 @@
       "extensions": {
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0x2260fac5e5542a773aa44fbcfedf7c193bc2c599"
+            "tokenAddress": "0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599"
           }
         },
         "peersInfo": {
@@ -18402,7 +18565,7 @@
       "extensions": {
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0xa1290d69c65a6fe4df752f95823fae25cb99e5a7"
+            "tokenAddress": "0xA1290d69c65A6Fe4DF752f95823fae25cB99e5A7"
           }
         },
         "peersInfo": {
@@ -18430,7 +18593,7 @@
       "extensions": {
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0x6bede1c6009a78c222d9bdb7974bb67847fdb68c"
+            "tokenAddress": "0x6bedE1c6009a78c222D9BDb7974bb67847fdB68c"
           }
         },
         "peersInfo": {
@@ -18459,7 +18622,7 @@
         "coingeckoId": "abond",
         "bridgeInfo": {
           "56": {
-            "tokenAddress": "0x34294afabcbaffc616ac6614f6d2e17260b78bed"
+            "tokenAddress": "0x34294AfABCbaFfc616ac6614F6d2e17260b78BEd"
           }
         },
         "peersInfo": {
@@ -18498,7 +18661,7 @@
       "extensions": {
         "bridgeInfo": {
           "56": {
-            "tokenAddress": "0x0b15ddf19d47e6a86a56148fb4afffc6929bcb89"
+            "tokenAddress": "0x0b15Ddf19D47E6a86A56148fb4aFFFc6929BcB89"
           }
         },
         "peersInfo": {
@@ -18544,7 +18707,7 @@
         "coingeckoId": "ox-fun",
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0xba0dda8762c24da9487f5fa026a9b64b695a07ea"
+            "tokenAddress": "0xba0Dda8762C24dA9487f5FA026a9B64b695A07Ea"
           }
         },
         "peersInfo": {
@@ -18600,7 +18763,7 @@
       "extensions": {
         "bridgeInfo": {
           "8453": {
-            "tokenAddress": "0xbb146326778227a8498b105a18f84e0987a684b4"
+            "tokenAddress": "0xBB146326778227A8498b105a18f84E0987A684b4"
           }
         },
         "peersInfo": {
@@ -18628,7 +18791,7 @@
       "extensions": {
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0xf9fb20b8e097904f0ab7d12e9dbee88f2dcd0f16"
+            "tokenAddress": "0xf9FB20B8E097904f0aB7d12e9DbeE88f2dcd0F16"
           }
         },
         "peersInfo": {
@@ -18669,7 +18832,7 @@
         "coingeckoId": "blockchainspace",
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0x83e9f223e1edb3486f876ee888d76bfba26c475a"
+            "tokenAddress": "0x83E9F223e1edb3486F876EE888d76bFba26c475A"
           }
         },
         "peersInfo": {
@@ -18701,7 +18864,7 @@
       "extensions": {
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0x788d86e00ab31db859c3d6b80d5a9375801d7f2a"
+            "tokenAddress": "0x788D86E00ab31Db859C3d6b80d5a9375801d7f2A"
           }
         }
       },
@@ -18719,7 +18882,7 @@
       "extensions": {
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0x68ccaca9adf1552b3316d6067690ec27397c8ea8"
+            "tokenAddress": "0x68ccACa9ADF1552B3316d6067690eC27397c8ea8"
           }
         },
         "peersInfo": {
@@ -18753,7 +18916,7 @@
       "extensions": {
         "bridgeInfo": {
           "56": {
-            "tokenAddress": "0xdfbea88c4842d30c26669602888d746d30f9d60d"
+            "tokenAddress": "0xdfBEA88C4842d30c26669602888d746D30F9D60d"
           }
         },
         "peersInfo": {
@@ -18787,7 +18950,7 @@
         "coingeckoId": "stargate-finance",
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0xaf5191b0de278c7286d6c7cc6ab6bb8a73ba2cd6"
+            "tokenAddress": "0xAf5191B0De278C7286d6C7CC6ab6BB8A73bA2Cd6"
           }
         }
       },
@@ -18809,7 +18972,7 @@
       "extensions": {
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0x2a3bff78b79a009976eea096a51a948a3dc00e34"
+            "tokenAddress": "0x2a3bFF78B79A009976EeA096a51A948a3dC00e34"
           }
         },
         "peersInfo": {
@@ -18840,7 +19003,7 @@
       "extensions": {
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0x99d8a9c45b2eca8864373a26d1459e3dff1e17f3"
+            "tokenAddress": "0x99D8a9C45b2ecA8864373A26D1459e3Dff1e17F3"
           }
         },
         "peersInfo": {
@@ -18934,7 +19097,7 @@
         "coingeckoId": "orderly-network",
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0xabd4c63d2616a5201454168269031355f4764337"
+            "tokenAddress": "0xABD4C63d2616A5201454168269031355f4764337"
           }
         },
         "peersInfo": {
@@ -18977,7 +19140,7 @@
       "extensions": {
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0x9ed7e4b1bff939ad473da5e7a218c771d1569456"
+            "tokenAddress": "0x9ed7E4B1BFF939ad473dA5E7a218C771D1569456"
           }
         },
         "peersInfo": {
@@ -19033,7 +19196,7 @@
       "extensions": {
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0x3432b6a60d23ca0dfca7761b7ab56459d9c964d0"
+            "tokenAddress": "0x3432B6A60D23Ca0dFCa7761B7ab56459D9C964D0"
           }
         },
         "peersInfo": {
@@ -19083,7 +19246,7 @@
         "coingeckoId": "osaka-protocol",
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0xa21af1050f7b26e0cff45ee51548254c41ed6b5c"
+            "tokenAddress": "0xa21Af1050F7B26e0cfF45ee51548254C41ED6b5c"
           }
         }
       },
@@ -19102,7 +19265,7 @@
         "coingeckoId": "layerzero",
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0x6985884c4392d348587b19cb9eaaf157f13271cd"
+            "tokenAddress": "0x6985884C4392D348587B19cb9eAAf157F13271cd"
           }
         },
         "peersInfo": {
@@ -19146,7 +19309,7 @@
         "coingeckoId": "interport-token",
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0x2b1d36f5b61addaf7da7ebbd11b35fd8cfb0de31"
+            "tokenAddress": "0x2b1D36f5B61AdDAf7DA7ebbd11B35FD8cfb0DE31"
           }
         },
         "peersInfo": {
@@ -19210,7 +19373,7 @@
         "coingeckoId": "wagmi-2",
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0x92cc36d66e9d739d50673d1f27929a371fb83a67"
+            "tokenAddress": "0x92CC36D66e9d739D50673d1f27929a371FB83a67"
           }
         },
         "peersInfo": {
@@ -19285,7 +19448,7 @@
         "coingeckoId": "lif3-2",
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0x7138eb0d563f3f6722500936a11dcae99d738a2c"
+            "tokenAddress": "0x7138Eb0d563f3F6722500936A11DcAe99D738A2c"
           }
         }
       },
@@ -19341,7 +19504,7 @@
       "extensions": {
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0x94025780a1ab58868d9b2dbbb775f44b32e8e6e5"
+            "tokenAddress": "0x94025780a1aB58868D9B2dBBB775f44b32e8E6e5"
           }
         },
         "peersInfo": {}
@@ -19411,7 +19574,7 @@
       "extensions": {
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0x3e12b9d6a4d12cd9b4a6d613872d0eb32f68b380"
+            "tokenAddress": "0x3E12b9d6A4D12cd9b4a6d613872d0Eb32f68b380"
           }
         },
         "peersInfo": {
@@ -19442,7 +19605,7 @@
       "extensions": {
         "bridgeInfo": {
           "43114": {
-            "tokenAddress": "0x152b9d0fdc40c096757f570a51e494bd4b943e50"
+            "tokenAddress": "0x152b9d0FdC40C096757F570A51E494bd4b943E50"
           }
         }
       },
@@ -19489,7 +19652,7 @@
       "extensions": {
         "bridgeInfo": {
           "8453": {
-            "tokenAddress": "0xed2d13a70acbd61074fc56bd0d0845e35f793e5e"
+            "tokenAddress": "0xeD2d13A70acbD61074fC56bd0d0845e35f793e5E"
           }
         },
         "peersInfo": {
@@ -19520,7 +19683,7 @@
       "extensions": {
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0x8db253a1943dddf1af9bcf8706ac9a0ce939d922"
+            "tokenAddress": "0x8dB253a1943DdDf1AF9bcF8706ac9A0Ce939d922"
           }
         },
         "peersInfo": {
@@ -19559,7 +19722,7 @@
       "extensions": {
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0x44709a920fccf795fbc57baa433cc3dd53c44dbe"
+            "tokenAddress": "0x44709a920fCcF795fbC57BAA433cc3dd53C44DbE"
           }
         },
         "peersInfo": {
@@ -19591,7 +19754,7 @@
         "coingeckoId": "omnicat",
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0x9e20461bc2c4c980f62f1b279d71734207a6a356"
+            "tokenAddress": "0x9e20461bc2c4c980f62f1B279D71734207a6A356"
           }
         },
         "peersInfo": {
@@ -19642,10 +19805,10 @@
       "extensions": {
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0xf9fa60ef4f23f00cce403cc4d2c11baf4880a0d6"
+            "tokenAddress": "0xf9Fa60EF4F23F00CCE403cc4d2c11Baf4880A0d6"
           },
           "56": {
-            "tokenAddress": "0xdc816b6bd4786720e91eb17d4dabf0e1eef5ee91"
+            "tokenAddress": "0xDC816B6bd4786720e91Eb17D4DaBf0E1eEf5eE91"
           }
         },
         "peersInfo": {
@@ -19677,7 +19840,7 @@
         "coingeckoId": "open-exchange-token",
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0x78a0a62fba6fb21a83fe8a3433d44c73a4017a6f"
+            "tokenAddress": "0x78a0A62Fba6Fb21A83FE8a3433d44C73a4017A6f"
           }
         },
         "peersInfo": {
@@ -19727,7 +19890,7 @@
       "extensions": {
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0x8457ca5040ad67fdebbcc8edce889a335bc0fbfb"
+            "tokenAddress": "0x8457CA5040ad67fdebbCC8EdCE889A335Bc0fbFB"
           }
         },
         "peersInfo": {
@@ -19764,7 +19927,7 @@
       "extensions": {
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0x559b7bfc48a5274754b08819f75c5f27af53d53b"
+            "tokenAddress": "0x559b7bfC48a5274754b08819F75C5F27aF53D53b"
           }
         },
         "peersInfo": {
@@ -19834,7 +19997,7 @@
         "coingeckoId": "primex-finance",
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0x0b3eaead748facdb9d943d3407011f16eb17d0cf"
+            "tokenAddress": "0x0B3EAEAd748facDb9d943d3407011f16Eb17D0Cf"
           }
         },
         "peersInfo": {
@@ -19855,6 +20018,43 @@
       "isAcross": false,
       "isOFT": true,
       "oftAdapter": "0x0b3eaead748facdb9d943d3407011f16eb17d0cf",
+      "oftVersion": 3,
+      "endpointVersion": 2,
+      "endpointId": 30109,
+      "oftSharedDecimals": 6
+    },
+    {
+      "chainId": 137,
+      "address": "0x0fc2a55d5BD13033f1ee0cdd11f60F7eFe66f467",
+      "name": "Lagrange",
+      "decimals": 18,
+      "symbol": "LA",
+      "logoURI": "https://s2.coinmarketcap.com/static/img/coins/128x128/36510.png",
+      "tags": [],
+      "extensions": {
+        "bridgeInfo": {
+          "1": {
+            "tokenAddress": "0x0fc2a55d5BD13033f1ee0cdd11f60F7eFe66f467"
+          }
+        },
+        "peersInfo": {
+          "1": {
+            "tokenAddress": "0x0fc2a55d5BD13033f1ee0cdd11f60F7eFe66f467"
+          },
+          "10": {
+            "tokenAddress": "0x0fc2a55d5BD13033f1ee0cdd11f60F7eFe66f467"
+          },
+          "8453": {
+            "tokenAddress": "0x0fc2a55d5BD13033f1ee0cdd11f60F7eFe66f467"
+          },
+          "42161": {
+            "tokenAddress": "0x0fc2a55d5BD13033f1ee0cdd11f60F7eFe66f467"
+          }
+        }
+      },
+      "isAcross": false,
+      "isOFT": true,
+      "oftAdapter": "0x0fc2a55d5bd13033f1ee0cdd11f60f7efe66f467",
       "oftVersion": 3,
       "endpointVersion": 2,
       "endpointId": 30109,
@@ -19897,7 +20097,7 @@
       "extensions": {
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0xb51b97dd5569fab69495316b5a065cccff4b829d"
+            "tokenAddress": "0xb51B97Dd5569FAB69495316B5a065CCcfF4B829d"
           }
         },
         "peersInfo": {
@@ -19925,7 +20125,7 @@
       "extensions": {
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0x9d39a5de30e57443bff2a8307a4256c8797a3497"
+            "tokenAddress": "0x9D39A5DE30e57443BfF2A8307A4256c8797A3497"
           }
         },
         "peersInfo": {
@@ -19971,7 +20171,7 @@
       "extensions": {
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0xa1290d69c65a6fe4df752f95823fae25cb99e5a7"
+            "tokenAddress": "0xA1290d69c65A6Fe4DF752f95823fae25cB99e5A7"
           }
         },
         "peersInfo": {
@@ -20008,7 +20208,7 @@
       "extensions": {
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0x57e114b691db790c35207b2e685d4a43181e6061"
+            "tokenAddress": "0x57e114B691Db790C35207b2e685D4A43181e6061"
           }
         },
         "peersInfo": {
@@ -20083,7 +20283,7 @@
       "extensions": {
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0xcd5fe23c85820f7b72d0926fc9b05b43e359b7ee"
+            "tokenAddress": "0xCd5fE23C85820F7B72D0926FC9b05b43E359b7ee"
           }
         },
         "peersInfo": {
@@ -20123,7 +20323,7 @@
       "extensions": {
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0xd9fcd98c322942075a5c3860693e9f4f03aae07b"
+            "tokenAddress": "0xd9Fcd98c322942075A5C3860693e9f4f03AAE07b"
           }
         },
         "peersInfo": {
@@ -20154,7 +20354,7 @@
       "extensions": {
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0x4c9edd5852cd905f086c759e8383e09bff1e68b3"
+            "tokenAddress": "0x4c9EDD5852cd905f086C759E8383e09bff1E68B3"
           }
         },
         "peersInfo": {
@@ -20200,7 +20400,7 @@
       "extensions": {
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0x9d39a5de30e57443bff2a8307a4256c8797a3497"
+            "tokenAddress": "0x9D39A5DE30e57443BfF2A8307A4256c8797A3497"
           }
         },
         "peersInfo": {
@@ -20297,7 +20497,7 @@
       "extensions": {
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0x4c9edd5852cd905f086c759e8383e09bff1e68b3"
+            "tokenAddress": "0x4c9EDD5852cd905f086C759E8383e09bff1E68B3"
           }
         },
         "peersInfo": {
@@ -20411,7 +20611,7 @@
       "extensions": {
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0x57e114b691db790c35207b2e685d4a43181e6061"
+            "tokenAddress": "0x57e114B691Db790C35207b2e685D4A43181e6061"
           }
         },
         "peersInfo": {
@@ -20597,7 +20797,7 @@
       "extensions": {
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0x3432b6a60d23ca0dfca7761b7ab56459d9c964d0"
+            "tokenAddress": "0x3432B6A60D23Ca0dFCa7761B7ab56459D9C964D0"
           }
         },
         "peersInfo": {
@@ -20660,29 +20860,26 @@
       "oftSharedDecimals": 6
     },
     {
-      "chainId": 43114,
-      "address": "0xA3D68b74bF0528fdD07263c60d6488749044914b",
-      "name": "Wrapped eETH",
+      "chainId": 252,
+      "address": "0xedEa7BeFB3024618cE8f148Fa3803f14966B6252",
+      "name": "Mock Frax",
       "decimals": 18,
-      "symbol": "weETH",
-      "logoURI": "https://s2.coinmarketcap.com/static/img/coins/128x128/28568.png",
+      "symbol": "mFRAX",
+      "logoURI": "https://s2.coinmarketcap.com/static/img/coins/128x128/6953.png",
       "tags": [],
       "extensions": {
         "peersInfo": {
           "1": {
-            "tokenAddress": "0xCd5fE23C85820F7B72D0926FC9b05b43E359b7ee"
-          },
-          "8453": {
-            "tokenAddress": "0x04C0599Ae5A44757c0af6F9eC3b93da8976c150A"
+            "tokenAddress": "0x3432B6A60D23Ca0dFCa7761B7ab56459D9C964D0"
           }
         }
       },
       "isAcross": false,
       "isOFT": true,
-      "oftAdapter": "0xA3D68b74bF0528fdD07263c60d6488749044914b",
+      "oftAdapter": "0xedea7befb3024618ce8f148fa3803f14966b6252",
       "oftVersion": 3,
       "endpointVersion": 2,
-      "endpointId": 30106,
+      "endpointId": 30255,
       "oftSharedDecimals": 6
     },
     {
@@ -20847,26 +21044,26 @@
       "endpointId": 335
     },
     {
-      "chainId": 252,
-      "address": "0xedEa7BeFB3024618cE8f148Fa3803f14966B6252",
-      "name": "Mock Frax",
+      "chainId": 56,
+      "address": "0x389AD4bb96d0D6EE5B6eF0EFAF4b7db0bA2e02a0",
+      "name": "Lagrange",
       "decimals": 18,
-      "symbol": "mFRAX",
-      "logoURI": "https://s2.coinmarketcap.com/static/img/coins/128x128/6953.png",
+      "symbol": "LA",
+      "logoURI": "https://s2.coinmarketcap.com/static/img/coins/128x128/36510.png",
       "tags": [],
       "extensions": {
         "peersInfo": {
           "1": {
-            "tokenAddress": "0x3432B6A60D23Ca0dFCa7761B7ab56459D9C964D0"
+            "tokenAddress": "0x0fc2a55d5BD13033f1ee0cdd11f60F7eFe66f467"
           }
         }
       },
       "isAcross": false,
       "isOFT": true,
-      "oftAdapter": "0xedEa7BeFB3024618cE8f148Fa3803f14966B6252",
+      "oftAdapter": "0x389AD4bb96d0D6EE5B6eF0EFAF4b7db0bA2e02a0",
       "oftVersion": 3,
       "endpointVersion": 2,
-      "endpointId": 30255,
+      "endpointId": 30102,
       "oftSharedDecimals": 6
     },
     {
@@ -20992,6 +21189,35 @@
       "endpointVersion": 1,
       "endpointId": 184,
       "oftSharedDecimals": 18
+    },
+    {
+      "chainId": 43114,
+      "address": "0xfc87D55bC8bF441AbfC24D04B2068a8f77BcFcC0",
+      "name": "MON",
+      "decimals": 18,
+      "symbol": "MON",
+      "logoURI": "https://s2.coinmarketcap.com/static/img/coins/128x128/30950.png",
+      "tags": [],
+      "extensions": {
+        "peersInfo": {
+          "1": {
+            "tokenAddress": "0xc555D625828c4527d477e595fF1Dd5801B4a600e"
+          },
+          "8453": {
+            "tokenAddress": "0xfc87D55bC8bF441AbfC24D04B2068a8f77BcFcC0"
+          },
+          "42161": {
+            "tokenAddress": "0xfc87D55bC8bF441AbfC24D04B2068a8f77BcFcC0"
+          }
+        }
+      },
+      "isAcross": false,
+      "isOFT": true,
+      "oftAdapter": "0xfc87D55bC8bF441AbfC24D04B2068a8f77BcFcC0",
+      "oftVersion": 3,
+      "endpointVersion": 2,
+      "endpointId": 30106,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 1,
@@ -23954,16 +24180,6 @@
           }
         }
       },
-      "isAcross": false,
-      "isOFT": false
-    },
-    {
-      "name": "Lagrange",
-      "address": "0x0fc2a55d5BD13033f1ee0cdd11f60F7eFe66f467",
-      "symbol": "LA",
-      "decimals": 18,
-      "chainId": 1,
-      "logoURI": "https://s2.coinmarketcap.com/static/img/coins/64x64/36510.png",
       "isAcross": false,
       "isOFT": false
     },
@@ -39009,7 +39225,7 @@
         "coingeckoId": "usd-coin-ethereum-bridged",
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48"
+            "tokenAddress": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48"
           }
         },
         "peersInfo": {}
@@ -39093,7 +39309,7 @@
         "coingeckoId": "wagmi-2",
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0x92cc36d66e9d739d50673d1f27929a371fb83a67"
+            "tokenAddress": "0x92CC36D66e9d739D50673d1f27929a371FB83a67"
           }
         },
         "peersInfo": {
@@ -39170,10 +39386,10 @@
             "tokenAddress": "0xdAC17F958D2ee523a2206206994597C13D831ec7"
           },
           "10": {
-            "tokenAddress": "0x01bff41798a0bcf287b996046ca68b395dbc1071"
+            "tokenAddress": "0x01bFF41798a0BcF287b996046Ca68b395DbC1071"
           },
           "80094": {
-            "tokenAddress": "0x779ded0c9e1022225f8e0630b35a9b54be713736"
+            "tokenAddress": "0x779Ded0c9e1022225f8E0630b35a9b54bE713736"
           }
         },
         "peersInfo": {
@@ -39213,7 +39429,7 @@
       "extensions": {
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0xf9fb20b8e097904f0ab7d12e9dbee88f2dcd0f16"
+            "tokenAddress": "0xf9FB20B8E097904f0aB7d12e9DbeE88f2dcd0F16"
           }
         },
         "peersInfo": {
@@ -39253,7 +39469,7 @@
       "extensions": {
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0x7448c7456a97769f6cd04f1e83a4a23ccdc46abd"
+            "tokenAddress": "0x7448c7456a97769F6cD04F1E83A4a23cCdC46aBD"
           }
         },
         "peersInfo": {
@@ -39323,7 +39539,7 @@
       "extensions": {
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0x9d39a5de30e57443bff2a8307a4256c8797a3497"
+            "tokenAddress": "0x9D39A5DE30e57443BfF2A8307A4256c8797A3497"
           }
         },
         "peersInfo": {
@@ -39369,7 +39585,7 @@
       "extensions": {
         "bridgeInfo": {
           "56": {
-            "tokenAddress": "0xe2b1dc2d4a3b4e59fdf0c47b71a7a86391a8b35a"
+            "tokenAddress": "0xE2B1dc2D4A3b4E59FDF0c47B71A7A86391a8B35a"
           }
         },
         "peersInfo": {
@@ -39401,7 +39617,7 @@
         "coingeckoId": "bridged-usde",
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0x4c9edd5852cd905f086c759e8383e09bff1e68b3"
+            "tokenAddress": "0x4c9EDD5852cd905f086C759E8383e09bff1E68B3"
           }
         },
         "peersInfo": {
@@ -39447,7 +39663,7 @@
       "extensions": {
         "bridgeInfo": {
           "43114": {
-            "tokenAddress": "0x420fca0121dc28039145009570975747295f2329"
+            "tokenAddress": "0x420FcA0121DC28039145009570975747295f2329"
           }
         },
         "peersInfo": {
@@ -39482,7 +39698,7 @@
         "coingeckoId": "sweth",
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0xf951e335afb289353dc249e82926178eac7ded78"
+            "tokenAddress": "0xf951E335afb289353dc249e82926178EaC7DEd78"
           }
         },
         "peersInfo": {
@@ -39515,7 +39731,7 @@
         "coingeckoId": "joe",
         "bridgeInfo": {
           "43114": {
-            "tokenAddress": "0x6e84a6216ea6dacc71ee8e6b0a5b7322eebc0fdd"
+            "tokenAddress": "0x6e84a6216eA6dACC71eE8E6b0a5B7322EEbC0fDd"
           }
         }
       },
@@ -39534,7 +39750,7 @@
         "coingeckoId": "morpheusai",
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0xcbb8f1bda10b9696c57e13bc128fe674769dcec0"
+            "tokenAddress": "0xcBB8f1BDA10b9696c57E13BC128Fe674769DCEc0"
           }
         },
         "peersInfo": {
@@ -39566,7 +39782,7 @@
         "coingeckoId": "reunit-wallet",
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0x9ed7e4b1bff939ad473da5e7a218c771d1569456"
+            "tokenAddress": "0x9ed7E4B1BFF939ad473dA5E7a218C771D1569456"
           }
         },
         "peersInfo": {
@@ -39622,7 +39838,7 @@
       "extensions": {
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0x3432b6a60d23ca0dfca7761b7ab56459d9c964d0"
+            "tokenAddress": "0x3432B6A60D23Ca0dFCa7761B7ab56459D9C964D0"
           }
         },
         "peersInfo": {
@@ -39694,7 +39910,7 @@
       "extensions": {
         "bridgeInfo": {
           "56": {
-            "tokenAddress": "0x1d4268a58ee7ec2cc2af5d70a2fd2b3a896527a2"
+            "tokenAddress": "0x1D4268a58ee7EC2cc2Af5d70a2fD2B3a896527a2"
           }
         },
         "peersInfo": {
@@ -39728,7 +39944,7 @@
         "coingeckoId": "interport-token",
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0x2b1d36f5b61addaf7da7ebbd11b35fd8cfb0de31"
+            "tokenAddress": "0x2b1D36f5B61AdDAf7DA7ebbd11B35FD8cfb0DE31"
           }
         },
         "peersInfo": {
@@ -39830,7 +40046,7 @@
         "coingeckoId": "stargate-finance",
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0xaf5191b0de278c7286d6c7cc6ab6bb8a73ba2cd6"
+            "tokenAddress": "0xAf5191B0De278C7286d6C7CC6ab6BB8A73bA2Cd6"
           }
         }
       },
@@ -39853,7 +40069,7 @@
         "coingeckoId": "openocean",
         "bridgeInfo": {
           "56": {
-            "tokenAddress": "0x8ea5219a16c2dbf1d6335a6aa0c6bd45c50347c5"
+            "tokenAddress": "0x8ea5219a16c2dbF1d6335A6aa0c6bd45c50347C5"
           }
         },
         "peersInfo": {
@@ -39917,7 +40133,7 @@
         "coingeckoId": "idia",
         "bridgeInfo": {
           "56": {
-            "tokenAddress": "0x0b15ddf19d47e6a86a56148fb4afffc6929bcb89"
+            "tokenAddress": "0x0b15Ddf19D47E6a86A56148fb4aFFFc6929BcB89"
           }
         },
         "peersInfo": {
@@ -39963,7 +40179,7 @@
         "coingeckoId": "avalanche-bridged-btc-arbitrum-one",
         "bridgeInfo": {
           "43114": {
-            "tokenAddress": "0x152b9d0fdc40c096757f570a51e494bd4b943e50"
+            "tokenAddress": "0x152b9d0FdC40C096757F570A51E494bd4b943E50"
           }
         }
       },
@@ -39981,7 +40197,7 @@
       "extensions": {
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0x68ff002b30360d3c613c2d6bc7e8c3e1f94883b9"
+            "tokenAddress": "0x68FF002b30360D3C613C2d6BC7e8c3e1F94883B9"
           }
         },
         "peersInfo": {
@@ -40009,7 +40225,7 @@
       "extensions": {
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0x8db253a1943dddf1af9bcf8706ac9a0ce939d922"
+            "tokenAddress": "0x8dB253a1943DdDf1AF9bcF8706ac9A0Ce939d922"
           }
         },
         "peersInfo": {
@@ -40043,7 +40259,7 @@
         "coingeckoId": "omnicat",
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0x9e20461bc2c4c980f62f1b279d71734207a6a356"
+            "tokenAddress": "0x9e20461bc2c4c980f62f1B279D71734207a6A356"
           }
         },
         "peersInfo": {
@@ -40094,7 +40310,7 @@
       "extensions": {
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0xe0bceef36f3a6efdd5eebfacd591423f8549b9d5"
+            "tokenAddress": "0xe0bCEEF36F3a6eFDd5EEBFACD591423f8549B9D5"
           }
         },
         "peersInfo": {
@@ -40152,7 +40368,7 @@
         "coingeckoId": "openleverage",
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0x1b6e9c73bee68102d9dd4a2627f97bff4183ab0a"
+            "tokenAddress": "0x1B6e9c73beE68102d9dd4A2627f97bFf4183ab0A"
           }
         },
         "peersInfo": {
@@ -40191,7 +40407,7 @@
         "coingeckoId": "holotoken",
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0x6c6ee5e31d828de241282b9606c8e98ea48526e2"
+            "tokenAddress": "0x6c6EE5e31d828De241282B9606C8e98Ea48526E2"
           }
         },
         "peersInfo": {
@@ -40261,7 +40477,7 @@
       "extensions": {
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0x78a0a62fba6fb21a83fe8a3433d44c73a4017a6f"
+            "tokenAddress": "0x78a0A62Fba6Fb21A83FE8a3433d44C73a4017A6f"
           }
         },
         "peersInfo": {
@@ -40312,7 +40528,7 @@
         "coingeckoId": "unsheth",
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0xe60779cc1b2c1d0580611c526a8df0e3f870ec48"
+            "tokenAddress": "0xE60779CC1b2c1d0580611c526a8DF0E3f870EC48"
           }
         },
         "peersInfo": {
@@ -40377,7 +40593,7 @@
       "extensions": {
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0xd9fcd98c322942075a5c3860693e9f4f03aae07b"
+            "tokenAddress": "0xd9Fcd98c322942075A5C3860693e9f4f03AAE07b"
           }
         },
         "peersInfo": {
@@ -40408,7 +40624,7 @@
       "extensions": {
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0x8457ca5040ad67fdebbcc8edce889a335bc0fbfb"
+            "tokenAddress": "0x8457CA5040ad67fdebbCC8EdCE889A335Bc0fbFB"
           }
         },
         "peersInfo": {
@@ -40445,7 +40661,7 @@
       "extensions": {
         "bridgeInfo": {
           "56": {
-            "tokenAddress": "0xbdeae1ca48894a1759a8374d63925f21f2ee2639"
+            "tokenAddress": "0xBdEAe1cA48894A1759A8374D63925f21f2Ee2639"
           }
         },
         "peersInfo": {
@@ -40484,7 +40700,7 @@
       "extensions": {
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0x745407c86df8db893011912d3ab28e68b62e49b0"
+            "tokenAddress": "0x745407c86DF8DB893011912d3aB28e68B62E49B0"
           }
         },
         "peersInfo": {
@@ -40522,7 +40738,7 @@
         "coingeckoId": "primex-finance",
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0x0b3eaead748facdb9d943d3407011f16eb17d0cf"
+            "tokenAddress": "0x0B3EAEAd748facDb9d943d3407011f16Eb17D0Cf"
           }
         },
         "peersInfo": {
@@ -40550,6 +40766,43 @@
     },
     {
       "chainId": 42161,
+      "address": "0x0fc2a55d5BD13033f1ee0cdd11f60F7eFe66f467",
+      "name": "Lagrange",
+      "decimals": 18,
+      "symbol": "LA",
+      "logoURI": "https://s2.coinmarketcap.com/static/img/coins/128x128/36510.png",
+      "tags": [],
+      "extensions": {
+        "bridgeInfo": {
+          "1": {
+            "tokenAddress": "0x0fc2a55d5BD13033f1ee0cdd11f60F7eFe66f467"
+          }
+        },
+        "peersInfo": {
+          "1": {
+            "tokenAddress": "0x0fc2a55d5BD13033f1ee0cdd11f60F7eFe66f467"
+          },
+          "10": {
+            "tokenAddress": "0x0fc2a55d5BD13033f1ee0cdd11f60F7eFe66f467"
+          },
+          "137": {
+            "tokenAddress": "0x0fc2a55d5BD13033f1ee0cdd11f60F7eFe66f467"
+          },
+          "8453": {
+            "tokenAddress": "0x0fc2a55d5BD13033f1ee0cdd11f60F7eFe66f467"
+          }
+        }
+      },
+      "isAcross": false,
+      "isOFT": true,
+      "oftAdapter": "0x0fc2a55d5bd13033f1ee0cdd11f60f7efe66f467",
+      "oftVersion": 3,
+      "endpointVersion": 2,
+      "endpointId": 30110,
+      "oftSharedDecimals": 6
+    },
+    {
+      "chainId": 42161,
       "address": "0x881ee52679537C6834fDeeB3673da2e3eCb50DF6",
       "name": "DegenReborn Token",
       "symbol": "DEGEN",
@@ -40559,7 +40812,7 @@
       "extensions": {
         "bridgeInfo": {
           "56": {
-            "tokenAddress": "0x1a131f7b106d58f33eaf0fe5b47db2f2045e5732"
+            "tokenAddress": "0x1a131F7B106D58f33eAf0fE5B47DB2f2045E5732"
           }
         },
         "peersInfo": {
@@ -40591,7 +40844,7 @@
       "extensions": {
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0x3d000462fb9826804a45c0ea869b83b69587f2db"
+            "tokenAddress": "0x3d000462Fb9826804a45c0EA869b83b69587F2dB"
           }
         }
       },
@@ -40609,7 +40862,7 @@
       "extensions": {
         "bridgeInfo": {
           "56": {
-            "tokenAddress": "0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c"
+            "tokenAddress": "0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c"
           }
         }
       },
@@ -40627,7 +40880,7 @@
       "extensions": {
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0xc555d625828c4527d477e595ff1dd5801b4a600e"
+            "tokenAddress": "0xc555D625828c4527d477e595fF1Dd5801B4a600e"
           }
         },
         "peersInfo": {
@@ -40685,7 +40938,7 @@
         "coingeckoId": "ox-fun",
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0xba0dda8762c24da9487f5fa026a9b64b695a07ea"
+            "tokenAddress": "0xba0Dda8762C24dA9487f5FA026a9B64b695A07Ea"
           }
         },
         "peersInfo": {
@@ -40742,7 +40995,7 @@
         "coingeckoId": "radiant-capital",
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0x137ddb47ee24eaa998a535ab00378d6bfa84f893"
+            "tokenAddress": "0x137dDB47Ee24EaA998a535Ab00378d6BFa84F893"
           }
         },
         "peersInfo": {
@@ -40788,7 +41041,7 @@
         "coingeckoId": "seedify-fund",
         "bridgeInfo": {
           "56": {
-            "tokenAddress": "0x477bc8d23c634c154061869478bce96be6045d12"
+            "tokenAddress": "0x477bC8d23c634C154061869478bce96BE6045D12"
           }
         },
         "peersInfo": {
@@ -40838,7 +41091,7 @@
       "extensions": {
         "bridgeInfo": {
           "8453": {
-            "tokenAddress": "0xc227717ef4ae4d982e14789eb33ba942243c3fee"
+            "tokenAddress": "0xC227717ef4Ae4D982E14789eB33bA942243c3FEe"
           }
         },
         "peersInfo": {
@@ -40899,7 +41152,7 @@
       "extensions": {
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0x788d86e00ab31db859c3d6b80d5a9375801d7f2a"
+            "tokenAddress": "0x788D86E00ab31Db859C3d6b80d5a9375801d7f2A"
           }
         }
       },
@@ -40950,7 +41203,7 @@
         "coingeckoId": "kelpdao-bridged-rseth-arbitrum",
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0xa1290d69c65a6fe4df752f95823fae25cb99e5a7"
+            "tokenAddress": "0xA1290d69c65A6Fe4DF752f95823fae25cB99e5A7"
           }
         },
         "peersInfo": {
@@ -41021,7 +41274,7 @@
       "extensions": {
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0xc4441c2be5d8fa8126822b9929ca0b81ea0de38e"
+            "tokenAddress": "0xC4441c2BE5d8fA8126822B9929CA0b81Ea0DE38E"
           }
         },
         "peersInfo": {
@@ -41049,7 +41302,7 @@
       "extensions": {
         "bridgeInfo": {
           "56": {
-            "tokenAddress": "0xdfbea88c4842d30c26669602888d746d30f9d60d"
+            "tokenAddress": "0xdfBEA88C4842d30c26669602888d746D30F9D60d"
           }
         },
         "peersInfo": {
@@ -41100,7 +41353,7 @@
       "extensions": {
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0x4591dbff62656e7859afe5e45f6f47d3669fbb28"
+            "tokenAddress": "0x4591DBfF62656E7859Afe5e45f6f47D3669fBB28"
           }
         },
         "peersInfo": {
@@ -41144,7 +41397,7 @@
       "extensions": {
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0xb5130f4767ab0acc579f25a76e8f9e977cb3f948"
+            "tokenAddress": "0xb5130F4767AB0ACC579f25a76e8f9E977CB3F948"
           }
         },
         "peersInfo": {
@@ -41175,7 +41428,7 @@
       "extensions": {
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0x99d8a9c45b2eca8864373a26d1459e3dff1e17f3"
+            "tokenAddress": "0x99D8a9C45b2ecA8864373A26D1459e3Dff1e17F3"
           }
         },
         "peersInfo": {
@@ -41239,7 +41492,7 @@
         "coingeckoId": "orderly-network",
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0xabd4c63d2616a5201454168269031355f4764337"
+            "tokenAddress": "0xABD4C63d2616A5201454168269031355f4764337"
           }
         },
         "peersInfo": {
@@ -41282,7 +41535,7 @@
       "extensions": {
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0x96f6ef951840721adbf46ac996b59e0235cb985c"
+            "tokenAddress": "0x96F6eF951840721AdBF46Ac996b59E0235CB985C"
           }
         },
         "peersInfo": {
@@ -41354,7 +41607,7 @@
       "extensions": {
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0x33333333fede34409fb7f67c6585047e1f653333"
+            "tokenAddress": "0x33333333FEde34409Fb7f67c6585047E1F653333"
           }
         },
         "peersInfo": {
@@ -41389,7 +41642,7 @@
         "coingeckoId": "pancakeswap-token",
         "bridgeInfo": {
           "56": {
-            "tokenAddress": "0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82"
+            "tokenAddress": "0x0E09FaBB73Bd3Ade0a17ECC321fD13a19e81cE82"
           }
         }
       },
@@ -41496,7 +41749,7 @@
       "extensions": {
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0xd3cc9d8f3689b83c91b7b59cab4946b063eb894a"
+            "tokenAddress": "0xd3CC9d8f3689B83c91b7B59cAB4946B063EB894A"
           }
         },
         "peersInfo": {
@@ -41548,7 +41801,7 @@
         "coingeckoId": "sensay",
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0x82a605d6d9114f4ad6d5ee461027477eeed31e34"
+            "tokenAddress": "0x82a605D6D9114F4Ad6D5Ee461027477EeED31E34"
           }
         },
         "peersInfo": {
@@ -41580,7 +41833,7 @@
         "coingeckoId": "unsheth-unsheth",
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0x0ae38f7e10a43b5b2fb064b42a2f4514cba909ef"
+            "tokenAddress": "0x0Ae38f7E10A43B5b2fB064B42a2f4514cbA909ef"
           }
         },
         "peersInfo": {
@@ -41660,7 +41913,7 @@
       "extensions": {
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0xfae103dc9cf190ed75350761e95403b7b8afa6c0"
+            "tokenAddress": "0xFAe103DC9cf190eD75350761e95403b7b8aFa6c0"
           }
         },
         "peersInfo": {
@@ -41696,10 +41949,10 @@
         "coinMarketCapId": 23580,
         "bridgeInfo": {
           "10": {
-            "tokenAddress": "0x348fdfe2c35934a96c1353185f09d0f9efbada86"
+            "tokenAddress": "0x348Fdfe2c35934A96C1353185F09D0F9efBAdA86"
           },
           "8453": {
-            "tokenAddress": "0x348fdfe2c35934a96c1353185f09d0f9efbada86"
+            "tokenAddress": "0x348Fdfe2c35934A96C1353185F09D0F9efBAdA86"
           }
         },
         "peersInfo": {
@@ -41737,7 +41990,7 @@
       "extensions": {
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0x94025780a1ab58868d9b2dbbb775f44b32e8e6e5"
+            "tokenAddress": "0x94025780a1aB58868D9B2dBBB775f44b32e8E6e5"
           }
         },
         "peersInfo": {}
@@ -41789,7 +42042,7 @@
       "extensions": {
         "bridgeInfo": {
           "43114": {
-            "tokenAddress": "0x5ac04b69bde6f67c0bd5d6ba6fd5d816548b066a"
+            "tokenAddress": "0x5Ac04b69bDE6f67C0bd5D6bA6fD5D816548b066a"
           }
         },
         "peersInfo": {
@@ -41824,7 +42077,7 @@
         "coingeckoId": "osaka-protocol",
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0xa21af1050f7b26e0cff45ee51548254c41ed6b5c"
+            "tokenAddress": "0xa21Af1050F7B26e0cfF45ee51548254C41ED6b5c"
           }
         }
       },
@@ -41842,7 +42095,7 @@
       "extensions": {
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0x66a1e37c9b0eaddca17d3662d6c05f4decf3e110"
+            "tokenAddress": "0x66a1E37c9b0eAddca17d3662D6c05F4DECf3e110"
           }
         },
         "peersInfo": {
@@ -41880,7 +42133,7 @@
         "coingeckoId": "pepe",
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0x6982508145454ce325ddbe47a25d4ec3d2311933"
+            "tokenAddress": "0x6982508145454Ce325dDbE47a25d4ec3d2311933"
           }
         }
       },
@@ -41899,7 +42152,7 @@
         "coingeckoId": "goldenboys",
         "bridgeInfo": {
           "8453": {
-            "tokenAddress": "0xbefd5c25a59ef2c1316c5a4944931171f30cd3e4"
+            "tokenAddress": "0xbeFD5C25A59ef2C1316c5A4944931171F30Cd3E4"
           }
         },
         "peersInfo": {
@@ -41938,7 +42191,7 @@
       "extensions": {
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0x559b7bfc48a5274754b08819f75c5f27af53d53b"
+            "tokenAddress": "0x559b7bfC48a5274754b08819F75C5F27aF53D53b"
           }
         },
         "peersInfo": {
@@ -42007,7 +42260,7 @@
       "extensions": {
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0x57e114b691db790c35207b2e685d4a43181e6061"
+            "tokenAddress": "0x57e114B691Db790C35207b2e685D4A43181e6061"
           }
         },
         "peersInfo": {
