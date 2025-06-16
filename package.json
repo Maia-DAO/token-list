@@ -11,7 +11,9 @@
     "merge-others": "node scripts/8-mergeInactiveLists.js",
     "removeDupes": "node scripts/9-removeDupes.js",
     "all": "yarn fetch && yarn filter && yarn merge && yarn merge-others && yarn removeDupes",
-    "dev": "yarn filter && yarn merge && yarn merge-others && yarn removeDupes"
+    "dev": "yarn filter && yarn merge && yarn merge-others && yarn removeDupes",
+    "lint": "yarn prettier . --check",
+    "lint:fix": "yarn prettier . --write"
   },
   "dependencies": {
     "@across-protocol/constants": "3.1.67",
@@ -21,5 +23,8 @@
     "ethers": "^6.13.7",
     "maia-core-sdk": "^1.0.59",
     "node-fetch": "^3.3.2"
+  },
+  "devDependencies": {
+    "prettier": "3.5.3"
   }
 }

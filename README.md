@@ -24,13 +24,13 @@ yarn install
 
 Run individual tasks or the full pipeline using `yarn` commands:
 
-| Script         | Command                                       | Description |
-|----------------|-----------------------------------------------|-------------|
-| `fetch`        | `yarn fetch`                                  | Fetch external token lists into `output/` directory. |
-| `filter`       | `yarn filter`                                 | Filter Stargate and Across tokens for supported chains. |
-| `merge`        | `yarn merge`                                  | Merge active token lists into `token-list.json`. |
-| `merge-others` | `yarn merge-others`                           | Merge remaining tokens into `inactive-token-list.json`. |
-| `all`          | `yarn all`                                    | Run all steps: `fetch` → `filter` → `merge` → `merge-others`. |
+| Script         | Command             | Description                                                   |
+| -------------- | ------------------- | ------------------------------------------------------------- |
+| `fetch`        | `yarn fetch`        | Fetch external token lists into `output/` directory.          |
+| `filter`       | `yarn filter`       | Filter Stargate and Across tokens for supported chains.       |
+| `merge`        | `yarn merge`        | Merge active token lists into `token-list.json`.              |
+| `merge-others` | `yarn merge-others` | Merge remaining tokens into `inactive-token-list.json`.       |
+| `all`          | `yarn all`          | Run all steps: `fetch` → `filter` → `merge` → `merge-others`. |
 
 ## ⚙️ Output Files
 
