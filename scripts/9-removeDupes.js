@@ -88,13 +88,23 @@ function populationScore(t) {
 const ACTIVE_LIST = 'token-list.json'
 const INACTIVE_LIST = 'inactive-token-list.json'
 
-let data
+let dataActiveList
 try {
-  data = JSON.parse(fs.readFileSync(ACTIVE_LIST, 'utf8'))
+  dataActiveList = JSON.parse(fs.readFileSync(ACTIVE_LIST, 'utf8'))
 } catch (err) {
   console.error(`❌ Failed to read/parse ${ACTIVE_LIST}:`, err.message)
   process.exit(1)
 }
+
+let dataInactiveList
+try {
+  dataInactiveList = JSON.parse(fs.readFileSync(INACTIVE_LIST, 'utf8'))
+} catch (err) {
+  console.error(`❌ Failed to read/parse ${INACTIVE_LIST}:`, err.message)
+  process.exit(1)
+}
+
+const seen = new Set()
 
 // Generic dedupe+merge for one array
 function dedupeAndMerge(arr) {
@@ -113,7 +123,6 @@ function dedupeAndMerge(arr) {
   })
 
   // build final list, merging duplicates
-  const seen = new Set()
   const result = []
 
   buckets.forEach((group) => {
@@ -149,15 +158,26 @@ function dedupeAndMerge(arr) {
 }
 
 // Process both lists
-const mergedTokens = Array.isArray(data.tokens) ? dedupeAndMerge(data.tokens) : []
-const mergedRootTokens = Array.isArray(data.rootTokens) ? dedupeAndMerge(data.rootTokens) : []
+const mergedTokens = Array.isArray(dataActiveList.tokens) ? dedupeAndMerge(dataActiveList.tokens) : []
+const mergedRootTokens = Array.isArray(dataActiveList.rootTokens) ? dedupeAndMerge(dataActiveList.rootTokens) : []
 
 // Write out
 const outData = {
-  ...data,
+  ...dataActiveList,
   tokens: mergedTokens,
   rootTokens: mergedRootTokens,
 }
 
 fs.writeFileSync(ACTIVE_LIST, JSON.stringify(outData, null, 2))
 console.log(`✅ Duplicates merged. Output written to ${ACTIVE_LIST}`)
+
+const mergedInactiveTokens = Array.isArray(dataInactiveList.tokens) ? dedupeAndMerge(dataInactiveList.tokens) : []
+
+// Write out
+const outInactiveData = {
+  ...dataInactiveList,
+  tokens: mergedInactiveTokens,
+}
+
+fs.writeFileSync(INACTIVE_LIST, JSON.stringify(outInactiveData, null, 2))
+console.log(`✅ Inactive duplicates merged. Output written to ${INACTIVE_LIST}`)
