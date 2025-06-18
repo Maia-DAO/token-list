@@ -1,6 +1,7 @@
 // mergeUniswapLists.js
 // Hardcoded input files array—no CLI args needed.
 
+const { orderTokens } = require('./orderTokens')
 const fs = require('fs').promises
 const path = require('path')
 
@@ -71,19 +72,21 @@ async function main() {
     )
 
     // Copy over extensions, isAcross, isOFT
-    const finalTokens = mergedTokens.reduce((memo, token) => {
-      const key = `${token.chainId}_${token.address.toLowerCase()}`
-      const existing = existingMap.get(key)
-      if (!existing) {
-        memo.push({
-          ...token,
-          extensions: token.extensions || {},
-          isAcross: false,
-          isOFT: false,
-        })
-      }
-      return memo
-    }, [])
+    const finalTokens = mergedTokens
+      .reduce((memo, token) => {
+        const key = `${token.chainId}_${token.address.toLowerCase()}`
+        const existing = existingMap.get(key)
+        if (!existing) {
+          memo.push({
+            ...token,
+            extensions: token.extensions || {},
+            isAcross: false,
+            isOFT: false,
+          })
+        }
+        return memo
+      }, [])
+      .sort(orderTokens)
 
     // --- Write out the combined list ---
     const newInactiveOutput = {

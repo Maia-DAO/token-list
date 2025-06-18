@@ -1,6 +1,7 @@
 const fs = require('fs').promises
 const path = require('path')
 const { getCoinLogo } = require('./getCoinLogo')
+const { orderTokens } = require('./orderTokens')
 
 // TODO: Add arbitrary Uniswap Token List support
 
@@ -341,8 +342,8 @@ async function main() {
     }
 
     // 4. Final tokens and rootTokens arrays.
-    const finalTokens = Object.values(normalizedMap)
-    const finalRootTokens = Object.values(rootTokensMap)
+    const finalTokens = Object.values(normalizedMap).sort(orderTokens)
+    const finalRootTokens = Object.values(rootTokensMap).sort(orderTokens)
 
     // -----------------------------------------------------------------
     // Build new merged output in complete token list format.

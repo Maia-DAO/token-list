@@ -319,6 +319,14 @@ async function main() {
     if (token?.extensions && Object.keys(token.extensions).length === 0) {
       delete token.extensions
     }
+    if (token?.extensions?.peersInfo && Object.keys(token.extensions.peersInfo).length === 0) {
+      delete token.extensions.peersInfo
+      delete token.isOFT
+      delete token.oftAdapter
+      delete token.oftVersion
+      delete token.endpointVersion
+      delete token.endpointId
+    }
     if (token?.extensions?.feeInfo && Object.keys(token.extensions.feeInfo).length === 0) {
       delete token.extensions.feeInfo
     }
