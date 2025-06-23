@@ -242,25 +242,21 @@ async function main() {
         if (!isOApp) {
           console.warn(`Not an OApp for ${src.symbol}: ${src.chainKey} - ${src.oftAdapter}`)
           // Update tokens to reflect it is not an OFT
-          const tokenIndex = tokens.findIndex((t) => t.chainKey === src.chainKey && t.address === src.address)
-          if (tokenIndex === -1) {
-            console.warn(`Token not found for ${src.address} on ${src.chainKey}`)
-          } else {
-            console.warn(`Removing OFT specific fields for ${src.symbol}: ${src.chainKey} - ${src.oftAdapter}`)
-            // Remove OFT specific fields
-            if (tokens[tokenIndex]?.oftVersion) delete tokens[tokenIndex].oftVersion
-            if (tokens[tokenIndex]?.endpointVersion) delete tokens[tokenIndex].endpointVersion
-            if (tokens[tokenIndex]?.oftAdapter) delete tokens[tokenIndex].oftAdapter
-            if (tokens[tokenIndex]?.endpointId) delete tokens[tokenIndex].endpointId
-            if (tokens[tokenIndex]?.oftSharedDecimals) delete tokens[tokenIndex].oftSharedDecimals
-            if (tokens[tokenIndex]?.extensions) {
-              if (tokens[tokenIndex]?.extensions?.feeInfo) delete tokens[tokenIndex].extensions?.feeInfo
-              if (tokens[tokenIndex]?.extensions?.peersInfo) delete tokens[tokenIndex].extensions?.peersInfo
-            }
-            if (tokens[tokenIndex]?.isBridgeable) delete tokens[tokenIndex].isBridgeable
-            // Set isOFT to false
-            tokens[tokenIndex].isOFT = false
+          const tokenIndex = src.index
+          console.warn(`Removing OFT specific fields for ${src.symbol}: ${src.chainKey} - ${src.oftAdapter}`)
+          // Remove OFT specific fields
+          if (tokens[tokenIndex]?.oftVersion) delete tokens[tokenIndex].oftVersion
+          if (tokens[tokenIndex]?.endpointVersion) delete tokens[tokenIndex].endpointVersion
+          if (tokens[tokenIndex]?.oftAdapter) delete tokens[tokenIndex].oftAdapter
+          if (tokens[tokenIndex]?.endpointId) delete tokens[tokenIndex].endpointId
+          if (tokens[tokenIndex]?.oftSharedDecimals) delete tokens[tokenIndex].oftSharedDecimals
+          if (tokens[tokenIndex]?.extensions) {
+            if (tokens[tokenIndex]?.extensions?.feeInfo) delete tokens[tokenIndex].extensions?.feeInfo
+            if (tokens[tokenIndex]?.extensions?.peersInfo) delete tokens[tokenIndex].extensions?.peersInfo
           }
+          if (tokens[tokenIndex]?.isBridgeable) delete tokens[tokenIndex].isBridgeable
+          // Set isOFT to false
+          tokens[tokenIndex].isOFT = false
         }
       } catch (e) {
         console.warn(`Failed to decode lzEndpoint for ${src.chainKey}:`, e.message)
@@ -316,6 +312,8 @@ async function main() {
 
   // Remove empty extensions.feeInfo and extensions.bridgeInfo
   for (const token of enhanced) {
+    if (token.oftAdapter) token.oftAdapter = ethers.getAddress(token.oftAdapter) 
+
     if (token?.extensions && Object.keys(token.extensions).length === 0) {
       delete token.extensions
     }
