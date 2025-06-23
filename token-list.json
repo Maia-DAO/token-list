@@ -1,8 +1,8 @@
 {
   "name": "Hermes Omnichain Token List",
-  "timestamp": "1750273600",
+  "timestamp": "1750691983",
   "version": {
-    "major": 88,
+    "major": 92,
     "minor": 0,
     "patch": 0
   },
@@ -1213,6 +1213,9 @@
           "137": {
             "tokenAddress": "0x193f4A4a6ea24102F49b931DEeeb931f6E32405d"
           },
+          "8453": {
+            "tokenAddress": "0x7252c865c05378Ffc15120F428dd65804dD0CE63"
+          },
           "42161": {
             "tokenAddress": "0x193f4A4a6ea24102F49b931DEeeb931f6E32405d"
           },
@@ -1226,6 +1229,9 @@
           },
           "137": {
             "minDstGas": 100000
+          },
+          "8453": {
+            "minDstGas": 200000
           },
           "42161": {
             "minDstGas": 2000000
@@ -1351,8 +1357,20 @@
       "symbol": "PEAQ",
       "logoURI": "https://s2.coinmarketcap.com/static/img/coins/128x128/14588.png",
       "tags": [],
-      "extensions": {},
+      "extensions": {
+        "peersInfo": {
+          "56": {
+            "tokenAddress": "0x8b9Ee39195eA99d6ddD68030F44131116bc218F6"
+          }
+        },
+        "bridgeInfo": {
+          "56": {
+            "tokenAddress": "0x8b9Ee39195eA99d6ddD68030F44131116bc218F6"
+          }
+        }
+      },
       "isAcross": false,
+      "isOFT": true,
       "oftAdapter": "0x1eef208926667594e5136e89d0e9dd6907959197",
       "oftVersion": 3,
       "endpointVersion": 2,
@@ -8147,8 +8165,7 @@
         },
         "coinMarketCapId": 3408
       },
-      "isAcross": true,
-      "oftSharedDecimals": 6
+      "isAcross": true
     },
     {
       "chainId": 1,
@@ -9399,8 +9416,7 @@
         }
       },
       "isAcross": false,
-      "isOFT": false,
-      "oftSharedDecimals": 6
+      "isOFT": false
     },
     {
       "chainId": 1,
@@ -14425,6 +14441,9 @@
           "1": {
             "tokenAddress": "0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599"
           },
+          "10": {
+            "tokenAddress": "0x0555E30da8f98308EdB960aa94C0Db47230d2B9c"
+          },
           "146": {
             "tokenAddress": "0x0555E30da8f98308EdB960aa94C0Db47230d2B9c"
           },
@@ -14818,6 +14837,9 @@
           "137": {
             "tokenAddress": "0x193f4A4a6ea24102F49b931DEeeb931f6E32405d"
           },
+          "8453": {
+            "tokenAddress": "0x7252c865c05378Ffc15120F428dd65804dD0CE63"
+          },
           "42161": {
             "tokenAddress": "0x193f4A4a6ea24102F49b931DEeeb931f6E32405d"
           },
@@ -14831,6 +14853,9 @@
           },
           "137": {
             "minDstGas": 100000
+          },
+          "8453": {
+            "minDstGas": 200000
           },
           "42161": {
             "minDstGas": 2000000
@@ -15613,7 +15638,7 @@
       },
       "isAcross": false,
       "isOFT": true,
-      "oftAdapter": "0x389AD4bb96d0D6EE5B6eF0EFAF4b7db0bA2e02a0",
+      "oftAdapter": "0x389ad4bb96d0d6ee5b6ef0efaf4b7db0ba2e02a0",
       "oftVersion": 3,
       "endpointVersion": 2,
       "endpointId": 30102,
@@ -16936,6 +16961,34 @@
       },
       "isAcross": false,
       "isOFT": false
+    },
+    {
+      "chainId": 56,
+      "address": "0x8b9Ee39195eA99d6ddD68030F44131116bc218F6",
+      "name": "PeaqOFT",
+      "decimals": 18,
+      "symbol": "PEAQ",
+      "logoURI": "https://s2.coinmarketcap.com/static/img/coins/128x128/14588.png",
+      "tags": [],
+      "extensions": {
+        "peersInfo": {
+          "1": {
+            "tokenAddress": "0x1EeF208926667594E5136e89D0e9DD6907959197"
+          }
+        },
+        "bridgeInfo": {
+          "1": {
+            "tokenAddress": "0x1EeF208926667594E5136e89D0e9DD6907959197"
+          }
+        }
+      },
+      "isAcross": false,
+      "isOFT": true,
+      "oftAdapter": "0x8b9Ee39195eA99d6ddD68030F44131116bc218F6",
+      "oftVersion": 3,
+      "endpointVersion": 2,
+      "endpointId": 30102,
+      "oftSharedDecimals": 6
     },
     {
       "chainId": 56,
@@ -24495,6 +24548,9 @@
           "56": {
             "tokenAddress": "0x193f4A4a6ea24102F49b931DEeeb931f6E32405d"
           },
+          "8453": {
+            "tokenAddress": "0x7252c865c05378Ffc15120F428dd65804dD0CE63"
+          },
           "42161": {
             "tokenAddress": "0x193f4A4a6ea24102F49b931DEeeb931f6E32405d"
           },
@@ -24508,6 +24564,9 @@
           },
           "56": {
             "minDstGas": 100000
+          },
+          "8453": {
+            "minDstGas": 200000
           },
           "42161": {
             "minDstGas": 2000000
@@ -29176,7 +29235,7 @@
       },
       "isAcross": false,
       "isOFT": true,
-      "oftAdapter": "0xA3D68b74bF0528fdD07263c60d6488749044914b",
+      "oftAdapter": "0xa3d68b74bf0528fdd07263c60d6488749044914b",
       "oftVersion": 3,
       "endpointVersion": 2,
       "endpointId": 30332,
@@ -30663,6 +30722,9 @@
         "peersInfo": {
           "1": {
             "tokenAddress": "0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599"
+          },
+          "10": {
+            "tokenAddress": "0x0555E30da8f98308EdB960aa94C0Db47230d2B9c"
           },
           "56": {
             "tokenAddress": "0x0555E30da8f98308EdB960aa94C0Db47230d2B9c"
@@ -33146,6 +33208,58 @@
       },
       "isAcross": false,
       "isOFT": false
+    },
+    {
+      "chainId": 8453,
+      "address": "0x7252c865c05378Ffc15120F428dd65804dD0CE63",
+      "name": "TLOS",
+      "decimals": 18,
+      "symbol": "TLOS",
+      "logoURI": "https://s2.coinmarketcap.com/static/img/coins/128x128/4660.png",
+      "tags": [],
+      "extensions": {
+        "peersInfo": {
+          "1": {
+            "tokenAddress": "0x193f4A4a6ea24102F49b931DEeeb931f6E32405d"
+          },
+          "56": {
+            "tokenAddress": "0x193f4A4a6ea24102F49b931DEeeb931f6E32405d"
+          },
+          "137": {
+            "tokenAddress": "0x193f4A4a6ea24102F49b931DEeeb931f6E32405d"
+          },
+          "42161": {
+            "tokenAddress": "0x193f4A4a6ea24102F49b931DEeeb931f6E32405d"
+          },
+          "43114": {
+            "tokenAddress": "0xed667dC80a45b77305Cc395DB56D997597Dc6DdD"
+          }
+        },
+        "feeInfo": {
+          "1": {
+            "minDstGas": 200000
+          },
+          "56": {
+            "minDstGas": 200000
+          },
+          "137": {
+            "minDstGas": 200000
+          },
+          "42161": {
+            "minDstGas": 2000000
+          },
+          "43114": {
+            "minDstGas": 200000
+          }
+        }
+      },
+      "isAcross": false,
+      "isOFT": true,
+      "oftAdapter": "0x7252c865c05378ffc15120f428dd65804dd0ce63",
+      "oftVersion": 2,
+      "endpointVersion": 1,
+      "endpointId": 184,
+      "oftSharedDecimals": 4
     },
     {
       "chainId": 8453,
@@ -37788,6 +37902,9 @@
           "137": {
             "tokenAddress": "0x193f4A4a6ea24102F49b931DEeeb931f6E32405d"
           },
+          "8453": {
+            "tokenAddress": "0x7252c865c05378Ffc15120F428dd65804dD0CE63"
+          },
           "42161": {
             "tokenAddress": "0x193f4A4a6ea24102F49b931DEeeb931f6E32405d"
           }
@@ -37801,6 +37918,9 @@
           },
           "137": {
             "minDstGas": 100000
+          },
+          "8453": {
+            "minDstGas": 200000
           },
           "42161": {
             "minDstGas": 2000000
@@ -37900,7 +38020,7 @@
       },
       "isAcross": false,
       "isOFT": true,
-      "oftAdapter": "0xfc87D55bC8bF441AbfC24D04B2068a8f77BcFcC0",
+      "oftAdapter": "0xfc87d55bc8bf441abfc24d04b2068a8f77bcfcc0",
       "oftVersion": 3,
       "endpointVersion": 2,
       "endpointId": 30106,
@@ -39579,6 +39699,9 @@
           "137": {
             "tokenAddress": "0x193f4A4a6ea24102F49b931DEeeb931f6E32405d"
           },
+          "8453": {
+            "tokenAddress": "0x7252c865c05378Ffc15120F428dd65804dD0CE63"
+          },
           "43114": {
             "tokenAddress": "0xed667dC80a45b77305Cc395DB56D997597Dc6DdD"
           }
@@ -39592,6 +39715,9 @@
           },
           "137": {
             "minDstGas": 100000
+          },
+          "8453": {
+            "minDstGas": 200000
           },
           "43114": {
             "minDstGas": 100000
