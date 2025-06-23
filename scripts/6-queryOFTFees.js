@@ -323,9 +323,11 @@ async function main() {
       delete token.extensions.peersInfo
       delete token.isOFT
       delete token.oftAdapter
+      delete token.oftSharedDecimals
       delete token.oftVersion
       delete token.endpointVersion
       delete token.endpointId
+      delete token.isBridgeable
     }
     if (token?.extensions?.feeInfo && Object.keys(token.extensions.feeInfo).length === 0) {
       delete token.extensions.feeInfo

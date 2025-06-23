@@ -1,6 +1,7 @@
 // mergeUniswapLists.js
 // Hardcoded input files array—no CLI args needed.
 
+const { SupportedChainId } = require('maia-core-sdk')
 const { orderTokens } = require('./orderTokens')
 const fs = require('fs').promises
 const path = require('path')
@@ -46,6 +47,7 @@ async function main() {
       const tokens = Array.isArray(list.tokens) ? list.tokens : Array.isArray(list) ? list : []
 
       for (const token of tokens) {
+        if (!Object.values(SupportedChainId).includes(token.chainId)) continue // Skip unsupported chain 
         const key = `${token.chainId}_${token.address.toLowerCase()}`
         if (!mergedMap.has(key)) {
           mergedMap.set(key, { ...token }) // clone to avoid mutating original

@@ -2,6 +2,7 @@ const fs = require('fs').promises
 const path = require('path')
 const { getCoinLogo } = require('./getCoinLogo')
 const { orderTokens } = require('./orderTokens')
+const { OVERRIDE_LOGO } = require('../constants')
 
 // TODO: Add arbitrary Uniswap Token List support
 
@@ -166,7 +167,7 @@ function normalizeStargateToken(token) {
     name: token.name,
     decimals: token.decimals,
     symbol: token.symbol,
-    logoURI: token.icon ?? null,
+    logoURI: token.icon ?? OVERRIDE_LOGO[token.symbol] ?? null,
     tags: [],
     extensions: token.extensions ? token.extensions : {},
     isAcross: false,

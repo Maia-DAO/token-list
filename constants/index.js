@@ -143,6 +143,18 @@ const OVERRIDE_PEG = {
   'USD₮0': { chainName: 'arbitrum', address: '0xfd086bc7cd5c481dcc9c85ebe478a1c0b69fcbb9' },
 }
 
+const OVERRIDE_LOGO = {
+  'REUNI': 'https://s2.coinmarketcap.com/static/img/coins/128x128/23996.png',
+  'sUSDa': 'https://s2.coinmarketcap.com/static/img/coins/128x128/35538.png',
+  'UNB': 'https://s2.coinmarketcap.com/static/img/coins/128x128/7846.png',
+  'BAI': 'https://s2.coinmarketcap.com/static/img/coins/128x128/28503.png',
+  'USBD': 'https://s2.coinmarketcap.com/static/img/coins/128x128/36149.png',
+  'IRL': 'https://s2.coinmarketcap.com/static/img/coins/128x128/20858.png',
+  'LYM': 'https://s2.coinmarketcap.com/static/img/coins/128x128/2554.png',
+  
+
+}
+
 const ERC20_MINIMAL_ABI = [
   'function name() view returns (string)',
   'function symbol() view returns (string)',
@@ -262,6 +274,7 @@ module.exports = {
   EID_TO_VERSION,
   SUPPORTED_CHAINS,
   OVERRIDE_PEG,
+  OVERRIDE_LOGO,
   OAPP_ABI,
   OFT_V3_ABI,
   OFT_V2_ABI,
