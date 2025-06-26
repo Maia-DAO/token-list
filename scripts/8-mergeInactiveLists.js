@@ -67,6 +67,15 @@ async function main() {
       process.exit(1)
     }
 
+    // Move tokens without logos to the inactive list
+    const tokensWithoutLogo = existingList.tokens.filter((token) => !token.logoURI || token.logoURI === '')
+    const rootTokensWithoutLogo = existingList.rootTokens.filter((token) => !token.logoURI || token.logoURI === '')
+    const allTokens = mergedTokens.concat(tokensWithoutLogo).concat(rootTokensWithoutLogo) 
+
+    // Delete tokens without logos from the main list
+    existingList.tokens = existingList.tokens.filter((token) => token.logoURI && token.logoURI !== '')
+    existingList.rootTokens = existingList.rootTokens.filter((token) => token.logoURI && token.logoURI !== '')
+
     const existingMap = new Map(
       (existingList.tokens || [])
         .filter((t) => typeof t.address === 'string' && t.address.length > 0)
@@ -74,7 +83,7 @@ async function main() {
     )
 
     // Copy over extensions, isAcross, isOFT
-    const finalTokens = mergedTokens
+    const finalTokens = allTokens
       .reduce((memo, token) => {
         const key = `${token.chainId}_${token.address.toLowerCase()}`
         const existing = existingMap.get(key)
@@ -82,8 +91,8 @@ async function main() {
           memo.push({
             ...token,
             extensions: token.extensions || {},
-            isAcross: false,
-            isOFT: false,
+            isAcross: token.isAcross,
+            isOFT: token.isOFT,
           })
         }
         return memo
@@ -134,6 +143,9 @@ async function main() {
 
     await fs.writeFile('inactive-token-list.json', JSON.stringify(finalInactiveOutput, null, 2))
     console.log(`✅  inactive-token-list.json written with ${finalTokens.length} tokens`)
+
+    await fs.writeFile('token-list.json', JSON.stringify(existingList, null, 2))
+    console.log(`✅  removed tokens without logos from token-list.json`)
   } catch (err) {
     console.error('❌  Error merging inactive tokens:', err.message)
   }

@@ -312,13 +312,15 @@ async function main() {
 
   // Remove empty extensions.feeInfo and extensions.bridgeInfo
   for (const token of enhanced) {
-    if (token.oftAdapter) token.oftAdapter = ethers.getAddress(token.oftAdapter) 
+    if (token.oftAdapter) token.oftAdapter = ethers.getAddress(token.oftAdapter)
 
-    if (token?.extensions && Object.keys(token.extensions).length === 0) {
-      delete token.extensions
-    }
-    if (token?.extensions?.peersInfo && Object.keys(token.extensions.peersInfo).length === 0) {
-      delete token.extensions.peersInfo
+    const noPeers =
+      !token.extensions?.peersInfo ||
+      Object.keys(token.extensions.peersInfo).length === 0
+
+    if (noPeers) {
+      if (token.extensions) delete token.extensions.peersInfo
+      
       delete token.isOFT
       delete token.oftAdapter
       delete token.oftSharedDecimals
@@ -327,11 +329,25 @@ async function main() {
       delete token.endpointId
       delete token.isBridgeable
     }
+
+    if (!token.extensions || Object.keys(token.extensions).length === 0) {
+      delete token.extensions
+    }
     if (token?.extensions?.feeInfo && Object.keys(token.extensions.feeInfo).length === 0) {
       delete token.extensions.feeInfo
     }
     if (token?.extensions?.bridgeInfo && Object.keys(token.extensions.bridgeInfo).length === 0) {
       delete token.extensions.bridgeInfo
+    }
+    if (!token.icon || !token.extensions?.coingeckoId || !token.extensions?.coinMarketCapId) {
+      for (const peer of enhanced) {
+        if (peer.name !== token.name) continue
+        // if found, copy over the missing properties
+        token.extensions = token.extensions || {}
+        if (!token.icon && peer.icon) token.icon = peer.icon
+        if (peer.extensions?.coingeckoId && !token.extensions.coingeckoId) token.extensions.coingeckoId = peer.extensions.coingeckoId
+        if (peer.extensions?.coinMarketCapId && !token.extensions.coinMarketCapId) token.extensions.coinMarketCapId = peer.extensions.coinMarketCapId
+      }
     }
   }
 

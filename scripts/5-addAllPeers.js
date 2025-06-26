@@ -41,7 +41,7 @@ async function main() {
 
     // Group toProcess by chainKey
     const byChain = toProcess.reduce((acc, t) => {
-      ;(acc[t.chainKey] = acc[t.chainKey] || []).push(t)
+      ; (acc[t.chainKey] = acc[t.chainKey] || []).push(t)
       return acc
     }, {})
 
@@ -461,20 +461,18 @@ async function main() {
   }
 
   // TODO: Add Bridge Info Population loop where we find main token by peer amount and chain priority (TVL ranking) with easy overrides for off-cases
-  // For each peersInfo token address find a matching token address in the tokens array that has that token address as oftAdapter and same chainId
+  // For each peersInfo token address find a matching token address in the tokens array that has that token address as oftAdapter and same chainId and so we can populate the peersInfo tokenAddress with the token address
   for (const t of finalTokens) {
     if (!t.extensions || !t.extensions.peersInfo) continue
 
     const needsIcon = !(t?.icon && t?.icon?.length > 0)
     let needsBridgeInfo = !t?.extensions?.bridgeInfo || Object.keys(t?.extensions?.bridgeInfo || {}).length === 0
-
-    if (needsBridgeInfo && Object.keys(t?.extensions?.peersInfo || {}).length === 1) {
-      t.extensions.bridgeInfo = t.extensions.peersInfo
-      needsBridgeInfo = false
-    }
+    let needsCoingeckoId = !t?.extensions?.coingeckoId
+    let needsCoinMarketCapId = !t?.extensions?.coinMarketCapId
 
     for (const [chainId, peerInfo] of Object.entries(t.extensions.peersInfo)) {
       const peerAddress = peerInfo.tokenAddress
+
       const matchingToken = tokens.find(
         (token) => token.chainId === parseInt(chainId) && token.oftAdapter.toLowerCase() === peerAddress.toLowerCase()
       )
@@ -485,7 +483,13 @@ async function main() {
           `✅ Found matching token for ${peerAddress} on chain ${chainId}: ${matchingToken.name} (${matchingToken.symbol} new address: ${matchingToken.address})`
         )
 
+        if (needsBridgeInfo && Object.keys(t?.extensions?.peersInfo || {}).length === 1) {
+          t.extensions.bridgeInfo = t.extensions.peersInfo
+          needsBridgeInfo = false
+        }
+
         if (needsIcon && matchingToken?.icon && matchingToken?.icon?.length > 0) t.icon = matchingToken.icon
+
         if (
           needsBridgeInfo &&
           matchingToken?.extensions?.bridgeInfo &&
@@ -493,6 +497,16 @@ async function main() {
         ) {
           t.extensions.bridgeInfo = matchingToken.extensions.bridgeInfo
           needsBridgeInfo = false
+        }
+
+        if (needsCoingeckoId && matchingToken?.extensions?.coingeckoId) {
+          t.extensions.coingeckoId = matchingToken.extensions.coingeckoId
+          needsCoingeckoId = false
+        }
+
+        if (needsCoinMarketCapId && matchingToken?.extensions?.coinMarketCapId) {
+          t.extensions.coinMarketCapId = matchingToken.extensions.coinMarketCapId
+          needsCoinMarketCapId = false
         }
       } else {
         console.warn(

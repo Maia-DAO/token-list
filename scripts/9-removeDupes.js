@@ -139,6 +139,10 @@ function dedupeAndMerge(arr) {
     // ensure we only push each merged token once
     const uniqueId = `${address}_${merged.chainId}`
     if (!seen.has(uniqueId)) {
+      if (group.length > 1) {
+        console.log("= Duplicate Group:", group)
+        console.log("=== Group merge result:", merged)
+      }
       result.push(merged)
       seen.add(uniqueId)
     }

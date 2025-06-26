@@ -127,7 +127,7 @@ async function normalizeAcrossToken(data) {
       name: data.name,
       decimals: data.decimals,
       symbol: data.symbol,
-      logoURI: (await getCoinLogo(data.coingeckoId)) || null,
+      logoURI: (await getCoinLogo(address, chainId, data.coingeckoId, undefined)) ?? null,
       tags: [],
       extensions: {
         acrossInfo: Object.entries(data.addresses).reduce((memo, [chain, value]) => {
@@ -160,14 +160,19 @@ async function normalizeAcrossToken(data) {
  *
  * Produces one token entry in the new unified format.
  */
-function normalizeStargateToken(token) {
+async function normalizeStargateToken(token) {
+  const fallbackLogoTokenAddress = token?.extensions?.bridgeInfo && token.extensions.bridgeInfo.length === 1 ? Array.from(token.extensions.bridgeInfo.values())[0] : undefined
+  let tokenLogoURI = token.icon ?? OVERRIDE_LOGO[token.symbol]
+  if (!tokenLogoURI) tokenLogoURI = await getCoinLogo(token.address, token.chainId, token.extensions?.coingeckoId, token.extensions?.coinMarketCapId)
+  if (!tokenLogoURI && fallbackLogoTokenAddress) tokenLogoURI = await getCoinLogo(fallbackLogoTokenAddress, token.chainId, undefined, undefined)
+
   const result = {
     chainId: token.chainId,
     address: token.address,
     name: token.name,
     decimals: token.decimals,
     symbol: token.symbol,
-    logoURI: token.icon ?? OVERRIDE_LOGO[token.symbol] ?? null,
+    logoURI: tokenLogoURI ?? null,
     tags: [],
     extensions: token.extensions ? token.extensions : {},
     isAcross: false,
@@ -193,6 +198,34 @@ function normalizeStargateToken(token) {
   if (token.oftSharedDecimals) {
     result.oftSharedDecimals = token.oftSharedDecimals
   }
+
+  // token.extensions = token.extensions || {};
+  // token.extensions.oftInfo = token.extensions.oftInfo || {};
+
+  // if (token.extensions.peersInfo) {
+  //   token.extensions.oftInfo.peersInfo = token.extensions.peersInfo;
+  //   delete token.extensions.peersInfo;
+  // }
+
+  // if (token.oftAdapter) {
+  //   token.extensions.oftInfo.oftAdapter = token.oftAdapter;
+  // }
+
+  // if (token.oftVersion) {
+  //   token.extensions.oftInfo.oftVersion = token.oftVersion;
+  // }
+
+  // if (token.endpointVersion) {
+  //   token.extensions.oftInfo.endpointVersion = token.endpointVersion;
+  // }
+
+  // if (token.endpointId) {
+  //   token.extensions.oftInfo.endpointId = token.endpointId;
+  // }
+
+  // if (token.oftSharedDecimals) {
+  //   token.extensions.oftInfo.oftSharedDecimals = token.oftSharedDecimals;
+  // }
 
   return [result]
 }
@@ -261,7 +294,7 @@ async function main() {
       const tokenData = acrossData[symbol]
       const normalizedArray = await normalizeAcrossToken(tokenData, normalizedMap, rootTokensMap)
       normalizedArray.forEach((token) => {
-        if (!token.logoURI) return
+        if (!token.logoURI) delete token.logoURI // Remove empty logoURIs
         if (token.chainId === 42161) {
           // Merge into rootTokensMap.
           const rootKey = token.address.toLowerCase()
@@ -279,10 +312,10 @@ async function main() {
     }
 
     // Process Stargate tokens.
-    stargateTokens.forEach((token) => {
-      const normalizedArray = normalizeStargateToken(token)
+    for (const token of stargateTokens) {
+      const normalizedArray = await normalizeStargateToken(token)
       normalizedArray.forEach((token) => {
-        if (!token.logoURI) return
+        if (!token.logoURI) delete token.logoURI // Remove empty logoURIs
         if (token.chainId === 42161) {
           const rootKey = token.address.toLowerCase()
           if (!rootTokensMap[rootKey]) {
@@ -299,12 +332,12 @@ async function main() {
           }
         }
       })
-    })
+    }
 
     // 2. Incorporate Uniswap tokens and Ulysses Root Tokens.
     if (Array.isArray(uniswapTokens) && ulyssesData.rootTokens && Array.isArray(ulyssesData.rootTokens)) {
       uniswapTokens.concat(ulyssesData.rootTokens).forEach((token) => {
-        if (!token.logoURI) return
+        if (!token.logoURI) delete token.logoURI // Remove empty logoURIs
         // Default flags if undefined.
         if (typeof token.isAcross === 'undefined') token.isAcross = false
         if (typeof token.isOFT === 'undefined') token.isOFT = false
@@ -331,7 +364,7 @@ async function main() {
     // 3. Incorporate Ulysses tokens.
     if (ulyssesData.tokens && Array.isArray(ulyssesData.tokens)) {
       ulyssesData.tokens.forEach((token) => {
-        if (!token.logoURI) return
+        if (!token.logoURI) delete token.logoURI // Remove empty logoURIs
         const key = token.underlyingAddress.toLowerCase() + '_' + token.chainId
         if (normalizedMap[key]) {
           const existing = normalizedMap[key]
