@@ -1,5 +1,5 @@
-#!/usr/bin/env node
 const fs = require('fs')
+const { mergeExtensions } = require('../helpers')
 
 // ── Utilities ───────────────────────────────────────────────────────────────────
 
@@ -56,21 +56,6 @@ function orderAttributes(token) {
   })
 
   return ordered
-}
-
-function mergeExtensions(ext1 = {}, ext2 = {}) {
-  const merged = { ...ext1 }
-  for (const key in ext2) {
-    if (merged[key] && typeof merged[key] === 'object' && typeof ext2[key] === 'object') {
-      merged[key] = {
-        ...merged[key],
-        ...ext2[key],
-      }
-    } else {
-      merged[key] = ext2[key]
-    }
-  }
-  return merged
 }
 
 // Count how “populated” a token is (number of non-null, non-empty fields)

@@ -25,7 +25,7 @@ async function fetchList(url, name) {
 /**
  * Main function to fetch token lists and write across mapping.
  */
-;(async () => {
+(async () => {
   // Active Lists
   await fetchList('https://stargate.finance/api/tokens', 'stargate')
   await fetchList(process.env.STARGATE_API, 'ofts')

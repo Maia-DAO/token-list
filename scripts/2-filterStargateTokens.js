@@ -1,5 +1,5 @@
 const fs = require('fs').promises
-const { CHAIN_KEY_TO_ID, SUPPORTED_CHAINS } = require('../constants')
+const { CHAIN_KEY_TO_ID, SUPPORTED_CHAINS } = require('../configs')
 
 async function filterStargateTokens() {
   try {

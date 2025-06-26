@@ -2,7 +2,8 @@ const fs = require('fs').promises
 const path = require('path')
 const { getCoinLogo } = require('./getCoinLogo')
 const { orderTokens } = require('./orderTokens')
-const { OVERRIDE_LOGO } = require('../constants')
+const { OVERRIDE_LOGO } = require('../configs')
+const { mergeExtensions, orderAttributes } = require('../helpers')
 
 // TODO: Add arbitrary Uniswap Token List support
 
@@ -44,60 +45,7 @@ function mergeTokenDataUlysses(existing, incoming) {
   return orderAttributes(merged)
 }
 
-// Function to order attributes consistently.
-function orderAttributes(token) {
-  const ordered = {}
-  const keysOrder = [
-    'chainId',
-    'address',
-    'globalAddress',
-    'localAddress',
-    'underlyingAddress',
-    'name',
-    'symbol',
-    'decimals',
-    'logoURI',
-    'tags',
-    'extensions',
-    'isAcross',
-    'isOFT',
-    'oftAdapter',
-    'oftVersion',
-    'endpointVersion',
-    'endpointId',
-    'oftSharedDecimals',
-  ]
 
-  keysOrder.forEach((key) => {
-    if (key in token) {
-      ordered[key] = token[key]
-    }
-  })
-
-  // Add any remaining keys that are not in the predefined order.
-  Object.keys(token).forEach((key) => {
-    if (!ordered.hasOwnProperty(key)) {
-      ordered[key] = token[key]
-    }
-  })
-
-  return ordered
-}
-
-function mergeExtensions(ext1 = {}, ext2 = {}) {
-  const merged = { ...ext1 }
-  for (const key in ext2) {
-    if (merged[key] && typeof merged[key] === 'object' && typeof ext2[key] === 'object') {
-      merged[key] = {
-        ...merged[key],
-        ...ext2[key],
-      }
-    } else {
-      merged[key] = ext2[key]
-    }
-  }
-  return merged
-}
 
 /**
  * Normalize a token from the across list.
@@ -179,53 +127,35 @@ async function normalizeStargateToken(token) {
     isOFT: token.isOFT, // not all tokens in stargate list are OFT
   }
 
-  if (token.oftAdapter) {
-    result.oftAdapter = token.oftAdapter
+  if (token.isOFT) {
+    token.extensions = token.extensions || {}
+    token.extensions.oftInfo = token.extensions.oftInfo || {}
+
+    if (token.extensions.peersInfo) {
+      token.extensions.oftInfo.peersInfo = token.extensions.peersInfo
+      delete token.extensions.peersInfo
+    }
+
+    if (token.oftAdapter) {
+      token.extensions.oftInfo.oftAdapter = token.oftAdapter
+    }
+
+    if (token.oftVersion) {
+      token.extensions.oftInfo.oftVersion = token.oftVersion
+    }
+
+    if (token.endpointVersion) {
+      token.extensions.oftInfo.endpointVersion = token.endpointVersion
+    }
+
+    if (token.endpointId) {
+      token.extensions.oftInfo.endpointId = token.endpointId
+    }
+
+    if (token.oftSharedDecimals) {
+      token.extensions.oftInfo.oftSharedDecimals = token.oftSharedDecimals
+    }
   }
-
-  if (token.oftVersion) {
-    result.oftVersion = token.oftVersion
-  }
-
-  if (token.endpointVersion) {
-    result.endpointVersion = token.endpointVersion
-  }
-
-  if (token.endpointId) {
-    result.endpointId = token.endpointId
-  }
-
-  if (token.oftSharedDecimals) {
-    result.oftSharedDecimals = token.oftSharedDecimals
-  }
-
-  // token.extensions = token.extensions || {};
-  // token.extensions.oftInfo = token.extensions.oftInfo || {};
-
-  // if (token.extensions.peersInfo) {
-  //   token.extensions.oftInfo.peersInfo = token.extensions.peersInfo;
-  //   delete token.extensions.peersInfo;
-  // }
-
-  // if (token.oftAdapter) {
-  //   token.extensions.oftInfo.oftAdapter = token.oftAdapter;
-  // }
-
-  // if (token.oftVersion) {
-  //   token.extensions.oftInfo.oftVersion = token.oftVersion;
-  // }
-
-  // if (token.endpointVersion) {
-  //   token.extensions.oftInfo.endpointVersion = token.endpointVersion;
-  // }
-
-  // if (token.endpointId) {
-  //   token.extensions.oftInfo.endpointId = token.endpointId;
-  // }
-
-  // if (token.oftSharedDecimals) {
-  //   token.extensions.oftInfo.oftSharedDecimals = token.oftSharedDecimals;
-  // }
 
   return [result]
 }

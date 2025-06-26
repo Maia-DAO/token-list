@@ -1,14 +1,25 @@
-const fs = require('fs')
-const { ethers } = require('ethers')
-
 const {
   networkToEndpointId,
   chainAndStageToNetwork,
-  endpointIdToVersion,
   EndpointVersion,
-  EndpointId,
   Stage,
 } = require('@layerzerolabs/lz-definitions')
+
+// Override OFT Metadata Pegged To Info
+const OVERRIDE_PEG = {
+  'USD₮0': { chainName: 'arbitrum', address: '0xfd086bc7cd5c481dcc9c85ebe478a1c0b69fcbb9' },
+}
+
+// Override logos for specific tokens
+const OVERRIDE_LOGO = {
+  'REUNI': 'https://s2.coinmarketcap.com/static/img/coins/128x128/23996.png',
+  'sUSDa': 'https://s2.coinmarketcap.com/static/img/coins/128x128/35538.png',
+  'UNB': 'https://s2.coinmarketcap.com/static/img/coins/128x128/7846.png',
+  'BAI': 'https://s2.coinmarketcap.com/static/img/coins/128x128/28503.png',
+  'USBD': 'https://s2.coinmarketcap.com/static/img/coins/128x128/36149.png',
+  'IRL': 'https://s2.coinmarketcap.com/static/img/coins/128x128/20858.png',
+  'LYM': 'https://s2.coinmarketcap.com/static/img/coins/128x128/2554.png',
+}
 
 // Supported chains List.
 const SUPPORTED_CHAINS = [
@@ -26,7 +37,7 @@ const SUPPORTED_CHAINS = [
   'fraxtal',
 ]
 
-// map chainId to key in ofts.json
+// Maps chainId to chainKey in ofts.json
 const CHAIN_KEYS = {
   1: 'ethereum',
   42161: 'arbitrum',
@@ -42,7 +53,7 @@ const CHAIN_KEYS = {
   252: 'fraxtal',
 }
 
-// Mapping of chain name to chain ID
+// Mapping of chainKey to chain ID
 const CHAIN_KEY_TO_ID = {
   ethereum: 1,
   arbitrum: 42161,
@@ -138,135 +149,6 @@ const EID_TO_VERSION = {
   [networkToEndpointId(chainAndStageToNetwork('fraxtal', Stage.MAINNET), EndpointVersion.V2)]: 2,
 }
 
-// Override Stargate Peg
-const OVERRIDE_PEG = {
-  'USD₮0': { chainName: 'arbitrum', address: '0xfd086bc7cd5c481dcc9c85ebe478a1c0b69fcbb9' },
-}
-
-const OVERRIDE_LOGO = {
-  'REUNI': 'https://s2.coinmarketcap.com/static/img/coins/128x128/23996.png',
-  'sUSDa': 'https://s2.coinmarketcap.com/static/img/coins/128x128/35538.png',
-  'UNB': 'https://s2.coinmarketcap.com/static/img/coins/128x128/7846.png',
-  'BAI': 'https://s2.coinmarketcap.com/static/img/coins/128x128/28503.png',
-  'USBD': 'https://s2.coinmarketcap.com/static/img/coins/128x128/36149.png',
-  'IRL': 'https://s2.coinmarketcap.com/static/img/coins/128x128/20858.png',
-  'LYM': 'https://s2.coinmarketcap.com/static/img/coins/128x128/2554.png',
-  
-
-}
-
-const ERC20_MINIMAL_ABI = [
-  'function name() view returns (string)',
-  'function symbol() view returns (string)',
-  'function decimals() view returns (uint8)',
-]
-
-const OAPP_ABI = ['function endpoint() view returns (address)', 'function lzEndpoint() view returns (address)']
-
-const OFT_V3_ABI = [
-  'function send((uint32 dstChainId,bytes32 to,uint256 amountLD,uint256 minAmountLD,bytes extraOptions,bytes composeMsg,bytes oftCmd),(uint256 nativeFee,uint256 lzTokenFee),address refundAddress) payable returns ((bytes32 guid,uint64 nonce,(uint256 nativeFee,uint256 lzTokenFee)),(uint256 amountSentLD,uint256 amountReceivedLD))',
-  'function quoteOFT((uint32,bytes32,uint256,uint256,bytes,bytes,bytes)) view returns ((uint256 nativeFee,uint256 lzTokenFee),(int256,string)[],(uint256 sent,uint256 received))',
-  'function sharedDecimals() view returns (uint8)',
-  'function peers(uint32) view returns (bytes32)',
-]
-const OFT_V2_ABI = [
-  'function sendFrom(address from,uint16 dstChainId,bytes32 toAddress,uint256 amount,(address payable refundAddress,address zroPaymentAddress,bytes adapterParams)) payable',
-  'function quoteOFTFee(uint16 dstChainId,uint256 amount) view returns (uint256 fee)',
-  'function sharedDecimals() view returns (uint8)',
-  'function getTrustedRemoteAddress(uint16) view returns (bytes)',
-]
-
-const OFT_V1_ABI = [
-  'function sendFrom(address from,uint16 dstChainId,bytes toAddress,uint256 amount,address payable refundAddress,address zroPaymentAddress,bytes adapterParams) payable',
-]
-
-const MULTICALL3_ABI = [
-  'function tryAggregate(bool requireSuccess, tuple(address target, bytes callData)[] calls) view returns (tuple(bool,bytes)[])',
-]
-
-const MULTICALL3_ADDRESS = '0xcA11bde05977b3631167028862bE2a173976CA11'
-
-function mergeExtensions(ext1 = {}, ext2 = {}) {
-  const merged = { ...ext1 }
-  for (const key in ext2) {
-    if (merged[key] && typeof merged[key] === 'object' && typeof ext2[key] === 'object') {
-      merged[key] = { ...merged[key], ...ext2[key] }
-    } else {
-      merged[key] = ext2[key]
-    }
-  }
-  return merged
-}
-
-// TODO: Update once non-EVM chains are supported
-function cleanAddress(input) {
-  if (typeof input !== 'string') return undefined
-  const trimmed = input.trim().toLowerCase()
-  return /^0x[0-9a-f]{40}$/.test(trimmed) ? trimmed : undefined
-}
-
-async function multiCallWithFallback(chainKey, calls, batchSize = undefined, delayMs = 250) {
-  const chainsMeta = JSON.parse(fs.readFileSync('output/ofts.json', 'utf8'))
-
-  // Build mappings / lookups
-  const rpcUrls = {}
-  for (const [chainKey, meta] of Object.entries(chainsMeta)) {
-    if (Array.isArray(meta.rpcs) && meta.rpcs.length) rpcUrls[chainKey] = meta.rpcs.map((rpc) => rpc.url)
-  }
-
-  // Fetch missing RPC URLs
-  const allChains = await fetch('https://chainid.network/chains.json').then((r) => r.json())
-  // build a map: chainId → all RPC URLs
-  const extraRpcMap = Object.fromEntries(allChains.map((c) => [c.chainId, c.rpc]))
-
-  // build RPC list
-  const rpcList = []
-  if (rpcUrls[chainKey]) rpcList.push(...rpcUrls[chainKey])
-  const extra = extraRpcMap[CHAIN_KEY_TO_ID[chainKey]]
-  if (extra) rpcList.push(...extra)
-  if (!rpcList.length) throw new Error(`No RPC URLs available for chain ${chainKey}`)
-
-  const BATCH = batchSize || calls.length
-
-  for (const rpcUrl of rpcList) {
-    let provider
-    try {
-      provider = new ethers.JsonRpcProvider(rpcUrl, null, {
-        skipFetchSetup: true,
-        batchMaxCount: 1,
-      })
-      const mc = new ethers.Contract(MULTICALL3_ADDRESS, MULTICALL3_ABI, provider)
-      const returnData = []
-
-      let failedCalls = 0
-
-      for (let i = 0; i < calls.length; i += BATCH) {
-        const slice = calls.slice(i, i + BATCH).map((c) => ({ target: c.target, callData: c.callData }))
-        const results = await mc.tryAggregate(false, slice)
-        for (const [success, data] of results) {
-          if (!success) failedCalls++
-          returnData.push(data)
-        }
-        if (i + BATCH < calls.length) await new Promise((r) => setTimeout(r, delayMs))
-      }
-
-      console.warn(`${failedCalls} of ${calls.length} Multicall sub-calls failed on ${chainKey}`)
-      return returnData
-    } catch (err) {
-      console.warn(`RPC ${rpcUrl} failed for chain ${chainKey}: ${err.message}`)
-      // try next rpcUrl
-    } finally {
-      if (provider && typeof provider.destroy === 'function') {
-        try {
-          provider.destroy()
-        } catch {}
-      }
-    }
-  }
-
-  throw new Error(`All RPC endpoints failed for chain ${chainKey}`)
-}
-
 module.exports = {
   CHAIN_KEYS,
   CHAIN_KEY_TO_ID,
@@ -274,15 +156,5 @@ module.exports = {
   EID_TO_VERSION,
   SUPPORTED_CHAINS,
   OVERRIDE_PEG,
-  OVERRIDE_LOGO,
-  OAPP_ABI,
-  OFT_V3_ABI,
-  OFT_V2_ABI,
-  OFT_V1_ABI,
-  MULTICALL3_ABI,
-  MULTICALL3_ADDRESS,
-  multiCallWithFallback,
-  ERC20_MINIMAL_ABI,
-  mergeExtensions,
-  cleanAddress,
+  OVERRIDE_LOGO
 }

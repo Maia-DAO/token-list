@@ -1,10 +1,7 @@
-// mergeUniswapLists.js
-// Hardcoded input files array—no CLI args needed.
-
-const { SupportedChainId } = require('maia-core-sdk')
-const { orderTokens } = require('./orderTokens')
 const fs = require('fs').promises
 const path = require('path')
+const { SupportedChainId } = require('maia-core-sdk')
+const { orderTokens } = require('./orderTokens')
 
 /**
  * Bumps version by incrementing the patch version.
@@ -70,7 +67,7 @@ async function main() {
     // Move tokens without logos to the inactive list
     const tokensWithoutLogo = existingList.tokens.filter((token) => !token.logoURI || token.logoURI === '')
     const rootTokensWithoutLogo = existingList.rootTokens.filter((token) => !token.logoURI || token.logoURI === '')
-    const allTokens = mergedTokens.concat(tokensWithoutLogo).concat(rootTokensWithoutLogo) 
+    const allTokens = mergedTokens.concat(tokensWithoutLogo).concat(rootTokensWithoutLogo)
 
     // Delete tokens without logos from the main list
     existingList.tokens = existingList.tokens.filter((token) => token.logoURI && token.logoURI !== '')

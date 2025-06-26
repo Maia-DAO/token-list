@@ -63,7 +63,7 @@ async function fetchWithRetry(url, options = {}, retries = 3, delayMs = 2000) {
 async function getCoinLogo(address, chainId, coingeckoId, coinmarketcapId) {
   const key = `${chainId}:${address}`
   if (cache[key]) return cache[key]
-  
+
   // 1) Uniswap assets
   const uniNetworkMap = {
     1: 'ethereum',

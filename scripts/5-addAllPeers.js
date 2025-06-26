@@ -1,18 +1,10 @@
 const fs = require('fs')
 const path = require('path')
 const { ethers } = require('ethers')
-
-const {
-  OFT_V3_ABI,
-  OFT_V2_ABI,
-  ERC20_MINIMAL_ABI,
-  SUPPORTED_CHAINS,
-  CHAIN_KEY_TO_ID,
-  EID_TO_VERSION,
-  CHAIN_KEY_TO_EID,
-  multiCallWithFallback,
-} = require('../constants')
 const { ZERO_ADDRESS } = require('maia-core-sdk')
+const { multiCallWithFallback } = require('../helpers')
+const { OFT_V3_ABI, OFT_V2_ABI, ERC20_MINIMAL_ABI } = require('../abi')
+const { SUPPORTED_CHAINS, CHAIN_KEY_TO_ID, EID_TO_VERSION, CHAIN_KEY_TO_EID } = require('../configs')
 
 async function main() {
   // ─── A) Load initial tokens from usableStargateTokens.json ─────────────────────────

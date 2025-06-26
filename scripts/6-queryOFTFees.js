@@ -1,8 +1,8 @@
 require('dotenv').config()
 const fs = require('fs')
 const { ethers } = require('ethers')
-
-const { OAPP_ABI, OFT_V3_ABI, OFT_V2_ABI, multiCallWithFallback } = require('../constants')
+const { multiCallWithFallback } = require('../helpers')
+const { OAPP_ABI, OFT_V3_ABI, OFT_V2_ABI } = require('../abi')
 
 const TOKENS_FILE = 'output/usableStargateTokens.json'
 const OUT_FILE = 'output/usableStargateTokensEnhanced.json'
@@ -320,7 +320,7 @@ async function main() {
 
     if (noPeers) {
       if (token.extensions) delete token.extensions.peersInfo
-      
+
       delete token.isOFT
       delete token.oftAdapter
       delete token.oftSharedDecimals

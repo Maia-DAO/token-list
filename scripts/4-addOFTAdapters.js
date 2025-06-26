@@ -1,15 +1,8 @@
-const fs = require('fs')
-const {
-  CHAIN_KEY_TO_ID,
-  CHAIN_KEY_TO_EID,
-  SUPPORTED_CHAINS,
-  CHAIN_KEYS,
-  OVERRIDE_PEG,
-  mergeExtensions,
-  cleanAddress,
-} = require('../constants')
-const { ZERO_ADDRESS } = require('maia-core-sdk')
 const { ethers } = require('ethers')
+const fs = require('fs')
+const { ZERO_ADDRESS } = require('maia-core-sdk')
+const { CHAIN_KEY_TO_ID, CHAIN_KEY_TO_EID, SUPPORTED_CHAINS, OVERRIDE_PEG } = require('../configs')
+const { mergeExtensions, cleanAddress } = require('../helpers')
 
 async function main() {
   // Load baseline and OFT data
