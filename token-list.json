@@ -1,8 +1,8 @@
 {
   "name": "Hermes Omnichain Token List",
-  "timestamp": "1750952397",
+  "timestamp": "1751026237",
   "version": {
-    "major": 109,
+    "major": 115,
     "minor": 0,
     "patch": 0
   },
@@ -6575,9 +6575,6 @@
         "bridgeInfo": {
           "56": {
             "tokenAddress": "0x80137510979822322193FC997d400D5A6C747bf7"
-          },
-          "80094": {
-            "tokenAddress": "0xEc901DA9c68E90798BbBb74c11406A32A70652C3"
           }
         },
         "oftInfo": {
@@ -10348,6 +10345,17 @@
       "logoURI": "https://raw.githubusercontent.com/Uniswap/assets/master/blockchains/ethereum/assets/0xC0c293ce456fF0ED870ADd98a0828Dd4d2903DBF/logo.png",
       "tags": [],
       "extensions": {
+        "bridgeInfo": {
+          "10": {
+            "tokenAddress": "0x1509706a6c66CA549ff0cB464de88231DDBe213B"
+          },
+          "137": {
+            "tokenAddress": "0x1509706a6c66CA549ff0cB464de88231DDBe213B"
+          },
+          "42161": {
+            "tokenAddress": "0x1509706a6c66CA549ff0cB464de88231DDBe213B"
+          }
+        },
         "feeInfo": {
           "10": {
             "minDstGas": 200000
@@ -10525,6 +10533,83 @@
           "endpointVersion": 2,
           "endpointId": 30101,
           "oftSharedDecimals": 8
+        }
+      },
+      "isAcross": false,
+      "isOFT": true
+    },
+    {
+      "chainId": 1,
+      "address": "0xCAcd6fd266aF91b8AeD52aCCc382b4e165586E29",
+      "name": "Frax USD",
+      "decimals": 18,
+      "symbol": "frxUSD",
+      "logoURI": "https://s2.coinmarketcap.com/static/img/coins/128x128/36039.png",
+      "tags": [],
+      "extensions": {
+        "coingeckoId": "frax-usd",
+        "coinMarketCapId": 36039,
+        "bridgeInfo": {
+          "10": {
+            "tokenAddress": "0x80Eede496655FB9047dd39d9f418d5483ED600df"
+          },
+          "56": {
+            "tokenAddress": "0x80Eede496655FB9047dd39d9f418d5483ED600df"
+          },
+          "137": {
+            "tokenAddress": "0x80Eede496655FB9047dd39d9f418d5483ED600df"
+          },
+          "146": {
+            "tokenAddress": "0x80Eede496655FB9047dd39d9f418d5483ED600df"
+          },
+          "252": {
+            "tokenAddress": "0xFc00000000000000000000000000000000000001"
+          },
+          "8453": {
+            "tokenAddress": "0xe5020A6d073a794B6E7f05678707dE47986Fb0b6"
+          },
+          "42161": {
+            "tokenAddress": "0x80Eede496655FB9047dd39d9f418d5483ED600df"
+          },
+          "43114": {
+            "tokenAddress": "0x80Eede496655FB9047dd39d9f418d5483ED600df"
+          },
+          "80094": {
+            "tokenAddress": "0x80Eede496655FB9047dd39d9f418d5483ED600df"
+          }
+        },
+        "oftInfo": {
+          "peersInfo": {
+            "10": {
+              "tokenAddress": "0x80Eede496655FB9047dd39d9f418d5483ED600df"
+            },
+            "56": {
+              "tokenAddress": "0x80Eede496655FB9047dd39d9f418d5483ED600df"
+            },
+            "137": {
+              "tokenAddress": "0x80Eede496655FB9047dd39d9f418d5483ED600df"
+            },
+            "146": {
+              "tokenAddress": "0x80Eede496655FB9047dd39d9f418d5483ED600df"
+            },
+            "252": {
+              "tokenAddress": "0xFc00000000000000000000000000000000000001"
+            },
+            "8453": {
+              "tokenAddress": "0xe5020A6d073a794B6E7f05678707dE47986Fb0b6"
+            },
+            "42161": {
+              "tokenAddress": "0x80Eede496655FB9047dd39d9f418d5483ED600df"
+            },
+            "43114": {
+              "tokenAddress": "0x80Eede496655FB9047dd39d9f418d5483ED600df"
+            }
+          },
+          "oftAdapter": "0x566a6442A5A6e9895B9dCA97cC7879D632c6e4B0",
+          "oftVersion": 3,
+          "endpointVersion": 2,
+          "endpointId": 30101,
+          "oftSharedDecimals": 6
         }
       },
       "isAcross": false,
@@ -12755,6 +12840,83 @@
     },
     {
       "chainId": 1,
+      "address": "0xcf62F905562626CfcDD2261162a51fd02Fc9c5b6",
+      "name": "Staked Frax USD",
+      "decimals": 18,
+      "symbol": "sfrxUSD",
+      "logoURI": "https://s2.coinmarketcap.com/static/img/coins/128x128/36038.png",
+      "tags": [],
+      "extensions": {
+        "coingeckoId": "staked-frax-usd",
+        "coinMarketCapId": 36038,
+        "bridgeInfo": {
+          "10": {
+            "tokenAddress": "0x5Bff88cA1442c2496f7E475E9e7786383Bc070c0"
+          },
+          "56": {
+            "tokenAddress": "0x5Bff88cA1442c2496f7E475E9e7786383Bc070c0"
+          },
+          "137": {
+            "tokenAddress": "0x5Bff88cA1442c2496f7E475E9e7786383Bc070c0"
+          },
+          "146": {
+            "tokenAddress": "0x5Bff88cA1442c2496f7E475E9e7786383Bc070c0"
+          },
+          "252": {
+            "tokenAddress": "0xfc00000000000000000000000000000000000008"
+          },
+          "8453": {
+            "tokenAddress": "0x91A3f8a8d7a881fBDfcfEcd7A2Dc92a46DCfa14e"
+          },
+          "42161": {
+            "tokenAddress": "0x5Bff88cA1442c2496f7E475E9e7786383Bc070c0"
+          },
+          "43114": {
+            "tokenAddress": "0x5Bff88cA1442c2496f7E475E9e7786383Bc070c0"
+          },
+          "80094": {
+            "tokenAddress": "0x5Bff88cA1442c2496f7E475E9e7786383Bc070c0"
+          }
+        },
+        "oftInfo": {
+          "peersInfo": {
+            "10": {
+              "tokenAddress": "0x5Bff88cA1442c2496f7E475E9e7786383Bc070c0"
+            },
+            "56": {
+              "tokenAddress": "0x5Bff88cA1442c2496f7E475E9e7786383Bc070c0"
+            },
+            "137": {
+              "tokenAddress": "0x5Bff88cA1442c2496f7E475E9e7786383Bc070c0"
+            },
+            "146": {
+              "tokenAddress": "0x5Bff88cA1442c2496f7E475E9e7786383Bc070c0"
+            },
+            "252": {
+              "tokenAddress": "0xfc00000000000000000000000000000000000008"
+            },
+            "8453": {
+              "tokenAddress": "0x91A3f8a8d7a881fBDfcfEcd7A2Dc92a46DCfa14e"
+            },
+            "42161": {
+              "tokenAddress": "0x5Bff88cA1442c2496f7E475E9e7786383Bc070c0"
+            },
+            "43114": {
+              "tokenAddress": "0x5Bff88cA1442c2496f7E475E9e7786383Bc070c0"
+            }
+          },
+          "oftAdapter": "0x7311CEA93ccf5f4F7b789eE31eBA5D9B9290E126",
+          "oftVersion": 3,
+          "endpointVersion": 2,
+          "endpointId": 30101,
+          "oftSharedDecimals": 6
+        }
+      },
+      "isAcross": false,
+      "isOFT": true
+    },
+    {
+      "chainId": 1,
       "name": "The Virtua Kolect",
       "symbol": "TVK",
       "logoURI": "https://assets.coingecko.com/coins/images/13330/thumb/virtua_original.png?1656043619",
@@ -14763,6 +14925,11 @@
       "logoURI": "https://assets.coingecko.com/coins/images/30973/standard/Ex_logo-white-blue_ring_288x.png?1696529812",
       "tags": [],
       "extensions": {
+        "bridgeInfo": {
+          "8453": {
+            "tokenAddress": "0x2dAD3a13ef0C6366220f989157009e501e7938F8"
+          }
+        },
         "coingeckoId": "extra-finance",
         "feeInfo": {
           "8453": {
@@ -15421,6 +15588,59 @@
     },
     {
       "chainId": 10,
+      "address": "0x5Bff88cA1442c2496f7E475E9e7786383Bc070c0",
+      "name": "Staked Frax USD",
+      "decimals": 18,
+      "symbol": "sfrxUSD",
+      "logoURI": "https://s2.coinmarketcap.com/static/img/coins/128x128/36038.png",
+      "tags": [],
+      "extensions": {
+        "coingeckoId": "staked-frax-usd",
+        "coinMarketCapId": 36038,
+        "bridgeInfo": {
+          "1": {
+            "tokenAddress": "0xcf62F905562626CfcDD2261162a51fd02Fc9c5b6"
+          }
+        },
+        "oftInfo": {
+          "peersInfo": {
+            "1": {
+              "tokenAddress": "0xcf62F905562626CfcDD2261162a51fd02Fc9c5b6"
+            },
+            "56": {
+              "tokenAddress": "0x5Bff88cA1442c2496f7E475E9e7786383Bc070c0"
+            },
+            "137": {
+              "tokenAddress": "0x5Bff88cA1442c2496f7E475E9e7786383Bc070c0"
+            },
+            "146": {
+              "tokenAddress": "0x5Bff88cA1442c2496f7E475E9e7786383Bc070c0"
+            },
+            "252": {
+              "tokenAddress": "0xfc00000000000000000000000000000000000008"
+            },
+            "8453": {
+              "tokenAddress": "0x91A3f8a8d7a881fBDfcfEcd7A2Dc92a46DCfa14e"
+            },
+            "42161": {
+              "tokenAddress": "0x5Bff88cA1442c2496f7E475E9e7786383Bc070c0"
+            },
+            "43114": {
+              "tokenAddress": "0x5Bff88cA1442c2496f7E475E9e7786383Bc070c0"
+            }
+          },
+          "oftAdapter": "0x5Bff88cA1442c2496f7E475E9e7786383Bc070c0",
+          "oftVersion": 3,
+          "endpointVersion": 2,
+          "endpointId": 30111,
+          "oftSharedDecimals": 6
+        }
+      },
+      "isAcross": false,
+      "isOFT": true
+    },
+    {
+      "chainId": 10,
       "address": "0x5D1942345D63562fD38d17C28Dcd22e7b3E9Cfb4",
       "name": "KIM",
       "decimals": 18,
@@ -15810,6 +16030,59 @@
           "oftVersion": 1,
           "endpointVersion": 1,
           "endpointId": 111
+        }
+      },
+      "isAcross": false,
+      "isOFT": true
+    },
+    {
+      "chainId": 10,
+      "address": "0x80Eede496655FB9047dd39d9f418d5483ED600df",
+      "name": "Frax USD",
+      "decimals": 18,
+      "symbol": "frxUSD",
+      "logoURI": "https://s2.coinmarketcap.com/static/img/coins/128x128/36039.png",
+      "tags": [],
+      "extensions": {
+        "coingeckoId": "frax-usd",
+        "coinMarketCapId": 36039,
+        "bridgeInfo": {
+          "1": {
+            "tokenAddress": "0xCAcd6fd266aF91b8AeD52aCCc382b4e165586E29"
+          }
+        },
+        "oftInfo": {
+          "peersInfo": {
+            "1": {
+              "tokenAddress": "0xCAcd6fd266aF91b8AeD52aCCc382b4e165586E29"
+            },
+            "56": {
+              "tokenAddress": "0x80Eede496655FB9047dd39d9f418d5483ED600df"
+            },
+            "137": {
+              "tokenAddress": "0x80Eede496655FB9047dd39d9f418d5483ED600df"
+            },
+            "146": {
+              "tokenAddress": "0x80Eede496655FB9047dd39d9f418d5483ED600df"
+            },
+            "252": {
+              "tokenAddress": "0xFc00000000000000000000000000000000000001"
+            },
+            "8453": {
+              "tokenAddress": "0xe5020A6d073a794B6E7f05678707dE47986Fb0b6"
+            },
+            "42161": {
+              "tokenAddress": "0x80Eede496655FB9047dd39d9f418d5483ED600df"
+            },
+            "43114": {
+              "tokenAddress": "0x80Eede496655FB9047dd39d9f418d5483ED600df"
+            }
+          },
+          "oftAdapter": "0x80Eede496655FB9047dd39d9f418d5483ED600df",
+          "oftVersion": 3,
+          "endpointVersion": 2,
+          "endpointId": 30111,
+          "oftSharedDecimals": 6
         }
       },
       "isAcross": false,
@@ -18915,6 +19188,59 @@
     },
     {
       "chainId": 56,
+      "address": "0x5Bff88cA1442c2496f7E475E9e7786383Bc070c0",
+      "name": "Staked Frax USD",
+      "decimals": 18,
+      "symbol": "sfrxUSD",
+      "logoURI": "https://s2.coinmarketcap.com/static/img/coins/128x128/36038.png",
+      "tags": [],
+      "extensions": {
+        "coingeckoId": "staked-frax-usd",
+        "coinMarketCapId": 36038,
+        "bridgeInfo": {
+          "1": {
+            "tokenAddress": "0xcf62F905562626CfcDD2261162a51fd02Fc9c5b6"
+          }
+        },
+        "oftInfo": {
+          "peersInfo": {
+            "1": {
+              "tokenAddress": "0xcf62F905562626CfcDD2261162a51fd02Fc9c5b6"
+            },
+            "10": {
+              "tokenAddress": "0x5Bff88cA1442c2496f7E475E9e7786383Bc070c0"
+            },
+            "137": {
+              "tokenAddress": "0x5Bff88cA1442c2496f7E475E9e7786383Bc070c0"
+            },
+            "146": {
+              "tokenAddress": "0x5Bff88cA1442c2496f7E475E9e7786383Bc070c0"
+            },
+            "252": {
+              "tokenAddress": "0xfc00000000000000000000000000000000000008"
+            },
+            "8453": {
+              "tokenAddress": "0x91A3f8a8d7a881fBDfcfEcd7A2Dc92a46DCfa14e"
+            },
+            "42161": {
+              "tokenAddress": "0x5Bff88cA1442c2496f7E475E9e7786383Bc070c0"
+            },
+            "43114": {
+              "tokenAddress": "0x5Bff88cA1442c2496f7E475E9e7786383Bc070c0"
+            }
+          },
+          "oftAdapter": "0x5Bff88cA1442c2496f7E475E9e7786383Bc070c0",
+          "oftVersion": 3,
+          "endpointVersion": 2,
+          "endpointId": 30102,
+          "oftSharedDecimals": 6
+        }
+      },
+      "isAcross": false,
+      "isOFT": true
+    },
+    {
+      "chainId": 56,
       "address": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34",
       "name": "USDe",
       "decimals": 18,
@@ -19680,6 +20006,59 @@
           "oftVersion": 1,
           "endpointVersion": 1,
           "endpointId": 102
+        }
+      },
+      "isAcross": false,
+      "isOFT": true
+    },
+    {
+      "chainId": 56,
+      "address": "0x80Eede496655FB9047dd39d9f418d5483ED600df",
+      "name": "Frax USD",
+      "decimals": 18,
+      "symbol": "frxUSD",
+      "logoURI": "https://s2.coinmarketcap.com/static/img/coins/128x128/36039.png",
+      "tags": [],
+      "extensions": {
+        "coingeckoId": "frax-usd",
+        "coinMarketCapId": 36039,
+        "bridgeInfo": {
+          "1": {
+            "tokenAddress": "0xCAcd6fd266aF91b8AeD52aCCc382b4e165586E29"
+          }
+        },
+        "oftInfo": {
+          "peersInfo": {
+            "1": {
+              "tokenAddress": "0xCAcd6fd266aF91b8AeD52aCCc382b4e165586E29"
+            },
+            "10": {
+              "tokenAddress": "0x80Eede496655FB9047dd39d9f418d5483ED600df"
+            },
+            "137": {
+              "tokenAddress": "0x80Eede496655FB9047dd39d9f418d5483ED600df"
+            },
+            "146": {
+              "tokenAddress": "0x80Eede496655FB9047dd39d9f418d5483ED600df"
+            },
+            "252": {
+              "tokenAddress": "0xFc00000000000000000000000000000000000001"
+            },
+            "8453": {
+              "tokenAddress": "0xe5020A6d073a794B6E7f05678707dE47986Fb0b6"
+            },
+            "42161": {
+              "tokenAddress": "0x80Eede496655FB9047dd39d9f418d5483ED600df"
+            },
+            "43114": {
+              "tokenAddress": "0x80Eede496655FB9047dd39d9f418d5483ED600df"
+            }
+          },
+          "oftAdapter": "0x80Eede496655FB9047dd39d9f418d5483ED600df",
+          "oftVersion": 3,
+          "endpointVersion": 2,
+          "endpointId": 30102,
+          "oftSharedDecimals": 6
         }
       },
       "isAcross": false,
@@ -29380,6 +29759,59 @@
     },
     {
       "chainId": 137,
+      "address": "0x5Bff88cA1442c2496f7E475E9e7786383Bc070c0",
+      "name": "Staked Frax USD",
+      "decimals": 18,
+      "symbol": "sfrxUSD",
+      "logoURI": "https://s2.coinmarketcap.com/static/img/coins/128x128/36038.png",
+      "tags": [],
+      "extensions": {
+        "coingeckoId": "staked-frax-usd",
+        "coinMarketCapId": 36038,
+        "bridgeInfo": {
+          "1": {
+            "tokenAddress": "0xcf62F905562626CfcDD2261162a51fd02Fc9c5b6"
+          }
+        },
+        "oftInfo": {
+          "peersInfo": {
+            "1": {
+              "tokenAddress": "0xcf62F905562626CfcDD2261162a51fd02Fc9c5b6"
+            },
+            "10": {
+              "tokenAddress": "0x5Bff88cA1442c2496f7E475E9e7786383Bc070c0"
+            },
+            "56": {
+              "tokenAddress": "0x5Bff88cA1442c2496f7E475E9e7786383Bc070c0"
+            },
+            "146": {
+              "tokenAddress": "0x5Bff88cA1442c2496f7E475E9e7786383Bc070c0"
+            },
+            "252": {
+              "tokenAddress": "0xfc00000000000000000000000000000000000008"
+            },
+            "8453": {
+              "tokenAddress": "0x91A3f8a8d7a881fBDfcfEcd7A2Dc92a46DCfa14e"
+            },
+            "42161": {
+              "tokenAddress": "0x5Bff88cA1442c2496f7E475E9e7786383Bc070c0"
+            },
+            "43114": {
+              "tokenAddress": "0x5Bff88cA1442c2496f7E475E9e7786383Bc070c0"
+            }
+          },
+          "oftAdapter": "0x5Bff88cA1442c2496f7E475E9e7786383Bc070c0",
+          "oftVersion": 3,
+          "endpointVersion": 2,
+          "endpointId": 30109,
+          "oftSharedDecimals": 6
+        }
+      },
+      "isAcross": false,
+      "isOFT": true
+    },
+    {
+      "chainId": 137,
       "address": "0x5F32AbeeBD3c2fac1E7459A27e1AE9f1C16ccccA",
       "name": "FARCANA",
       "decimals": 18,
@@ -30224,6 +30656,59 @@
       },
       "isAcross": false,
       "isOFT": false
+    },
+    {
+      "chainId": 137,
+      "address": "0x80Eede496655FB9047dd39d9f418d5483ED600df",
+      "name": "Frax USD",
+      "decimals": 18,
+      "symbol": "frxUSD",
+      "logoURI": "https://s2.coinmarketcap.com/static/img/coins/128x128/36039.png",
+      "tags": [],
+      "extensions": {
+        "coingeckoId": "frax-usd",
+        "coinMarketCapId": 36039,
+        "bridgeInfo": {
+          "1": {
+            "tokenAddress": "0xCAcd6fd266aF91b8AeD52aCCc382b4e165586E29"
+          }
+        },
+        "oftInfo": {
+          "peersInfo": {
+            "1": {
+              "tokenAddress": "0xCAcd6fd266aF91b8AeD52aCCc382b4e165586E29"
+            },
+            "10": {
+              "tokenAddress": "0x80Eede496655FB9047dd39d9f418d5483ED600df"
+            },
+            "56": {
+              "tokenAddress": "0x80Eede496655FB9047dd39d9f418d5483ED600df"
+            },
+            "146": {
+              "tokenAddress": "0x80Eede496655FB9047dd39d9f418d5483ED600df"
+            },
+            "252": {
+              "tokenAddress": "0xFc00000000000000000000000000000000000001"
+            },
+            "8453": {
+              "tokenAddress": "0xe5020A6d073a794B6E7f05678707dE47986Fb0b6"
+            },
+            "42161": {
+              "tokenAddress": "0x80Eede496655FB9047dd39d9f418d5483ED600df"
+            },
+            "43114": {
+              "tokenAddress": "0x80Eede496655FB9047dd39d9f418d5483ED600df"
+            }
+          },
+          "oftAdapter": "0x80Eede496655FB9047dd39d9f418d5483ED600df",
+          "oftVersion": 3,
+          "endpointVersion": 2,
+          "endpointId": 30109,
+          "oftSharedDecimals": 6
+        }
+      },
+      "isAcross": false,
+      "isOFT": true
     },
     {
       "chainId": 137,
@@ -33080,6 +33565,59 @@
     },
     {
       "chainId": 146,
+      "address": "0x5Bff88cA1442c2496f7E475E9e7786383Bc070c0",
+      "name": "Staked Frax USD",
+      "decimals": 18,
+      "symbol": "sfrxUSD",
+      "logoURI": "https://s2.coinmarketcap.com/static/img/coins/128x128/36038.png",
+      "tags": [],
+      "extensions": {
+        "coingeckoId": "staked-frax-usd",
+        "coinMarketCapId": 36038,
+        "bridgeInfo": {
+          "1": {
+            "tokenAddress": "0xcf62F905562626CfcDD2261162a51fd02Fc9c5b6"
+          }
+        },
+        "oftInfo": {
+          "peersInfo": {
+            "1": {
+              "tokenAddress": "0xcf62F905562626CfcDD2261162a51fd02Fc9c5b6"
+            },
+            "10": {
+              "tokenAddress": "0x5Bff88cA1442c2496f7E475E9e7786383Bc070c0"
+            },
+            "56": {
+              "tokenAddress": "0x5Bff88cA1442c2496f7E475E9e7786383Bc070c0"
+            },
+            "137": {
+              "tokenAddress": "0x5Bff88cA1442c2496f7E475E9e7786383Bc070c0"
+            },
+            "252": {
+              "tokenAddress": "0xfc00000000000000000000000000000000000008"
+            },
+            "8453": {
+              "tokenAddress": "0x91A3f8a8d7a881fBDfcfEcd7A2Dc92a46DCfa14e"
+            },
+            "42161": {
+              "tokenAddress": "0x5Bff88cA1442c2496f7E475E9e7786383Bc070c0"
+            },
+            "43114": {
+              "tokenAddress": "0x5Bff88cA1442c2496f7E475E9e7786383Bc070c0"
+            }
+          },
+          "oftAdapter": "0x5Bff88cA1442c2496f7E475E9e7786383Bc070c0",
+          "oftVersion": 3,
+          "endpointVersion": 2,
+          "endpointId": 30332,
+          "oftSharedDecimals": 6
+        }
+      },
+      "isAcross": false,
+      "isOFT": true
+    },
+    {
+      "chainId": 146,
       "address": "0x64445f0aecC51E94aD52d8AC56b7190e764E561a",
       "name": "Wrapped Frax",
       "decimals": 18,
@@ -33276,6 +33814,13 @@
       "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/refs/heads/master/blockchains/sonic/assets/0x80Eede496655FB9047dd39d9f418d5483ED600df/logo.png",
       "tags": [],
       "extensions": {
+        "coingeckoId": "frax-usd",
+        "coinMarketCapId": 36039,
+        "bridgeInfo": {
+          "1": {
+            "tokenAddress": "0xCAcd6fd266aF91b8AeD52aCCc382b4e165586E29"
+          }
+        },
         "oftInfo": {
           "peersInfo": {
             "1": {
@@ -34315,6 +34860,62 @@
     },
     {
       "chainId": 252,
+      "address": "0xFc00000000000000000000000000000000000001",
+      "name": "Frax USD",
+      "decimals": 18,
+      "symbol": "frxUSD",
+      "logoURI": "https://s2.coinmarketcap.com/static/img/coins/128x128/36039.png",
+      "tags": [],
+      "extensions": {
+        "coingeckoId": "frax-usd",
+        "coinMarketCapId": 36039,
+        "bridgeInfo": {
+          "1": {
+            "tokenAddress": "0xCAcd6fd266aF91b8AeD52aCCc382b4e165586E29"
+          }
+        },
+        "oftInfo": {
+          "peersInfo": {
+            "1": {
+              "tokenAddress": "0xCAcd6fd266aF91b8AeD52aCCc382b4e165586E29"
+            },
+            "10": {
+              "tokenAddress": "0x80Eede496655FB9047dd39d9f418d5483ED600df"
+            },
+            "56": {
+              "tokenAddress": "0x80Eede496655FB9047dd39d9f418d5483ED600df"
+            },
+            "137": {
+              "tokenAddress": "0x80Eede496655FB9047dd39d9f418d5483ED600df"
+            },
+            "146": {
+              "tokenAddress": "0x80Eede496655FB9047dd39d9f418d5483ED600df"
+            },
+            "8453": {
+              "tokenAddress": "0xe5020A6d073a794B6E7f05678707dE47986Fb0b6"
+            },
+            "42161": {
+              "tokenAddress": "0x80Eede496655FB9047dd39d9f418d5483ED600df"
+            },
+            "43114": {
+              "tokenAddress": "0x80Eede496655FB9047dd39d9f418d5483ED600df"
+            },
+            "80094": {
+              "tokenAddress": "0x80Eede496655FB9047dd39d9f418d5483ED600df"
+            }
+          },
+          "oftAdapter": "0x96A394058E2b84A89bac9667B19661Ed003cF5D4",
+          "oftVersion": 3,
+          "endpointVersion": 2,
+          "endpointId": 30255,
+          "oftSharedDecimals": 6
+        }
+      },
+      "isAcross": false,
+      "isOFT": true
+    },
+    {
+      "chainId": 252,
       "globalAddress": "0x38B980B513934A678F05BC4115F64A568AfD90f7",
       "localAddress": {
         "252": "0xdc490c00F81Deba525Bb5460660F799E72d9Bca7"
@@ -34391,6 +34992,62 @@
             }
           },
           "oftAdapter": "0xedEa7BeFB3024618cE8f148Fa3803f14966B6252",
+          "oftVersion": 3,
+          "endpointVersion": 2,
+          "endpointId": 30255,
+          "oftSharedDecimals": 6
+        }
+      },
+      "isAcross": false,
+      "isOFT": true
+    },
+    {
+      "chainId": 252,
+      "address": "0xfc00000000000000000000000000000000000008",
+      "name": "Staked Frax USD",
+      "decimals": 18,
+      "symbol": "sfrxUSD",
+      "logoURI": "https://s2.coinmarketcap.com/static/img/coins/128x128/36038.png",
+      "tags": [],
+      "extensions": {
+        "coingeckoId": "staked-frax-usd",
+        "coinMarketCapId": 36038,
+        "bridgeInfo": {
+          "1": {
+            "tokenAddress": "0xcf62F905562626CfcDD2261162a51fd02Fc9c5b6"
+          }
+        },
+        "oftInfo": {
+          "peersInfo": {
+            "1": {
+              "tokenAddress": "0xcf62F905562626CfcDD2261162a51fd02Fc9c5b6"
+            },
+            "10": {
+              "tokenAddress": "0x5Bff88cA1442c2496f7E475E9e7786383Bc070c0"
+            },
+            "56": {
+              "tokenAddress": "0x5Bff88cA1442c2496f7E475E9e7786383Bc070c0"
+            },
+            "137": {
+              "tokenAddress": "0x5Bff88cA1442c2496f7E475E9e7786383Bc070c0"
+            },
+            "146": {
+              "tokenAddress": "0x5Bff88cA1442c2496f7E475E9e7786383Bc070c0"
+            },
+            "8453": {
+              "tokenAddress": "0x91A3f8a8d7a881fBDfcfEcd7A2Dc92a46DCfa14e"
+            },
+            "42161": {
+              "tokenAddress": "0x5Bff88cA1442c2496f7E475E9e7786383Bc070c0"
+            },
+            "43114": {
+              "tokenAddress": "0x5Bff88cA1442c2496f7E475E9e7786383Bc070c0"
+            },
+            "80094": {
+              "tokenAddress": "0x5Bff88cA1442c2496f7E475E9e7786383Bc070c0"
+            }
+          },
+          "oftAdapter": "0x88Aa7854D3b2dAA5e37E7Ce73A1F39669623a361",
           "oftVersion": 3,
           "endpointVersion": 2,
           "endpointId": 30255,
@@ -39172,6 +39829,59 @@
     },
     {
       "chainId": 8453,
+      "address": "0x91A3f8a8d7a881fBDfcfEcd7A2Dc92a46DCfa14e",
+      "name": "Staked Frax USD",
+      "decimals": 18,
+      "symbol": "sfrxUSD",
+      "logoURI": "https://s2.coinmarketcap.com/static/img/coins/128x128/36038.png",
+      "tags": [],
+      "extensions": {
+        "coingeckoId": "staked-frax-usd",
+        "coinMarketCapId": 36038,
+        "bridgeInfo": {
+          "1": {
+            "tokenAddress": "0xcf62F905562626CfcDD2261162a51fd02Fc9c5b6"
+          }
+        },
+        "oftInfo": {
+          "peersInfo": {
+            "1": {
+              "tokenAddress": "0xcf62F905562626CfcDD2261162a51fd02Fc9c5b6"
+            },
+            "10": {
+              "tokenAddress": "0x5Bff88cA1442c2496f7E475E9e7786383Bc070c0"
+            },
+            "56": {
+              "tokenAddress": "0x5Bff88cA1442c2496f7E475E9e7786383Bc070c0"
+            },
+            "137": {
+              "tokenAddress": "0x5Bff88cA1442c2496f7E475E9e7786383Bc070c0"
+            },
+            "146": {
+              "tokenAddress": "0x5Bff88cA1442c2496f7E475E9e7786383Bc070c0"
+            },
+            "252": {
+              "tokenAddress": "0xfc00000000000000000000000000000000000008"
+            },
+            "42161": {
+              "tokenAddress": "0x5Bff88cA1442c2496f7E475E9e7786383Bc070c0"
+            },
+            "43114": {
+              "tokenAddress": "0x5Bff88cA1442c2496f7E475E9e7786383Bc070c0"
+            }
+          },
+          "oftAdapter": "0x91A3f8a8d7a881fBDfcfEcd7A2Dc92a46DCfa14e",
+          "oftVersion": 3,
+          "endpointVersion": 2,
+          "endpointId": 30184,
+          "oftSharedDecimals": 6
+        }
+      },
+      "isAcross": false,
+      "isOFT": true
+    },
+    {
+      "chainId": 8453,
       "address": "0x91F9cc2649ac70a071602cadE9b0C1A5868af51D",
       "name": "Wrapped XTZ",
       "decimals": 18,
@@ -41357,6 +42067,59 @@
     },
     {
       "chainId": 8453,
+      "address": "0xe5020A6d073a794B6E7f05678707dE47986Fb0b6",
+      "name": "Frax USD",
+      "decimals": 18,
+      "symbol": "frxUSD",
+      "logoURI": "https://s2.coinmarketcap.com/static/img/coins/128x128/36039.png",
+      "tags": [],
+      "extensions": {
+        "coingeckoId": "frax-usd",
+        "coinMarketCapId": 36039,
+        "bridgeInfo": {
+          "1": {
+            "tokenAddress": "0xCAcd6fd266aF91b8AeD52aCCc382b4e165586E29"
+          }
+        },
+        "oftInfo": {
+          "peersInfo": {
+            "1": {
+              "tokenAddress": "0xCAcd6fd266aF91b8AeD52aCCc382b4e165586E29"
+            },
+            "10": {
+              "tokenAddress": "0x80Eede496655FB9047dd39d9f418d5483ED600df"
+            },
+            "56": {
+              "tokenAddress": "0x80Eede496655FB9047dd39d9f418d5483ED600df"
+            },
+            "137": {
+              "tokenAddress": "0x80Eede496655FB9047dd39d9f418d5483ED600df"
+            },
+            "146": {
+              "tokenAddress": "0x80Eede496655FB9047dd39d9f418d5483ED600df"
+            },
+            "252": {
+              "tokenAddress": "0xFc00000000000000000000000000000000000001"
+            },
+            "42161": {
+              "tokenAddress": "0x80Eede496655FB9047dd39d9f418d5483ED600df"
+            },
+            "43114": {
+              "tokenAddress": "0x80Eede496655FB9047dd39d9f418d5483ED600df"
+            }
+          },
+          "oftAdapter": "0xe5020A6d073a794B6E7f05678707dE47986Fb0b6",
+          "oftVersion": 3,
+          "endpointVersion": 2,
+          "endpointId": 30184,
+          "oftSharedDecimals": 6
+        }
+      },
+      "isAcross": false,
+      "isOFT": true
+    },
+    {
+      "chainId": 8453,
       "address": "0xe5e851b01DD3Eda24FDe709a407dB44555B6d1E0",
       "name": "RIF",
       "decimals": 18,
@@ -42643,6 +43406,59 @@
     },
     {
       "chainId": 43114,
+      "address": "0x5Bff88cA1442c2496f7E475E9e7786383Bc070c0",
+      "name": "Staked Frax USD",
+      "decimals": 18,
+      "symbol": "sfrxUSD",
+      "logoURI": "https://s2.coinmarketcap.com/static/img/coins/128x128/36038.png",
+      "tags": [],
+      "extensions": {
+        "coingeckoId": "staked-frax-usd",
+        "coinMarketCapId": 36038,
+        "bridgeInfo": {
+          "1": {
+            "tokenAddress": "0xcf62F905562626CfcDD2261162a51fd02Fc9c5b6"
+          }
+        },
+        "oftInfo": {
+          "peersInfo": {
+            "1": {
+              "tokenAddress": "0xcf62F905562626CfcDD2261162a51fd02Fc9c5b6"
+            },
+            "10": {
+              "tokenAddress": "0x5Bff88cA1442c2496f7E475E9e7786383Bc070c0"
+            },
+            "56": {
+              "tokenAddress": "0x5Bff88cA1442c2496f7E475E9e7786383Bc070c0"
+            },
+            "137": {
+              "tokenAddress": "0x5Bff88cA1442c2496f7E475E9e7786383Bc070c0"
+            },
+            "146": {
+              "tokenAddress": "0x5Bff88cA1442c2496f7E475E9e7786383Bc070c0"
+            },
+            "252": {
+              "tokenAddress": "0xfc00000000000000000000000000000000000008"
+            },
+            "8453": {
+              "tokenAddress": "0x91A3f8a8d7a881fBDfcfEcd7A2Dc92a46DCfa14e"
+            },
+            "42161": {
+              "tokenAddress": "0x5Bff88cA1442c2496f7E475E9e7786383Bc070c0"
+            }
+          },
+          "oftAdapter": "0x5Bff88cA1442c2496f7E475E9e7786383Bc070c0",
+          "oftVersion": 3,
+          "endpointVersion": 2,
+          "endpointId": 30106,
+          "oftSharedDecimals": 6
+        }
+      },
+      "isAcross": false,
+      "isOFT": true
+    },
+    {
+      "chainId": 43114,
       "address": "0x5ECfeC22AA950CB5A3b4fd7249DC30B2BD160f18",
       "name": "Tarot",
       "decimals": 18,
@@ -43088,6 +43904,59 @@
             }
           },
           "oftAdapter": "0x7FF7Fa94b8b66Ef313f7970d4EEbd2CB3103a2C0",
+          "oftVersion": 3,
+          "endpointVersion": 2,
+          "endpointId": 30106,
+          "oftSharedDecimals": 6
+        }
+      },
+      "isAcross": false,
+      "isOFT": true
+    },
+    {
+      "chainId": 43114,
+      "address": "0x80Eede496655FB9047dd39d9f418d5483ED600df",
+      "name": "Frax USD",
+      "decimals": 18,
+      "symbol": "frxUSD",
+      "logoURI": "https://s2.coinmarketcap.com/static/img/coins/128x128/36039.png",
+      "tags": [],
+      "extensions": {
+        "coingeckoId": "frax-usd",
+        "coinMarketCapId": 36039,
+        "bridgeInfo": {
+          "1": {
+            "tokenAddress": "0xCAcd6fd266aF91b8AeD52aCCc382b4e165586E29"
+          }
+        },
+        "oftInfo": {
+          "peersInfo": {
+            "1": {
+              "tokenAddress": "0xCAcd6fd266aF91b8AeD52aCCc382b4e165586E29"
+            },
+            "10": {
+              "tokenAddress": "0x80Eede496655FB9047dd39d9f418d5483ED600df"
+            },
+            "56": {
+              "tokenAddress": "0x80Eede496655FB9047dd39d9f418d5483ED600df"
+            },
+            "137": {
+              "tokenAddress": "0x80Eede496655FB9047dd39d9f418d5483ED600df"
+            },
+            "146": {
+              "tokenAddress": "0x80Eede496655FB9047dd39d9f418d5483ED600df"
+            },
+            "252": {
+              "tokenAddress": "0xFc00000000000000000000000000000000000001"
+            },
+            "8453": {
+              "tokenAddress": "0xe5020A6d073a794B6E7f05678707dE47986Fb0b6"
+            },
+            "42161": {
+              "tokenAddress": "0x80Eede496655FB9047dd39d9f418d5483ED600df"
+            }
+          },
+          "oftAdapter": "0x80Eede496655FB9047dd39d9f418d5483ED600df",
           "oftVersion": 3,
           "endpointVersion": 2,
           "endpointId": 30106,
@@ -44646,7 +45515,7 @@
       "tags": [],
       "extensions": {
         "bridgeInfo": {
-          "10": {
+          "8453": {
             "tokenAddress": "0x2dAD3a13ef0C6366220f989157009e501e7938F8"
           }
         },
@@ -44819,6 +45688,38 @@
             }
           },
           "oftAdapter": "0x5B82028cfc477C4E7ddA7FF33d59A23FA7Be002a",
+          "oftVersion": 3,
+          "endpointVersion": 2,
+          "endpointId": 30362,
+          "oftSharedDecimals": 6
+        }
+      },
+      "isAcross": false,
+      "isOFT": true
+    },
+    {
+      "chainId": 80094,
+      "address": "0x5Bff88cA1442c2496f7E475E9e7786383Bc070c0",
+      "name": "Staked Frax USD",
+      "decimals": 18,
+      "symbol": "sfrxUSD",
+      "logoURI": "https://s2.coinmarketcap.com/static/img/coins/128x128/36038.png",
+      "tags": [],
+      "extensions": {
+        "coingeckoId": "staked-frax-usd",
+        "coinMarketCapId": 36038,
+        "bridgeInfo": {
+          "1": {
+            "tokenAddress": "0xcf62F905562626CfcDD2261162a51fd02Fc9c5b6"
+          }
+        },
+        "oftInfo": {
+          "peersInfo": {
+            "252": {
+              "tokenAddress": "0xfc00000000000000000000000000000000000008"
+            }
+          },
+          "oftAdapter": "0x5Bff88cA1442c2496f7E475E9e7786383Bc070c0",
           "oftVersion": 3,
           "endpointVersion": 2,
           "endpointId": 30362,
@@ -45003,6 +45904,38 @@
             }
           },
           "oftAdapter": "0x7DCC39B4d1C53CB31e1aBc0e358b43987FEF80f7",
+          "oftVersion": 3,
+          "endpointVersion": 2,
+          "endpointId": 30362,
+          "oftSharedDecimals": 6
+        }
+      },
+      "isAcross": false,
+      "isOFT": true
+    },
+    {
+      "chainId": 80094,
+      "address": "0x80Eede496655FB9047dd39d9f418d5483ED600df",
+      "name": "Frax USD",
+      "decimals": 18,
+      "symbol": "frxUSD",
+      "logoURI": "https://s2.coinmarketcap.com/static/img/coins/128x128/36039.png",
+      "tags": [],
+      "extensions": {
+        "coingeckoId": "frax-usd",
+        "coinMarketCapId": 36039,
+        "bridgeInfo": {
+          "1": {
+            "tokenAddress": "0xCAcd6fd266aF91b8AeD52aCCc382b4e165586E29"
+          }
+        },
+        "oftInfo": {
+          "peersInfo": {
+            "252": {
+              "tokenAddress": "0xFc00000000000000000000000000000000000001"
+            }
+          },
+          "oftAdapter": "0x80Eede496655FB9047dd39d9f418d5483ED600df",
           "oftVersion": 3,
           "endpointVersion": 2,
           "endpointId": 30362,
@@ -48603,6 +49536,59 @@
     },
     {
       "chainId": 42161,
+      "address": "0x5Bff88cA1442c2496f7E475E9e7786383Bc070c0",
+      "name": "Staked Frax USD",
+      "decimals": 18,
+      "symbol": "sfrxUSD",
+      "logoURI": "https://s2.coinmarketcap.com/static/img/coins/128x128/36038.png",
+      "tags": [],
+      "extensions": {
+        "coingeckoId": "staked-frax-usd",
+        "coinMarketCapId": 36038,
+        "bridgeInfo": {
+          "1": {
+            "tokenAddress": "0xcf62F905562626CfcDD2261162a51fd02Fc9c5b6"
+          }
+        },
+        "oftInfo": {
+          "peersInfo": {
+            "1": {
+              "tokenAddress": "0xcf62F905562626CfcDD2261162a51fd02Fc9c5b6"
+            },
+            "10": {
+              "tokenAddress": "0x5Bff88cA1442c2496f7E475E9e7786383Bc070c0"
+            },
+            "56": {
+              "tokenAddress": "0x5Bff88cA1442c2496f7E475E9e7786383Bc070c0"
+            },
+            "137": {
+              "tokenAddress": "0x5Bff88cA1442c2496f7E475E9e7786383Bc070c0"
+            },
+            "146": {
+              "tokenAddress": "0x5Bff88cA1442c2496f7E475E9e7786383Bc070c0"
+            },
+            "252": {
+              "tokenAddress": "0xfc00000000000000000000000000000000000008"
+            },
+            "8453": {
+              "tokenAddress": "0x91A3f8a8d7a881fBDfcfEcd7A2Dc92a46DCfa14e"
+            },
+            "43114": {
+              "tokenAddress": "0x5Bff88cA1442c2496f7E475E9e7786383Bc070c0"
+            }
+          },
+          "oftAdapter": "0x5Bff88cA1442c2496f7E475E9e7786383Bc070c0",
+          "oftVersion": 3,
+          "endpointVersion": 2,
+          "endpointId": 30110,
+          "oftSharedDecimals": 6
+        }
+      },
+      "isAcross": false,
+      "isOFT": true
+    },
+    {
+      "chainId": 42161,
       "address": "0x5C816d4582c857dcadb1bB1F62Ad6c9DEde4576a",
       "name": "Turbo",
       "symbol": "TURBO",
@@ -49871,6 +50857,59 @@
           "oftVersion": 1,
           "endpointVersion": 1,
           "endpointId": 110
+        }
+      },
+      "isAcross": false,
+      "isOFT": true
+    },
+    {
+      "chainId": 42161,
+      "address": "0x80Eede496655FB9047dd39d9f418d5483ED600df",
+      "name": "Frax USD",
+      "decimals": 18,
+      "symbol": "frxUSD",
+      "logoURI": "https://s2.coinmarketcap.com/static/img/coins/128x128/36039.png",
+      "tags": [],
+      "extensions": {
+        "coingeckoId": "frax-usd",
+        "coinMarketCapId": 36039,
+        "bridgeInfo": {
+          "1": {
+            "tokenAddress": "0xCAcd6fd266aF91b8AeD52aCCc382b4e165586E29"
+          }
+        },
+        "oftInfo": {
+          "peersInfo": {
+            "1": {
+              "tokenAddress": "0xCAcd6fd266aF91b8AeD52aCCc382b4e165586E29"
+            },
+            "10": {
+              "tokenAddress": "0x80Eede496655FB9047dd39d9f418d5483ED600df"
+            },
+            "56": {
+              "tokenAddress": "0x80Eede496655FB9047dd39d9f418d5483ED600df"
+            },
+            "137": {
+              "tokenAddress": "0x80Eede496655FB9047dd39d9f418d5483ED600df"
+            },
+            "146": {
+              "tokenAddress": "0x80Eede496655FB9047dd39d9f418d5483ED600df"
+            },
+            "252": {
+              "tokenAddress": "0xFc00000000000000000000000000000000000001"
+            },
+            "8453": {
+              "tokenAddress": "0xe5020A6d073a794B6E7f05678707dE47986Fb0b6"
+            },
+            "43114": {
+              "tokenAddress": "0x80Eede496655FB9047dd39d9f418d5483ED600df"
+            }
+          },
+          "oftAdapter": "0x80Eede496655FB9047dd39d9f418d5483ED600df",
+          "oftVersion": 3,
+          "endpointVersion": 2,
+          "endpointId": 30110,
+          "oftSharedDecimals": 6
         }
       },
       "isAcross": false,

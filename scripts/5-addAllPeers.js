@@ -2,9 +2,9 @@ const fs = require('fs')
 const path = require('path')
 const { ethers } = require('ethers')
 const { ZERO_ADDRESS } = require('maia-core-sdk')
-const { multiCallWithFallback } = require('../helpers')
+const { multiCallWithFallback, mergeExtensions } = require('../helpers')
 const { OFT_V3_ABI, OFT_V2_ABI, ERC20_MINIMAL_ABI } = require('../abi')
-const { SUPPORTED_CHAINS, CHAIN_KEY_TO_ID, EID_TO_VERSION, CHAIN_KEY_TO_EID } = require('../configs')
+const { OVERRIDE_PEG, OVERRIDE_CG_CMC_ID, SUPPORTED_CHAINS, CHAIN_KEY_TO_ID, CHAIN_KEYS, EID_TO_VERSION, CHAIN_KEY_TO_EID } = require('../configs')
 
 async function main() {
   // ─── A) Load initial tokens from usableStargateTokens.json ─────────────────────────
@@ -451,6 +451,45 @@ async function main() {
   for (let i = 0; i < finalTokens.length; i++) {
     finalTokens[i].index = i
   }
+
+  // Bridge mapping
+  const bridgeMap = {}
+
+  // Add Initial Bridge Info Population
+  for (const t of finalTokens) {
+    const peg = OVERRIDE_PEG[t.symbol] ?? t.peggedTo
+    if (peg?.address) {
+      // if (peg?.address && peg?.chainName && (peg.address !== tokenAddress || peg.chainName !== chainKey)) {
+      const pegKey = peg.address.toLowerCase() + peg.chainName
+      bridgeMap[pegKey] = bridgeMap[pegKey] || {}
+      bridgeMap[pegKey][t.chainId] = { tokenAddress: ethers.getAddress(t.address) }
+      if (SUPPORTED_CHAINS.includes(peg.chainName)) {
+        t.extensions = mergeExtensions(t.extensions, {
+          bridgeInfo: {
+            [CHAIN_KEY_TO_ID[peg.chainName]]: { tokenAddress: ethers.getAddress(peg.address) },
+          },
+        })
+      }
+    }
+  }
+
+  // Attach bridgeInfo from mapping
+  for (const token of finalTokens) {
+    const mapKey = token.address?.toLowerCase() + CHAIN_KEYS[token.chainId]
+    const bi = bridgeMap[mapKey]
+    if (bi && Object.keys(bi).length) {
+      token.extensions = mergeExtensions(token.extensions, { bridgeInfo: bi })
+    }
+    const overrideInfo = OVERRIDE_CG_CMC_ID[token.symbol];
+
+    if (overrideInfo && (overrideInfo.coingeckoId || overrideInfo.coinMarketCapId)) {
+      token.extensions = mergeExtensions(token.extensions, {
+        ...(overrideInfo.coingeckoId && { coingeckoId: overrideInfo.coingeckoId }),
+        ...(overrideInfo.coinMarketCapId && { coinMarketCapId: overrideInfo.coinMarketCapId }),
+      });
+    }
+  }
+
 
   // TODO: Add Bridge Info Population loop where we find main token by peer amount and chain priority (TVL ranking) with easy overrides for off-cases
   // For each peersInfo token address find a matching token address in the tokens array that has that token address as oftAdapter and same chainId and so we can populate the peersInfo tokenAddress with the token address

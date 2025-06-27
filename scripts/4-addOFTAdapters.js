@@ -17,7 +17,6 @@ async function main() {
 
   const results = []
   const missingAdapters = []
-  const bridgeMap = {}
 
   // Iterate each supported chain
   for (const chainKey of SUPPORTED_CHAINS) {
@@ -89,21 +88,6 @@ async function main() {
         coinMarketCapId: adapterInfo?.cmcId,
       })
 
-      // Bridge mapping
-      const peg = OVERRIDE_PEG[base.symbol] ?? tokenInfo?.peggedTo
-      if (peg?.address) {
-        const pegKey = peg.address.toLowerCase() + peg.chainName
-        bridgeMap[pegKey] = bridgeMap[pegKey] || {}
-        bridgeMap[pegKey][chainId] = { tokenAddress: ethers.getAddress(tokenAddress) }
-        if (SUPPORTED_CHAINS.includes(peg.chainName)) {
-          extensions = mergeExtensions(extensions, {
-            bridgeInfo: {
-              [CHAIN_KEY_TO_ID[peg.chainName]]: { tokenAddress: ethers.getAddress(peg.address) },
-            },
-          })
-        }
-      }
-
       const tokenEid =
         (tokenInfo?.eid ?? (adapterInfo?.oftVersion === 3 || adapterInfo?.endpointVersion === 2))
           ? CHAIN_KEY_TO_EID[chainKey].v2
@@ -128,17 +112,9 @@ async function main() {
         extensions,
       }
       if (tokenInfo?.fee) enriched.fee = tokenInfo.fee
+      if (tokenInfo?.peggedTo) enriched.peggedTo = tokenInfo.peggedTo
 
       results.push(enriched)
-    }
-  }
-
-  // Attach bridgeInfo from mapping
-  for (const token of results) {
-    const mapKey = token.address?.toLowerCase() + token.chainKey
-    const bi = bridgeMap[mapKey]
-    if (bi && Object.keys(bi).length) {
-      token.extensions = mergeExtensions(token.extensions, { bridgeInfo: bi })
     }
   }
 

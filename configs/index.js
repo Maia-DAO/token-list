@@ -5,9 +5,18 @@ const {
   Stage,
 } = require('@layerzerolabs/lz-definitions')
 
+
+// Coingecko and CoinMarketCap ID mappings for specific tokens
+const OVERRIDE_CG_CMC_ID = {
+  'frxUSD': { coingeckoId: 'frax-usd', coinMarketCapId: 36039 },
+  'sfrxUSD': { coingeckoId: 'staked-frax-usd', coinMarketCapId: 36038 },
+}
+
 // Override OFT Metadata Pegged To Info
 const OVERRIDE_PEG = {
   'USD₮0': { chainName: 'arbitrum', address: '0xfd086bc7cd5c481dcc9c85ebe478a1c0b69fcbb9' },
+  'frxUSD': { chainName: 'ethereum', address: '0xCAcd6fd266aF91b8AeD52aCCc382b4e165586E29' },
+  'sfrxUSD': { chainName: 'ethereum', address: '0xcf62F905562626CfcDD2261162a51fd02Fc9c5b6' },
 }
 
 // Override logos for specific tokens
@@ -19,6 +28,7 @@ const OVERRIDE_LOGO = {
   'USBD': 'https://s2.coinmarketcap.com/static/img/coins/128x128/36149.png',
   'IRL': 'https://s2.coinmarketcap.com/static/img/coins/128x128/20858.png',
   'LYM': 'https://s2.coinmarketcap.com/static/img/coins/128x128/2554.png',
+  'FRAX': 'https://raw.githubusercontent.com/trustwallet/assets/refs/heads/master/blockchains/ethereum/assets/0x853d955aCEf822Db058eb8505911ED77F175b99e/logo.png',
 }
 
 // Supported chains List.
@@ -156,5 +166,6 @@ module.exports = {
   EID_TO_VERSION,
   SUPPORTED_CHAINS,
   OVERRIDE_PEG,
-  OVERRIDE_LOGO
+  OVERRIDE_LOGO,
+  OVERRIDE_CG_CMC_ID
 }
