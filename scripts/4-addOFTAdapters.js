@@ -25,6 +25,11 @@ async function main() {
     const chainData = ofts[chainKey]
     const chainId = CHAIN_KEY_TO_ID[chainKey]
     if (!chainData) continue
+    // TODO: REVIEW THIS CHECK WE MAY BE MISSING SOME CHAINS
+    if (!chainData.addressToOApp || !chainData.tokens) {
+        console.warn(`skipping, no addressToOApp or no tokens on chain ${chainKey}`)
+      continue
+    }
 
     // Iterate each token entry in OFT
     for (let [adapter, oAppInfo] of Object.entries(chainData.addressToOApp)) {
