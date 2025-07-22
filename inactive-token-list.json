@@ -1,8 +1,8 @@
 {
   "name": "Hermes Omnichain Inactive Token List",
-  "timestamp": "1753130592",
+  "timestamp": "1753221775",
   "version": {
-    "major": 66,
+    "major": 70,
     "minor": 0,
     "patch": 0
   },
@@ -2242,6 +2242,16 @@
     },
     {
       "chainId": 1,
+      "address": "0x1Edb8BdeD80E1b87eD19EE7D97Ee80B4fDb615c1",
+      "name": "ETH",
+      "decimals": 18,
+      "symbol": "ETH",
+      "tags": [],
+      "extensions": {},
+      "isAcross": false
+    },
+    {
+      "chainId": 1,
       "address": "0x1F3f9D3068568F8040775be2e8C03C103C61f3aF",
       "name": "Archer DAO Governance",
       "symbol": "ARCH",
@@ -2374,20 +2384,10 @@
     },
     {
       "chainId": 1,
-      "address": "0x1e6c9f4c89ac4d75048155a0dbd0be1f49c460f9",
+      "address": "0x1e6c9F4C89aC4D75048155A0DbD0bE1F49C460f9",
       "name": "vXNF",
       "decimals": 18,
       "symbol": "vXNF",
-      "tags": [],
-      "extensions": {},
-      "isAcross": false
-    },
-    {
-      "chainId": 1,
-      "address": "0x1edb8bded80e1b87ed19ee7d97ee80b4fdb615c1",
-      "name": "ETH",
-      "decimals": 18,
-      "symbol": "ETH",
       "tags": [],
       "extensions": {},
       "isAcross": false
@@ -3819,7 +3819,7 @@
     },
     {
       "chainId": 1,
-      "address": "0x37bb209b118a22f233dea252a5d7f56455765b4d",
+      "address": "0x37bb209B118a22F233DEa252A5D7F56455765b4D",
       "name": "vXEN",
       "decimals": 18,
       "symbol": "vXEN",
@@ -4677,7 +4677,7 @@
     },
     {
       "chainId": 1,
-      "address": "0x42069d11a2cc72388a2e06210921e839cfbd3280",
+      "address": "0x42069d11A2CC72388a2e06210921E839Cfbd3280",
       "name": "GnomeLand",
       "decimals": 18,
       "symbol": "GNOME",
@@ -7474,6 +7474,16 @@
     },
     {
       "chainId": 1,
+      "address": "0x6C344C6191feE58f0dE2604721F596efBc9f7822",
+      "name": "StakeStone Bitcoin",
+      "decimals": 18,
+      "symbol": "SBTC",
+      "tags": [],
+      "extensions": {},
+      "isAcross": false
+    },
+    {
+      "chainId": 1,
       "address": "0x6C8c6b02E7b2BE14d4fA6022Dfd6d75921D90E4E",
       "name": "Compound Basic Attention Token",
       "symbol": "cBAT",
@@ -7649,16 +7659,6 @@
       },
       "isAcross": false,
       "isOFT": true
-    },
-    {
-      "chainId": 1,
-      "address": "0x6c344c6191fee58f0de2604721f596efbc9f7822",
-      "name": "StakeStone Bitcoin",
-      "decimals": 18,
-      "symbol": "SBTC",
-      "tags": [],
-      "extensions": {},
-      "isAcross": false
     },
     {
       "chainId": 1,
@@ -9650,7 +9650,7 @@
     },
     {
       "chainId": 1,
-      "address": "0x8929e9dbd2785e3ba16175e596cdd61520fee0d1",
+      "address": "0x8929e9DbD2785e3BA16175E596CDD61520feE0D1",
       "name": "Altitude",
       "decimals": 18,
       "symbol": "ALTD",
@@ -9743,7 +9743,7 @@
               "tokenAddress": "0x02f6FD682027a148d73777034CB85D14f231A678"
             },
             "6900": {
-              "tokenAddress": "0x0CaCF669f8446BeCA826913a3c6B96aCD4b02a97"
+              "tokenAddress": "0x4df4efa0a3707b6cc964f62042e8a303a0376f54"
             },
             "8453": {
               "tokenAddress": "0x3aDE6652F203d919697f8577F75Eebb989A5C586"
@@ -10773,7 +10773,7 @@
               "tokenAddress": "0xe2510aA4b019af3Eb835d3aC9c800382109A4631"
             },
             "1996": {
-              "tokenAddress": "0xe2510aa4b019af3eb835d3ac9c800382109a4631"
+              "tokenAddress": "0xe2510aA4b019af3Eb835d3aC9c800382109A4631"
             },
             "5000": {
               "tokenAddress": "0x0852123795bC6Aef3A3eb0212DED01607F9c58a5"
@@ -12669,6 +12669,16 @@
     },
     {
       "chainId": 1,
+      "address": "0xC72633F995e98Ac3BB8a89e6a9C4Af335C3D6E44",
+      "name": "Omnisea",
+      "decimals": 18,
+      "symbol": "OSEA",
+      "tags": [],
+      "extensions": {},
+      "isAcross": false
+    },
+    {
+      "chainId": 1,
       "address": "0xC82E3dB60A52CF7529253b4eC688f631aad9e7c2",
       "name": "Arc",
       "symbol": "ARC",
@@ -13033,24 +13043,6 @@
         "bridgeInfo": {
           "137": {
             "tokenAddress": "0x54585aAc4353ac2B30022797915ef81D152D5223"
-          }
-        }
-      }
-    },
-    {
-      "chainId": 1,
-      "address": "0xD33526068D116cE69F19A9ee46F0bd304F21A51f",
-      "name": "Rocket Pool",
-      "symbol": "RPL",
-      "decimals": 18,
-      "logoURI": "https://assets.coingecko.com/coins/images/2090/large/rocket_pool_%28RPL%29.png?1637662441",
-      "extensions": {
-        "bridgeInfo": {
-          "8453": {
-            "tokenAddress": "0x1f73EAf55d696BFFA9b0EA16fa987B93b0f4d302"
-          },
-          "42161": {
-            "tokenAddress": "0xB766039cc6DB368759C1E56B79AFfE831d0Cc507"
           }
         }
       }
@@ -13633,7 +13625,16 @@
       "decimals": 18,
       "symbol": "SETH",
       "tags": [],
-      "extensions": {},
+      "extensions": {
+        "bridgeInfo": {
+          "10": {
+            "tokenAddress": "0xE71bDfE1Df69284f00EE185cf0d95d0c7680c0d4"
+          },
+          "42161": {
+            "tokenAddress": "0xE71bDfE1Df69284f00EE185cf0d95d0c7680c0d4"
+          }
+        }
+      },
       "isAcross": false
     },
     {
@@ -14391,6 +14392,16 @@
     },
     {
       "chainId": 1,
+      "address": "0xFECBa472B2540C5a2d3700b2C9E06F0aa7dC6462",
+      "name": "pub.finance",
+      "decimals": 18,
+      "symbol": "PINT",
+      "tags": [],
+      "extensions": {},
+      "isAcross": false
+    },
+    {
+      "chainId": 1,
       "address": "0xFEb6d5238Ed8F1d59DCaB2db381AA948e625966D",
       "name": "Doge TV",
       "symbol": "DGTV",
@@ -15079,6 +15090,16 @@
     },
     {
       "chainId": 1,
+      "address": "0xaB89D3C2207c97A8b6823421149a389fC04EBcAB",
+      "name": "ETH",
+      "decimals": 18,
+      "symbol": "ETH",
+      "tags": [],
+      "extensions": {},
+      "isAcross": false
+    },
+    {
+      "chainId": 1,
       "address": "0xaC0104Cca91D167873B8601d2e71EB3D4D8c33e0",
       "name": "Seascape Crowns",
       "symbol": "CWS",
@@ -15192,16 +15213,6 @@
       },
       "isAcross": false,
       "isOFT": true
-    },
-    {
-      "chainId": 1,
-      "address": "0xab89d3c2207c97a8b6823421149a389fc04ebcab",
-      "name": "ETH",
-      "decimals": 18,
-      "symbol": "ETH",
-      "tags": [],
-      "extensions": {},
-      "isAcross": false
     },
     {
       "chainId": 1,
@@ -15567,7 +15578,7 @@
     },
     {
       "chainId": 1,
-      "address": "0xbcd4d5ac29e06e4973a1ddcd782cd035d04bc0b7",
+      "address": "0xbcd4D5AC29E06e4973a1dDcd782cd035d04BC0b7",
       "name": "Quick Intel",
       "symbol": "QKNTL",
       "decimals": 18,
@@ -16057,16 +16068,6 @@
           }
         }
       }
-    },
-    {
-      "chainId": 1,
-      "address": "0xc72633f995e98ac3bb8a89e6a9c4af335c3d6e44",
-      "name": "Omnisea",
-      "decimals": 18,
-      "symbol": "OSEA",
-      "tags": [],
-      "extensions": {},
-      "isAcross": false
     },
     {
       "chainId": 1,
@@ -16834,11 +16835,15 @@
       "tags": [],
       "extensions": {
         "bridgeInfo": {
+          "10": {
+            "tokenAddress": "0xdD69DB25F6D620A7baD3023c5d32761D353D3De9"
+          },
           "42161": {
-            "tokenAddress": "0xaF7355462240d5a8f3509BD890994AF1022F1948"
+            "tokenAddress": "0xdD69DB25F6D620A7baD3023c5d32761D353D3De9"
           }
         }
-      }
+      },
+      "isAcross": false
     },
     {
       "chainId": 1,
@@ -17339,154 +17344,6 @@
           }
         }
       }
-    },
-    {
-      "chainId": 1,
-      "address": "0xeD12b794cA80737A25623E24C6864137D7844a25",
-      "name": "Marathon OFT",
-      "decimals": 0,
-      "symbol": "MARA",
-      "tags": [],
-      "extensions": {
-        "feeInfo": {
-          "10": {
-            "minDstGas": 200000
-          },
-          "56": {
-            "minDstGas": 200000
-          },
-          "100": {
-            "minDstGas": 200000
-          },
-          "122": {
-            "minDstGas": 200000
-          },
-          "137": {
-            "minDstGas": 200000
-          },
-          "169": {
-            "minDstGas": 200000
-          },
-          "204": {
-            "minDstGas": 200000
-          },
-          "1088": {
-            "minDstGas": 200000
-          },
-          "1116": {
-            "minDstGas": 200000
-          },
-          "5000": {
-            "minDstGas": 200000
-          },
-          "7700": {
-            "minDstGas": 200000
-          },
-          "8453": {
-            "minDstGas": 200000
-          },
-          "34443": {
-            "minDstGas": 200000
-          },
-          "42161": {
-            "minDstGas": 2000000
-          },
-          "42170": {
-            "minDstGas": 200000
-          },
-          "42220": {
-            "minDstGas": 200000
-          },
-          "43114": {
-            "minDstGas": 200000
-          },
-          "81457": {
-            "minDstGas": 200000
-          },
-          "534352": {
-            "minDstGas": 200000
-          },
-          "7777777": {
-            "minDstGas": 200000
-          },
-          "1313161554": {
-            "minDstGas": 200000
-          }
-        },
-        "oftInfo": {
-          "peersInfo": {
-            "10": {
-              "tokenAddress": "0x0981A1104B7Ab9D1C3e3E9dF0402Bb31A5cF2351"
-            },
-            "56": {
-              "tokenAddress": "0xD56ED3475a63fbeA7C4BB2Dc435C30EB285621a9"
-            },
-            "100": {
-              "tokenAddress": "0xd773f2d6D89845422b5541554237bD5F1edaaBCC"
-            },
-            "122": {
-              "tokenAddress": "0x7291e8E55Ca16DCB2BD654d39282016824EB2699"
-            },
-            "137": {
-              "tokenAddress": "0x2FE8124B4ce7DD9d6f619EDbdC673465951531b0"
-            },
-            "169": {
-              "tokenAddress": "0xBCc187c9188fdF738f74A70B7823B15ff758A3Db"
-            },
-            "204": {
-              "tokenAddress": "0x2FF6a890249bcc6ab071c17a66Db4C327154604C"
-            },
-            "1088": {
-              "tokenAddress": "0xD5b56ccbE1BeE620ec9F0Fc72f8DCc02C376b4E1"
-            },
-            "1116": {
-              "tokenAddress": "0xbd5F8134E78f3fD4EfC65b1DB552e8B621F1675C"
-            },
-            "5000": {
-              "tokenAddress": "0x8686020614eb1F30b581bfa9e1370e572808421A"
-            },
-            "7700": {
-              "tokenAddress": "0x4B68A5FD1bBFAFA96F3B0Befd8A4972487C9B13F"
-            },
-            "8453": {
-              "tokenAddress": "0x7291e8E55Ca16DCB2BD654d39282016824EB2699"
-            },
-            "34443": {
-              "tokenAddress": "0x80Ad6B43520de476AF8da27707Dd2e11731AfcdB"
-            },
-            "42161": {
-              "tokenAddress": "0x13B8D2e31030C305cCaA25d65E0561323a6c0FD8"
-            },
-            "42170": {
-              "tokenAddress": "0x70A9699eBE2e505FF9EC38f3C4b1265CFBf92011"
-            },
-            "42220": {
-              "tokenAddress": "0x22403f0dA2979760c451bF5fD328aa5146cfB9eB"
-            },
-            "43114": {
-              "tokenAddress": "0xF41898A2423F877a2cDC7560FDdA2981Db76c02c"
-            },
-            "81457": {
-              "tokenAddress": "0xCa4869952396C31286e052dc61165Eb9D94F7C53"
-            },
-            "534352": {
-              "tokenAddress": "0x2E71b0375a84c78ABee40E9Db45DC481E0C8f8e9"
-            },
-            "7777777": {
-              "tokenAddress": "0x661d1Fa0aAE29e6608a877627e49A058CAaE0285"
-            },
-            "1313161554": {
-              "tokenAddress": "0x7dB652D72Bdc0cd93ea8773334852f9169Fee79A"
-            }
-          },
-          "oftAdapter": "0xeD12b794cA80737A25623E24C6864137D7844a25",
-          "oftVersion": 1,
-          "endpointVersion": 1,
-          "endpointId": 101
-        }
-      },
-      "isAcross": false,
-      "isOFT": true
     },
     {
       "chainId": 1,
@@ -18210,16 +18067,6 @@
     },
     {
       "chainId": 1,
-      "address": "0xfecba472b2540c5a2d3700b2c9e06f0aa7dc6462",
-      "name": "pub.finance",
-      "decimals": 18,
-      "symbol": "PINT",
-      "tags": [],
-      "extensions": {},
-      "isAcross": false
-    },
-    {
-      "chainId": 1,
       "address": "0xfffffffFf15AbF397dA76f1dcc1A1604F45126DB",
       "name": "Falconswap",
       "symbol": "FSW",
@@ -18267,154 +18114,6 @@
           "endpointVersion": 2,
           "endpointId": 30111,
           "oftSharedDecimals": 9
-        }
-      },
-      "isAcross": false,
-      "isOFT": true
-    },
-    {
-      "chainId": 10,
-      "address": "0x0981A1104B7Ab9D1C3e3E9dF0402Bb31A5cF2351",
-      "name": "Marathon OFT",
-      "decimals": 0,
-      "symbol": "MARA",
-      "tags": [],
-      "extensions": {
-        "feeInfo": {
-          "1": {
-            "minDstGas": 200000
-          },
-          "56": {
-            "minDstGas": 200000
-          },
-          "100": {
-            "minDstGas": 200000
-          },
-          "122": {
-            "minDstGas": 200000
-          },
-          "137": {
-            "minDstGas": 200000
-          },
-          "169": {
-            "minDstGas": 200000
-          },
-          "204": {
-            "minDstGas": 200000
-          },
-          "1088": {
-            "minDstGas": 200000
-          },
-          "1116": {
-            "minDstGas": 200000
-          },
-          "5000": {
-            "minDstGas": 200000
-          },
-          "7700": {
-            "minDstGas": 200000
-          },
-          "8453": {
-            "minDstGas": 200000
-          },
-          "34443": {
-            "minDstGas": 200000
-          },
-          "42161": {
-            "minDstGas": 2000000
-          },
-          "42170": {
-            "minDstGas": 200000
-          },
-          "42220": {
-            "minDstGas": 200000
-          },
-          "43114": {
-            "minDstGas": 200000
-          },
-          "81457": {
-            "minDstGas": 200000
-          },
-          "534352": {
-            "minDstGas": 200000
-          },
-          "7777777": {
-            "minDstGas": 200000
-          },
-          "1313161554": {
-            "minDstGas": 200000
-          }
-        },
-        "oftInfo": {
-          "peersInfo": {
-            "1": {
-              "tokenAddress": "0xeD12b794cA80737A25623E24C6864137D7844a25"
-            },
-            "56": {
-              "tokenAddress": "0xD56ED3475a63fbeA7C4BB2Dc435C30EB285621a9"
-            },
-            "100": {
-              "tokenAddress": "0xd773f2d6D89845422b5541554237bD5F1edaaBCC"
-            },
-            "122": {
-              "tokenAddress": "0x7291e8E55Ca16DCB2BD654d39282016824EB2699"
-            },
-            "137": {
-              "tokenAddress": "0x2FE8124B4ce7DD9d6f619EDbdC673465951531b0"
-            },
-            "169": {
-              "tokenAddress": "0xBCc187c9188fdF738f74A70B7823B15ff758A3Db"
-            },
-            "204": {
-              "tokenAddress": "0x2FF6a890249bcc6ab071c17a66Db4C327154604C"
-            },
-            "1088": {
-              "tokenAddress": "0xD5b56ccbE1BeE620ec9F0Fc72f8DCc02C376b4E1"
-            },
-            "1116": {
-              "tokenAddress": "0xbd5F8134E78f3fD4EfC65b1DB552e8B621F1675C"
-            },
-            "5000": {
-              "tokenAddress": "0x8686020614eb1F30b581bfa9e1370e572808421A"
-            },
-            "7700": {
-              "tokenAddress": "0x4B68A5FD1bBFAFA96F3B0Befd8A4972487C9B13F"
-            },
-            "8453": {
-              "tokenAddress": "0x7291e8E55Ca16DCB2BD654d39282016824EB2699"
-            },
-            "34443": {
-              "tokenAddress": "0x80Ad6B43520de476AF8da27707Dd2e11731AfcdB"
-            },
-            "42161": {
-              "tokenAddress": "0x13B8D2e31030C305cCaA25d65E0561323a6c0FD8"
-            },
-            "42170": {
-              "tokenAddress": "0x70A9699eBE2e505FF9EC38f3C4b1265CFBf92011"
-            },
-            "42220": {
-              "tokenAddress": "0x22403f0dA2979760c451bF5fD328aa5146cfB9eB"
-            },
-            "43114": {
-              "tokenAddress": "0xF41898A2423F877a2cDC7560FDdA2981Db76c02c"
-            },
-            "81457": {
-              "tokenAddress": "0xCa4869952396C31286e052dc61165Eb9D94F7C53"
-            },
-            "534352": {
-              "tokenAddress": "0x2E71b0375a84c78ABee40E9Db45DC481E0C8f8e9"
-            },
-            "7777777": {
-              "tokenAddress": "0x661d1Fa0aAE29e6608a877627e49A058CAaE0285"
-            },
-            "1313161554": {
-              "tokenAddress": "0x7dB652D72Bdc0cd93ea8773334852f9169Fee79A"
-            }
-          },
-          "oftAdapter": "0x0981A1104B7Ab9D1C3e3E9dF0402Bb31A5cF2351",
-          "oftVersion": 1,
-          "endpointVersion": 1,
-          "endpointId": 111
         }
       },
       "isAcross": false,
@@ -18495,7 +18194,7 @@
     },
     {
       "chainId": 10,
-      "address": "0x0f518f700b123dbbe67df12eede41a071a40a9c2",
+      "address": "0x0f518F700B123DBBe67Df12Eede41A071a40A9C2",
       "name": "Cross Chain Token",
       "decimals": 18,
       "symbol": "CCT",
@@ -18725,7 +18424,7 @@
     },
     {
       "chainId": 10,
-      "address": "0x18ba2bd4ee131ff6620144fb04e1fb4648f942d9",
+      "address": "0x18ba2bD4ee131ff6620144fB04e1Fb4648F942D9",
       "name": "l0Word.com",
       "decimals": 18,
       "symbol": "l0WordToken",
@@ -18735,7 +18434,7 @@
     },
     {
       "chainId": 10,
-      "address": "0x1e6c9f4c89ac4d75048155a0dbd0be1f49c460f9",
+      "address": "0x1e6c9F4C89aC4D75048155A0DbD0bE1F49C460f9",
       "name": "vXNF",
       "decimals": 18,
       "symbol": "vXNF",
@@ -19062,7 +18761,7 @@
     },
     {
       "chainId": 10,
-      "address": "0x2c0ef4ab6ed55f75b9cc6a4252d61d1fc6e9882a",
+      "address": "0x2C0Ef4ab6Ed55f75B9CC6a4252d61d1Fc6e9882a",
       "name": "l0Word.com",
       "decimals": 18,
       "symbol": "l0WordToken",
@@ -19200,7 +18899,7 @@
     },
     {
       "chainId": 10,
-      "address": "0x34af6175559aa0efd594db3cc75628d554ddf4c1",
+      "address": "0x34AF6175559aA0Efd594dB3cc75628D554dDf4C1",
       "name": "Magic Club Token (Optimism)",
       "decimals": 18,
       "symbol": "MCTO",
@@ -19225,7 +18924,7 @@
     },
     {
       "chainId": 10,
-      "address": "0x37bb209b118a22f233dea252a5d7f56455765b4d",
+      "address": "0x37bb209B118a22F233DEa252A5D7F56455765b4D",
       "name": "vXEN",
       "decimals": 18,
       "symbol": "vXEN",
@@ -19378,7 +19077,7 @@
     },
     {
       "chainId": 10,
-      "address": "0x42069d11a2cc72388a2e06210921e839cfbd3280",
+      "address": "0x42069d11A2CC72388a2e06210921E839Cfbd3280",
       "name": "GnomeLand",
       "decimals": 18,
       "symbol": "GNOME",
@@ -19521,12 +19220,28 @@
     },
     {
       "chainId": 10,
-      "address": "0x523d5581a0bb8bb2bc9f23b5202894e31124ea3e",
+      "address": "0x523d5581A0bb8BB2Bc9f23B5202894E31124eA3e",
       "name": "l2telegraph.xyz",
       "decimals": 18,
       "symbol": "l2t",
       "tags": [],
       "extensions": {},
+      "isAcross": false
+    },
+    {
+      "chainId": 10,
+      "address": "0x58441E37255b09F9f545e9Dc957F1C41658ff665",
+      "name": "ANGLE_optimism",
+      "decimals": 18,
+      "symbol": "ANGLE",
+      "tags": [],
+      "extensions": {
+        "bridgeInfo": {
+          "1": {
+            "tokenAddress": "0x31429d1856aD1377A8A0079410B297e1a9e214c2"
+          }
+        }
+      },
       "isAcross": false
     },
     {
@@ -19700,7 +19415,7 @@
     },
     {
       "chainId": 10,
-      "address": "0x6630ae120dbda654c18f04eb82ee89c54493378d",
+      "address": "0x6630Ae120DBDA654c18f04Eb82ee89C54493378d",
       "name": "OVERPOWERED",
       "decimals": 18,
       "symbol": "$OVERPOWERED",
@@ -19719,7 +19434,7 @@
     },
     {
       "chainId": 10,
-      "address": "0x67a1fd5f393e9ceee4fb4739d73bf75c1efb9e40",
+      "address": "0x67a1FD5F393E9cEee4Fb4739d73bf75C1eFB9E40",
       "name": "MCLB",
       "decimals": 18,
       "symbol": "MCLB",
@@ -20294,7 +20009,7 @@
     },
     {
       "chainId": 10,
-      "address": "0x8929e9dbd2785e3ba16175e596cdd61520fee0d1",
+      "address": "0x8929e9DbD2785e3BA16175E596CDD61520feE0D1",
       "name": "Altitude",
       "decimals": 18,
       "symbol": "ALTD",
@@ -20537,7 +20252,7 @@
     },
     {
       "chainId": 10,
-      "address": "0x9464e1cb12ca53040d10229074c30cf891e08cee",
+      "address": "0x9464e1cb12ca53040D10229074c30CF891e08cEE",
       "name": "l0Word.com",
       "decimals": 18,
       "symbol": "l0WordToken",
@@ -21001,7 +20716,13 @@
       "decimals": 18,
       "symbol": "SETH",
       "tags": [],
-      "extensions": {},
+      "extensions": {
+        "bridgeInfo": {
+          "1": {
+            "tokenAddress": "0xE71bDfE1Df69284f00EE185cf0d95d0c7680c0d4"
+          }
+        }
+      },
       "isAcross": false
     },
     {
@@ -21033,7 +20754,7 @@
               "tokenAddress": "0xe2510aA4b019af3Eb835d3aC9c800382109A4631"
             },
             "1996": {
-              "tokenAddress": "0xe2510aa4b019af3eb835d3ac9c800382109a4631"
+              "tokenAddress": "0xe2510aA4b019af3Eb835d3aC9c800382109A4631"
             },
             "5000": {
               "tokenAddress": "0x0852123795bC6Aef3A3eb0212DED01607F9c58a5"
@@ -21293,6 +21014,16 @@
       "isOFT": true
     },
     {
+      "chainId": 10,
+      "address": "0xaBA4Da4c283d5D73AEa3E7615A1D8a82f2241e22",
+      "name": "l0Word.com",
+      "decimals": 18,
+      "symbol": "l0WordToken",
+      "tags": [],
+      "extensions": {},
+      "isAcross": false
+    },
+    {
       "name": "Maker",
       "address": "0xab7bAdEF82E9Fe11f6f33f87BC9bC2AA27F2fCB5",
       "symbol": "MKR",
@@ -21306,16 +21037,6 @@
           }
         }
       }
-    },
-    {
-      "chainId": 10,
-      "address": "0xaba4da4c283d5d73aea3e7615a1d8a82f2241e22",
-      "name": "l0Word.com",
-      "decimals": 18,
-      "symbol": "l0WordToken",
-      "tags": [],
-      "extensions": {},
-      "isAcross": false
     },
     {
       "chainId": 10,
@@ -21352,7 +21073,7 @@
     },
     {
       "chainId": 10,
-      "address": "0xc3630b805f10e91c2de084ac26c66bcd91f3d3fe",
+      "address": "0xc3630b805F10E91c2de084Ac26C66bCD91F3D3fE",
       "name": "Clearpool",
       "decimals": 18,
       "symbol": "CPOOL",
@@ -21362,7 +21083,7 @@
     },
     {
       "chainId": 10,
-      "address": "0xc3e5a8a1c3b0b4c81f85ec322554187b3575c478",
+      "address": "0xc3e5a8A1c3B0b4c81F85Ec322554187B3575C478",
       "name": "Omnisea",
       "decimals": 18,
       "symbol": "OSEA",
@@ -21531,7 +21252,13 @@
       "decimals": 18,
       "symbol": "GETH",
       "tags": [],
-      "extensions": {},
+      "extensions": {
+        "bridgeInfo": {
+          "1": {
+            "tokenAddress": "0xdD69DB25F6D620A7baD3023c5d32761D353D3De9"
+          }
+        }
+      },
       "isAcross": false
     },
     {
@@ -21791,7 +21518,7 @@
     },
     {
       "chainId": 10,
-      "address": "0xf38fc31bfa4bc000e8f7bcfa5e4a217d2c61f064",
+      "address": "0xf38FC31BFa4Bc000e8F7BcFa5E4a217D2c61F064",
       "name": "l2telegraph.xyz",
       "decimals": 18,
       "symbol": "l2telegraph.xyz",
@@ -21947,34 +21674,6 @@
       },
       "isAcross": false,
       "isOFT": true
-    },
-    {
-      "chainId": 50,
-      "address": "0x147bffe7074a1b70080e6698542d0d41500a87c3",
-      "tags": [],
-      "extensions": {},
-      "isAcross": false
-    },
-    {
-      "chainId": 50,
-      "address": "0x2761c39102bcf7fc6365580d94cd1882f9cc2650",
-      "tags": [],
-      "extensions": {},
-      "isAcross": false
-    },
-    {
-      "chainId": 50,
-      "address": "0xef9ec60e186c8a1a0439af0aedb6deb9f34a2c88",
-      "tags": [],
-      "extensions": {},
-      "isAcross": false
-    },
-    {
-      "chainId": 50,
-      "address": "0xffa188493c15dfaf2c206c97d8633377847b6a52",
-      "tags": [],
-      "extensions": {},
-      "isAcross": false
     },
     {
       "chainId": 56,
@@ -22524,7 +22223,7 @@
     },
     {
       "chainId": 56,
-      "address": "0x128aedc7f41ffb82131215e1722d8366faad0cd4",
+      "address": "0x128AEdC7f41ffb82131215e1722D8366faaD0CD4",
       "name": "BNB",
       "decimals": 18,
       "symbol": "BNB",
@@ -23092,7 +22791,7 @@
     },
     {
       "chainId": 56,
-      "address": "0x1e6c9f4c89ac4d75048155a0dbd0be1f49c460f9",
+      "address": "0x1e6c9F4C89aC4D75048155A0DbD0bE1F49C460f9",
       "name": "vXNF",
       "decimals": 18,
       "symbol": "vXNF",
@@ -23303,7 +23002,7 @@
     },
     {
       "chainId": 56,
-      "address": "0x2290c6bd9560e6498dfdf10f9ecb17997ca131f2",
+      "address": "0x2290C6bD9560E6498dFDf10F9eCB17997CA131f2",
       "name": "MSTR Token",
       "decimals": 18,
       "symbol": "MSTR",
@@ -23732,7 +23431,7 @@
     },
     {
       "chainId": 56,
-      "address": "0x34af6175559aa0efd594db3cc75628d554ddf4c1",
+      "address": "0x34AF6175559aA0Efd594dB3cc75628D554dDf4C1",
       "name": "Magic Club Token (BSC)",
       "decimals": 18,
       "symbol": "MCTB",
@@ -23757,7 +23456,7 @@
     },
     {
       "chainId": 56,
-      "address": "0x352e9a93498c4aa72734a32433bca094f5ab6da8",
+      "address": "0x352e9A93498C4aa72734a32433bca094f5aB6da8",
       "name": "Wrapped SCR",
       "decimals": 18,
       "symbol": "wSCR",
@@ -23941,7 +23640,7 @@
     },
     {
       "chainId": 56,
-      "address": "0x37bb209b118a22f233dea252a5d7f56455765b4d",
+      "address": "0x37bb209B118a22F233DEa252A5D7F56455765b4D",
       "name": "vXEN",
       "decimals": 18,
       "symbol": "vXEN",
@@ -25235,7 +24934,7 @@
     },
     {
       "chainId": 56,
-      "address": "0x67a1fd5f393e9ceee4fb4739d73bf75c1efb9e40",
+      "address": "0x67a1FD5F393E9cEee4Fb4739d73bf75C1eFB9E40",
       "name": "MCLB",
       "decimals": 18,
       "symbol": "MCLB",
@@ -26170,7 +25869,7 @@
     },
     {
       "chainId": 56,
-      "address": "0x7b610012bdc4d6deba2c2d91684e408f40863429",
+      "address": "0x7b610012bDC4D6DeBa2C2D91684e408f40863429",
       "name": "Omnisea",
       "decimals": 18,
       "symbol": "OSEA",
@@ -26421,7 +26120,7 @@
     },
     {
       "chainId": 56,
-      "address": "0x8929e9dbd2785e3ba16175e596cdd61520fee0d1",
+      "address": "0x8929e9DbD2785e3BA16175E596CDD61520feE0D1",
       "name": "Altitude",
       "decimals": 18,
       "symbol": "ALTD",
@@ -26627,7 +26326,7 @@
               "tokenAddress": "0xe2510aA4b019af3Eb835d3aC9c800382109A4631"
             },
             "1996": {
-              "tokenAddress": "0xe2510aa4b019af3eb835d3ac9c800382109a4631"
+              "tokenAddress": "0xe2510aA4b019af3Eb835d3aC9c800382109A4631"
             },
             "5000": {
               "tokenAddress": "0x0852123795bC6Aef3A3eb0212DED01607F9c58a5"
@@ -26784,6 +26483,22 @@
           }
         }
       }
+    },
+    {
+      "chainId": 56,
+      "address": "0x97B6897AAd7aBa3861c04C0e6388Fc02AF1F227f",
+      "name": "ANGLE_bsc",
+      "decimals": 18,
+      "symbol": "ANGLE",
+      "tags": [],
+      "extensions": {
+        "bridgeInfo": {
+          "1": {
+            "tokenAddress": "0x31429d1856aD1377A8A0079410B297e1a9e214c2"
+          }
+        }
+      },
+      "isAcross": false
     },
     {
       "chainId": 56,
@@ -27327,6 +27042,16 @@
     },
     {
       "chainId": 56,
+      "address": "0xD081BE7f329e13c4097cFa3668f1E690Cde9c08d",
+      "name": "StakeStone Bitcoin",
+      "decimals": 18,
+      "symbol": "SBTC",
+      "tags": [],
+      "extensions": {},
+      "isAcross": false
+    },
+    {
+      "chainId": 56,
       "address": "0xD4423795fd904D9B87554940a95FB7016f172773",
       "name": "AI Network",
       "decimals": 18,
@@ -27359,154 +27084,6 @@
           "endpointVersion": 2,
           "endpointId": 30102,
           "oftSharedDecimals": 6
-        }
-      },
-      "isAcross": false,
-      "isOFT": true
-    },
-    {
-      "chainId": 56,
-      "address": "0xD56ED3475a63fbeA7C4BB2Dc435C30EB285621a9",
-      "name": "Marathon OFT",
-      "decimals": 0,
-      "symbol": "MARA",
-      "tags": [],
-      "extensions": {
-        "feeInfo": {
-          "1": {
-            "minDstGas": 200000
-          },
-          "10": {
-            "minDstGas": 200000
-          },
-          "100": {
-            "minDstGas": 200000
-          },
-          "122": {
-            "minDstGas": 200000
-          },
-          "137": {
-            "minDstGas": 200000
-          },
-          "169": {
-            "minDstGas": 200000
-          },
-          "204": {
-            "minDstGas": 200000
-          },
-          "1088": {
-            "minDstGas": 200000
-          },
-          "1116": {
-            "minDstGas": 200000
-          },
-          "5000": {
-            "minDstGas": 200000
-          },
-          "7700": {
-            "minDstGas": 200000
-          },
-          "8453": {
-            "minDstGas": 200000
-          },
-          "34443": {
-            "minDstGas": 200000
-          },
-          "42161": {
-            "minDstGas": 2000000
-          },
-          "42170": {
-            "minDstGas": 200000
-          },
-          "42220": {
-            "minDstGas": 200000
-          },
-          "43114": {
-            "minDstGas": 200000
-          },
-          "81457": {
-            "minDstGas": 200000
-          },
-          "534352": {
-            "minDstGas": 200000
-          },
-          "7777777": {
-            "minDstGas": 200000
-          },
-          "1313161554": {
-            "minDstGas": 200000
-          }
-        },
-        "oftInfo": {
-          "peersInfo": {
-            "1": {
-              "tokenAddress": "0xeD12b794cA80737A25623E24C6864137D7844a25"
-            },
-            "10": {
-              "tokenAddress": "0x0981A1104B7Ab9D1C3e3E9dF0402Bb31A5cF2351"
-            },
-            "100": {
-              "tokenAddress": "0xd773f2d6D89845422b5541554237bD5F1edaaBCC"
-            },
-            "122": {
-              "tokenAddress": "0x7291e8E55Ca16DCB2BD654d39282016824EB2699"
-            },
-            "137": {
-              "tokenAddress": "0x2FE8124B4ce7DD9d6f619EDbdC673465951531b0"
-            },
-            "169": {
-              "tokenAddress": "0xBCc187c9188fdF738f74A70B7823B15ff758A3Db"
-            },
-            "204": {
-              "tokenAddress": "0x2FF6a890249bcc6ab071c17a66Db4C327154604C"
-            },
-            "1088": {
-              "tokenAddress": "0xD5b56ccbE1BeE620ec9F0Fc72f8DCc02C376b4E1"
-            },
-            "1116": {
-              "tokenAddress": "0xbd5F8134E78f3fD4EfC65b1DB552e8B621F1675C"
-            },
-            "5000": {
-              "tokenAddress": "0x8686020614eb1F30b581bfa9e1370e572808421A"
-            },
-            "7700": {
-              "tokenAddress": "0x4B68A5FD1bBFAFA96F3B0Befd8A4972487C9B13F"
-            },
-            "8453": {
-              "tokenAddress": "0x7291e8E55Ca16DCB2BD654d39282016824EB2699"
-            },
-            "34443": {
-              "tokenAddress": "0x80Ad6B43520de476AF8da27707Dd2e11731AfcdB"
-            },
-            "42161": {
-              "tokenAddress": "0x13B8D2e31030C305cCaA25d65E0561323a6c0FD8"
-            },
-            "42170": {
-              "tokenAddress": "0x70A9699eBE2e505FF9EC38f3C4b1265CFBf92011"
-            },
-            "42220": {
-              "tokenAddress": "0x22403f0dA2979760c451bF5fD328aa5146cfB9eB"
-            },
-            "43114": {
-              "tokenAddress": "0xF41898A2423F877a2cDC7560FDdA2981Db76c02c"
-            },
-            "81457": {
-              "tokenAddress": "0xCa4869952396C31286e052dc61165Eb9D94F7C53"
-            },
-            "534352": {
-              "tokenAddress": "0x2E71b0375a84c78ABee40E9Db45DC481E0C8f8e9"
-            },
-            "7777777": {
-              "tokenAddress": "0x661d1Fa0aAE29e6608a877627e49A058CAaE0285"
-            },
-            "1313161554": {
-              "tokenAddress": "0x7dB652D72Bdc0cd93ea8773334852f9169Fee79A"
-            }
-          },
-          "oftAdapter": "0xD56ED3475a63fbeA7C4BB2Dc435C30EB285621a9",
-          "oftVersion": 1,
-          "endpointVersion": 1,
-          "endpointId": 102
         }
       },
       "isAcross": false,
@@ -27731,6 +27308,16 @@
           }
         }
       }
+    },
+    {
+      "chainId": 56,
+      "address": "0xEcabA91d04d1a1F4944675F91f05C3318EF0ea53",
+      "name": "l2telegraph.xyz",
+      "decimals": 18,
+      "symbol": "l2t",
+      "tags": [],
+      "extensions": {},
+      "isAcross": false
     },
     {
       "chainId": 56,
@@ -28360,7 +27947,7 @@
     },
     {
       "chainId": 56,
-      "address": "0xad1cb8d549955900a6d843272f31030e8b7b4558",
+      "address": "0xad1cB8d549955900a6D843272f31030E8b7B4558",
       "name": "vXEN",
       "decimals": 18,
       "symbol": "vXEN",
@@ -28797,16 +28384,6 @@
           }
         }
       }
-    },
-    {
-      "chainId": 56,
-      "address": "0xd081be7f329e13c4097cfa3668f1e690cde9c08d",
-      "name": "StakeStone Bitcoin",
-      "decimals": 18,
-      "symbol": "SBTC",
-      "tags": [],
-      "extensions": {},
-      "isAcross": false
     },
     {
       "chainId": 56,
@@ -29443,16 +29020,6 @@
     },
     {
       "chainId": 56,
-      "address": "0xecaba91d04d1a1f4944675f91f05c3318ef0ea53",
-      "name": "l2telegraph.xyz",
-      "decimals": 18,
-      "symbol": "l2t",
-      "tags": [],
-      "extensions": {},
-      "isAcross": false
-    },
-    {
-      "chainId": 56,
       "address": "0xed1fa3155ebB4cE35DA3e2f8B122717B823BDFa1",
       "name": "NFTEarthOFT",
       "decimals": 18,
@@ -29906,7 +29473,7 @@
               "tokenAddress": "0xe2510aA4b019af3Eb835d3aC9c800382109A4631"
             },
             "1996": {
-              "tokenAddress": "0xe2510aa4b019af3eb835d3ac9c800382109a4631"
+              "tokenAddress": "0xe2510aA4b019af3Eb835d3aC9c800382109A4631"
             },
             "5000": {
               "tokenAddress": "0x0852123795bC6Aef3A3eb0212DED01607F9c58a5"
@@ -29951,7 +29518,7 @@
     },
     {
       "chainId": 100,
-      "address": "0x18ba2bd4ee131ff6620144fb04e1fb4648f942d9",
+      "address": "0x18ba2bD4ee131ff6620144fB04e1Fb4648F942D9",
       "name": "l0Word.com",
       "decimals": 18,
       "symbol": "l0WordToken",
@@ -30969,143 +30536,7 @@
     },
     {
       "chainId": 100,
-      "address": "0xd773f2d6D89845422b5541554237bD5F1edaaBCC",
-      "name": "Marathon OFT",
-      "decimals": 0,
-      "symbol": "MARA",
-      "tags": [],
-      "extensions": {
-        "feeInfo": {
-          "1": {
-            "minDstGas": 200000
-          },
-          "10": {
-            "minDstGas": 200000
-          },
-          "56": {
-            "minDstGas": 200000
-          },
-          "122": {
-            "minDstGas": 200000
-          },
-          "137": {
-            "minDstGas": 200000
-          },
-          "204": {
-            "minDstGas": 200000
-          },
-          "1088": {
-            "minDstGas": 200000
-          },
-          "1116": {
-            "minDstGas": 200000
-          },
-          "5000": {
-            "minDstGas": 200000
-          },
-          "7700": {
-            "minDstGas": 200000
-          },
-          "8453": {
-            "minDstGas": 200000
-          },
-          "34443": {
-            "minDstGas": 200000
-          },
-          "42161": {
-            "minDstGas": 2000000
-          },
-          "42170": {
-            "minDstGas": 200000
-          },
-          "42220": {
-            "minDstGas": 200000
-          },
-          "43114": {
-            "minDstGas": 200000
-          },
-          "81457": {
-            "minDstGas": 200000
-          },
-          "534352": {
-            "minDstGas": 200000
-          },
-          "7777777": {
-            "minDstGas": 200000
-          }
-        },
-        "oftInfo": {
-          "peersInfo": {
-            "1": {
-              "tokenAddress": "0xeD12b794cA80737A25623E24C6864137D7844a25"
-            },
-            "10": {
-              "tokenAddress": "0x0981A1104B7Ab9D1C3e3E9dF0402Bb31A5cF2351"
-            },
-            "56": {
-              "tokenAddress": "0xD56ED3475a63fbeA7C4BB2Dc435C30EB285621a9"
-            },
-            "122": {
-              "tokenAddress": "0x7291e8E55Ca16DCB2BD654d39282016824EB2699"
-            },
-            "137": {
-              "tokenAddress": "0x2FE8124B4ce7DD9d6f619EDbdC673465951531b0"
-            },
-            "204": {
-              "tokenAddress": "0x2FF6a890249bcc6ab071c17a66Db4C327154604C"
-            },
-            "1088": {
-              "tokenAddress": "0xD5b56ccbE1BeE620ec9F0Fc72f8DCc02C376b4E1"
-            },
-            "1116": {
-              "tokenAddress": "0xbd5F8134E78f3fD4EfC65b1DB552e8B621F1675C"
-            },
-            "5000": {
-              "tokenAddress": "0x8686020614eb1F30b581bfa9e1370e572808421A"
-            },
-            "7700": {
-              "tokenAddress": "0x4B68A5FD1bBFAFA96F3B0Befd8A4972487C9B13F"
-            },
-            "8453": {
-              "tokenAddress": "0x7291e8E55Ca16DCB2BD654d39282016824EB2699"
-            },
-            "34443": {
-              "tokenAddress": "0x80Ad6B43520de476AF8da27707Dd2e11731AfcdB"
-            },
-            "42161": {
-              "tokenAddress": "0x13B8D2e31030C305cCaA25d65E0561323a6c0FD8"
-            },
-            "42170": {
-              "tokenAddress": "0x70A9699eBE2e505FF9EC38f3C4b1265CFBf92011"
-            },
-            "42220": {
-              "tokenAddress": "0x22403f0dA2979760c451bF5fD328aa5146cfB9eB"
-            },
-            "43114": {
-              "tokenAddress": "0xF41898A2423F877a2cDC7560FDdA2981Db76c02c"
-            },
-            "81457": {
-              "tokenAddress": "0xCa4869952396C31286e052dc61165Eb9D94F7C53"
-            },
-            "534352": {
-              "tokenAddress": "0x2E71b0375a84c78ABee40E9Db45DC481E0C8f8e9"
-            },
-            "7777777": {
-              "tokenAddress": "0x661d1Fa0aAE29e6608a877627e49A058CAaE0285"
-            }
-          },
-          "oftAdapter": "0xd773f2d6D89845422b5541554237bD5F1edaaBCC",
-          "oftVersion": 1,
-          "endpointVersion": 1,
-          "endpointId": 145
-        }
-      },
-      "isAcross": false,
-      "isOFT": true
-    },
-    {
-      "chainId": 100,
-      "address": "0xd78544e8270ace4ba28fb69fc1c12931d6f5d69e",
+      "address": "0xd78544e8270AcE4Ba28fB69Fc1c12931d6f5d69e",
       "name": "GNOBBY",
       "decimals": 18,
       "symbol": "GNOBBY",
@@ -31377,7 +30808,7 @@
     },
     {
       "chainId": 122,
-      "address": "0x23615409d6bc3c7946f95aab64b9cea584132cbb",
+      "address": "0x23615409D6bC3c7946f95aAb64b9cEA584132cbb",
       "name": "l0Word.com",
       "decimals": 18,
       "symbol": "l0WordToken",
@@ -31404,142 +30835,6 @@
       "tags": [],
       "extensions": {},
       "isAcross": false
-    },
-    {
-      "chainId": 122,
-      "address": "0x7291e8E55Ca16DCB2BD654d39282016824EB2699",
-      "name": "Marathon OFT",
-      "decimals": 0,
-      "symbol": "MARA",
-      "tags": [],
-      "extensions": {
-        "feeInfo": {
-          "1": {
-            "minDstGas": 200000
-          },
-          "10": {
-            "minDstGas": 200000
-          },
-          "56": {
-            "minDstGas": 200000
-          },
-          "100": {
-            "minDstGas": 200000
-          },
-          "137": {
-            "minDstGas": 200000
-          },
-          "204": {
-            "minDstGas": 200000
-          },
-          "1088": {
-            "minDstGas": 200000
-          },
-          "1116": {
-            "minDstGas": 200000
-          },
-          "5000": {
-            "minDstGas": 200000
-          },
-          "7700": {
-            "minDstGas": 200000
-          },
-          "8453": {
-            "minDstGas": 200000
-          },
-          "34443": {
-            "minDstGas": 200000
-          },
-          "42161": {
-            "minDstGas": 2000000
-          },
-          "42170": {
-            "minDstGas": 200000
-          },
-          "42220": {
-            "minDstGas": 200000
-          },
-          "43114": {
-            "minDstGas": 200000
-          },
-          "81457": {
-            "minDstGas": 200000
-          },
-          "534352": {
-            "minDstGas": 200000
-          },
-          "7777777": {
-            "minDstGas": 200000
-          }
-        },
-        "oftInfo": {
-          "peersInfo": {
-            "1": {
-              "tokenAddress": "0xeD12b794cA80737A25623E24C6864137D7844a25"
-            },
-            "10": {
-              "tokenAddress": "0x0981A1104B7Ab9D1C3e3E9dF0402Bb31A5cF2351"
-            },
-            "56": {
-              "tokenAddress": "0xD56ED3475a63fbeA7C4BB2Dc435C30EB285621a9"
-            },
-            "100": {
-              "tokenAddress": "0xd773f2d6D89845422b5541554237bD5F1edaaBCC"
-            },
-            "137": {
-              "tokenAddress": "0x2FE8124B4ce7DD9d6f619EDbdC673465951531b0"
-            },
-            "204": {
-              "tokenAddress": "0x2FF6a890249bcc6ab071c17a66Db4C327154604C"
-            },
-            "1088": {
-              "tokenAddress": "0xD5b56ccbE1BeE620ec9F0Fc72f8DCc02C376b4E1"
-            },
-            "1116": {
-              "tokenAddress": "0xbd5F8134E78f3fD4EfC65b1DB552e8B621F1675C"
-            },
-            "5000": {
-              "tokenAddress": "0x8686020614eb1F30b581bfa9e1370e572808421A"
-            },
-            "7700": {
-              "tokenAddress": "0x4B68A5FD1bBFAFA96F3B0Befd8A4972487C9B13F"
-            },
-            "8453": {
-              "tokenAddress": "0x7291e8E55Ca16DCB2BD654d39282016824EB2699"
-            },
-            "34443": {
-              "tokenAddress": "0x80Ad6B43520de476AF8da27707Dd2e11731AfcdB"
-            },
-            "42161": {
-              "tokenAddress": "0x13B8D2e31030C305cCaA25d65E0561323a6c0FD8"
-            },
-            "42170": {
-              "tokenAddress": "0x70A9699eBE2e505FF9EC38f3C4b1265CFBf92011"
-            },
-            "42220": {
-              "tokenAddress": "0x22403f0dA2979760c451bF5fD328aa5146cfB9eB"
-            },
-            "43114": {
-              "tokenAddress": "0xF41898A2423F877a2cDC7560FDdA2981Db76c02c"
-            },
-            "81457": {
-              "tokenAddress": "0xCa4869952396C31286e052dc61165Eb9D94F7C53"
-            },
-            "534352": {
-              "tokenAddress": "0x2E71b0375a84c78ABee40E9Db45DC481E0C8f8e9"
-            },
-            "7777777": {
-              "tokenAddress": "0x661d1Fa0aAE29e6608a877627e49A058CAaE0285"
-            }
-          },
-          "oftAdapter": "0x7291e8E55Ca16DCB2BD654d39282016824EB2699",
-          "oftVersion": 1,
-          "endpointVersion": 1,
-          "endpointId": 138
-        }
-      },
-      "isAcross": false,
-      "isOFT": true
     },
     {
       "chainId": 122,
@@ -32492,7 +31787,7 @@
               "tokenAddress": "0x8A47e412a865198b9d5f10fF2e54f788f1696195"
             },
             "6900": {
-              "tokenAddress": "0x0CaCF669f8446BeCA826913a3c6B96aCD4b02a97"
+              "tokenAddress": "0x4df4efa0a3707b6cc964f62042e8a303a0376f54"
             },
             "8453": {
               "tokenAddress": "0x3aDE6652F203d919697f8577F75Eebb989A5C586"
@@ -33551,7 +32846,7 @@
     },
     {
       "chainId": 137,
-      "address": "0x1e6c9f4c89ac4d75048155a0dbd0be1f49c460f9",
+      "address": "0x1e6c9F4C89aC4D75048155A0DbD0bE1F49C460f9",
       "name": "vXNF",
       "decimals": 18,
       "symbol": "vXNF",
@@ -33886,154 +33181,6 @@
           }
         }
       }
-    },
-    {
-      "chainId": 137,
-      "address": "0x2FE8124B4ce7DD9d6f619EDbdC673465951531b0",
-      "name": "Marathon OFT",
-      "decimals": 0,
-      "symbol": "MARA",
-      "tags": [],
-      "extensions": {
-        "feeInfo": {
-          "1": {
-            "minDstGas": 200000
-          },
-          "10": {
-            "minDstGas": 200000
-          },
-          "56": {
-            "minDstGas": 200000
-          },
-          "100": {
-            "minDstGas": 200000
-          },
-          "122": {
-            "minDstGas": 200000
-          },
-          "169": {
-            "minDstGas": 200000
-          },
-          "204": {
-            "minDstGas": 200000
-          },
-          "1088": {
-            "minDstGas": 200000
-          },
-          "1116": {
-            "minDstGas": 200000
-          },
-          "5000": {
-            "minDstGas": 200000
-          },
-          "7700": {
-            "minDstGas": 200000
-          },
-          "8453": {
-            "minDstGas": 200000
-          },
-          "34443": {
-            "minDstGas": 200000
-          },
-          "42161": {
-            "minDstGas": 2000000
-          },
-          "42170": {
-            "minDstGas": 200000
-          },
-          "42220": {
-            "minDstGas": 200000
-          },
-          "43114": {
-            "minDstGas": 200000
-          },
-          "81457": {
-            "minDstGas": 200000
-          },
-          "534352": {
-            "minDstGas": 200000
-          },
-          "7777777": {
-            "minDstGas": 200000
-          },
-          "1313161554": {
-            "minDstGas": 200000
-          }
-        },
-        "oftInfo": {
-          "peersInfo": {
-            "1": {
-              "tokenAddress": "0xeD12b794cA80737A25623E24C6864137D7844a25"
-            },
-            "10": {
-              "tokenAddress": "0x0981A1104B7Ab9D1C3e3E9dF0402Bb31A5cF2351"
-            },
-            "56": {
-              "tokenAddress": "0xD56ED3475a63fbeA7C4BB2Dc435C30EB285621a9"
-            },
-            "100": {
-              "tokenAddress": "0xd773f2d6D89845422b5541554237bD5F1edaaBCC"
-            },
-            "122": {
-              "tokenAddress": "0x7291e8E55Ca16DCB2BD654d39282016824EB2699"
-            },
-            "169": {
-              "tokenAddress": "0xBCc187c9188fdF738f74A70B7823B15ff758A3Db"
-            },
-            "204": {
-              "tokenAddress": "0x2FF6a890249bcc6ab071c17a66Db4C327154604C"
-            },
-            "1088": {
-              "tokenAddress": "0xD5b56ccbE1BeE620ec9F0Fc72f8DCc02C376b4E1"
-            },
-            "1116": {
-              "tokenAddress": "0xbd5F8134E78f3fD4EfC65b1DB552e8B621F1675C"
-            },
-            "5000": {
-              "tokenAddress": "0x8686020614eb1F30b581bfa9e1370e572808421A"
-            },
-            "7700": {
-              "tokenAddress": "0x4B68A5FD1bBFAFA96F3B0Befd8A4972487C9B13F"
-            },
-            "8453": {
-              "tokenAddress": "0x7291e8E55Ca16DCB2BD654d39282016824EB2699"
-            },
-            "34443": {
-              "tokenAddress": "0x80Ad6B43520de476AF8da27707Dd2e11731AfcdB"
-            },
-            "42161": {
-              "tokenAddress": "0x13B8D2e31030C305cCaA25d65E0561323a6c0FD8"
-            },
-            "42170": {
-              "tokenAddress": "0x70A9699eBE2e505FF9EC38f3C4b1265CFBf92011"
-            },
-            "42220": {
-              "tokenAddress": "0x22403f0dA2979760c451bF5fD328aa5146cfB9eB"
-            },
-            "43114": {
-              "tokenAddress": "0xF41898A2423F877a2cDC7560FDdA2981Db76c02c"
-            },
-            "81457": {
-              "tokenAddress": "0xCa4869952396C31286e052dc61165Eb9D94F7C53"
-            },
-            "534352": {
-              "tokenAddress": "0x2E71b0375a84c78ABee40E9Db45DC481E0C8f8e9"
-            },
-            "7777777": {
-              "tokenAddress": "0x661d1Fa0aAE29e6608a877627e49A058CAaE0285"
-            },
-            "1313161554": {
-              "tokenAddress": "0x7dB652D72Bdc0cd93ea8773334852f9169Fee79A"
-            }
-          },
-          "oftAdapter": "0x2FE8124B4ce7DD9d6f619EDbdC673465951531b0",
-          "oftVersion": 1,
-          "endpointVersion": 1,
-          "endpointId": 109
-        }
-      },
-      "isAcross": false,
-      "isOFT": true
     },
     {
       "chainId": 137,
@@ -34471,7 +33618,7 @@
     },
     {
       "chainId": 137,
-      "address": "0x37bb209b118a22f233dea252a5d7f56455765b4d",
+      "address": "0x37bb209B118a22F233DEa252A5D7F56455765b4D",
       "name": "vXEN",
       "decimals": 18,
       "symbol": "vXEN",
@@ -34981,7 +34128,7 @@
               "tokenAddress": "0xe2510aA4b019af3Eb835d3aC9c800382109A4631"
             },
             "1996": {
-              "tokenAddress": "0xe2510aa4b019af3eb835d3ac9c800382109a4631"
+              "tokenAddress": "0xe2510aA4b019af3Eb835d3aC9c800382109A4631"
             },
             "5000": {
               "tokenAddress": "0x0852123795bC6Aef3A3eb0212DED01607F9c58a5"
@@ -36171,7 +35318,7 @@
     },
     {
       "chainId": 137,
-      "address": "0x67a1fd5f393e9ceee4fb4739d73bf75c1efb9e40",
+      "address": "0x67a1FD5F393E9cEee4Fb4739d73bf75C1eFB9E40",
       "name": "MCLB",
       "decimals": 18,
       "symbol": "MCLB",
@@ -37369,7 +36516,7 @@
     },
     {
       "chainId": 137,
-      "address": "0x8929e9dbd2785e3ba16175e596cdd61520fee0d1",
+      "address": "0x8929e9DbD2785e3BA16175E596CDD61520feE0D1",
       "name": "Altitude",
       "decimals": 18,
       "symbol": "ALTD",
@@ -37846,7 +36993,7 @@
     },
     {
       "chainId": 137,
-      "address": "0x987ae3c9b7ff2a4332e55ef3f0ab71bcc009e7ac",
+      "address": "0x987Ae3C9B7ff2A4332e55Ef3f0AB71Bcc009e7AC",
       "name": "l2telegraph.xyz",
       "decimals": 18,
       "symbol": "l2t",
@@ -37973,6 +37120,25 @@
           }
         }
       }
+    },
+    {
+      "chainId": 137,
+      "address": "0x9Ff606f0BFd752Bf8f68092eD70D35CCc1643492",
+      "name": "PORIGON",
+      "decimals": 18,
+      "symbol": "PORIGON",
+      "tags": [],
+      "extensions": {
+        "peersInfo": {
+          "8453": {
+            "tokenAddress": "0x9Ff606f0BFd752Bf8f68092eD70D35CCc1643492"
+          },
+          "42161": {
+            "tokenAddress": "0x9ff606f0bfd752bf8f68092ed70d35ccc1643492"
+          }
+        }
+      },
+      "isAcross": false
     },
     {
       "chainId": 137,
@@ -38308,25 +37474,6 @@
           }
         }
       }
-    },
-    {
-      "chainId": 137,
-      "address": "0x9ff606f0bfd752bf8f68092ed70d35ccc1643492",
-      "name": "PORIGON",
-      "decimals": 18,
-      "symbol": "PORIGON",
-      "tags": [],
-      "extensions": {
-        "peersInfo": {
-          "8453": {
-            "tokenAddress": "0x9Ff606f0BFd752Bf8f68092eD70D35CCc1643492"
-          },
-          "42161": {
-            "tokenAddress": "0x9ff606f0bfd752bf8f68092ed70d35ccc1643492"
-          }
-        }
-      },
-      "isAcross": false
     },
     {
       "chainId": 137,
@@ -40235,7 +39382,7 @@
     },
     {
       "chainId": 137,
-      "address": "0xad1cb8d549955900a6d843272f31030e8b7b4558",
+      "address": "0xad1cB8d549955900a6D843272f31030E8b7B4558",
       "name": "vXEN",
       "decimals": 18,
       "symbol": "vXEN",
@@ -40305,7 +39452,7 @@
     },
     {
       "chainId": 137,
-      "address": "0xb08b3603c5f2629ef83510e6049edeefdc3a2d91",
+      "address": "0xb08b3603C5F2629eF83510E6049eDEeFdc3A2D91",
       "name": "Clearpool",
       "decimals": 18,
       "symbol": "CPOOL",
@@ -40543,7 +39690,7 @@
     },
     {
       "chainId": 137,
-      "address": "0xc12a9403142f8ff9f00d81e788048bc2469bde22",
+      "address": "0xc12a9403142f8FF9F00D81e788048BC2469bde22",
       "name": "Cross Chain Token",
       "decimals": 18,
       "symbol": "CCT",
@@ -40988,7 +40135,7 @@
     },
     {
       "chainId": 137,
-      "address": "0xd57f8b6f3e5d1e0ab85118f5e0dd893a08c43346",
+      "address": "0xd57f8b6F3e5d1e0ab85118F5E0Dd893A08C43346",
       "name": "Omnisea",
       "decimals": 18,
       "symbol": "OSEA",
@@ -42775,34 +41922,6 @@
     },
     {
       "chainId": 169,
-      "address": "0x7dB652D72Bdc0cd93ea8773334852f9169Fee79A",
-      "name": "Marathon OFT",
-      "decimals": 0,
-      "symbol": "MARA",
-      "tags": [],
-      "extensions": {
-        "peersInfo": {
-          "1": {
-            "tokenAddress": "0xeD12b794cA80737A25623E24C6864137D7844a25"
-          },
-          "10": {
-            "tokenAddress": "0x0981A1104B7Ab9D1C3e3E9dF0402Bb31A5cF2351"
-          },
-          "56": {
-            "tokenAddress": "0xD56ED3475a63fbeA7C4BB2Dc435C30EB285621a9"
-          },
-          "137": {
-            "tokenAddress": "0x2FE8124B4ce7DD9d6f619EDbdC673465951531b0"
-          },
-          "42161": {
-            "tokenAddress": "0x13B8D2e31030C305cCaA25d65E0561323a6c0FD8"
-          }
-        }
-      },
-      "isAcross": false
-    },
-    {
-      "chainId": 169,
       "address": "0x89BAfaD9B675973F374EE541634afb9242d65Ffc",
       "name": "Etherway",
       "decimals": 18,
@@ -42863,7 +41982,7 @@
     },
     {
       "chainId": 169,
-      "address": "0x9582b518d28dc65945f8151c25e44a4e80504205",
+      "address": "0x9582B518d28Dc65945f8151c25E44A4e80504205",
       "name": "GULL",
       "symbol": "GULL",
       "decimals": 18,
@@ -42947,76 +42066,6 @@
           "endpointVersion": 2,
           "endpointId": 30217,
           "oftSharedDecimals": 6
-        }
-      },
-      "isAcross": false,
-      "isOFT": true
-    },
-    {
-      "chainId": 169,
-      "address": "0xBCc187c9188fdF738f74A70B7823B15ff758A3Db",
-      "name": "Marathon OFT",
-      "decimals": 0,
-      "symbol": "MARA",
-      "tags": [],
-      "extensions": {
-        "feeInfo": {
-          "1": {
-            "minDstGas": 200000
-          },
-          "10": {
-            "minDstGas": 200000
-          },
-          "56": {
-            "minDstGas": 200000
-          },
-          "137": {
-            "minDstGas": 200000
-          },
-          "34443": {
-            "minDstGas": 200000
-          },
-          "42161": {
-            "minDstGas": 2000000
-          },
-          "81457": {
-            "minDstGas": 200000
-          },
-          "534352": {
-            "minDstGas": 200000
-          }
-        },
-        "oftInfo": {
-          "peersInfo": {
-            "1": {
-              "tokenAddress": "0xeD12b794cA80737A25623E24C6864137D7844a25"
-            },
-            "10": {
-              "tokenAddress": "0x0981A1104B7Ab9D1C3e3E9dF0402Bb31A5cF2351"
-            },
-            "56": {
-              "tokenAddress": "0xD56ED3475a63fbeA7C4BB2Dc435C30EB285621a9"
-            },
-            "137": {
-              "tokenAddress": "0x2FE8124B4ce7DD9d6f619EDbdC673465951531b0"
-            },
-            "34443": {
-              "tokenAddress": "0x80Ad6B43520de476AF8da27707Dd2e11731AfcdB"
-            },
-            "42161": {
-              "tokenAddress": "0x13B8D2e31030C305cCaA25d65E0561323a6c0FD8"
-            },
-            "81457": {
-              "tokenAddress": "0xCa4869952396C31286e052dc61165Eb9D94F7C53"
-            },
-            "534352": {
-              "tokenAddress": "0x2E71b0375a84c78ABee40E9Db45DC481E0C8f8e9"
-            }
-          },
-          "oftAdapter": "0xBCc187c9188fdF738f74A70B7823B15ff758A3Db",
-          "oftVersion": 1,
-          "endpointVersion": 1,
-          "endpointId": 217
         }
       },
       "isAcross": false,
@@ -43173,7 +42222,7 @@
     },
     {
       "chainId": 196,
-      "address": "0x5ee94c25e3d5113cd055537340b9d19cfa4d9217",
+      "address": "0x5EE94c25e3d5113CD055537340B9d19CFA4D9217",
       "name": "LayerZero Bridge EURA",
       "decimals": 18,
       "symbol": "LZ-EURA",
@@ -43350,7 +42399,7 @@
     },
     {
       "chainId": 196,
-      "address": "0xf530b844fb797d2c6863d56a94777c3e411cec86",
+      "address": "0xf530b844fb797D2C6863D56a94777C3e411CEc86",
       "name": "LayerZero Bridge USDA",
       "decimals": 18,
       "symbol": "LZ-USDA",
@@ -43387,7 +42436,7 @@
               "tokenAddress": "0xe2510aA4b019af3Eb835d3aC9c800382109A4631"
             },
             "1996": {
-              "tokenAddress": "0xe2510aa4b019af3eb835d3ac9c800382109a4631"
+              "tokenAddress": "0xe2510aA4b019af3Eb835d3aC9c800382109A4631"
             },
             "5000": {
               "tokenAddress": "0x0852123795bC6Aef3A3eb0212DED01607F9c58a5"
@@ -43486,142 +42535,6 @@
             }
           },
           "oftAdapter": "0x1D459A0564281500541eC8E3B91a16917dFCf332",
-          "oftVersion": 1,
-          "endpointVersion": 1,
-          "endpointId": 202
-        }
-      },
-      "isAcross": false,
-      "isOFT": true
-    },
-    {
-      "chainId": 204,
-      "address": "0x2FF6a890249bcc6ab071c17a66Db4C327154604C",
-      "name": "Marathon OFT",
-      "decimals": 0,
-      "symbol": "MARA",
-      "tags": [],
-      "extensions": {
-        "feeInfo": {
-          "1": {
-            "minDstGas": 200000
-          },
-          "10": {
-            "minDstGas": 200000
-          },
-          "56": {
-            "minDstGas": 200000
-          },
-          "100": {
-            "minDstGas": 200000
-          },
-          "122": {
-            "minDstGas": 200000
-          },
-          "137": {
-            "minDstGas": 200000
-          },
-          "1088": {
-            "minDstGas": 200000
-          },
-          "1116": {
-            "minDstGas": 200000
-          },
-          "5000": {
-            "minDstGas": 200000
-          },
-          "7700": {
-            "minDstGas": 200000
-          },
-          "8453": {
-            "minDstGas": 200000
-          },
-          "34443": {
-            "minDstGas": 200000
-          },
-          "42161": {
-            "minDstGas": 2000000
-          },
-          "42170": {
-            "minDstGas": 200000
-          },
-          "42220": {
-            "minDstGas": 200000
-          },
-          "43114": {
-            "minDstGas": 200000
-          },
-          "81457": {
-            "minDstGas": 200000
-          },
-          "534352": {
-            "minDstGas": 200000
-          },
-          "7777777": {
-            "minDstGas": 200000
-          }
-        },
-        "oftInfo": {
-          "peersInfo": {
-            "1": {
-              "tokenAddress": "0xeD12b794cA80737A25623E24C6864137D7844a25"
-            },
-            "10": {
-              "tokenAddress": "0x0981A1104B7Ab9D1C3e3E9dF0402Bb31A5cF2351"
-            },
-            "56": {
-              "tokenAddress": "0xD56ED3475a63fbeA7C4BB2Dc435C30EB285621a9"
-            },
-            "100": {
-              "tokenAddress": "0xd773f2d6D89845422b5541554237bD5F1edaaBCC"
-            },
-            "122": {
-              "tokenAddress": "0x7291e8E55Ca16DCB2BD654d39282016824EB2699"
-            },
-            "137": {
-              "tokenAddress": "0x2FE8124B4ce7DD9d6f619EDbdC673465951531b0"
-            },
-            "1088": {
-              "tokenAddress": "0xD5b56ccbE1BeE620ec9F0Fc72f8DCc02C376b4E1"
-            },
-            "1116": {
-              "tokenAddress": "0xbd5F8134E78f3fD4EfC65b1DB552e8B621F1675C"
-            },
-            "5000": {
-              "tokenAddress": "0x8686020614eb1F30b581bfa9e1370e572808421A"
-            },
-            "7700": {
-              "tokenAddress": "0x4B68A5FD1bBFAFA96F3B0Befd8A4972487C9B13F"
-            },
-            "8453": {
-              "tokenAddress": "0x7291e8E55Ca16DCB2BD654d39282016824EB2699"
-            },
-            "34443": {
-              "tokenAddress": "0x80Ad6B43520de476AF8da27707Dd2e11731AfcdB"
-            },
-            "42161": {
-              "tokenAddress": "0x13B8D2e31030C305cCaA25d65E0561323a6c0FD8"
-            },
-            "42170": {
-              "tokenAddress": "0x70A9699eBE2e505FF9EC38f3C4b1265CFBf92011"
-            },
-            "42220": {
-              "tokenAddress": "0x22403f0dA2979760c451bF5fD328aa5146cfB9eB"
-            },
-            "43114": {
-              "tokenAddress": "0xF41898A2423F877a2cDC7560FDdA2981Db76c02c"
-            },
-            "81457": {
-              "tokenAddress": "0xCa4869952396C31286e052dc61165Eb9D94F7C53"
-            },
-            "534352": {
-              "tokenAddress": "0x2E71b0375a84c78ABee40E9Db45DC481E0C8f8e9"
-            },
-            "7777777": {
-              "tokenAddress": "0x661d1Fa0aAE29e6608a877627e49A058CAaE0285"
-            }
-          },
-          "oftAdapter": "0x2FF6a890249bcc6ab071c17a66Db4C327154604C",
           "oftVersion": 1,
           "endpointVersion": 1,
           "endpointId": 202
@@ -44618,7 +43531,7 @@
     },
     {
       "chainId": 252,
-      "address": "0x8e2f0dc8cefefcbfe122ce52f9df7f4cc1bda9a2",
+      "address": "0x8E2F0Dc8ceFEFcbfE122cE52f9Df7F4cC1BDA9a2",
       "name": "frxBULLAS",
       "decimals": 18,
       "symbol": "$frxBULLAS",
@@ -44690,202 +43603,6 @@
       },
       "isAcross": false,
       "isOFT": true
-    },
-    {
-      "chainId": 291,
-      "address": "0x07231c3464ea825bf9490f4c673723e63ebd95f7",
-      "tags": [],
-      "extensions": {},
-      "isAcross": false
-    },
-    {
-      "chainId": 291,
-      "address": "0x173b47edbeca665125edc24c509bfe545cda60a9",
-      "tags": [],
-      "extensions": {},
-      "isAcross": false
-    },
-    {
-      "chainId": 291,
-      "address": "0x222228060e7efbb1d78bb5d454581910e3922222",
-      "tags": [],
-      "extensions": {},
-      "isAcross": false
-    },
-    {
-      "chainId": 291,
-      "address": "0x26da582889f59eaae9da1f063be0140cd93e6a4f",
-      "tags": [],
-      "extensions": {},
-      "isAcross": false
-    },
-    {
-      "chainId": 291,
-      "address": "0x27ad28c61af8faa7db5170bd307a497914271b99",
-      "tags": [],
-      "extensions": {},
-      "isAcross": false
-    },
-    {
-      "chainId": 291,
-      "address": "0x36c83bf151078404bf4927aef40c14fd862b88e4",
-      "tags": [],
-      "extensions": {},
-      "isAcross": false
-    },
-    {
-      "chainId": 291,
-      "address": "0x3d63825b0d8669307366e6c8202f656b9e91d368",
-      "tags": [],
-      "extensions": {},
-      "isAcross": false
-    },
-    {
-      "chainId": 291,
-      "address": "0x4268ddd4f1b2ab737729ec7a0c08c8510ad6a85c",
-      "tags": [],
-      "extensions": {},
-      "isAcross": false
-    },
-    {
-      "chainId": 291,
-      "address": "0x43a1421b40a6feab59850dde01d5662a336d9304",
-      "tags": [],
-      "extensions": {},
-      "isAcross": false
-    },
-    {
-      "chainId": 291,
-      "address": "0x461c12fba639303da045255dd32eea7e38ac69b0",
-      "tags": [],
-      "extensions": {},
-      "isAcross": false
-    },
-    {
-      "chainId": 291,
-      "address": "0x4e200fe2f3efb977d5fd9c430a41531fb04d97b8",
-      "tags": [],
-      "extensions": {},
-      "isAcross": false
-    },
-    {
-      "chainId": 291,
-      "address": "0x59fbca19b8d71fc264bf2d97506e6a37e64af510",
-      "tags": [],
-      "extensions": {},
-      "isAcross": false
-    },
-    {
-      "chainId": 291,
-      "address": "0x64e0f6164ac110b67df9a4848707ffbcb86c87a9",
-      "tags": [],
-      "extensions": {},
-      "isAcross": false
-    },
-    {
-      "chainId": 291,
-      "address": "0x6e55472109e6abe4054a8e8b8d9edffcb31032c5",
-      "tags": [],
-      "extensions": {},
-      "isAcross": false
-    },
-    {
-      "chainId": 291,
-      "address": "0x6f6ae8851a460406bbb3c929a415d2df9305acd5",
-      "tags": [],
-      "extensions": {},
-      "isAcross": false
-    },
-    {
-      "chainId": 291,
-      "address": "0x776b528efaec754b77ce0f0c7046439bcb1f93e8",
-      "tags": [],
-      "extensions": {},
-      "isAcross": false
-    },
-    {
-      "chainId": 291,
-      "address": "0x7dfb5e7808b5eb4fb8b9e7169537575f6ff1a218",
-      "tags": [],
-      "extensions": {},
-      "isAcross": false
-    },
-    {
-      "chainId": 291,
-      "address": "0xafa5f9313f1f2b599173f24807a882f498be118c",
-      "tags": [],
-      "extensions": {},
-      "isAcross": false
-    },
-    {
-      "chainId": 291,
-      "address": "0xbf94ed69281709958c8f60bc15cd1bb6badcd4a4",
-      "tags": [],
-      "extensions": {},
-      "isAcross": false
-    },
-    {
-      "chainId": 291,
-      "address": "0xc67505deaa9c0c08b9bcf2f55476c66b77e0c82f",
-      "tags": [],
-      "extensions": {},
-      "isAcross": false
-    },
-    {
-      "chainId": 291,
-      "address": "0xcecae061aa078e13b5e70d5f9ecee90a3f2b6aea",
-      "tags": [],
-      "extensions": {},
-      "isAcross": false
-    },
-    {
-      "chainId": 291,
-      "address": "0xd575825c903aac4d04439600b6d0d22f0e3a9367",
-      "tags": [],
-      "extensions": {},
-      "isAcross": false
-    },
-    {
-      "chainId": 291,
-      "address": "0xdc60fd9d2a4ccf97f292969580874de69e6c326e",
-      "tags": [],
-      "extensions": {},
-      "isAcross": false
-    },
-    {
-      "chainId": 291,
-      "address": "0xfd92930ca50ab900171643a8a47bc57d760a5d95",
-      "tags": [],
-      "extensions": {},
-      "isAcross": false
-    },
-    {
-      "chainId": 295,
-      "address": "0x3d364edebc4b35a3a1dacf94302f3a1411190252",
-      "tags": [],
-      "extensions": {},
-      "isAcross": false
-    },
-    {
-      "chainId": 295,
-      "address": "0xeec0e96e53645e6e6fd5d251c6c08cf509774430",
-      "tags": [],
-      "extensions": {},
-      "isAcross": false
-    },
-    {
-      "chainId": 388,
-      "address": "0x77dde6d33812f62d50d51608f38ae7897a36d8b2",
-      "tags": [],
-      "extensions": {},
-      "isAcross": false
-    },
-    {
-      "chainId": 388,
-      "address": "0x7fd25d55e7575ba05d568c8c2549e1d1905b6a9b",
-      "tags": [],
-      "extensions": {},
-      "isAcross": false
     },
     {
       "chainId": 480,
@@ -45504,7 +44221,7 @@
     },
     {
       "chainId": 1030,
-      "address": "0x5b10ae182c297ec76fe6fe0e3da7c4797cede02d",
+      "address": "0x5B10aE182C297ec76fE6fe0E3Da7c4797ceDE02D",
       "name": "l2telegraph.xyz",
       "decimals": 18,
       "symbol": "l2t",
@@ -46189,139 +44906,13 @@
     },
     {
       "chainId": 1088,
-      "address": "0xD5b56ccbE1BeE620ec9F0Fc72f8DCc02C376b4E1",
-      "name": "Marathon OFT",
-      "decimals": 0,
-      "symbol": "MARA",
+      "address": "0xEeb51a31685bf7385B0825139320C13Dce16f5Fc",
+      "name": "Omnisea",
+      "decimals": 18,
+      "symbol": "OSEA",
       "tags": [],
-      "extensions": {
-        "feeInfo": {
-          "1": {
-            "minDstGas": 200000
-          },
-          "10": {
-            "minDstGas": 200000
-          },
-          "56": {
-            "minDstGas": 200000
-          },
-          "100": {
-            "minDstGas": 200000
-          },
-          "122": {
-            "minDstGas": 200000
-          },
-          "137": {
-            "minDstGas": 200000
-          },
-          "204": {
-            "minDstGas": 200000
-          },
-          "1116": {
-            "minDstGas": 200000
-          },
-          "5000": {
-            "minDstGas": 200000
-          },
-          "7700": {
-            "minDstGas": 200000
-          },
-          "8453": {
-            "minDstGas": 200000
-          },
-          "34443": {
-            "minDstGas": 200000
-          },
-          "42161": {
-            "minDstGas": 2000000
-          },
-          "42170": {
-            "minDstGas": 200000
-          },
-          "42220": {
-            "minDstGas": 200000
-          },
-          "43114": {
-            "minDstGas": 200000
-          },
-          "81457": {
-            "minDstGas": 200000
-          },
-          "534352": {
-            "minDstGas": 200000
-          },
-          "7777777": {
-            "minDstGas": 200000
-          }
-        },
-        "oftInfo": {
-          "peersInfo": {
-            "1": {
-              "tokenAddress": "0xeD12b794cA80737A25623E24C6864137D7844a25"
-            },
-            "10": {
-              "tokenAddress": "0x0981A1104B7Ab9D1C3e3E9dF0402Bb31A5cF2351"
-            },
-            "56": {
-              "tokenAddress": "0xD56ED3475a63fbeA7C4BB2Dc435C30EB285621a9"
-            },
-            "100": {
-              "tokenAddress": "0xd773f2d6D89845422b5541554237bD5F1edaaBCC"
-            },
-            "122": {
-              "tokenAddress": "0x7291e8E55Ca16DCB2BD654d39282016824EB2699"
-            },
-            "137": {
-              "tokenAddress": "0x2FE8124B4ce7DD9d6f619EDbdC673465951531b0"
-            },
-            "204": {
-              "tokenAddress": "0x2FF6a890249bcc6ab071c17a66Db4C327154604C"
-            },
-            "1116": {
-              "tokenAddress": "0xbd5F8134E78f3fD4EfC65b1DB552e8B621F1675C"
-            },
-            "5000": {
-              "tokenAddress": "0x8686020614eb1F30b581bfa9e1370e572808421A"
-            },
-            "7700": {
-              "tokenAddress": "0x4B68A5FD1bBFAFA96F3B0Befd8A4972487C9B13F"
-            },
-            "8453": {
-              "tokenAddress": "0x7291e8E55Ca16DCB2BD654d39282016824EB2699"
-            },
-            "34443": {
-              "tokenAddress": "0x80Ad6B43520de476AF8da27707Dd2e11731AfcdB"
-            },
-            "42161": {
-              "tokenAddress": "0x13B8D2e31030C305cCaA25d65E0561323a6c0FD8"
-            },
-            "42170": {
-              "tokenAddress": "0x70A9699eBE2e505FF9EC38f3C4b1265CFBf92011"
-            },
-            "42220": {
-              "tokenAddress": "0x22403f0dA2979760c451bF5fD328aa5146cfB9eB"
-            },
-            "43114": {
-              "tokenAddress": "0xF41898A2423F877a2cDC7560FDdA2981Db76c02c"
-            },
-            "81457": {
-              "tokenAddress": "0xCa4869952396C31286e052dc61165Eb9D94F7C53"
-            },
-            "534352": {
-              "tokenAddress": "0x2E71b0375a84c78ABee40E9Db45DC481E0C8f8e9"
-            },
-            "7777777": {
-              "tokenAddress": "0x661d1Fa0aAE29e6608a877627e49A058CAaE0285"
-            }
-          },
-          "oftAdapter": "0xD5b56ccbE1BeE620ec9F0Fc72f8DCc02C376b4E1",
-          "oftVersion": 1,
-          "endpointVersion": 1,
-          "endpointId": 151
-        }
-      },
-      "isAcross": false,
-      "isOFT": true
+      "extensions": {},
+      "isAcross": false
     },
     {
       "chainId": 1088,
@@ -46526,16 +45117,6 @@
     },
     {
       "chainId": 1088,
-      "address": "0xeeb51a31685bf7385b0825139320c13dce16f5fc",
-      "name": "Omnisea",
-      "decimals": 18,
-      "symbol": "OSEA",
-      "tags": [],
-      "extensions": {},
-      "isAcross": false
-    },
-    {
-      "chainId": 1088,
       "address": "0xf66C895e4a573f4418E357A1cC4fd28d3d9c3D4E",
       "name": "DappGate by DappLabs",
       "decimals": 18,
@@ -46636,7 +45217,7 @@
     },
     {
       "chainId": 1116,
-      "address": "0x055616055bb1b45e04cadf565435abf924944ccb",
+      "address": "0x055616055bB1b45e04caDF565435ABF924944CcB",
       "name": "pub.finance",
       "decimals": 18,
       "symbol": "PINT",
@@ -47217,142 +45798,6 @@
     },
     {
       "chainId": 1116,
-      "address": "0xbd5F8134E78f3fD4EfC65b1DB552e8B621F1675C",
-      "name": "Marathon OFT",
-      "decimals": 0,
-      "symbol": "MARA",
-      "tags": [],
-      "extensions": {
-        "feeInfo": {
-          "1": {
-            "minDstGas": 200000
-          },
-          "10": {
-            "minDstGas": 200000
-          },
-          "56": {
-            "minDstGas": 200000
-          },
-          "100": {
-            "minDstGas": 200000
-          },
-          "122": {
-            "minDstGas": 200000
-          },
-          "137": {
-            "minDstGas": 200000
-          },
-          "204": {
-            "minDstGas": 200000
-          },
-          "1088": {
-            "minDstGas": 200000
-          },
-          "5000": {
-            "minDstGas": 200000
-          },
-          "7700": {
-            "minDstGas": 200000
-          },
-          "8453": {
-            "minDstGas": 200000
-          },
-          "34443": {
-            "minDstGas": 200000
-          },
-          "42161": {
-            "minDstGas": 2000000
-          },
-          "42170": {
-            "minDstGas": 200000
-          },
-          "42220": {
-            "minDstGas": 200000
-          },
-          "43114": {
-            "minDstGas": 200000
-          },
-          "81457": {
-            "minDstGas": 200000
-          },
-          "534352": {
-            "minDstGas": 200000
-          },
-          "7777777": {
-            "minDstGas": 200000
-          }
-        },
-        "oftInfo": {
-          "peersInfo": {
-            "1": {
-              "tokenAddress": "0xeD12b794cA80737A25623E24C6864137D7844a25"
-            },
-            "10": {
-              "tokenAddress": "0x0981A1104B7Ab9D1C3e3E9dF0402Bb31A5cF2351"
-            },
-            "56": {
-              "tokenAddress": "0xD56ED3475a63fbeA7C4BB2Dc435C30EB285621a9"
-            },
-            "100": {
-              "tokenAddress": "0xd773f2d6D89845422b5541554237bD5F1edaaBCC"
-            },
-            "122": {
-              "tokenAddress": "0x7291e8E55Ca16DCB2BD654d39282016824EB2699"
-            },
-            "137": {
-              "tokenAddress": "0x2FE8124B4ce7DD9d6f619EDbdC673465951531b0"
-            },
-            "204": {
-              "tokenAddress": "0x2FF6a890249bcc6ab071c17a66Db4C327154604C"
-            },
-            "1088": {
-              "tokenAddress": "0xD5b56ccbE1BeE620ec9F0Fc72f8DCc02C376b4E1"
-            },
-            "5000": {
-              "tokenAddress": "0x8686020614eb1F30b581bfa9e1370e572808421A"
-            },
-            "7700": {
-              "tokenAddress": "0x4B68A5FD1bBFAFA96F3B0Befd8A4972487C9B13F"
-            },
-            "8453": {
-              "tokenAddress": "0x7291e8E55Ca16DCB2BD654d39282016824EB2699"
-            },
-            "34443": {
-              "tokenAddress": "0x80Ad6B43520de476AF8da27707Dd2e11731AfcdB"
-            },
-            "42161": {
-              "tokenAddress": "0x13B8D2e31030C305cCaA25d65E0561323a6c0FD8"
-            },
-            "42170": {
-              "tokenAddress": "0x70A9699eBE2e505FF9EC38f3C4b1265CFBf92011"
-            },
-            "42220": {
-              "tokenAddress": "0x22403f0dA2979760c451bF5fD328aa5146cfB9eB"
-            },
-            "43114": {
-              "tokenAddress": "0xF41898A2423F877a2cDC7560FDdA2981Db76c02c"
-            },
-            "81457": {
-              "tokenAddress": "0xCa4869952396C31286e052dc61165Eb9D94F7C53"
-            },
-            "534352": {
-              "tokenAddress": "0x2E71b0375a84c78ABee40E9Db45DC481E0C8f8e9"
-            },
-            "7777777": {
-              "tokenAddress": "0x661d1Fa0aAE29e6608a877627e49A058CAaE0285"
-            }
-          },
-          "oftAdapter": "0xbd5F8134E78f3fD4EfC65b1DB552e8B621F1675C",
-          "oftVersion": 1,
-          "endpointVersion": 1,
-          "endpointId": 153
-        }
-      },
-      "isAcross": false,
-      "isOFT": true
-    },
-    {
-      "chainId": 1116,
       "address": "0xc67505DEaA9C0c08B9bcf2F55476C66b77e0c82f",
       "name": "DappGate by DappLabs",
       "decimals": 18,
@@ -47543,7 +45988,7 @@
               "tokenAddress": "0x1709b7dFcd7204015fB18C43eFEAD543ADe43054"
             },
             "1996": {
-              "tokenAddress": "0xe2510aa4b019af3eb835d3ac9c800382109a4631"
+              "tokenAddress": "0xe2510aA4b019af3Eb835d3aC9c800382109A4631"
             },
             "5000": {
               "tokenAddress": "0x0852123795bC6Aef3A3eb0212DED01607F9c58a5"
@@ -48158,35 +46603,7 @@
     },
     {
       "chainId": 1996,
-      "address": "0x00",
-      "tags": [],
-      "extensions": {},
-      "isAcross": false
-    },
-    {
-      "chainId": 1996,
-      "address": "0x1572d48a52906b834fb236aa77831d669f6d87a1",
-      "tags": [],
-      "extensions": {},
-      "isAcross": false
-    },
-    {
-      "chainId": 1996,
-      "address": "0x21f6ec768058ca2b3701099f7cea4c9a8cd63015",
-      "tags": [],
-      "extensions": {},
-      "isAcross": false
-    },
-    {
-      "chainId": 1996,
-      "address": "0x26da582889f59eaae9da1f063be0140cd93e6a4f",
-      "tags": [],
-      "extensions": {},
-      "isAcross": false
-    },
-    {
-      "chainId": 1996,
-      "address": "0x3f710cbd0f4268719c6c2e5e078a4cafaeed7d45",
+      "address": "0x3f710cBd0F4268719C6c2E5E078a4CAfAeED7d45",
       "name": "Smoovie Phone",
       "decimals": 18,
       "symbol": "SP",
@@ -48196,37 +46613,88 @@
     },
     {
       "chainId": 1996,
-      "address": "0x43a1421b40a6feab59850dde01d5662a336d9304",
+      "address": "0xaAA55490721b72A3112323FC274e9798796CcE85",
+      "name": "Orbit ETH OFT",
+      "decimals": 18,
+      "symbol": "orbETH",
       "tags": [],
-      "extensions": {},
+      "extensions": {
+        "peersInfo": {
+          "33139": {
+            "tokenAddress": "0xaAA55490721b72A3112323FC274e9798796CcE85"
+          },
+          "42161": {
+            "tokenAddress": "0xcF6C2bb97a8978321C9e207afE8A2037fa9be45C"
+          },
+          "55244": {
+            "tokenAddress": "0xCeE9B58C2CDB01b8bf75a27e96Ec09Bf885ef55a"
+          }
+        }
+      },
       "isAcross": false
     },
     {
       "chainId": 1996,
-      "address": "0x452ed88fac8a6e7eecfeb147dce3f4e8e1e93de4",
+      "address": "0xe2510aA4b019af3Eb835d3aC9c800382109A4631",
+      "name": "Decent Eth",
+      "decimals": 18,
+      "symbol": "DcntEth",
       "tags": [],
-      "extensions": {},
-      "isAcross": false
-    },
-    {
-      "chainId": 1996,
-      "address": "0xaaa55490721b72a3112323fc274e9798796cce85",
-      "tags": [],
-      "extensions": {},
-      "isAcross": false
-    },
-    {
-      "chainId": 1996,
-      "address": "0xe2510aa4b019af3eb835d3ac9c800382109a4631",
-      "tags": [],
-      "extensions": {},
-      "isAcross": false
-    },
-    {
-      "chainId": 1996,
-      "address": "0xfe0855903e32953de8e63ff6585f3fb5a2b4deff",
-      "tags": [],
-      "extensions": {},
+      "extensions": {
+        "peersInfo": {
+          "1": {
+            "tokenAddress": "0x96F305198B3Bd5795B0eFc99133Ebf59511BBDeb"
+          },
+          "10": {
+            "tokenAddress": "0xEFa4486Cf8eBAe3137F1B5445808445D28a8511E"
+          },
+          "56": {
+            "tokenAddress": "0x92977dD9c96c24bB4118992E6aCaa5b5Fb5076b9"
+          },
+          "100": {
+            "tokenAddress": "0x1709b7dFcd7204015fB18C43eFEAD543ADe43054"
+          },
+          "137": {
+            "tokenAddress": "0x46988D12b2BDe2e92a4726f1186f2a67Ac00EF4a"
+          },
+          "204": {
+            "tokenAddress": "0x1709b7dFcd7204015fB18C43eFEAD543ADe43054"
+          },
+          "1135": {
+            "tokenAddress": "0xe2510aA4b019af3Eb835d3aC9c800382109A4631"
+          },
+          "5000": {
+            "tokenAddress": "0x0852123795bC6Aef3A3eb0212DED01607F9c58a5"
+          },
+          "8453": {
+            "tokenAddress": "0xeE36f22e552182faA608443d7e9cB4Bbf9F4F83a"
+          },
+          "34443": {
+            "tokenAddress": "0x57CB483a4369B79EeB446487e8b36B268d9cE58B"
+          },
+          "42161": {
+            "tokenAddress": "0xe42E70881Ee9277Fa3F2dbb1F23eB38D12de2F9A"
+          },
+          "42170": {
+            "tokenAddress": "0x1709b7dFcd7204015fB18C43eFEAD543ADe43054"
+          },
+          "57073": {
+            "tokenAddress": "0xe2510aA4b019af3Eb835d3aC9c800382109A4631"
+          },
+          "81457": {
+            "tokenAddress": "0x023dc290A515b15e1605d34e40C8748EEdf02C93"
+          },
+          "534352": {
+            "tokenAddress": "0xA287C0c182332927767D18dC73bb220f229dd7BA"
+          },
+          "7777777": {
+            "tokenAddress": "0xCCdcc13127c1BeE4331dCF5F55577c9A6e74edf5"
+          },
+          "1380012617": {
+            "tokenAddress": "0x4Ea56B6A70EAc06ecBd1FF1F0bf132444F048186"
+          }
+        }
+      },
       "isAcross": false
     },
     {
@@ -48436,41 +46904,6 @@
       "isOFT": true
     },
     {
-      "chainId": 4200,
-      "address": "0x26da582889f59eaae9da1f063be0140cd93e6a4f",
-      "tags": [],
-      "extensions": {},
-      "isAcross": false
-    },
-    {
-      "chainId": 4200,
-      "address": "0x6e55472109e6abe4054a8e8b8d9edffcb31032c5",
-      "tags": [],
-      "extensions": {},
-      "isAcross": false
-    },
-    {
-      "chainId": 4200,
-      "address": "0x6f6ae8851a460406bbb3c929a415d2df9305acd5",
-      "tags": [],
-      "extensions": {},
-      "isAcross": false
-    },
-    {
-      "chainId": 4200,
-      "address": "0xad6ca80fe4d3c54f6433ff725d744772aae87711",
-      "tags": [],
-      "extensions": {},
-      "isAcross": false
-    },
-    {
-      "chainId": 4200,
-      "address": "0xafa5f9313f1f2b599173f24807a882f498be118c",
-      "tags": [],
-      "extensions": {},
-      "isAcross": false
-    },
-    {
       "chainId": 5000,
       "address": "0x005E16eccDFd3EA76E7B777A1bEb7b826E3AA7E3",
       "name": "Swapsicle ICE Token",
@@ -48534,7 +46967,7 @@
               "tokenAddress": "0xe2510aA4b019af3Eb835d3aC9c800382109A4631"
             },
             "1996": {
-              "tokenAddress": "0xe2510aa4b019af3eb835d3ac9c800382109a4631"
+              "tokenAddress": "0xe2510aA4b019af3Eb835d3aC9c800382109A4631"
             },
             "8453": {
               "tokenAddress": "0xeE36f22e552182faA608443d7e9cB4Bbf9F4F83a"
@@ -48576,7 +47009,7 @@
     },
     {
       "chainId": 5000,
-      "address": "0x0c8927de225bb1ed9db05aa7d641e434b95279d8",
+      "address": "0x0c8927de225Bb1eD9DB05aA7d641E434B95279d8",
       "name": "Clearpool",
       "decimals": 18,
       "symbol": "CPOOL",
@@ -49069,7 +47502,7 @@
     },
     {
       "chainId": 5000,
-      "address": "0x5b10ae182c297ec76fe6fe0e3da7c4797cede02d",
+      "address": "0x5B10aE182C297ec76fE6fe0E3Da7c4797ceDE02D",
       "name": "l2telegraph.xyz",
       "decimals": 18,
       "symbol": "l2t",
@@ -49336,143 +47769,7 @@
     },
     {
       "chainId": 5000,
-      "address": "0x8686020614eb1F30b581bfa9e1370e572808421A",
-      "name": "Marathon OFT",
-      "decimals": 0,
-      "symbol": "MARA",
-      "tags": [],
-      "extensions": {
-        "feeInfo": {
-          "1": {
-            "minDstGas": 200000
-          },
-          "10": {
-            "minDstGas": 200000
-          },
-          "56": {
-            "minDstGas": 200000
-          },
-          "100": {
-            "minDstGas": 200000
-          },
-          "122": {
-            "minDstGas": 200000
-          },
-          "137": {
-            "minDstGas": 200000
-          },
-          "204": {
-            "minDstGas": 200000
-          },
-          "1088": {
-            "minDstGas": 200000
-          },
-          "1116": {
-            "minDstGas": 200000
-          },
-          "7700": {
-            "minDstGas": 200000
-          },
-          "8453": {
-            "minDstGas": 200000
-          },
-          "34443": {
-            "minDstGas": 200000
-          },
-          "42161": {
-            "minDstGas": 2000000
-          },
-          "42170": {
-            "minDstGas": 200000
-          },
-          "42220": {
-            "minDstGas": 200000
-          },
-          "43114": {
-            "minDstGas": 200000
-          },
-          "81457": {
-            "minDstGas": 200000
-          },
-          "534352": {
-            "minDstGas": 200000
-          },
-          "7777777": {
-            "minDstGas": 200000
-          }
-        },
-        "oftInfo": {
-          "peersInfo": {
-            "1": {
-              "tokenAddress": "0xeD12b794cA80737A25623E24C6864137D7844a25"
-            },
-            "10": {
-              "tokenAddress": "0x0981A1104B7Ab9D1C3e3E9dF0402Bb31A5cF2351"
-            },
-            "56": {
-              "tokenAddress": "0xD56ED3475a63fbeA7C4BB2Dc435C30EB285621a9"
-            },
-            "100": {
-              "tokenAddress": "0xd773f2d6D89845422b5541554237bD5F1edaaBCC"
-            },
-            "122": {
-              "tokenAddress": "0x7291e8E55Ca16DCB2BD654d39282016824EB2699"
-            },
-            "137": {
-              "tokenAddress": "0x2FE8124B4ce7DD9d6f619EDbdC673465951531b0"
-            },
-            "204": {
-              "tokenAddress": "0x2FF6a890249bcc6ab071c17a66Db4C327154604C"
-            },
-            "1088": {
-              "tokenAddress": "0xD5b56ccbE1BeE620ec9F0Fc72f8DCc02C376b4E1"
-            },
-            "1116": {
-              "tokenAddress": "0xbd5F8134E78f3fD4EfC65b1DB552e8B621F1675C"
-            },
-            "7700": {
-              "tokenAddress": "0x4B68A5FD1bBFAFA96F3B0Befd8A4972487C9B13F"
-            },
-            "8453": {
-              "tokenAddress": "0x7291e8E55Ca16DCB2BD654d39282016824EB2699"
-            },
-            "34443": {
-              "tokenAddress": "0x80Ad6B43520de476AF8da27707Dd2e11731AfcdB"
-            },
-            "42161": {
-              "tokenAddress": "0x13B8D2e31030C305cCaA25d65E0561323a6c0FD8"
-            },
-            "42170": {
-              "tokenAddress": "0x70A9699eBE2e505FF9EC38f3C4b1265CFBf92011"
-            },
-            "42220": {
-              "tokenAddress": "0x22403f0dA2979760c451bF5fD328aa5146cfB9eB"
-            },
-            "43114": {
-              "tokenAddress": "0xF41898A2423F877a2cDC7560FDdA2981Db76c02c"
-            },
-            "81457": {
-              "tokenAddress": "0xCa4869952396C31286e052dc61165Eb9D94F7C53"
-            },
-            "534352": {
-              "tokenAddress": "0x2E71b0375a84c78ABee40E9Db45DC481E0C8f8e9"
-            },
-            "7777777": {
-              "tokenAddress": "0x661d1Fa0aAE29e6608a877627e49A058CAaE0285"
-            }
-          },
-          "oftAdapter": "0x8686020614eb1F30b581bfa9e1370e572808421A",
-          "oftVersion": 1,
-          "endpointVersion": 1,
-          "endpointId": 181
-        }
-      },
-      "isAcross": false,
-      "isOFT": true
-    },
-    {
-      "chainId": 5000,
-      "address": "0x8929e9dbd2785e3ba16175e596cdd61520fee0d1",
+      "address": "0x8929e9DbD2785e3BA16175E596CDD61520feE0D1",
       "name": "Altitude",
       "decimals": 18,
       "symbol": "ALTD",
@@ -49492,7 +47789,7 @@
     },
     {
       "chainId": 5000,
-      "address": "0x8bb42f1d6a54175a294f5c725a7cd3dd5a2492c4",
+      "address": "0x8BB42F1D6a54175a294f5c725a7cd3dd5a2492C4",
       "name": "69",
       "decimals": 18,
       "symbol": "69",
@@ -49541,6 +47838,32 @@
       },
       "isAcross": false,
       "isOFT": true
+    },
+    {
+      "chainId": 5000,
+      "address": "0xA311E47BBeFCF158e4224f6C206C1Aed32E82531",
+      "name": "MCLB",
+      "decimals": 18,
+      "symbol": "MCLB",
+      "tags": [],
+      "extensions": {},
+      "isAcross": false
+    },
+    {
+      "chainId": 5000,
+      "address": "0xA61BeB4A3d02decb01039e378237032B351125B4",
+      "name": "agEUR",
+      "decimals": 18,
+      "symbol": "agEUR",
+      "tags": [],
+      "extensions": {
+        "bridgeInfo": {
+          "1": {
+            "tokenAddress": "0x1a7e4e63778B4f12a199C062f3eFdD288afCBce8"
+          }
+        }
+      },
+      "isAcross": false
     },
     {
       "chainId": 5000,
@@ -49637,16 +47960,6 @@
       },
       "isAcross": false,
       "isOFT": true
-    },
-    {
-      "chainId": 5000,
-      "address": "0xa311e47bbefcf158e4224f6c206c1aed32e82531",
-      "name": "MCLB",
-      "decimals": 18,
-      "symbol": "MCLB",
-      "tags": [],
-      "extensions": {},
-      "isAcross": false
     },
     {
       "chainId": 5000,
@@ -49896,69 +48209,6 @@
       "isOFT": true
     },
     {
-      "chainId": 6900,
-      "address": "0x0CaCF669f8446BeCA826913a3c6B96aCD4b02a97",
-      "name": "Wrapped Nibiru",
-      "decimals": 18,
-      "symbol": "WNIBI",
-      "tags": [],
-      "extensions": {
-        "oftInfo": {
-          "peersInfo": {
-            "1": {
-              "tokenAddress": "0x8A47e412a865198b9d5f10fF2e54f788f1696195"
-            },
-            "137": {
-              "tokenAddress": "0x02f6FD682027a148d73777034CB85D14f231A678"
-            },
-            "8453": {
-              "tokenAddress": "0x3aDE6652F203d919697f8577F75Eebb989A5C586"
-            },
-            "42161": {
-              "tokenAddress": "0x80cf4350c702D466ef65305A73726349e98d7f57"
-            }
-          },
-          "oftAdapter": "0x4DF4eFa0a3707b6Cc964F62042E8a303A0376F54",
-          "oftVersion": 3,
-          "endpointVersion": 2,
-          "endpointId": 30369,
-          "oftSharedDecimals": 6
-        }
-      },
-      "isAcross": false,
-      "isOFT": true
-    },
-    {
-      "chainId": 6900,
-      "address": "0x1D63c9409bb41b2Ab43259b843fF32c839A9ffa2",
-      "name": "SPELL",
-      "decimals": 18,
-      "symbol": "SPELL",
-      "tags": [],
-      "extensions": {
-        "oftInfo": {
-          "peersInfo": {
-            "1": {
-              "tokenAddress": "0x090185f2135308BaD17527004364eBcC2D37e5F6"
-            },
-            "42161": {
-              "tokenAddress": "0x34FbFB3e95011956aBAD82796f466bA88895f214"
-            },
-            "80094": {
-              "tokenAddress": "0x22581e7E93d66977849D094006fC2cF3aB9C8FfA"
-            }
-          },
-          "oftAdapter": "0x1D63c9409bb41b2Ab43259b843fF32c839A9ffa2",
-          "oftVersion": 3,
-          "endpointVersion": 2,
-          "endpointId": 30369,
-          "oftSharedDecimals": 6
-        }
-      },
-      "isAcross": false,
-      "isOFT": true
-    },
-    {
       "chainId": 7700,
       "address": "0x0077187A2eF3cC50F04d04903041a166A2D2bBa7",
       "name": "TOINOU OFT",
@@ -50168,149 +48418,13 @@
     },
     {
       "chainId": 7700,
-      "address": "0x36a358b3ba1fb368e35b71ea40c7f4ab89bfd8e1",
+      "address": "0x36a358b3Ba1FB368E35b71ea40c7f4Ab89bFd8e1",
       "name": "l2telegraph.xyz",
       "decimals": 18,
       "symbol": "l2t",
       "tags": [],
       "extensions": {},
       "isAcross": false
-    },
-    {
-      "chainId": 7700,
-      "address": "0x4B68A5FD1bBFAFA96F3B0Befd8A4972487C9B13F",
-      "name": "Marathon OFT",
-      "decimals": 0,
-      "symbol": "MARA",
-      "tags": [],
-      "extensions": {
-        "feeInfo": {
-          "1": {
-            "minDstGas": 200000
-          },
-          "10": {
-            "minDstGas": 200000
-          },
-          "56": {
-            "minDstGas": 200000
-          },
-          "100": {
-            "minDstGas": 200000
-          },
-          "122": {
-            "minDstGas": 200000
-          },
-          "137": {
-            "minDstGas": 200000
-          },
-          "204": {
-            "minDstGas": 200000
-          },
-          "1088": {
-            "minDstGas": 200000
-          },
-          "1116": {
-            "minDstGas": 200000
-          },
-          "5000": {
-            "minDstGas": 200000
-          },
-          "8453": {
-            "minDstGas": 200000
-          },
-          "34443": {
-            "minDstGas": 200000
-          },
-          "42161": {
-            "minDstGas": 2000000
-          },
-          "42170": {
-            "minDstGas": 200000
-          },
-          "42220": {
-            "minDstGas": 200000
-          },
-          "43114": {
-            "minDstGas": 200000
-          },
-          "81457": {
-            "minDstGas": 200000
-          },
-          "534352": {
-            "minDstGas": 200000
-          },
-          "7777777": {
-            "minDstGas": 200000
-          }
-        },
-        "oftInfo": {
-          "peersInfo": {
-            "1": {
-              "tokenAddress": "0xeD12b794cA80737A25623E24C6864137D7844a25"
-            },
-            "10": {
-              "tokenAddress": "0x0981A1104B7Ab9D1C3e3E9dF0402Bb31A5cF2351"
-            },
-            "56": {
-              "tokenAddress": "0xD56ED3475a63fbeA7C4BB2Dc435C30EB285621a9"
-            },
-            "100": {
-              "tokenAddress": "0xd773f2d6D89845422b5541554237bD5F1edaaBCC"
-            },
-            "122": {
-              "tokenAddress": "0x7291e8E55Ca16DCB2BD654d39282016824EB2699"
-            },
-            "137": {
-              "tokenAddress": "0x2FE8124B4ce7DD9d6f619EDbdC673465951531b0"
-            },
-            "204": {
-              "tokenAddress": "0x2FF6a890249bcc6ab071c17a66Db4C327154604C"
-            },
-            "1088": {
-              "tokenAddress": "0xD5b56ccbE1BeE620ec9F0Fc72f8DCc02C376b4E1"
-            },
-            "1116": {
-              "tokenAddress": "0xbd5F8134E78f3fD4EfC65b1DB552e8B621F1675C"
-            },
-            "5000": {
-              "tokenAddress": "0x8686020614eb1F30b581bfa9e1370e572808421A"
-            },
-            "8453": {
-              "tokenAddress": "0x7291e8E55Ca16DCB2BD654d39282016824EB2699"
-            },
-            "34443": {
-              "tokenAddress": "0x80Ad6B43520de476AF8da27707Dd2e11731AfcdB"
-            },
-            "42161": {
-              "tokenAddress": "0x13B8D2e31030C305cCaA25d65E0561323a6c0FD8"
-            },
-            "42170": {
-              "tokenAddress": "0x70A9699eBE2e505FF9EC38f3C4b1265CFBf92011"
-            },
-            "42220": {
-              "tokenAddress": "0x22403f0dA2979760c451bF5fD328aa5146cfB9eB"
-            },
-            "43114": {
-              "tokenAddress": "0xF41898A2423F877a2cDC7560FDdA2981Db76c02c"
-            },
-            "81457": {
-              "tokenAddress": "0xCa4869952396C31286e052dc61165Eb9D94F7C53"
-            },
-            "534352": {
-              "tokenAddress": "0x2E71b0375a84c78ABee40E9Db45DC481E0C8f8e9"
-            },
-            "7777777": {
-              "tokenAddress": "0x661d1Fa0aAE29e6608a877627e49A058CAaE0285"
-            }
-          },
-          "oftAdapter": "0x4B68A5FD1bBFAFA96F3B0Befd8A4972487C9B13F",
-          "oftVersion": 1,
-          "endpointVersion": 1,
-          "endpointId": 159
-        }
-      },
-      "isAcross": false,
-      "isOFT": true
     },
     {
       "chainId": 7700,
@@ -50549,20 +48663,20 @@
     },
     {
       "chainId": 7700,
-      "address": "0xFf0BAF077e8035A3dA0dD2abeCECFbd98d8E63bE",
-      "name": "sCANTO BLOTR",
+      "address": "0xA311E47BBeFCF158e4224f6C206C1Aed32E82531",
+      "name": "MCLB",
       "decimals": 18,
-      "symbol": "BLOTR",
+      "symbol": "MCLB",
       "tags": [],
       "extensions": {},
       "isAcross": false
     },
     {
       "chainId": 7700,
-      "address": "0xa311e47bbefcf158e4224f6c206c1aed32e82531",
-      "name": "MCLB",
+      "address": "0xFf0BAF077e8035A3dA0dD2abeCECFbd98d8E63bE",
+      "name": "sCANTO BLOTR",
       "decimals": 18,
-      "symbol": "MCLB",
+      "symbol": "BLOTR",
       "tags": [],
       "extensions": {},
       "isAcross": false
@@ -50863,7 +48977,7 @@
     },
     {
       "chainId": 8453,
-      "address": "0x03c88ac561e8813849be909f39bd311c699baead",
+      "address": "0x03c88AC561E8813849bE909f39BD311C699bAeaD",
       "name": "l2telegraph.xyz",
       "decimals": 18,
       "symbol": "l2telegraph.xyz",
@@ -50907,7 +49021,7 @@
     },
     {
       "chainId": 8453,
-      "address": "0x0887899609bb727e215a25a4b96610d00c1c0c8d",
+      "address": "0x0887899609BB727E215a25a4B96610D00C1C0c8d",
       "name": "l2telegraph.xyz",
       "decimals": 18,
       "symbol": "l2t",
@@ -51790,7 +49904,7 @@
     },
     {
       "chainId": 8453,
-      "address": "0x1e6c9f4c89ac4d75048155a0dbd0be1f49c460f9",
+      "address": "0x1e6c9F4C89aC4D75048155A0DbD0bE1F49C460f9",
       "name": "vXNF",
       "decimals": 18,
       "symbol": "vXNF",
@@ -51826,21 +49940,6 @@
       },
       "isAcross": false,
       "isOFT": true
-    },
-    {
-      "chainId": 8453,
-      "address": "0x1f73EAf55d696BFFA9b0EA16fa987B93b0f4d302",
-      "name": "Rocket Pool",
-      "symbol": "RPL",
-      "decimals": 18,
-      "logoURI": "https://assets.coingecko.com/coins/images/2090/large/rocket_pool_%28RPL%29.png?1637662441",
-      "extensions": {
-        "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0xD33526068D116cE69F19A9ee46F0bd304F21A51f"
-          }
-        }
-      }
     },
     {
       "chainId": 8453,
@@ -52383,7 +50482,7 @@
     },
     {
       "chainId": 8453,
-      "address": "0x37bb209b118a22f233dea252a5d7f56455765b4d",
+      "address": "0x37bb209B118a22F233DEa252A5D7F56455765b4D",
       "name": "vXEN",
       "decimals": 18,
       "symbol": "vXEN",
@@ -52571,7 +50670,7 @@
               "tokenAddress": "0x02f6FD682027a148d73777034CB85D14f231A678"
             },
             "6900": {
-              "tokenAddress": "0x0CaCF669f8446BeCA826913a3c6B96aCD4b02a97"
+              "tokenAddress": "0x4df4efa0a3707b6cc964f62042e8a303a0376f54"
             },
             "42161": {
               "tokenAddress": "0x80cf4350c702D466ef65305A73726349e98d7f57"
@@ -52589,7 +50688,7 @@
     },
     {
       "chainId": 8453,
-      "address": "0x42069d11a2cc72388a2e06210921e839cfbd3280",
+      "address": "0x42069d11A2CC72388a2e06210921E839Cfbd3280",
       "name": "GnomeLand",
       "decimals": 18,
       "symbol": "GNOME",
@@ -53468,142 +51567,6 @@
     },
     {
       "chainId": 8453,
-      "address": "0x7291e8E55Ca16DCB2BD654d39282016824EB2699",
-      "name": "Marathon OFT",
-      "decimals": 0,
-      "symbol": "MARA",
-      "tags": [],
-      "extensions": {
-        "feeInfo": {
-          "1": {
-            "minDstGas": 200000
-          },
-          "10": {
-            "minDstGas": 200000
-          },
-          "56": {
-            "minDstGas": 200000
-          },
-          "100": {
-            "minDstGas": 200000
-          },
-          "122": {
-            "minDstGas": 200000
-          },
-          "137": {
-            "minDstGas": 200000
-          },
-          "204": {
-            "minDstGas": 200000
-          },
-          "1088": {
-            "minDstGas": 200000
-          },
-          "1116": {
-            "minDstGas": 200000
-          },
-          "5000": {
-            "minDstGas": 200000
-          },
-          "7700": {
-            "minDstGas": 200000
-          },
-          "34443": {
-            "minDstGas": 200000
-          },
-          "42161": {
-            "minDstGas": 2000000
-          },
-          "42170": {
-            "minDstGas": 200000
-          },
-          "42220": {
-            "minDstGas": 200000
-          },
-          "43114": {
-            "minDstGas": 200000
-          },
-          "81457": {
-            "minDstGas": 200000
-          },
-          "534352": {
-            "minDstGas": 200000
-          },
-          "7777777": {
-            "minDstGas": 200000
-          }
-        },
-        "oftInfo": {
-          "peersInfo": {
-            "1": {
-              "tokenAddress": "0xeD12b794cA80737A25623E24C6864137D7844a25"
-            },
-            "10": {
-              "tokenAddress": "0x0981A1104B7Ab9D1C3e3E9dF0402Bb31A5cF2351"
-            },
-            "56": {
-              "tokenAddress": "0xD56ED3475a63fbeA7C4BB2Dc435C30EB285621a9"
-            },
-            "100": {
-              "tokenAddress": "0xd773f2d6D89845422b5541554237bD5F1edaaBCC"
-            },
-            "122": {
-              "tokenAddress": "0x7291e8E55Ca16DCB2BD654d39282016824EB2699"
-            },
-            "137": {
-              "tokenAddress": "0x2FE8124B4ce7DD9d6f619EDbdC673465951531b0"
-            },
-            "204": {
-              "tokenAddress": "0x2FF6a890249bcc6ab071c17a66Db4C327154604C"
-            },
-            "1088": {
-              "tokenAddress": "0xD5b56ccbE1BeE620ec9F0Fc72f8DCc02C376b4E1"
-            },
-            "1116": {
-              "tokenAddress": "0xbd5F8134E78f3fD4EfC65b1DB552e8B621F1675C"
-            },
-            "5000": {
-              "tokenAddress": "0x8686020614eb1F30b581bfa9e1370e572808421A"
-            },
-            "7700": {
-              "tokenAddress": "0x4B68A5FD1bBFAFA96F3B0Befd8A4972487C9B13F"
-            },
-            "34443": {
-              "tokenAddress": "0x80Ad6B43520de476AF8da27707Dd2e11731AfcdB"
-            },
-            "42161": {
-              "tokenAddress": "0x13B8D2e31030C305cCaA25d65E0561323a6c0FD8"
-            },
-            "42170": {
-              "tokenAddress": "0x70A9699eBE2e505FF9EC38f3C4b1265CFBf92011"
-            },
-            "42220": {
-              "tokenAddress": "0x22403f0dA2979760c451bF5fD328aa5146cfB9eB"
-            },
-            "43114": {
-              "tokenAddress": "0xF41898A2423F877a2cDC7560FDdA2981Db76c02c"
-            },
-            "81457": {
-              "tokenAddress": "0xCa4869952396C31286e052dc61165Eb9D94F7C53"
-            },
-            "534352": {
-              "tokenAddress": "0x2E71b0375a84c78ABee40E9Db45DC481E0C8f8e9"
-            },
-            "7777777": {
-              "tokenAddress": "0x661d1Fa0aAE29e6608a877627e49A058CAaE0285"
-            }
-          },
-          "oftAdapter": "0x7291e8E55Ca16DCB2BD654d39282016824EB2699",
-          "oftVersion": 1,
-          "endpointVersion": 1,
-          "endpointId": 184
-        }
-      },
-      "isAcross": false,
-      "isOFT": true
-    },
-    {
-      "chainId": 8453,
       "address": "0x73fBD93bFDa83B111DdC092aa3a4ca77fD30d380",
       "name": "SOPH AI Token",
       "decimals": 18,
@@ -53691,7 +51654,7 @@
     },
     {
       "chainId": 8453,
-      "address": "0x7ab8ea5ef610f979e1c59fbd9da9284672e5a136",
+      "address": "0x7ab8EA5eF610f979e1C59fBd9dA9284672e5a136",
       "name": "KABOSU",
       "decimals": 18,
       "symbol": "$KABOSUCHAN",
@@ -53817,7 +51780,7 @@
     },
     {
       "chainId": 8453,
-      "address": "0x881578a4df0b3df33839704e597d1a4aba19a1f6",
+      "address": "0x881578A4Df0b3df33839704e597D1A4aBa19a1F6",
       "name": "GARFELDO",
       "decimals": 18,
       "symbol": "LASAGNA",
@@ -54132,6 +52095,22 @@
     },
     {
       "chainId": 8453,
+      "address": "0xAaaaAA19ddd491648Db2a31C32f2B2792DeC5015",
+      "name": "ANGLE_Base",
+      "decimals": 18,
+      "symbol": "ANGLE",
+      "tags": [],
+      "extensions": {
+        "bridgeInfo": {
+          "1": {
+            "tokenAddress": "0x31429d1856aD1377A8A0079410B297e1a9e214c2"
+          }
+        }
+      },
+      "isAcross": false
+    },
+    {
+      "chainId": 8453,
       "address": "0xAc80E841Cb4ed3f85436DE84EE1e92cDF00144E6",
       "name": "Fyde",
       "decimals": 18,
@@ -54170,6 +52149,31 @@
         "bridgeInfo": {
           "1": {
             "tokenAddress": "0xBAac2B4491727D78D2b78815144570b9f2Fe8899"
+          }
+        }
+      }
+    },
+    {
+      "chainId": 8453,
+      "address": "0xB217D93a8f6A4b7861bB2C865a8C22105FbCdE41",
+      "name": "Clearpool",
+      "decimals": 18,
+      "symbol": "CPOOL",
+      "tags": [],
+      "extensions": {},
+      "isAcross": false
+    },
+    {
+      "chainId": 8453,
+      "address": "0xB4fDe59a779991bfB6a52253B51947828b982be3",
+      "name": "Pepe",
+      "symbol": "PEPE",
+      "decimals": 18,
+      "logoURI": "https://assets.coingecko.com/coins/images/29850/large/pepe-token.jpeg?1682922725",
+      "extensions": {
+        "bridgeInfo": {
+          "1": {
+            "tokenAddress": "0x6982508145454Ce325dDbE47a25d4ec3d2311933"
           }
         }
       }
@@ -54730,6 +52734,16 @@
     },
     {
       "chainId": 8453,
+      "address": "0xEb4C8841Bf2a292c364959EBb17c54C8A64e6eDa",
+      "name": "MCLB",
+      "decimals": 18,
+      "symbol": "MCLB",
+      "tags": [],
+      "extensions": {},
+      "isAcross": false
+    },
+    {
+      "chainId": 8453,
       "address": "0xEd97D39448D1c3891aAFCb28c9CF63F893D65743",
       "name": "Autocompounding Pirex Ether OFT",
       "decimals": 18,
@@ -54789,6 +52803,16 @@
       },
       "isAcross": false,
       "isOFT": true
+    },
+    {
+      "chainId": 8453,
+      "address": "0xEeb51a31685bf7385B0825139320C13Dce16f5Fc",
+      "name": "Omnisea",
+      "decimals": 18,
+      "symbol": "OSEA",
+      "tags": [],
+      "extensions": {},
+      "isAcross": false
     },
     {
       "chainId": 8453,
@@ -55091,16 +53115,6 @@
       },
       "isAcross": false,
       "isOFT": true
-    },
-    {
-      "chainId": 8453,
-      "address": "0xb217d93a8f6a4b7861bb2c865a8c22105fbcde41",
-      "name": "Clearpool",
-      "decimals": 18,
-      "symbol": "CPOOL",
-      "tags": [],
-      "extensions": {},
-      "isAcross": false
     },
     {
       "chainId": 8453,
@@ -56016,7 +54030,7 @@
               "tokenAddress": "0xe2510aA4b019af3Eb835d3aC9c800382109A4631"
             },
             "1996": {
-              "tokenAddress": "0xe2510aa4b019af3eb835d3ac9c800382109a4631"
+              "tokenAddress": "0xe2510aA4b019af3Eb835d3aC9c800382109A4631"
             },
             "5000": {
               "tokenAddress": "0x0852123795bC6Aef3A3eb0212DED01607F9c58a5"
@@ -56058,16 +54072,6 @@
     },
     {
       "chainId": 8453,
-      "address": "0xeb4c8841bf2a292c364959ebb17c54c8a64e6eda",
-      "name": "MCLB",
-      "decimals": 18,
-      "symbol": "MCLB",
-      "tags": [],
-      "extensions": {},
-      "isAcross": false
-    },
-    {
-      "chainId": 8453,
       "address": "0xed1779845520339693CDBffec49a74246E7D671b",
       "name": "SAMURAI",
       "decimals": 18,
@@ -56094,16 +54098,6 @@
       },
       "isAcross": false,
       "isOFT": true
-    },
-    {
-      "chainId": 8453,
-      "address": "0xeeb51a31685bf7385b0825139320c13dce16f5fc",
-      "name": "Omnisea",
-      "decimals": 18,
-      "symbol": "OSEA",
-      "tags": [],
-      "extensions": {},
-      "isAcross": false
     },
     {
       "chainId": 8453,
@@ -56316,7 +54310,7 @@
         "oftInfo": {
           "peersInfo": {
             "1996": {
-              "tokenAddress": "0xaaa55490721b72a3112323fc274e9798796cce85"
+              "tokenAddress": "0xaAA55490721b72A3112323FC274e9798796CcE85"
             },
             "42161": {
               "tokenAddress": "0xcF6C2bb97a8978321C9e207afE8A2037fa9be45C"
@@ -56395,6 +54389,22 @@
     },
     {
       "chainId": 34443,
+      "address": "0x00001063a5d3A9d5f1B03e848fa788aae1d98C5c",
+      "name": "EURA",
+      "decimals": 18,
+      "symbol": "EURA",
+      "tags": [],
+      "extensions": {
+        "bridgeInfo": {
+          "1": {
+            "tokenAddress": "0x1a7e4e63778B4f12a199C062f3eFdD288afCBce8"
+          }
+        }
+      },
+      "isAcross": false
+    },
+    {
+      "chainId": 34443,
       "address": "0x02f92800F57BCD74066F5709F1Daa1A4302Df875",
       "name": "Peapods",
       "decimals": 18,
@@ -56462,7 +54472,7 @@
               "tokenAddress": "0xe2510aA4b019af3Eb835d3aC9c800382109A4631"
             },
             "1996": {
-              "tokenAddress": "0xe2510aa4b019af3eb835d3ac9c800382109a4631"
+              "tokenAddress": "0xe2510aA4b019af3Eb835d3aC9c800382109A4631"
             },
             "5000": {
               "tokenAddress": "0x0852123795bC6Aef3A3eb0212DED01607F9c58a5"
@@ -56605,152 +54615,7 @@
     },
     {
       "chainId": 34443,
-      "address": "0x80Ad6B43520de476AF8da27707Dd2e11731AfcdB",
-      "name": "Marathon OFT",
-      "decimals": 0,
-      "symbol": "MARA",
-      "tags": [],
-      "extensions": {
-        "feeInfo": {
-          "1": {
-            "minDstGas": 200000
-          },
-          "10": {
-            "minDstGas": 200000
-          },
-          "56": {
-            "minDstGas": 200000
-          },
-          "100": {
-            "minDstGas": 200000
-          },
-          "122": {
-            "minDstGas": 200000
-          },
-          "137": {
-            "minDstGas": 200000
-          },
-          "169": {
-            "minDstGas": 200000
-          },
-          "204": {
-            "minDstGas": 200000
-          },
-          "1088": {
-            "minDstGas": 200000
-          },
-          "1116": {
-            "minDstGas": 200000
-          },
-          "5000": {
-            "minDstGas": 200000
-          },
-          "7700": {
-            "minDstGas": 200000
-          },
-          "8453": {
-            "minDstGas": 200000
-          },
-          "42161": {
-            "minDstGas": 2000000
-          },
-          "42170": {
-            "minDstGas": 200000
-          },
-          "42220": {
-            "minDstGas": 200000
-          },
-          "43114": {
-            "minDstGas": 200000
-          },
-          "81457": {
-            "minDstGas": 200000
-          },
-          "534352": {
-            "minDstGas": 200000
-          },
-          "1313161554": {
-            "minDstGas": 200000
-          }
-        },
-        "oftInfo": {
-          "peersInfo": {
-            "1": {
-              "tokenAddress": "0xeD12b794cA80737A25623E24C6864137D7844a25"
-            },
-            "10": {
-              "tokenAddress": "0x0981A1104B7Ab9D1C3e3E9dF0402Bb31A5cF2351"
-            },
-            "56": {
-              "tokenAddress": "0xD56ED3475a63fbeA7C4BB2Dc435C30EB285621a9"
-            },
-            "100": {
-              "tokenAddress": "0xd773f2d6D89845422b5541554237bD5F1edaaBCC"
-            },
-            "122": {
-              "tokenAddress": "0x7291e8E55Ca16DCB2BD654d39282016824EB2699"
-            },
-            "137": {
-              "tokenAddress": "0x2FE8124B4ce7DD9d6f619EDbdC673465951531b0"
-            },
-            "169": {
-              "tokenAddress": "0xBCc187c9188fdF738f74A70B7823B15ff758A3Db"
-            },
-            "204": {
-              "tokenAddress": "0x2FF6a890249bcc6ab071c17a66Db4C327154604C"
-            },
-            "1088": {
-              "tokenAddress": "0xD5b56ccbE1BeE620ec9F0Fc72f8DCc02C376b4E1"
-            },
-            "1116": {
-              "tokenAddress": "0xbd5F8134E78f3fD4EfC65b1DB552e8B621F1675C"
-            },
-            "5000": {
-              "tokenAddress": "0x8686020614eb1F30b581bfa9e1370e572808421A"
-            },
-            "7700": {
-              "tokenAddress": "0x4B68A5FD1bBFAFA96F3B0Befd8A4972487C9B13F"
-            },
-            "8453": {
-              "tokenAddress": "0x7291e8E55Ca16DCB2BD654d39282016824EB2699"
-            },
-            "42161": {
-              "tokenAddress": "0x13B8D2e31030C305cCaA25d65E0561323a6c0FD8"
-            },
-            "42170": {
-              "tokenAddress": "0x70A9699eBE2e505FF9EC38f3C4b1265CFBf92011"
-            },
-            "42220": {
-              "tokenAddress": "0x22403f0dA2979760c451bF5fD328aa5146cfB9eB"
-            },
-            "43114": {
-              "tokenAddress": "0xF41898A2423F877a2cDC7560FDdA2981Db76c02c"
-            },
-            "81457": {
-              "tokenAddress": "0xCa4869952396C31286e052dc61165Eb9D94F7C53"
-            },
-            "534352": {
-              "tokenAddress": "0x2E71b0375a84c78ABee40E9Db45DC481E0C8f8e9"
-            },
-            "7777777": {
-              "tokenAddress": "0x661d1Fa0aAE29e6608a877627e49A058CAaE0285"
-            },
-            "1313161554": {
-              "tokenAddress": "0x7dB652D72Bdc0cd93ea8773334852f9169Fee79A"
-            }
-          },
-          "oftAdapter": "0x80Ad6B43520de476AF8da27707Dd2e11731AfcdB",
-          "oftVersion": 1,
-          "endpointVersion": 1,
-          "endpointId": 260
-        }
-      },
-      "isAcross": false,
-      "isOFT": true
-    },
-    {
-      "chainId": 34443,
-      "address": "0x881578a4df0b3df33839704e597d1a4aba19a1f6",
+      "address": "0x881578A4Df0b3df33839704e597D1A4aBa19a1F6",
       "name": "GARFELDO",
       "decimals": 18,
       "symbol": "LASAGNA",
@@ -57331,7 +55196,7 @@
     },
     {
       "chainId": 42161,
-      "address": "0x055616055bb1b45e04cadf565435abf924944ccb",
+      "address": "0x055616055bB1b45e04caDF565435ABF924944CcB",
       "name": "pub.finance",
       "decimals": 18,
       "symbol": "PINT",
@@ -57403,7 +55268,7 @@
     },
     {
       "chainId": 42161,
-      "address": "0x062ab0ef65eea9a68b0a35b7c946463b0169274a",
+      "address": "0x062ab0eF65eeA9a68B0a35B7C946463B0169274a",
       "name": "l2telegraph.xyz",
       "decimals": 18,
       "symbol": "l2telegraph.xyz",
@@ -57714,154 +55579,6 @@
           "endpointVersion": 2,
           "endpointId": 30110,
           "oftSharedDecimals": 6
-        }
-      },
-      "isAcross": false,
-      "isOFT": true
-    },
-    {
-      "chainId": 42161,
-      "address": "0x13B8D2e31030C305cCaA25d65E0561323a6c0FD8",
-      "name": "Marathon OFT",
-      "decimals": 0,
-      "symbol": "MARA",
-      "tags": [],
-      "extensions": {
-        "feeInfo": {
-          "1": {
-            "minDstGas": 200000
-          },
-          "10": {
-            "minDstGas": 200000
-          },
-          "56": {
-            "minDstGas": 200000
-          },
-          "100": {
-            "minDstGas": 200000
-          },
-          "122": {
-            "minDstGas": 200000
-          },
-          "137": {
-            "minDstGas": 200000
-          },
-          "169": {
-            "minDstGas": 200000
-          },
-          "204": {
-            "minDstGas": 200000
-          },
-          "1088": {
-            "minDstGas": 200000
-          },
-          "1116": {
-            "minDstGas": 200000
-          },
-          "5000": {
-            "minDstGas": 200000
-          },
-          "7700": {
-            "minDstGas": 200000
-          },
-          "8453": {
-            "minDstGas": 200000
-          },
-          "34443": {
-            "minDstGas": 200000
-          },
-          "42170": {
-            "minDstGas": 200000
-          },
-          "42220": {
-            "minDstGas": 200000
-          },
-          "43114": {
-            "minDstGas": 200000
-          },
-          "81457": {
-            "minDstGas": 200000
-          },
-          "534352": {
-            "minDstGas": 200000
-          },
-          "7777777": {
-            "minDstGas": 200000
-          },
-          "1313161554": {
-            "minDstGas": 200000
-          }
-        },
-        "oftInfo": {
-          "peersInfo": {
-            "1": {
-              "tokenAddress": "0xeD12b794cA80737A25623E24C6864137D7844a25"
-            },
-            "10": {
-              "tokenAddress": "0x0981A1104B7Ab9D1C3e3E9dF0402Bb31A5cF2351"
-            },
-            "56": {
-              "tokenAddress": "0xD56ED3475a63fbeA7C4BB2Dc435C30EB285621a9"
-            },
-            "100": {
-              "tokenAddress": "0xd773f2d6D89845422b5541554237bD5F1edaaBCC"
-            },
-            "122": {
-              "tokenAddress": "0x7291e8E55Ca16DCB2BD654d39282016824EB2699"
-            },
-            "137": {
-              "tokenAddress": "0x2FE8124B4ce7DD9d6f619EDbdC673465951531b0"
-            },
-            "169": {
-              "tokenAddress": "0xBCc187c9188fdF738f74A70B7823B15ff758A3Db"
-            },
-            "204": {
-              "tokenAddress": "0x2FF6a890249bcc6ab071c17a66Db4C327154604C"
-            },
-            "1088": {
-              "tokenAddress": "0xD5b56ccbE1BeE620ec9F0Fc72f8DCc02C376b4E1"
-            },
-            "1116": {
-              "tokenAddress": "0xbd5F8134E78f3fD4EfC65b1DB552e8B621F1675C"
-            },
-            "5000": {
-              "tokenAddress": "0x8686020614eb1F30b581bfa9e1370e572808421A"
-            },
-            "7700": {
-              "tokenAddress": "0x4B68A5FD1bBFAFA96F3B0Befd8A4972487C9B13F"
-            },
-            "8453": {
-              "tokenAddress": "0x7291e8E55Ca16DCB2BD654d39282016824EB2699"
-            },
-            "34443": {
-              "tokenAddress": "0x80Ad6B43520de476AF8da27707Dd2e11731AfcdB"
-            },
-            "42170": {
-              "tokenAddress": "0x70A9699eBE2e505FF9EC38f3C4b1265CFBf92011"
-            },
-            "42220": {
-              "tokenAddress": "0x22403f0dA2979760c451bF5fD328aa5146cfB9eB"
-            },
-            "43114": {
-              "tokenAddress": "0xF41898A2423F877a2cDC7560FDdA2981Db76c02c"
-            },
-            "81457": {
-              "tokenAddress": "0xCa4869952396C31286e052dc61165Eb9D94F7C53"
-            },
-            "534352": {
-              "tokenAddress": "0x2E71b0375a84c78ABee40E9Db45DC481E0C8f8e9"
-            },
-            "7777777": {
-              "tokenAddress": "0x661d1Fa0aAE29e6608a877627e49A058CAaE0285"
-            },
-            "1313161554": {
-              "tokenAddress": "0x7dB652D72Bdc0cd93ea8773334852f9169Fee79A"
-            }
-          },
-          "oftAdapter": "0x13B8D2e31030C305cCaA25d65E0561323a6c0FD8",
-          "oftVersion": 1,
-          "endpointVersion": 1,
-          "endpointId": 110
         }
       },
       "isAcross": false,
@@ -58486,7 +56203,7 @@
     },
     {
       "chainId": 42161,
-      "address": "0x1e6c9f4c89ac4d75048155a0dbd0be1f49c460f9",
+      "address": "0x1e6c9F4C89aC4D75048155A0DbD0bE1F49C460f9",
       "name": "vXNF",
       "decimals": 18,
       "symbol": "vXNF",
@@ -58995,7 +56712,7 @@
     },
     {
       "chainId": 42161,
-      "address": "0x3220b72583ea1fa31995583ba4626683a4cf11c6",
+      "address": "0x3220b72583EA1fa31995583Ba4626683A4cf11C6",
       "name": "Jr uVault",
       "decimals": 6,
       "symbol": "ujUSDC",
@@ -59082,7 +56799,7 @@
     },
     {
       "chainId": 42161,
-      "address": "0x33e02485076b885caf5333a12975fd31131f523d",
+      "address": "0x33E02485076B885Caf5333A12975FD31131f523D",
       "name": "SCRIBES",
       "decimals": 18,
       "symbol": "SCRIBES",
@@ -59206,7 +56923,7 @@
               "tokenAddress": "0x090185f2135308BaD17527004364eBcC2D37e5F6"
             },
             "6900": {
-              "tokenAddress": "0x1D63c9409bb41b2Ab43259b843fF32c839A9ffa2"
+              "tokenAddress": "0x1d63c9409bb41b2ab43259b843ff32c839a9ffa2"
             },
             "80094": {
               "tokenAddress": "0x22581e7E93d66977849D094006fC2cF3aB9C8FfA"
@@ -59224,7 +56941,7 @@
     },
     {
       "chainId": 42161,
-      "address": "0x350f1f7d83c98bccd19cab739fa42f121a8d8d9c",
+      "address": "0x350F1F7d83c98bcCd19caB739Fa42F121a8d8d9C",
       "name": "frxBULLAS",
       "decimals": 18,
       "symbol": "$frxBULLAS",
@@ -59364,7 +57081,7 @@
     },
     {
       "chainId": 42161,
-      "address": "0x37bb209b118a22f233dea252a5d7f56455765b4d",
+      "address": "0x37bb209B118a22F233DEa252A5D7F56455765b4D",
       "name": "vXEN",
       "decimals": 18,
       "symbol": "vXEN",
@@ -59571,6 +57288,35 @@
     },
     {
       "chainId": 42161,
+      "address": "0x3B87930029138c1b1DF444905BeDA537052C852C",
+      "name": "SANICSUPERSPEED",
+      "decimals": 18,
+      "symbol": "SANICSUPERSPEED",
+      "tags": [],
+      "extensions": {
+        "bridgeInfo": {
+          "8453": {
+            "tokenAddress": "0x3B87930029138c1b1DF444905BeDA537052C852C"
+          }
+        },
+        "oftInfo": {
+          "peersInfo": {
+            "8453": {
+              "tokenAddress": "0x3B87930029138c1b1DF444905BeDA537052C852C"
+            }
+          },
+          "oftAdapter": "0x3B87930029138c1b1DF444905BeDA537052C852C",
+          "oftVersion": 3,
+          "endpointVersion": 2,
+          "endpointId": 30110,
+          "oftSharedDecimals": 6
+        }
+      },
+      "isAcross": false,
+      "isOFT": true
+    },
+    {
+      "chainId": 42161,
       "address": "0x3B8A847Da3bA32A7A5804E06e39299cBE1e6198a",
       "name": "LayerBridgeOFT20v1",
       "decimals": 18,
@@ -59651,35 +57397,6 @@
           }
         }
       }
-    },
-    {
-      "chainId": 42161,
-      "address": "0x3b87930029138c1b1df444905beda537052c852c",
-      "name": "SANICSUPERSPEED",
-      "decimals": 18,
-      "symbol": "SANICSUPERSPEED",
-      "tags": [],
-      "extensions": {
-        "bridgeInfo": {
-          "8453": {
-            "tokenAddress": "0x3B87930029138c1b1DF444905BeDA537052C852C"
-          }
-        },
-        "oftInfo": {
-          "peersInfo": {
-            "8453": {
-              "tokenAddress": "0x3B87930029138c1b1DF444905BeDA537052C852C"
-            }
-          },
-          "oftAdapter": "0x3B87930029138c1b1DF444905BeDA537052C852C",
-          "oftVersion": 3,
-          "endpointVersion": 2,
-          "endpointId": 30110,
-          "oftSharedDecimals": 6
-        }
-      },
-      "isAcross": false,
-      "isOFT": true
     },
     {
       "chainId": 42161,
@@ -59789,7 +57506,7 @@
     },
     {
       "chainId": 42161,
-      "address": "0x42069d11a2cc72388a2e06210921e839cfbd3280",
+      "address": "0x42069d11A2CC72388a2e06210921E839Cfbd3280",
       "name": "GnomeLand",
       "decimals": 18,
       "symbol": "GNOME",
@@ -60212,6 +57929,25 @@
     },
     {
       "chainId": 42161,
+      "address": "0x4Ff5f900ecA8F848bEDf09Fbff7d1CAa2C11a857",
+      "name": "lueygi",
+      "decimals": 18,
+      "symbol": "$lueygi",
+      "tags": [],
+      "extensions": {
+        "peersInfo": {
+          "8453": {
+            "tokenAddress": "0x4Ff5f900ecA8F848bEDf09Fbff7d1CAa2C11a857"
+          },
+          "43114": {
+            "tokenAddress": "0x4ff5f900eca8f848bedf09fbff7d1caa2c11a857"
+          }
+        }
+      },
+      "isAcross": false
+    },
+    {
+      "chainId": 42161,
       "address": "0x4e352cF164E64ADCBad318C3a1e222E9EBa4Ce42",
       "name": "MUX Protocol",
       "symbol": "MCB",
@@ -60239,25 +57975,6 @@
           }
         }
       }
-    },
-    {
-      "chainId": 42161,
-      "address": "0x4ff5f900eca8f848bedf09fbff7d1caa2c11a857",
-      "name": "lueygi",
-      "decimals": 18,
-      "symbol": "$lueygi",
-      "tags": [],
-      "extensions": {
-        "peersInfo": {
-          "8453": {
-            "tokenAddress": "0x4Ff5f900ecA8F848bEDf09Fbff7d1CAa2C11a857"
-          },
-          "43114": {
-            "tokenAddress": "0x4ff5f900eca8f848bedf09fbff7d1caa2c11a857"
-          }
-        }
-      },
-      "isAcross": false
     },
     {
       "chainId": 42161,
@@ -60683,6 +58400,25 @@
     },
     {
       "chainId": 42161,
+      "address": "0x5F96E55571D4e3c29D3025Ee79CC8eF0C1A8dab4",
+      "name": "69",
+      "decimals": 18,
+      "symbol": "69",
+      "tags": [],
+      "extensions": {
+        "peersInfo": {
+          "5000": {
+            "tokenAddress": "0x8bb42f1d6a54175a294f5c725a7cd3dd5a2492c4"
+          },
+          "8453": {
+            "tokenAddress": "0x5F96E55571D4e3c29D3025Ee79CC8eF0C1A8dab4"
+          }
+        }
+      },
+      "isAcross": false
+    },
+    {
+      "chainId": 42161,
       "address": "0x5FBc42e75598b3367bbDCCf99Edf9989D1c0C7D4",
       "name": "SOLVE",
       "symbol": "SOLVE",
@@ -60842,7 +58578,7 @@
     },
     {
       "chainId": 42161,
-      "address": "0x5e81e92dc7c832a70e518799c33fa2e1ad9a414d",
+      "address": "0x5e81e92dC7C832A70E518799c33FA2E1AD9A414D",
       "name": "test vault",
       "decimals": 6,
       "symbol": "tusdc",
@@ -60866,25 +58602,6 @@
       },
       "isAcross": false,
       "isOFT": true
-    },
-    {
-      "chainId": 42161,
-      "address": "0x5f96e55571d4e3c29d3025ee79cc8ef0c1a8dab4",
-      "name": "69",
-      "decimals": 18,
-      "symbol": "69",
-      "tags": [],
-      "extensions": {
-        "peersInfo": {
-          "5000": {
-            "tokenAddress": "0x8bb42f1d6a54175a294f5c725a7cd3dd5a2492c4"
-          },
-          "8453": {
-            "tokenAddress": "0x5F96E55571D4e3c29D3025Ee79CC8eF0C1A8dab4"
-          }
-        }
-      },
-      "isAcross": false
     },
     {
       "chainId": 42161,
@@ -60970,6 +58687,22 @@
     },
     {
       "chainId": 42161,
+      "address": "0x656B80B667a46869144047E6e6C0000C81610253",
+      "name": "ANGLE_arbitrum",
+      "decimals": 18,
+      "symbol": "ANGLE",
+      "tags": [],
+      "extensions": {
+        "bridgeInfo": {
+          "1": {
+            "tokenAddress": "0x31429d1856aD1377A8A0079410B297e1a9e214c2"
+          }
+        }
+      },
+      "isAcross": false
+    },
+    {
+      "chainId": 42161,
       "address": "0x65EaaF173F4E18455D7b55CB92AC771826779038",
       "name": "VitaDAO",
       "symbol": "VITA",
@@ -61000,7 +58733,7 @@
     },
     {
       "chainId": 42161,
-      "address": "0x6630ae120dbda654c18f04eb82ee89c54493378d",
+      "address": "0x6630Ae120DBDA654c18f04Eb82ee89C54493378d",
       "name": "OVERPOWERED",
       "decimals": 18,
       "symbol": "$OVERPOWERED",
@@ -61029,7 +58762,7 @@
     },
     {
       "chainId": 42161,
-      "address": "0x682b7d27a80811bafb67bdc980250e1cafd44dd9",
+      "address": "0x682B7D27A80811BAfB67BDC980250e1Cafd44dd9",
       "name": "l2telegraph.xyz",
       "decimals": 18,
       "symbol": "l2t",
@@ -61154,6 +58887,16 @@
           }
         }
       }
+    },
+    {
+      "chainId": 42161,
+      "address": "0x6A661312938D22A2A0e27F585073E4406903990a",
+      "name": "ZAI Stablecoin",
+      "decimals": 18,
+      "symbol": "USDz",
+      "tags": [],
+      "extensions": {},
+      "isAcross": false
     },
     {
       "chainId": 42161,
@@ -61335,16 +59078,6 @@
     },
     {
       "chainId": 42161,
-      "address": "0x6a661312938d22a2a0e27f585073e4406903990a",
-      "name": "ZAI Stablecoin",
-      "decimals": 18,
-      "symbol": "USDz",
-      "tags": [],
-      "extensions": {},
-      "isAcross": false
-    },
-    {
-      "chainId": 42161,
       "address": "0x6c4E9130DFe6bd85591621BA35a17226001C64cB",
       "name": "OccamFi",
       "symbol": "OCC",
@@ -61375,7 +59108,7 @@
     },
     {
       "chainId": 42161,
-      "address": "0x70862a96017feb1ec9634d5332ae077918071a97",
+      "address": "0x70862A96017Feb1Ec9634D5332AE077918071A97",
       "name": "Sr uVault",
       "decimals": 6,
       "symbol": "usUSDC",
@@ -61468,7 +59201,7 @@
     },
     {
       "chainId": 42161,
-      "address": "0x73873c0c50846f0a78424af34ac2d55013c0e2d0",
+      "address": "0x73873c0C50846F0a78424aF34ac2d55013c0e2d0",
       "name": "MCLB",
       "decimals": 18,
       "symbol": "MCLB",
@@ -61702,7 +59435,7 @@
     },
     {
       "chainId": 42161,
-      "address": "0x7ab8ea5ef610f979e1c59fbd9da9284672e5a136",
+      "address": "0x7ab8EA5eF610f979e1C59fBd9dA9284672e5a136",
       "name": "KABOSU",
       "decimals": 18,
       "symbol": "$KABOSUCHAN",
@@ -61794,7 +59527,7 @@
     },
     {
       "chainId": 42161,
-      "address": "0x7d958e11d919e83fa503f49bc3e7ef64108b8979",
+      "address": "0x7d958e11d919E83FA503F49Bc3E7ef64108B8979",
       "name": "Unison USDC Vault Sr",
       "decimals": 18,
       "symbol": "uvsUSDC",
@@ -61932,7 +59665,7 @@
               "tokenAddress": "0x02f6FD682027a148d73777034CB85D14f231A678"
             },
             "6900": {
-              "tokenAddress": "0x0CaCF669f8446BeCA826913a3c6B96aCD4b02a97"
+              "tokenAddress": "0x4df4efa0a3707b6cc964f62042e8a303a0376f54"
             },
             "8453": {
               "tokenAddress": "0x3aDE6652F203d919697f8577F75Eebb989A5C586"
@@ -62077,7 +59810,7 @@
     },
     {
       "chainId": 42161,
-      "address": "0x881578a4df0b3df33839704e597d1a4aba19a1f6",
+      "address": "0x881578A4Df0b3df33839704e597D1A4aBa19a1F6",
       "name": "GARFELDO",
       "decimals": 18,
       "symbol": "LASAGNA",
@@ -62096,7 +59829,7 @@
     },
     {
       "chainId": 42161,
-      "address": "0x8929e9dbd2785e3ba16175e596cdd61520fee0d1",
+      "address": "0x8929e9DbD2785e3BA16175E596CDD61520feE0D1",
       "name": "Altitude",
       "decimals": 18,
       "symbol": "ALTD",
@@ -62874,6 +60607,25 @@
     },
     {
       "chainId": 42161,
+      "address": "0x9Ff606f0BFd752Bf8f68092eD70D35CCc1643492",
+      "name": "PORIGON",
+      "decimals": 18,
+      "symbol": "PORIGON",
+      "tags": [],
+      "extensions": {
+        "peersInfo": {
+          "137": {
+            "tokenAddress": "0x9ff606f0bfd752bf8f68092ed70d35ccc1643492"
+          },
+          "8453": {
+            "tokenAddress": "0x9Ff606f0BFd752Bf8f68092eD70D35CCc1643492"
+          }
+        }
+      },
+      "isAcross": false
+    },
+    {
+      "chainId": 42161,
       "address": "0x9b06F3C5de42D4623D7A2Bd940EC735103c68A76",
       "name": "Volta Club",
       "decimals": 18,
@@ -62935,25 +60687,6 @@
           }
         }
       }
-    },
-    {
-      "chainId": 42161,
-      "address": "0x9ff606f0bfd752bf8f68092ed70d35ccc1643492",
-      "name": "PORIGON",
-      "decimals": 18,
-      "symbol": "PORIGON",
-      "tags": [],
-      "extensions": {
-        "peersInfo": {
-          "137": {
-            "tokenAddress": "0x9ff606f0bfd752bf8f68092ed70d35ccc1643492"
-          },
-          "8453": {
-            "tokenAddress": "0x9Ff606f0BFd752Bf8f68092eD70D35CCc1643492"
-          }
-        }
-      },
-      "isAcross": false
     },
     {
       "chainId": 42161,
@@ -63502,21 +61235,6 @@
     },
     {
       "chainId": 42161,
-      "address": "0xB766039cc6DB368759C1E56B79AFfE831d0Cc507",
-      "name": "Rocket Pool",
-      "symbol": "RPL",
-      "decimals": 18,
-      "logoURI": "https://assets.coingecko.com/coins/images/2090/large/rocket_pool_%28RPL%29.png?1637662441",
-      "extensions": {
-        "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0xD33526068D116cE69F19A9ee46F0bd304F21A51f"
-          }
-        }
-      }
-    },
-    {
-      "chainId": 42161,
       "address": "0xB8269C29D503A026c9eD506BFe6328f4Cf1F08D7",
       "name": "Stratos",
       "symbol": "STOS",
@@ -63631,6 +61349,16 @@
           }
         }
       }
+    },
+    {
+      "chainId": 42161,
+      "address": "0xC72633F995e98Ac3BB8a89e6a9C4Af335C3D6E44",
+      "name": "Omnisea",
+      "decimals": 18,
+      "symbol": "OSEA",
+      "tags": [],
+      "extensions": {},
+      "isAcross": false
     },
     {
       "chainId": 42161,
@@ -64273,8 +62001,43 @@
       "decimals": 18,
       "symbol": "SETH",
       "tags": [],
-      "extensions": {},
+      "extensions": {
+        "bridgeInfo": {
+          "1": {
+            "tokenAddress": "0xE71bDfE1Df69284f00EE185cf0d95d0c7680c0d4"
+          }
+        }
+      },
       "isAcross": false
+    },
+    {
+      "chainId": 42161,
+      "address": "0xE862106c941B59D3dF42DF1832bdbec3A74EB6A5",
+      "name": "ONEPUNCH",
+      "decimals": 18,
+      "symbol": "ONEPUNCH",
+      "tags": [],
+      "extensions": {
+        "bridgeInfo": {
+          "8453": {
+            "tokenAddress": "0xE862106c941B59D3dF42DF1832bdbec3A74EB6A5"
+          }
+        },
+        "oftInfo": {
+          "peersInfo": {
+            "8453": {
+              "tokenAddress": "0xE862106c941B59D3dF42DF1832bdbec3A74EB6A5"
+            }
+          },
+          "oftAdapter": "0xE862106c941B59D3dF42DF1832bdbec3A74EB6A5",
+          "oftVersion": 3,
+          "endpointVersion": 2,
+          "endpointId": 30110,
+          "oftSharedDecimals": 6
+        }
+      },
+      "isAcross": false,
+      "isOFT": true
     },
     {
       "chainId": 42161,
@@ -65113,7 +62876,7 @@
     },
     {
       "chainId": 42161,
-      "address": "0xc3630b805f10e91c2de084ac26c66bcd91f3d3fe",
+      "address": "0xc3630b805F10E91c2de084Ac26C66bCD91F3D3fE",
       "name": "Clearpool",
       "decimals": 18,
       "symbol": "CPOOL",
@@ -65293,16 +63056,6 @@
     },
     {
       "chainId": 42161,
-      "address": "0xc72633f995e98ac3bb8a89e6a9c4af335c3d6e44",
-      "name": "Omnisea",
-      "decimals": 18,
-      "symbol": "OSEA",
-      "tags": [],
-      "extensions": {},
-      "isAcross": false
-    },
-    {
-      "chainId": 42161,
       "address": "0xc8757F9b1c43F05D14Af7c2a1AEaa8505cC5634E",
       "name": "Opyn Squeeth",
       "symbol": "OSQTH",
@@ -65361,7 +63114,7 @@
         "oftInfo": {
           "peersInfo": {
             "1996": {
-              "tokenAddress": "0xaaa55490721b72a3112323fc274e9798796cce85"
+              "tokenAddress": "0xaAA55490721b72A3112323FC274e9798796CcE85"
             },
             "33139": {
               "tokenAddress": "0xaAA55490721b72A3112323FC274e9798796CcE85"
@@ -65529,7 +63282,7 @@
     },
     {
       "chainId": 42161,
-      "address": "0xd78544e8270ace4ba28fb69fc1c12931d6f5d69e",
+      "address": "0xd78544e8270AcE4Ba28fB69Fc1c12931d6f5d69e",
       "name": "GNOBBY",
       "decimals": 18,
       "symbol": "GNOBBY",
@@ -65583,7 +63336,13 @@
       "decimals": 18,
       "symbol": "GETH",
       "tags": [],
-      "extensions": {},
+      "extensions": {
+        "bridgeInfo": {
+          "1": {
+            "tokenAddress": "0xdD69DB25F6D620A7baD3023c5d32761D353D3De9"
+          }
+        }
+      },
       "isAcross": false
     },
     {
@@ -65702,7 +63461,7 @@
               "tokenAddress": "0xe2510aA4b019af3Eb835d3aC9c800382109A4631"
             },
             "1996": {
-              "tokenAddress": "0xe2510aa4b019af3eb835d3ac9c800382109a4631"
+              "tokenAddress": "0xe2510aA4b019af3Eb835d3aC9c800382109A4631"
             },
             "5000": {
               "tokenAddress": "0x0852123795bC6Aef3A3eb0212DED01607F9c58a5"
@@ -65832,35 +63591,6 @@
     },
     {
       "chainId": 42161,
-      "address": "0xe862106c941b59d3df42df1832bdbec3a74eb6a5",
-      "name": "ONEPUNCH",
-      "decimals": 18,
-      "symbol": "ONEPUNCH",
-      "tags": [],
-      "extensions": {
-        "bridgeInfo": {
-          "8453": {
-            "tokenAddress": "0xE862106c941B59D3dF42DF1832bdbec3A74EB6A5"
-          }
-        },
-        "oftInfo": {
-          "peersInfo": {
-            "8453": {
-              "tokenAddress": "0xE862106c941B59D3dF42DF1832bdbec3A74EB6A5"
-            }
-          },
-          "oftAdapter": "0xE862106c941B59D3dF42DF1832bdbec3A74EB6A5",
-          "oftVersion": 3,
-          "endpointVersion": 2,
-          "endpointId": 30110,
-          "oftSharedDecimals": 6
-        }
-      },
-      "isAcross": false,
-      "isOFT": true
-    },
-    {
-      "chainId": 42161,
       "address": "0xeC59CEC0b282E02160650D69E469bA1b234e5a41",
       "name": "Aura Finance",
       "symbol": "AURA",
@@ -65891,7 +63621,7 @@
     },
     {
       "chainId": 42161,
-      "address": "0xebea8a03d62de8137abbb1a9e2b9b3b3150c6e7f",
+      "address": "0xebeA8A03d62DE8137ABBb1a9E2b9B3B3150c6e7F",
       "name": "Jr uVault",
       "decimals": 6,
       "symbol": "usUSDC",
@@ -66317,7 +64047,7 @@
               "tokenAddress": "0xe2510aA4b019af3Eb835d3aC9c800382109A4631"
             },
             "1996": {
-              "tokenAddress": "0xe2510aa4b019af3eb835d3ac9c800382109a4631"
+              "tokenAddress": "0xe2510aA4b019af3Eb835d3aC9c800382109A4631"
             },
             "5000": {
               "tokenAddress": "0x0852123795bC6Aef3A3eb0212DED01607F9c58a5"
@@ -66359,7 +64089,7 @@
     },
     {
       "chainId": 42170,
-      "address": "0x1ebd336c09198692f6a23831b024ada016eb7f16",
+      "address": "0x1eBD336c09198692F6a23831b024ADa016EB7f16",
       "name": "l2telegraph.xyz",
       "decimals": 18,
       "symbol": "l2t",
@@ -66469,7 +64199,7 @@
     },
     {
       "chainId": 42170,
-      "address": "0x468c6d7d48093ac2507bea016529f7e8e7fbd2a1",
+      "address": "0x468C6d7d48093AC2507bea016529f7e8e7fbD2A1",
       "name": "l2telegraph.xyz",
       "decimals": 18,
       "symbol": "l2t",
@@ -66489,139 +64219,13 @@
     },
     {
       "chainId": 42170,
-      "address": "0x70A9699eBE2e505FF9EC38f3C4b1265CFBf92011",
-      "name": "Marathon OFT",
-      "decimals": 0,
-      "symbol": "MARA",
+      "address": "0x7EfDD4523D580FA0dAe67362F8ceaDcC7b329F91",
+      "name": "l2telegraph.xyz",
+      "decimals": 18,
+      "symbol": "l2telegraph.xyz",
       "tags": [],
-      "extensions": {
-        "feeInfo": {
-          "1": {
-            "minDstGas": 200000
-          },
-          "10": {
-            "minDstGas": 200000
-          },
-          "56": {
-            "minDstGas": 200000
-          },
-          "100": {
-            "minDstGas": 200000
-          },
-          "122": {
-            "minDstGas": 200000
-          },
-          "137": {
-            "minDstGas": 200000
-          },
-          "204": {
-            "minDstGas": 200000
-          },
-          "1088": {
-            "minDstGas": 200000
-          },
-          "1116": {
-            "minDstGas": 200000
-          },
-          "5000": {
-            "minDstGas": 200000
-          },
-          "7700": {
-            "minDstGas": 200000
-          },
-          "8453": {
-            "minDstGas": 200000
-          },
-          "34443": {
-            "minDstGas": 200000
-          },
-          "42161": {
-            "minDstGas": 2000000
-          },
-          "42220": {
-            "minDstGas": 200000
-          },
-          "43114": {
-            "minDstGas": 200000
-          },
-          "81457": {
-            "minDstGas": 200000
-          },
-          "534352": {
-            "minDstGas": 200000
-          },
-          "7777777": {
-            "minDstGas": 200000
-          }
-        },
-        "oftInfo": {
-          "peersInfo": {
-            "1": {
-              "tokenAddress": "0xeD12b794cA80737A25623E24C6864137D7844a25"
-            },
-            "10": {
-              "tokenAddress": "0x0981A1104B7Ab9D1C3e3E9dF0402Bb31A5cF2351"
-            },
-            "56": {
-              "tokenAddress": "0xD56ED3475a63fbeA7C4BB2Dc435C30EB285621a9"
-            },
-            "100": {
-              "tokenAddress": "0xd773f2d6D89845422b5541554237bD5F1edaaBCC"
-            },
-            "122": {
-              "tokenAddress": "0x7291e8E55Ca16DCB2BD654d39282016824EB2699"
-            },
-            "137": {
-              "tokenAddress": "0x2FE8124B4ce7DD9d6f619EDbdC673465951531b0"
-            },
-            "204": {
-              "tokenAddress": "0x2FF6a890249bcc6ab071c17a66Db4C327154604C"
-            },
-            "1088": {
-              "tokenAddress": "0xD5b56ccbE1BeE620ec9F0Fc72f8DCc02C376b4E1"
-            },
-            "1116": {
-              "tokenAddress": "0xbd5F8134E78f3fD4EfC65b1DB552e8B621F1675C"
-            },
-            "5000": {
-              "tokenAddress": "0x8686020614eb1F30b581bfa9e1370e572808421A"
-            },
-            "7700": {
-              "tokenAddress": "0x4B68A5FD1bBFAFA96F3B0Befd8A4972487C9B13F"
-            },
-            "8453": {
-              "tokenAddress": "0x7291e8E55Ca16DCB2BD654d39282016824EB2699"
-            },
-            "34443": {
-              "tokenAddress": "0x80Ad6B43520de476AF8da27707Dd2e11731AfcdB"
-            },
-            "42161": {
-              "tokenAddress": "0x13B8D2e31030C305cCaA25d65E0561323a6c0FD8"
-            },
-            "42220": {
-              "tokenAddress": "0x22403f0dA2979760c451bF5fD328aa5146cfB9eB"
-            },
-            "43114": {
-              "tokenAddress": "0xF41898A2423F877a2cDC7560FDdA2981Db76c02c"
-            },
-            "81457": {
-              "tokenAddress": "0xCa4869952396C31286e052dc61165Eb9D94F7C53"
-            },
-            "534352": {
-              "tokenAddress": "0x2E71b0375a84c78ABee40E9Db45DC481E0C8f8e9"
-            },
-            "7777777": {
-              "tokenAddress": "0x661d1Fa0aAE29e6608a877627e49A058CAaE0285"
-            }
-          },
-          "oftAdapter": "0x70A9699eBE2e505FF9EC38f3C4b1265CFBf92011",
-          "oftVersion": 1,
-          "endpointVersion": 1,
-          "endpointId": 175
-        }
-      },
-      "isAcross": false,
-      "isOFT": true
+      "extensions": {},
+      "isAcross": false
     },
     {
       "chainId": 42170,
@@ -66698,16 +64302,6 @@
       },
       "isAcross": false,
       "isOFT": true
-    },
-    {
-      "chainId": 42170,
-      "address": "0x7efdd4523d580fa0dae67362f8ceadcc7b329f91",
-      "name": "l2telegraph.xyz",
-      "decimals": 18,
-      "symbol": "l2telegraph.xyz",
-      "tags": [],
-      "extensions": {},
-      "isAcross": false
     },
     {
       "chainId": 42170,
@@ -67357,142 +64951,6 @@
     },
     {
       "chainId": 42220,
-      "address": "0x22403f0dA2979760c451bF5fD328aa5146cfB9eB",
-      "name": "Marathon OFT",
-      "decimals": 0,
-      "symbol": "MARA",
-      "tags": [],
-      "extensions": {
-        "feeInfo": {
-          "1": {
-            "minDstGas": 200000
-          },
-          "10": {
-            "minDstGas": 200000
-          },
-          "56": {
-            "minDstGas": 200000
-          },
-          "100": {
-            "minDstGas": 200000
-          },
-          "122": {
-            "minDstGas": 200000
-          },
-          "137": {
-            "minDstGas": 200000
-          },
-          "204": {
-            "minDstGas": 200000
-          },
-          "1088": {
-            "minDstGas": 200000
-          },
-          "1116": {
-            "minDstGas": 200000
-          },
-          "5000": {
-            "minDstGas": 200000
-          },
-          "7700": {
-            "minDstGas": 200000
-          },
-          "8453": {
-            "minDstGas": 200000
-          },
-          "34443": {
-            "minDstGas": 200000
-          },
-          "42161": {
-            "minDstGas": 2000000
-          },
-          "42170": {
-            "minDstGas": 200000
-          },
-          "43114": {
-            "minDstGas": 200000
-          },
-          "81457": {
-            "minDstGas": 200000
-          },
-          "534352": {
-            "minDstGas": 200000
-          },
-          "7777777": {
-            "minDstGas": 200000
-          }
-        },
-        "oftInfo": {
-          "peersInfo": {
-            "1": {
-              "tokenAddress": "0xeD12b794cA80737A25623E24C6864137D7844a25"
-            },
-            "10": {
-              "tokenAddress": "0x0981A1104B7Ab9D1C3e3E9dF0402Bb31A5cF2351"
-            },
-            "56": {
-              "tokenAddress": "0xD56ED3475a63fbeA7C4BB2Dc435C30EB285621a9"
-            },
-            "100": {
-              "tokenAddress": "0xd773f2d6D89845422b5541554237bD5F1edaaBCC"
-            },
-            "122": {
-              "tokenAddress": "0x7291e8E55Ca16DCB2BD654d39282016824EB2699"
-            },
-            "137": {
-              "tokenAddress": "0x2FE8124B4ce7DD9d6f619EDbdC673465951531b0"
-            },
-            "204": {
-              "tokenAddress": "0x2FF6a890249bcc6ab071c17a66Db4C327154604C"
-            },
-            "1088": {
-              "tokenAddress": "0xD5b56ccbE1BeE620ec9F0Fc72f8DCc02C376b4E1"
-            },
-            "1116": {
-              "tokenAddress": "0xbd5F8134E78f3fD4EfC65b1DB552e8B621F1675C"
-            },
-            "5000": {
-              "tokenAddress": "0x8686020614eb1F30b581bfa9e1370e572808421A"
-            },
-            "7700": {
-              "tokenAddress": "0x4B68A5FD1bBFAFA96F3B0Befd8A4972487C9B13F"
-            },
-            "8453": {
-              "tokenAddress": "0x7291e8E55Ca16DCB2BD654d39282016824EB2699"
-            },
-            "34443": {
-              "tokenAddress": "0x80Ad6B43520de476AF8da27707Dd2e11731AfcdB"
-            },
-            "42161": {
-              "tokenAddress": "0x13B8D2e31030C305cCaA25d65E0561323a6c0FD8"
-            },
-            "42170": {
-              "tokenAddress": "0x70A9699eBE2e505FF9EC38f3C4b1265CFBf92011"
-            },
-            "43114": {
-              "tokenAddress": "0xF41898A2423F877a2cDC7560FDdA2981Db76c02c"
-            },
-            "81457": {
-              "tokenAddress": "0xCa4869952396C31286e052dc61165Eb9D94F7C53"
-            },
-            "534352": {
-              "tokenAddress": "0x2E71b0375a84c78ABee40E9Db45DC481E0C8f8e9"
-            },
-            "7777777": {
-              "tokenAddress": "0x661d1Fa0aAE29e6608a877627e49A058CAaE0285"
-            }
-          },
-          "oftAdapter": "0x22403f0dA2979760c451bF5fD328aa5146cfB9eB",
-          "oftVersion": 1,
-          "endpointVersion": 1,
-          "endpointId": 125
-        }
-      },
-      "isAcross": false,
-      "isOFT": true
-    },
-    {
-      "chainId": 42220,
       "address": "0x555a37E52791904c097ECAB03da0009a0c7c4FCf",
       "name": "Merkly OFT",
       "decimals": 18,
@@ -67839,7 +65297,7 @@
     },
     {
       "chainId": 42220,
-      "address": "0x732513293ae76aeb7222aa9cfe4333871322e406",
+      "address": "0x732513293AE76aeb7222Aa9cfE4333871322e406",
       "name": "Cross Chain Token",
       "decimals": 18,
       "symbol": "CCT",
@@ -67866,7 +65324,7 @@
     },
     {
       "chainId": 42220,
-      "address": "0x7a5beab9503d85682a9ccab5439046c7fcb60334",
+      "address": "0x7A5BEab9503d85682A9CcAB5439046C7fCB60334",
       "name": "l2telegraph.xyz",
       "decimals": 18,
       "symbol": "l2t",
@@ -68232,7 +65690,7 @@
     },
     {
       "chainId": 42220,
-      "address": "0xad1cb8d549955900a6d843272f31030e8b7b4558",
+      "address": "0xad1cB8d549955900a6D843272f31030E8b7B4558",
       "name": "vXEN",
       "decimals": 18,
       "symbol": "vXEN",
@@ -68520,16 +65978,24 @@
       "symbol": "enzoBTC",
       "tags": [],
       "extensions": {
-        "peersInfo": {
-          "1": {
-            "tokenAddress": "0x6A9A65B84843F5fD4aC9a0471C4fc11AFfFBce4a"
+        "oftInfo": {
+          "peersInfo": {
+            "1": {
+              "tokenAddress": "0x6A9A65B84843F5fD4aC9a0471C4fc11AFfFBce4a"
+            },
+            "56": {
+              "tokenAddress": "0x6A9A65B84843F5fD4aC9a0471C4fc11AFfFBce4a"
+            }
           },
-          "56": {
-            "tokenAddress": "0x6A9A65B84843F5fD4aC9a0471C4fc11AFfFBce4a"
-          }
+          "oftAdapter": "0x47C4AC7D1d0Ff9594dE5f3D2d07ff67253620a1C",
+          "oftVersion": 3,
+          "endpointVersion": 2,
+          "endpointId": 30329,
+          "oftSharedDecimals": 6
         }
       },
-      "isAcross": false
+      "isAcross": false,
+      "isOFT": true
     },
     {
       "chainId": 43111,
@@ -68987,7 +66453,7 @@
     },
     {
       "chainId": 43114,
-      "address": "0x18ba2bd4ee131ff6620144fb04e1fb4648f942d9",
+      "address": "0x18ba2bD4ee131ff6620144fB04e1Fb4648F942D9",
       "name": "l0Word.com",
       "decimals": 18,
       "symbol": "l0WordToken",
@@ -69012,7 +66478,7 @@
     },
     {
       "chainId": 43114,
-      "address": "0x1e6c9f4c89ac4d75048155a0dbd0be1f49c460f9",
+      "address": "0x1e6c9F4C89aC4D75048155A0DbD0bE1F49C460f9",
       "name": "vXNF",
       "decimals": 18,
       "symbol": "vXNF",
@@ -69115,7 +66581,7 @@
     },
     {
       "chainId": 43114,
-      "address": "0x24cbc089388fb9613a7b97a8ee76d93cb909c7ca",
+      "address": "0x24cbC089388fb9613a7B97A8ee76d93Cb909C7CA",
       "name": "l0Word.com",
       "decimals": 18,
       "symbol": "l0WordToken",
@@ -69228,7 +66694,7 @@
     },
     {
       "chainId": 43114,
-      "address": "0x34af6175559aa0efd594db3cc75628d554ddf4c1",
+      "address": "0x34AF6175559aA0Efd594dB3cc75628D554dDf4C1",
       "name": "Magic Club Token (Avalanche)",
       "decimals": 18,
       "symbol": "MCTA",
@@ -69238,10 +66704,20 @@
     },
     {
       "chainId": 43114,
-      "address": "0x37bb209b118a22f233dea252a5d7f56455765b4d",
+      "address": "0x37bb209B118a22F233DEa252A5D7F56455765b4D",
       "name": "vXEN",
       "decimals": 18,
       "symbol": "vXEN",
+      "tags": [],
+      "extensions": {},
+      "isAcross": false
+    },
+    {
+      "chainId": 43114,
+      "address": "0x3Af0eB8BcBd4C4C6E26e309c4E47Af59Bad5FC2f",
+      "name": "pub.finance",
+      "decimals": 18,
+      "symbol": "PINT",
       "tags": [],
       "extensions": {},
       "isAcross": false
@@ -69252,6 +66728,16 @@
       "name": "Fang Dao",
       "decimals": 18,
       "symbol": "fDAO",
+      "tags": [],
+      "extensions": {},
+      "isAcross": false
+    },
+    {
+      "chainId": 43114,
+      "address": "0x3B708Fa1F05686f4D1b25Edd48643dC0b8185E91",
+      "name": "MCLB",
+      "decimals": 18,
+      "symbol": "MCLB",
       "tags": [],
       "extensions": {},
       "isAcross": false
@@ -69303,26 +66789,6 @@
           }
         }
       }
-    },
-    {
-      "chainId": 43114,
-      "address": "0x3af0eb8bcbd4c4c6e26e309c4e47af59bad5fc2f",
-      "name": "pub.finance",
-      "decimals": 18,
-      "symbol": "PINT",
-      "tags": [],
-      "extensions": {},
-      "isAcross": false
-    },
-    {
-      "chainId": 43114,
-      "address": "0x3b708fa1f05686f4d1b25edd48643dc0b8185e91",
-      "name": "MCLB",
-      "decimals": 18,
-      "symbol": "MCLB",
-      "tags": [],
-      "extensions": {},
-      "isAcross": false
     },
     {
       "chainId": 43114,
@@ -69569,12 +67035,31 @@
     },
     {
       "chainId": 43114,
-      "address": "0x480be8622b75ab2a4f00a6ecadc8c620ced7c784",
+      "address": "0x480Be8622b75ab2A4F00A6eCAdC8c620CEd7C784",
       "name": "l0Word.com",
       "decimals": 18,
       "symbol": "l0WordToken",
       "tags": [],
       "extensions": {},
+      "isAcross": false
+    },
+    {
+      "chainId": 43114,
+      "address": "0x4Ff5f900ecA8F848bEDf09Fbff7d1CAa2C11a857",
+      "name": "lueygi",
+      "decimals": 18,
+      "symbol": "$lueygi",
+      "tags": [],
+      "extensions": {
+        "peersInfo": {
+          "8453": {
+            "tokenAddress": "0x4Ff5f900ecA8F848bEDf09Fbff7d1CAa2C11a857"
+          },
+          "42161": {
+            "tokenAddress": "0x4ff5f900eca8f848bedf09fbff7d1caa2c11a857"
+          }
+        }
+      },
       "isAcross": false
     },
     {
@@ -69591,25 +67076,6 @@
           }
         }
       }
-    },
-    {
-      "chainId": 43114,
-      "address": "0x4ff5f900eca8f848bedf09fbff7d1caa2c11a857",
-      "name": "lueygi",
-      "decimals": 18,
-      "symbol": "$lueygi",
-      "tags": [],
-      "extensions": {
-        "peersInfo": {
-          "8453": {
-            "tokenAddress": "0x4Ff5f900ecA8F848bEDf09Fbff7d1CAa2C11a857"
-          },
-          "42161": {
-            "tokenAddress": "0x4ff5f900eca8f848bedf09fbff7d1caa2c11a857"
-          }
-        }
-      },
-      "isAcross": false
     },
     {
       "chainId": 43114,
@@ -69708,6 +67174,22 @@
       },
       "isAcross": false,
       "isOFT": true
+    },
+    {
+      "chainId": 43114,
+      "address": "0x5EE94c25e3d5113CD055537340B9d19CFA4D9217",
+      "name": "ANGLE_avalanche",
+      "decimals": 18,
+      "symbol": "ANGLE",
+      "tags": [],
+      "extensions": {
+        "bridgeInfo": {
+          "1": {
+            "tokenAddress": "0x31429d1856aD1377A8A0079410B297e1a9e214c2"
+          }
+        }
+      },
+      "isAcross": false
     },
     {
       "chainId": 43114,
@@ -70159,7 +67641,7 @@
     },
     {
       "chainId": 43114,
-      "address": "0x8929e9dbd2785e3ba16175e596cdd61520fee0d1",
+      "address": "0x8929e9DbD2785e3BA16175E596CDD61520feE0D1",
       "name": "Altitude",
       "decimals": 18,
       "symbol": "ALTD",
@@ -70607,6 +68089,16 @@
     },
     {
       "chainId": 43114,
+      "address": "0xBEF993561B58847447534CeA6Bb2e7E6fa3A36c2",
+      "name": "l2telegraph.xyz",
+      "decimals": 18,
+      "symbol": "l2t",
+      "tags": [],
+      "extensions": {},
+      "isAcross": false
+    },
+    {
+      "chainId": 43114,
       "address": "0xC0C5AA69Dbe4d6DDdfBc89c0957686ec60F24389",
       "name": "XEN Crypto",
       "symbol": "XEN",
@@ -70735,6 +68227,16 @@
     },
     {
       "chainId": 43114,
+      "address": "0xE397784960F814BA35C9Ee0BC4c9DFFdf86925f9",
+      "name": "MSTR Token",
+      "decimals": 18,
+      "symbol": "MSTR",
+      "tags": [],
+      "extensions": {},
+      "isAcross": false
+    },
+    {
+      "chainId": 43114,
       "address": "0xE5CAeF4Af8780E59Df925470b050Fb23C43CA68C",
       "name": "Ferrum Network",
       "symbol": "FRM",
@@ -70762,6 +68264,16 @@
           }
         }
       }
+    },
+    {
+      "chainId": 43114,
+      "address": "0xF195d9D77D805591017BD9Ecc9f3a5332a4474F1",
+      "name": "l0Word.com",
+      "decimals": 18,
+      "symbol": "l0WordToken",
+      "tags": [],
+      "extensions": {},
+      "isAcross": false
     },
     {
       "chainId": 43114,
@@ -70793,148 +68305,6 @@
           "endpointVersion": 1,
           "endpointId": 106,
           "oftSharedDecimals": 6
-        }
-      },
-      "isAcross": false,
-      "isOFT": true
-    },
-    {
-      "chainId": 43114,
-      "address": "0xF41898A2423F877a2cDC7560FDdA2981Db76c02c",
-      "name": "Marathon OFT",
-      "decimals": 0,
-      "symbol": "MARA",
-      "tags": [],
-      "extensions": {
-        "feeInfo": {
-          "1": {
-            "minDstGas": 200000
-          },
-          "10": {
-            "minDstGas": 200000
-          },
-          "56": {
-            "minDstGas": 200000
-          },
-          "100": {
-            "minDstGas": 200000
-          },
-          "122": {
-            "minDstGas": 200000
-          },
-          "137": {
-            "minDstGas": 200000
-          },
-          "204": {
-            "minDstGas": 200000
-          },
-          "1088": {
-            "minDstGas": 200000
-          },
-          "1116": {
-            "minDstGas": 200000
-          },
-          "5000": {
-            "minDstGas": 200000
-          },
-          "7700": {
-            "minDstGas": 200000
-          },
-          "8453": {
-            "minDstGas": 200000
-          },
-          "34443": {
-            "minDstGas": 200000
-          },
-          "42161": {
-            "minDstGas": 2000000
-          },
-          "42170": {
-            "minDstGas": 200000
-          },
-          "42220": {
-            "minDstGas": 200000
-          },
-          "81457": {
-            "minDstGas": 200000
-          },
-          "534352": {
-            "minDstGas": 200000
-          },
-          "7777777": {
-            "minDstGas": 200000
-          },
-          "1313161554": {
-            "minDstGas": 200000
-          }
-        },
-        "oftInfo": {
-          "peersInfo": {
-            "1": {
-              "tokenAddress": "0xeD12b794cA80737A25623E24C6864137D7844a25"
-            },
-            "10": {
-              "tokenAddress": "0x0981A1104B7Ab9D1C3e3E9dF0402Bb31A5cF2351"
-            },
-            "56": {
-              "tokenAddress": "0xD56ED3475a63fbeA7C4BB2Dc435C30EB285621a9"
-            },
-            "100": {
-              "tokenAddress": "0xd773f2d6D89845422b5541554237bD5F1edaaBCC"
-            },
-            "122": {
-              "tokenAddress": "0x7291e8E55Ca16DCB2BD654d39282016824EB2699"
-            },
-            "137": {
-              "tokenAddress": "0x2FE8124B4ce7DD9d6f619EDbdC673465951531b0"
-            },
-            "204": {
-              "tokenAddress": "0x2FF6a890249bcc6ab071c17a66Db4C327154604C"
-            },
-            "1088": {
-              "tokenAddress": "0xD5b56ccbE1BeE620ec9F0Fc72f8DCc02C376b4E1"
-            },
-            "1116": {
-              "tokenAddress": "0xbd5F8134E78f3fD4EfC65b1DB552e8B621F1675C"
-            },
-            "5000": {
-              "tokenAddress": "0x8686020614eb1F30b581bfa9e1370e572808421A"
-            },
-            "7700": {
-              "tokenAddress": "0x4B68A5FD1bBFAFA96F3B0Befd8A4972487C9B13F"
-            },
-            "8453": {
-              "tokenAddress": "0x7291e8E55Ca16DCB2BD654d39282016824EB2699"
-            },
-            "34443": {
-              "tokenAddress": "0x80Ad6B43520de476AF8da27707Dd2e11731AfcdB"
-            },
-            "42161": {
-              "tokenAddress": "0x13B8D2e31030C305cCaA25d65E0561323a6c0FD8"
-            },
-            "42170": {
-              "tokenAddress": "0x70A9699eBE2e505FF9EC38f3C4b1265CFBf92011"
-            },
-            "42220": {
-              "tokenAddress": "0x22403f0dA2979760c451bF5fD328aa5146cfB9eB"
-            },
-            "81457": {
-              "tokenAddress": "0xCa4869952396C31286e052dc61165Eb9D94F7C53"
-            },
-            "534352": {
-              "tokenAddress": "0x2E71b0375a84c78ABee40E9Db45DC481E0C8f8e9"
-            },
-            "7777777": {
-              "tokenAddress": "0x661d1Fa0aAE29e6608a877627e49A058CAaE0285"
-            },
-            "1313161554": {
-              "tokenAddress": "0x7dB652D72Bdc0cd93ea8773334852f9169Fee79A"
-            }
-          },
-          "oftAdapter": "0xF41898A2423F877a2cDC7560FDdA2981Db76c02c",
-          "oftVersion": 1,
-          "endpointVersion": 1,
-          "endpointId": 106
         }
       },
       "isAcross": false,
@@ -71300,17 +68670,7 @@
     },
     {
       "chainId": 43114,
-      "address": "0xbef993561b58847447534cea6bb2e7e6fa3a36c2",
-      "name": "l2telegraph.xyz",
-      "decimals": 18,
-      "symbol": "l2t",
-      "tags": [],
-      "extensions": {},
-      "isAcross": false
-    },
-    {
-      "chainId": 43114,
-      "address": "0xc3e5a8a1c3b0b4c81f85ec322554187b3575c478",
+      "address": "0xc3e5a8A1c3B0b4c81F85Ec322554187B3575C478",
       "name": "Omnisea",
       "decimals": 18,
       "symbol": "OSEA",
@@ -71507,16 +68867,6 @@
     },
     {
       "chainId": 43114,
-      "address": "0xe397784960f814ba35c9ee0bc4c9dffdf86925f9",
-      "name": "MSTR Token",
-      "decimals": 18,
-      "symbol": "MSTR",
-      "tags": [],
-      "extensions": {},
-      "isAcross": false
-    },
-    {
-      "chainId": 43114,
       "address": "0xe533B81297B820D2Eb2cd837263926596328E8D2",
       "name": "EMDX Token",
       "decimals": 18,
@@ -71550,16 +68900,6 @@
       "name": "Mozaic LPToken",
       "decimals": 6,
       "symbol": "mozLP",
-      "tags": [],
-      "extensions": {},
-      "isAcross": false
-    },
-    {
-      "chainId": 43114,
-      "address": "0xf195d9d77d805591017bd9ecc9f3a5332a4474f1",
-      "name": "l0Word.com",
-      "decimals": 18,
-      "symbol": "l0WordToken",
       "tags": [],
       "extensions": {},
       "isAcross": false
@@ -71717,7 +69057,7 @@
         "oftInfo": {
           "peersInfo": {
             "1996": {
-              "tokenAddress": "0xaaa55490721b72a3112323fc274e9798796cce85"
+              "tokenAddress": "0xaAA55490721b72A3112323FC274e9798796CcE85"
             },
             "42161": {
               "tokenAddress": "0xcF6C2bb97a8978321C9e207afE8A2037fa9be45C"
@@ -71903,7 +69243,7 @@
     },
     {
       "chainId": 57073,
-      "address": "0xcab283e4bb527aa9b157bae7180fef19e2aaa71a",
+      "address": "0xcab283e4bb527Aa9b157Bae7180FeF19E2aaa71a",
       "name": "Rebasing Ink Staked ETH",
       "decimals": 18,
       "symbol": "riETH",
@@ -71961,7 +69301,7 @@
               "tokenAddress": "0xe2510aA4b019af3Eb835d3aC9c800382109A4631"
             },
             "1996": {
-              "tokenAddress": "0xe2510aa4b019af3eb835d3ac9c800382109a4631"
+              "tokenAddress": "0xe2510aA4b019af3Eb835d3aC9c800382109A4631"
             },
             "5000": {
               "tokenAddress": "0x0852123795bC6Aef3A3eb0212DED01607F9c58a5"
@@ -72145,7 +69485,7 @@
               "tokenAddress": "0x090185f2135308BaD17527004364eBcC2D37e5F6"
             },
             "6900": {
-              "tokenAddress": "0x1D63c9409bb41b2Ab43259b843fF32c839A9ffa2"
+              "tokenAddress": "0x1d63c9409bb41b2ab43259b843ff32c839a9ffa2"
             },
             "42161": {
               "tokenAddress": "0x34FbFB3e95011956aBAD82796f466bA88895f214"
@@ -72783,7 +70123,7 @@
               "tokenAddress": "0xe2510aA4b019af3Eb835d3aC9c800382109A4631"
             },
             "1996": {
-              "tokenAddress": "0xe2510aa4b019af3eb835d3ac9c800382109a4631"
+              "tokenAddress": "0xe2510aA4b019af3Eb835d3aC9c800382109A4631"
             },
             "5000": {
               "tokenAddress": "0x0852123795bC6Aef3A3eb0212DED01607F9c58a5"
@@ -73080,7 +70420,7 @@
     },
     {
       "chainId": 81457,
-      "address": "0x1e5b48c08d6b5efe0792d04f27602bd90026514a",
+      "address": "0x1E5B48c08D6b5efE0792d04f27602bD90026514a",
       "name": "LayerZero Bridge EURA",
       "decimals": 18,
       "symbol": "LZ-EURA",
@@ -73698,6 +71038,26 @@
     },
     {
       "chainId": 81457,
+      "address": "0xAEC8318a9a59bAEb39861d10ff6C7f7bf1F96C57",
+      "name": "LayerZero Bridge ANGLE",
+      "decimals": 18,
+      "symbol": "LZ-ANGLE",
+      "tags": [],
+      "extensions": {},
+      "isAcross": false
+    },
+    {
+      "chainId": 81457,
+      "address": "0xC308c807bf32BD26EE249DEaaA6e04abA463962d",
+      "name": "MCLB",
+      "decimals": 18,
+      "symbol": "MCLB",
+      "tags": [],
+      "extensions": {},
+      "isAcross": false
+    },
+    {
+      "chainId": 81457,
       "address": "0xCD732d21c1B23A3f84Bb386E9759b5b6A1BcBe39",
       "name": "ybUSDB",
       "decimals": 18,
@@ -73725,154 +71085,6 @@
           "endpointVersion": 1,
           "endpointId": 243,
           "oftSharedDecimals": 6
-        }
-      },
-      "isAcross": false,
-      "isOFT": true
-    },
-    {
-      "chainId": 81457,
-      "address": "0xCa4869952396C31286e052dc61165Eb9D94F7C53",
-      "name": "Marathon OFT",
-      "decimals": 0,
-      "symbol": "MARA",
-      "tags": [],
-      "extensions": {
-        "feeInfo": {
-          "1": {
-            "minDstGas": 200000
-          },
-          "10": {
-            "minDstGas": 200000
-          },
-          "56": {
-            "minDstGas": 200000
-          },
-          "100": {
-            "minDstGas": 200000
-          },
-          "122": {
-            "minDstGas": 200000
-          },
-          "137": {
-            "minDstGas": 200000
-          },
-          "169": {
-            "minDstGas": 200000
-          },
-          "204": {
-            "minDstGas": 200000
-          },
-          "1088": {
-            "minDstGas": 200000
-          },
-          "1116": {
-            "minDstGas": 200000
-          },
-          "5000": {
-            "minDstGas": 200000
-          },
-          "7700": {
-            "minDstGas": 200000
-          },
-          "8453": {
-            "minDstGas": 200000
-          },
-          "34443": {
-            "minDstGas": 200000
-          },
-          "42161": {
-            "minDstGas": 2000000
-          },
-          "42170": {
-            "minDstGas": 200000
-          },
-          "42220": {
-            "minDstGas": 200000
-          },
-          "43114": {
-            "minDstGas": 200000
-          },
-          "534352": {
-            "minDstGas": 200000
-          },
-          "7777777": {
-            "minDstGas": 200000
-          },
-          "1313161554": {
-            "minDstGas": 200000
-          }
-        },
-        "oftInfo": {
-          "peersInfo": {
-            "1": {
-              "tokenAddress": "0xeD12b794cA80737A25623E24C6864137D7844a25"
-            },
-            "10": {
-              "tokenAddress": "0x0981A1104B7Ab9D1C3e3E9dF0402Bb31A5cF2351"
-            },
-            "56": {
-              "tokenAddress": "0xD56ED3475a63fbeA7C4BB2Dc435C30EB285621a9"
-            },
-            "100": {
-              "tokenAddress": "0xd773f2d6D89845422b5541554237bD5F1edaaBCC"
-            },
-            "122": {
-              "tokenAddress": "0x7291e8E55Ca16DCB2BD654d39282016824EB2699"
-            },
-            "137": {
-              "tokenAddress": "0x2FE8124B4ce7DD9d6f619EDbdC673465951531b0"
-            },
-            "169": {
-              "tokenAddress": "0xBCc187c9188fdF738f74A70B7823B15ff758A3Db"
-            },
-            "204": {
-              "tokenAddress": "0x2FF6a890249bcc6ab071c17a66Db4C327154604C"
-            },
-            "1088": {
-              "tokenAddress": "0xD5b56ccbE1BeE620ec9F0Fc72f8DCc02C376b4E1"
-            },
-            "1116": {
-              "tokenAddress": "0xbd5F8134E78f3fD4EfC65b1DB552e8B621F1675C"
-            },
-            "5000": {
-              "tokenAddress": "0x8686020614eb1F30b581bfa9e1370e572808421A"
-            },
-            "7700": {
-              "tokenAddress": "0x4B68A5FD1bBFAFA96F3B0Befd8A4972487C9B13F"
-            },
-            "8453": {
-              "tokenAddress": "0x7291e8E55Ca16DCB2BD654d39282016824EB2699"
-            },
-            "34443": {
-              "tokenAddress": "0x80Ad6B43520de476AF8da27707Dd2e11731AfcdB"
-            },
-            "42161": {
-              "tokenAddress": "0x13B8D2e31030C305cCaA25d65E0561323a6c0FD8"
-            },
-            "42170": {
-              "tokenAddress": "0x70A9699eBE2e505FF9EC38f3C4b1265CFBf92011"
-            },
-            "42220": {
-              "tokenAddress": "0x22403f0dA2979760c451bF5fD328aa5146cfB9eB"
-            },
-            "43114": {
-              "tokenAddress": "0xF41898A2423F877a2cDC7560FDdA2981Db76c02c"
-            },
-            "534352": {
-              "tokenAddress": "0x2E71b0375a84c78ABee40E9Db45DC481E0C8f8e9"
-            },
-            "7777777": {
-              "tokenAddress": "0x661d1Fa0aAE29e6608a877627e49A058CAaE0285"
-            },
-            "1313161554": {
-              "tokenAddress": "0x7dB652D72Bdc0cd93ea8773334852f9169Fee79A"
-            }
-          },
-          "oftAdapter": "0xCa4869952396C31286e052dc61165Eb9D94F7C53",
-          "oftVersion": 1,
-          "endpointVersion": 1,
-          "endpointId": 243
         }
       },
       "isAcross": false,
@@ -74077,16 +71289,6 @@
     },
     {
       "chainId": 81457,
-      "address": "0xaec8318a9a59baeb39861d10ff6c7f7bf1f96c57",
-      "name": "LayerZero Bridge ANGLE",
-      "decimals": 18,
-      "symbol": "LZ-ANGLE",
-      "tags": [],
-      "extensions": {},
-      "isAcross": false
-    },
-    {
-      "chainId": 81457,
       "address": "0xb5A86030b64AfAa75c42c0D28f8d5ce5f9f61401",
       "name": "bWOOL",
       "decimals": 18,
@@ -74116,20 +71318,10 @@
     },
     {
       "chainId": 81457,
-      "address": "0xc249f9d90814d3c6ac1fc790ad36ffeb75341996",
+      "address": "0xc249f9d90814D3c6ac1fC790AD36Ffeb75341996",
       "name": "LayerZero Bridge USDA",
       "decimals": 18,
       "symbol": "LZ-USDA",
-      "tags": [],
-      "extensions": {},
-      "isAcross": false
-    },
-    {
-      "chainId": 81457,
-      "address": "0xc308c807bf32bd26ee249deaaa6e04aba463962d",
-      "name": "MCLB",
-      "decimals": 18,
-      "symbol": "MCLB",
       "tags": [],
       "extensions": {},
       "isAcross": false
@@ -74893,7 +72085,7 @@
     },
     {
       "chainId": 534352,
-      "address": "0x122ad65a36ab6dc12261c977e5e63a54ed1ba9e6",
+      "address": "0x122aD65A36ab6Dc12261C977e5e63a54ED1bA9E6",
       "name": "SCRIBES",
       "decimals": 18,
       "symbol": "SCRIBES",
@@ -75015,7 +72207,7 @@
     },
     {
       "chainId": 534352,
-      "address": "0x24a4236df56d923b99649e52ac4d4041ab5ee944",
+      "address": "0x24a4236df56d923B99649E52Ac4d4041aB5Ee944",
       "name": "StakeStone Bitcoin",
       "decimals": 18,
       "symbol": "SBTC",
@@ -75025,155 +72217,7 @@
     },
     {
       "chainId": 534352,
-      "address": "0x2E71b0375a84c78ABee40E9Db45DC481E0C8f8e9",
-      "name": "Marathon OFT",
-      "decimals": 0,
-      "symbol": "MARA",
-      "tags": [],
-      "extensions": {
-        "feeInfo": {
-          "1": {
-            "minDstGas": 200000
-          },
-          "10": {
-            "minDstGas": 200000
-          },
-          "56": {
-            "minDstGas": 200000
-          },
-          "100": {
-            "minDstGas": 200000
-          },
-          "122": {
-            "minDstGas": 200000
-          },
-          "137": {
-            "minDstGas": 200000
-          },
-          "169": {
-            "minDstGas": 200000
-          },
-          "204": {
-            "minDstGas": 200000
-          },
-          "1088": {
-            "minDstGas": 200000
-          },
-          "1116": {
-            "minDstGas": 200000
-          },
-          "5000": {
-            "minDstGas": 200000
-          },
-          "7700": {
-            "minDstGas": 200000
-          },
-          "8453": {
-            "minDstGas": 200000
-          },
-          "34443": {
-            "minDstGas": 200000
-          },
-          "42161": {
-            "minDstGas": 2000000
-          },
-          "42170": {
-            "minDstGas": 200000
-          },
-          "42220": {
-            "minDstGas": 200000
-          },
-          "43114": {
-            "minDstGas": 200000
-          },
-          "81457": {
-            "minDstGas": 200000
-          },
-          "7777777": {
-            "minDstGas": 200000
-          },
-          "1313161554": {
-            "minDstGas": 200000
-          }
-        },
-        "oftInfo": {
-          "peersInfo": {
-            "1": {
-              "tokenAddress": "0xeD12b794cA80737A25623E24C6864137D7844a25"
-            },
-            "10": {
-              "tokenAddress": "0x0981A1104B7Ab9D1C3e3E9dF0402Bb31A5cF2351"
-            },
-            "56": {
-              "tokenAddress": "0xD56ED3475a63fbeA7C4BB2Dc435C30EB285621a9"
-            },
-            "100": {
-              "tokenAddress": "0xd773f2d6D89845422b5541554237bD5F1edaaBCC"
-            },
-            "122": {
-              "tokenAddress": "0x7291e8E55Ca16DCB2BD654d39282016824EB2699"
-            },
-            "137": {
-              "tokenAddress": "0x2FE8124B4ce7DD9d6f619EDbdC673465951531b0"
-            },
-            "169": {
-              "tokenAddress": "0xBCc187c9188fdF738f74A70B7823B15ff758A3Db"
-            },
-            "204": {
-              "tokenAddress": "0x2FF6a890249bcc6ab071c17a66Db4C327154604C"
-            },
-            "1088": {
-              "tokenAddress": "0xD5b56ccbE1BeE620ec9F0Fc72f8DCc02C376b4E1"
-            },
-            "1116": {
-              "tokenAddress": "0xbd5F8134E78f3fD4EfC65b1DB552e8B621F1675C"
-            },
-            "5000": {
-              "tokenAddress": "0x8686020614eb1F30b581bfa9e1370e572808421A"
-            },
-            "7700": {
-              "tokenAddress": "0x4B68A5FD1bBFAFA96F3B0Befd8A4972487C9B13F"
-            },
-            "8453": {
-              "tokenAddress": "0x7291e8E55Ca16DCB2BD654d39282016824EB2699"
-            },
-            "34443": {
-              "tokenAddress": "0x80Ad6B43520de476AF8da27707Dd2e11731AfcdB"
-            },
-            "42161": {
-              "tokenAddress": "0x13B8D2e31030C305cCaA25d65E0561323a6c0FD8"
-            },
-            "42170": {
-              "tokenAddress": "0x70A9699eBE2e505FF9EC38f3C4b1265CFBf92011"
-            },
-            "42220": {
-              "tokenAddress": "0x22403f0dA2979760c451bF5fD328aa5146cfB9eB"
-            },
-            "43114": {
-              "tokenAddress": "0xF41898A2423F877a2cDC7560FDdA2981Db76c02c"
-            },
-            "81457": {
-              "tokenAddress": "0xCa4869952396C31286e052dc61165Eb9D94F7C53"
-            },
-            "7777777": {
-              "tokenAddress": "0x661d1Fa0aAE29e6608a877627e49A058CAaE0285"
-            },
-            "1313161554": {
-              "tokenAddress": "0x7dB652D72Bdc0cd93ea8773334852f9169Fee79A"
-            }
-          },
-          "oftAdapter": "0x2E71b0375a84c78ABee40E9Db45DC481E0C8f8e9",
-          "oftVersion": 1,
-          "endpointVersion": 1,
-          "endpointId": 214
-        }
-      },
-      "isAcross": false,
-      "isOFT": true
-    },
-    {
-      "chainId": 534352,
-      "address": "0x3aef52924de5638652c525569373a3d94e0b202f",
+      "address": "0x3Aef52924De5638652c525569373A3D94E0b202f",
       "name": "l2telegraph.xyz",
       "decimals": 18,
       "symbol": "l2telegraph.xyz",
@@ -75779,7 +72823,7 @@
               "tokenAddress": "0xe2510aA4b019af3Eb835d3aC9c800382109A4631"
             },
             "1996": {
-              "tokenAddress": "0xe2510aa4b019af3eb835d3ac9c800382109a4631"
+              "tokenAddress": "0xe2510aA4b019af3Eb835d3aC9c800382109A4631"
             },
             "5000": {
               "tokenAddress": "0x0852123795bC6Aef3A3eb0212DED01607F9c58a5"
@@ -76902,7 +73946,7 @@
     },
     {
       "chainId": 7777777,
-      "address": "0x5b10ae182c297ec76fe6fe0e3da7c4797cede02d",
+      "address": "0x5B10aE182C297ec76fE6fe0E3Da7c4797ceDE02D",
       "name": "l2telegraph.xyz",
       "decimals": 18,
       "symbol": "l2t",
@@ -76912,143 +73956,13 @@
     },
     {
       "chainId": 7777777,
-      "address": "0x5e3bda64bb862a936eda4dad9f887d3bb6a2aab5",
+      "address": "0x5E3bdA64Bb862a936EDa4Dad9f887d3bb6a2AaB5",
       "name": "l2telegraph.xyz",
       "decimals": 18,
       "symbol": "l2t",
       "tags": [],
       "extensions": {},
       "isAcross": false
-    },
-    {
-      "chainId": 7777777,
-      "address": "0x661d1Fa0aAE29e6608a877627e49A058CAaE0285",
-      "name": "Marathon OFT",
-      "decimals": 0,
-      "symbol": "MARA",
-      "tags": [],
-      "extensions": {
-        "feeInfo": {
-          "1": {
-            "minDstGas": 200000
-          },
-          "10": {
-            "minDstGas": 200000
-          },
-          "56": {
-            "minDstGas": 200000
-          },
-          "100": {
-            "minDstGas": 200000
-          },
-          "122": {
-            "minDstGas": 200000
-          },
-          "137": {
-            "minDstGas": 200000
-          },
-          "204": {
-            "minDstGas": 200000
-          },
-          "1088": {
-            "minDstGas": 200000
-          },
-          "1116": {
-            "minDstGas": 200000
-          },
-          "5000": {
-            "minDstGas": 200000
-          },
-          "7700": {
-            "minDstGas": 200000
-          },
-          "8453": {
-            "minDstGas": 200000
-          },
-          "42161": {
-            "minDstGas": 2000000
-          },
-          "42170": {
-            "minDstGas": 200000
-          },
-          "42220": {
-            "minDstGas": 200000
-          },
-          "43114": {
-            "minDstGas": 200000
-          },
-          "81457": {
-            "minDstGas": 200000
-          },
-          "534352": {
-            "minDstGas": 200000
-          }
-        },
-        "oftInfo": {
-          "peersInfo": {
-            "1": {
-              "tokenAddress": "0xeD12b794cA80737A25623E24C6864137D7844a25"
-            },
-            "10": {
-              "tokenAddress": "0x0981A1104B7Ab9D1C3e3E9dF0402Bb31A5cF2351"
-            },
-            "56": {
-              "tokenAddress": "0xD56ED3475a63fbeA7C4BB2Dc435C30EB285621a9"
-            },
-            "100": {
-              "tokenAddress": "0xd773f2d6D89845422b5541554237bD5F1edaaBCC"
-            },
-            "122": {
-              "tokenAddress": "0x7291e8E55Ca16DCB2BD654d39282016824EB2699"
-            },
-            "137": {
-              "tokenAddress": "0x2FE8124B4ce7DD9d6f619EDbdC673465951531b0"
-            },
-            "204": {
-              "tokenAddress": "0x2FF6a890249bcc6ab071c17a66Db4C327154604C"
-            },
-            "1088": {
-              "tokenAddress": "0xD5b56ccbE1BeE620ec9F0Fc72f8DCc02C376b4E1"
-            },
-            "1116": {
-              "tokenAddress": "0xbd5F8134E78f3fD4EfC65b1DB552e8B621F1675C"
-            },
-            "5000": {
-              "tokenAddress": "0x8686020614eb1F30b581bfa9e1370e572808421A"
-            },
-            "7700": {
-              "tokenAddress": "0x4B68A5FD1bBFAFA96F3B0Befd8A4972487C9B13F"
-            },
-            "8453": {
-              "tokenAddress": "0x7291e8E55Ca16DCB2BD654d39282016824EB2699"
-            },
-            "42161": {
-              "tokenAddress": "0x13B8D2e31030C305cCaA25d65E0561323a6c0FD8"
-            },
-            "42170": {
-              "tokenAddress": "0x70A9699eBE2e505FF9EC38f3C4b1265CFBf92011"
-            },
-            "42220": {
-              "tokenAddress": "0x22403f0dA2979760c451bF5fD328aa5146cfB9eB"
-            },
-            "43114": {
-              "tokenAddress": "0xF41898A2423F877a2cDC7560FDdA2981Db76c02c"
-            },
-            "81457": {
-              "tokenAddress": "0xCa4869952396C31286e052dc61165Eb9D94F7C53"
-            },
-            "534352": {
-              "tokenAddress": "0x2E71b0375a84c78ABee40E9Db45DC481E0C8f8e9"
-            }
-          },
-          "oftAdapter": "0x661d1Fa0aAE29e6608a877627e49A058CAaE0285",
-          "oftVersion": 1,
-          "endpointVersion": 1,
-          "endpointId": 195
-        }
-      },
-      "isAcross": false,
-      "isOFT": true
     },
     {
       "chainId": 7777777,
@@ -77188,7 +74102,7 @@
               "tokenAddress": "0xe2510aA4b019af3Eb835d3aC9c800382109A4631"
             },
             "1996": {
-              "tokenAddress": "0xe2510aa4b019af3eb835d3ac9c800382109a4631"
+              "tokenAddress": "0xe2510aA4b019af3Eb835d3aC9c800382109A4631"
             },
             "5000": {
               "tokenAddress": "0x0852123795bC6Aef3A3eb0212DED01607F9c58a5"
@@ -77412,7 +74326,7 @@
     },
     {
       "chainId": 7777777,
-      "address": "0xa5b72e35e35d219c3274cee227fbe4d317915e0c",
+      "address": "0xa5B72e35E35d219c3274Cee227FbE4D317915E0C",
       "name": "l2telegraph.xyz",
       "decimals": 18,
       "symbol": "l2telegraph.xyz",
@@ -77473,82 +74387,6 @@
             }
           },
           "oftAdapter": "0x4fc0D96f3d70b4D9b75671Ab92e7Be01CaBE3863",
-          "oftVersion": 1,
-          "endpointVersion": 1,
-          "endpointId": 211
-        }
-      },
-      "isAcross": false,
-      "isOFT": true
-    },
-    {
-      "chainId": 1313161554,
-      "address": "0x7dB652D72Bdc0cd93ea8773334852f9169Fee79A",
-      "name": "Marathon OFT",
-      "decimals": 0,
-      "symbol": "MARA",
-      "tags": [],
-      "extensions": {
-        "feeInfo": {
-          "1": {
-            "minDstGas": 200000
-          },
-          "10": {
-            "minDstGas": 200000
-          },
-          "56": {
-            "minDstGas": 200000
-          },
-          "137": {
-            "minDstGas": 200000
-          },
-          "34443": {
-            "minDstGas": 200000
-          },
-          "42161": {
-            "minDstGas": 2000000
-          },
-          "43114": {
-            "minDstGas": 200000
-          },
-          "81457": {
-            "minDstGas": 200000
-          },
-          "534352": {
-            "minDstGas": 200000
-          }
-        },
-        "oftInfo": {
-          "peersInfo": {
-            "1": {
-              "tokenAddress": "0xeD12b794cA80737A25623E24C6864137D7844a25"
-            },
-            "10": {
-              "tokenAddress": "0x0981A1104B7Ab9D1C3e3E9dF0402Bb31A5cF2351"
-            },
-            "56": {
-              "tokenAddress": "0xD56ED3475a63fbeA7C4BB2Dc435C30EB285621a9"
-            },
-            "137": {
-              "tokenAddress": "0x2FE8124B4ce7DD9d6f619EDbdC673465951531b0"
-            },
-            "34443": {
-              "tokenAddress": "0x80Ad6B43520de476AF8da27707Dd2e11731AfcdB"
-            },
-            "42161": {
-              "tokenAddress": "0x13B8D2e31030C305cCaA25d65E0561323a6c0FD8"
-            },
-            "43114": {
-              "tokenAddress": "0xF41898A2423F877a2cDC7560FDdA2981Db76c02c"
-            },
-            "81457": {
-              "tokenAddress": "0xCa4869952396C31286e052dc61165Eb9D94F7C53"
-            },
-            "534352": {
-              "tokenAddress": "0x2E71b0375a84c78ABee40E9Db45DC481E0C8f8e9"
-            }
-          },
-          "oftAdapter": "0x7dB652D72Bdc0cd93ea8773334852f9169Fee79A",
           "oftVersion": 1,
           "endpointVersion": 1,
           "endpointId": 211
@@ -77855,7 +74693,7 @@
               "tokenAddress": "0xe2510aA4b019af3Eb835d3aC9c800382109A4631"
             },
             "1996": {
-              "tokenAddress": "0xe2510aa4b019af3eb835d3ac9c800382109a4631"
+              "tokenAddress": "0xe2510aA4b019af3Eb835d3aC9c800382109A4631"
             },
             "5000": {
               "tokenAddress": "0x0852123795bC6Aef3A3eb0212DED01607F9c58a5"

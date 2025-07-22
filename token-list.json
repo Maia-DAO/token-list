@@ -1,19 +1,19 @@
 {
   "name": "Hermes Omnichain Token List",
-  "timestamp": "1753130591",
+  "timestamp": "1753221774",
   "version": {
-    "major": 123,
+    "major": 125,
     "minor": 0,
     "patch": 0
   },
   "tokens": [
     {
       "chainId": 1,
-      "address": "0x0000206329b97db379d5e1bf586bbdb969c63274",
+      "address": "0x0000206329b97DB379d5E1Bf586BbDB969C63274",
       "name": "USDA",
       "decimals": 18,
       "symbol": "USDA",
-      "logoURI": "https://assets.coingecko.com/coins/images/34510/standard/agUSD-coingecko.png?1705288392",
+      "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/refs/heads/master/blockchains/ethereum/assets/0x0000206329b97DB379d5E1Bf586BbDB969C63274/logo.png",
       "tags": [],
       "extensions": {
         "coingeckoId": "angle-usd",
@@ -526,7 +526,7 @@
         "oftInfo": {
           "peersInfo": {
             "6900": {
-              "tokenAddress": "0x1D63c9409bb41b2Ab43259b843fF32c839A9ffa2"
+              "tokenAddress": "0x1d63c9409bb41b2ab43259b843ff32c839a9ffa2"
             },
             "42161": {
               "tokenAddress": "0x34FbFB3e95011956aBAD82796f466bA88895f214"
@@ -771,6 +771,9 @@
           }
         },
         "feeInfo": {
+          "1996": {
+            "minDstGas": 200000
+          },
           "42161": {
             "minDstGas": 2000000
           }
@@ -779,7 +782,7 @@
         "oftInfo": {
           "peersInfo": {
             "1996": {
-              "tokenAddress": "0x7393ae4835fdfed4f25e46a10d6bdb2fd49a2706"
+              "tokenAddress": "0x7393aE4835FDfed4f25E46a10D6bDB2fd49A2706"
             },
             "42161": {
               "tokenAddress": "0x8B0E6f19Ee57089F7649A455D89D7bC6314D04e8"
@@ -1322,7 +1325,7 @@
     },
     {
       "chainId": 1,
-      "address": "0x15f74458ae0bfdaa1a96ca1aa779d715cc1eefe4",
+      "address": "0x15f74458aE0bFdAA1a96CA1aa779D715Cc1Eefe4",
       "name": "Gravita Debt Token",
       "symbol": "GRAI",
       "decimals": 18,
@@ -1401,9 +1404,6 @@
         "bridgeInfo": {
           "130": {
             "tokenAddress": "0xAd497996Dc33DC8E8e552824CcEe199420BC7814"
-          },
-          "8453": {
-            "tokenAddress": "0x236aa50979D5f3De3Bd1Eeb40E81137F22ab794b"
           },
           "42161": {
             "tokenAddress": "0x7E2a1eDeE171C5B19E6c54D73752396C0A572594"
@@ -2083,6 +2083,9 @@
           },
           "137": {
             "tokenAddress": "0x82FFdFD1d8699E8886a4e77CeFA9dd9710a7FefD"
+          },
+          "8453": {
+            "tokenAddress": "0x18dD5B087bCA9920562aFf7A0199b96B9230438b"
           }
         }
       },
@@ -2118,9 +2121,6 @@
         "bridgeInfo": {
           "130": {
             "tokenAddress": "0x428c2B7Fa7a7821891fb529BAE4d80a71d5c61A8"
-          },
-          "8453": {
-            "tokenAddress": "0xFf9957816c813C5Ad0b9881A8990Df1E3AA2a057"
           }
         }
       },
@@ -2507,7 +2507,7 @@
               "tokenAddress": "0x5A61B1d8272B250729EA3F5eD3Ef843f4D66BC6e"
             },
             "6900": {
-              "tokenAddress": "0x84f682626302EA7BCA2A7c338b84863292131319"
+              "tokenAddress": "0x84f682626302ea7bca2a7c338b84863292131319"
             },
             "8453": {
               "tokenAddress": "0xd329f9A8589723357C36727a2D5e15974c835cCf"
@@ -2830,11 +2830,11 @@
     },
     {
       "chainId": 1,
-      "address": "0x31429d1856ad1377a8a0079410b297e1a9e214c2",
+      "address": "0x31429d1856aD1377A8A0079410B297e1a9e214c2",
       "name": "ANGLE",
       "decimals": 18,
       "symbol": "ANGLE",
-      "logoURI": "https://s2.coinmarketcap.com/static/img/coins/128x128/12761.png",
+      "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/refs/heads/master/blockchains/ethereum/assets/0x31429d1856aD1377A8A0079410B297e1a9e214c2/logo.png",
       "tags": [],
       "extensions": {
         "coingeckoId": "angle-protocol",
@@ -2921,7 +2921,7 @@
     },
     {
       "chainId": 1,
-      "address": "0x31e4efe290973ebe91b3a875a7994f650942d28f",
+      "address": "0x31e4efe290973ebE91b3a875a7994f650942D28F",
       "name": "SHRAPToken",
       "decimals": 18,
       "symbol": "SHRAP",
@@ -3007,6 +3007,9 @@
         "bridgeInfo": {
           "130": {
             "tokenAddress": "0x993A565A1E6219951323cA3c34Cee0A3b1889066"
+          },
+          "8453": {
+            "tokenAddress": "0xaB36452DbAC151bE02b16Ca17d8919826072f64a"
           },
           "42161": {
             "tokenAddress": "0xCa5Ca9083702c56b481D1eec86F1776FDbd2e594"
@@ -3624,9 +3627,6 @@
           },
           "137": {
             "tokenAddress": "0x385Eeac5cB85A38A9a07A70c73e0a3271CfB54A7"
-          },
-          "8453": {
-            "tokenAddress": "0xcD2F22236DD9Dfe2356D7C543161D4d260FD9BcB"
           }
         }
       },
@@ -5729,6 +5729,9 @@
           "137": {
             "tokenAddress": "0x23001f892c0C82b79303EDC9B9033cD190BB21c7"
           },
+          "8453": {
+            "tokenAddress": "0x368181499736d0c0CC614DBB145E2EC1AC86b8c6"
+          },
           "42161": {
             "tokenAddress": "0x93b346b6BC2548dA6A1E7d98E9a421B42541425b"
           }
@@ -6443,9 +6446,6 @@
           "130": {
             "tokenAddress": "0xD9b5DA95B3D97c3E9872102fDb47d4c09074952B"
           },
-          "8453": {
-            "tokenAddress": "0xB4fDe59a779991bfB6a52253B51947828b982be3"
-          },
           "42161": {
             "tokenAddress": "0x35E6A59F786d9266c7961eA28c7b768B33959cbB"
           }
@@ -6534,6 +6534,9 @@
           },
           "137": {
             "tokenAddress": "0x2B9E7ccDF0F4e5B24757c1E1a80e311E34Cb10c7"
+          },
+          "8453": {
+            "tokenAddress": "0xD0a4D1889BbE483273f29b4aCdfAA567A67F99E1"
           },
           "42161": {
             "tokenAddress": "0x533A7B414CD1236815a5e09F1E97FC7d5c313739"
@@ -6644,9 +6647,6 @@
           },
           "137": {
             "tokenAddress": "0x0b3F868E0BE5597D5DB7fEB59E1CADBb0fdDa50a"
-          },
-          "8453": {
-            "tokenAddress": "0x7D49a065D17d6d4a55dc13649901fdBB98B2AFBA"
           },
           "42161": {
             "tokenAddress": "0xd4d42F0b6DEF4CE0383636770eF773390d85c61A"
@@ -7054,9 +7054,6 @@
           },
           "137": {
             "tokenAddress": "0xf6372cDb9c1d3674E83842e3800F2A62aC9F3C66"
-          },
-          "8453": {
-            "tokenAddress": "0xBCBAf311ceC8a4EAC0430193A528d9FF27ae38C1"
           }
         }
       },
@@ -7249,6 +7246,9 @@
       "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x720CD16b011b987Da3518fbf38c3071d4F0D1495/logo.png",
       "extensions": {
         "bridgeInfo": {
+          "8453": {
+            "tokenAddress": "0xb008BDCF9CdFf9da684a190941dC3dCa8C2Cdd44"
+          },
           "42161": {
             "tokenAddress": "0x63806C056Fa458c548Fb416B15E358A9D685710A"
           }
@@ -7602,6 +7602,9 @@
           },
           "137": {
             "tokenAddress": "0x5eCbA59DAcc1ADc5bDEA35f38A732823fc3dE977"
+          },
+          "8453": {
+            "tokenAddress": "0x968B2323d4b005C7D39c67D31774FE83c9943A60"
           }
         }
       },
@@ -8144,9 +8147,6 @@
           "137": {
             "tokenAddress": "0x1D47e931F82bb9F8D967F0Cc3288268449835806"
           },
-          "8453": {
-            "tokenAddress": "0xA99F6e6785Da0F5d6fB42495Fe424BCE029Eeb3E"
-          },
           "42161": {
             "tokenAddress": "0x0c880f6761F1af8d9Aa9C466984b80DAb9a8c9e8"
           },
@@ -8226,9 +8226,6 @@
           },
           "137": {
             "tokenAddress": "0xa63Beffd33AB3a2EfD92a39A7D2361CEE14cEbA8"
-          },
-          "8453": {
-            "tokenAddress": "0x7002458B1DF59EccB57387bC79fFc7C29E22e6f7"
           },
           "42161": {
             "tokenAddress": "0x6FEb262FEb0f775B5312D2e009923f7f58AE423E"
@@ -8822,7 +8819,7 @@
               "tokenAddress": "0x075df695b8E7f4361FA7F8c1426C63f11B06e326"
             },
             "6900": {
-              "tokenAddress": "0xf4e097E36d2064E2bDCA96e60439f3A369522003"
+              "tokenAddress": "0xf4e097e36d2064e2bdca96e60439f3a369522003"
             },
             "8453": {
               "tokenAddress": "0x2840F9d9f96321435Ab0f977E7FDBf32EA8b304f"
@@ -9558,7 +9555,7 @@
               "tokenAddress": "0xe33Ec16788d0CDC1c707553cB7c5bCC93EF0a779"
             },
             "6900": {
-              "tokenAddress": "0xfCfc58685101e2914cBCf7551B432500db84eAa8"
+              "tokenAddress": "0xfcfc58685101e2914cbcf7551b432500db84eaa8"
             },
             "80094": {
               "tokenAddress": "0x5B82028cfc477C4E7ddA7FF33d59A23FA7Be002a"
@@ -9832,9 +9829,6 @@
           "137": {
             "tokenAddress": "0x4985E0B13554fB521840e893574D3848C10Fcc6f"
           },
-          "8453": {
-            "tokenAddress": "0xE6bAA3Fedb5Dc88b2c59ba4812388Bb0906D19dB"
-          },
           "42161": {
             "tokenAddress": "0x53236015A675fcB937485F1AE58040e4Fb920d5b"
           }
@@ -10063,6 +10057,9 @@
           },
           "1868": {
             "tokenAddress": "0xbA9986D2381edf1DA03B0B9c1f8b00dc4AacC369"
+          },
+          "8453": {
+            "tokenAddress": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913"
           },
           "42161": {
             "tokenAddress": "0xaf88d065e77c8cC2239327C5EDb3A432268e5831"
@@ -10994,6 +10991,9 @@
           "137": {
             "tokenAddress": "0x84e1670F61347CDaeD56dcc736FB990fBB47ddC1"
           },
+          "8453": {
+            "tokenAddress": "0x0D760ee479401Bb4C40BDB7604b329FfF411b3f2"
+          },
           "42161": {
             "tokenAddress": "0x46d0cE7de6247b0A95f67b43B589b4041BaE7fbE"
           }
@@ -11141,9 +11141,6 @@
         "bridgeInfo": {
           "130": {
             "tokenAddress": "0xEb64b50FeF2A363940369285F86Ae9a68211db59"
-          },
-          "8453": {
-            "tokenAddress": "0x2Ae3F1Ec7F1F5012CFEab0185bfc7aa3cf0DEc22"
           },
           "42161": {
             "tokenAddress": "0x1DEBd73E752bEaF79865Fd6446b0c970EaE7732f"
@@ -11827,6 +11824,26 @@
     },
     {
       "chainId": 1,
+      "address": "0xD33526068D116cE69F19A9ee46F0bd304F21A51f",
+      "name": "Rocket Pool Protocol",
+      "symbol": "RPL",
+      "decimals": 18,
+      "logoURI": "https://coin-images.coingecko.com/coins/images/2090/large/rocket_pool_%28RPL%29.png?1696503058",
+      "extensions": {
+        "bridgeInfo": {
+          "8453": {
+            "tokenAddress": "0x1f73EAf55d696BFFA9b0EA16fa987B93b0f4d302"
+          },
+          "42161": {
+            "tokenAddress": "0xB766039cc6DB368759C1E56B79AFfE831d0Cc507"
+          }
+        }
+      },
+      "isAcross": false,
+      "isOFT": false
+    },
+    {
+      "chainId": 1,
       "address": "0xD3C68968137317a57a9bAbeacC7707Ec433548B4",
       "name": "Phavercoin",
       "decimals": 18,
@@ -12220,6 +12237,16 @@
           }
         }
       }
+    },
+    {
+      "chainId": 1,
+      "address": "0xE2AD0BF751834f2fbdC62A41014f84d67cA1de2A",
+      "name": "Caldera",
+      "symbol": "ERA",
+      "decimals": 18,
+      "logoURI": "https://coin-images.coingecko.com/coins/images/54475/large/Token_Logo.png?1749676251",
+      "isAcross": false,
+      "isOFT": false
     },
     {
       "name": "0x Protocol Token",
@@ -12700,6 +12727,9 @@
           "137": {
             "tokenAddress": "0x176f5AB638cf4Ff3B6239Ba609C3fadAA46ef5B0"
           },
+          "8453": {
+            "tokenAddress": "0xD08a2917653d4E460893203471f0000826fb4034"
+          },
           "42161": {
             "tokenAddress": "0x8553d254Cb6934b16F87D2e486b64BbD24C83C70"
           }
@@ -13162,6 +13192,9 @@
           "137": {
             "tokenAddress": "0x7583FEDDbceFA813dc18259940F76a02710A8905"
           },
+          "8453": {
+            "tokenAddress": "0x74F804B4140ee70830B3Eef4e690325841575F89"
+          },
           "42161": {
             "tokenAddress": "0x4BE87C766A7CE11D5Cc864b6C3Abb7457dCC4cC9"
           }
@@ -13360,9 +13393,6 @@
           "137": {
             "tokenAddress": "0x263534a4Fe3cb249dF46810718B7B612a30ebbff"
           },
-          "8453": {
-            "tokenAddress": "0xCD6dDDa305955AcD6b94b934f057E8b0daaD58dE"
-          },
           "42161": {
             "tokenAddress": "0x753D224bCf9AAFaCD81558c32341416df61D3DAC"
           }
@@ -13468,6 +13498,9 @@
           },
           "137": {
             "tokenAddress": "0x9a71012B13CA4d3D0Cdc72A177DF3ef03b0E76A3"
+          },
+          "8453": {
+            "tokenAddress": "0x4158734D47Fc9692176B5085E0F52ee0Da5d47F1"
           },
           "42161": {
             "tokenAddress": "0x040d1EdC9569d4Bab2D15287Dc5A4F10F56a56B8"
@@ -13882,6 +13915,9 @@
           "137": {
             "tokenAddress": "0x65A05DB8322701724c197AF82C9CaE41195B0aA8"
           },
+          "8453": {
+            "tokenAddress": "0x2dbe0d779c7A04F7a5de83326973effE23356930"
+          },
           "42161": {
             "tokenAddress": "0xf929de51D91C77E42f5090069E0AD7A09e513c73"
           }
@@ -13921,9 +13957,6 @@
           },
           "137": {
             "tokenAddress": "0x5fe2B58c013d7601147DcdD68C143A77499f5531"
-          },
-          "8453": {
-            "tokenAddress": "0x0F4d237B09Cb37d207BA60353Dc254d4530D4dF1"
           },
           "42161": {
             "tokenAddress": "0x9623063377AD1B27544C965cCd7342f7EA7e88C7"
@@ -14305,6 +14338,9 @@
         "bridgeInfo": {
           "130": {
             "tokenAddress": "0xD7eb7348Ba44c5A2f9f1D1d3534623230c7bee3F"
+          },
+          "8453": {
+            "tokenAddress": "0xB676f87A6E701f0DE8De5Ab91B56b66109766DB1"
           }
         }
       },
@@ -14628,6 +14664,9 @@
           "1868": {
             "tokenAddress": "0x3A337a6adA9d885b6Ad95ec48F9b75f197b5AE35"
           },
+          "8453": {
+            "tokenAddress": "0xfde4C96c8593536E31F229EA8f37b2ADa2699bb2"
+          },
           "42161": {
             "tokenAddress": "0xFd086bC7CD5C481DCC9C85ebE478A1C0b69FCbb9"
           },
@@ -14740,9 +14779,6 @@
         "bridgeInfo": {
           "130": {
             "tokenAddress": "0x0328A0255866706547B79072DEE54976b157d3D0"
-          },
-          "8453": {
-            "tokenAddress": "0xB78e7D4C5d47Af92942321eD40419dab0E573810"
           }
         }
       },
@@ -15124,6 +15160,9 @@
           },
           "137": {
             "tokenAddress": "0xa9f37D84c856fDa3812ad0519Dad44FA0a3Fe207"
+          },
+          "8453": {
+            "tokenAddress": "0x7C298664BD6582f6f264c2Cb5a4B9cC09b6E3889"
           },
           "42161": {
             "tokenAddress": "0x8f5c1A99b1df736Ad685006Cb6ADCA7B7Ae4b514"
@@ -15633,6 +15672,9 @@
           },
           "130": {
             "tokenAddress": "0x13FE2c4504f3AA18708561250e2F20E4E7D7CAa2"
+          },
+          "8453": {
+            "tokenAddress": "0x38815A4455921667d673B4cb3d48F0383eE93400"
           }
         }
       },
@@ -15857,11 +15899,11 @@
     },
     {
       "chainId": 10,
-      "address": "0x0000206329b97db379d5e1bf586bbdb969c63274",
+      "address": "0x0000206329b97DB379d5E1Bf586BbDB969C63274",
       "name": "USDA",
       "decimals": 18,
       "symbol": "USDA",
-      "logoURI": "https://assets.coingecko.com/coins/images/34510/standard/agUSD-coingecko.png?1705288392",
+      "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/refs/heads/master/blockchains/optimism/assets/0x0000206329b97DB379d5E1Bf586BbDB969C63274/logo.png",
       "tags": [],
       "extensions": {
         "coingeckoId": "angle-usd",
@@ -16441,7 +16483,7 @@
     },
     {
       "chainId": 10,
-      "address": "0x296f55f8fb28e498b858d0bcda06d955b2cb3f97",
+      "address": "0x296F55F8Fb28E498B858d0BcDA06D955B2Cb3f97",
       "name": "StargateToken",
       "decimals": 18,
       "symbol": "STG",
@@ -17306,23 +17348,6 @@
     },
     {
       "chainId": 10,
-      "address": "0x58441e37255b09f9f545e9dc957f1c41658ff665",
-      "name": "ANGLE_optimism",
-      "decimals": 18,
-      "symbol": "ANGLE",
-      "logoURI": "https://s2.coinmarketcap.com/static/img/coins/128x128/12761.png",
-      "tags": [],
-      "extensions": {
-        "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0x31429d1856aD1377A8A0079410B297e1a9e214c2"
-          }
-        }
-      },
-      "isAcross": false
-    },
-    {
-      "chainId": 10,
       "address": "0x58538e6A46E07434d7E7375Bc268D3cb839C0133",
       "name": "ENA",
       "decimals": 18,
@@ -18184,11 +18209,11 @@
     },
     {
       "chainId": 10,
-      "address": "0x9485aca5bbbe1667ad97c7fe7c4531a624c8b1ed",
+      "address": "0x9485aca5bbBE1667AD97c7fE7C4531a624C8b1ED",
       "name": "EURA (previously agEUR)",
       "decimals": 18,
       "symbol": "EURA",
-      "logoURI": "https://s2.coinmarketcap.com/static/img/coins/128x128/15024.png",
+      "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/refs/heads/master/blockchains/optimism/assets/0x9485aca5bbBE1667AD97c7fE7C4531a624C8b1ED/logo.png",
       "tags": [],
       "extensions": {
         "bridgeInfo": {
@@ -19519,7 +19544,7 @@
     },
     {
       "chainId": 50,
-      "address": "0x81b244d0be055ef3bef1b09b7826cc2b108b2cbd",
+      "address": "0x81B244d0be055EF3BEF1b09B7826Cc2b108B2cBD",
       "name": "PRFI",
       "decimals": 18,
       "symbol": "PRFI",
@@ -19537,7 +19562,7 @@
     },
     {
       "chainId": 56,
-      "address": "0x0000206329b97db379d5e1bf586bbdb969c63274",
+      "address": "0x0000206329b97DB379d5E1Bf586BbDB969C63274",
       "name": "USDA",
       "decimals": 18,
       "symbol": "USDA",
@@ -20927,7 +20952,7 @@
     },
     {
       "chainId": 56,
-      "address": "0x31e4efe290973ebe91b3a875a7994f650942d28f",
+      "address": "0x31e4efe290973ebE91b3a875a7994f650942D28F",
       "name": "SHRAPToken",
       "decimals": 18,
       "symbol": "SHRAP",
@@ -22546,7 +22571,7 @@
               "tokenAddress": "0x5A61B1d8272B250729EA3F5eD3Ef843f4D66BC6e"
             },
             "6900": {
-              "tokenAddress": "0x84f682626302EA7BCA2A7c338b84863292131319"
+              "tokenAddress": "0x84f682626302ea7bca2a7c338b84863292131319"
             },
             "8453": {
               "tokenAddress": "0xd329f9A8589723357C36727a2D5e15974c835cCf"
@@ -23493,7 +23518,7 @@
               "tokenAddress": "0x075df695b8E7f4361FA7F8c1426C63f11B06e326"
             },
             "6900": {
-              "tokenAddress": "0xf4e097E36d2064E2bDCA96e60439f3A369522003"
+              "tokenAddress": "0xf4e097e36d2064e2bdca96e60439f3a369522003"
             },
             "8453": {
               "tokenAddress": "0x2840F9d9f96321435Ab0f977E7FDBf32EA8b304f"
@@ -23647,23 +23672,6 @@
       },
       "isAcross": false,
       "isOFT": true
-    },
-    {
-      "chainId": 56,
-      "address": "0x97b6897aad7aba3861c04c0e6388fc02af1f227f",
-      "name": "ANGLE_bsc",
-      "decimals": 18,
-      "symbol": "ANGLE",
-      "logoURI": "https://s2.coinmarketcap.com/static/img/coins/128x128/12761.png",
-      "tags": [],
-      "extensions": {
-        "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0x31429d1856aD1377A8A0079410B297e1a9e214c2"
-          }
-        }
-      },
-      "isAcross": false
     },
     {
       "chainId": 56,
@@ -25867,7 +25875,7 @@
     },
     {
       "chainId": 100,
-      "address": "0x0000206329b97db379d5e1bf586bbdb969c63274",
+      "address": "0x0000206329b97DB379d5E1Bf586BbDB969C63274",
       "name": "USDA",
       "decimals": 18,
       "symbol": "USDA",
@@ -25946,7 +25954,7 @@
     },
     {
       "chainId": 100,
-      "address": "0x4b1e2c2762667331bc91648052f646d1b0d35984",
+      "address": "0x4b1E2c2762667331Bc91648052F646d1b0d35984",
       "name": "EURA (previously agEUR)",
       "decimals": 18,
       "symbol": "EURA",
@@ -31947,11 +31955,11 @@
     },
     {
       "chainId": 137,
-      "address": "0x0000206329b97db379d5e1bf586bbdb969c63274",
+      "address": "0x0000206329b97DB379d5E1Bf586BbDB969C63274",
       "name": "USDA",
       "decimals": 18,
       "symbol": "USDA",
-      "logoURI": "https://assets.coingecko.com/coins/images/34510/standard/agUSD-coingecko.png?1705288392",
+      "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/refs/heads/master/blockchains/polygon/assets/0x0000206329b97DB379d5E1Bf586BbDB969C63274/logo.png",
       "tags": [],
       "extensions": {
         "coingeckoId": "angle-usd",
@@ -33038,6 +33046,25 @@
     },
     {
       "chainId": 137,
+      "address": "0x2F6F07CDcf3588944Bf4C42aC74ff24bF56e7590",
+      "name": "StargateToken",
+      "decimals": 18,
+      "symbol": "STG",
+      "logoURI": "https://s2.coinmarketcap.com/static/img/coins/128x128/18934.png",
+      "tags": [],
+      "extensions": {
+        "coingeckoId": "stargate-finance",
+        "bridgeInfo": {
+          "1": {
+            "tokenAddress": "0xAf5191B0De278C7286d6C7CC6ab6BB8A73bA2Cd6"
+          }
+        },
+        "coinMarketCapId": 18934
+      },
+      "isAcross": false
+    },
+    {
+      "chainId": 137,
       "address": "0x2b1D36f5B61AdDAf7DA7ebbd11B35FD8cfb0DE31",
       "name": "Interport Token",
       "decimals": 18,
@@ -33148,25 +33175,6 @@
       },
       "isAcross": false,
       "isOFT": false
-    },
-    {
-      "chainId": 137,
-      "address": "0x2f6f07cdcf3588944bf4c42ac74ff24bf56e7590",
-      "name": "StargateToken",
-      "decimals": 18,
-      "symbol": "STG",
-      "logoURI": "https://s2.coinmarketcap.com/static/img/coins/128x128/18934.png",
-      "tags": [],
-      "extensions": {
-        "coingeckoId": "stargate-finance",
-        "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0xAf5191B0De278C7286d6C7CC6ab6BB8A73bA2Cd6"
-          }
-        },
-        "coinMarketCapId": 18934
-      },
-      "isAcross": false
     },
     {
       "chainId": 137,
@@ -44035,7 +44043,7 @@
               "tokenAddress": "0x99D8a9C45b2ecA8864373A26D1459e3Dff1e17F3"
             },
             "6900": {
-              "tokenAddress": "0xfCfc58685101e2914cBCf7551B432500db84eAa8"
+              "tokenAddress": "0xfcfc58685101e2914cbcf7551b432500db84eaa8"
             },
             "80094": {
               "tokenAddress": "0x5B82028cfc477C4E7ddA7FF33d59A23FA7Be002a"
@@ -47486,7 +47494,39 @@
     },
     {
       "chainId": 1996,
-      "address": "0x7393ae4835fdfed4f25e46a10d6bdb2fd49a2706",
+      "address": "0x452ed88fAc8A6e7eecFEb147DCe3F4e8e1e93de4",
+      "name": "MigrationOFT",
+      "decimals": 18,
+      "symbol": "MigrationOFT",
+      "logoURI": "https://s2.coinmarketcap.com/static/img/coins/128x128/25653.png",
+      "tags": [],
+      "extensions": {
+        "bridgeInfo": {
+          "42161": {
+            "tokenAddress": "0x8B0E6f19Ee57089F7649A455D89D7bC6314D04e8"
+          }
+        },
+        "coingeckoId": "dream-machine-token",
+        "coinMarketCapId": 25653,
+        "oftInfo": {
+          "peersInfo": {
+            "42161": {
+              "tokenAddress": "0x8B0E6f19Ee57089F7649A455D89D7bC6314D04e8"
+            }
+          },
+          "oftAdapter": "0x452ed88fAc8A6e7eecFEb147DCe3F4e8e1e93de4",
+          "oftVersion": 2,
+          "endpointVersion": 1,
+          "endpointId": 278,
+          "oftSharedDecimals": 6
+        }
+      },
+      "isAcross": false,
+      "isOFT": true
+    },
+    {
+      "chainId": 1996,
+      "address": "0x7393aE4835FDfed4f25E46a10D6bDB2fd49A2706",
       "name": "DMT",
       "decimals": 18,
       "symbol": "DMT",
@@ -47494,14 +47534,30 @@
       "tags": [],
       "extensions": {
         "coingeckoId": "dream-machine-token",
-        "coinMarketCapId": 25653
+        "coinMarketCapId": 25653,
+        "oftInfo": {
+          "peersInfo": {
+            "1": {
+              "tokenAddress": "0x0B7f0e51Cd1739D6C96982D55aD8fA634dd43A9C"
+            },
+            "42161": {
+              "tokenAddress": "0x8B0E6f19Ee57089F7649A455D89D7bC6314D04e8"
+            }
+          },
+          "oftAdapter": "0x7393aE4835FDfed4f25E46a10D6bDB2fd49A2706",
+          "oftVersion": 2,
+          "endpointVersion": 1,
+          "endpointId": 278,
+          "oftSharedDecimals": 6
+        }
       },
-      "isAcross": false
+      "isAcross": false,
+      "isOFT": true
     },
     {
       "chainId": 1996,
-      "address": "0x754cdad6f5821077d6915004be2ce05f93d176f8",
-      "name": "WDMT",
+      "address": "0x754cDAd6f5821077d6915004Be2cE05f93d176f8",
+      "name": "Wrapped DMT",
       "decimals": 18,
       "symbol": "WDMT",
       "logoURI": "https://s2.coinmarketcap.com/static/img/coins/128x128/25653.png",
@@ -48562,7 +48618,7 @@
     },
     {
       "chainId": 5000,
-      "address": "0x8731d54e9d02c286767d56ac03e8037c07e01e98",
+      "address": "0x8731d54E9D02c286767d56ac03e8037C07e01e98",
       "name": "StargateToken",
       "decimals": 18,
       "symbol": "STG",
@@ -48910,23 +48966,6 @@
     },
     {
       "chainId": 5000,
-      "address": "0xa61beb4a3d02decb01039e378237032b351125b4",
-      "name": "agEUR",
-      "decimals": 18,
-      "symbol": "agEUR",
-      "logoURI": "https://s2.coinmarketcap.com/static/img/coins/128x128/15024.png",
-      "tags": [],
-      "extensions": {
-        "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0x1a7e4e63778B4f12a199C062f3eFdD288afCBce8"
-          }
-        }
-      },
-      "isAcross": false
-    },
-    {
-      "chainId": 5000,
       "address": "0xc53ac24320E3A54C7211e4993c8095078a0Cb3Cf",
       "name": "Wild Goat Coin",
       "decimals": 6,
@@ -49017,112 +49056,6 @@
           "oftVersion": 3,
           "endpointVersion": 2,
           "endpointId": 30181,
-          "oftSharedDecimals": 6
-        }
-      },
-      "isAcross": false,
-      "isOFT": true
-    },
-    {
-      "chainId": 6900,
-      "address": "0x84f682626302EA7BCA2A7c338b84863292131319",
-      "name": "USDa saving token",
-      "decimals": 18,
-      "symbol": "sUSDa",
-      "logoURI": "https://s2.coinmarketcap.com/static/img/coins/128x128/35538.png",
-      "tags": [],
-      "extensions": {
-        "coingeckoId": "susda",
-        "coinMarketCapId": 35538,
-        "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0x2B66AAdE1e9C062FF411bd47C44E0Ad696d43BD9"
-          }
-        },
-        "oftInfo": {
-          "peersInfo": {
-            "1": {
-              "tokenAddress": "0x2B66AAdE1e9C062FF411bd47C44E0Ad696d43BD9"
-            },
-            "56": {
-              "tokenAddress": "0x73a325103935b0B5E7AA3acA6dba74AD22f82B03"
-            }
-          },
-          "oftAdapter": "0x84f682626302EA7BCA2A7c338b84863292131319",
-          "oftVersion": 3,
-          "endpointVersion": 2,
-          "endpointId": 30369,
-          "oftSharedDecimals": 6
-        }
-      },
-      "isAcross": false,
-      "isOFT": true
-    },
-    {
-      "chainId": 6900,
-      "address": "0xf4e097E36d2064E2bDCA96e60439f3A369522003",
-      "name": "USDa",
-      "decimals": 18,
-      "symbol": "USDa",
-      "logoURI": "https://s2.coinmarketcap.com/static/img/coins/128x128/35368.png",
-      "tags": [],
-      "extensions": {
-        "coingeckoId": "usda-2",
-        "coinMarketCapId": 35368,
-        "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0x8A60E489004Ca22d775C5F2c657598278d17D9c2"
-          }
-        },
-        "oftInfo": {
-          "peersInfo": {
-            "1": {
-              "tokenAddress": "0x8A60E489004Ca22d775C5F2c657598278d17D9c2"
-            },
-            "56": {
-              "tokenAddress": "0x9356086146be5158E98aD827E21b5cF944699894"
-            }
-          },
-          "oftAdapter": "0xf4e097E36d2064E2bDCA96e60439f3A369522003",
-          "oftVersion": 3,
-          "endpointVersion": 2,
-          "endpointId": 30369,
-          "oftSharedDecimals": 6
-        }
-      },
-      "isAcross": false,
-      "isOFT": true
-    },
-    {
-      "chainId": 6900,
-      "address": "0xfCfc58685101e2914cBCf7551B432500db84eAa8",
-      "name": "Magic Internet Money",
-      "decimals": 18,
-      "symbol": "MIM",
-      "logoURI": "https://s2.coinmarketcap.com/static/img/coins/128x128/162.png",
-      "tags": [],
-      "extensions": {
-        "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0x99D8a9C45b2ecA8864373A26D1459e3Dff1e17F3"
-          }
-        },
-        "oftInfo": {
-          "peersInfo": {
-            "1": {
-              "tokenAddress": "0x99D8a9C45b2ecA8864373A26D1459e3Dff1e17F3"
-            },
-            "999": {
-              "tokenAddress": "0xe33Ec16788d0CDC1c707553cB7c5bCC93EF0a779"
-            },
-            "80094": {
-              "tokenAddress": "0x5B82028cfc477C4E7ddA7FF33d59A23FA7Be002a"
-            }
-          },
-          "oftAdapter": "0xfCfc58685101e2914cBCf7551B432500db84eAa8",
-          "oftVersion": 3,
-          "endpointVersion": 2,
-          "endpointId": 30369,
           "oftSharedDecimals": 6
         }
       },
@@ -49319,11 +49252,11 @@
     },
     {
       "chainId": 8453,
-      "address": "0x0000206329b97db379d5e1bf586bbdb969c63274",
+      "address": "0x0000206329b97DB379d5E1Bf586BbDB969C63274",
       "name": "USDA",
       "decimals": 18,
       "symbol": "USDA",
-      "logoURI": "https://assets.coingecko.com/coins/images/34510/standard/agUSD-coingecko.png?1705288392",
+      "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/refs/heads/master/blockchains/base/assets/0x0000206329b97DB379d5E1Bf586BbDB969C63274/logo.png",
       "tags": [],
       "extensions": {
         "bridgeInfo": {
@@ -49761,16 +49694,16 @@
       "isOFT": true
     },
     {
-      "chainId": 8453,
-      "address": "0x0F4d237B09Cb37d207BA60353Dc254d4530D4dF1",
-      "name": "The Graph",
-      "symbol": "GRT",
+      "name": "LoopringCoin V2",
+      "address": "0x0D760ee479401Bb4C40BDB7604b329FfF411b3f2",
+      "symbol": "LRC",
       "decimals": 18,
-      "logoURI": "https://assets.coingecko.com/coins/images/13397/thumb/Graph_Token.png?1608145566",
+      "chainId": 8453,
+      "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xBBbbCA6A901c926F240b89EacB641d8Aec7AEafD/logo.png",
       "extensions": {
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0xc944E90C64B2c07662A292be6244BDf05Cda44a7"
+            "tokenAddress": "0xBBbbCA6A901c926F240b89EacB641d8Aec7AEafD"
           }
         }
       },
@@ -50019,6 +49952,23 @@
     },
     {
       "chainId": 8453,
+      "address": "0x18dD5B087bCA9920562aFf7A0199b96B9230438b",
+      "name": "Propy",
+      "symbol": "PRO",
+      "decimals": 8,
+      "logoURI": "https://assets.coingecko.com/coins/images/869/thumb/propy.png?1548332100",
+      "extensions": {
+        "bridgeInfo": {
+          "1": {
+            "tokenAddress": "0x226bb599a12C826476e3A771454697EA52E9E220"
+          }
+        }
+      },
+      "isAcross": false,
+      "isOFT": false
+    },
+    {
+      "chainId": 8453,
       "address": "0x192e0C7Cc9B263D93fa6d472De47bBefe1Fb12bA",
       "name": "Staked Frax Ether",
       "decimals": 18,
@@ -50234,6 +50184,23 @@
     },
     {
       "chainId": 8453,
+      "address": "0x1f73EAf55d696BFFA9b0EA16fa987B93b0f4d302",
+      "name": "Rocket Pool Protocol",
+      "symbol": "RPL",
+      "decimals": 18,
+      "logoURI": "https://coin-images.coingecko.com/coins/images/2090/large/rocket_pool_%28RPL%29.png?1696503058",
+      "extensions": {
+        "bridgeInfo": {
+          "1": {
+            "tokenAddress": "0xD33526068D116cE69F19A9ee46F0bd304F21A51f"
+          }
+        }
+      },
+      "isAcross": false,
+      "isOFT": false
+    },
+    {
+      "chainId": 8453,
       "address": "0x1fba65dE0a9cBD2D1DF82d141897042d36Bb6c86",
       "name": "dogwifhat",
       "decimals": 18,
@@ -50377,23 +50344,6 @@
       },
       "isAcross": false,
       "isOFT": true
-    },
-    {
-      "chainId": 8453,
-      "address": "0x236aa50979D5f3De3Bd1Eeb40E81137F22ab794b",
-      "name": "tBTC",
-      "symbol": "tBTC",
-      "decimals": 18,
-      "logoURI": "https://raw.githubusercontent.com/uniswap/assets/master/blockchains/ethereum/assets/0x18084fbA666a33d37592fA2633fD49a74DD93a88/logo.png",
-      "extensions": {
-        "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0x18084fbA666a33d37592fA2633fD49a74DD93a88"
-          }
-        }
-      },
-      "isAcross": false,
-      "isOFT": false
     },
     {
       "chainId": 8453,
@@ -50543,13 +50493,6 @@
       "symbol": "cbETH",
       "decimals": 18,
       "logoURI": "https://ethereum-optimism.github.io/data/cbETH/logo.svg",
-      "extensions": {
-        "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0xBe9895146f7AF43049ca1c1AE358B0541Ea49704"
-          }
-        }
-      },
       "isAcross": false,
       "isOFT": false
     },
@@ -50737,6 +50680,23 @@
       },
       "isAcross": false,
       "isOFT": true
+    },
+    {
+      "chainId": 8453,
+      "address": "0x2dbe0d779c7A04F7a5de83326973effE23356930",
+      "name": "ShapeShift FOX Token",
+      "symbol": "FOX",
+      "decimals": 18,
+      "logoURI": "https://assets.coingecko.com/coins/images/9988/thumb/FOX.png?1574330622",
+      "extensions": {
+        "bridgeInfo": {
+          "1": {
+            "tokenAddress": "0xc770EEfAd204B5180dF6a14Ee197D99d808ee52d"
+          }
+        }
+      },
+      "isAcross": false,
+      "isOFT": false
     },
     {
       "chainId": 8453,
@@ -51037,9 +50997,16 @@
       },
       "underlyingAddress": "0x368181499736d0c0CC614DBB145E2EC1AC86b8c6",
       "name": "LUSD Stablecoin",
-      "decimals": 18,
       "symbol": "LUSD",
-      "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/refs/heads/master/blockchains/ethereum/assets/0x5f98805A4E8be255a32880FDeC7F6728C6568bA0/logo.png"
+      "decimals": 18,
+      "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/refs/heads/master/blockchains/ethereum/assets/0x5f98805A4E8be255a32880FDeC7F6728C6568bA0/logo.png",
+      "extensions": {
+        "bridgeInfo": {
+          "1": {
+            "tokenAddress": "0x5f98805A4E8be255a32880FDeC7F6728C6568bA0"
+          }
+        }
+      }
     },
     {
       "chainId": 8453,
@@ -51073,6 +51040,23 @@
       },
       "isAcross": false,
       "isOFT": true
+    },
+    {
+      "chainId": 8453,
+      "name": "pSTAKE Finance",
+      "symbol": "PSTAKE",
+      "logoURI": "https://assets.coingecko.com/coins/images/23931/thumb/PSTAKE_Dark.png?1645709930",
+      "address": "0x38815A4455921667d673B4cb3d48F0383eE93400",
+      "decimals": 18,
+      "extensions": {
+        "bridgeInfo": {
+          "1": {
+            "tokenAddress": "0xfB5c6815cA3AC72Ce9F5006869AE67f18bF77006"
+          }
+        }
+      },
+      "isAcross": false,
+      "isOFT": false
     },
     {
       "chainId": 8453,
@@ -51250,11 +51234,17 @@
       "chainId": 8453,
       "address": "0x4158734D47Fc9692176B5085E0F52ee0Da5d47F1",
       "name": "Balancer",
-      "decimals": 18,
       "symbol": "BAL",
-      "logoURI": "https://assets.coingecko.com/coins/images/11683/standard/Balancer.png?1696511572",
+      "decimals": 18,
+      "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xba100000625a3754423978a60c9317c58a424e3D/logo.png",
       "tags": [],
       "extensions": {
+        "coingeckoId": "balancer",
+        "bridgeInfo": {
+          "1": {
+            "tokenAddress": "0xba100000625a3754423978a60c9317c58a424e3D"
+          }
+        },
         "acrossInfo": {
           "1": {
             "address": "0xba100000625a3754423978a60c9317c58a424e3D"
@@ -51268,8 +51258,7 @@
           "42161": {
             "address": "0x040d1EdC9569d4Bab2D15287Dc5A4F10F56a56B8"
           }
-        },
-        "coingeckoId": "balancer"
+        }
       },
       "isAcross": true,
       "isOFT": false
@@ -52453,23 +52442,6 @@
     },
     {
       "chainId": 8453,
-      "address": "0x7002458B1DF59EccB57387bC79fFc7C29E22e6f7",
-      "name": "Origin Protocol",
-      "symbol": "OGN",
-      "decimals": 18,
-      "logoURI": "https://assets.coingecko.com/coins/images/3296/thumb/op.jpg?1547037878",
-      "extensions": {
-        "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0x8207c1FfC5B6804F6024322CcF34F29c3541Ae26"
-          }
-        }
-      },
-      "isAcross": false,
-      "isOFT": false
-    },
-    {
-      "chainId": 8453,
       "address": "0x7252c865c05378Ffc15120F428dd65804dD0CE63",
       "name": "TLOS",
       "decimals": 18,
@@ -52557,6 +52529,23 @@
       },
       "isAcross": false,
       "isOFT": true
+    },
+    {
+      "chainId": 8453,
+      "address": "0x74F804B4140ee70830B3Eef4e690325841575F89",
+      "name": "Fetch ai",
+      "symbol": "FET",
+      "decimals": 18,
+      "logoURI": "https://assets.coingecko.com/coins/images/5681/thumb/Fetch.jpg?1572098136",
+      "extensions": {
+        "bridgeInfo": {
+          "1": {
+            "tokenAddress": "0xaea46A60368A7bD060eec7DF8CBa43b7EF41Ad85"
+          }
+        }
+      },
+      "isAcross": false,
+      "isOFT": false
     },
     {
       "chainId": 8453,
@@ -52738,15 +52727,15 @@
     },
     {
       "chainId": 8453,
-      "address": "0x7D49a065D17d6d4a55dc13649901fdBB98B2AFBA",
-      "name": "Sushi",
-      "symbol": "SUSHI",
+      "address": "0x7C298664BD6582f6f264c2Cb5a4B9cC09b6E3889",
+      "name": "Melon",
+      "symbol": "MLN",
       "decimals": 18,
-      "logoURI": "https://assets.coingecko.com/coins/images/12271/thumb/512x512_Logo_no_chop.png?1606986688",
+      "logoURI": "https://assets.coingecko.com/coins/images/605/thumb/melon.png?1547034295",
       "extensions": {
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0x6B3595068778DD592e39A122f4f5a5cF09C90fE2"
+            "tokenAddress": "0xec67005c4E498Ec7f55E092bd1d35cbC47C91892"
           }
         }
       },
@@ -53007,6 +52996,11 @@
       "tags": [],
       "extensions": {
         "coingeckoId": "usd-coin",
+        "bridgeInfo": {
+          "1": {
+            "tokenAddress": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48"
+          }
+        },
         "acrossInfo": {
           "1": {
             "address": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48"
@@ -53449,6 +53443,23 @@
     },
     {
       "chainId": 8453,
+      "address": "0x968B2323d4b005C7D39c67D31774FE83c9943A60",
+      "name": "Ampleforth Governance Token",
+      "symbol": "FORTH",
+      "decimals": 18,
+      "logoURI": "https://assets.coingecko.com/coins/images/14917/thumb/photo_2021-04-22_00.00.03.jpeg?1619020835",
+      "extensions": {
+        "bridgeInfo": {
+          "1": {
+            "tokenAddress": "0x77FbA179C79De5B7653F68b5039Af940AdA60ce0"
+          }
+        }
+      },
+      "isAcross": false,
+      "isOFT": false
+    },
+    {
+      "chainId": 8453,
       "address": "0x968bE3F7bfeF0F8eDc3c1aD90232EbB0DA0867aA",
       "name": "Seedworld",
       "decimals": 18,
@@ -53719,6 +53730,25 @@
     },
     {
       "chainId": 8453,
+      "address": "0xA61BeB4A3d02decb01039e378237032B351125B4",
+      "name": "EURA (previously agEUR)",
+      "decimals": 18,
+      "symbol": "EURA",
+      "logoURI": "https://s2.coinmarketcap.com/static/img/coins/128x128/15024.png",
+      "tags": [],
+      "extensions": {
+        "bridgeInfo": {
+          "1": {
+            "tokenAddress": "0x1a7e4e63778B4f12a199C062f3eFdD288afCBce8"
+          }
+        },
+        "coingeckoId": "ageur",
+        "coinMarketCapId": 15024
+      },
+      "isAcross": false
+    },
+    {
+      "chainId": 8453,
       "address": "0xA7d68d155d17cB30e311367c2Ef1E82aB6022b67",
       "name": "Braintrust",
       "symbol": "BTRST",
@@ -53763,23 +53793,6 @@
     },
     {
       "chainId": 8453,
-      "address": "0xA99F6e6785Da0F5d6fB42495Fe424BCE029Eeb3E",
-      "name": "Pendle",
-      "symbol": "PENDLE",
-      "decimals": 18,
-      "logoURI": "https://coin-images.coingecko.com/coins/images/15069/large/Pendle_Logo_Normal-03.png?1696514728",
-      "extensions": {
-        "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0x808507121B80c02388fAd14726482e061B8da827"
-          }
-        }
-      },
-      "isAcross": false,
-      "isOFT": false
-    },
-    {
-      "chainId": 8453,
       "address": "0xAC1Bd2486aAf3B5C0fc3Fd868558b082a531B2B4",
       "name": "Toshi",
       "symbol": "TOSHI",
@@ -53818,15 +53831,15 @@
     },
     {
       "chainId": 8453,
-      "address": "0xB4fDe59a779991bfB6a52253B51947828b982be3",
-      "name": "Pepe",
-      "symbol": "PEPE",
+      "address": "0xB676f87A6E701f0DE8De5Ab91B56b66109766DB1",
+      "name": "BLOCKLORDS",
+      "symbol": "LRDS",
       "decimals": 18,
-      "logoURI": "https://assets.coingecko.com/coins/images/29850/large/pepe-token.jpeg?1682922725",
+      "logoURI": "https://assets.coingecko.com/coins/images/34775/standard/LRDS_PNG.png",
       "extensions": {
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0x6982508145454Ce325dDbE47a25d4ec3d2311933"
+            "tokenAddress": "0xd0a6053f087E87a25dC60701ba6E663b1a548E85"
           }
         }
       },
@@ -53881,23 +53894,6 @@
     },
     {
       "chainId": 8453,
-      "address": "0xB78e7D4C5d47Af92942321eD40419dab0E573810",
-      "name": "Goldfinch",
-      "symbol": "GFI",
-      "decimals": 18,
-      "logoURI": "https://assets.coingecko.com/coins/images/19081/thumb/GOLDFINCH.png?1634369662",
-      "extensions": {
-        "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0xdab396cCF3d84Cf2D07C4454e10C8A6F5b008D2b"
-          }
-        }
-      },
-      "isAcross": false,
-      "isOFT": false
-    },
-    {
-      "chainId": 8453,
       "address": "0xBB146326778227A8498b105a18f84E0987A684b4",
       "name": "Permission Token",
       "decimals": 18,
@@ -53926,23 +53922,6 @@
       },
       "isAcross": false,
       "isOFT": true
-    },
-    {
-      "chainId": 8453,
-      "address": "0xBCBAf311ceC8a4EAC0430193A528d9FF27ae38C1",
-      "name": "IoTeX",
-      "symbol": "IOTX",
-      "decimals": 18,
-      "logoURI": "https://s2.coinmarketcap.com/static/img/coins/64x64/2777.png",
-      "extensions": {
-        "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0x6fB3e0A217407EFFf7Ca062D46c26E5d60a14d69"
-          }
-        }
-      },
-      "isAcross": false,
-      "isOFT": false
     },
     {
       "chainId": 8453,
@@ -54210,15 +54189,32 @@
     },
     {
       "chainId": 8453,
-      "address": "0xCD6dDDa305955AcD6b94b934f057E8b0daaD58dE",
-      "name": "Perpetual Protocol",
-      "symbol": "PERP",
+      "address": "0xD08a2917653d4E460893203471f0000826fb4034",
+      "name": "Harvest Finance",
+      "symbol": "FARM",
       "decimals": 18,
-      "logoURI": "https://assets.coingecko.com/coins/images/12381/thumb/60d18e06844a844ad75901a9_mark_only_03.png?1628674771",
+      "logoURI": "https://assets.coingecko.com/coins/images/12304/thumb/Harvest.png?1613016180",
       "extensions": {
         "bridgeInfo": {
           "1": {
-            "tokenAddress": "0xbC396689893D065F41bc2C6EcbeE5e0085233447"
+            "tokenAddress": "0xa0246c9032bC3A600820415aE600c6388619A14D"
+          }
+        }
+      },
+      "isAcross": false,
+      "isOFT": false
+    },
+    {
+      "chainId": 8453,
+      "address": "0xD0a4D1889BbE483273f29b4aCdfAA567A67F99E1",
+      "name": "Mask Network",
+      "symbol": "MASK",
+      "decimals": 18,
+      "logoURI": "https://assets.coingecko.com/coins/images/14051/thumb/Mask_Network.jpg?1614050316",
+      "extensions": {
+        "bridgeInfo": {
+          "1": {
+            "tokenAddress": "0x69af81e73A73B40adF4f3d4223Cd9b1ECE623074"
           }
         }
       },
@@ -54454,6 +54450,25 @@
     },
     {
       "chainId": 8453,
+      "address": "0xE3B53AF74a4BF62Ae5511055290838050bf764Df",
+      "name": "StargateToken",
+      "decimals": 18,
+      "symbol": "STG",
+      "logoURI": "https://s2.coinmarketcap.com/static/img/coins/128x128/18934.png",
+      "tags": [],
+      "extensions": {
+        "coingeckoId": "stargate-finance",
+        "bridgeInfo": {
+          "1": {
+            "tokenAddress": "0xAf5191B0De278C7286d6C7CC6ab6BB8A73bA2Cd6"
+          }
+        },
+        "coinMarketCapId": 18934
+      },
+      "isAcross": false
+    },
+    {
+      "chainId": 8453,
       "address": "0xE41228a455700cAF09E551805A8aB37caa39D08c",
       "name": "Frax Price Index",
       "decimals": 18,
@@ -54529,23 +54544,6 @@
       },
       "isAcross": false,
       "isOFT": true
-    },
-    {
-      "chainId": 8453,
-      "address": "0xE6bAA3Fedb5Dc88b2c59ba4812388Bb0906D19dB",
-      "name": "PolySwarm",
-      "symbol": "NCT",
-      "decimals": 18,
-      "logoURI": "https://assets.coingecko.com/coins/images/2843/thumb/ImcYCVfX_400x400.jpg?1628519767",
-      "extensions": {
-        "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0x9E46A38F5DaaBe8683E10793b06749EEF7D733d1"
-          }
-        }
-      },
-      "isAcross": false,
-      "isOFT": false
     },
     {
       "chainId": 8453,
@@ -54824,23 +54822,6 @@
     },
     {
       "chainId": 8453,
-      "name": "Geojam",
-      "symbol": "JAM",
-      "logoURI": "https://assets.coingecko.com/coins/images/24648/thumb/ey40AzBN_400x400.jpg?1648507272",
-      "address": "0xFf9957816c813C5Ad0b9881A8990Df1E3AA2a057",
-      "decimals": 18,
-      "extensions": {
-        "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0x23894DC9da6c94ECb439911cAF7d337746575A72"
-          }
-        }
-      },
-      "isAcross": false,
-      "isOFT": false
-    },
-    {
-      "chainId": 8453,
       "address": "0xa153Ad732F831a79b5575Fa02e793EC4E99181b0",
       "name": "Euler",
       "decimals": 18,
@@ -54953,30 +54934,18 @@
     },
     {
       "chainId": 8453,
-      "address": "0xa61beb4a3d02decb01039e378237032b351125b4",
-      "name": "EURA (previously agEUR)",
-      "decimals": 18,
-      "symbol": "EURA",
-      "logoURI": "https://s2.coinmarketcap.com/static/img/coins/128x128/15024.png",
-      "tags": [],
-      "extensions": {
-        "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0x1a7e4e63778B4f12a199C062f3eFdD288afCBce8"
-          }
-        },
-        "coingeckoId": "ageur",
-        "coinMarketCapId": 15024
-      },
-      "isAcross": false
-    },
-    {
-      "chainId": 8453,
       "address": "0xaB36452DbAC151bE02b16Ca17d8919826072f64a",
       "name": "Reserve Rights",
       "symbol": "RSR",
       "decimals": 18,
       "logoURI": "https://coin-images.coingecko.com/coins/images/8365/large/RSR_Blue_Circle_1000.png?1721777856",
+      "extensions": {
+        "bridgeInfo": {
+          "1": {
+            "tokenAddress": "0x320623b8E4fF03373931769A31Fc52A4E78B5d70"
+          }
+        }
+      },
       "isAcross": false,
       "isOFT": false
     },
@@ -55015,23 +54984,6 @@
       },
       "isAcross": false,
       "isOFT": true
-    },
-    {
-      "chainId": 8453,
-      "address": "0xaaaaaa19ddd491648db2a31c32f2b2792dec5015",
-      "name": "ANGLE_Base",
-      "decimals": 18,
-      "symbol": "ANGLE",
-      "logoURI": "https://s2.coinmarketcap.com/static/img/coins/128x128/12761.png",
-      "tags": [],
-      "extensions": {
-        "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0x31429d1856aD1377A8A0079410B297e1a9e214c2"
-          }
-        }
-      },
-      "isAcross": false
     },
     {
       "chainId": 8453,
@@ -55159,6 +55111,23 @@
       },
       "isAcross": false,
       "isOFT": true
+    },
+    {
+      "chainId": 8453,
+      "address": "0xb008BDCF9CdFf9da684a190941dC3dCa8C2Cdd44",
+      "name": "Flux",
+      "symbol": "FLUX",
+      "decimals": 18,
+      "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x720CD16b011b987Da3518fbf38c3071d4F0D1495/logo.png",
+      "extensions": {
+        "bridgeInfo": {
+          "1": {
+            "tokenAddress": "0x720CD16b011b987Da3518fbf38c3071d4F0D1495"
+          }
+        }
+      },
+      "isAcross": false,
+      "isOFT": false
     },
     {
       "chainId": 8453,
@@ -55517,23 +55486,6 @@
     },
     {
       "chainId": 8453,
-      "address": "0xcD2F22236DD9Dfe2356D7C543161D4d260FD9BcB",
-      "name": "Aavegotchi",
-      "symbol": "GHST",
-      "decimals": 18,
-      "logoURI": "https://assets.coingecko.com/coins/images/12467/thumb/ghst_200.png?1600750321",
-      "extensions": {
-        "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0x3F382DbD960E3a9bbCeaE22651E88158d2791550"
-          }
-        }
-      },
-      "isAcross": false,
-      "isOFT": false
-    },
-    {
-      "chainId": 8453,
       "address": "0xca73ed1815e5915489570014e024b7EbE65dE679",
       "name": "Odos Token",
       "symbol": "ODOS",
@@ -55823,25 +55775,6 @@
       },
       "isAcross": false,
       "isOFT": false
-    },
-    {
-      "chainId": 8453,
-      "address": "0xe3b53af74a4bf62ae5511055290838050bf764df",
-      "name": "StargateToken",
-      "decimals": 18,
-      "symbol": "STG",
-      "logoURI": "https://s2.coinmarketcap.com/static/img/coins/128x128/18934.png",
-      "tags": [],
-      "extensions": {
-        "coingeckoId": "stargate-finance",
-        "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0xAf5191B0De278C7286d6C7CC6ab6BB8A73bA2Cd6"
-          }
-        },
-        "coinMarketCapId": 18934
-      },
-      "isAcross": false
     },
     {
       "chainId": 8453,
@@ -56208,19 +56141,14 @@
       "chainId": 8453,
       "address": "0xfA980cEd6895AC314E7dE34Ef1bFAE90a5AdD21b",
       "name": "Prime",
-      "decimals": 18,
       "symbol": "PRIME",
-      "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/refs/heads/master/blockchains/base/assets/0xfA980cEd6895AC314E7dE34Ef1bFAE90a5AdD21b/logo.png",
+      "decimals": 18,
+      "logoURI": "https://assets.coingecko.com/coins/images/29053/large/PRIMELOGOOO.png?1676976222",
       "tags": [],
       "extensions": {
         "bridgeInfo": {
           "1": {
             "tokenAddress": "0xb23d80f5FefcDDaa212212F028021B41DEd428CF"
-          }
-        },
-        "feeInfo": {
-          "1": {
-            "minDstGas": 200000
           }
         },
         "oftInfo": {
@@ -56233,6 +56161,11 @@
           "oftVersion": 1,
           "endpointVersion": 1,
           "endpointId": 184
+        },
+        "feeInfo": {
+          "1": {
+            "minDstGas": 200000
+          }
         }
       },
       "isAcross": false,
@@ -56320,11 +56253,17 @@
       "chainId": 8453,
       "address": "0xfde4C96c8593536E31F229EA8f37b2ADa2699bb2",
       "name": "Tether USD",
-      "decimals": 6,
       "symbol": "USDT",
-      "logoURI": "https://assets.coingecko.com/coins/images/325/standard/Tether.png?1696501661",
+      "decimals": 6,
+      "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xdAC17F958D2ee523a2206206994597C13D831ec7/logo.png",
       "tags": [],
       "extensions": {
+        "coingeckoId": "tether",
+        "bridgeInfo": {
+          "1": {
+            "tokenAddress": "0xdAC17F958D2ee523a2206206994597C13D831ec7"
+          }
+        },
         "acrossInfo": {
           "1": {
             "address": "0xdAC17F958D2ee523a2206206994597C13D831ec7"
@@ -56351,8 +56290,7 @@
           "534352": {
             "address": "0xf55BEC9cafDbE8730f096Aa55dad6D22d44099Df"
           }
-        },
-        "coingeckoId": "tether"
+        }
       },
       "isAcross": true,
       "isOFT": false
@@ -56379,44 +56317,36 @@
       "logoURI": "https://s2.coinmarketcap.com/static/img/coins/128x128/35092.png",
       "tags": [],
       "extensions": {
-        "coingeckoId": "heyanon",
-        "coinMarketCapId": 35092,
-        "oftInfo": {
-          "peersInfo": {
-            "1": {
-              "tokenAddress": "0x79bbF4508B1391af3A0F4B30bb5FC4aa9ab0E07C"
-            },
-            "56": {
-              "tokenAddress": "0x79bbF4508B1391af3A0F4B30bb5FC4aa9ab0E07C"
-            },
-            "146": {
-              "tokenAddress": "0x79bbF4508B1391af3A0F4B30bb5FC4aa9ab0E07C"
-            },
-            "999": {
-              "tokenAddress": "0x79bbF4508B1391af3A0F4B30bb5FC4aa9ab0E07C"
-            },
-            "1088": {
-              "tokenAddress": "0x79bbF4508B1391af3A0F4B30bb5FC4aa9ab0E07C"
-            },
-            "8453": {
-              "tokenAddress": "0x79bbF4508B1391af3A0F4B30bb5FC4aa9ab0E07C"
-            },
-            "42161": {
-              "tokenAddress": "0x79bbF4508B1391af3A0F4B30bb5FC4aa9ab0E07C"
-            },
-            "43114": {
-              "tokenAddress": "0x79bbF4508B1391af3A0F4B30bb5FC4aa9ab0E07C"
-            }
+        "peersInfo": {
+          "1": {
+            "tokenAddress": "0x79bbF4508B1391af3A0F4B30bb5FC4aa9ab0E07C"
           },
-          "oftAdapter": "0x79bbF4508B1391af3A0F4B30bb5FC4aa9ab0E07C",
-          "oftVersion": 3,
-          "endpointVersion": 2,
-          "endpointId": 30284,
-          "oftSharedDecimals": 6
-        }
+          "56": {
+            "tokenAddress": "0x79bbF4508B1391af3A0F4B30bb5FC4aa9ab0E07C"
+          },
+          "146": {
+            "tokenAddress": "0x79bbF4508B1391af3A0F4B30bb5FC4aa9ab0E07C"
+          },
+          "999": {
+            "tokenAddress": "0x79bbF4508B1391af3A0F4B30bb5FC4aa9ab0E07C"
+          },
+          "1088": {
+            "tokenAddress": "0x79bbF4508B1391af3A0F4B30bb5FC4aa9ab0E07C"
+          },
+          "8453": {
+            "tokenAddress": "0x79bbF4508B1391af3A0F4B30bb5FC4aa9ab0E07C"
+          },
+          "42161": {
+            "tokenAddress": "0x79bbF4508B1391af3A0F4B30bb5FC4aa9ab0E07C"
+          },
+          "43114": {
+            "tokenAddress": "0x79bbF4508B1391af3A0F4B30bb5FC4aa9ab0E07C"
+          }
+        },
+        "coingeckoId": "heyanon",
+        "coinMarketCapId": 35092
       },
-      "isAcross": false,
-      "isOFT": true
+      "isAcross": false
     },
     {
       "chainId": 8822,
@@ -56432,35 +56362,6 @@
         "bridgeInfo": {
           "1": {
             "tokenAddress": "0x92CC36D66e9d739D50673d1f27929a371FB83a67"
-          }
-        },
-        "feeInfo": {
-          "1": {
-            "minDstGas": 175000
-          },
-          "10": {
-            "minDstGas": 175000
-          },
-          "56": {
-            "minDstGas": 175000
-          },
-          "137": {
-            "minDstGas": 175000
-          },
-          "146": {
-            "minDstGas": 175000
-          },
-          "1088": {
-            "minDstGas": 175000
-          },
-          "8453": {
-            "minDstGas": 175000
-          },
-          "42161": {
-            "minDstGas": 175000
-          },
-          "43114": {
-            "minDstGas": 175000
           }
         },
         "oftInfo": {
@@ -56532,7 +56433,7 @@
     },
     {
       "chainId": 33139,
-      "address": "0xe4103e80c967f58591a1d7ca443ed7e392fed862",
+      "address": "0xe4103e80c967f58591a1d7cA443ed7E392FeD862",
       "name": "ApeCoin",
       "decimals": 18,
       "symbol": "APE",
@@ -56597,24 +56498,7 @@
     },
     {
       "chainId": 34443,
-      "address": "0x00001063a5d3a9d5f1b03e848fa788aae1d98c5c",
-      "name": "EURA",
-      "decimals": 18,
-      "symbol": "EURA",
-      "logoURI": "https://s2.coinmarketcap.com/static/img/coins/128x128/15024.png",
-      "tags": [],
-      "extensions": {
-        "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0x1a7e4e63778B4f12a199C062f3eFdD288afCBce8"
-          }
-        }
-      },
-      "isAcross": false
-    },
-    {
-      "chainId": 34443,
-      "address": "0x0000206329b97db379d5e1bf586bbdb969c63274",
+      "address": "0x0000206329b97DB379d5E1Bf586BbDB969C63274",
       "name": "USDA",
       "decimals": 18,
       "symbol": "USDA",
@@ -57612,6 +57496,25 @@
     },
     {
       "chainId": 34443,
+      "address": "0xAaaaAA19ddd491648Db2a31C32f2B2792DeC5015",
+      "name": "ANGLE",
+      "decimals": 18,
+      "symbol": "ANGLE",
+      "logoURI": "https://s2.coinmarketcap.com/static/img/coins/128x128/12761.png",
+      "tags": [],
+      "extensions": {
+        "bridgeInfo": {
+          "1": {
+            "tokenAddress": "0x31429d1856aD1377A8A0079410B297e1a9e214c2"
+          }
+        },
+        "coingeckoId": "angle-protocol",
+        "coinMarketCapId": 12761
+      },
+      "isAcross": false
+    },
+    {
+      "chainId": 34443,
       "address": "0xDfc7C877a950e49D2610114102175A06C2e3167a",
       "name": "Mode",
       "symbol": "MODE",
@@ -57698,25 +57601,6 @@
       },
       "isAcross": false,
       "isOFT": true
-    },
-    {
-      "chainId": 34443,
-      "address": "0xaaaaaa19ddd491648db2a31c32f2b2792dec5015",
-      "name": "ANGLE",
-      "decimals": 18,
-      "symbol": "ANGLE",
-      "logoURI": "https://s2.coinmarketcap.com/static/img/coins/128x128/12761.png",
-      "tags": [],
-      "extensions": {
-        "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0x31429d1856aD1377A8A0079410B297e1a9e214c2"
-          }
-        },
-        "coingeckoId": "angle-protocol",
-        "coinMarketCapId": 12761
-      },
-      "isAcross": false
     },
     {
       "chainId": 34443,
@@ -57973,7 +57857,7 @@
     },
     {
       "chainId": 42220,
-      "address": "0x0000206329b97db379d5e1bf586bbdb969c63274",
+      "address": "0x0000206329b97DB379d5E1Bf586BbDB969C63274",
       "name": "USDA",
       "decimals": 18,
       "symbol": "USDA",
@@ -58066,6 +57950,25 @@
     },
     {
       "chainId": 42220,
+      "address": "0xC16B81Af351BA9e64C1a069E3Ab18c244A1E3049",
+      "name": "EURA (previously agEUR)",
+      "decimals": 18,
+      "symbol": "EURA",
+      "logoURI": "https://s2.coinmarketcap.com/static/img/coins/128x128/15024.png",
+      "tags": [],
+      "extensions": {
+        "coingeckoId": "ageur",
+        "bridgeInfo": {
+          "1": {
+            "tokenAddress": "0x1a7e4e63778B4f12a199C062f3eFdD288afCBce8"
+          }
+        },
+        "coinMarketCapId": 15024
+      },
+      "isAcross": false
+    },
+    {
+      "chainId": 42220,
       "address": "0xD629eb00dEced2a080B7EC630eF6aC117e614f1b",
       "name": "Wrapped Bitcoin",
       "symbol": "BTC",
@@ -58118,25 +58021,6 @@
       },
       "isAcross": false,
       "isOFT": true
-    },
-    {
-      "chainId": 42220,
-      "address": "0xc16b81af351ba9e64c1a069e3ab18c244a1e3049",
-      "name": "EURA (previously agEUR)",
-      "decimals": 18,
-      "symbol": "EURA",
-      "logoURI": "https://s2.coinmarketcap.com/static/img/coins/128x128/15024.png",
-      "tags": [],
-      "extensions": {
-        "coingeckoId": "ageur",
-        "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0x1a7e4e63778B4f12a199C062f3eFdD288afCBce8"
-          }
-        },
-        "coinMarketCapId": 15024
-      },
-      "isAcross": false
     },
     {
       "chainId": 42220,
@@ -58381,6 +58265,11 @@
           }
         },
         "coingeckoId": "stakestone-ether",
+        "feeInfo": {
+          "1": {
+            "minDstGas": 200000
+          }
+        },
         "oftInfo": {
           "peersInfo": {
             "1": {
@@ -58456,7 +58345,7 @@
     },
     {
       "chainId": 43114,
-      "address": "0x0000206329b97db379d5e1bf586bbdb969c63274",
+      "address": "0x0000206329b97DB379d5E1Bf586BbDB969C63274",
       "name": "USDA",
       "decimals": 18,
       "symbol": "USDA",
@@ -59549,23 +59438,6 @@
       },
       "isAcross": false,
       "isOFT": true
-    },
-    {
-      "chainId": 43114,
-      "address": "0x5ee94c25e3d5113cd055537340b9d19cfa4d9217",
-      "name": "ANGLE_avalanche",
-      "decimals": 18,
-      "symbol": "ANGLE",
-      "logoURI": "https://s2.coinmarketcap.com/static/img/coins/128x128/12761.png",
-      "tags": [],
-      "extensions": {
-        "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0x31429d1856aD1377A8A0079410B297e1a9e214c2"
-          }
-        }
-      },
-      "isAcross": false
     },
     {
       "chainId": 43114,
@@ -61183,7 +61055,7 @@
     },
     {
       "chainId": 43114,
-      "address": "0xd402298a793948698b9a63311404fbbee944eafd",
+      "address": "0xd402298a793948698b9a63311404FBBEe944eAfD",
       "name": "SHRAPToken",
       "decimals": 18,
       "symbol": "SHRAP",
@@ -63135,7 +63007,7 @@
               "tokenAddress": "0xe33Ec16788d0CDC1c707553cB7c5bCC93EF0a779"
             },
             "6900": {
-              "tokenAddress": "0xfCfc58685101e2914cBCf7551B432500db84eAa8"
+              "tokenAddress": "0xfcfc58685101e2914cbcf7551b432500db84eaa8"
             }
           },
           "oftAdapter": "0x5B82028cfc477C4E7ddA7FF33d59A23FA7Be002a",
@@ -63464,7 +63336,7 @@
     },
     {
       "chainId": 80094,
-      "address": "0x9895d81bb462a195b4922ed7de0e3acd007c32cb",
+      "address": "0x9895D81bB462A195b4922ED7De0e3ACD007c32CB",
       "name": "StargateToken",
       "decimals": 18,
       "symbol": "STG",
@@ -66838,7 +66710,7 @@
     },
     {
       "chainId": 534352,
-      "address": "0x8731d54e9d02c286767d56ac03e8037c07e01e98",
+      "address": "0x8731d54E9D02c286767d56ac03e8037C07e01e98",
       "name": "StargateToken",
       "decimals": 18,
       "symbol": "STG",
@@ -66873,6 +66745,9 @@
           "peersInfo": {
             "1": {
               "tokenAddress": "0xFAe103DC9cf190eD75350761e95403b7b8aFa6c0"
+            },
+            "1923": {
+              "tokenAddress": "0x18d33689AE5d02649a859A1CF16c9f0563975258"
             },
             "8453": {
               "tokenAddress": "0x850CDF416668210ED0c36bfFF5d21921C7adA3b8"
@@ -67660,11 +67535,11 @@
   "rootTokens": [
     {
       "chainId": 42161,
-      "address": "0x0000206329b97db379d5e1bf586bbdb969c63274",
+      "address": "0x0000206329b97DB379d5E1Bf586BbDB969C63274",
       "name": "USDA",
       "decimals": 18,
       "symbol": "USDA",
-      "logoURI": "https://assets.coingecko.com/coins/images/34510/standard/agUSD-coingecko.png?1705288392",
+      "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/refs/heads/master/blockchains/arbitrum/assets/0x0000206329b97DB379d5E1Bf586BbDB969C63274/logo.png",
       "tags": [],
       "extensions": {
         "coingeckoId": "angle-usd",
@@ -68276,44 +68151,6 @@
       },
       "isAcross": false,
       "isOFT": false
-    },
-    {
-      "chainId": 42161,
-      "address": "0x16f1967565aaD72DD77588a332CE445e7cEF752b",
-      "name": "crow with knife",
-      "decimals": 0,
-      "symbol": "CAW",
-      "logoURI": "https://s2.coinmarketcap.com/static/img/coins/128x128/30402.png",
-      "tags": [],
-      "extensions": {
-        "bridgeInfo": {
-          "56": {
-            "tokenAddress": "0xdfBEA88C4842d30c26669602888d746D30F9D60d"
-          }
-        },
-        "oftInfo": {
-          "peersInfo": {
-            "25": {
-              "tokenAddress": "0xcCcCcCcCdbEC186DC426F8B5628AF94737dF0E60"
-            },
-            "56": {
-              "tokenAddress": "0xdfBEA88C4842d30c26669602888d746D30F9D60d"
-            },
-            "137": {
-              "tokenAddress": "0xbbBBbBbBB7949dcC7d1539c91b81A5BF09E37bDB"
-            },
-            "8453": {
-              "tokenAddress": "0xdfBEA88C4842d30c26669602888d746D30F9D60d"
-            }
-          },
-          "oftAdapter": "0x74897ef1b152E5a733D797CAb5Cee383fe052C56",
-          "oftVersion": 3,
-          "endpointVersion": 2,
-          "endpointId": 30110
-        }
-      },
-      "isAcross": false,
-      "isOFT": true
     },
     {
       "chainId": 42161,
@@ -71194,24 +71031,7 @@
     },
     {
       "chainId": 42161,
-      "address": "0x656b80b667a46869144047e6e6c0000c81610253",
-      "name": "ANGLE_arbitrum",
-      "decimals": 18,
-      "symbol": "ANGLE",
-      "logoURI": "https://s2.coinmarketcap.com/static/img/coins/128x128/12761.png",
-      "tags": [],
-      "extensions": {
-        "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0x31429d1856aD1377A8A0079410B297e1a9e214c2"
-          }
-        }
-      },
-      "isAcross": false
-    },
-    {
-      "chainId": 42161,
-      "address": "0x6694340fc020c5e6b96567843da2df01b2ce1eb6",
+      "address": "0x6694340fc020c5E6B96567843da2df01b2CE1eb6",
       "name": "StargateToken",
       "decimals": 18,
       "symbol": "STG",
@@ -72684,7 +72504,7 @@
               "tokenAddress": "0x0B7f0e51Cd1739D6C96982D55aD8fA634dd43A9C"
             },
             "1996": {
-              "tokenAddress": "0x7393ae4835fdfed4f25e46a10d6bdb2fd49a2706"
+              "tokenAddress": "0x7393aE4835FDfed4f25E46a10D6bDB2fd49A2706"
             }
           },
           "oftAdapter": "0xa9Aa07F082D9c15D0B6D7e9e5B68b1f898399C29",
@@ -72696,6 +72516,9 @@
         "feeInfo": {
           "1": {
             "minDstGas": 100000
+          },
+          "1996": {
+            "minDstGas": 200000
           }
         }
       },
@@ -73524,6 +73347,23 @@
       },
       "isAcross": false,
       "isOFT": true
+    },
+    {
+      "chainId": 42161,
+      "address": "0xB766039cc6DB368759C1E56B79AFfE831d0Cc507",
+      "name": "Rocket Pool Protocol",
+      "symbol": "RPL",
+      "decimals": 18,
+      "logoURI": "https://coin-images.coingecko.com/coins/images/2090/large/rocket_pool_%28RPL%29.png?1696503058",
+      "extensions": {
+        "bridgeInfo": {
+          "1": {
+            "tokenAddress": "0xD33526068D116cE69F19A9ee46F0bd304F21A51f"
+          }
+        }
+      },
+      "isAcross": false,
+      "isOFT": false
     },
     {
       "name": "0x Protocol Token",
