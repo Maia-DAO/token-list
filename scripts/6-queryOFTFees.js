@@ -137,8 +137,14 @@ async function main() {
     const aggregateCalls = feeCalls.concat(gasCalls).concat(oAppCalls)
 
     console.log(`==> Aggregating on ${chainKey}…`)
+    let returnData
     // Use tryAggregate to allow individual call failures without reverting batch
-    const returnData = await multiCallWithFallback(chainKey, aggregateCalls, 500, 200)
+    try {
+      returnData = await multiCallWithFallback(chainKey, aggregateCalls, 500, 200)
+    } catch (err) {
+      console.error(` multicall failed on chain ${chainKey}: ${err.message}`)
+      continue
+    }
 
     // Split results
     const feeData = returnData.slice(0, feeCalls.length)
@@ -224,9 +230,6 @@ async function main() {
       if (
         !hex ||
         hex === '0x' ||
-        src.symbol === 'USDC' ||
-        src.symbol === 'DAI' ||
-        src.symbol === 'WETH' ||
         Object.keys(src.extensions?.peersInfo || {}).length === 0
       ) {
         console.warn(`Empty lzEndpoint return for ${src.chainKey} - ${src.oftAdapter}`)
@@ -312,7 +315,8 @@ async function main() {
 
   // Remove empty extensions.feeInfo and extensions.bridgeInfo
   for (const token of enhanced) {
-    if (token.oftAdapter) token.oftAdapter = ethers.getAddress(token.oftAdapter)
+    if (token.address && token.address !== '0x00') token.address = ethers.getAddress(token.address)
+    if (token.oftAdapter && token.oftAdapter !== '0x00') token.oftAdapter = ethers.getAddress(token.oftAdapter)
 
     const noPeers =
       !token.extensions?.peersInfo ||

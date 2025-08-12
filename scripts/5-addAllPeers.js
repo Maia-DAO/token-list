@@ -314,8 +314,14 @@ async function main() {
         for (const otherChainKey of SUPPORTED_CHAINS) {
           if (otherChainKey === chainKey) continue
 
+          console.log(`Checking peers for ${t.symbol} on ${otherChainKey}...`)
+
           const destChainId = requireV3 ? CHAIN_KEY_TO_EID[otherChainKey].v2 : CHAIN_KEY_TO_EID[otherChainKey].v1
-          if (!destChainId) continue
+
+          if (!destChainId) {
+            console.warn('Skipping, no EID found for chainKey: ', otherChainKey)
+            continue
+          }
 
           if (requireV3) {
             // V3.peers(destChainId)
@@ -444,7 +450,7 @@ async function main() {
     toProcess = newTokens
   }
 
-  // ─── C) Final filtering & write‐out ────────────────────────────────────────────
+  // ─── C) Final population, filtering & write‐out ────────────────────────────────────────────
   const finalTokens = tokens.filter((t) => !t._remove)
 
   // Re‐index 0…N−1

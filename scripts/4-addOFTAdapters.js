@@ -1,7 +1,7 @@
 const { ethers } = require('ethers')
 const fs = require('fs')
 const { ZERO_ADDRESS } = require('maia-core-sdk')
-const { CHAIN_KEY_TO_ID, CHAIN_KEY_TO_EID, SUPPORTED_CHAINS, OVERRIDE_PEG } = require('../configs')
+const { CHAIN_KEY_TO_ID, CHAIN_KEY_TO_EID, SUPPORTED_CHAINS} = require('../configs')
 const { mergeExtensions, cleanAddress } = require('../helpers')
 
 async function main() {
@@ -27,7 +27,7 @@ async function main() {
     if (!chainData) continue
     // TODO: REVIEW THIS CHECK WE MAY BE MISSING SOME CHAINS
     if (!chainData.addressToOApp || !chainData.tokens) {
-        console.warn(`skipping, no addressToOApp or no tokens on chain ${chainKey}`)
+      console.warn(`skipping, no addressToOApp or no tokens on chain ${chainKey}`)
       continue
     }
 
@@ -95,8 +95,13 @@ async function main() {
 
       const tokenEid =
         (tokenInfo?.eid ?? (adapterInfo?.oftVersion === 3 || adapterInfo?.endpointVersion === 2))
-          ? CHAIN_KEY_TO_EID[chainKey].v2
-          : CHAIN_KEY_TO_EID[chainKey].v1
+          ? CHAIN_KEY_TO_EID[chainKey]?.v2
+          : CHAIN_KEY_TO_EID[chainKey]?.v1
+
+      if (!tokenEid) {
+        console.warn('Skipping, no EID found for chainKey: ', chainKey)
+        continue
+      }
 
       // Assemble enriched token
       const enriched = {

@@ -114,10 +114,15 @@ async function normalizeStargateToken(token) {
   if (!tokenLogoURI) tokenLogoURI = await getCoinLogo(token.address, token.chainId, token.extensions?.coingeckoId, token.extensions?.coinMarketCapId)
   if (!tokenLogoURI && fallbackLogoTokenAddress) tokenLogoURI = await getCoinLogo(fallbackLogoTokenAddress, token.chainId, undefined, undefined)
 
+  if (!token.address || !token.address.length > 0 || token.address === "0x" || token.address === "0x00" || !token.decimals || !token.name || !token.symbol) {
+    return undefined
+  }
+
+
   const result = {
     chainId: token.chainId,
     address: token.address,
-    name: token.name,
+    name: token.name ?? token.symbol,
     decimals: token.decimals,
     symbol: token.symbol,
     logoURI: tokenLogoURI ?? null,
@@ -157,7 +162,7 @@ async function normalizeStargateToken(token) {
     }
   }
 
-  return [result]
+  return result
 }
 
 /**
@@ -243,25 +248,26 @@ async function main() {
 
     // Process Stargate tokens.
     for (const token of stargateTokens) {
-      const normalizedArray = await normalizeStargateToken(token)
-      normalizedArray.forEach((token) => {
-        if (!token.logoURI) delete token.logoURI // Remove empty logoURIs
-        if (token.chainId === 42161) {
-          const rootKey = token.address.toLowerCase()
-          if (!rootTokensMap[rootKey]) {
-            rootTokensMap[rootKey] = token
-          } else {
-            rootTokensMap[rootKey] = mergeTokenData(rootTokensMap[rootKey], token)
-          }
+      const normalizedToken = await normalizeStargateToken(token)
+
+      if (!normalizedToken) continue // Skip invalid tokens
+
+      if (!normalizedToken.logoURI) delete normalizedToken.logoURI // Remove empty logoURIs
+      if (normalizedToken.chainId === 42161) {
+        const rootKey = normalizedToken.address.toLowerCase()
+        if (!rootTokensMap[rootKey]) {
+          rootTokensMap[rootKey] = normalizedToken
         } else {
-          const key = token.address.toLowerCase() + '_' + token.chainId
-          if (!normalizedMap[key]) {
-            normalizedMap[key] = token
-          } else {
-            normalizedMap[key] = mergeTokenData(normalizedMap[key], token)
-          }
+          rootTokensMap[rootKey] = mergeTokenData(rootTokensMap[rootKey], normalizedToken)
         }
-      })
+      } else {
+        const key = normalizedToken.address.toLowerCase() + '_' + normalizedToken.chainId
+        if (!normalizedMap[key]) {
+          normalizedMap[key] = normalizedToken
+        } else {
+          normalizedMap[key] = mergeTokenData(normalizedMap[key], normalizedToken)
+        }
+      }
     }
 
     // 2. Incorporate Uniswap tokens and Ulysses Root Tokens.
