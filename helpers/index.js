@@ -121,25 +121,35 @@ function cleanAddress(input) {
  * @returns {Promise<Array>} - resolves to an array of return data from the multicall 
  */
 async function multiCallWithFallback(chainKey, calls, batchSize = undefined, delayMs = 250) {
+  const rpcsCache = JSON.parse(fs.readFileSync('configs/rpcs.json', 'utf8'))
   const chainsMeta = JSON.parse(fs.readFileSync('output/ofts.json', 'utf8'))
 
   // Build mappings / lookups
-  const rpcUrls = {}
-  for (const [chainKey, meta] of Object.entries(chainsMeta)) {
-    if (Array.isArray(meta.rpcs) && meta.rpcs.length) rpcUrls[chainKey] = meta.rpcs.map((rpc) => rpc.url)
+  let rpcList = rpcsCache[chainKey] || []
+
+  if (!rpcList || !Array.isArray(rpcList) || !rpcList.length > 0) {
+    const rpcUrls = {}
+
+    for (const [chainKey, meta] of Object.entries(chainsMeta)) {
+      if (Array.isArray(meta.rpcs) && meta.rpcs.length) rpcUrls[chainKey] = meta.rpcs.map((rpc) => rpc.url)
+    }
+
+    // Fetch missing RPC URLs
+    const allChains = await fetch('https://chainid.network/chains.json').then((r) => r.json())
+    // build a map: chainId → all RPC URLs
+    const extraRpcMap = Object.fromEntries(allChains.map((c) => [c.chainId, c.rpc]))
+
+    // build RPC list
+    if (rpcUrls[chainKey]) rpcList.push(...rpcUrls[chainKey])
+    const extra = extraRpcMap[CHAIN_KEY_TO_ID[chainKey]]
+    if (extra) rpcList.push(...extra)
+    if (!rpcList.length) throw new Error(`No RPC URLs available for chain ${chainKey}`)
+
+    rpcsCache[chainKey] = rpcList
+
+    fs.writeFileSync('configs/rpcs.json', JSON.stringify(rpcsCache, null, 2))
+
   }
-
-  // Fetch missing RPC URLs
-  const allChains = await fetch('https://chainid.network/chains.json').then((r) => r.json())
-  // build a map: chainId → all RPC URLs
-  const extraRpcMap = Object.fromEntries(allChains.map((c) => [c.chainId, c.rpc]))
-
-  // build RPC list
-  const rpcList = []
-  if (rpcUrls[chainKey]) rpcList.push(...rpcUrls[chainKey])
-  const extra = extraRpcMap[CHAIN_KEY_TO_ID[chainKey]]
-  if (extra) rpcList.push(...extra)
-  if (!rpcList.length) throw new Error(`No RPC URLs available for chain ${chainKey}`)
 
   const BATCH = batchSize || calls.length
 
@@ -181,6 +191,77 @@ async function multiCallWithFallback(chainKey, calls, batchSize = undefined, del
 
   throw new Error(`All RPC endpoints failed for chain ${chainKey}`)
 }
+
+// /**
+//  * MultiCall function with fallback mechanism. 
+//  * @param {string} chainKey - the chain key to use for RPC selection 
+//  * @param {*} calls - an array of calls to make, each with { target: string, callData: string } 
+//  * @param {*} batchSize - optional batch size for multicall, defaults to all calls in one batch 
+//  * @param {*} delayMs - optional delay in milliseconds between batches, defaults to 250ms 
+//  * @returns {Promise<Array>} - resolves to an array of return data from the multicall 
+//  */
+// async function multiCallWithFallback(chainKey, calls, batchSize = undefined, delayMs = 250) {
+//   const rpcsCache = JSON.parse(fs.readFileSync('configs/rpcs.json', 'utf8'))
+//   const chainsMeta = JSON.parse(fs.readFileSync('output/ofts.json', 'utf8'))
+
+//   // Build mappings / lookups
+//   const rpcUrls = {}
+//   for (const [chainKey, meta] of Object.entries(chainsMeta)) {
+//     if (Array.isArray(meta.rpcs) && meta.rpcs.length) rpcUrls[chainKey] = meta.rpcs.map((rpc) => rpc.url)
+//   }
+
+//   // Fetch missing RPC URLs
+//   const allChains = await fetch('https://chainid.network/chains.json').then((r) => r.json())
+//   // build a map: chainId → all RPC URLs
+//   const extraRpcMap = Object.fromEntries(allChains.map((c) => [c.chainId, c.rpc]))
+
+//   // build RPC list
+//   const rpcList = []
+//   if (rpcUrls[chainKey]) rpcList.push(...rpcUrls[chainKey])
+//   const extra = extraRpcMap[CHAIN_KEY_TO_ID[chainKey]]
+//   if (extra) rpcList.push(...extra)
+//   if (!rpcList.length) throw new Error(`No RPC URLs available for chain ${chainKey}`)
+
+//   const BATCH = batchSize || calls.length
+
+//   for (const rpcUrl of rpcList) {
+//     let provider
+//     try {
+//       provider = new ethers.JsonRpcProvider(rpcUrl, null, {
+//         skipFetchSetup: true,
+//         batchMaxCount: 1,
+//       })
+//       const mc = new ethers.Contract(MULTICALL3_ADDRESS, MULTICALL3_ABI, provider)
+//       const returnData = []
+
+//       let failedCalls = 0
+
+//       for (let i = 0; i < calls.length; i += BATCH) {
+//         const slice = calls.slice(i, i + BATCH).map((c) => ({ target: c.target, callData: c.callData }))
+//         const results = await mc.tryAggregate(false, slice)
+//         for (const [success, data] of results) {
+//           if (!success) failedCalls++
+//           returnData.push(data)
+//         }
+//         if (i + BATCH < calls.length) await new Promise((r) => setTimeout(r, delayMs))
+//       }
+
+//       console.warn(`${failedCalls} of ${calls.length} Multicall sub-calls failed on ${chainKey}`)
+//       return returnData
+//     } catch (err) {
+//       console.warn(`RPC ${rpcUrl} failed for chain ${chainKey}: ${err.message}`)
+//       // try next rpcUrl
+//     } finally {
+//       if (provider && typeof provider.destroy === 'function') {
+//         try {
+//           provider.destroy()
+//         } catch { }
+//       }
+//     }
+//   }
+
+//   throw new Error(`All RPC endpoints failed for chain ${chainKey}`)
+// }
 
 module.exports = {
   MULTICALL3_ABI,
