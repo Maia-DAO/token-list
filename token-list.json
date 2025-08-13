@@ -2,7 +2,7 @@
   "name": "Hermes Omnichain Token List",
   "timestamp": "1755099920",
   "version": {
-    "major": 127,
+    "major": 128,
     "minor": 0,
     "patch": 0
   },
@@ -6738,15 +6738,106 @@
       "symbol": "EUL",
       "decimals": 18,
       "logoURI": "https://assets.coingecko.com/coins/images/26149/thumb/YCvKDfl8_400x400.jpeg?1656041509",
+      "tags": [],
       "extensions": {
         "bridgeInfo": {
+          "56": {
+            "tokenAddress": "0x2117E8b79e8E176A670c9fCf945d4348556bfFad"
+          },
           "130": {
             "tokenAddress": "0x6319F47719b6713b1624C1b3A8e2DBf15b5D03FE"
+          },
+          "146": {
+            "tokenAddress": "0x8e15C8D399e86d4FD7B427D42f06c60cDD9397e7"
+          },
+          "239": {
+            "tokenAddress": "0x38C043856A109066d64a60c82e07848a1C58e7Dc"
+          },
+          "1923": {
+            "tokenAddress": "0x80ccFBec4b8c82265abdc226Ad3Df84C0726E7A3"
+          },
+          "8453": {
+            "tokenAddress": "0xa153Ad732F831a79b5575Fa02e793EC4E99181b0"
+          },
+          "42161": {
+            "tokenAddress": "0x462cD9E0247b2e63831c3189aE738E5E9a5a4b64"
+          },
+          "43114": {
+            "tokenAddress": "0x9ceeD3A7f753608372eeAb300486cc7c2F38AC68"
+          },
+          "60808": {
+            "tokenAddress": "0xDe1763aFA5eB658CfFFfD16835AfeB47e7aC0B8D"
+          },
+          "80094": {
+            "tokenAddress": "0xEb9b5f4EB023aE754fF59A04c9C038D58606DAC6"
           }
+        },
+        "oftInfo": {
+          "peersInfo": {
+            "10": {
+              "tokenAddress": "0xA8A7c3468Faa6750f1Dc5FDAfdcE03cDEA029304"
+            },
+            "56": {
+              "tokenAddress": "0x2117E8b79e8E176A670c9fCf945d4348556bfFad"
+            },
+            "100": {
+              "tokenAddress": "0x6CA7d728949528b52f9A0AEbCa6D68d9874A8728"
+            },
+            "130": {
+              "tokenAddress": "0xE9C43e09C5FA733bCC2aEAa96063A4a60147AA09"
+            },
+            "137": {
+              "tokenAddress": "0x1323a02946877e0F0c1CA99468f4429Cc0F0954c"
+            },
+            "146": {
+              "tokenAddress": "0x8e15C8D399e86d4FD7B427D42f06c60cDD9397e7"
+            },
+            "239": {
+              "tokenAddress": "0x38C043856A109066d64a60c82e07848a1C58e7Dc"
+            },
+            "480": {
+              "tokenAddress": "0x24D6f84DC525eD073E2f9969D45A192C064397b8"
+            },
+            "999": {
+              "tokenAddress": "0x3A41f426E55ECdE4BC734fA79ccE991b94aFf711"
+            },
+            "1923": {
+              "tokenAddress": "0x80ccFBec4b8c82265abdc226Ad3Df84C0726E7A3"
+            },
+            "2818": {
+              "tokenAddress": "0x5E2901d24fc83eCE7589e7A7d3b1e6D80739789d"
+            },
+            "8453": {
+              "tokenAddress": "0xa153Ad732F831a79b5575Fa02e793EC4E99181b0"
+            },
+            "42161": {
+              "tokenAddress": "0x462cD9E0247b2e63831c3189aE738E5E9a5a4b64"
+            },
+            "43114": {
+              "tokenAddress": "0x9ceeD3A7f753608372eeAb300486cc7c2F38AC68"
+            },
+            "57073": {
+              "tokenAddress": "0xB90e23CeF93CA91c1526aAF9742A13A0946E9de4"
+            },
+            "59144": {
+              "tokenAddress": "0x3eBd0148BADAb9388936E4472C4415D5700478A5"
+            },
+            "60808": {
+              "tokenAddress": "0xDe1763aFA5eB658CfFFfD16835AfeB47e7aC0B8D"
+            },
+            "80094": {
+              "tokenAddress": "0xEb9b5f4EB023aE754fF59A04c9C038D58606DAC6"
+            }
+          },
+          "oftAdapter": "0x4d7e09f73843Bd4735AaF7A74b6d877bac75a531",
+          "oftVersion": 3,
+          "endpointVersion": 2,
+          "endpointId": 30101,
+          "oftSharedDecimals": 6
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true
     },
     {
       "chainId": 1,
