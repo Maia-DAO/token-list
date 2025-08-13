@@ -1,4 +1,3 @@
-const { ethers } = require('ethers')
 const fs = require('fs')
 const { ZERO_ADDRESS } = require('maia-core-sdk')
 const { CHAIN_KEY_TO_ID, CHAIN_KEY_TO_EID, SUPPORTED_CHAINS} = require('../configs')
