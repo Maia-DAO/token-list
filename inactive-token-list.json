@@ -1,8 +1,8 @@
 {
   "name": "Hermes Omnichain Inactive Token List",
-  "timestamp": "1755099921",
+  "timestamp": "1755123739",
   "version": {
-    "major": 72,
+    "major": 73,
     "minor": 0,
     "patch": 0
   },
@@ -10585,35 +10585,6 @@
         }
       },
       "isAcross": false
-    },
-    {
-      "chainId": 1,
-      "address": "0x6BEF15D938d4E72056AC92Ea4bDD0D76B1C4ad29",
-      "name": "Succinct",
-      "decimals": 18,
-      "symbol": "PROVE",
-      "tags": [],
-      "extensions": {
-        "bridgeInfo": {
-          "56": {
-            "tokenAddress": "0x7DDf164CEcfddd0f992299D033B5a11279A15929"
-          }
-        },
-        "oftInfo": {
-          "peersInfo": {
-            "56": {
-              "tokenAddress": "0x7DDf164CEcfddd0f992299D033B5a11279A15929"
-            }
-          },
-          "oftAdapter": "0x32c5d5099a684A781864A2cdc53Db2F8a6b1dca0",
-          "oftVersion": 3,
-          "endpointVersion": 2,
-          "endpointId": 30101,
-          "oftSharedDecimals": 6
-        }
-      },
-      "isAcross": false,
-      "isOFT": true
     },
     {
       "chainId": 1,
@@ -30125,39 +30096,6 @@
     },
     {
       "chainId": 10,
-      "address": "0xA8A7c3468Faa6750f1Dc5FDAfdcE03cDEA029304",
-      "name": "Euler",
-      "decimals": 18,
-      "symbol": "EUL",
-      "logoURI": "https://s2.coinmarketcap.com/static/img/coins/128x128/14280.png",
-      "tags": [],
-      "extensions": {
-        "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0xd9Fcd98c322942075A5C3860693e9f4f03AAE07b"
-          }
-        },
-        "oftInfo": {
-          "peersInfo": {
-            "1": {
-              "tokenAddress": "0xd9Fcd98c322942075A5C3860693e9f4f03AAE07b"
-            },
-            "8453": {
-              "tokenAddress": "0xa153Ad732F831a79b5575Fa02e793EC4E99181b0"
-            }
-          },
-          "oftAdapter": "0xf932863E538aF568dF9C79dA379fd8ffD8525342",
-          "oftVersion": 3,
-          "endpointVersion": 2,
-          "endpointId": 30111,
-          "oftSharedDecimals": 6
-        }
-      },
-      "isAcross": false,
-      "isOFT": true
-    },
-    {
-      "chainId": 10,
       "address": "0xA9b5B64f9127C9A4a407E713080a22F35EEA2794",
       "name": "NASDAQ 100",
       "decimals": 18,
@@ -33985,39 +33923,6 @@
           "534352": {
             "minDstGas": 100000
           }
-        }
-      },
-      "isAcross": false,
-      "isOFT": true
-    },
-    {
-      "chainId": 56,
-      "address": "0x2117E8b79e8E176A670c9fCf945d4348556bfFad",
-      "name": "Euler",
-      "decimals": 18,
-      "symbol": "EUL",
-      "logoURI": "https://s2.coinmarketcap.com/static/img/coins/128x128/14280.png",
-      "tags": [],
-      "extensions": {
-        "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0xd9Fcd98c322942075A5C3860693e9f4f03AAE07b"
-          }
-        },
-        "oftInfo": {
-          "peersInfo": {
-            "1": {
-              "tokenAddress": "0xd9Fcd98c322942075A5C3860693e9f4f03AAE07b"
-            },
-            "8453": {
-              "tokenAddress": "0xa153Ad732F831a79b5575Fa02e793EC4E99181b0"
-            }
-          },
-          "oftAdapter": "0x1633269308F154fbECBb15F91d72D2aFA6af95B4",
-          "oftVersion": 3,
-          "endpointVersion": 2,
-          "endpointId": 30102,
-          "oftSharedDecimals": 6
         }
       },
       "isAcross": false,
@@ -45337,39 +45242,6 @@
     },
     {
       "chainId": 100,
-      "address": "0x6CA7d728949528b52f9A0AEbCa6D68d9874A8728",
-      "name": "Euler",
-      "decimals": 18,
-      "symbol": "EUL",
-      "logoURI": "https://s2.coinmarketcap.com/static/img/coins/128x128/14280.png",
-      "tags": [],
-      "extensions": {
-        "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0xd9Fcd98c322942075A5C3860693e9f4f03AAE07b"
-          }
-        },
-        "oftInfo": {
-          "peersInfo": {
-            "1": {
-              "tokenAddress": "0xd9Fcd98c322942075A5C3860693e9f4f03AAE07b"
-            },
-            "8453": {
-              "tokenAddress": "0xa153Ad732F831a79b5575Fa02e793EC4E99181b0"
-            }
-          },
-          "oftAdapter": "0x97e839139877C7c122f962ed69563a50B717C013",
-          "oftVersion": 3,
-          "endpointVersion": 2,
-          "endpointId": 30145,
-          "oftSharedDecimals": 6
-        }
-      },
-      "isAcross": false,
-      "isOFT": true
-    },
-    {
-      "chainId": 100,
       "address": "0x74f57E1171a0360670AED3b3DbC3a997Fb493d16",
       "name": "DappGate by DappLabs",
       "decimals": 18,
@@ -46914,39 +46786,6 @@
       "isOFT": true
     },
     {
-      "chainId": 130,
-      "address": "0xE9C43e09C5FA733bCC2aEAa96063A4a60147AA09",
-      "name": "Euler",
-      "decimals": 18,
-      "symbol": "EUL",
-      "logoURI": "https://s2.coinmarketcap.com/static/img/coins/128x128/14280.png",
-      "tags": [],
-      "extensions": {
-        "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0xd9Fcd98c322942075A5C3860693e9f4f03AAE07b"
-          }
-        },
-        "oftInfo": {
-          "peersInfo": {
-            "1": {
-              "tokenAddress": "0xd9Fcd98c322942075A5C3860693e9f4f03AAE07b"
-            },
-            "8453": {
-              "tokenAddress": "0xa153Ad732F831a79b5575Fa02e793EC4E99181b0"
-            }
-          },
-          "oftAdapter": "0x41a11d85577Bb21743E11Eca62e2b241DC1eD5C0",
-          "oftVersion": 3,
-          "endpointVersion": 2,
-          "endpointId": 30320,
-          "oftSharedDecimals": 6
-        }
-      },
-      "isAcross": false,
-      "isOFT": true
-    },
-    {
       "chainId": 137,
       "address": "0x000000000000012DeF132E61759048bE5b5C6033",
       "name": "Cortex",
@@ -48097,39 +47936,6 @@
           }
         }
       }
-    },
-    {
-      "chainId": 137,
-      "address": "0x1323a02946877e0F0c1CA99468f4429Cc0F0954c",
-      "name": "Euler",
-      "decimals": 18,
-      "symbol": "EUL",
-      "logoURI": "https://s2.coinmarketcap.com/static/img/coins/128x128/14280.png",
-      "tags": [],
-      "extensions": {
-        "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0xd9Fcd98c322942075A5C3860693e9f4f03AAE07b"
-          }
-        },
-        "oftInfo": {
-          "peersInfo": {
-            "1": {
-              "tokenAddress": "0xd9Fcd98c322942075A5C3860693e9f4f03AAE07b"
-            },
-            "8453": {
-              "tokenAddress": "0xa153Ad732F831a79b5575Fa02e793EC4E99181b0"
-            }
-          },
-          "oftAdapter": "0x357727718d2A9ce83B877f503f56dED39719dCb9",
-          "oftVersion": 3,
-          "endpointVersion": 2,
-          "endpointId": 30109,
-          "oftSharedDecimals": 6
-        }
-      },
-      "isAcross": false,
-      "isOFT": true
     },
     {
       "chainId": 137,
@@ -59607,39 +59413,6 @@
     },
     {
       "chainId": 146,
-      "address": "0x8e15C8D399e86d4FD7B427D42f06c60cDD9397e7",
-      "name": "Euler",
-      "decimals": 18,
-      "symbol": "EUL",
-      "logoURI": "https://s2.coinmarketcap.com/static/img/coins/128x128/14280.png",
-      "tags": [],
-      "extensions": {
-        "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0xd9Fcd98c322942075A5C3860693e9f4f03AAE07b"
-          }
-        },
-        "oftInfo": {
-          "peersInfo": {
-            "1": {
-              "tokenAddress": "0xd9Fcd98c322942075A5C3860693e9f4f03AAE07b"
-            },
-            "8453": {
-              "tokenAddress": "0xa153Ad732F831a79b5575Fa02e793EC4E99181b0"
-            }
-          },
-          "oftAdapter": "0x31aA74232A0b0E50e5bF95780b2116710a34c7E9",
-          "oftVersion": 3,
-          "endpointVersion": 2,
-          "endpointId": 30332,
-          "oftSharedDecimals": 6
-        }
-      },
-      "isAcross": false,
-      "isOFT": true
-    },
-    {
-      "chainId": 146,
       "address": "0x981Bd9F77c8AAFC14EBC86769503f86A3CC29aF5",
       "name": "Tarot",
       "decimals": 18,
@@ -62301,39 +62074,6 @@
     },
     {
       "chainId": 239,
-      "address": "0x38C043856A109066d64a60c82e07848a1C58e7Dc",
-      "name": "Euler",
-      "decimals": 18,
-      "symbol": "EUL",
-      "logoURI": "https://s2.coinmarketcap.com/static/img/coins/128x128/14280.png",
-      "tags": [],
-      "extensions": {
-        "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0xd9Fcd98c322942075A5C3860693e9f4f03AAE07b"
-          }
-        },
-        "oftInfo": {
-          "peersInfo": {
-            "1": {
-              "tokenAddress": "0xd9Fcd98c322942075A5C3860693e9f4f03AAE07b"
-            },
-            "8453": {
-              "tokenAddress": "0xa153Ad732F831a79b5575Fa02e793EC4E99181b0"
-            }
-          },
-          "oftAdapter": "0xe7c415484348d14c0e6B8C18E110D72EcA17d306",
-          "oftVersion": 3,
-          "endpointVersion": 2,
-          "endpointId": 30377,
-          "oftSharedDecimals": 6
-        }
-      },
-      "isAcross": false,
-      "isOFT": true
-    },
-    {
-      "chainId": 239,
       "address": "0x6bedE1c6009a78c222D9BDb7974bb67847fdB68c",
       "name": "US Bitcoin Dollar",
       "decimals": 18,
@@ -64206,39 +63946,6 @@
       "tags": [],
       "extensions": {},
       "isAcross": false
-    },
-    {
-      "chainId": 999,
-      "address": "0x3A41f426E55ECdE4BC734fA79ccE991b94aFf711",
-      "name": "Euler",
-      "decimals": 18,
-      "symbol": "EUL",
-      "logoURI": "https://s2.coinmarketcap.com/static/img/coins/128x128/14280.png",
-      "tags": [],
-      "extensions": {
-        "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0xd9Fcd98c322942075A5C3860693e9f4f03AAE07b"
-          }
-        },
-        "oftInfo": {
-          "peersInfo": {
-            "1": {
-              "tokenAddress": "0xd9Fcd98c322942075A5C3860693e9f4f03AAE07b"
-            },
-            "8453": {
-              "tokenAddress": "0xa153Ad732F831a79b5575Fa02e793EC4E99181b0"
-            }
-          },
-          "oftAdapter": "0x976666e0ae74A8A4059cF1acf706891aDE98C3d1",
-          "oftVersion": 3,
-          "endpointVersion": 2,
-          "endpointId": 30367,
-          "oftSharedDecimals": 6
-        }
-      },
-      "isAcross": false,
-      "isOFT": true
     },
     {
       "chainId": 999,
@@ -69491,39 +69198,6 @@
     },
     {
       "chainId": 1923,
-      "address": "0x80ccFBec4b8c82265abdc226Ad3Df84C0726E7A3",
-      "name": "Euler",
-      "decimals": 18,
-      "symbol": "EUL",
-      "logoURI": "https://s2.coinmarketcap.com/static/img/coins/128x128/14280.png",
-      "tags": [],
-      "extensions": {
-        "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0xd9Fcd98c322942075A5C3860693e9f4f03AAE07b"
-          }
-        },
-        "oftInfo": {
-          "peersInfo": {
-            "1": {
-              "tokenAddress": "0xd9Fcd98c322942075A5C3860693e9f4f03AAE07b"
-            },
-            "8453": {
-              "tokenAddress": "0xa153Ad732F831a79b5575Fa02e793EC4E99181b0"
-            }
-          },
-          "oftAdapter": "0xD0148dDB69f4d8182Ef863d6f81ED6519D8c83a2",
-          "oftVersion": 3,
-          "endpointVersion": 2,
-          "endpointId": 30335,
-          "oftSharedDecimals": 6
-        }
-      },
-      "isAcross": false,
-      "isOFT": true
-    },
-    {
-      "chainId": 1923,
       "address": "0x9ab96A4668456896d45c301Bc3A15Cee76AA7B8D",
       "name": "Relend Network USDC",
       "decimals": 6,
@@ -69916,39 +69590,6 @@
             }
           },
           "oftAdapter": "0x58adE43A276ddF3e101941571eDe398a32492Ed7",
-          "oftVersion": 3,
-          "endpointVersion": 2,
-          "endpointId": 30322,
-          "oftSharedDecimals": 6
-        }
-      },
-      "isAcross": false,
-      "isOFT": true
-    },
-    {
-      "chainId": 2818,
-      "address": "0x5E2901d24fc83eCE7589e7A7d3b1e6D80739789d",
-      "name": "Euler",
-      "decimals": 18,
-      "symbol": "EUL",
-      "logoURI": "https://s2.coinmarketcap.com/static/img/coins/128x128/14280.png",
-      "tags": [],
-      "extensions": {
-        "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0xd9Fcd98c322942075A5C3860693e9f4f03AAE07b"
-          }
-        },
-        "oftInfo": {
-          "peersInfo": {
-            "1": {
-              "tokenAddress": "0xd9Fcd98c322942075A5C3860693e9f4f03AAE07b"
-            },
-            "8453": {
-              "tokenAddress": "0xa153Ad732F831a79b5575Fa02e793EC4E99181b0"
-            }
-          },
-          "oftAdapter": "0x9895149F3324666d94664C159Af0cd026eb53761",
           "oftVersion": 3,
           "endpointVersion": 2,
           "endpointId": 30322,
@@ -81571,87 +81212,6 @@
     },
     {
       "chainId": 8453,
-      "address": "0xa153Ad732F831a79b5575Fa02e793EC4E99181b0",
-      "name": "Euler",
-      "decimals": 18,
-      "symbol": "EUL",
-      "logoURI": "https://s2.coinmarketcap.com/static/img/coins/128x128/14280.png",
-      "tags": [],
-      "extensions": {
-        "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0xd9Fcd98c322942075A5C3860693e9f4f03AAE07b"
-          }
-        },
-        "oftInfo": {
-          "peersInfo": {
-            "1": {
-              "tokenAddress": "0xd9Fcd98c322942075A5C3860693e9f4f03AAE07b"
-            },
-            "10": {
-              "tokenAddress": "0xA8A7c3468Faa6750f1Dc5FDAfdcE03cDEA029304"
-            },
-            "56": {
-              "tokenAddress": "0x2117E8b79e8E176A670c9fCf945d4348556bfFad"
-            },
-            "100": {
-              "tokenAddress": "0x6CA7d728949528b52f9A0AEbCa6D68d9874A8728"
-            },
-            "130": {
-              "tokenAddress": "0xE9C43e09C5FA733bCC2aEAa96063A4a60147AA09"
-            },
-            "137": {
-              "tokenAddress": "0x1323a02946877e0F0c1CA99468f4429Cc0F0954c"
-            },
-            "146": {
-              "tokenAddress": "0x8e15C8D399e86d4FD7B427D42f06c60cDD9397e7"
-            },
-            "239": {
-              "tokenAddress": "0x38C043856A109066d64a60c82e07848a1C58e7Dc"
-            },
-            "480": {
-              "tokenAddress": "0x24D6f84DC525eD073E2f9969D45A192C064397b8"
-            },
-            "999": {
-              "tokenAddress": "0x3A41f426E55ECdE4BC734fA79ccE991b94aFf711"
-            },
-            "1923": {
-              "tokenAddress": "0x80ccFBec4b8c82265abdc226Ad3Df84C0726E7A3"
-            },
-            "2818": {
-              "tokenAddress": "0x5E2901d24fc83eCE7589e7A7d3b1e6D80739789d"
-            },
-            "42161": {
-              "tokenAddress": "0x462cD9E0247b2e63831c3189aE738E5E9a5a4b64"
-            },
-            "43114": {
-              "tokenAddress": "0x9ceeD3A7f753608372eeAb300486cc7c2F38AC68"
-            },
-            "57073": {
-              "tokenAddress": "0xB90e23CeF93CA91c1526aAF9742A13A0946E9de4"
-            },
-            "59144": {
-              "tokenAddress": "0x3eBd0148BADAb9388936E4472C4415D5700478A5"
-            },
-            "60808": {
-              "tokenAddress": "0xDe1763aFA5eB658CfFFfD16835AfeB47e7aC0B8D"
-            },
-            "80094": {
-              "tokenAddress": "0xEb9b5f4EB023aE754fF59A04c9C038D58606DAC6"
-            }
-          },
-          "oftAdapter": "0x9ff7ea0Cf94b8665c2F5d17560Bd34Ab9BbAcd21",
-          "oftVersion": 3,
-          "endpointVersion": 2,
-          "endpointId": 30184,
-          "oftSharedDecimals": 6
-        }
-      },
-      "isAcross": false,
-      "isOFT": true
-    },
-    {
-      "chainId": 8453,
       "address": "0xa26a4611b8313BbB25ccB1A9e227ecC536a2f8F7",
       "name": "Bright Union",
       "decimals": 18,
@@ -83810,6 +83370,40 @@
           }
         }
       }
+    },
+    {
+      "chainId": 8453,
+      "address": "0xfA980cEd6895AC314E7dE34Ef1bFAE90a5AdD21b",
+      "name": "Prime",
+      "decimals": 18,
+      "symbol": "PRIME",
+      "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/refs/heads/master/blockchains/base/assets/0xfA980cEd6895AC314E7dE34Ef1bFAE90a5AdD21b/logo.png",
+      "tags": [],
+      "extensions": {
+        "bridgeInfo": {
+          "1": {
+            "tokenAddress": "0xb23d80f5FefcDDaa212212F028021B41DEd428CF"
+          }
+        },
+        "feeInfo": {
+          "1": {
+            "minDstGas": 200000
+          }
+        },
+        "oftInfo": {
+          "peersInfo": {
+            "1": {
+              "tokenAddress": "0xb23d80f5FefcDDaa212212F028021B41DEd428CF"
+            }
+          },
+          "oftAdapter": "0xfA980cEd6895AC314E7dE34Ef1bFAE90a5AdD21b",
+          "oftVersion": 1,
+          "endpointVersion": 1,
+          "endpointId": 184
+        }
+      },
+      "isAcross": false,
+      "isOFT": true
     },
     {
       "chainId": 8453,
@@ -99861,39 +99455,6 @@
     },
     {
       "chainId": 43114,
-      "address": "0x9ceeD3A7f753608372eeAb300486cc7c2F38AC68",
-      "name": "Euler",
-      "decimals": 18,
-      "symbol": "EUL",
-      "logoURI": "https://s2.coinmarketcap.com/static/img/coins/128x128/14280.png",
-      "tags": [],
-      "extensions": {
-        "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0xd9Fcd98c322942075A5C3860693e9f4f03AAE07b"
-          }
-        },
-        "oftInfo": {
-          "peersInfo": {
-            "1": {
-              "tokenAddress": "0xd9Fcd98c322942075A5C3860693e9f4f03AAE07b"
-            },
-            "8453": {
-              "tokenAddress": "0xa153Ad732F831a79b5575Fa02e793EC4E99181b0"
-            }
-          },
-          "oftAdapter": "0xF1A5F97AB84158Cf6d8ba8dEF68780Fc2Fd64310",
-          "oftVersion": 3,
-          "endpointVersion": 2,
-          "endpointId": 30106,
-          "oftSharedDecimals": 6
-        }
-      },
-      "isAcross": false,
-      "isOFT": true
-    },
-    {
-      "chainId": 43114,
       "address": "0x9ed7E4B1BFF939ad473dA5E7a218C771D1569456",
       "name": "Reunit Token",
       "decimals": 6,
@@ -102297,39 +101858,6 @@
     },
     {
       "chainId": 57073,
-      "address": "0xB90e23CeF93CA91c1526aAF9742A13A0946E9de4",
-      "name": "Euler",
-      "decimals": 18,
-      "symbol": "EUL",
-      "logoURI": "https://s2.coinmarketcap.com/static/img/coins/128x128/14280.png",
-      "tags": [],
-      "extensions": {
-        "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0xd9Fcd98c322942075A5C3860693e9f4f03AAE07b"
-          }
-        },
-        "oftInfo": {
-          "peersInfo": {
-            "1": {
-              "tokenAddress": "0xd9Fcd98c322942075A5C3860693e9f4f03AAE07b"
-            },
-            "8453": {
-              "tokenAddress": "0xa153Ad732F831a79b5575Fa02e793EC4E99181b0"
-            }
-          },
-          "oftAdapter": "0x89504f5d5f4fb646D283417788b1e783912Bbdf9",
-          "oftVersion": 3,
-          "endpointVersion": 2,
-          "endpointId": 30339,
-          "oftSharedDecimals": 6
-        }
-      },
-      "isAcross": false,
-      "isOFT": true
-    },
-    {
-      "chainId": 57073,
       "address": "0xBE6D2BE4e01D4304a28eDD13038311e112313ec8",
       "name": "Staked Dinero OFT",
       "decimals": 18,
@@ -103214,39 +102742,6 @@
           "endpointVersion": 1,
           "endpointId": 183,
           "oftSharedDecimals": 8
-        }
-      },
-      "isAcross": false,
-      "isOFT": true
-    },
-    {
-      "chainId": 59144,
-      "address": "0x3eBd0148BADAb9388936E4472C4415D5700478A5",
-      "name": "Euler",
-      "decimals": 18,
-      "symbol": "EUL",
-      "logoURI": "https://s2.coinmarketcap.com/static/img/coins/128x128/14280.png",
-      "tags": [],
-      "extensions": {
-        "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0xd9Fcd98c322942075A5C3860693e9f4f03AAE07b"
-          }
-        },
-        "oftInfo": {
-          "peersInfo": {
-            "1": {
-              "tokenAddress": "0xd9Fcd98c322942075A5C3860693e9f4f03AAE07b"
-            },
-            "8453": {
-              "tokenAddress": "0xa153Ad732F831a79b5575Fa02e793EC4E99181b0"
-            }
-          },
-          "oftAdapter": "0xd048d4e39e13482ECcE115E7BB71128d26ca19f1",
-          "oftVersion": 3,
-          "endpointVersion": 2,
-          "endpointId": 30183,
-          "oftSharedDecimals": 6
         }
       },
       "isAcross": false,
@@ -107222,39 +106717,6 @@
             }
           },
           "oftAdapter": "0xE946Dd7d03F6F5C440F68c84808Ca88d26475FC5",
-          "oftVersion": 3,
-          "endpointVersion": 2,
-          "endpointId": 30362,
-          "oftSharedDecimals": 6
-        }
-      },
-      "isAcross": false,
-      "isOFT": true
-    },
-    {
-      "chainId": 80094,
-      "address": "0xEb9b5f4EB023aE754fF59A04c9C038D58606DAC6",
-      "name": "Euler",
-      "decimals": 18,
-      "symbol": "EUL",
-      "logoURI": "https://s2.coinmarketcap.com/static/img/coins/128x128/14280.png",
-      "tags": [],
-      "extensions": {
-        "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0xd9Fcd98c322942075A5C3860693e9f4f03AAE07b"
-          }
-        },
-        "oftInfo": {
-          "peersInfo": {
-            "1": {
-              "tokenAddress": "0xd9Fcd98c322942075A5C3860693e9f4f03AAE07b"
-            },
-            "8453": {
-              "tokenAddress": "0xa153Ad732F831a79b5575Fa02e793EC4E99181b0"
-            }
-          },
-          "oftAdapter": "0xc1d31b2812Cc920341349a717d14bAdFb1BCab11",
           "oftVersion": 3,
           "endpointVersion": 2,
           "endpointId": 30362,
