@@ -1,8 +1,8 @@
 {
   "name": "Hermes Omnichain Token List",
-  "timestamp": "1755123739",
+  "timestamp": "1755196959",
   "version": {
-    "major": 130,
+    "major": 131,
     "minor": 0,
     "patch": 0
   },
@@ -1419,7 +1419,10 @@
       "symbol": "FXS",
       "decimals": 18,
       "logoURI": "https://assets.coingecko.com/coins/images/13423/thumb/frax_share.png?1608478989",
+      "tags": [],
       "extensions": {
+        "coingeckoId": "frax-share",
+        "coinMarketCapId": 6953,
         "bridgeInfo": {
           "56": {
             "tokenAddress": "0xe48A3d7d0Bc88d552f730B62c006bC925eadB9eE"
@@ -1430,16 +1433,70 @@
           "137": {
             "tokenAddress": "0x3e121107F6F22DA4911079845a470757aF4e1A1b"
           },
+          "1088": {
+            "tokenAddress": "0x23432452B720C80553458496D4D9d7C5003280d0"
+          },
+          "8453": {
+            "tokenAddress": "0x23432452B720C80553458496D4D9d7C5003280d0"
+          },
           "42161": {
             "tokenAddress": "0xd9f9d2Ee2d3EFE420699079f16D9e924affFdEA4"
           },
           "43114": {
             "tokenAddress": "0x214DB107654fF987AD859F34125307783fC8e387"
+          },
+          "81457": {
+            "tokenAddress": "0x23432452B720C80553458496D4D9d7C5003280d0"
           }
+        },
+        "oftInfo": {
+          "peersInfo": {
+            "10": {
+              "tokenAddress": "0x64445f0aecC51E94aD52d8AC56b7190e764E561a"
+            },
+            "56": {
+              "tokenAddress": "0x64445f0aecC51E94aD52d8AC56b7190e764E561a"
+            },
+            "137": {
+              "tokenAddress": "0x64445f0aecC51E94aD52d8AC56b7190e764E561a"
+            },
+            "146": {
+              "tokenAddress": "0x64445f0aecC51E94aD52d8AC56b7190e764E561a"
+            },
+            "252": {
+              "tokenAddress": "0xedEa7BeFB3024618cE8f148Fa3803f14966B6252"
+            },
+            "1329": {
+              "tokenAddress": "0x64445f0aecC51E94aD52d8AC56b7190e764E561a"
+            },
+            "8453": {
+              "tokenAddress": "0x0CEAC003B0d2479BebeC9f4b2EBAd0a803759bbf"
+            },
+            "34443": {
+              "tokenAddress": "0x64445f0aecC51E94aD52d8AC56b7190e764E561a"
+            },
+            "42161": {
+              "tokenAddress": "0x64445f0aecC51E94aD52d8AC56b7190e764E561a"
+            },
+            "43114": {
+              "tokenAddress": "0x64445f0aecC51E94aD52d8AC56b7190e764E561a"
+            },
+            "57073": {
+              "tokenAddress": "0x64445f0aecC51E94aD52d8AC56b7190e764E561a"
+            },
+            "81457": {
+              "tokenAddress": "0x64445f0aecC51E94aD52d8AC56b7190e764E561a"
+            }
+          },
+          "oftAdapter": "0xC6F59a4fD50cAc677B51558489E03138Ac1784EC",
+          "oftVersion": 3,
+          "endpointVersion": 2,
+          "endpointId": 30101,
+          "oftSharedDecimals": 6
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true
     },
     {
       "chainId": 1,
@@ -20258,7 +20315,7 @@
             "tokenAddress": "0x3432B6A60D23Ca0dFCa7761B7ab56459D9C964D0"
           }
         },
-        "coingeckoId": "wrapped-frax",
+        "coingeckoId": "frax-share",
         "coinMarketCapId": 6953,
         "oftInfo": {
           "peersInfo": {
@@ -21768,23 +21825,6 @@
     },
     {
       "chainId": 8453,
-      "address": "0x18dD5B087bCA9920562aFf7A0199b96B9230438b",
-      "name": "Propy",
-      "symbol": "PRO",
-      "decimals": 8,
-      "logoURI": "https://assets.coingecko.com/coins/images/869/thumb/propy.png?1548332100",
-      "extensions": {
-        "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0x226bb599a12C826476e3A771454697EA52E9E220"
-          }
-        }
-      },
-      "isAcross": false,
-      "isOFT": false
-    },
-    {
-      "chainId": 8453,
       "address": "0x1C7a460413dD4e964f96D8dFC56E7223cE88CD85",
       "name": "Seamlesss",
       "symbol": "SEAM",
@@ -21895,7 +21935,7 @@
             "tokenAddress": "0x3432B6A60D23Ca0dFCa7761B7ab56459D9C964D0"
           }
         },
-        "coingeckoId": "wrapped-frax",
+        "coingeckoId": "frax-share",
         "coinMarketCapId": 6953,
         "oftInfo": {
           "peersInfo": {
@@ -21919,7 +21959,24 @@
       "isAcross": false,
       "isOFT": true
     },
-        {
+    {
+      "chainId": 8453,
+      "address": "0x236aa50979D5f3De3Bd1Eeb40E81137F22ab794b",
+      "name": "tBTC",
+      "symbol": "tBTC",
+      "decimals": 18,
+      "logoURI": "https://raw.githubusercontent.com/uniswap/assets/master/blockchains/ethereum/assets/0x18084fbA666a33d37592fA2633fD49a74DD93a88/logo.png",
+      "extensions": {
+        "bridgeInfo": {
+          "1": {
+            "tokenAddress": "0x18084fbA666a33d37592fA2633fD49a74DD93a88"
+          }
+        }
+      },
+      "isAcross": false,
+      "isOFT": false
+    },
+    {
       "chainId": 8453,
       "address": "0x259Fac10c5CbFEFE3E710e1D9467f70a76138d45",
       "name": "Cartesi",
@@ -21930,23 +21987,6 @@
         "bridgeInfo": {
           "1": {
             "tokenAddress": "0x491604c0FDF08347Dd1fa4Ee062a822A5DD06B5D"
-          }
-        }
-      },
-      "isAcross": false,
-      "isOFT": false
-    },
-    {
-      "chainId": 8453,
-      "address": "0x2Ae3F1Ec7F1F5012CFEab0185bfc7aa3cf0DEc22",
-      "name": "Coinbase Wrapped Staked ETH",
-      "symbol": "cbETH",
-      "decimals": 18,
-      "logoURI": "https://ethereum-optimism.github.io/data/cbETH/logo.svg",
-      "extensions": {
-        "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0xBe9895146f7AF43049ca1c1AE358B0541Ea49704"
           }
         }
       },
@@ -21972,22 +22012,15 @@
     },
     {
       "chainId": 8453,
-      "address": "0x2a06A17CBC6d0032Cac2c6696DA90f29D39a1a29",
-      "name": "HarryPotterObamaSonic10Inu",
-      "symbol": "BITCOIN",
-      "decimals": 8,
-      "logoURI": "https://coin-images.coingecko.com/coins/images/30323/large/hpos10i_logo_casino_night-dexview.png?1696529224",
-      "extensions": {
-        "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0x72e4f9F808C49A2a61dE9C5896298920Dc4EEEa9"
-          }
-        }
-      },
+      "address": "0x2Ae3F1Ec7F1F5012CFEab0185bfc7aa3cf0DEc22",
+      "name": "Coinbase Wrapped Staked ETH",
+      "symbol": "cbETH",
+      "decimals": 18,
+      "logoURI": "https://ethereum-optimism.github.io/data/cbETH/logo.svg",
       "isAcross": false,
       "isOFT": false
     },
-    {
+     {
       "chainId": 8453,
       "address": "0x2dbe0d779c7A04F7a5de83326973effE23356930",
       "name": "ShapeShift FOX Token",
@@ -22006,18 +22039,11 @@
     },
     {
       "chainId": 8453,
-      "address": "0x236aa50979D5f3De3Bd1Eeb40E81137F22ab794b",
-      "name": "tBTC",
-      "symbol": "tBTC",
-      "decimals": 18,
-      "logoURI": "https://raw.githubusercontent.com/uniswap/assets/master/blockchains/ethereum/assets/0x18084fbA666a33d37592fA2633fD49a74DD93a88/logo.png",
-      "extensions": {
-        "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0x18084fbA666a33d37592fA2633fD49a74DD93a88"
-          }
-        }
-      },
+      "address": "0x2a06A17CBC6d0032Cac2c6696DA90f29D39a1a29",
+      "name": "HarryPotterObamaSonic10Inu",
+      "symbol": "BITCOIN",
+      "decimals": 8,
+      "logoURI": "https://coin-images.coingecko.com/coins/images/30323/large/hpos10i_logo_casino_night-dexview.png?1696529224",
       "isAcross": false,
       "isOFT": false
     },
@@ -22098,8 +22124,8 @@
       "chainId": 8453,
       "address": "0x4158734D47Fc9692176B5085E0F52ee0Da5d47F1",
       "name": "Balancer",
-      "symbol": "BAL",
       "decimals": 18,
+      "symbol": "BAL",
       "logoURI": "https://assets.coingecko.com/coins/images/11683/standard/Balancer.png?1696511572",
       "tags": [],
       "extensions": {
@@ -22318,6 +22344,46 @@
       },
       "isAcross": false,
       "isOFT": false
+    },
+    {
+      "chainId": 8453,
+      "address": "0x526728DBc96689597F85ae4cd716d4f7fCcBAE9d",
+      "name": "Metronome Synth USD",
+      "symbol": "msUSD",
+      "decimals": 18,
+      "logoURI": "https://s2.coinmarketcap.com/static/img/coins/128x128/3408.png",
+      "tags": [],
+      "extensions": {
+        "bridgeInfo": {
+          "1": {
+            "tokenAddress": "0xab5eB14c09D416F0aC63661E57EDB7AEcDb9BEfA"
+          }
+        },
+        "oftInfo": {
+          "peersInfo": {
+            "1": {
+              "tokenAddress": "0xab5eB14c09D416F0aC63661E57EDB7AEcDb9BEfA"
+            },
+            "10": {
+              "tokenAddress": "0x9dAbAE7274D28A45F0B65Bf8ED201A5731492ca0"
+            }
+          },
+          "oftAdapter": "0x2AF13BF84F8B452cB86839330F514Cc5c2899217",
+          "oftVersion": 1,
+          "endpointVersion": 1,
+          "endpointId": 184
+        },
+        "feeInfo": {
+          "1": {
+            "minDstGas": 200000
+          },
+          "10": {
+            "minDstGas": 200000
+          }
+        }
+      },
+      "isAcross": false,
+      "isOFT": true
     },
     {
       "chainId": 8453,
@@ -22816,23 +22882,6 @@
     },
     {
       "chainId": 8453,
-      "address": "0xBAa5CC21fd487B8Fcc2F632f3F4E8D37262a0842",
-      "name": "Morpho Token",
-      "symbol": "MORPHO",
-      "decimals": 18,
-      "logoURI": "https://coin-images.coingecko.com/coins/images/29837/large/Morpho-token-icon.png?1726771230",
-      "extensions": {
-        "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0x58D97B57BB95320F9a05dC918Aef65434969c2B2"
-          }
-        }
-      },
-      "isAcross": false,
-      "isOFT": false
-    },
-    {
-      "chainId": 8453,
       "address": "0xBB22Ff867F8Ca3D5F2251B4084F6Ec86D4666E14",
       "name": "Cryptex Finance",
       "symbol": "CTX",
@@ -23016,33 +23065,6 @@
     },
     {
       "chainId": 8453,
-      "address": "0xaB36452DbAC151bE02b16Ca17d8919826072f64a",
-      "name": "Reserve Rights",
-      "symbol": "RSR",
-      "decimals": 18,
-      "logoURI": "https://coin-images.coingecko.com/coins/images/8365/large/RSR_Blue_Circle_1000.png?1721777856",
-      "extensions": {
-        "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0x320623b8E4fF03373931769A31Fc52A4E78B5d70"
-          }
-        }
-      },
-      "isAcross": false,
-      "isOFT": false
-    },
-    {
-      "chainId": 8453,
-      "address": "0xacfE6019Ed1A7Dc6f7B508C02d1b04ec88cC21bf",
-      "name": "Venice Token",
-      "symbol": "VVV",
-      "decimals": 18,
-      "logoURI": "https://assets.coingecko.com/coins/images/54023/standard/Venice_Token_(1).png?1738017546",
-      "isAcross": false,
-      "isOFT": false
-    },
-    {
-      "chainId": 8453,
       "address": "0xb008BDCF9CdFf9da684a190941dC3dCa8C2Cdd44",
       "name": "Flux",
       "symbol": "FLUX",
@@ -23059,16 +23081,6 @@
       "isOFT": false
     },
     {
-      "chainId": 8453,
-      "address": "0xb33Ff54b9F7242EF1593d2C9Bcd8f9df46c77935",
-      "name": "FAI",
-      "symbol": "FAI",
-      "decimals": 18,
-      "logoURI": "https://coin-images.coingecko.com/coins/images/52315/large/FAI.png?1733076295",
-      "isAcross": false,
-      "isOFT": false
-    },
-    {
       "name": "Uniswap",
       "address": "0xc3De830EA07524a0761646a6a4e4be0e114a3C83",
       "symbol": "UNI",
@@ -23079,23 +23091,6 @@
         "bridgeInfo": {
           "1": {
             "tokenAddress": "0x1f9840a85d5aF5bf1D1762F925BDADdC4201F984"
-          }
-        }
-      },
-      "isAcross": false,
-      "isOFT": false
-    },
-    {
-      "chainId": 8453,
-      "address": "0xc5fecC3a29Fb57B5024eEc8a2239d4621e111CBE",
-      "name": "1inch",
-      "symbol": "1INCH",
-      "decimals": 18,
-      "logoURI": "https://assets.coingecko.com/coins/images/13469/thumb/1inch-token.png?1608803028",
-      "extensions": {
-        "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0x111111111117dC0aa78b770fA6A738034120C302"
           }
         }
       },
@@ -23229,6 +23224,26 @@
     },
     {
       "chainId": 8453,
+      "address": "0xacfE6019Ed1A7Dc6f7B508C02d1b04ec88cC21bf",
+      "name": "Venice Token",
+      "symbol": "VVV",
+      "decimals": 18,
+      "logoURI": "https://assets.coingecko.com/coins/images/54023/standard/Venice_Token_(1).png?1738017546",
+      "isAcross": false,
+      "isOFT": false
+    },
+    {
+      "chainId": 8453,
+      "address": "0xb33Ff54b9F7242EF1593d2C9Bcd8f9df46c77935",
+      "name": "FAI",
+      "symbol": "FAI",
+      "decimals": 18,
+      "logoURI": "https://coin-images.coingecko.com/coins/images/52315/large/FAI.png?1733076295",
+      "isAcross": false,
+      "isOFT": false
+    },
+    {
+      "chainId": 8453,
       "address": "0xb358489D5d92641EdB4D8eE8063f8005964346Ba",
       "name": "Amp",
       "symbol": "AMP",
@@ -23238,6 +23253,23 @@
         "bridgeInfo": {
           "1": {
             "tokenAddress": "0xfF20817765cB7f73d4bde2e66e067E58D11095C2"
+          }
+        }
+      },
+      "isAcross": false,
+      "isOFT": false
+    },
+    {
+      "chainId": 8453,
+      "address": "0xc5fecC3a29Fb57B5024eEc8a2239d4621e111CBE",
+      "name": "1inch",
+      "symbol": "1INCH",
+      "decimals": 18,
+      "logoURI": "https://assets.coingecko.com/coins/images/13469/thumb/1inch-token.png?1608803028",
+      "extensions": {
+        "bridgeInfo": {
+          "1": {
+            "tokenAddress": "0x111111111117dC0aa78b770fA6A738034120C302"
           }
         }
       },
@@ -25993,7 +26025,7 @@
             "tokenAddress": "0x3432B6A60D23Ca0dFCa7761B7ab56459D9C964D0"
           }
         },
-        "coingeckoId": "wrapped-frax",
+        "coingeckoId": "frax-share",
         "coinMarketCapId": 6953,
         "oftInfo": {
           "peersInfo": {

@@ -1,8 +1,8 @@
 {
   "name": "Hermes Omnichain Inactive Token List",
-  "timestamp": "1755123739",
+  "timestamp": "1755196959",
   "version": {
-    "major": 73,
+    "major": 74,
     "minor": 0,
     "patch": 0
   },
@@ -614,7 +614,6 @@
             "tokenAddress": "0xFc00000000000000000000000000000000000002"
           }
         },
-        "coingeckoId": "wrapped-frax",
         "oftInfo": {
           "peersInfo": {
             "252": {
@@ -15821,6 +15820,9 @@
               "tokenAddress": "0x211Cc4DD073734dA055fbF44a2b4667d5E5fE5d2"
             },
             "42161": {
+              "tokenAddress": "0x211Cc4DD073734dA055fbF44a2b4667d5E5fE5d2"
+            },
+            "43114": {
               "tokenAddress": "0x211Cc4DD073734dA055fbF44a2b4667d5E5fE5d2"
             },
             "59144": {
@@ -62889,7 +62891,7 @@
       "logoURI": "https://s2.coinmarketcap.com/static/img/coins/128x128/6953.png",
       "tags": [],
       "extensions": {
-        "coingeckoId": "wrapped-frax",
+        "coingeckoId": "frax-share",
         "coinMarketCapId": 6953,
         "oftInfo": {
           "peersInfo": {
@@ -63315,7 +63317,6 @@
             "tokenAddress": "0x3432B6A60D23Ca0dFCa7761B7ab56459D9C964D0"
           }
         },
-        "coingeckoId": "wrapped-frax",
         "oftInfo": {
           "peersInfo": {
             "1": {
@@ -76531,46 +76532,6 @@
     },
     {
       "chainId": 8453,
-      "address": "0x526728DBc96689597F85ae4cd716d4f7fCcBAE9d",
-      "name": "Metronome Synth USD",
-      "symbol": "msUSD",
-      "decimals": 18,
-      "logoURI": "https://s2.coinmarketcap.com/static/img/coins/128x128/3408.png",
-      "tags": [],
-      "extensions": {
-        "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0xab5eB14c09D416F0aC63661E57EDB7AEcDb9BEfA"
-          }
-        },
-        "oftInfo": {
-          "peersInfo": {
-            "1": {
-              "tokenAddress": "0xab5eB14c09D416F0aC63661E57EDB7AEcDb9BEfA"
-            },
-            "10": {
-              "tokenAddress": "0x9dAbAE7274D28A45F0B65Bf8ED201A5731492ca0"
-            }
-          },
-          "oftAdapter": "0x2AF13BF84F8B452cB86839330F514Cc5c2899217",
-          "oftVersion": 1,
-          "endpointVersion": 1,
-          "endpointId": 184
-        },
-        "feeInfo": {
-          "1": {
-            "minDstGas": 200000
-          },
-          "10": {
-            "minDstGas": 200000
-          }
-        }
-      },
-      "isAcross": false,
-      "isOFT": true
-    },
-    {
-      "chainId": 8453,
       "address": "0x554bba833518793056CF105E66aBEA330672c0dE",
       "name": "MAHA.xyz",
       "decimals": 18,
@@ -78687,6 +78648,37 @@
             }
           },
           "oftAdapter": "0x8a82CF92e0E290E843e4EbcfF92Df788a34adD3f",
+          "oftVersion": 3,
+          "endpointVersion": 2,
+          "endpointId": 30184,
+          "oftSharedDecimals": 6
+        }
+      },
+      "isAcross": false,
+      "isOFT": true
+    },
+    {
+      "chainId": 8453,
+      "address": "0x8dA0baE597aC15fB0924713b1e3c1F624474F3E4",
+      "name": "PUFFER",
+      "decimals": 18,
+      "symbol": "PUFFER",
+      "logoURI": "https://s2.coinmarketcap.com/static/img/coins/128x128/32325.png",
+      "tags": [],
+      "extensions": {
+        "bridgeInfo": {
+          "1": {
+            "tokenAddress": "0x4d1C297d39C5c1277964D0E3f8Aa901493664530"
+          }
+        },
+        "coingeckoId": "puffer-finance",
+        "oftInfo": {
+          "peersInfo": {
+            "1": {
+              "tokenAddress": "0x4d1C297d39C5c1277964D0E3f8Aa901493664530"
+            }
+          },
+          "oftAdapter": "0x8dA0baE597aC15fB0924713b1e3c1F624474F3E4",
           "oftVersion": 3,
           "endpointVersion": 2,
           "endpointId": 30184,
@@ -96955,6 +96947,46 @@
       "tags": [],
       "extensions": {},
       "isAcross": false
+    },
+    {
+      "chainId": 43114,
+      "address": "0x211Cc4DD073734dA055fbF44a2b4667d5E5fE5d2",
+      "name": "Staked USDe",
+      "decimals": 18,
+      "symbol": "sUSDe",
+      "logoURI": "https://s2.coinmarketcap.com/static/img/coins/128x128/29471.png",
+      "tags": [],
+      "extensions": {
+        "coingeckoId": "mantle-bridged-susde-mantle",
+        "bridgeInfo": {
+          "1": {
+            "tokenAddress": "0x9D39A5DE30e57443BfF2A8307A4256c8797A3497"
+          }
+        },
+        "oftInfo": {
+          "peersInfo": {
+            "1": {
+              "tokenAddress": "0x9D39A5DE30e57443BfF2A8307A4256c8797A3497"
+            },
+            "10": {
+              "tokenAddress": "0x211Cc4DD073734dA055fbF44a2b4667d5E5fE5d2"
+            },
+            "8453": {
+              "tokenAddress": "0x211Cc4DD073734dA055fbF44a2b4667d5E5fE5d2"
+            },
+            "42161": {
+              "tokenAddress": "0x211Cc4DD073734dA055fbF44a2b4667d5E5fE5d2"
+            }
+          },
+          "oftAdapter": "0x211Cc4DD073734dA055fbF44a2b4667d5E5fE5d2",
+          "oftVersion": 3,
+          "endpointVersion": 2,
+          "endpointId": 30106,
+          "oftSharedDecimals": 6
+        }
+      },
+      "isAcross": false,
+      "isOFT": true
     },
     {
       "chainId": 43114,
