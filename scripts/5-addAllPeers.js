@@ -314,8 +314,6 @@ async function main() {
         for (const otherChainKey of SUPPORTED_CHAINS) {
           if (otherChainKey === chainKey) continue
 
-          console.log(`Checking peers for ${t.symbol} on ${otherChainKey}...`)
-
           const destChainId = requireV3 ? CHAIN_KEY_TO_EID[otherChainKey].v2 : CHAIN_KEY_TO_EID[otherChainKey].v1
 
           if (!destChainId) {
