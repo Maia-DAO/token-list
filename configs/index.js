@@ -5,6 +5,34 @@ const {
   Stage,
 } = require('@layerzerolabs/lz-definitions')
 
+// Partner token symbols that should be included in the primary token list
+const PARTNER_TOKEN_SYMBOLS = [
+  'frxUSD',
+  'sfrxUSD',
+  'frxETH',
+  'sfrxETH',
+  'WFRAX',
+  'FXS',
+  'FPI',
+  'EUL',
+  'ORDER',
+  'WAGMI',
+  'Anon',
+  'RDNT',
+  'MAV',
+  'ZRO',
+  'WETH',
+  'USDC',
+  'USDT',
+  'USD₮0',
+  'DAI',
+  'PEAQ',
+  'USDe',
+  'mETH',
+  'Manta mETH',
+  'mBTC'
+  'Manta mBTC'
+]
 
 // Coingecko and CoinMarketCap ID mappings for specific tokens
 const OVERRIDE_CG_CMC_ID = {
@@ -17,6 +45,8 @@ const OVERRIDE_PEG = {
   'USD₮0': { chainName: 'arbitrum', address: '0xfd086bc7cd5c481dcc9c85ebe478a1c0b69fcbb9' },
   'frxUSD': { chainName: 'ethereum', address: '0xCAcd6fd266aF91b8AeD52aCCc382b4e165586E29' },
   'sfrxUSD': { chainName: 'ethereum', address: '0xcf62F905562626CfcDD2261162a51fd02Fc9c5b6' },
+  'STG': { chainName: 'ethereum', address: '0xAf5191B0De278C7286d6C7CC6ab6BB8A73bA2Cd6' },
+  'ZRO': { chainName: 'ethereum', address: '0x6985884C4392D348587B19cb9eAAf157F13271cd' },
 }
 
 // Override logos for specific tokens
@@ -444,5 +474,6 @@ module.exports = {
   EXTENDED_SUPPORTED_CHAIN_IDS,
   OVERRIDE_PEG,
   OVERRIDE_LOGO,
-  OVERRIDE_CG_CMC_ID
+  OVERRIDE_CG_CMC_ID,
+  PARTNER_TOKEN_SYMBOLS
 }
