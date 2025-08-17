@@ -1,7 +1,7 @@
 const fs = require('fs')
 const { ethers } = require('ethers')
 const { CHAIN_KEY_TO_ID } = require('../configs')
-const { MULTICALL3_ABI, MULTICALL3_ADDRESS } = require('../abi')
+const { MULTICALL3_ABI, MULTICALL3_ADDRESS, MULTICALL3_ADDRESSES } = require('../abi')
 
 /**
  * Merge two extensions objects, combining their properties. 
@@ -160,7 +160,7 @@ async function multiCallWithFallback(chainKey, calls, batchSize = undefined, del
         skipFetchSetup: true,
         batchMaxCount: 1,
       })
-      const mc = new ethers.Contract(MULTICALL3_ADDRESS, MULTICALL3_ABI, provider)
+      const mc = new ethers.Contract(MULTICALL3_ADDRESSES(chainKey), MULTICALL3_ABI, provider)
       const returnData = []
 
       let failedCalls = 0
@@ -266,6 +266,7 @@ async function multiCallWithFallback(chainKey, calls, batchSize = undefined, del
 module.exports = {
   MULTICALL3_ABI,
   MULTICALL3_ADDRESS,
+  MULTICALL3_ADDRESSES,
   multiCallWithFallback,
   cleanAddress,
   mergeExtensions,
