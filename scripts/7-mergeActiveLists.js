@@ -2,7 +2,7 @@ const fs = require('fs').promises
 const path = require('path')
 const { getCoinLogo } = require('./getCoinLogo')
 const { orderTokens } = require('./orderTokens')
-const { OVERRIDE_LOGO } = require('../configs')
+const { OVERRIDE_LOGO, PARTNER_TOKEN_SYMBOLS } = require('../configs')
 const { mergeExtensions, orderAttributes } = require('../helpers')
 
 // TODO: Add arbitrary Uniswap Token List support
@@ -27,6 +27,9 @@ function mergeTokenData(existing, incoming) {
 }
 
 function mergeTokenDataUlysses(existing, incoming) {
+  // Ensure extensions are merged correctly.
+  const newExtensions = mergeExtensions(existing.extensions || {}, incoming.extensions || {})
+
   // We use Ulysses format if the token is from Ulysses.
   const { address: addressIncoming, ...restIncoming } = existing
   const { address: addressExisting, ...restExisting } = incoming
@@ -39,7 +42,7 @@ function mergeTokenDataUlysses(existing, incoming) {
     isAcross: existing.isAcross || incoming.isAcross,
     isOFT: existing.isOFT || incoming.isOFT,
     logoURI: incoming.logoURI || existing.logoURI,
-    extensions: mergeExtensions(existing.extensions, incoming.extensions),
+    extensions: newExtensions,
   }
 
   return orderAttributes(merged)
@@ -223,6 +226,10 @@ async function main() {
     // 1. Build the normalized map from Across and Stargate tokens.
     const normalizedMap = {}
     const rootTokensMap = {}
+    const inactiveTokensArray = []
+    const oftsPerChainMap = {}
+    const activeOFTSet = new Set()
+    const inactiveOFTSet = new Set()
 
     // Process Across tokens.
     for (const symbol in acrossData) {
@@ -244,6 +251,7 @@ async function main() {
           }
         }
       })
+
     }
 
     // Process Stargate tokens.
@@ -253,19 +261,81 @@ async function main() {
       if (!normalizedToken) continue // Skip invalid tokens
 
       if (!normalizedToken.logoURI) delete normalizedToken.logoURI // Remove empty logoURIs
+
       if (normalizedToken.chainId === 42161) {
         const rootKey = normalizedToken.address.toLowerCase()
+
         if (!rootTokensMap[rootKey]) {
           rootTokensMap[rootKey] = normalizedToken
         } else {
           rootTokensMap[rootKey] = mergeTokenData(rootTokensMap[rootKey], normalizedToken)
         }
+
+        const key = normalizedToken.address.toLowerCase() + '_' + 42161
+        oftsPerChainMap[42161] = (oftsPerChainMap[42161] || 0) + 1
+        const oftAmount = oftsPerChainMap[42161]
+
+        // Delete from rootTokensMap if chain OFT count exceeds 5, in exception of partner tokens and already active tokens. If it is inactive, always delete it.
+        if ((oftAmount >= 20 && !PARTNER_TOKEN_SYMBOLS.includes(normalizedToken.symbol) && !activeOFTSet.has(key)) || inactiveOFTSet.has(key)) {
+          const tempToken = rootTokensMap[rootKey]
+          delete rootTokensMap[rootKey]
+          inactiveTokensArray.push(tempToken)
+
+          // Track has inactive, also track its peers.
+          inactiveOFTSet.add(key)
+          for (const [chain, peer] of Object.entries(normalizedToken.extensions.peersInfo || {})) {
+            const key = peer.tokenAddress.toLowerCase() + '_' + chain
+            inactiveOFTSet.add(key)
+          }
+
+
+        } else {
+          // Track active OFTs and their peers.
+          activeOFTSet.add(key)
+
+          for (const [chain, peer] of Object.entries(normalizedToken.extensions.peersInfo || {})) {
+            const key = peer.tokenAddress.toLowerCase() + '_' + chain
+            activeOFTSet.add(key)
+          }
+
+        }
+
       } else {
         const key = normalizedToken.address.toLowerCase() + '_' + normalizedToken.chainId
+
+        oftsPerChainMap[normalizedToken.chainId] = (oftsPerChainMap[normalizedToken.chainId] || 0) + 1
+        const oftAmount = oftsPerChainMap[normalizedToken.chainId]
+
         if (!normalizedMap[key]) {
           normalizedMap[key] = normalizedToken
         } else {
           normalizedMap[key] = mergeTokenData(normalizedMap[key], normalizedToken)
+        }
+
+
+        // Delete from normalizedMap if chain OFT count exceeds 5, in exception of partner tokens and already active tokens. If it is inactive, always delete it.
+        if ((oftAmount >= 5 && !PARTNER_TOKEN_SYMBOLS.includes(normalizedToken.symbol) && !activeOFTSet.has(key)) || inactiveOFTSet.has(key)) {
+          const tempToken = normalizedMap[key]
+          delete normalizedMap[key]
+          inactiveTokensArray.push(tempToken)
+
+          // Track has inactive, also track its peers.
+          inactiveOFTSet.add(key)
+          for (const [chain, peer] of Object.entries(normalizedToken.extensions.peersInfo || {})) {
+            const key = peer.tokenAddress.toLowerCase() + '_' + chain
+            inactiveOFTSet.add(key)
+          }
+
+
+        } else {
+          // Track active OFTs and their peers.
+          activeOFTSet.add(key)
+
+          for (const [chain, peer] of Object.entries(normalizedToken.extensions.peersInfo || {})) {
+            const key = peer.tokenAddress.toLowerCase() + '_' + chain
+            activeOFTSet.add(key)
+          }
+
         }
       }
     }
@@ -356,6 +426,7 @@ async function main() {
 
     // Write final merged output to token-list.json.
     await fs.writeFile('token-list.json', JSON.stringify(finalOutput, null, 2))
+    await fs.writeFile('output/inactives.json', JSON.stringify(inactiveTokensArray, null, 2))
     console.log(
       `✅  token-list.json written with ${finalTokens.length} tokens and ${finalRootTokens.length} root tokens`
     )

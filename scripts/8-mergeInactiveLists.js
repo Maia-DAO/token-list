@@ -54,6 +54,10 @@ async function main() {
 
     const mergedTokens = Array.from(mergedMap.values())
 
+
+    const inactivesRaw = await fs.readFile('output/inactives.json', 'utf8')
+    const inactiveList = JSON.parse(inactivesRaw)
+
     // --- Step 3: Enrich from existing token-list.json ---
     let existingList
     try {
@@ -67,7 +71,7 @@ async function main() {
     // Move tokens without logos to the inactive list
     const tokensWithoutLogo = existingList.tokens.filter((token) => !token.logoURI || token.logoURI === '')
     const rootTokensWithoutLogo = existingList.rootTokens.filter((token) => !token.logoURI || token.logoURI === '')
-    const allTokens = mergedTokens.concat(tokensWithoutLogo).concat(rootTokensWithoutLogo)
+    const allTokens = mergedTokens.concat(tokensWithoutLogo).concat(rootTokensWithoutLogo).concat(inactiveList)
 
     // Delete tokens without logos from the main list
     existingList.tokens = existingList.tokens.filter((token) => token.logoURI && token.logoURI !== '')
