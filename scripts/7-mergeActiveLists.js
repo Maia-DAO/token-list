@@ -2,7 +2,7 @@ const fs = require('fs').promises
 const path = require('path')
 const { getCoinLogo } = require('./getCoinLogo')
 const { orderTokens } = require('./orderTokens')
-const { OVERRIDE_LOGO, PARTNER_TOKEN_SYMBOLS } = require('../configs')
+const { OVERRIDE_LOGO, PARTNER_TOKEN_SYMBOLS, BLOCKED_TOKEN_SYMBOLS } = require('../configs')
 const { mergeExtensions, orderAttributes } = require('../helpers')
 
 // TODO: Add arbitrary Uniswap Token List support
@@ -226,7 +226,7 @@ async function main() {
     // 1. Build the normalized map from Across and Stargate tokens.
     const normalizedMap = {}
     const rootTokensMap = {}
-    const inactiveTokensArray = []
+    let inactiveTokensArray = []
     const oftsPerChainMap = {}
     const activeOFTSet = new Set()
     const inactiveOFTSet = new Set()
@@ -236,6 +236,12 @@ async function main() {
       const tokenData = acrossData[symbol]
       const normalizedArray = await normalizeAcrossToken(tokenData, normalizedMap, rootTokensMap)
       normalizedArray.forEach((token) => {
+
+        if (BLOCKED_TOKEN_SYMBOLS.includes(token.symbol)) {
+          console.warn(`skipping, blocked token ${token.symbol} on chain ${token.chainId}`)
+          return
+        }
+
         if (!token.logoURI) delete token.logoURI // Remove empty logoURIs
         if (token.chainId === 42161) {
           // Merge into rootTokensMap.
@@ -262,6 +268,11 @@ async function main() {
 
       if (!normalizedToken.logoURI) delete normalizedToken.logoURI // Remove empty logoURIs
 
+      if (BLOCKED_TOKEN_SYMBOLS.includes(normalizedToken.symbol)) {
+        console.warn(`skipping, blocked token ${normalizedToken.symbol} on chain ${normalizedToken.chainId}`)
+        continue
+      }
+
       if (normalizedToken.chainId === 42161) {
         const rootKey = normalizedToken.address.toLowerCase()
 
@@ -287,7 +298,6 @@ async function main() {
             const key = peer.tokenAddress.toLowerCase() + '_' + chain
             inactiveOFTSet.add(key)
           }
-
 
         } else {
           // Track active OFTs and their peers.
@@ -340,9 +350,33 @@ async function main() {
       }
     }
 
+    // Check if there are tokens from inactiveOFTSet that are still in normalizedMap.
+    for (const inactiveToken of inactiveTokensArray) {
+      const key = inactiveToken.address.toLowerCase() + '_' + inactiveToken.chainId
+      if (normalizedMap[key]) {
+        const tempToken = normalizedMap[key]
+        delete normalizedMap[key]
+        inactiveTokensArray.push(tempToken)
+      } else if (rootTokensMap[key]) {
+        const tempToken = rootTokensMap[key]
+        delete rootTokensMap[key]
+        inactiveTokensArray.push(tempToken)
+      }
+    }
+
+    // Check if there are tokens from activeOFTSet that are still in inactiveTokensArray.
+    for (const key of activeOFTSet) {
+      // Remove from inactiveTokensArray if it is in activeOFTSet.
+      inactiveTokensArray = inactiveTokensArray.filter((token) => token.address.toLowerCase() + '_' + token.chainId !== key)
+    }
+
     // 2. Incorporate Uniswap tokens and Ulysses Root Tokens.
     if (Array.isArray(uniswapTokens) && ulyssesData.rootTokens && Array.isArray(ulyssesData.rootTokens)) {
       uniswapTokens.concat(ulyssesData.rootTokens).forEach((token) => {
+        if (BLOCKED_TOKEN_SYMBOLS.includes(token.symbol)) {
+          console.warn(`skipping, blocked token ${token.symbol} on chain ${token.chainId}`)
+          return
+        }
         if (!token.logoURI) delete token.logoURI // Remove empty logoURIs
         // Default flags if undefined.
         if (typeof token.isAcross === 'undefined') token.isAcross = false
@@ -370,6 +404,10 @@ async function main() {
     // 3. Incorporate Ulysses tokens.
     if (ulyssesData.tokens && Array.isArray(ulyssesData.tokens)) {
       ulyssesData.tokens.forEach((token) => {
+        if (BLOCKED_TOKEN_SYMBOLS.includes(token.symbol)) {
+          console.warn(`skipping, blocked token ${token.symbol} on chain ${token.chainId}`)
+          return
+        }
         if (!token.logoURI) delete token.logoURI // Remove empty logoURIs
         const key = token.underlyingAddress.toLowerCase() + '_' + token.chainId
         if (normalizedMap[key]) {

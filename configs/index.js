@@ -5,6 +5,12 @@ const {
   Stage,
 } = require('@layerzerolabs/lz-definitions')
 
+
+// Tokens to drop
+const BLOCKED_TOKEN_SYMBOLS = [
+  'STG',
+]
+
 // Partner token symbols that should be included in the primary token list
 const PARTNER_TOKEN_SYMBOLS = [
   'frxUSD',
@@ -30,7 +36,7 @@ const PARTNER_TOKEN_SYMBOLS = [
   'USDe',
   'mETH',
   'Manta mETH',
-  'mBTC'
+  'mBTC',
   'Manta mBTC'
 ]
 
@@ -342,7 +348,7 @@ const CHAIN_KEY_TO_ID = {
   goat: 2345,
   gnosis: 100,
   morph: 2818,
-  linea : 59144,
+  linea: 59144,
   fuse: 122,
   soneium: 1868,
   conflux: 1030,
@@ -475,5 +481,6 @@ module.exports = {
   OVERRIDE_PEG,
   OVERRIDE_LOGO,
   OVERRIDE_CG_CMC_ID,
-  PARTNER_TOKEN_SYMBOLS
+  PARTNER_TOKEN_SYMBOLS,
+  BLOCKED_TOKEN_SYMBOLS
 }
