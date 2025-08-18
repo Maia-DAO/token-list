@@ -1,8 +1,8 @@
 {
   "name": "Hermes Omnichain Token List",
-  "timestamp": "1755278215",
+  "timestamp": "1755527376",
   "version": {
-    "major": 134,
+    "major": 135,
     "minor": 0,
     "patch": 0
   },
@@ -916,6 +916,40 @@
       "isOFT": false
     },
     {
+      "chainId": 1,
+      "address": "0x1EeF208926667594E5136e89D0e9DD6907959197",
+      "name": "PEAQ",
+      "decimals": 18,
+      "symbol": "PEAQ",
+      "logoURI": "https://s2.coinmarketcap.com/static/img/coins/128x128/14588.png",
+      "tags": [],
+      "extensions": {
+        "bridgeInfo": {
+          "3338": {
+            "tokenAddress": "0x0000000000000000000000000000000000000000"
+          }
+        },
+        "coingeckoId": "peaq-2",
+        "oftInfo": {
+          "peersInfo": {
+            "56": {
+              "tokenAddress": "0x8b9Ee39195eA99d6ddD68030F44131116bc218F6"
+            },
+            "3338": {
+              "tokenAddress": "0x0000000000000000000000000000000000000809"
+            }
+          },
+          "oftAdapter": "0x1EeF208926667594E5136e89D0e9DD6907959197",
+          "oftVersion": 3,
+          "endpointVersion": 2,
+          "endpointId": 30101,
+          "oftSharedDecimals": 6
+        }
+      },
+      "isAcross": false,
+      "isOFT": true
+    },
+    {
       "name": "Bancor Network Token",
       "address": "0x1F573D6Fb3F13d689FF844B4cE37794d79a7FF1C",
       "symbol": "BNT",
@@ -1030,9 +1064,6 @@
           },
           "137": {
             "tokenAddress": "0xb33EaAd8d922B1083446DC23f610c2567fB5180f"
-          },
-          "8453": {
-            "tokenAddress": "0xc3De830EA07524a0761646a6a4e4be0e114a3C83"
           },
           "42161": {
             "tokenAddress": "0xFa7F8980b0f1E64A2062791cc3b0871572f1F7f0"
@@ -2428,6 +2459,130 @@
       },
       "isAcross": false,
       "isOFT": false
+    },
+    {
+      "chainId": 1,
+      "address": "0x4c9EDD5852cd905f086C759E8383e09bff1E68B3",
+      "name": "USDe",
+      "decimals": 18,
+      "symbol": "USDe",
+      "logoURI": "https://s2.coinmarketcap.com/static/img/coins/128x128/29470.png",
+      "tags": [],
+      "extensions": {
+        "bridgeInfo": {
+          "10": {
+            "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+          },
+          "56": {
+            "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+          },
+          "169": {
+            "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+          },
+          "252": {
+            "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+          },
+          "999": {
+            "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+          },
+          "1088": {
+            "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+          },
+          "1923": {
+            "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+          },
+          "2818": {
+            "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+          },
+          "5000": {
+            "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+          },
+          "8453": {
+            "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+          },
+          "34443": {
+            "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+          },
+          "42161": {
+            "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+          },
+          "59144": {
+            "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+          },
+          "80094": {
+            "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+          },
+          "81457": {
+            "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+          },
+          "534352": {
+            "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+          }
+        },
+        "coingeckoId": "mantle-bridged-usde-mantle",
+        "oftInfo": {
+          "peersInfo": {
+            "10": {
+              "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+            },
+            "56": {
+              "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+            },
+            "169": {
+              "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+            },
+            "252": {
+              "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+            },
+            "999": {
+              "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+            },
+            "1088": {
+              "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+            },
+            "1923": {
+              "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+            },
+            "2818": {
+              "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+            },
+            "5000": {
+              "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+            },
+            "8453": {
+              "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+            },
+            "34443": {
+              "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+            },
+            "42161": {
+              "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+            },
+            "43114": {
+              "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+            },
+            "59144": {
+              "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+            },
+            "80094": {
+              "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+            },
+            "81457": {
+              "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+            },
+            "534352": {
+              "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+            }
+          },
+          "oftAdapter": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34",
+          "oftVersion": 3,
+          "endpointVersion": 2,
+          "endpointId": 30101,
+          "oftSharedDecimals": 6
+        }
+      },
+      "isAcross": false,
+      "isOFT": true
     },
     {
       "chainId": 1,
@@ -5560,32 +5715,6 @@
           },
           "42161": {
             "tokenAddress": "0x5445972E76c5e4CEdD12B6e2BceF69133E15992F"
-          }
-        }
-      },
-      "isAcross": false,
-      "isOFT": false
-    },
-    {
-      "chainId": 1,
-      "name": "Stargate Finance",
-      "symbol": "STG",
-      "logoURI": "https://assets.coingecko.com/coins/images/24413/thumb/STG_LOGO.png?1647654518",
-      "address": "0xAf5191B0De278C7286d6C7CC6ab6BB8A73bA2Cd6",
-      "decimals": 18,
-      "extensions": {
-        "bridgeInfo": {
-          "56": {
-            "tokenAddress": "0xB0D502E938ed5f4df2E681fE6E419ff29631d62b"
-          },
-          "130": {
-            "tokenAddress": "0x77c8A8E1dd3b5270d3Ab589543e9A83319373135"
-          },
-          "42161": {
-            "tokenAddress": "0xe018C7a3d175Fb0fE15D70Da2c874d3CA16313EC"
-          },
-          "43114": {
-            "tokenAddress": "0x2F6F07CDcf3588944Bf4C42aC74ff24bF56e7590"
           }
         }
       },
@@ -8951,6 +9080,82 @@
     },
     {
       "chainId": 10,
+      "address": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34",
+      "name": "USDe",
+      "decimals": 18,
+      "symbol": "USDe",
+      "logoURI": "https://s2.coinmarketcap.com/static/img/coins/128x128/29470.png",
+      "tags": [],
+      "extensions": {
+        "bridgeInfo": {
+          "1": {
+            "tokenAddress": "0x4c9EDD5852cd905f086C759E8383e09bff1E68B3"
+          }
+        },
+        "coingeckoId": "mantle-bridged-usde-mantle",
+        "oftInfo": {
+          "peersInfo": {
+            "1": {
+              "tokenAddress": "0x4c9EDD5852cd905f086C759E8383e09bff1E68B3"
+            },
+            "56": {
+              "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+            },
+            "169": {
+              "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+            },
+            "252": {
+              "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+            },
+            "999": {
+              "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+            },
+            "1088": {
+              "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+            },
+            "1923": {
+              "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+            },
+            "2818": {
+              "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+            },
+            "5000": {
+              "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+            },
+            "8453": {
+              "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+            },
+            "34443": {
+              "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+            },
+            "42161": {
+              "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+            },
+            "43114": {
+              "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+            },
+            "59144": {
+              "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+            },
+            "81457": {
+              "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+            },
+            "534352": {
+              "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+            }
+          },
+          "oftAdapter": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34",
+          "oftVersion": 3,
+          "endpointVersion": 2,
+          "endpointId": 30111,
+          "oftSharedDecimals": 6
+        }
+      },
+      "isAcross": false,
+      "isOFT": true
+    },
+    {
+      "chainId": 10,
       "address": "0x64445f0aecC51E94aD52d8AC56b7190e764E561a",
       "name": "Wrapped Frax",
       "decimals": 18,
@@ -10730,6 +10935,76 @@
     },
     {
       "chainId": 56,
+      "address": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34",
+      "name": "USDe",
+      "decimals": 18,
+      "symbol": "USDe",
+      "logoURI": "https://s2.coinmarketcap.com/static/img/coins/128x128/29470.png",
+      "tags": [],
+      "extensions": {
+        "bridgeInfo": {
+          "1": {
+            "tokenAddress": "0x4c9EDD5852cd905f086C759E8383e09bff1E68B3"
+          }
+        },
+        "coingeckoId": "mantle-bridged-usde-mantle",
+        "oftInfo": {
+          "peersInfo": {
+            "1": {
+              "tokenAddress": "0x4c9EDD5852cd905f086C759E8383e09bff1E68B3"
+            },
+            "10": {
+              "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+            },
+            "169": {
+              "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+            },
+            "252": {
+              "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+            },
+            "1088": {
+              "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+            },
+            "1923": {
+              "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+            },
+            "2818": {
+              "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+            },
+            "5000": {
+              "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+            },
+            "8453": {
+              "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+            },
+            "34443": {
+              "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+            },
+            "42161": {
+              "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+            },
+            "59144": {
+              "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+            },
+            "81457": {
+              "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+            },
+            "534352": {
+              "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+            }
+          },
+          "oftAdapter": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34",
+          "oftVersion": 3,
+          "endpointVersion": 2,
+          "endpointId": 30102,
+          "oftSharedDecimals": 6
+        }
+      },
+      "isAcross": false,
+      "isOFT": true
+    },
+    {
+      "chainId": 56,
       "address": "0x5f4Bde007Dc06b867f86EBFE4802e34A1fFEEd63",
       "name": "Highstreet",
       "symbol": "HIGH",
@@ -11218,6 +11493,40 @@
     },
     {
       "chainId": 56,
+      "address": "0x8b9Ee39195eA99d6ddD68030F44131116bc218F6",
+      "name": "PeaqOFT",
+      "decimals": 18,
+      "symbol": "PEAQ",
+      "logoURI": "https://s2.coinmarketcap.com/static/img/coins/128x128/14588.png",
+      "tags": [],
+      "extensions": {
+        "coingeckoId": "peaq-2",
+        "bridgeInfo": {
+          "3338": {
+            "tokenAddress": "0x0000000000000000000000000000000000000809"
+          }
+        },
+        "oftInfo": {
+          "peersInfo": {
+            "1": {
+              "tokenAddress": "0x1EeF208926667594E5136e89D0e9DD6907959197"
+            },
+            "3338": {
+              "tokenAddress": "0x0000000000000000000000000000000000000809"
+            }
+          },
+          "oftAdapter": "0x8b9Ee39195eA99d6ddD68030F44131116bc218F6",
+          "oftVersion": 3,
+          "endpointVersion": 2,
+          "endpointId": 30102,
+          "oftSharedDecimals": 6
+        }
+      },
+      "isAcross": false,
+      "isOFT": true
+    },
+    {
+      "chainId": 56,
       "address": "0x8dA443F84fEA710266C8eB6bC34B71702d033EF2",
       "name": "Cartesi",
       "symbol": "CTSI",
@@ -11397,23 +11706,6 @@
         "bridgeInfo": {
           "1": {
             "tokenAddress": "0x4E15361FD6b4BB609Fa63C81A2be19d873717870"
-          }
-        }
-      },
-      "isAcross": false,
-      "isOFT": false
-    },
-    {
-      "chainId": 56,
-      "name": "Stargate Finance",
-      "symbol": "STG",
-      "logoURI": "https://assets.coingecko.com/coins/images/24413/thumb/STG_LOGO.png?1647654518",
-      "address": "0xB0D502E938ed5f4df2E681fE6E419ff29631d62b",
-      "decimals": 18,
-      "extensions": {
-        "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0xAf5191B0De278C7286d6C7CC6ab6BB8A73bA2Cd6"
           }
         }
       },
@@ -13310,7 +13602,7 @@
               "tokenAddress": "0xc53ac24320E3A54C7211e4993c8095078a0Cb3Cf"
             },
             "7777777": {
-              "tokenAddress": "0x3d63825B0d8669307366E6c8202f656b9E91D368"
+              "tokenAddress": "0x3d63825b0d8669307366e6c8202f656b9e91d368"
             }
           },
           "oftAdapter": "0x3d63825B0d8669307366E6c8202f656b9E91D368",
@@ -14872,23 +15164,6 @@
         "bridgeInfo": {
           "1": {
             "tokenAddress": "0x5Cf04716BA20127F1E2297AdDCf4B5035000c9eb"
-          }
-        }
-      },
-      "isAcross": false,
-      "isOFT": false
-    },
-    {
-      "chainId": 130,
-      "name": "Stargate Finance",
-      "symbol": "STG",
-      "logoURI": "https://assets.coingecko.com/coins/images/24413/thumb/STG_LOGO.png?1647654518",
-      "address": "0x77c8A8E1dd3b5270d3Ab589543e9A83319373135",
-      "decimals": 18,
-      "extensions": {
-        "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0xAf5191B0De278C7286d6C7CC6ab6BB8A73bA2Cd6"
           }
         }
       },
@@ -22237,6 +22512,76 @@
     },
     {
       "chainId": 169,
+      "address": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34",
+      "name": "USDe",
+      "decimals": 18,
+      "symbol": "USDe",
+      "logoURI": "https://s2.coinmarketcap.com/static/img/coins/128x128/29470.png",
+      "tags": [],
+      "extensions": {
+        "bridgeInfo": {
+          "1": {
+            "tokenAddress": "0x4c9EDD5852cd905f086C759E8383e09bff1E68B3"
+          }
+        },
+        "coingeckoId": "mantle-bridged-usde-mantle",
+        "oftInfo": {
+          "peersInfo": {
+            "1": {
+              "tokenAddress": "0x4c9EDD5852cd905f086C759E8383e09bff1E68B3"
+            },
+            "10": {
+              "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+            },
+            "56": {
+              "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+            },
+            "252": {
+              "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+            },
+            "1088": {
+              "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+            },
+            "1923": {
+              "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+            },
+            "2818": {
+              "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+            },
+            "5000": {
+              "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+            },
+            "8453": {
+              "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+            },
+            "34443": {
+              "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+            },
+            "42161": {
+              "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+            },
+            "59144": {
+              "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+            },
+            "81457": {
+              "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+            },
+            "534352": {
+              "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+            }
+          },
+          "oftAdapter": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34",
+          "oftVersion": 3,
+          "endpointVersion": 2,
+          "endpointId": 30217,
+          "oftSharedDecimals": 6
+        }
+      },
+      "isAcross": false,
+      "isOFT": true
+    },
+    {
+      "chainId": 169,
       "address": "0x9ff59ffc463736520aA465b2CA9C5D047bE919BA",
       "name": "KiloEx Token",
       "decimals": 18,
@@ -22736,6 +23081,76 @@
             }
           },
           "oftAdapter": "0x43eDD7f3831b08FE70B7555ddD373C8bF65a9050",
+          "oftVersion": 3,
+          "endpointVersion": 2,
+          "endpointId": 30255,
+          "oftSharedDecimals": 6
+        }
+      },
+      "isAcross": false,
+      "isOFT": true
+    },
+    {
+      "chainId": 252,
+      "address": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34",
+      "name": "USDe",
+      "decimals": 18,
+      "symbol": "USDe",
+      "logoURI": "https://s2.coinmarketcap.com/static/img/coins/128x128/29470.png",
+      "tags": [],
+      "extensions": {
+        "bridgeInfo": {
+          "1": {
+            "tokenAddress": "0x4c9EDD5852cd905f086C759E8383e09bff1E68B3"
+          }
+        },
+        "coingeckoId": "mantle-bridged-usde-mantle",
+        "oftInfo": {
+          "peersInfo": {
+            "1": {
+              "tokenAddress": "0x4c9EDD5852cd905f086C759E8383e09bff1E68B3"
+            },
+            "10": {
+              "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+            },
+            "56": {
+              "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+            },
+            "169": {
+              "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+            },
+            "1088": {
+              "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+            },
+            "1923": {
+              "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+            },
+            "2818": {
+              "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+            },
+            "5000": {
+              "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+            },
+            "8453": {
+              "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+            },
+            "34443": {
+              "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+            },
+            "42161": {
+              "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+            },
+            "59144": {
+              "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+            },
+            "81457": {
+              "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+            },
+            "534352": {
+              "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+            }
+          },
+          "oftAdapter": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34",
           "oftVersion": 3,
           "endpointVersion": 2,
           "endpointId": 30255,
@@ -23395,7 +23810,7 @@
               "tokenAddress": "0xc53ac24320E3A54C7211e4993c8095078a0Cb3Cf"
             },
             "7777777": {
-              "tokenAddress": "0x3d63825B0d8669307366E6c8202f656b9E91D368"
+              "tokenAddress": "0x3d63825b0d8669307366e6c8202f656b9e91d368"
             }
           },
           "oftAdapter": "0x3d63825B0d8669307366E6c8202f656b9E91D368",
@@ -23719,7 +24134,7 @@
               "tokenAddress": "0xc53ac24320E3A54C7211e4993c8095078a0Cb3Cf"
             },
             "7777777": {
-              "tokenAddress": "0x3d63825B0d8669307366E6c8202f656b9E91D368"
+              "tokenAddress": "0x3d63825b0d8669307366e6c8202f656b9e91d368"
             }
           },
           "oftAdapter": "0x3d63825B0d8669307366E6c8202f656b9E91D368",
@@ -24145,6 +24560,46 @@
     },
     {
       "chainId": 999,
+      "address": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34",
+      "name": "USDeOFT",
+      "decimals": 18,
+      "symbol": "USDe",
+      "logoURI": "https://s2.coinmarketcap.com/static/img/coins/128x128/29470.png",
+      "tags": [],
+      "extensions": {
+        "bridgeInfo": {
+          "1": {
+            "tokenAddress": "0x4c9EDD5852cd905f086C759E8383e09bff1E68B3"
+          }
+        },
+        "coingeckoId": "mantle-bridged-usde-mantle",
+        "oftInfo": {
+          "peersInfo": {
+            "1": {
+              "tokenAddress": "0x4c9EDD5852cd905f086C759E8383e09bff1E68B3"
+            },
+            "10": {
+              "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+            },
+            "8453": {
+              "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+            },
+            "42161": {
+              "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+            }
+          },
+          "oftAdapter": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34",
+          "oftVersion": 3,
+          "endpointVersion": 2,
+          "endpointId": 30367,
+          "oftSharedDecimals": 6
+        }
+      },
+      "isAcross": false,
+      "isOFT": true
+    },
+    {
+      "chainId": 999,
       "address": "0x79bbF4508B1391af3A0F4B30bb5FC4aa9ab0E07C",
       "name": "HeyAnon",
       "decimals": 18,
@@ -24399,6 +24854,76 @@
       "decimals": 18,
       "symbol": "WETH",
       "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/c6108b1a2708c01a8c637b80e0f69e77085d4174/blockchains/ethereum/assets/0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2/logo.png"
+    },
+    {
+      "chainId": 1088,
+      "address": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34",
+      "name": "USDe",
+      "decimals": 18,
+      "symbol": "USDe",
+      "logoURI": "https://s2.coinmarketcap.com/static/img/coins/128x128/29470.png",
+      "tags": [],
+      "extensions": {
+        "bridgeInfo": {
+          "1": {
+            "tokenAddress": "0x4c9EDD5852cd905f086C759E8383e09bff1E68B3"
+          }
+        },
+        "coingeckoId": "mantle-bridged-usde-mantle",
+        "oftInfo": {
+          "peersInfo": {
+            "1": {
+              "tokenAddress": "0x4c9EDD5852cd905f086C759E8383e09bff1E68B3"
+            },
+            "10": {
+              "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+            },
+            "56": {
+              "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+            },
+            "169": {
+              "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+            },
+            "252": {
+              "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+            },
+            "1923": {
+              "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+            },
+            "2818": {
+              "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+            },
+            "5000": {
+              "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+            },
+            "8453": {
+              "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+            },
+            "34443": {
+              "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+            },
+            "42161": {
+              "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+            },
+            "59144": {
+              "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+            },
+            "81457": {
+              "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+            },
+            "534352": {
+              "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+            }
+          },
+          "oftAdapter": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34",
+          "oftVersion": 3,
+          "endpointVersion": 2,
+          "endpointId": 30151,
+          "oftSharedDecimals": 6
+        }
+      },
+      "isAcross": false,
+      "isOFT": true
     },
     {
       "chainId": 1088,
@@ -25573,7 +26098,7 @@
               "tokenAddress": "0xc53ac24320E3A54C7211e4993c8095078a0Cb3Cf"
             },
             "7777777": {
-              "tokenAddress": "0x3d63825B0d8669307366E6c8202f656b9E91D368"
+              "tokenAddress": "0x3d63825b0d8669307366e6c8202f656b9e91d368"
             }
           },
           "oftAdapter": "0x3d63825B0d8669307366E6c8202f656b9E91D368",
@@ -25959,7 +26484,7 @@
               "tokenAddress": "0xc53ac24320E3A54C7211e4993c8095078a0Cb3Cf"
             },
             "7777777": {
-              "tokenAddress": "0x3d63825B0d8669307366E6c8202f656b9E91D368"
+              "tokenAddress": "0x3d63825b0d8669307366e6c8202f656b9e91d368"
             }
           },
           "oftAdapter": "0x3d63825B0d8669307366E6c8202f656b9E91D368",
@@ -25983,6 +26508,73 @@
       "decimals": 18,
       "symbol": "WETH",
       "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/c6108b1a2708c01a8c637b80e0f69e77085d4174/blockchains/ethereum/assets/0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2/logo.png"
+    },
+    {
+      "chainId": 1923,
+      "address": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34",
+      "name": "USDe",
+      "decimals": 18,
+      "symbol": "USDe",
+      "logoURI": "https://s2.coinmarketcap.com/static/img/coins/128x128/29470.png",
+      "tags": [],
+      "extensions": {
+        "bridgeInfo": {
+          "1": {
+            "tokenAddress": "0x4c9EDD5852cd905f086C759E8383e09bff1E68B3"
+          }
+        },
+        "coingeckoId": "mantle-bridged-usde-mantle",
+        "oftInfo": {
+          "peersInfo": {
+            "1": {
+              "tokenAddress": "0x4c9EDD5852cd905f086C759E8383e09bff1E68B3"
+            },
+            "10": {
+              "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+            },
+            "56": {
+              "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+            },
+            "169": {
+              "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+            },
+            "252": {
+              "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+            },
+            "1088": {
+              "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+            },
+            "5000": {
+              "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+            },
+            "8453": {
+              "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+            },
+            "34443": {
+              "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+            },
+            "42161": {
+              "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+            },
+            "59144": {
+              "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+            },
+            "81457": {
+              "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+            },
+            "534352": {
+              "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+            }
+          },
+          "oftAdapter": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34",
+          "oftVersion": 3,
+          "endpointVersion": 2,
+          "endpointId": 30335,
+          "oftSharedDecimals": 6
+        }
+      },
+      "isAcross": false,
+      "isOFT": true
     },
     {
       "chainId": 1923,
@@ -26312,6 +26904,73 @@
     },
     {
       "chainId": 2818,
+      "address": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34",
+      "name": "USDe",
+      "decimals": 18,
+      "symbol": "USDe",
+      "logoURI": "https://s2.coinmarketcap.com/static/img/coins/128x128/29470.png",
+      "tags": [],
+      "extensions": {
+        "bridgeInfo": {
+          "1": {
+            "tokenAddress": "0x4c9EDD5852cd905f086C759E8383e09bff1E68B3"
+          }
+        },
+        "coingeckoId": "mantle-bridged-usde-mantle",
+        "oftInfo": {
+          "peersInfo": {
+            "1": {
+              "tokenAddress": "0x4c9EDD5852cd905f086C759E8383e09bff1E68B3"
+            },
+            "10": {
+              "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+            },
+            "56": {
+              "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+            },
+            "169": {
+              "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+            },
+            "252": {
+              "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+            },
+            "1088": {
+              "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+            },
+            "5000": {
+              "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+            },
+            "8453": {
+              "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+            },
+            "34443": {
+              "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+            },
+            "42161": {
+              "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+            },
+            "59144": {
+              "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+            },
+            "81457": {
+              "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+            },
+            "534352": {
+              "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+            }
+          },
+          "oftAdapter": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34",
+          "oftVersion": 3,
+          "endpointVersion": 2,
+          "endpointId": 30322,
+          "oftSharedDecimals": 6
+        }
+      },
+      "isAcross": false,
+      "isOFT": true
+    },
+    {
+      "chainId": 2818,
       "address": "0xff12470a969Dd362EB6595FFB44C82c959Fe9ACc",
       "name": "USDa",
       "decimals": 18,
@@ -26339,6 +26998,40 @@
           "oftVersion": 3,
           "endpointVersion": 2,
           "endpointId": 30322,
+          "oftSharedDecimals": 6
+        }
+      },
+      "isAcross": false,
+      "isOFT": true
+    },
+    {
+      "chainId": 3338,
+      "address": "0x0000000000000000000000000000000000000809",
+      "name": "peaq token",
+      "decimals": 18,
+      "symbol": "PEAQ",
+      "logoURI": "https://s2.coinmarketcap.com/static/img/coins/128x128/14588.png",
+      "tags": [],
+      "extensions": {
+        "bridgeInfo": {
+          "56": {
+            "tokenAddress": "0x8b9Ee39195eA99d6ddD68030F44131116bc218F6"
+          }
+        },
+        "coingeckoId": "peaq-2",
+        "oftInfo": {
+          "peersInfo": {
+            "1": {
+              "tokenAddress": "0x1EeF208926667594E5136e89D0e9DD6907959197"
+            },
+            "56": {
+              "tokenAddress": "0x8b9Ee39195eA99d6ddD68030F44131116bc218F6"
+            }
+          },
+          "oftAdapter": "0xe4103e80c967f58591a1d7cA443ed7E392FeD862",
+          "oftVersion": 3,
+          "endpointVersion": 2,
+          "endpointId": 30302,
           "oftSharedDecimals": 6
         }
       },
@@ -26418,22 +27111,112 @@
     },
     {
       "chainId": 5000,
-      "address": "0x8731d54E9D02c286767d56ac03e8037C07e01e98",
-      "name": "StargateToken",
+      "address": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34",
+      "name": "USDe",
       "decimals": 18,
-      "symbol": "STG",
-      "logoURI": "https://s2.coinmarketcap.com/static/img/coins/128x128/18934.png",
+      "symbol": "USDe",
+      "logoURI": "https://s2.coinmarketcap.com/static/img/coins/128x128/29470.png",
+      "tags": [],
+      "extensions": {
+        "coingeckoId": "mantle-bridged-usde-mantle",
+        "bridgeInfo": {
+          "1": {
+            "tokenAddress": "0x4c9EDD5852cd905f086C759E8383e09bff1E68B3"
+          }
+        },
+        "oftInfo": {
+          "peersInfo": {
+            "1": {
+              "tokenAddress": "0x4c9EDD5852cd905f086C759E8383e09bff1E68B3"
+            },
+            "10": {
+              "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+            },
+            "56": {
+              "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+            },
+            "169": {
+              "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+            },
+            "252": {
+              "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+            },
+            "1088": {
+              "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+            },
+            "1923": {
+              "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+            },
+            "2818": {
+              "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+            },
+            "8453": {
+              "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+            },
+            "34443": {
+              "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+            },
+            "42161": {
+              "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+            },
+            "59144": {
+              "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+            },
+            "81457": {
+              "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+            },
+            "534352": {
+              "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+            }
+          },
+          "oftAdapter": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34",
+          "oftVersion": 3,
+          "endpointVersion": 2,
+          "endpointId": 30181,
+          "oftSharedDecimals": 6
+        }
+      },
+      "isAcross": false,
+      "isOFT": true
+    },
+    {
+      "chainId": 5000,
+      "address": "0xC752F7CefFd8a52e541b256d2C73e65F8baC60c7",
+      "name": "NumberGoUpTech",
+      "decimals": 18,
+      "symbol": "TECH",
+      "logoURI": "https://s2.coinmarketcap.com/static/img/coins/128x128/29680.png",
       "tags": [],
       "extensions": {
         "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0xAf5191B0De278C7286d6C7CC6ab6BB8A73bA2Cd6"
+          "43114": {
+            "tokenAddress": "0x5Ac04b69bDE6f67C0bd5D6bA6fD5D816548b066a"
           }
         },
-        "coingeckoId": "stargate-finance",
-        "coinMarketCapId": 18934
+        "oftInfo": {
+          "peersInfo": {
+            "1": {
+              "tokenAddress": "0x835f2eb9B3dd2913f59019bfbC7B61A12Ef96cd6"
+            },
+            "8453": {
+              "tokenAddress": "0xe9A3B326c5B06FA848b11E07080c3AC926fBe787"
+            },
+            "42161": {
+              "tokenAddress": "0x488ef48FF9D803087CC96b347FC250244A9e8260"
+            },
+            "43114": {
+              "tokenAddress": "0x5Ac04b69bDE6f67C0bd5D6bA6fD5D816548b066a"
+            }
+          },
+          "oftAdapter": "0xC752F7CefFd8a52e541b256d2C73e65F8baC60c7",
+          "oftVersion": 3,
+          "endpointVersion": 2,
+          "endpointId": 30181,
+          "oftSharedDecimals": 6
+        }
       },
-      "isAcross": false
+      "isAcross": false,
+      "isOFT": true
     },
     {
       "chainId": 6900,
@@ -27215,6 +27998,82 @@
           "10": {
             "minDstGas": 200000
           }
+        }
+      },
+      "isAcross": false,
+      "isOFT": true
+    },
+    {
+      "chainId": 8453,
+      "address": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34",
+      "name": "USDe",
+      "decimals": 18,
+      "symbol": "USDe",
+      "logoURI": "https://s2.coinmarketcap.com/static/img/coins/128x128/29470.png",
+      "tags": [],
+      "extensions": {
+        "bridgeInfo": {
+          "1": {
+            "tokenAddress": "0x4c9EDD5852cd905f086C759E8383e09bff1E68B3"
+          }
+        },
+        "coingeckoId": "mantle-bridged-usde-mantle",
+        "oftInfo": {
+          "peersInfo": {
+            "1": {
+              "tokenAddress": "0x4c9EDD5852cd905f086C759E8383e09bff1E68B3"
+            },
+            "10": {
+              "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+            },
+            "56": {
+              "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+            },
+            "169": {
+              "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+            },
+            "252": {
+              "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+            },
+            "999": {
+              "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+            },
+            "1088": {
+              "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+            },
+            "1923": {
+              "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+            },
+            "2818": {
+              "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+            },
+            "5000": {
+              "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+            },
+            "34443": {
+              "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+            },
+            "42161": {
+              "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+            },
+            "43114": {
+              "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+            },
+            "59144": {
+              "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+            },
+            "81457": {
+              "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+            },
+            "534352": {
+              "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+            }
+          },
+          "oftAdapter": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34",
+          "oftVersion": 3,
+          "endpointVersion": 2,
+          "endpointId": 30184,
+          "oftSharedDecimals": 6
         }
       },
       "isAcross": false,
@@ -28989,7 +29848,7 @@
               "tokenAddress": "0xc53ac24320E3A54C7211e4993c8095078a0Cb3Cf"
             },
             "7777777": {
-              "tokenAddress": "0x3d63825B0d8669307366E6c8202f656b9E91D368"
+              "tokenAddress": "0x3d63825b0d8669307366e6c8202f656b9e91d368"
             }
           },
           "oftAdapter": "0x3d63825B0d8669307366E6c8202f656b9E91D368",
@@ -29185,6 +30044,76 @@
             }
           },
           "oftAdapter": "0x5Bff88cA1442c2496f7E475E9e7786383Bc070c0",
+          "oftVersion": 3,
+          "endpointVersion": 2,
+          "endpointId": 30260,
+          "oftSharedDecimals": 6
+        }
+      },
+      "isAcross": false,
+      "isOFT": true
+    },
+    {
+      "chainId": 34443,
+      "address": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34",
+      "name": "USDe",
+      "decimals": 18,
+      "symbol": "USDe",
+      "logoURI": "https://s2.coinmarketcap.com/static/img/coins/128x128/29470.png",
+      "tags": [],
+      "extensions": {
+        "bridgeInfo": {
+          "1": {
+            "tokenAddress": "0x4c9EDD5852cd905f086C759E8383e09bff1E68B3"
+          }
+        },
+        "coingeckoId": "mantle-bridged-usde-mantle",
+        "oftInfo": {
+          "peersInfo": {
+            "1": {
+              "tokenAddress": "0x4c9EDD5852cd905f086C759E8383e09bff1E68B3"
+            },
+            "10": {
+              "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+            },
+            "56": {
+              "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+            },
+            "169": {
+              "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+            },
+            "252": {
+              "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+            },
+            "1088": {
+              "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+            },
+            "1923": {
+              "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+            },
+            "2818": {
+              "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+            },
+            "5000": {
+              "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+            },
+            "8453": {
+              "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+            },
+            "42161": {
+              "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+            },
+            "59144": {
+              "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+            },
+            "81457": {
+              "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+            },
+            "534352": {
+              "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+            }
+          },
+          "oftAdapter": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34",
           "oftVersion": 3,
           "endpointVersion": 2,
           "endpointId": 30260,
@@ -29787,23 +30716,6 @@
     },
     {
       "chainId": 43114,
-      "name": "Stargate Finance",
-      "symbol": "STG",
-      "logoURI": "https://assets.coingecko.com/coins/images/24413/thumb/STG_LOGO.png?1647654518",
-      "address": "0x2F6F07CDcf3588944Bf4C42aC74ff24bF56e7590",
-      "decimals": 18,
-      "extensions": {
-        "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0xAf5191B0De278C7286d6C7CC6ab6BB8A73bA2Cd6"
-          }
-        }
-      },
-      "isAcross": false,
-      "isOFT": false
-    },
-    {
-      "chainId": 43114,
       "address": "0x37B608519F91f70F2EeB0e5Ed9AF4061722e4F76",
       "name": "Sushi",
       "symbol": "SUSHI",
@@ -30152,6 +31064,46 @@
             }
           },
           "oftAdapter": "0x5Bff88cA1442c2496f7E475E9e7786383Bc070c0",
+          "oftVersion": 3,
+          "endpointVersion": 2,
+          "endpointId": 30106,
+          "oftSharedDecimals": 6
+        }
+      },
+      "isAcross": false,
+      "isOFT": true
+    },
+    {
+      "chainId": 43114,
+      "address": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34",
+      "name": "USDe",
+      "decimals": 18,
+      "symbol": "USDe",
+      "logoURI": "https://s2.coinmarketcap.com/static/img/coins/128x128/29470.png",
+      "tags": [],
+      "extensions": {
+        "coingeckoId": "mantle-bridged-usde-mantle",
+        "bridgeInfo": {
+          "1": {
+            "tokenAddress": "0x4c9EDD5852cd905f086C759E8383e09bff1E68B3"
+          }
+        },
+        "oftInfo": {
+          "peersInfo": {
+            "1": {
+              "tokenAddress": "0x4c9EDD5852cd905f086C759E8383e09bff1E68B3"
+            },
+            "10": {
+              "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+            },
+            "8453": {
+              "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+            },
+            "42161": {
+              "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+            }
+          },
+          "oftAdapter": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34",
           "oftVersion": 3,
           "endpointVersion": 2,
           "endpointId": 30106,
@@ -31246,7 +32198,7 @@
               "tokenAddress": "0xc53ac24320E3A54C7211e4993c8095078a0Cb3Cf"
             },
             "7777777": {
-              "tokenAddress": "0x3d63825B0d8669307366E6c8202f656b9E91D368"
+              "tokenAddress": "0x3d63825b0d8669307366e6c8202f656b9e91d368"
             }
           },
           "oftAdapter": "0x3d63825B0d8669307366E6c8202f656b9E91D368",
@@ -31875,6 +32827,76 @@
     },
     {
       "chainId": 59144,
+      "address": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34",
+      "name": "USDe",
+      "decimals": 18,
+      "symbol": "USDe",
+      "logoURI": "https://s2.coinmarketcap.com/static/img/coins/128x128/29470.png",
+      "tags": [],
+      "extensions": {
+        "bridgeInfo": {
+          "1": {
+            "tokenAddress": "0x4c9EDD5852cd905f086C759E8383e09bff1E68B3"
+          }
+        },
+        "coingeckoId": "mantle-bridged-usde-mantle",
+        "oftInfo": {
+          "peersInfo": {
+            "1": {
+              "tokenAddress": "0x4c9EDD5852cd905f086C759E8383e09bff1E68B3"
+            },
+            "10": {
+              "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+            },
+            "56": {
+              "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+            },
+            "169": {
+              "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+            },
+            "252": {
+              "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+            },
+            "1088": {
+              "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+            },
+            "1923": {
+              "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+            },
+            "2818": {
+              "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+            },
+            "5000": {
+              "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+            },
+            "8453": {
+              "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+            },
+            "34443": {
+              "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+            },
+            "42161": {
+              "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+            },
+            "81457": {
+              "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+            },
+            "534352": {
+              "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+            }
+          },
+          "oftAdapter": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34",
+          "oftVersion": 3,
+          "endpointVersion": 2,
+          "endpointId": 30183,
+          "oftSharedDecimals": 6
+        }
+      },
+      "isAcross": false,
+      "isOFT": true
+    },
+    {
+      "chainId": 59144,
       "address": "0x850CDF416668210ED0c36bfFF5d21921C7adA3b8",
       "name": "swETH",
       "decimals": 18,
@@ -32234,7 +33256,7 @@
               "tokenAddress": "0xc53ac24320E3A54C7211e4993c8095078a0Cb3Cf"
             },
             "7777777": {
-              "tokenAddress": "0x3d63825B0d8669307366E6c8202f656b9E91D368"
+              "tokenAddress": "0x3d63825b0d8669307366e6c8202f656b9e91d368"
             }
           },
           "oftAdapter": "0x3d63825B0d8669307366E6c8202f656b9E91D368",
@@ -32426,6 +33448,37 @@
             }
           },
           "oftAdapter": "0x5Bff88cA1442c2496f7E475E9e7786383Bc070c0",
+          "oftVersion": 3,
+          "endpointVersion": 2,
+          "endpointId": 30362,
+          "oftSharedDecimals": 6
+        }
+      },
+      "isAcross": false,
+      "isOFT": true
+    },
+    {
+      "chainId": 80094,
+      "address": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34",
+      "name": "USDe",
+      "decimals": 18,
+      "symbol": "USDe",
+      "logoURI": "https://s2.coinmarketcap.com/static/img/coins/128x128/29470.png",
+      "tags": [],
+      "extensions": {
+        "bridgeInfo": {
+          "1": {
+            "tokenAddress": "0x4c9EDD5852cd905f086C759E8383e09bff1E68B3"
+          }
+        },
+        "coingeckoId": "mantle-bridged-usde-mantle",
+        "oftInfo": {
+          "peersInfo": {
+            "1": {
+              "tokenAddress": "0x4c9EDD5852cd905f086C759E8383e09bff1E68B3"
+            }
+          },
+          "oftAdapter": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34",
           "oftVersion": 3,
           "endpointVersion": 2,
           "endpointId": 30362,
@@ -33046,6 +34099,76 @@
             }
           },
           "oftAdapter": "0x5Bff88cA1442c2496f7E475E9e7786383Bc070c0",
+          "oftVersion": 3,
+          "endpointVersion": 2,
+          "endpointId": 30243,
+          "oftSharedDecimals": 6
+        }
+      },
+      "isAcross": false,
+      "isOFT": true
+    },
+    {
+      "chainId": 81457,
+      "address": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34",
+      "name": "USDe",
+      "decimals": 18,
+      "symbol": "USDe",
+      "logoURI": "https://s2.coinmarketcap.com/static/img/coins/128x128/29470.png",
+      "tags": [],
+      "extensions": {
+        "bridgeInfo": {
+          "1": {
+            "tokenAddress": "0x4c9EDD5852cd905f086C759E8383e09bff1E68B3"
+          }
+        },
+        "coingeckoId": "mantle-bridged-usde-mantle",
+        "oftInfo": {
+          "peersInfo": {
+            "1": {
+              "tokenAddress": "0x4c9EDD5852cd905f086C759E8383e09bff1E68B3"
+            },
+            "10": {
+              "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+            },
+            "56": {
+              "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+            },
+            "169": {
+              "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+            },
+            "252": {
+              "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+            },
+            "1088": {
+              "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+            },
+            "1923": {
+              "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+            },
+            "2818": {
+              "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+            },
+            "5000": {
+              "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+            },
+            "8453": {
+              "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+            },
+            "34443": {
+              "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+            },
+            "42161": {
+              "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+            },
+            "59144": {
+              "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+            },
+            "534352": {
+              "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+            }
+          },
+          "oftAdapter": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34",
           "oftVersion": 3,
           "endpointVersion": 2,
           "endpointId": 30243,
@@ -33946,6 +35069,76 @@
       },
       "isAcross": true,
       "isOFT": false
+    },
+    {
+      "chainId": 534352,
+      "address": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34",
+      "name": "USDe",
+      "decimals": 18,
+      "symbol": "USDe",
+      "logoURI": "https://s2.coinmarketcap.com/static/img/coins/128x128/29470.png",
+      "tags": [],
+      "extensions": {
+        "bridgeInfo": {
+          "1": {
+            "tokenAddress": "0x4c9EDD5852cd905f086C759E8383e09bff1E68B3"
+          }
+        },
+        "coingeckoId": "mantle-bridged-usde-mantle",
+        "oftInfo": {
+          "peersInfo": {
+            "1": {
+              "tokenAddress": "0x4c9EDD5852cd905f086C759E8383e09bff1E68B3"
+            },
+            "10": {
+              "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+            },
+            "56": {
+              "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+            },
+            "169": {
+              "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+            },
+            "252": {
+              "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+            },
+            "1088": {
+              "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+            },
+            "1923": {
+              "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+            },
+            "2818": {
+              "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+            },
+            "5000": {
+              "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+            },
+            "8453": {
+              "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+            },
+            "34443": {
+              "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+            },
+            "42161": {
+              "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+            },
+            "59144": {
+              "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+            },
+            "81457": {
+              "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+            }
+          },
+          "oftAdapter": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34",
+          "oftVersion": 3,
+          "endpointVersion": 2,
+          "endpointId": 30214,
+          "oftSharedDecimals": 6
+        }
+      },
+      "isAcross": false,
+      "isOFT": true
     },
     {
       "chainId": 534352,
@@ -36254,6 +37447,82 @@
       },
       "isAcross": false,
       "isOFT": false
+    },
+    {
+      "chainId": 42161,
+      "address": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34",
+      "name": "USDe",
+      "decimals": 18,
+      "symbol": "USDe",
+      "logoURI": "https://s2.coinmarketcap.com/static/img/coins/128x128/29470.png",
+      "tags": [],
+      "extensions": {
+        "coingeckoId": "bridged-usde",
+        "bridgeInfo": {
+          "1": {
+            "tokenAddress": "0x4c9EDD5852cd905f086C759E8383e09bff1E68B3"
+          }
+        },
+        "oftInfo": {
+          "peersInfo": {
+            "1": {
+              "tokenAddress": "0x4c9EDD5852cd905f086C759E8383e09bff1E68B3"
+            },
+            "10": {
+              "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+            },
+            "56": {
+              "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+            },
+            "169": {
+              "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+            },
+            "252": {
+              "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+            },
+            "999": {
+              "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+            },
+            "1088": {
+              "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+            },
+            "1923": {
+              "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+            },
+            "2818": {
+              "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+            },
+            "5000": {
+              "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+            },
+            "8453": {
+              "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+            },
+            "34443": {
+              "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+            },
+            "43114": {
+              "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+            },
+            "59144": {
+              "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+            },
+            "81457": {
+              "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+            },
+            "534352": {
+              "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+            }
+          },
+          "oftAdapter": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34",
+          "oftVersion": 3,
+          "endpointVersion": 2,
+          "endpointId": 30110,
+          "oftSharedDecimals": 6
+        }
+      },
+      "isAcross": false,
+      "isOFT": true
     },
     {
       "chainId": 42161,
@@ -38965,23 +40234,6 @@
         "bridgeInfo": {
           "1": {
             "tokenAddress": "0x57e114B691Db790C35207b2e685D4A43181e6061"
-          }
-        }
-      },
-      "isAcross": false,
-      "isOFT": false
-    },
-    {
-      "chainId": 42161,
-      "name": "Stargate Finance",
-      "symbol": "STG",
-      "logoURI": "https://assets.coingecko.com/coins/images/24413/thumb/STG_LOGO.png?1647654518",
-      "address": "0xe018C7a3d175Fb0fE15D70Da2c874d3CA16313EC",
-      "decimals": 18,
-      "extensions": {
-        "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0xAf5191B0De278C7286d6C7CC6ab6BB8A73bA2Cd6"
           }
         }
       },
