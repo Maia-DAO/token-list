@@ -226,8 +226,10 @@ async function main() {
     // 1. Build the normalized map from Across and Stargate tokens.
     const normalizedMap = {}
     const rootTokensMap = {}
-    let inactiveTokensArray = []
     const oftsPerChainMap = {}
+
+    let inactiveTokensArray = []
+
     const activeOFTSet = new Set()
     const inactiveOFTSet = new Set()
 
@@ -286,8 +288,8 @@ async function main() {
         oftsPerChainMap[42161] = (oftsPerChainMap[42161] || 0) + 1
         const oftAmount = oftsPerChainMap[42161]
 
-        // Delete from rootTokensMap if chain OFT count exceeds 5, in exception of partner tokens and already active tokens. If it is inactive, always delete it.
-        if ((oftAmount >= 20 && !PARTNER_TOKEN_SYMBOLS.includes(normalizedToken.symbol) && !activeOFTSet.has(key)) || inactiveOFTSet.has(key)) {
+        // Delete from rootTokensMap if chain OFT count exceeds 5, in exception of partner tokens and already active tokens. If it or any of it's peers are inactive, always delete it.
+        if ((oftAmount >= 20 && !PARTNER_TOKEN_SYMBOLS.includes(normalizedToken.symbol) && !activeOFTSet.has(key)) || inactiveOFTSet.has(key) || (Object.entries(normalizedToken.extensions.peersInfo || {})).some(([, peer]) => inactiveOFTSet.has(peer.tokenAddress.toLowerCase() + '_' + peer.chain))) {
           const tempToken = rootTokensMap[rootKey]
           delete rootTokensMap[rootKey]
           inactiveTokensArray.push(tempToken)
@@ -323,8 +325,8 @@ async function main() {
         }
 
 
-        // Delete from normalizedMap if chain OFT count exceeds 5, in exception of partner tokens and already active tokens. If it is inactive, always delete it.
-        if ((oftAmount >= 5 && !PARTNER_TOKEN_SYMBOLS.includes(normalizedToken.symbol) && !activeOFTSet.has(key)) || inactiveOFTSet.has(key)) {
+        // Delete from normalizedMap if chain OFT count exceeds 5, in exception of partner tokens and already active tokens. If it or any of it's peers are inactive, always delete it.
+        if ((oftAmount >= 5 && !PARTNER_TOKEN_SYMBOLS.includes(normalizedToken.symbol) && !activeOFTSet.has(key)) || inactiveOFTSet.has(key) || (Object.entries(normalizedToken.extensions.peersInfo || {})).some(([, peer]) => inactiveOFTSet.has(peer.tokenAddress.toLowerCase() + '_' + peer.chain))) {
           const tempToken = normalizedMap[key]
           delete normalizedMap[key]
           inactiveTokensArray.push(tempToken)
