@@ -68,16 +68,22 @@ async function getCoinLogo(address, chainId, coingeckoId, coinmarketcapId) {
   // 1) Uniswap assets
   const uniNetworkMap = {
     1: 'ethereum',
-    56: 'binance',
+    56: 'smartchain',
     10: 'optimism',
     42161: 'arbitrum',
     43114: 'avalanchec',
     137: 'polygon',
     8453: 'base',
+    1088: 'metis',
+    42220: 'celo',
+    50: 'xdc',
+    130: 'unichain',
+    100: 'xdai',
+    1868: 'soneium',
+    81457: 'blast'
   }
 
   const network = uniNetworkMap[chainId]
-  console.log("🚀 ~ getCoinLogo ~ network:", network)
   if (network) {
     const url = `https://raw.githubusercontent.com/Uniswap/assets/master/blockchains/${network}/assets/${address}/logo.png`
     const res = await fetchWithRetry(url)
@@ -100,10 +106,13 @@ async function getCoinLogo(address, chainId, coingeckoId, coinmarketcapId) {
     137: 'polygon',
     8453: 'base',
     146: 'sonic',
+    169: 'manta',
+    5000: 'mantle',
+    204: 'opbnb',
+    100: 'xdai'
   }
 
   const networkTrust = trustwalletNetworkMap[chainId]
-  console.log("🚀 ~ getCoinLogo ~ networkTrust:", networkTrust)
   if (networkTrust) {
     const url = `https://raw.githubusercontent.com/trustwallet/assets/refs/heads/master/blockchains/${networkTrust}/assets/${address}/logo.png`
     const res = await fetchWithRetry(url)
