@@ -53,6 +53,18 @@ const PARTNER_TOKEN_SYMBOLS = [
   'Manta mBTC'
 ]
 
+const NATIVE_OFT_ADAPTERS = {
+  [33139]: { ['0xe4103e80c967f58591a1d7ca443ed7e392fed862']: '0x0000000000000000000000000000000000000000' }, // APE has native OFT 
+  [50]: { ['0x147bffe7074a1b70080e6698542d0d41500a87c3']: '0x0000000000000000000000000000000000000000' }, // XDC has native OFT 
+  [30]: { ['0x5ca9fa3e15f0d6841a64e83722898b9a80df7a1e']: '0x0000000000000000000000000000000000000000' }, // RSK has native OFT 
+  [1996]: { ['0x7393ae4835fdfed4f25e46a10d6bdb2fd49a2706']: '0x0000000000000000000000000000000000000000' }, // SANKO has native OFT 
+  [747]: { ['0xd296588850bee2770136464ffdddd78c32f2a07c']: '0x0000000000000000000000000000000000000000' }, // FLOW has native OFT 
+  [1329]: { ['0xbdf43ecadc5cef51b7d1772f722e40596bc1788b']: '0x0000000000000000000000000000000000000000' }, // SEI has native OFT 
+}
+
+
+
+
 // Coingecko and CoinMarketCap ID mappings for specific tokens
 const OVERRIDE_CG_CMC_ID = {
   'frxUSD': { coingeckoId: 'frax-usd', coinMarketCapId: 36039 },
@@ -66,6 +78,7 @@ const OVERRIDE_PEG = {
   'sfrxUSD': { chainName: 'ethereum', address: '0xcf62F905562626CfcDD2261162a51fd02Fc9c5b6' },
   'STG': { chainName: 'ethereum', address: '0xAf5191B0De278C7286d6C7CC6ab6BB8A73bA2Cd6' },
   'ZRO': { chainName: 'ethereum', address: '0x6985884C4392D348587B19cb9eAAf157F13271cd' },
+  'ApeCoin': { chainName: 'ape', address: '0x0000000000000000000000000000000000000000' },
 }
 
 // Override logos for specific tokens
@@ -495,5 +508,6 @@ module.exports = {
   OVERRIDE_LOGO,
   OVERRIDE_CG_CMC_ID,
   PARTNER_TOKEN_SYMBOLS,
-  BLOCKED_TOKEN_SYMBOLS
+  BLOCKED_TOKEN_SYMBOLS,
+  NATIVE_OFT_ADAPTERS
 }
