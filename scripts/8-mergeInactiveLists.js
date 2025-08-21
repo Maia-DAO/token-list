@@ -2,6 +2,8 @@ const fs = require('fs').promises
 const path = require('path')
 const { SupportedChainId } = require('maia-core-sdk')
 const { orderTokens } = require('./orderTokens')
+const { BLOCKED_TOKEN_SYMBOLS } = require('../configs')
+
 
 /**
  * Bumps version by incrementing the patch version.
@@ -98,7 +100,7 @@ async function main() {
         }
         return memo
       }, [])
-      .sort(orderTokens)
+      .sort(orderTokens).filter((t) => !BLOCKED_TOKEN_SYMBOLS.includes(t.symbol))
 
     // --- Write out the combined list ---
     const newInactiveOutput = {

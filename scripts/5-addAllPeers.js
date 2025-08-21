@@ -4,7 +4,7 @@ const { ethers } = require('ethers')
 const { ZERO_ADDRESS } = require('maia-core-sdk')
 const { multiCallWithFallback, mergeExtensions } = require('../helpers')
 const { OFT_V3_ABI, OFT_V2_ABI, ERC20_MINIMAL_ABI } = require('../abi')
-const { OVERRIDE_PEG, OVERRIDE_CG_CMC_ID, SUPPORTED_CHAINS, CHAIN_KEY_TO_ID, CHAIN_KEYS, EID_TO_VERSION, CHAIN_KEY_TO_EID } = require('../configs')
+const { OVERRIDE_PEG, OVERRIDE_CG_CMC_ID, SUPPORTED_CHAINS, CHAIN_KEY_TO_ID, CHAIN_KEYS, EID_TO_VERSION, CHAIN_KEY_TO_EID, NATIVE_OFT_ADAPTERS } = require('../configs')
 
 async function main() {
   // ─── A) Load initial tokens from usableStargateTokens.json ─────────────────────────
@@ -386,12 +386,7 @@ async function main() {
               if (!addrBytes || addrBytes === '0x' || addrBytes === zeroBytes32) continue
 
               const rawAddressHex = '0x' + addrBytes.slice(-40)
-              let peerAddr
-              try {
-                peerAddr = ethers.getAddress(rawAddressHex)
-              } catch {
-                continue
-              }
+              const peerAddr = ethers.getAddress(rawAddressHex)
 
               token.extensions.peersInfo[chainId] = { tokenAddress: peerAddr }
 
@@ -417,18 +412,19 @@ async function main() {
               const decoded = ifaceV2c.decodeFunctionResult('getTrustedRemoteAddress', raw)
               const returned = decoded[0]
               if (!returned || returned === '0x' || returned === ZERO_ADDRESS) continue
+              const peerAddr = ethers.getAddress(returned)
 
-              token.extensions.peersInfo[chainId] = { tokenAddress: returned }
+              token.extensions.peersInfo[chainId] = { tokenAddress: peerAddr }
 
               // If unseen, enqueue new
-              const mapKey = `${destChainKey.toLowerCase()}:${returned.toLowerCase()}`
+              const mapKey = `${destChainKey.toLowerCase()}:${peerAddr.toLowerCase()}`
               if (!seenAdapters.has(mapKey)) {
                 const newIndex = tokens.length
                 const newToken = {
                   chainKey: destChainKey,
                   chainId: CHAIN_KEY_TO_ID[destChainKey],
-                  oftAdapter: returned,
-                  address: returned,
+                  oftAdapter: peerAddr,
+                  address: peerAddr,
                   extensions: {},
                   index: newIndex,
                 }
@@ -505,7 +501,7 @@ async function main() {
     let needsCoingeckoId = !t?.extensions?.coingeckoId
     let needsCoinMarketCapId = !t?.extensions?.coinMarketCapId
 
-    for (const [chainId, peerInfo] of Object.entries(t.extensions.peersInfo)) {
+    for (const [chainId, peerInfo] of Object.entries(t.extensions.peersInfo) || {}) {
       const peerAddress = peerInfo.tokenAddress
 
       const matchingToken = tokens.find(

@@ -2,7 +2,7 @@ const fs = require('fs').promises
 const path = require('path')
 const { getCoinLogo } = require('./getCoinLogo')
 const { orderTokens } = require('./orderTokens')
-const { OVERRIDE_LOGO, PARTNER_TOKEN_SYMBOLS, BLOCKED_TOKEN_SYMBOLS } = require('../configs')
+const { OVERRIDE_LOGO, PARTNER_TOKEN_SYMBOLS, BLOCKED_TOKEN_SYMBOLS, NATIVE_OFT_ADAPTERS } = require('../configs')
 const { mergeExtensions, orderAttributes } = require('../helpers')
 
 // TODO: Add arbitrary Uniswap Token List support
@@ -275,6 +275,8 @@ async function main() {
         continue
       }
 
+      // Skip if token corresponds to OFT adapter for native token OFT.
+
       if (normalizedToken.chainId === 42161) {
         const rootKey = normalizedToken.address.toLowerCase()
 
@@ -285,11 +287,15 @@ async function main() {
         }
 
         const key = normalizedToken.address.toLowerCase() + '_' + 42161
-        oftsPerChainMap[42161] = (oftsPerChainMap[42161] || 0) + 1
+        oftsPerChainMap[42161] = (oftsPerChainMap[42161] || 0)
+        if (normalizedToken.isOFT) oftsPerChainMap[42161] = oftsPerChainMap[42161] + 1
         const oftAmount = oftsPerChainMap[42161]
 
+        const hasPeerInActiveSet = (Object.entries(normalizedToken.extensions.peersInfo || {})).some(([, peer]) => activeOFTSet.has(peer.tokenAddress.toLowerCase() + '_' + peer.chain))
+        const hasPeerInInactiveSet = (Object.entries(normalizedToken.extensions.peersInfo || {})).some(([, peer]) => inactiveOFTSet.has(peer.tokenAddress.toLowerCase() + '_' + peer.chain))
+
         // Delete from rootTokensMap if chain OFT count exceeds 5, in exception of partner tokens and already active tokens. If it or any of it's peers are inactive, always delete it.
-        if ((oftAmount >= 20 && !PARTNER_TOKEN_SYMBOLS.includes(normalizedToken.symbol) && !activeOFTSet.has(key)) || inactiveOFTSet.has(key) || (Object.entries(normalizedToken.extensions.peersInfo || {})).some(([, peer]) => inactiveOFTSet.has(peer.tokenAddress.toLowerCase() + '_' + peer.chain))) {
+        if ((normalizedToken.isOFT && oftAmount >= 20 && !PARTNER_TOKEN_SYMBOLS.includes(normalizedToken.symbol) && !activeOFTSet.has(key) && !hasPeerInActiveSet) || inactiveOFTSet.has(key) || hasPeerInInactiveSet) {
           const tempToken = rootTokensMap[rootKey]
           delete rootTokensMap[rootKey]
           inactiveTokensArray.push(tempToken)
@@ -315,8 +321,14 @@ async function main() {
       } else {
         const key = normalizedToken.address.toLowerCase() + '_' + normalizedToken.chainId
 
-        oftsPerChainMap[normalizedToken.chainId] = (oftsPerChainMap[normalizedToken.chainId] || 0) + 1
+        oftsPerChainMap[normalizedToken.chainId] = (oftsPerChainMap[normalizedToken.chainId] || 0)
+        if (normalizedToken.isOFT) oftsPerChainMap[normalizedToken.chainId] = oftsPerChainMap[normalizedToken.chainId] + 1
         const oftAmount = oftsPerChainMap[normalizedToken.chainId]
+
+
+        const hasPeerInActiveSet = (Object.entries(normalizedToken.extensions.peersInfo || {})).some(([, peer]) => activeOFTSet.has(peer.tokenAddress.toLowerCase() + '_' + peer.chain))
+        const hasPeerInInactiveSet = (Object.entries(normalizedToken.extensions.peersInfo || {})).some(([, peer]) => inactiveOFTSet.has(peer.tokenAddress.toLowerCase() + '_' + peer.chain))
+
 
         if (!normalizedMap[key]) {
           normalizedMap[key] = normalizedToken
@@ -326,7 +338,7 @@ async function main() {
 
 
         // Delete from normalizedMap if chain OFT count exceeds 5, in exception of partner tokens and already active tokens. If it or any of it's peers are inactive, always delete it.
-        if ((oftAmount >= 5 && !PARTNER_TOKEN_SYMBOLS.includes(normalizedToken.symbol) && !activeOFTSet.has(key)) || inactiveOFTSet.has(key) || (Object.entries(normalizedToken.extensions.peersInfo || {})).some(([, peer]) => inactiveOFTSet.has(peer.tokenAddress.toLowerCase() + '_' + peer.chain))) {
+        if ((normalizedToken.isOFT && oftAmount >= 5 && !PARTNER_TOKEN_SYMBOLS.includes(normalizedToken.symbol) && !activeOFTSet.has(key) && !hasPeerInActiveSet) || inactiveOFTSet.has(key) || hasPeerInInactiveSet) {
           const tempToken = normalizedMap[key]
           delete normalizedMap[key]
           inactiveTokensArray.push(tempToken)
@@ -350,19 +362,13 @@ async function main() {
 
         }
       }
-    }
-
-    // Check if there are tokens from inactiveOFTSet that are still in normalizedMap.
-    for (const inactiveToken of inactiveTokensArray) {
-      const key = inactiveToken.address.toLowerCase() + '_' + inactiveToken.chainId
-      if (normalizedMap[key]) {
-        const tempToken = normalizedMap[key]
-        delete normalizedMap[key]
-        inactiveTokensArray.push(tempToken)
-      } else if (rootTokensMap[key]) {
-        const tempToken = rootTokensMap[key]
-        delete rootTokensMap[key]
-        inactiveTokensArray.push(tempToken)
+      if (normalizedToken?.extensions?.oftInfo?.peersInfo && Object.keys(normalizedToken.extensions.oftInfo.peersInfo).length > 0) {
+        for (const [chainId, peerInfo] of Object.entries(normalizedToken.extensions.oftInfo.peersInfo) || {}) {
+          const nativeOFTAdapter = NATIVE_OFT_ADAPTERS[parseInt(chainId)]?.[peerInfo.tokenAddress.toLowerCase()]
+          if (nativeOFTAdapter) {
+            normalizedToken.extensions.oftInfo.peersInfo[chainId] = { tokenAddress: nativeOFTAdapter }
+          }
+        }
       }
     }
 
@@ -371,6 +377,17 @@ async function main() {
       // Remove from inactiveTokensArray if it is in activeOFTSet.
       inactiveTokensArray = inactiveTokensArray.filter((token) => token.address.toLowerCase() + '_' + token.chainId !== key)
     }
+
+    // Check if there are tokens from inactiveOFTSet that are still in normalizedMap.
+    for (const inactiveToken of inactiveTokensArray) {
+      const key = inactiveToken.address.toLowerCase() + '_' + inactiveToken.chainId
+      if (normalizedMap[key]) {
+        delete normalizedMap[key]
+      } else if (rootTokensMap[key]) {
+        delete rootTokensMap[key]
+      }
+    }
+
 
     // 2. Incorporate Uniswap tokens and Ulysses Root Tokens.
     if (Array.isArray(uniswapTokens) && ulyssesData.rootTokens && Array.isArray(ulyssesData.rootTokens)) {
