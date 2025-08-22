@@ -1,8 +1,8 @@
 {
   "name": "Hermes Omnichain Inactive Token List",
-  "timestamp": "1755773961",
+  "timestamp": "1755873398",
   "version": {
-    "major": 83,
+    "major": 84,
     "minor": 0,
     "patch": 0
   },
@@ -13034,44 +13034,6 @@
       "symbol": "Bez",
       "decimals": 18,
       "extensions": {}
-    },
-    {
-      "chainId": 1,
-      "address": "0x8A47e412a865198b9d5f10fF2e54f788f1696195",
-      "name": "Wrapped NIBI",
-      "decimals": 18,
-      "symbol": "WNIBI",
-      "tags": [],
-      "extensions": {
-        "bridgeInfo": {
-          "6900": {
-            "tokenAddress": "0x0000000000000000000000000000000000000000"
-          }
-        },
-        "oftInfo": {
-          "peersInfo": {
-            "137": {
-              "tokenAddress": "0x02f6FD682027a148d73777034CB85D14f231A678"
-            },
-            "6900": {
-              "tokenAddress": "0x0CaCF669f8446BeCA826913a3c6B96aCD4b02a97"
-            },
-            "8453": {
-              "tokenAddress": "0x3aDE6652F203d919697f8577F75Eebb989A5C586"
-            },
-            "42161": {
-              "tokenAddress": "0x80cf4350c702D466ef65305A73726349e98d7f57"
-            }
-          },
-          "oftAdapter": "0x8A47e412a865198b9d5f10fF2e54f788f1696195",
-          "oftVersion": 3,
-          "endpointVersion": 2,
-          "endpointId": 30101,
-          "oftSharedDecimals": 6
-        }
-      },
-      "isAcross": false,
-      "isOFT": true
     },
     {
       "chainId": 1,
@@ -42707,44 +42669,6 @@
     },
     {
       "chainId": 137,
-      "address": "0x02f6FD682027a148d73777034CB85D14f231A678",
-      "name": "Wrapped NIBI",
-      "decimals": 18,
-      "symbol": "WNIBI",
-      "tags": [],
-      "extensions": {
-        "bridgeInfo": {
-          "6900": {
-            "tokenAddress": "0x0000000000000000000000000000000000000000"
-          }
-        },
-        "oftInfo": {
-          "peersInfo": {
-            "1": {
-              "tokenAddress": "0x8A47e412a865198b9d5f10fF2e54f788f1696195"
-            },
-            "6900": {
-              "tokenAddress": "0x0CaCF669f8446BeCA826913a3c6B96aCD4b02a97"
-            },
-            "8453": {
-              "tokenAddress": "0x3aDE6652F203d919697f8577F75Eebb989A5C586"
-            },
-            "42161": {
-              "tokenAddress": "0x80cf4350c702D466ef65305A73726349e98d7f57"
-            }
-          },
-          "oftAdapter": "0x02f6FD682027a148d73777034CB85D14f231A678",
-          "oftVersion": 3,
-          "endpointVersion": 2,
-          "endpointId": 30109,
-          "oftSharedDecimals": 6
-        }
-      },
-      "isAcross": false,
-      "isOFT": true
-    },
-    {
-      "chainId": 137,
       "address": "0x034b2090b579228482520c589dbD397c53Fc51cC",
       "name": "APY vision",
       "symbol": "VISION",
@@ -65015,69 +64939,6 @@
     },
     {
       "chainId": 6900,
-      "address": "0x0CaCF669f8446BeCA826913a3c6B96aCD4b02a97",
-      "name": "Wrapped Nibiru",
-      "decimals": 18,
-      "symbol": "WNIBI",
-      "tags": [],
-      "extensions": {
-        "oftInfo": {
-          "peersInfo": {
-            "1": {
-              "tokenAddress": "0x8A47e412a865198b9d5f10fF2e54f788f1696195"
-            },
-            "137": {
-              "tokenAddress": "0x02f6FD682027a148d73777034CB85D14f231A678"
-            },
-            "8453": {
-              "tokenAddress": "0x3aDE6652F203d919697f8577F75Eebb989A5C586"
-            },
-            "42161": {
-              "tokenAddress": "0x80cf4350c702D466ef65305A73726349e98d7f57"
-            }
-          },
-          "oftAdapter": "0x4DF4eFa0a3707b6Cc964F62042E8a303A0376F54",
-          "oftVersion": 3,
-          "endpointVersion": 2,
-          "endpointId": 30369,
-          "oftSharedDecimals": 6
-        }
-      },
-      "isAcross": false,
-      "isOFT": true
-    },
-    {
-      "chainId": 6900,
-      "address": "0x1D63c9409bb41b2Ab43259b843fF32c839A9ffa2",
-      "name": "SPELL",
-      "decimals": 18,
-      "symbol": "SPELL",
-      "tags": [],
-      "extensions": {
-        "oftInfo": {
-          "peersInfo": {
-            "1": {
-              "tokenAddress": "0x090185f2135308BaD17527004364eBcC2D37e5F6"
-            },
-            "42161": {
-              "tokenAddress": "0x34FbFB3e95011956aBAD82796f466bA88895f214"
-            },
-            "80094": {
-              "tokenAddress": "0x22581e7E93d66977849D094006fC2cF3aB9C8FfA"
-            }
-          },
-          "oftAdapter": "0x1D63c9409bb41b2Ab43259b843fF32c839A9ffa2",
-          "oftVersion": 3,
-          "endpointVersion": 2,
-          "endpointId": 30369,
-          "oftSharedDecimals": 6
-        }
-      },
-      "isAcross": false,
-      "isOFT": true
-    },
-    {
-      "chainId": 6900,
       "address": "0x1d1715ecE22A6Ab6349196e7054E61de3Ac2Ea3D",
       "name": "ynETH MAX",
       "decimals": 18,
@@ -68146,44 +68007,6 @@
             }
           },
           "oftAdapter": "0x3E12b9d6A4D12cd9b4a6d613872d0Eb32f68b380",
-          "oftVersion": 3,
-          "endpointVersion": 2,
-          "endpointId": 30184,
-          "oftSharedDecimals": 6
-        }
-      },
-      "isAcross": false,
-      "isOFT": true
-    },
-    {
-      "chainId": 8453,
-      "address": "0x3aDE6652F203d919697f8577F75Eebb989A5C586",
-      "name": "Wrapped NIBI",
-      "decimals": 18,
-      "symbol": "WNIBI",
-      "tags": [],
-      "extensions": {
-        "bridgeInfo": {
-          "6900": {
-            "tokenAddress": "0x0000000000000000000000000000000000000000"
-          }
-        },
-        "oftInfo": {
-          "peersInfo": {
-            "1": {
-              "tokenAddress": "0x8A47e412a865198b9d5f10fF2e54f788f1696195"
-            },
-            "137": {
-              "tokenAddress": "0x02f6FD682027a148d73777034CB85D14f231A678"
-            },
-            "6900": {
-              "tokenAddress": "0x0CaCF669f8446BeCA826913a3c6B96aCD4b02a97"
-            },
-            "42161": {
-              "tokenAddress": "0x80cf4350c702D466ef65305A73726349e98d7f57"
-            }
-          },
-          "oftAdapter": "0x3aDE6652F203d919697f8577F75Eebb989A5C586",
           "oftVersion": 3,
           "endpointVersion": 2,
           "endpointId": 30184,
@@ -79129,6 +78952,7 @@
       "name": "SPELL",
       "decimals": 18,
       "symbol": "SPELL",
+      "logoURI": "https://assets.coingecko.com/coins/images/15861/thumb/abracadabra-3.png?1622544862",
       "tags": [],
       "extensions": {
         "oftInfo": {
@@ -82883,44 +82707,6 @@
           }
         }
       }
-    },
-    {
-      "chainId": 42161,
-      "address": "0x80cf4350c702D466ef65305A73726349e98d7f57",
-      "name": "Wrapped NIBI",
-      "decimals": 18,
-      "symbol": "WNIBI",
-      "tags": [],
-      "extensions": {
-        "bridgeInfo": {
-          "6900": {
-            "tokenAddress": "0x0000000000000000000000000000000000000000"
-          }
-        },
-        "oftInfo": {
-          "peersInfo": {
-            "1": {
-              "tokenAddress": "0x8A47e412a865198b9d5f10fF2e54f788f1696195"
-            },
-            "137": {
-              "tokenAddress": "0x02f6FD682027a148d73777034CB85D14f231A678"
-            },
-            "6900": {
-              "tokenAddress": "0x0CaCF669f8446BeCA826913a3c6B96aCD4b02a97"
-            },
-            "8453": {
-              "tokenAddress": "0x3aDE6652F203d919697f8577F75Eebb989A5C586"
-            }
-          },
-          "oftAdapter": "0x80cf4350c702D466ef65305A73726349e98d7f57",
-          "oftVersion": 3,
-          "endpointVersion": 2,
-          "endpointId": 30110,
-          "oftSharedDecimals": 6
-        }
-      },
-      "isAcross": false,
-      "isOFT": true
     },
     {
       "chainId": 42161,
@@ -98364,6 +98150,7 @@
       "name": "SPELL",
       "decimals": 18,
       "symbol": "SPELL",
+      "logoURI": "https://assets.coingecko.com/coins/images/15861/thumb/abracadabra-3.png?1622544862",
       "tags": [],
       "extensions": {
         "oftInfo": {

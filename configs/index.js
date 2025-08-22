@@ -91,6 +91,8 @@ const OVERRIDE_LOGO = {
   'IRL': 'https://s2.coinmarketcap.com/static/img/coins/128x128/20858.png',
   'LYM': 'https://s2.coinmarketcap.com/static/img/coins/128x128/2554.png',
   'FRAX': 'https://raw.githubusercontent.com/trustwallet/assets/refs/heads/master/blockchains/ethereum/assets/0x853d955aCEf822Db058eb8505911ED77F175b99e/logo.png',
+  'SPELL': 'https://assets.coingecko.com/coins/images/15861/thumb/abracadabra-3.png?1622544862',
+  'WNIBI': 'https://images-ext-1.discordapp.net/external/tM3n2iub1SLOqiey4mkfnl4Lfe4LR6ijT-Ixv7juEu8/https/silverswap.io/tokens/nibiru/WNIBI.png?format=webp&quality=lossless&width=450&height=450',
 }
 
 // Extended supported chain IDs 

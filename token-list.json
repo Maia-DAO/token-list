@@ -1,8 +1,8 @@
 {
   "name": "Hermes Omnichain Token List",
-  "timestamp": "1755773960",
+  "timestamp": "1755873398",
   "version": {
-    "major": 137,
+    "major": 138,
     "minor": 0,
     "patch": 0
   },
@@ -5419,6 +5419,45 @@
       },
       "isAcross": false,
       "isOFT": false
+    },
+    {
+      "chainId": 1,
+      "address": "0x8A47e412a865198b9d5f10fF2e54f788f1696195",
+      "name": "Wrapped NIBI",
+      "decimals": 18,
+      "symbol": "WNIBI",
+      "logoURI": "https://images-ext-1.discordapp.net/external/tM3n2iub1SLOqiey4mkfnl4Lfe4LR6ijT-Ixv7juEu8/https/silverswap.io/tokens/nibiru/WNIBI.png?format=webp&quality=lossless&width=450&height=450",
+      "tags": [],
+      "extensions": {
+        "bridgeInfo": {
+          "6900": {
+            "tokenAddress": "0x0000000000000000000000000000000000000000"
+          }
+        },
+        "oftInfo": {
+          "peersInfo": {
+            "137": {
+              "tokenAddress": "0x02f6FD682027a148d73777034CB85D14f231A678"
+            },
+            "6900": {
+              "tokenAddress": "0x0CaCF669f8446BeCA826913a3c6B96aCD4b02a97"
+            },
+            "8453": {
+              "tokenAddress": "0x3aDE6652F203d919697f8577F75Eebb989A5C586"
+            },
+            "42161": {
+              "tokenAddress": "0x80cf4350c702D466ef65305A73726349e98d7f57"
+            }
+          },
+          "oftAdapter": "0x8A47e412a865198b9d5f10fF2e54f788f1696195",
+          "oftVersion": 3,
+          "endpointVersion": 2,
+          "endpointId": 30101,
+          "oftSharedDecimals": 6
+        }
+      },
+      "isAcross": false,
+      "isOFT": true
     },
     {
       "chainId": 1,
@@ -19922,6 +19961,45 @@
     },
     {
       "chainId": 137,
+      "address": "0x02f6FD682027a148d73777034CB85D14f231A678",
+      "name": "Wrapped NIBI",
+      "decimals": 18,
+      "symbol": "WNIBI",
+      "logoURI": "https://images-ext-1.discordapp.net/external/tM3n2iub1SLOqiey4mkfnl4Lfe4LR6ijT-Ixv7juEu8/https/silverswap.io/tokens/nibiru/WNIBI.png?format=webp&quality=lossless&width=450&height=450",
+      "tags": [],
+      "extensions": {
+        "bridgeInfo": {
+          "6900": {
+            "tokenAddress": "0x0000000000000000000000000000000000000000"
+          }
+        },
+        "oftInfo": {
+          "peersInfo": {
+            "1": {
+              "tokenAddress": "0x8A47e412a865198b9d5f10fF2e54f788f1696195"
+            },
+            "6900": {
+              "tokenAddress": "0x0CaCF669f8446BeCA826913a3c6B96aCD4b02a97"
+            },
+            "8453": {
+              "tokenAddress": "0x3aDE6652F203d919697f8577F75Eebb989A5C586"
+            },
+            "42161": {
+              "tokenAddress": "0x80cf4350c702D466ef65305A73726349e98d7f57"
+            }
+          },
+          "oftAdapter": "0x02f6FD682027a148d73777034CB85D14f231A678",
+          "oftVersion": 3,
+          "endpointVersion": 2,
+          "endpointId": 30109,
+          "oftSharedDecimals": 6
+        }
+      },
+      "isAcross": false,
+      "isOFT": true
+    },
+    {
+      "chainId": 137,
       "address": "0x04bEa9FCE76943E90520489cCAb84E84C0198E29",
       "name": "AirSwap",
       "symbol": "AST",
@@ -29656,6 +29734,71 @@
     },
     {
       "chainId": 6900,
+      "address": "0x0CaCF669f8446BeCA826913a3c6B96aCD4b02a97",
+      "name": "Wrapped Nibiru",
+      "decimals": 18,
+      "symbol": "WNIBI",
+      "logoURI": "https://images-ext-1.discordapp.net/external/tM3n2iub1SLOqiey4mkfnl4Lfe4LR6ijT-Ixv7juEu8/https/silverswap.io/tokens/nibiru/WNIBI.png?format=webp&quality=lossless&width=450&height=450",
+      "tags": [],
+      "extensions": {
+        "oftInfo": {
+          "peersInfo": {
+            "1": {
+              "tokenAddress": "0x8A47e412a865198b9d5f10fF2e54f788f1696195"
+            },
+            "137": {
+              "tokenAddress": "0x02f6FD682027a148d73777034CB85D14f231A678"
+            },
+            "8453": {
+              "tokenAddress": "0x3aDE6652F203d919697f8577F75Eebb989A5C586"
+            },
+            "42161": {
+              "tokenAddress": "0x80cf4350c702D466ef65305A73726349e98d7f57"
+            }
+          },
+          "oftAdapter": "0x4DF4eFa0a3707b6Cc964F62042E8a303A0376F54",
+          "oftVersion": 3,
+          "endpointVersion": 2,
+          "endpointId": 30369,
+          "oftSharedDecimals": 6
+        }
+      },
+      "isAcross": false,
+      "isOFT": true
+    },
+    {
+      "chainId": 6900,
+      "address": "0x1D63c9409bb41b2Ab43259b843fF32c839A9ffa2",
+      "name": "SPELL",
+      "decimals": 18,
+      "symbol": "SPELL",
+      "logoURI": "https://assets.coingecko.com/coins/images/15861/thumb/abracadabra-3.png?1622544862",
+      "tags": [],
+      "extensions": {
+        "oftInfo": {
+          "peersInfo": {
+            "1": {
+              "tokenAddress": "0x090185f2135308BaD17527004364eBcC2D37e5F6"
+            },
+            "42161": {
+              "tokenAddress": "0x34FbFB3e95011956aBAD82796f466bA88895f214"
+            },
+            "80094": {
+              "tokenAddress": "0x22581e7E93d66977849D094006fC2cF3aB9C8FfA"
+            }
+          },
+          "oftAdapter": "0x1D63c9409bb41b2Ab43259b843fF32c839A9ffa2",
+          "oftVersion": 3,
+          "endpointVersion": 2,
+          "endpointId": 30369,
+          "oftSharedDecimals": 6
+        }
+      },
+      "isAcross": false,
+      "isOFT": true
+    },
+    {
+      "chainId": 6900,
       "address": "0x84f682626302EA7BCA2A7c338b84863292131319",
       "name": "USDa saving token",
       "decimals": 18,
@@ -30242,6 +30385,45 @@
       "decimals": 18,
       "symbol": "LUSD",
       "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/refs/heads/master/blockchains/ethereum/assets/0x5f98805A4E8be255a32880FDeC7F6728C6568bA0/logo.png"
+    },
+    {
+      "chainId": 8453,
+      "address": "0x3aDE6652F203d919697f8577F75Eebb989A5C586",
+      "name": "Wrapped NIBI",
+      "decimals": 18,
+      "symbol": "WNIBI",
+      "logoURI": "https://images-ext-1.discordapp.net/external/tM3n2iub1SLOqiey4mkfnl4Lfe4LR6ijT-Ixv7juEu8/https/silverswap.io/tokens/nibiru/WNIBI.png?format=webp&quality=lossless&width=450&height=450",
+      "tags": [],
+      "extensions": {
+        "bridgeInfo": {
+          "6900": {
+            "tokenAddress": "0x0000000000000000000000000000000000000000"
+          }
+        },
+        "oftInfo": {
+          "peersInfo": {
+            "1": {
+              "tokenAddress": "0x8A47e412a865198b9d5f10fF2e54f788f1696195"
+            },
+            "137": {
+              "tokenAddress": "0x02f6FD682027a148d73777034CB85D14f231A678"
+            },
+            "6900": {
+              "tokenAddress": "0x0CaCF669f8446BeCA826913a3c6B96aCD4b02a97"
+            },
+            "42161": {
+              "tokenAddress": "0x80cf4350c702D466ef65305A73726349e98d7f57"
+            }
+          },
+          "oftAdapter": "0x3aDE6652F203d919697f8577F75Eebb989A5C586",
+          "oftVersion": 3,
+          "endpointVersion": 2,
+          "endpointId": 30184,
+          "oftSharedDecimals": 6
+        }
+      },
+      "isAcross": false,
+      "isOFT": true
     },
     {
       "name": "0x Protocol Token",
@@ -42053,6 +42235,45 @@
             }
           },
           "oftAdapter": "0x80Eede496655FB9047dd39d9f418d5483ED600df",
+          "oftVersion": 3,
+          "endpointVersion": 2,
+          "endpointId": 30110,
+          "oftSharedDecimals": 6
+        }
+      },
+      "isAcross": false,
+      "isOFT": true
+    },
+    {
+      "chainId": 42161,
+      "address": "0x80cf4350c702D466ef65305A73726349e98d7f57",
+      "name": "Wrapped NIBI",
+      "decimals": 18,
+      "symbol": "WNIBI",
+      "logoURI": "https://images-ext-1.discordapp.net/external/tM3n2iub1SLOqiey4mkfnl4Lfe4LR6ijT-Ixv7juEu8/https/silverswap.io/tokens/nibiru/WNIBI.png?format=webp&quality=lossless&width=450&height=450",
+      "tags": [],
+      "extensions": {
+        "bridgeInfo": {
+          "6900": {
+            "tokenAddress": "0x0000000000000000000000000000000000000000"
+          }
+        },
+        "oftInfo": {
+          "peersInfo": {
+            "1": {
+              "tokenAddress": "0x8A47e412a865198b9d5f10fF2e54f788f1696195"
+            },
+            "137": {
+              "tokenAddress": "0x02f6FD682027a148d73777034CB85D14f231A678"
+            },
+            "6900": {
+              "tokenAddress": "0x0CaCF669f8446BeCA826913a3c6B96aCD4b02a97"
+            },
+            "8453": {
+              "tokenAddress": "0x3aDE6652F203d919697f8577F75Eebb989A5C586"
+            }
+          },
+          "oftAdapter": "0x80cf4350c702D466ef65305A73726349e98d7f57",
           "oftVersion": 3,
           "endpointVersion": 2,
           "endpointId": 30110,
