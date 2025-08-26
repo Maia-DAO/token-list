@@ -1,8 +1,8 @@
 {
   "name": "Hermes Omnichain Token List",
-  "timestamp": "1756217242",
+  "timestamp": "1756228678",
   "version": {
-    "major": 141,
+    "major": 144,
     "minor": 0,
     "patch": 0
   },
@@ -9335,6 +9335,63 @@
     },
     {
       "chainId": 1,
+      "address": "0xf6718b2701D4a6498eF77D7c152b2137Ab28b8A3",
+      "name": "Lorenzo stBTC",
+      "decimals": 18,
+      "symbol": "stBTC",
+      "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/refs/heads/master/blockchains/ethereum/assets/0xf6718b2701D4a6498eF77D7c152b2137Ab28b8A3/logo.png",
+      "tags": [],
+      "extensions": {
+        "bridgeInfo": {
+          "56": {
+            "tokenAddress": "0xf6718b2701D4a6498eF77D7c152b2137Ab28b8A3"
+          },
+          "80094": {
+            "tokenAddress": "0xf6718b2701D4a6498eF77D7c152b2137Ab28b8A3"
+          }
+        },
+        "oftInfo": {
+          "peersInfo": {
+            "30": {
+              "tokenAddress": "0xf6718b2701D4a6498eF77D7c152b2137Ab28b8A3"
+            },
+            "56": {
+              "tokenAddress": "0xf6718b2701D4a6498eF77D7c152b2137Ab28b8A3"
+            },
+            "146": {
+              "tokenAddress": "0xf6718b2701D4a6498eF77D7c152b2137Ab28b8A3"
+            },
+            "1116": {
+              "tokenAddress": "0xf6718b2701D4a6498eF77D7c152b2137Ab28b8A3"
+            },
+            "1923": {
+              "tokenAddress": "0xf6718b2701D4a6498eF77D7c152b2137Ab28b8A3"
+            },
+            "34443": {
+              "tokenAddress": "0xf6718b2701D4a6498eF77D7c152b2137Ab28b8A3"
+            },
+            "80094": {
+              "tokenAddress": "0xf6718b2701D4a6498eF77D7c152b2137Ab28b8A3"
+            },
+            "98866": {
+              "tokenAddress": "0xf6718b2701D4a6498eF77D7c152b2137Ab28b8A3"
+            },
+            "167000": {
+              "tokenAddress": "0xf6718b2701D4a6498eF77D7c152b2137Ab28b8A3"
+            }
+          },
+          "oftAdapter": "0xbcE9988376C6b9c0c035bdbc9060568031d51130",
+          "oftVersion": 3,
+          "endpointVersion": 2,
+          "endpointId": 30101,
+          "oftSharedDecimals": 6
+        }
+      },
+      "isAcross": false,
+      "isOFT": true
+    },
+    {
+      "chainId": 1,
       "address": "0xf939E0A03FB07F59A73314E73794Be0E57ac1b4E",
       "name": "Curve.Fi USD Stablecoin",
       "decimals": 18,
@@ -11425,6 +11482,39 @@
             }
           },
           "oftAdapter": "0x1a594d5d5d1c426281C1064B07f23F57B2716B61",
+          "oftVersion": 3,
+          "endpointVersion": 2,
+          "endpointId": 30333,
+          "oftSharedDecimals": 6
+        }
+      },
+      "isAcross": false,
+      "isOFT": true
+    },
+    {
+      "chainId": 30,
+      "address": "0xf6718b2701D4a6498eF77D7c152b2137Ab28b8A3",
+      "name": "Lorenzo stBTC",
+      "decimals": 18,
+      "symbol": "stBTC",
+      "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/refs/heads/master/blockchains/ethereum/assets/0xf6718b2701D4a6498eF77D7c152b2137Ab28b8A3/logo.png",
+      "tags": [],
+      "extensions": {
+        "bridgeInfo": {
+          "1": {
+            "tokenAddress": "0xf6718b2701D4a6498eF77D7c152b2137Ab28b8A3"
+          }
+        },
+        "oftInfo": {
+          "peersInfo": {
+            "1": {
+              "tokenAddress": "0xf6718b2701D4a6498eF77D7c152b2137Ab28b8A3"
+            },
+            "56": {
+              "tokenAddress": "0xf6718b2701D4a6498eF77D7c152b2137Ab28b8A3"
+            }
+          },
+          "oftAdapter": "0xbcE9988376C6b9c0c035bdbc9060568031d51130",
           "oftVersion": 3,
           "endpointVersion": 2,
           "endpointId": 30333,
@@ -14205,6 +14295,60 @@
       },
       "isAcross": false,
       "isOFT": false
+    },
+    {
+      "chainId": 56,
+      "address": "0xf6718b2701D4a6498eF77D7c152b2137Ab28b8A3",
+      "name": "Lorenzo stBTC",
+      "decimals": 18,
+      "symbol": "stBTC",
+      "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/refs/heads/master/blockchains/ethereum/assets/0xf6718b2701D4a6498eF77D7c152b2137Ab28b8A3/logo.png",
+      "tags": [],
+      "extensions": {
+        "bridgeInfo": {
+          "1": {
+            "tokenAddress": "0xf6718b2701D4a6498eF77D7c152b2137Ab28b8A3"
+          }
+        },
+        "oftInfo": {
+          "peersInfo": {
+            "1": {
+              "tokenAddress": "0xf6718b2701D4a6498eF77D7c152b2137Ab28b8A3"
+            },
+            "30": {
+              "tokenAddress": "0xf6718b2701D4a6498eF77D7c152b2137Ab28b8A3"
+            },
+            "146": {
+              "tokenAddress": "0xf6718b2701D4a6498eF77D7c152b2137Ab28b8A3"
+            },
+            "1116": {
+              "tokenAddress": "0xf6718b2701D4a6498eF77D7c152b2137Ab28b8A3"
+            },
+            "1923": {
+              "tokenAddress": "0xf6718b2701D4a6498eF77D7c152b2137Ab28b8A3"
+            },
+            "34443": {
+              "tokenAddress": "0xf6718b2701D4a6498eF77D7c152b2137Ab28b8A3"
+            },
+            "80094": {
+              "tokenAddress": "0xf6718b2701D4a6498eF77D7c152b2137Ab28b8A3"
+            },
+            "98866": {
+              "tokenAddress": "0xf6718b2701D4a6498eF77D7c152b2137Ab28b8A3"
+            },
+            "167000": {
+              "tokenAddress": "0xf6718b2701D4a6498eF77D7c152b2137Ab28b8A3"
+            }
+          },
+          "oftAdapter": "0xbcE9988376C6b9c0c035bdbc9060568031d51130",
+          "oftVersion": 3,
+          "endpointVersion": 2,
+          "endpointId": 30102,
+          "oftSharedDecimals": 6
+        }
+      },
+      "isAcross": false,
+      "isOFT": true
     },
     {
       "chainId": 56,
@@ -24698,6 +24842,39 @@
       "logoURI": "https://beethoven-assets.s3.eu-central-1.amazonaws.com/token-beets-staked-sonic.png"
     },
     {
+      "chainId": 146,
+      "address": "0xf6718b2701D4a6498eF77D7c152b2137Ab28b8A3",
+      "name": "Lorenzo stBTC",
+      "decimals": 18,
+      "symbol": "stBTC",
+      "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/refs/heads/master/blockchains/ethereum/assets/0xf6718b2701D4a6498eF77D7c152b2137Ab28b8A3/logo.png",
+      "tags": [],
+      "extensions": {
+        "bridgeInfo": {
+          "1": {
+            "tokenAddress": "0xf6718b2701D4a6498eF77D7c152b2137Ab28b8A3"
+          }
+        },
+        "oftInfo": {
+          "peersInfo": {
+            "1": {
+              "tokenAddress": "0xf6718b2701D4a6498eF77D7c152b2137Ab28b8A3"
+            },
+            "56": {
+              "tokenAddress": "0xf6718b2701D4a6498eF77D7c152b2137Ab28b8A3"
+            }
+          },
+          "oftAdapter": "0xbcE9988376C6b9c0c035bdbc9060568031d51130",
+          "oftVersion": 3,
+          "endpointVersion": 2,
+          "endpointId": 30332,
+          "oftSharedDecimals": 6
+        }
+      },
+      "isAcross": false,
+      "isOFT": true
+    },
+    {
       "chainId": 169,
       "address": "0x0Dc808adcE2099A9F62AA87D9670745AbA741746",
       "name": "Wrapped Ether",
@@ -27736,6 +27913,39 @@
       "isOFT": false
     },
     {
+      "chainId": 1116,
+      "address": "0xf6718b2701D4a6498eF77D7c152b2137Ab28b8A3",
+      "name": "Lorenzo stBTC",
+      "decimals": 18,
+      "symbol": "stBTC",
+      "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/refs/heads/master/blockchains/ethereum/assets/0xf6718b2701D4a6498eF77D7c152b2137Ab28b8A3/logo.png",
+      "tags": [],
+      "extensions": {
+        "bridgeInfo": {
+          "1": {
+            "tokenAddress": "0xf6718b2701D4a6498eF77D7c152b2137Ab28b8A3"
+          }
+        },
+        "oftInfo": {
+          "peersInfo": {
+            "1": {
+              "tokenAddress": "0xf6718b2701D4a6498eF77D7c152b2137Ab28b8A3"
+            },
+            "56": {
+              "tokenAddress": "0xf6718b2701D4a6498eF77D7c152b2137Ab28b8A3"
+            }
+          },
+          "oftAdapter": "0xbcE9988376C6b9c0c035bdbc9060568031d51130",
+          "oftVersion": 3,
+          "endpointVersion": 2,
+          "endpointId": 30153,
+          "oftSharedDecimals": 6
+        }
+      },
+      "isAcross": false,
+      "isOFT": true
+    },
+    {
       "chainId": 1135,
       "address": "0x03C7054BCB39f7b2e5B2c7AcB37583e32D70Cfa3",
       "name": "Wrapped Bitcoin",
@@ -29266,6 +29476,39 @@
             }
           },
           "oftAdapter": "0xc3eACf0612346366Db554C991D7858716db09f58",
+          "oftVersion": 3,
+          "endpointVersion": 2,
+          "endpointId": 30335,
+          "oftSharedDecimals": 6
+        }
+      },
+      "isAcross": false,
+      "isOFT": true
+    },
+    {
+      "chainId": 1923,
+      "address": "0xf6718b2701D4a6498eF77D7c152b2137Ab28b8A3",
+      "name": "Lorenzo stBTC",
+      "decimals": 18,
+      "symbol": "stBTC",
+      "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/refs/heads/master/blockchains/ethereum/assets/0xf6718b2701D4a6498eF77D7c152b2137Ab28b8A3/logo.png",
+      "tags": [],
+      "extensions": {
+        "bridgeInfo": {
+          "1": {
+            "tokenAddress": "0xf6718b2701D4a6498eF77D7c152b2137Ab28b8A3"
+          }
+        },
+        "oftInfo": {
+          "peersInfo": {
+            "1": {
+              "tokenAddress": "0xf6718b2701D4a6498eF77D7c152b2137Ab28b8A3"
+            },
+            "56": {
+              "tokenAddress": "0xf6718b2701D4a6498eF77D7c152b2137Ab28b8A3"
+            }
+          },
+          "oftAdapter": "0xbcE9988376C6b9c0c035bdbc9060568031d51130",
           "oftVersion": 3,
           "endpointVersion": 2,
           "endpointId": 30335,
@@ -33846,6 +34089,39 @@
       "isOFT": false
     },
     {
+      "chainId": 34443,
+      "address": "0xf6718b2701D4a6498eF77D7c152b2137Ab28b8A3",
+      "name": "Lorenzo stBTC",
+      "decimals": 18,
+      "symbol": "stBTC",
+      "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/refs/heads/master/blockchains/ethereum/assets/0xf6718b2701D4a6498eF77D7c152b2137Ab28b8A3/logo.png",
+      "tags": [],
+      "extensions": {
+        "bridgeInfo": {
+          "1": {
+            "tokenAddress": "0xf6718b2701D4a6498eF77D7c152b2137Ab28b8A3"
+          }
+        },
+        "oftInfo": {
+          "peersInfo": {
+            "1": {
+              "tokenAddress": "0xf6718b2701D4a6498eF77D7c152b2137Ab28b8A3"
+            },
+            "56": {
+              "tokenAddress": "0xf6718b2701D4a6498eF77D7c152b2137Ab28b8A3"
+            }
+          },
+          "oftAdapter": "0xbcE9988376C6b9c0c035bdbc9060568031d51130",
+          "oftVersion": 3,
+          "endpointVersion": 2,
+          "endpointId": 30260,
+          "oftSharedDecimals": 6
+        }
+      },
+      "isAcross": false,
+      "isOFT": true
+    },
+    {
       "chainId": 42161,
       "globalAddress": "0x00000000ea00F3F4000e7Ed5Ed91965b19f1009B",
       "underlyingAddress": "0x00000000ea00F3F4000e7Ed5Ed91965b19f1009B",
@@ -37554,6 +37830,39 @@
       "isAcross": false
     },
     {
+      "chainId": 80094,
+      "address": "0xf6718b2701D4a6498eF77D7c152b2137Ab28b8A3",
+      "name": "Lorenzo stBTC",
+      "decimals": 18,
+      "symbol": "stBTC",
+      "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/refs/heads/master/blockchains/ethereum/assets/0xf6718b2701D4a6498eF77D7c152b2137Ab28b8A3/logo.png",
+      "tags": [],
+      "extensions": {
+        "bridgeInfo": {
+          "1": {
+            "tokenAddress": "0xf6718b2701D4a6498eF77D7c152b2137Ab28b8A3"
+          }
+        },
+        "oftInfo": {
+          "peersInfo": {
+            "1": {
+              "tokenAddress": "0xf6718b2701D4a6498eF77D7c152b2137Ab28b8A3"
+            },
+            "56": {
+              "tokenAddress": "0xf6718b2701D4a6498eF77D7c152b2137Ab28b8A3"
+            }
+          },
+          "oftAdapter": "0xbcE9988376C6b9c0c035bdbc9060568031d51130",
+          "oftVersion": 3,
+          "endpointVersion": 2,
+          "endpointId": 30362,
+          "oftSharedDecimals": 6
+        }
+      },
+      "isAcross": false,
+      "isOFT": true
+    },
+    {
       "chainId": 81457,
       "address": "0x1f55a02A049033E3419a8E2975cF3F572F4e6E9A",
       "name": "Staked Frax Ether",
@@ -38527,6 +38836,39 @@
       "isOFT": false
     },
     {
+      "chainId": 98866,
+      "address": "0xf6718b2701D4a6498eF77D7c152b2137Ab28b8A3",
+      "name": "Lorenzo stBTC",
+      "decimals": 18,
+      "symbol": "stBTC",
+      "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/refs/heads/master/blockchains/ethereum/assets/0xf6718b2701D4a6498eF77D7c152b2137Ab28b8A3/logo.png",
+      "tags": [],
+      "extensions": {
+        "bridgeInfo": {
+          "1": {
+            "tokenAddress": "0xf6718b2701D4a6498eF77D7c152b2137Ab28b8A3"
+          }
+        },
+        "oftInfo": {
+          "peersInfo": {
+            "1": {
+              "tokenAddress": "0xf6718b2701D4a6498eF77D7c152b2137Ab28b8A3"
+            },
+            "56": {
+              "tokenAddress": "0xf6718b2701D4a6498eF77D7c152b2137Ab28b8A3"
+            }
+          },
+          "oftAdapter": "0xbcE9988376C6b9c0c035bdbc9060568031d51130",
+          "oftVersion": 3,
+          "endpointVersion": 2,
+          "endpointId": 30370,
+          "oftSharedDecimals": 6
+        }
+      },
+      "isAcross": false,
+      "isOFT": true
+    },
+    {
       "chainId": 167000,
       "address": "0x23aaB921D8283f099bc3FE3741Cb369B1ee095a8",
       "name": "IDIA",
@@ -38587,6 +38929,39 @@
           "endpointVersion": 1,
           "endpointId": 290,
           "oftSharedDecimals": 8
+        }
+      },
+      "isAcross": false,
+      "isOFT": true
+    },
+    {
+      "chainId": 167000,
+      "address": "0xf6718b2701D4a6498eF77D7c152b2137Ab28b8A3",
+      "name": "Lorenzo stBTC",
+      "decimals": 18,
+      "symbol": "stBTC",
+      "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/refs/heads/master/blockchains/ethereum/assets/0xf6718b2701D4a6498eF77D7c152b2137Ab28b8A3/logo.png",
+      "tags": [],
+      "extensions": {
+        "bridgeInfo": {
+          "1": {
+            "tokenAddress": "0xf6718b2701D4a6498eF77D7c152b2137Ab28b8A3"
+          }
+        },
+        "oftInfo": {
+          "peersInfo": {
+            "1": {
+              "tokenAddress": "0xf6718b2701D4a6498eF77D7c152b2137Ab28b8A3"
+            },
+            "56": {
+              "tokenAddress": "0xf6718b2701D4a6498eF77D7c152b2137Ab28b8A3"
+            }
+          },
+          "oftAdapter": "0xbcE9988376C6b9c0c035bdbc9060568031d51130",
+          "oftVersion": 3,
+          "endpointVersion": 2,
+          "endpointId": 30290,
+          "oftSharedDecimals": 6
         }
       },
       "isAcross": false,
@@ -40766,10 +41141,10 @@
       "tags": [],
       "extensions": {
         "oftInfo": {
-          "bridgeInfo": {
+        "bridgeInfo": {
           "1": {
             "tokenAddress": "0x090185f2135308BaD17527004364eBcC2D37e5F6"
-            }
+          }
           },
           "peersInfo": {
             "1": {

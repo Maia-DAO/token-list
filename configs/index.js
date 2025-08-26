@@ -50,7 +50,8 @@ const PARTNER_TOKEN_SYMBOLS = [
   'mETH',
   'Manta mETH',
   'mBTC',
-  'Manta mBTC'
+  'Manta mBTC',
+  'stBTC'
 ]
 
 const NATIVE_OFT_ADAPTERS = {
@@ -83,6 +84,7 @@ const OVERRIDE_PEG = {
 
 // Override logos for specific tokens
 const OVERRIDE_LOGO = {
+  'stBTC': 'https://raw.githubusercontent.com/trustwallet/assets/refs/heads/master/blockchains/ethereum/assets/0xf6718b2701D4a6498eF77D7c152b2137Ab28b8A3/logo.png',
   'WBTC': 'https://s2.coinmarketcap.com/static/img/coins/128x128/3717.png',
   'RBTC': 'https://s2.coinmarketcap.com/static/img/coins/128x128/3626.png',
   'REUNI': 'https://s2.coinmarketcap.com/static/img/coins/128x128/23996.png',
