@@ -83,6 +83,8 @@ const OVERRIDE_PEG = {
 
 // Override logos for specific tokens
 const OVERRIDE_LOGO = {
+  'WBTC': 'https://s2.coinmarketcap.com/static/img/coins/128x128/3717.png',
+  'RBTC': 'https://s2.coinmarketcap.com/static/img/coins/128x128/3626.png',
   'REUNI': 'https://s2.coinmarketcap.com/static/img/coins/128x128/23996.png',
   'sUSDa': 'https://s2.coinmarketcap.com/static/img/coins/128x128/35538.png',
   'UNB': 'https://s2.coinmarketcap.com/static/img/coins/128x128/7846.png',
