@@ -219,6 +219,21 @@ async function main() {
       console.error('Error parsing uniswap.json, assuming direct array:', err)
     }
 
+    // 5. Wrapped Native tokens from wrappedNatives.json.
+    const wrappedNativesRaw = await fs.readFile('wrappedNatives.json', 'utf8')
+    let wrappedNativeTokens = []
+    try {
+      const temp = JSON.parse(wrappedNativesRaw)
+      if (Array.isArray(temp.tokens)) {
+        wrappedNativeTokens = temp.tokens
+      } else if (Array.isArray(temp)) {
+        wrappedNativeTokens = temp
+      }
+    } catch (err) {
+      console.error('Error parsing wrappedNatives.json, assuming direct array:', err)
+    }
+
+
     // -----------------------------------------------------------------
     // GROUPING TOKENS PER SOURCE
     // -----------------------------------------------------------------
@@ -394,8 +409,8 @@ async function main() {
 
 
     // 2. Incorporate Uniswap tokens and Ulysses Root Tokens.
-    if (Array.isArray(uniswapTokens) && ulyssesData.rootTokens && Array.isArray(ulyssesData.rootTokens)) {
-      uniswapTokens.concat(ulyssesData.rootTokens).forEach((token) => {
+    if (Array.isArray(uniswapTokens) && ulyssesData.rootTokens && Array.isArray(ulyssesData.rootTokens) && Array.isArray(wrappedNativeTokens)) {
+      uniswapTokens.concat(ulyssesData.rootTokens).concat(wrappedNativeTokens).forEach((token) => {
         if (BLOCKED_TOKEN_SYMBOLS.includes(token.symbol)) {
           console.warn(`skipping, blocked token ${token.symbol} on chain ${token.chainId}`)
           return
