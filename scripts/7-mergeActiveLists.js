@@ -276,6 +276,10 @@ async function main() {
       }
 
       // Skip if token corresponds to OFT adapter for native token OFT.
+      if (NATIVE_OFT_ADAPTERS[normalizedToken.chainId]?.[normalizedToken.address.toLowerCase()]) {
+        console.warn(`skipping, native OFT adapter token ${normalizedToken.symbol} on chain ${normalizedToken.chainId}`)
+        continue
+      }
 
       if (normalizedToken.chainId === 42161) {
         const rootKey = normalizedToken.address.toLowerCase()

@@ -1,8 +1,8 @@
 {
   "name": "Hermes Omnichain Token List",
-  "timestamp": "1755873398",
+  "timestamp": "1755883424",
   "version": {
-    "major": 138,
+    "major": 139,
     "minor": 0,
     "patch": 0
   },
@@ -17225,6 +17225,71 @@
     },
     {
       "chainId": 130,
+      "address": "0x7DCC39B4d1C53CB31e1aBc0e358b43987FEF80f7",
+      "name": "Wrapped eETH",
+      "decimals": 18,
+      "symbol": "weETH",
+      "logoURI": "https://s2.coinmarketcap.com/static/img/coins/128x128/28568.png",
+      "tags": [],
+      "extensions": {
+        "bridgeInfo": {
+          "1": {
+            "tokenAddress": "0xCd5fE23C85820F7B72D0926FC9b05b43E359b7ee"
+          }
+        },
+        "coingeckoId": "ether-fi-bridged-weeth-base",
+        "coinMarketCapId": 28695,
+        "oftInfo": {
+          "peersInfo": {
+            "1": {
+              "tokenAddress": "0xCd5fE23C85820F7B72D0926FC9b05b43E359b7ee"
+            },
+            "10": {
+              "tokenAddress": "0x5A7fACB970D094B6C7FF1df0eA68D99E6e73CBFF"
+            },
+            "56": {
+              "tokenAddress": "0x04C0599Ae5A44757c0af6F9eC3b93da8976c150A"
+            },
+            "999": {
+              "tokenAddress": "0xA3D68b74bF0528fdD07263c60d6488749044914b"
+            },
+            "1923": {
+              "tokenAddress": "0xA6cB988942610f6731e664379D15fFcfBf282b44"
+            },
+            "2818": {
+              "tokenAddress": "0x7DCC39B4d1C53CB31e1aBc0e358b43987FEF80f7"
+            },
+            "8453": {
+              "tokenAddress": "0x04C0599Ae5A44757c0af6F9eC3b93da8976c150A"
+            },
+            "34443": {
+              "tokenAddress": "0x04C0599Ae5A44757c0af6F9eC3b93da8976c150A"
+            },
+            "59144": {
+              "tokenAddress": "0x1Bf74C010E6320bab11e2e5A532b5AC15e0b8aA6"
+            },
+            "80094": {
+              "tokenAddress": "0x7DCC39B4d1C53CB31e1aBc0e358b43987FEF80f7"
+            },
+            "81457": {
+              "tokenAddress": "0x04C0599Ae5A44757c0af6F9eC3b93da8976c150A"
+            },
+            "534352": {
+              "tokenAddress": "0x01f0a31698C4d065659b9bdC21B3610292a1c506"
+            }
+          },
+          "oftAdapter": "0x7DCC39B4d1C53CB31e1aBc0e358b43987FEF80f7",
+          "oftVersion": 3,
+          "endpointVersion": 2,
+          "endpointId": 30320,
+          "oftSharedDecimals": 6
+        }
+      },
+      "isAcross": false,
+      "isOFT": true
+    },
+    {
+      "chainId": 130,
       "address": "0x7F3F14A49FE5D5009E4e0a09e76cB8468C09Ae56",
       "name": "AirSwap",
       "symbol": "AST",
@@ -19348,37 +19413,6 @@
       },
       "isAcross": false,
       "isOFT": false
-    },
-    {
-      "chainId": 130,
-      "address": "0xc3eACf0612346366Db554C991D7858716db09f58",
-      "name": "KelpDao Restaked ETH",
-      "decimals": 18,
-      "symbol": "rsETH",
-      "logoURI": "https://s2.coinmarketcap.com/static/img/coins/128x128/29242.png",
-      "tags": [],
-      "extensions": {
-        "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0xA1290d69c65A6Fe4DF752f95823fae25cB99e5A7"
-          }
-        },
-        "coingeckoId": "kelpdao-bridged-rseth-base",
-        "oftInfo": {
-          "peersInfo": {
-            "1": {
-              "tokenAddress": "0xA1290d69c65A6Fe4DF752f95823fae25cB99e5A7"
-            }
-          },
-          "oftAdapter": "0xc3eACf0612346366Db554C991D7858716db09f58",
-          "oftVersion": 3,
-          "endpointVersion": 2,
-          "endpointId": 30320,
-          "oftSharedDecimals": 6
-        }
-      },
-      "isAcross": false,
-      "isOFT": true
     },
     {
       "chainId": 130,
@@ -29132,44 +29166,6 @@
     },
     {
       "chainId": 1996,
-      "address": "0x7393aE4835FDfed4f25E46a10D6bDB2fd49A2706",
-      "name": "DMT",
-      "decimals": 18,
-      "symbol": "DMT",
-      "logoURI": "https://s2.coinmarketcap.com/static/img/coins/128x128/25653.png",
-      "tags": [],
-      "extensions": {
-        "coingeckoId": "dream-machine-token",
-        "feeInfo": {
-          "1": {
-            "minDstGas": 100000
-          },
-          "42161": {
-            "minDstGas": 2000000
-          }
-        },
-        "coinMarketCapId": 25653,
-        "oftInfo": {
-          "peersInfo": {
-            "1": {
-              "tokenAddress": "0x0B7f0e51Cd1739D6C96982D55aD8fA634dd43A9C"
-            },
-            "42161": {
-              "tokenAddress": "0x8B0E6f19Ee57089F7649A455D89D7bC6314D04e8"
-            }
-          },
-          "oftAdapter": "0x7393aE4835FDfed4f25E46a10D6bDB2fd49A2706",
-          "oftVersion": 2,
-          "endpointVersion": 1,
-          "endpointId": 278,
-          "oftSharedDecimals": 6
-        }
-      },
-      "isAcross": false,
-      "isOFT": true
-    },
-    {
-      "chainId": 1996,
       "address": "0x754cDAd6f5821077d6915004Be2cE05f93d176f8",
       "name": "Wrapped DMT",
       "decimals": 18,
@@ -32662,38 +32658,6 @@
             }
           },
           "oftAdapter": "0x8c952a6db9B9cDe138800DD16A3524Da90217d6E",
-          "oftVersion": 3,
-          "endpointVersion": 2,
-          "endpointId": 30312,
-          "oftSharedDecimals": 6
-        }
-      },
-      "isAcross": false,
-      "isOFT": true
-    },
-    {
-      "chainId": 33139,
-      "address": "0xe4103e80c967f58591a1d7cA443ed7E392FeD862",
-      "name": "ApeCoin",
-      "decimals": 18,
-      "symbol": "APE",
-      "logoURI": "https://s2.coinmarketcap.com/static/img/coins/128x128/18876.png",
-      "tags": [],
-      "extensions": {
-        "coingeckoId": "apecoin",
-        "oftInfo": {
-          "peersInfo": {
-            "1": {
-              "tokenAddress": "0x4d224452801ACEd8B2F0aebE155379bb5D594381"
-            },
-            "999": {
-              "tokenAddress": "0xab11329560Fa9C9c860Bb21A9342215a1265BBB0"
-            },
-            "42161": {
-              "tokenAddress": "0x7f9FBf9bDd3F4105C478b996B648FE6e828a1e98"
-            }
-          },
-          "oftAdapter": "0xe4103e80c967f58591a1d7cA443ed7E392FeD862",
           "oftVersion": 3,
           "endpointVersion": 2,
           "endpointId": 30312,
@@ -37290,36 +37254,6 @@
             }
           },
           "oftAdapter": "0xc1d31b2812Cc920341349a717d14bAdFb1BCab11",
-          "oftVersion": 3,
-          "endpointVersion": 2,
-          "endpointId": 30362,
-          "oftSharedDecimals": 6
-        }
-      },
-      "isAcross": false,
-      "isOFT": true
-    },
-    {
-      "chainId": 80094,
-      "address": "0xecAc9C5F704e954931349Da37F60E39f515c11c1",
-      "name": "Lombard Staked Bitcoin",
-      "decimals": 8,
-      "symbol": "LBTC",
-      "logoURI": "https://s2.coinmarketcap.com/static/img/coins/128x128/33652.png",
-      "tags": [],
-      "extensions": {
-        "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0x8236a87084f8B84306f72007F36F2618A5634494"
-          }
-        },
-        "oftInfo": {
-          "peersInfo": {
-            "1": {
-              "tokenAddress": "0x8236a87084f8B84306f72007F36F2618A5634494"
-            }
-          },
-          "oftAdapter": "0x630e12D53D4E041b8C5451aD035Ea841E08391d7",
           "oftVersion": 3,
           "endpointVersion": 2,
           "endpointId": 30362,

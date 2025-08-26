@@ -1,8 +1,8 @@
 {
   "name": "Hermes Omnichain Inactive Token List",
-  "timestamp": "1755873398",
+  "timestamp": "1755883424",
   "version": {
-    "major": 84,
+    "major": 85,
     "minor": 0,
     "patch": 0
   },
@@ -820,6 +820,16 @@
     },
     {
       "chainId": 1,
+      "address": "0x06903ae134CCa527742fe138a7CB97Fe08322000",
+      "name": "Dotcom",
+      "decimals": 18,
+      "symbol": "Y2K",
+      "tags": [],
+      "extensions": {},
+      "isAcross": false
+    },
+    {
+      "chainId": 1,
       "address": "0x06A01a4d579479Dd5D884EBf61A31727A3d8D442",
       "name": "Skey Network",
       "symbol": "SKEY",
@@ -1515,6 +1525,63 @@
       "decimals": 18,
       "logoURI": "https://assets.coingecko.com/coins/images/2105/large/NrFmpxs.png?1600318377",
       "extensions": {}
+    },
+    {
+      "chainId": 1,
+      "address": "0x0FedbA9178b70e8b54e2Af08eBffcf28A1e5A43B",
+      "name": "Reservoir",
+      "decimals": 18,
+      "symbol": "DAM",
+      "tags": [],
+      "extensions": {
+        "oftInfo": {
+          "peersInfo": {
+            "56": {
+              "tokenAddress": "0xF9Ca3fE094212FfA705742D3626a8Ab96aAbABf8"
+            },
+            "130": {
+              "tokenAddress": "0x79187C0894435715ee9D1c68575AC35A6e56f526"
+            },
+            "146": {
+              "tokenAddress": "0x147e5189B14B688eb69c5d877622E47d9839D37b"
+            },
+            "480": {
+              "tokenAddress": "0x79187C0894435715ee9D1c68575AC35A6e56f526"
+            },
+            "999": {
+              "tokenAddress": "0xC6Eab56426Ae6E0DfE72EC1Ce2AAF73dAE0e4FF4"
+            },
+            "1329": {
+              "tokenAddress": "0x866d66F64FB81461903E1e38d998E747EcF35E78"
+            },
+            "8453": {
+              "tokenAddress": "0x71356761fD23e77E5D78c37C70fE78229Ca75a72"
+            },
+            "42161": {
+              "tokenAddress": "0x6c19e25bD34D063829DD05E2A5FAe165DDF2c8Dd"
+            },
+            "43114": {
+              "tokenAddress": "0xF9Ca3fE094212FfA705742D3626a8Ab96aAbABf8"
+            },
+            "80094": {
+              "tokenAddress": "0x71356761fD23e77E5D78c37C70fE78229Ca75a72"
+            },
+            "98866": {
+              "tokenAddress": "0xf9AA0FdFa7C8B40e844A09B0e6f0260Df120c2e8"
+            },
+            "747474": {
+              "tokenAddress": "0x866d66F64FB81461903E1e38d998E747EcF35E78"
+            }
+          },
+          "oftAdapter": "0x40a341B76A766C56F54985285987Dfe52fEA237a",
+          "oftVersion": 3,
+          "endpointVersion": 2,
+          "endpointId": 30101,
+          "oftSharedDecimals": 6
+        }
+      },
+      "isAcross": false,
+      "isOFT": true
     },
     {
       "chainId": 1,
@@ -4084,6 +4151,35 @@
     },
     {
       "chainId": 1,
+      "address": "0x2F913C820ed3bEb3a67391a6eFF64E70c4B20b19",
+      "name": "Merlin BTC",
+      "decimals": 18,
+      "symbol": "M-BTC",
+      "tags": [],
+      "extensions": {
+        "bridgeInfo": {
+          "239": {
+            "tokenAddress": "0xe82dbD543FD729418613d68Cd1E8FC67b0f46E31"
+          }
+        },
+        "oftInfo": {
+          "peersInfo": {
+            "239": {
+              "tokenAddress": "0xe82dbD543FD729418613d68Cd1E8FC67b0f46E31"
+            }
+          },
+          "oftAdapter": "0xa5DbD35BCD259F6A058b474D74B11432fDd591E3",
+          "oftVersion": 3,
+          "endpointVersion": 2,
+          "endpointId": 30101,
+          "oftSharedDecimals": 6
+        }
+      },
+      "isAcross": false,
+      "isOFT": true
+    },
+    {
+      "chainId": 1,
       "address": "0x2a2550e0A75aCec6D811AE3930732F7f3ad67588",
       "name": "PathDAO",
       "symbol": "PATH",
@@ -6211,6 +6307,33 @@
     },
     {
       "chainId": 1,
+      "address": "0x4274cD7277C7bb0806Bd5FE84b9aDAE466a8DA0a",
+      "name": "YUSD",
+      "decimals": 18,
+      "symbol": "YUSD",
+      "tags": [],
+      "extensions": {
+        "oftInfo": {
+          "peersInfo": {
+            "56": {
+              "tokenAddress": "0xAB3dBcD9B096C3fF76275038bf58eAC10D22C61f"
+            },
+            "43114": {
+              "tokenAddress": "0xca2671Dcd031a72359f456C212F62A9bDa737cD7"
+            }
+          },
+          "oftAdapter": "0xAF12b0Ae5A72D7b8A8eC675f3E76E2Db56143565",
+          "oftVersion": 3,
+          "endpointVersion": 2,
+          "endpointId": 30101,
+          "oftSharedDecimals": 6
+        }
+      },
+      "isAcross": false,
+      "isOFT": true
+    },
+    {
+      "chainId": 1,
       "address": "0x429881672B9AE42b8EbA0E26cD9C73711b891Ca5",
       "name": "Pickle Finance",
       "symbol": "PICKLE",
@@ -7420,6 +7543,36 @@
           }
         }
       }
+    },
+    {
+      "chainId": 1,
+      "address": "0x51477A3002ee04B7542aDfe63ccdb50c00Ee5147",
+      "name": "SatLayer",
+      "decimals": 6,
+      "symbol": "SLAY",
+      "tags": [],
+      "extensions": {
+        "oftInfo": {
+          "peersInfo": {
+            "56": {
+              "tokenAddress": "0xfC5a743271672E91D77F0176e5CEa581Fbd5D834"
+            },
+            "999": {
+              "tokenAddress": "0x9EfdFC72C1BC90b36f8aae35247e62310c58eACf"
+            },
+            "8453": {
+              "tokenAddress": "0x3e248ab4554cFdec8fc4f18F569FE6F46dE61DB1"
+            }
+          },
+          "oftAdapter": "0x89dA85A27Fab76b5AcacBeDDD21B9b4370F99EDb",
+          "oftVersion": 3,
+          "endpointVersion": 2,
+          "endpointId": 30101,
+          "oftSharedDecimals": 6
+        }
+      },
+      "isAcross": false,
+      "isOFT": true
     },
     {
       "chainId": 1,
@@ -8647,6 +8800,35 @@
             }
           },
           "oftAdapter": "0x61DBbBb552dc893ab3aAd09F289f811E67cEf285",
+          "oftVersion": 3,
+          "endpointVersion": 2,
+          "endpointId": 30101,
+          "oftSharedDecimals": 6
+        }
+      },
+      "isAcross": false,
+      "isOFT": true
+    },
+    {
+      "chainId": 1,
+      "address": "0x61fac5F038515572d6F42d4BcB6B581642753D50",
+      "name": "INFINIT",
+      "decimals": 18,
+      "symbol": "IN",
+      "tags": [],
+      "extensions": {
+        "bridgeInfo": {
+          "56": {
+            "tokenAddress": "0x61fac5F038515572d6F42d4BcB6B581642753D50"
+          }
+        },
+        "oftInfo": {
+          "peersInfo": {
+            "56": {
+              "tokenAddress": "0x61fac5F038515572d6F42d4BcB6B581642753D50"
+            }
+          },
+          "oftAdapter": "0x61fac5F038515572d6F42d4BcB6B581642753D50",
           "oftVersion": 3,
           "endpointVersion": 2,
           "endpointId": 30101,
@@ -17892,6 +18074,9 @@
             },
             "999": {
               "tokenAddress": "0x87d00066cf131ff54B72B134a217D5401E5392b6"
+            },
+            "59144": {
+              "tokenAddress": "0x37D6382B6889cCeF8d6871A8b60E667115eDDBcF"
             }
           },
           "oftAdapter": "0xa4931a9F9Aaf79057334371D6f62164743f97b18",
@@ -22261,6 +22446,35 @@
     },
     {
       "chainId": 1,
+      "address": "0xd83E3d560bA6F05094d9D8B3EB8aaEA571D1864E",
+      "name": "Wrapped HYPE",
+      "decimals": 18,
+      "symbol": "wHYPE",
+      "tags": [],
+      "extensions": {
+        "bridgeInfo": {
+          "999": {
+            "tokenAddress": "0x5555555555555555555555555555555555555555"
+          }
+        },
+        "oftInfo": {
+          "peersInfo": {
+            "999": {
+              "tokenAddress": "0x5555555555555555555555555555555555555555"
+            }
+          },
+          "oftAdapter": "0xd83E3d560bA6F05094d9D8B3EB8aaEA571D1864E",
+          "oftVersion": 3,
+          "endpointVersion": 2,
+          "endpointId": 30101,
+          "oftSharedDecimals": 6
+        }
+      },
+      "isAcross": false,
+      "isOFT": true
+    },
+    {
+      "chainId": 1,
       "address": "0xd87a19fF681AE98BF10d2220D1AE3Fbd374ADE4e",
       "name": "CIAN yield layer rsETH",
       "decimals": 18,
@@ -24035,6 +24249,33 @@
           }
         }
       }
+    },
+    {
+      "chainId": 1,
+      "address": "0xfE80D611c6403f70e5B1b9B722D2B3510B740B2B",
+      "name": "Equilibria Token",
+      "decimals": 18,
+      "symbol": "EQB",
+      "tags": [],
+      "extensions": {
+        "oftInfo": {
+          "peersInfo": {
+            "999": {
+              "tokenAddress": "0x3CE8426DC0B90a36f0e20D7c2acaaF4578ad4e50"
+            },
+            "80094": {
+              "tokenAddress": "0xF9ee98099F5078078Bb8e17E6b4a4F95137E2037"
+            }
+          },
+          "oftAdapter": "0x0a50aff1977baA6B74fA74C3602B6b4556907aD9",
+          "oftVersion": 3,
+          "endpointVersion": 2,
+          "endpointId": 30101,
+          "oftSharedDecimals": 6
+        }
+      },
+      "isAcross": false,
+      "isOFT": true
     },
     {
       "chainId": 1,
@@ -26169,6 +26410,9 @@
               "tokenAddress": "0x58538e6A46E07434d7E7375Bc268D3cb839C0133"
             },
             "42161": {
+              "tokenAddress": "0x58538e6A46E07434d7E7375Bc268D3cb839C0133"
+            },
+            "43114": {
               "tokenAddress": "0x58538e6A46E07434d7E7375Bc268D3cb839C0133"
             },
             "59144": {
@@ -34018,6 +34262,35 @@
     },
     {
       "chainId": 56,
+      "address": "0x61fac5F038515572d6F42d4BcB6B581642753D50",
+      "name": "INFINIT",
+      "decimals": 18,
+      "symbol": "IN",
+      "tags": [],
+      "extensions": {
+        "bridgeInfo": {
+          "1": {
+            "tokenAddress": "0x61fac5F038515572d6F42d4BcB6B581642753D50"
+          }
+        },
+        "oftInfo": {
+          "peersInfo": {
+            "1": {
+              "tokenAddress": "0x61fac5F038515572d6F42d4BcB6B581642753D50"
+            }
+          },
+          "oftAdapter": "0x61fac5F038515572d6F42d4BcB6B581642753D50",
+          "oftVersion": 3,
+          "endpointVersion": 2,
+          "endpointId": 30102,
+          "oftSharedDecimals": 6
+        }
+      },
+      "isAcross": false,
+      "isOFT": true
+    },
+    {
+      "chainId": 56,
       "address": "0x62C6867e4f2e63302B15cbf9b8540214a13beeac",
       "name": "Leveraged ETH",
       "decimals": 18,
@@ -35327,6 +35600,35 @@
           "oftVersion": 2,
           "endpointVersion": 1,
           "endpointId": 102,
+          "oftSharedDecimals": 6
+        }
+      },
+      "isAcross": false,
+      "isOFT": true
+    },
+    {
+      "chainId": 56,
+      "address": "0x7CEA5B9548a4B48cF9551813Ef9e73DE916e41E0",
+      "name": "MIA",
+      "decimals": 18,
+      "symbol": "MIA",
+      "tags": [],
+      "extensions": {
+        "bridgeInfo": {
+          "8453": {
+            "tokenAddress": "0x7CEA5B9548a4B48cF9551813Ef9e73DE916e41E0"
+          }
+        },
+        "oftInfo": {
+          "peersInfo": {
+            "8453": {
+              "tokenAddress": "0x7CEA5B9548a4B48cF9551813Ef9e73DE916e41E0"
+            }
+          },
+          "oftAdapter": "0x7CEA5B9548a4B48cF9551813Ef9e73DE916e41E0",
+          "oftVersion": 3,
+          "endpointVersion": 2,
+          "endpointId": 30102,
           "oftSharedDecimals": 6
         }
       },
@@ -36742,6 +37044,16 @@
     },
     {
       "chainId": 56,
+      "address": "0x9BAFC8d4b487cEBff201721702507a3E2C67ad79",
+      "name": "Kava",
+      "decimals": 18,
+      "symbol": "KAVA",
+      "tags": [],
+      "extensions": {},
+      "isAcross": false
+    },
+    {
+      "chainId": 56,
       "address": "0x9Ba6a67a6F3b21705a46B380A1B97373a33da311",
       "name": "FEAR",
       "symbol": "FEAR",
@@ -37128,6 +37440,33 @@
           "oftVersion": 1,
           "endpointVersion": 1,
           "endpointId": 102
+        }
+      },
+      "isAcross": false,
+      "isOFT": true
+    },
+    {
+      "chainId": 56,
+      "address": "0xAB3dBcD9B096C3fF76275038bf58eAC10D22C61f",
+      "name": "YUSD",
+      "decimals": 18,
+      "symbol": "YUSD",
+      "tags": [],
+      "extensions": {
+        "oftInfo": {
+          "peersInfo": {
+            "1": {
+              "tokenAddress": "0x4274cD7277C7bb0806Bd5FE84b9aDAE466a8DA0a"
+            },
+            "43114": {
+              "tokenAddress": "0xca2671Dcd031a72359f456C212F62A9bDa737cD7"
+            }
+          },
+          "oftAdapter": "0x539e46827c37A3ef11c7cE521CC56B4d59E602e3",
+          "oftVersion": 3,
+          "endpointVersion": 2,
+          "endpointId": 30102,
+          "oftSharedDecimals": 6
         }
       },
       "isAcross": false,
@@ -38519,6 +38858,60 @@
           }
         }
       }
+    },
+    {
+      "chainId": 56,
+      "address": "0xF9Ca3fE094212FfA705742D3626a8Ab96aAbABf8",
+      "name": "Reservoir",
+      "decimals": 18,
+      "symbol": "DAM",
+      "tags": [],
+      "extensions": {
+        "oftInfo": {
+          "peersInfo": {
+            "1": {
+              "tokenAddress": "0x0FedbA9178b70e8b54e2Af08eBffcf28A1e5A43B"
+            },
+            "130": {
+              "tokenAddress": "0x79187C0894435715ee9D1c68575AC35A6e56f526"
+            },
+            "146": {
+              "tokenAddress": "0x147e5189B14B688eb69c5d877622E47d9839D37b"
+            },
+            "999": {
+              "tokenAddress": "0xC6Eab56426Ae6E0DfE72EC1Ce2AAF73dAE0e4FF4"
+            },
+            "1329": {
+              "tokenAddress": "0x866d66F64FB81461903E1e38d998E747EcF35E78"
+            },
+            "8453": {
+              "tokenAddress": "0x71356761fD23e77E5D78c37C70fE78229Ca75a72"
+            },
+            "42161": {
+              "tokenAddress": "0x6c19e25bD34D063829DD05E2A5FAe165DDF2c8Dd"
+            },
+            "43114": {
+              "tokenAddress": "0xF9Ca3fE094212FfA705742D3626a8Ab96aAbABf8"
+            },
+            "80094": {
+              "tokenAddress": "0x71356761fD23e77E5D78c37C70fE78229Ca75a72"
+            },
+            "98866": {
+              "tokenAddress": "0xf9AA0FdFa7C8B40e844A09B0e6f0260Df120c2e8"
+            },
+            "747474": {
+              "tokenAddress": "0x866d66F64FB81461903E1e38d998E747EcF35E78"
+            }
+          },
+          "oftAdapter": "0xF9Ca3fE094212FfA705742D3626a8Ab96aAbABf8",
+          "oftVersion": 3,
+          "endpointVersion": 2,
+          "endpointId": 30102,
+          "oftSharedDecimals": 6
+        }
+      },
+      "isAcross": false,
+      "isOFT": true
     },
     {
       "chainId": 56,
@@ -40526,6 +40919,36 @@
     },
     {
       "chainId": 56,
+      "address": "0xfC5a743271672E91D77F0176e5CEa581Fbd5D834",
+      "name": "SatLayer",
+      "decimals": 6,
+      "symbol": "SLAY",
+      "tags": [],
+      "extensions": {
+        "oftInfo": {
+          "peersInfo": {
+            "1": {
+              "tokenAddress": "0x51477A3002ee04B7542aDfe63ccdb50c00Ee5147"
+            },
+            "999": {
+              "tokenAddress": "0x9EfdFC72C1BC90b36f8aae35247e62310c58eACf"
+            },
+            "8453": {
+              "tokenAddress": "0x3e248ab4554cFdec8fc4f18F569FE6F46dE61DB1"
+            }
+          },
+          "oftAdapter": "0xfC5a743271672E91D77F0176e5CEa581Fbd5D834",
+          "oftVersion": 3,
+          "endpointVersion": 2,
+          "endpointId": 30102,
+          "oftSharedDecimals": 6
+        }
+      },
+      "isAcross": false,
+      "isOFT": true
+    },
+    {
+      "chainId": 56,
       "address": "0xfCe146bF3146100cfe5dB4129cf6C82b0eF4Ad8c",
       "name": "renBTC",
       "symbol": "RENBTC",
@@ -40538,6 +40961,35 @@
           }
         }
       }
+    },
+    {
+      "chainId": 56,
+      "address": "0xfDc8Cd47848c0C67dF66F7120F4e3371181cFA5e",
+      "name": "Blum",
+      "decimals": 9,
+      "symbol": "BLUM",
+      "tags": [],
+      "extensions": {
+        "bridgeInfo": {
+          "239": {
+            "tokenAddress": "0x659CAbE7D88541f045faBD81c87F0f4B1510196C"
+          }
+        },
+        "oftInfo": {
+          "peersInfo": {
+            "239": {
+              "tokenAddress": "0x659CAbE7D88541f045faBD81c87F0f4B1510196C"
+            }
+          },
+          "oftAdapter": "0xfDc8Cd47848c0C67dF66F7120F4e3371181cFA5e",
+          "oftVersion": 3,
+          "endpointVersion": 2,
+          "endpointId": 30102,
+          "oftSharedDecimals": 9
+        }
+      },
+      "isAcross": false,
+      "isOFT": true
     },
     {
       "chainId": 56,
@@ -42322,60 +42774,49 @@
     },
     {
       "chainId": 130,
-      "address": "0x7DCC39B4d1C53CB31e1aBc0e358b43987FEF80f7",
-      "name": "Wrapped eETH",
+      "address": "0x79187C0894435715ee9D1c68575AC35A6e56f526",
+      "name": "Reservoir",
       "decimals": 18,
-      "symbol": "weETH",
-      "logoURI": "https://s2.coinmarketcap.com/static/img/coins/128x128/28568.png",
+      "symbol": "DAM",
       "tags": [],
       "extensions": {
-        "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0xCd5fE23C85820F7B72D0926FC9b05b43E359b7ee"
-          }
-        },
-        "coingeckoId": "ether-fi-bridged-weeth-base",
-        "coinMarketCapId": 28695,
         "oftInfo": {
           "peersInfo": {
             "1": {
-              "tokenAddress": "0xCd5fE23C85820F7B72D0926FC9b05b43E359b7ee"
-            },
-            "10": {
-              "tokenAddress": "0x5A7fACB970D094B6C7FF1df0eA68D99E6e73CBFF"
+              "tokenAddress": "0x0FedbA9178b70e8b54e2Af08eBffcf28A1e5A43B"
             },
             "56": {
-              "tokenAddress": "0x04C0599Ae5A44757c0af6F9eC3b93da8976c150A"
+              "tokenAddress": "0xF9Ca3fE094212FfA705742D3626a8Ab96aAbABf8"
+            },
+            "146": {
+              "tokenAddress": "0x147e5189B14B688eb69c5d877622E47d9839D37b"
+            },
+            "480": {
+              "tokenAddress": "0x79187C0894435715ee9D1c68575AC35A6e56f526"
             },
             "999": {
-              "tokenAddress": "0xA3D68b74bF0528fdD07263c60d6488749044914b"
+              "tokenAddress": "0xC6Eab56426Ae6E0DfE72EC1Ce2AAF73dAE0e4FF4"
             },
-            "1923": {
-              "tokenAddress": "0xA6cB988942610f6731e664379D15fFcfBf282b44"
-            },
-            "2818": {
-              "tokenAddress": "0x7DCC39B4d1C53CB31e1aBc0e358b43987FEF80f7"
+            "1329": {
+              "tokenAddress": "0x866d66F64FB81461903E1e38d998E747EcF35E78"
             },
             "8453": {
-              "tokenAddress": "0x04C0599Ae5A44757c0af6F9eC3b93da8976c150A"
+              "tokenAddress": "0x71356761fD23e77E5D78c37C70fE78229Ca75a72"
             },
-            "34443": {
-              "tokenAddress": "0x04C0599Ae5A44757c0af6F9eC3b93da8976c150A"
+            "42161": {
+              "tokenAddress": "0x6c19e25bD34D063829DD05E2A5FAe165DDF2c8Dd"
             },
-            "59144": {
-              "tokenAddress": "0x1Bf74C010E6320bab11e2e5A532b5AC15e0b8aA6"
+            "43114": {
+              "tokenAddress": "0xF9Ca3fE094212FfA705742D3626a8Ab96aAbABf8"
             },
             "80094": {
-              "tokenAddress": "0x7DCC39B4d1C53CB31e1aBc0e358b43987FEF80f7"
+              "tokenAddress": "0x71356761fD23e77E5D78c37C70fE78229Ca75a72"
             },
-            "81457": {
-              "tokenAddress": "0x04C0599Ae5A44757c0af6F9eC3b93da8976c150A"
-            },
-            "534352": {
-              "tokenAddress": "0x01f0a31698C4d065659b9bdC21B3610292a1c506"
+            "98866": {
+              "tokenAddress": "0xf9AA0FdFa7C8B40e844A09B0e6f0260Df120c2e8"
             }
           },
-          "oftAdapter": "0x7DCC39B4d1C53CB31e1aBc0e358b43987FEF80f7",
+          "oftAdapter": "0x79187C0894435715ee9D1c68575AC35A6e56f526",
           "oftVersion": 3,
           "endpointVersion": 2,
           "endpointId": 30320,
@@ -42507,6 +42948,37 @@
             }
           },
           "oftAdapter": "0x9fFaCB3dB5cB74BdD4C68af3b7CF203130c699ec",
+          "oftVersion": 3,
+          "endpointVersion": 2,
+          "endpointId": 30320,
+          "oftSharedDecimals": 6
+        }
+      },
+      "isAcross": false,
+      "isOFT": true
+    },
+    {
+      "chainId": 130,
+      "address": "0xc3eACf0612346366Db554C991D7858716db09f58",
+      "name": "KelpDao Restaked ETH",
+      "decimals": 18,
+      "symbol": "rsETH",
+      "logoURI": "https://s2.coinmarketcap.com/static/img/coins/128x128/29242.png",
+      "tags": [],
+      "extensions": {
+        "bridgeInfo": {
+          "1": {
+            "tokenAddress": "0xA1290d69c65A6Fe4DF752f95823fae25cB99e5A7"
+          }
+        },
+        "coingeckoId": "kelpdao-bridged-rseth-base",
+        "oftInfo": {
+          "peersInfo": {
+            "1": {
+              "tokenAddress": "0xA1290d69c65A6Fe4DF752f95823fae25cB99e5A7"
+            }
+          },
+          "oftAdapter": "0xc3eACf0612346366Db554C991D7858716db09f58",
           "oftVersion": 3,
           "endpointVersion": 2,
           "endpointId": 30320,
@@ -47661,6 +48133,35 @@
             }
           },
           "oftAdapter": "0xF168376569850ab69501E8B13b42f261917a02c3",
+          "oftVersion": 3,
+          "endpointVersion": 2,
+          "endpointId": 30109,
+          "oftSharedDecimals": 6
+        }
+      },
+      "isAcross": false,
+      "isOFT": true
+    },
+    {
+      "chainId": 137,
+      "address": "0x7B12598E3616261df1C05EC28De0d2fB10c1F206",
+      "name": "COCA",
+      "decimals": 18,
+      "symbol": "COCA",
+      "tags": [],
+      "extensions": {
+        "bridgeInfo": {
+          "8453": {
+            "tokenAddress": "0x959fC04DBf97A27073F89237cd62605F4d1b906D"
+          }
+        },
+        "oftInfo": {
+          "peersInfo": {
+            "8453": {
+              "tokenAddress": "0x959fC04DBf97A27073F89237cd62605F4d1b906D"
+            }
+          },
+          "oftAdapter": "0x283fBa7A6E3a2fcf3a887f22ff6BdF202D446F5f",
           "oftVersion": 3,
           "endpointVersion": 2,
           "endpointId": 30109,
@@ -53454,6 +53955,63 @@
     },
     {
       "chainId": 146,
+      "address": "0x147e5189B14B688eb69c5d877622E47d9839D37b",
+      "name": "Reservoir",
+      "decimals": 18,
+      "symbol": "DAM",
+      "tags": [],
+      "extensions": {
+        "oftInfo": {
+          "peersInfo": {
+            "1": {
+              "tokenAddress": "0x0FedbA9178b70e8b54e2Af08eBffcf28A1e5A43B"
+            },
+            "56": {
+              "tokenAddress": "0xF9Ca3fE094212FfA705742D3626a8Ab96aAbABf8"
+            },
+            "130": {
+              "tokenAddress": "0x79187C0894435715ee9D1c68575AC35A6e56f526"
+            },
+            "480": {
+              "tokenAddress": "0x79187C0894435715ee9D1c68575AC35A6e56f526"
+            },
+            "999": {
+              "tokenAddress": "0xC6Eab56426Ae6E0DfE72EC1Ce2AAF73dAE0e4FF4"
+            },
+            "1329": {
+              "tokenAddress": "0x866d66F64FB81461903E1e38d998E747EcF35E78"
+            },
+            "8453": {
+              "tokenAddress": "0x71356761fD23e77E5D78c37C70fE78229Ca75a72"
+            },
+            "42161": {
+              "tokenAddress": "0x6c19e25bD34D063829DD05E2A5FAe165DDF2c8Dd"
+            },
+            "43114": {
+              "tokenAddress": "0xF9Ca3fE094212FfA705742D3626a8Ab96aAbABf8"
+            },
+            "80094": {
+              "tokenAddress": "0x71356761fD23e77E5D78c37C70fE78229Ca75a72"
+            },
+            "98866": {
+              "tokenAddress": "0xf9AA0FdFa7C8B40e844A09B0e6f0260Df120c2e8"
+            },
+            "747474": {
+              "tokenAddress": "0x866d66F64FB81461903E1e38d998E747EcF35E78"
+            }
+          },
+          "oftAdapter": "0x147e5189B14B688eb69c5d877622E47d9839D37b",
+          "oftVersion": 3,
+          "endpointVersion": 2,
+          "endpointId": 30332,
+          "oftSharedDecimals": 6
+        }
+      },
+      "isAcross": false,
+      "isOFT": true
+    },
+    {
+      "chainId": 146,
       "address": "0x1E5fe95fB90ac0530F581C617272cd0864626795",
       "name": "BeethovenxToken",
       "decimals": 18,
@@ -56547,6 +57105,35 @@
     },
     {
       "chainId": 239,
+      "address": "0x659CAbE7D88541f045faBD81c87F0f4B1510196C",
+      "name": "Blum",
+      "decimals": 9,
+      "symbol": "BLUM",
+      "tags": [],
+      "extensions": {
+        "bridgeInfo": {
+          "56": {
+            "tokenAddress": "0xfDc8Cd47848c0C67dF66F7120F4e3371181cFA5e"
+          }
+        },
+        "oftInfo": {
+          "peersInfo": {
+            "56": {
+              "tokenAddress": "0xfDc8Cd47848c0C67dF66F7120F4e3371181cFA5e"
+            }
+          },
+          "oftAdapter": "0xfDc8Cd47848c0C67dF66F7120F4e3371181cFA5e",
+          "oftVersion": 3,
+          "endpointVersion": 2,
+          "endpointId": 30377,
+          "oftSharedDecimals": 9
+        }
+      },
+      "isAcross": false,
+      "isOFT": true
+    },
+    {
+      "chainId": 239,
       "address": "0x6bedE1c6009a78c222D9BDb7974bb67847fdB68c",
       "name": "US Bitcoin Dollar",
       "decimals": 18,
@@ -56808,6 +57395,35 @@
           "endpointVersion": 2,
           "endpointId": 30377,
           "oftSharedDecimals": 8
+        }
+      },
+      "isAcross": false,
+      "isOFT": true
+    },
+    {
+      "chainId": 239,
+      "address": "0xe82dbD543FD729418613d68Cd1E8FC67b0f46E31",
+      "name": "Merlin's Seal BTC",
+      "decimals": 18,
+      "symbol": "M-BTC",
+      "tags": [],
+      "extensions": {
+        "bridgeInfo": {
+          "1": {
+            "tokenAddress": "0x2F913C820ed3bEb3a67391a6eFF64E70c4B20b19"
+          }
+        },
+        "oftInfo": {
+          "peersInfo": {
+            "1": {
+              "tokenAddress": "0x2F913C820ed3bEb3a67391a6eFF64E70c4B20b19"
+            }
+          },
+          "oftAdapter": "0xe82dbD543FD729418613d68Cd1E8FC67b0f46E31",
+          "oftVersion": 3,
+          "endpointVersion": 2,
+          "endpointId": 30377,
+          "oftSharedDecimals": 6
         }
       },
       "isAcross": false,
@@ -57587,6 +58203,54 @@
       "isOFT": true
     },
     {
+      "chainId": 480,
+      "address": "0x79187C0894435715ee9D1c68575AC35A6e56f526",
+      "name": "Reservoir",
+      "decimals": 18,
+      "symbol": "DAM",
+      "tags": [],
+      "extensions": {
+        "oftInfo": {
+          "peersInfo": {
+            "1": {
+              "tokenAddress": "0x0FedbA9178b70e8b54e2Af08eBffcf28A1e5A43B"
+            },
+            "130": {
+              "tokenAddress": "0x79187C0894435715ee9D1c68575AC35A6e56f526"
+            },
+            "146": {
+              "tokenAddress": "0x147e5189B14B688eb69c5d877622E47d9839D37b"
+            },
+            "999": {
+              "tokenAddress": "0xC6Eab56426Ae6E0DfE72EC1Ce2AAF73dAE0e4FF4"
+            },
+            "8453": {
+              "tokenAddress": "0x71356761fD23e77E5D78c37C70fE78229Ca75a72"
+            },
+            "42161": {
+              "tokenAddress": "0x6c19e25bD34D063829DD05E2A5FAe165DDF2c8Dd"
+            },
+            "43114": {
+              "tokenAddress": "0xF9Ca3fE094212FfA705742D3626a8Ab96aAbABf8"
+            },
+            "80094": {
+              "tokenAddress": "0x71356761fD23e77E5D78c37C70fE78229Ca75a72"
+            },
+            "747474": {
+              "tokenAddress": "0x866d66F64FB81461903E1e38d998E747EcF35E78"
+            }
+          },
+          "oftAdapter": "0x79187C0894435715ee9D1c68575AC35A6e56f526",
+          "oftVersion": 3,
+          "endpointVersion": 2,
+          "endpointId": 30319,
+          "oftSharedDecimals": 6
+        }
+      },
+      "isAcross": false,
+      "isOFT": true
+    },
+    {
       "chainId": 999,
       "address": "0x04716DB62C085D9e08050fcF6F7D775A03d07720",
       "name": "Wrapped Savings rUSD",
@@ -57923,6 +58587,33 @@
     },
     {
       "chainId": 999,
+      "address": "0x3CE8426DC0B90a36f0e20D7c2acaaF4578ad4e50",
+      "name": "Equilibria Token",
+      "decimals": 18,
+      "symbol": "EQB",
+      "tags": [],
+      "extensions": {
+        "oftInfo": {
+          "peersInfo": {
+            "1": {
+              "tokenAddress": "0xfE80D611c6403f70e5B1b9B722D2B3510B740B2B"
+            },
+            "80094": {
+              "tokenAddress": "0xF9ee98099F5078078Bb8e17E6b4a4F95137E2037"
+            }
+          },
+          "oftAdapter": "0x3CE8426DC0B90a36f0e20D7c2acaaF4578ad4e50",
+          "oftVersion": 3,
+          "endpointVersion": 2,
+          "endpointId": 30367,
+          "oftSharedDecimals": 6
+        }
+      },
+      "isAcross": false,
+      "isOFT": true
+    },
+    {
+      "chainId": 999,
       "address": "0x3D75F2BB8aBcDBd1e27443cB5CBCE8A668046C81",
       "name": "HLP0",
       "decimals": 6,
@@ -58010,6 +58701,54 @@
       },
       "isAcross": false,
       "isOFT": true
+    },
+    {
+      "chainId": 999,
+      "address": "0x5555555555555555555555555555555555555555",
+      "name": "Wrapped HYPE",
+      "decimals": 18,
+      "symbol": "WHYPE",
+      "tags": [],
+      "extensions": {
+        "bridgeInfo": {
+          "1": {
+            "tokenAddress": "0xd83E3d560bA6F05094d9D8B3EB8aaEA571D1864E"
+          }
+        },
+        "oftInfo": {
+          "peersInfo": {
+            "1": {
+              "tokenAddress": "0xd83E3d560bA6F05094d9D8B3EB8aaEA571D1864E"
+            }
+          },
+          "oftAdapter": "0x2B7E48511ea616101834f09945c11F7d78D9136d",
+          "oftVersion": 3,
+          "endpointVersion": 2,
+          "endpointId": 30367,
+          "oftSharedDecimals": 6
+        }
+      },
+      "isAcross": false,
+      "isOFT": true
+    },
+    {
+      "chainId": 999,
+      "address": "0x644dc284E48EE6Ea9BbFa85DbD549060E17c35B4",
+      "name": "Pendle",
+      "decimals": 18,
+      "symbol": "PENDLE",
+      "tags": [],
+      "extensions": {
+        "peersInfo": {
+          "1": {
+            "tokenAddress": "0x808507121B80c02388fAd14726482e061B8da827"
+          },
+          "80094": {
+            "tokenAddress": "0xFf9c599D51C407A45D631c6e89cB047Efb88AeF6"
+          }
+        }
+      },
+      "isAcross": false
     },
     {
       "chainId": 999,
@@ -58131,6 +58870,36 @@
             }
           },
           "oftAdapter": "0x8a82CF92e0E290E843e4EbcfF92Df788a34adD3f",
+          "oftVersion": 3,
+          "endpointVersion": 2,
+          "endpointId": 30367,
+          "oftSharedDecimals": 6
+        }
+      },
+      "isAcross": false,
+      "isOFT": true
+    },
+    {
+      "chainId": 999,
+      "address": "0x9EfdFC72C1BC90b36f8aae35247e62310c58eACf",
+      "name": "SatLayer",
+      "decimals": 6,
+      "symbol": "SLAY",
+      "tags": [],
+      "extensions": {
+        "oftInfo": {
+          "peersInfo": {
+            "1": {
+              "tokenAddress": "0x51477A3002ee04B7542aDfe63ccdb50c00Ee5147"
+            },
+            "56": {
+              "tokenAddress": "0xfC5a743271672E91D77F0176e5CEa581Fbd5D834"
+            },
+            "8453": {
+              "tokenAddress": "0x3e248ab4554cFdec8fc4f18F569FE6F46dE61DB1"
+            }
+          },
+          "oftAdapter": "0x9EfdFC72C1BC90b36f8aae35247e62310c58eACf",
           "oftVersion": 3,
           "endpointVersion": 2,
           "endpointId": 30367,
@@ -58370,6 +59139,60 @@
             }
           },
           "oftAdapter": "0xC3BEF21Ea7dEB5C34CF33E918c8e28972C8048eD",
+          "oftVersion": 3,
+          "endpointVersion": 2,
+          "endpointId": 30367,
+          "oftSharedDecimals": 6
+        }
+      },
+      "isAcross": false,
+      "isOFT": true
+    },
+    {
+      "chainId": 999,
+      "address": "0xC6Eab56426Ae6E0DfE72EC1Ce2AAF73dAE0e4FF4",
+      "name": "Reservoir",
+      "decimals": 18,
+      "symbol": "DAM",
+      "tags": [],
+      "extensions": {
+        "oftInfo": {
+          "peersInfo": {
+            "1": {
+              "tokenAddress": "0x0FedbA9178b70e8b54e2Af08eBffcf28A1e5A43B"
+            },
+            "56": {
+              "tokenAddress": "0xF9Ca3fE094212FfA705742D3626a8Ab96aAbABf8"
+            },
+            "130": {
+              "tokenAddress": "0x79187C0894435715ee9D1c68575AC35A6e56f526"
+            },
+            "146": {
+              "tokenAddress": "0x147e5189B14B688eb69c5d877622E47d9839D37b"
+            },
+            "480": {
+              "tokenAddress": "0x79187C0894435715ee9D1c68575AC35A6e56f526"
+            },
+            "1329": {
+              "tokenAddress": "0x866d66F64FB81461903E1e38d998E747EcF35E78"
+            },
+            "8453": {
+              "tokenAddress": "0x71356761fD23e77E5D78c37C70fE78229Ca75a72"
+            },
+            "42161": {
+              "tokenAddress": "0x6c19e25bD34D063829DD05E2A5FAe165DDF2c8Dd"
+            },
+            "43114": {
+              "tokenAddress": "0xF9Ca3fE094212FfA705742D3626a8Ab96aAbABf8"
+            },
+            "80094": {
+              "tokenAddress": "0x71356761fD23e77E5D78c37C70fE78229Ca75a72"
+            },
+            "98866": {
+              "tokenAddress": "0xf9AA0FdFa7C8B40e844A09B0e6f0260Df120c2e8"
+            }
+          },
+          "oftAdapter": "0xC6Eab56426Ae6E0DfE72EC1Ce2AAF73dAE0e4FF4",
           "oftVersion": 3,
           "endpointVersion": 2,
           "endpointId": 30367,
@@ -58892,6 +59715,16 @@
       },
       "isAcross": false,
       "isOFT": true
+    },
+    {
+      "chainId": 999,
+      "address": "0xf855572485de4c8Bc33905f58d0c21cF4DF3d6c7",
+      "name": "would",
+      "decimals": 18,
+      "symbol": "WOULD",
+      "tags": [],
+      "extensions": {},
+      "isAcross": false
     },
     {
       "chainId": 999,
@@ -61310,6 +62143,57 @@
     },
     {
       "chainId": 1329,
+      "address": "0x866d66F64FB81461903E1e38d998E747EcF35E78",
+      "name": "Reservoir",
+      "decimals": 18,
+      "symbol": "DAM",
+      "tags": [],
+      "extensions": {
+        "oftInfo": {
+          "peersInfo": {
+            "1": {
+              "tokenAddress": "0x0FedbA9178b70e8b54e2Af08eBffcf28A1e5A43B"
+            },
+            "56": {
+              "tokenAddress": "0xF9Ca3fE094212FfA705742D3626a8Ab96aAbABf8"
+            },
+            "130": {
+              "tokenAddress": "0x79187C0894435715ee9D1c68575AC35A6e56f526"
+            },
+            "146": {
+              "tokenAddress": "0x147e5189B14B688eb69c5d877622E47d9839D37b"
+            },
+            "999": {
+              "tokenAddress": "0xC6Eab56426Ae6E0DfE72EC1Ce2AAF73dAE0e4FF4"
+            },
+            "8453": {
+              "tokenAddress": "0x71356761fD23e77E5D78c37C70fE78229Ca75a72"
+            },
+            "42161": {
+              "tokenAddress": "0x6c19e25bD34D063829DD05E2A5FAe165DDF2c8Dd"
+            },
+            "80094": {
+              "tokenAddress": "0x71356761fD23e77E5D78c37C70fE78229Ca75a72"
+            },
+            "98866": {
+              "tokenAddress": "0xf9AA0FdFa7C8B40e844A09B0e6f0260Df120c2e8"
+            },
+            "747474": {
+              "tokenAddress": "0x866d66F64FB81461903E1e38d998E747EcF35E78"
+            }
+          },
+          "oftAdapter": "0x866d66F64FB81461903E1e38d998E747EcF35E78",
+          "oftVersion": 3,
+          "endpointVersion": 2,
+          "endpointId": 30280,
+          "oftSharedDecimals": 6
+        }
+      },
+      "isAcross": false,
+      "isOFT": true
+    },
+    {
+      "chainId": 1329,
       "address": "0x89aeC21572F6637cCbd0d66861AAAC46Dd775ed1",
       "name": "seilor",
       "decimals": 6,
@@ -62607,6 +63491,35 @@
             }
           },
           "oftAdapter": "0x08E6D50169863FD9BEb88687ce1573CF9D6D1484",
+          "oftVersion": 3,
+          "endpointVersion": 2,
+          "endpointId": 30302,
+          "oftSharedDecimals": 6
+        }
+      },
+      "isAcross": false,
+      "isOFT": true
+    },
+    {
+      "chainId": 3338,
+      "address": "0x940A319B75861014A220D9c6c144d108552B089B",
+      "name": "DEUS Token",
+      "decimals": 18,
+      "symbol": "DEUS",
+      "tags": [],
+      "extensions": {
+        "bridgeInfo": {
+          "8453": {
+            "tokenAddress": "0x940A319B75861014A220D9c6c144d108552B089B"
+          }
+        },
+        "oftInfo": {
+          "peersInfo": {
+            "8453": {
+              "tokenAddress": "0x940A319B75861014A220D9c6c144d108552B089B"
+            }
+          },
+          "oftAdapter": "0x940A319B75861014A220D9c6c144d108552B089B",
           "oftVersion": 3,
           "endpointVersion": 2,
           "endpointId": 30302,
@@ -68110,6 +69023,36 @@
     },
     {
       "chainId": 8453,
+      "address": "0x3e248ab4554cFdec8fc4f18F569FE6F46dE61DB1",
+      "name": "SatLayer",
+      "decimals": 6,
+      "symbol": "SLAY",
+      "tags": [],
+      "extensions": {
+        "oftInfo": {
+          "peersInfo": {
+            "1": {
+              "tokenAddress": "0x51477A3002ee04B7542aDfe63ccdb50c00Ee5147"
+            },
+            "56": {
+              "tokenAddress": "0xfC5a743271672E91D77F0176e5CEa581Fbd5D834"
+            },
+            "999": {
+              "tokenAddress": "0x9EfdFC72C1BC90b36f8aae35247e62310c58eACf"
+            }
+          },
+          "oftAdapter": "0x3e248ab4554cFdec8fc4f18F569FE6F46dE61DB1",
+          "oftVersion": 3,
+          "endpointVersion": 2,
+          "endpointId": 30184,
+          "oftSharedDecimals": 6
+        }
+      },
+      "isAcross": false,
+      "isOFT": true
+    },
+    {
+      "chainId": 8453,
       "address": "0x42069d11A2CC72388a2e06210921E839Cfbd3280",
       "name": "GnomeLand",
       "decimals": 18,
@@ -68832,6 +69775,9 @@
               "tokenAddress": "0x58538e6A46E07434d7E7375Bc268D3cb839C0133"
             },
             "42161": {
+              "tokenAddress": "0x58538e6A46E07434d7E7375Bc268D3cb839C0133"
+            },
+            "43114": {
               "tokenAddress": "0x58538e6A46E07434d7E7375Bc268D3cb839C0133"
             },
             "59144": {
@@ -69643,6 +70589,63 @@
     },
     {
       "chainId": 8453,
+      "address": "0x71356761fD23e77E5D78c37C70fE78229Ca75a72",
+      "name": "Reservoir",
+      "decimals": 18,
+      "symbol": "DAM",
+      "tags": [],
+      "extensions": {
+        "oftInfo": {
+          "peersInfo": {
+            "1": {
+              "tokenAddress": "0x0FedbA9178b70e8b54e2Af08eBffcf28A1e5A43B"
+            },
+            "56": {
+              "tokenAddress": "0xF9Ca3fE094212FfA705742D3626a8Ab96aAbABf8"
+            },
+            "130": {
+              "tokenAddress": "0x79187C0894435715ee9D1c68575AC35A6e56f526"
+            },
+            "146": {
+              "tokenAddress": "0x147e5189B14B688eb69c5d877622E47d9839D37b"
+            },
+            "480": {
+              "tokenAddress": "0x79187C0894435715ee9D1c68575AC35A6e56f526"
+            },
+            "999": {
+              "tokenAddress": "0xC6Eab56426Ae6E0DfE72EC1Ce2AAF73dAE0e4FF4"
+            },
+            "1329": {
+              "tokenAddress": "0x866d66F64FB81461903E1e38d998E747EcF35E78"
+            },
+            "42161": {
+              "tokenAddress": "0x6c19e25bD34D063829DD05E2A5FAe165DDF2c8Dd"
+            },
+            "43114": {
+              "tokenAddress": "0xF9Ca3fE094212FfA705742D3626a8Ab96aAbABf8"
+            },
+            "80094": {
+              "tokenAddress": "0x71356761fD23e77E5D78c37C70fE78229Ca75a72"
+            },
+            "98866": {
+              "tokenAddress": "0xf9AA0FdFa7C8B40e844A09B0e6f0260Df120c2e8"
+            },
+            "747474": {
+              "tokenAddress": "0x866d66F64FB81461903E1e38d998E747EcF35E78"
+            }
+          },
+          "oftAdapter": "0x71356761fD23e77E5D78c37C70fE78229Ca75a72",
+          "oftVersion": 3,
+          "endpointVersion": 2,
+          "endpointId": 30184,
+          "oftSharedDecimals": 6
+        }
+      },
+      "isAcross": false,
+      "isOFT": true
+    },
+    {
+      "chainId": 8453,
       "address": "0x7252c865c05378Ffc15120F428dd65804dD0CE63",
       "name": "TLOS",
       "decimals": 18,
@@ -69930,6 +70933,35 @@
           "oftVersion": 1,
           "endpointVersion": 1,
           "endpointId": 184
+        }
+      },
+      "isAcross": false,
+      "isOFT": true
+    },
+    {
+      "chainId": 8453,
+      "address": "0x7CEA5B9548a4B48cF9551813Ef9e73DE916e41E0",
+      "name": "MIA",
+      "decimals": 18,
+      "symbol": "MIA",
+      "tags": [],
+      "extensions": {
+        "bridgeInfo": {
+          "56": {
+            "tokenAddress": "0x7CEA5B9548a4B48cF9551813Ef9e73DE916e41E0"
+          }
+        },
+        "oftInfo": {
+          "peersInfo": {
+            "56": {
+              "tokenAddress": "0x7CEA5B9548a4B48cF9551813Ef9e73DE916e41E0"
+            }
+          },
+          "oftAdapter": "0xb80FaE02fFa13aA8bb8F388eb0222a4BE0b04224",
+          "oftVersion": 3,
+          "endpointVersion": 2,
+          "endpointId": 30184,
+          "oftSharedDecimals": 6
         }
       },
       "isAcross": false,
@@ -70695,6 +71727,35 @@
     },
     {
       "chainId": 8453,
+      "address": "0x940A319B75861014A220D9c6c144d108552B089B",
+      "name": "DEUS Token",
+      "decimals": 18,
+      "symbol": "DEUS",
+      "tags": [],
+      "extensions": {
+        "bridgeInfo": {
+          "3338": {
+            "tokenAddress": "0x940A319B75861014A220D9c6c144d108552B089B"
+          }
+        },
+        "oftInfo": {
+          "peersInfo": {
+            "3338": {
+              "tokenAddress": "0x940A319B75861014A220D9c6c144d108552B089B"
+            }
+          },
+          "oftAdapter": "0x940A319B75861014A220D9c6c144d108552B089B",
+          "oftVersion": 3,
+          "endpointVersion": 2,
+          "endpointId": 30184,
+          "oftSharedDecimals": 6
+        }
+      },
+      "isAcross": false,
+      "isOFT": true
+    },
+    {
+      "chainId": 8453,
       "address": "0x944824290CC12F31ae18Ef51216A223Ba4063092",
       "name": "Masa Token",
       "decimals": 18,
@@ -70770,6 +71831,35 @@
           "oftVersion": 1,
           "endpointVersion": 1,
           "endpointId": 184
+        }
+      },
+      "isAcross": false,
+      "isOFT": true
+    },
+    {
+      "chainId": 8453,
+      "address": "0x959fC04DBf97A27073F89237cd62605F4d1b906D",
+      "name": "COCA",
+      "decimals": 18,
+      "symbol": "COCA",
+      "tags": [],
+      "extensions": {
+        "bridgeInfo": {
+          "137": {
+            "tokenAddress": "0x7B12598E3616261df1C05EC28De0d2fB10c1F206"
+          }
+        },
+        "oftInfo": {
+          "peersInfo": {
+            "137": {
+              "tokenAddress": "0x7B12598E3616261df1C05EC28De0d2fB10c1F206"
+            }
+          },
+          "oftAdapter": "0x959fC04DBf97A27073F89237cd62605F4d1b906D",
+          "oftVersion": 3,
+          "endpointVersion": 2,
+          "endpointId": 30184,
+          "oftSharedDecimals": 6
         }
       },
       "isAcross": false,
@@ -79895,6 +80985,16 @@
     },
     {
       "chainId": 42161,
+      "address": "0x44E23B1F3f4511b3a7e81077Fd9F2858dF1B7579",
+      "name": "Millennium Club",
+      "decimals": 18,
+      "symbol": "MCLB",
+      "tags": [],
+      "extensions": {},
+      "isAcross": false
+    },
+    {
+      "chainId": 42161,
       "address": "0x4591DBfF62656E7859Afe5e45f6f47D3669fBB28",
       "name": "Prisma mkUSD",
       "decimals": 18,
@@ -81883,6 +82983,63 @@
             }
           },
           "oftAdapter": "0x6b34D1C35689DbA179C2eDdF6a01530BBb1D28a8",
+          "oftVersion": 3,
+          "endpointVersion": 2,
+          "endpointId": 30110,
+          "oftSharedDecimals": 6
+        }
+      },
+      "isAcross": false,
+      "isOFT": true
+    },
+    {
+      "chainId": 42161,
+      "address": "0x6c19e25bD34D063829DD05E2A5FAe165DDF2c8Dd",
+      "name": "Reservoir",
+      "decimals": 18,
+      "symbol": "DAM",
+      "tags": [],
+      "extensions": {
+        "oftInfo": {
+          "peersInfo": {
+            "1": {
+              "tokenAddress": "0x0FedbA9178b70e8b54e2Af08eBffcf28A1e5A43B"
+            },
+            "56": {
+              "tokenAddress": "0xF9Ca3fE094212FfA705742D3626a8Ab96aAbABf8"
+            },
+            "130": {
+              "tokenAddress": "0x79187C0894435715ee9D1c68575AC35A6e56f526"
+            },
+            "146": {
+              "tokenAddress": "0x147e5189B14B688eb69c5d877622E47d9839D37b"
+            },
+            "480": {
+              "tokenAddress": "0x79187C0894435715ee9D1c68575AC35A6e56f526"
+            },
+            "999": {
+              "tokenAddress": "0xC6Eab56426Ae6E0DfE72EC1Ce2AAF73dAE0e4FF4"
+            },
+            "1329": {
+              "tokenAddress": "0x866d66F64FB81461903E1e38d998E747EcF35E78"
+            },
+            "8453": {
+              "tokenAddress": "0x71356761fD23e77E5D78c37C70fE78229Ca75a72"
+            },
+            "43114": {
+              "tokenAddress": "0xF9Ca3fE094212FfA705742D3626a8Ab96aAbABf8"
+            },
+            "80094": {
+              "tokenAddress": "0x71356761fD23e77E5D78c37C70fE78229Ca75a72"
+            },
+            "98866": {
+              "tokenAddress": "0xf9AA0FdFa7C8B40e844A09B0e6f0260Df120c2e8"
+            },
+            "747474": {
+              "tokenAddress": "0x866d66F64FB81461903E1e38d998E747EcF35E78"
+            }
+          },
+          "oftAdapter": "0x6c19e25bD34D063829DD05E2A5FAe165DDF2c8Dd",
           "oftVersion": 3,
           "endpointVersion": 2,
           "endpointId": 30110,
@@ -91549,6 +92706,16 @@
     },
     {
       "chainId": 43114,
+      "address": "0x44E23B1F3f4511b3a7e81077Fd9F2858dF1B7579",
+      "name": "Millennium Club",
+      "decimals": 18,
+      "symbol": "MCLB",
+      "tags": [],
+      "extensions": {},
+      "isAcross": false
+    },
+    {
+      "chainId": 43114,
       "address": "0x47c3118Ad183712Acd42648e9E522e13690f29a0",
       "name": "Meat",
       "decimals": 6,
@@ -91690,6 +92857,45 @@
           }
         }
       }
+    },
+    {
+      "chainId": 43114,
+      "address": "0x58538e6A46E07434d7E7375Bc268D3cb839C0133",
+      "name": "ENA",
+      "decimals": 18,
+      "symbol": "ENA",
+      "logoURI": "https://s2.coinmarketcap.com/static/img/coins/128x128/30171.png",
+      "tags": [],
+      "extensions": {
+        "bridgeInfo": {
+          "1": {
+            "tokenAddress": "0x57e114B691Db790C35207b2e685D4A43181e6061"
+          }
+        },
+        "oftInfo": {
+          "peersInfo": {
+            "1": {
+              "tokenAddress": "0x57e114B691Db790C35207b2e685D4A43181e6061"
+            },
+            "10": {
+              "tokenAddress": "0x58538e6A46E07434d7E7375Bc268D3cb839C0133"
+            },
+            "8453": {
+              "tokenAddress": "0x58538e6A46E07434d7E7375Bc268D3cb839C0133"
+            },
+            "42161": {
+              "tokenAddress": "0x58538e6A46E07434d7E7375Bc268D3cb839C0133"
+            }
+          },
+          "oftAdapter": "0x58538e6A46E07434d7E7375Bc268D3cb839C0133",
+          "oftVersion": 3,
+          "endpointVersion": 2,
+          "endpointId": 30106,
+          "oftSharedDecimals": 6
+        }
+      },
+      "isAcross": false,
+      "isOFT": true
     },
     {
       "chainId": 43114,
@@ -93415,6 +94621,60 @@
     },
     {
       "chainId": 43114,
+      "address": "0xF9Ca3fE094212FfA705742D3626a8Ab96aAbABf8",
+      "name": "Reservoir",
+      "decimals": 18,
+      "symbol": "DAM",
+      "tags": [],
+      "extensions": {
+        "oftInfo": {
+          "peersInfo": {
+            "1": {
+              "tokenAddress": "0x0FedbA9178b70e8b54e2Af08eBffcf28A1e5A43B"
+            },
+            "56": {
+              "tokenAddress": "0xF9Ca3fE094212FfA705742D3626a8Ab96aAbABf8"
+            },
+            "130": {
+              "tokenAddress": "0x79187C0894435715ee9D1c68575AC35A6e56f526"
+            },
+            "146": {
+              "tokenAddress": "0x147e5189B14B688eb69c5d877622E47d9839D37b"
+            },
+            "480": {
+              "tokenAddress": "0x79187C0894435715ee9D1c68575AC35A6e56f526"
+            },
+            "999": {
+              "tokenAddress": "0xC6Eab56426Ae6E0DfE72EC1Ce2AAF73dAE0e4FF4"
+            },
+            "8453": {
+              "tokenAddress": "0x71356761fD23e77E5D78c37C70fE78229Ca75a72"
+            },
+            "42161": {
+              "tokenAddress": "0x6c19e25bD34D063829DD05E2A5FAe165DDF2c8Dd"
+            },
+            "80094": {
+              "tokenAddress": "0x71356761fD23e77E5D78c37C70fE78229Ca75a72"
+            },
+            "98866": {
+              "tokenAddress": "0xf9AA0FdFa7C8B40e844A09B0e6f0260Df120c2e8"
+            },
+            "747474": {
+              "tokenAddress": "0x866d66F64FB81461903E1e38d998E747EcF35E78"
+            }
+          },
+          "oftAdapter": "0xF9Ca3fE094212FfA705742D3626a8Ab96aAbABf8",
+          "oftVersion": 3,
+          "endpointVersion": 2,
+          "endpointId": 30106,
+          "oftSharedDecimals": 6
+        }
+      },
+      "isAcross": false,
+      "isOFT": true
+    },
+    {
+      "chainId": 43114,
       "address": "0xFDfdFD005F127334F7c4eeFEF2252D2BF4B6E79E",
       "name": "Unicorn Fart Dust",
       "decimals": 18,
@@ -94160,6 +95420,33 @@
           "oftVersion": 2,
           "endpointVersion": 1,
           "endpointId": 106
+        }
+      },
+      "isAcross": false,
+      "isOFT": true
+    },
+    {
+      "chainId": 43114,
+      "address": "0xca2671Dcd031a72359f456C212F62A9bDa737cD7",
+      "name": "YUSD",
+      "decimals": 18,
+      "symbol": "YUSD",
+      "tags": [],
+      "extensions": {
+        "oftInfo": {
+          "peersInfo": {
+            "1": {
+              "tokenAddress": "0x4274cD7277C7bb0806Bd5FE84b9aDAE466a8DA0a"
+            },
+            "56": {
+              "tokenAddress": "0xAB3dBcD9B096C3fF76275038bf58eAC10D22C61f"
+            }
+          },
+          "oftAdapter": "0xca2671Dcd031a72359f456C212F62A9bDa737cD7",
+          "oftVersion": 3,
+          "endpointVersion": 2,
+          "endpointId": 30106,
+          "oftSharedDecimals": 6
         }
       },
       "isAcross": false,
@@ -95497,6 +96784,36 @@
           "oftVersion": 1,
           "endpointVersion": 1,
           "endpointId": 183
+        }
+      },
+      "isAcross": false,
+      "isOFT": true
+    },
+    {
+      "chainId": 59144,
+      "address": "0x37D6382B6889cCeF8d6871A8b60E667115eDDBcF",
+      "name": "pufETH",
+      "decimals": 18,
+      "symbol": "pufETH",
+      "logoURI": "https://s2.coinmarketcap.com/static/img/coins/128x128/29325.png",
+      "tags": [],
+      "extensions": {
+        "bridgeInfo": {
+          "1": {
+            "tokenAddress": "0xD9A442856C234a39a81a089C06451EBAa4306a72"
+          }
+        },
+        "oftInfo": {
+          "peersInfo": {
+            "1": {
+              "tokenAddress": "0xD9A442856C234a39a81a089C06451EBAa4306a72"
+            }
+          },
+          "oftAdapter": "0x37D6382B6889cCeF8d6871A8b60E667115eDDBcF",
+          "oftVersion": 3,
+          "endpointVersion": 2,
+          "endpointId": 30183,
+          "oftSharedDecimals": 6
         }
       },
       "isAcross": false,
@@ -98578,6 +99895,63 @@
     },
     {
       "chainId": 80094,
+      "address": "0x71356761fD23e77E5D78c37C70fE78229Ca75a72",
+      "name": "Reservoir",
+      "decimals": 18,
+      "symbol": "DAM",
+      "tags": [],
+      "extensions": {
+        "oftInfo": {
+          "peersInfo": {
+            "1": {
+              "tokenAddress": "0x0FedbA9178b70e8b54e2Af08eBffcf28A1e5A43B"
+            },
+            "56": {
+              "tokenAddress": "0xF9Ca3fE094212FfA705742D3626a8Ab96aAbABf8"
+            },
+            "130": {
+              "tokenAddress": "0x79187C0894435715ee9D1c68575AC35A6e56f526"
+            },
+            "146": {
+              "tokenAddress": "0x147e5189B14B688eb69c5d877622E47d9839D37b"
+            },
+            "480": {
+              "tokenAddress": "0x79187C0894435715ee9D1c68575AC35A6e56f526"
+            },
+            "999": {
+              "tokenAddress": "0xC6Eab56426Ae6E0DfE72EC1Ce2AAF73dAE0e4FF4"
+            },
+            "1329": {
+              "tokenAddress": "0x866d66F64FB81461903E1e38d998E747EcF35E78"
+            },
+            "8453": {
+              "tokenAddress": "0x71356761fD23e77E5D78c37C70fE78229Ca75a72"
+            },
+            "42161": {
+              "tokenAddress": "0x6c19e25bD34D063829DD05E2A5FAe165DDF2c8Dd"
+            },
+            "43114": {
+              "tokenAddress": "0xF9Ca3fE094212FfA705742D3626a8Ab96aAbABf8"
+            },
+            "98866": {
+              "tokenAddress": "0xf9AA0FdFa7C8B40e844A09B0e6f0260Df120c2e8"
+            },
+            "747474": {
+              "tokenAddress": "0x866d66F64FB81461903E1e38d998E747EcF35E78"
+            }
+          },
+          "oftAdapter": "0x71356761fD23e77E5D78c37C70fE78229Ca75a72",
+          "oftVersion": 3,
+          "endpointVersion": 2,
+          "endpointId": 30362,
+          "oftSharedDecimals": 6
+        }
+      },
+      "isAcross": false,
+      "isOFT": true
+    },
+    {
+      "chainId": 80094,
       "address": "0x741620136cf08a782c1Df1Fc9E3cAA760Cc4Fecc",
       "name": "ePendleOFT",
       "decimals": 18,
@@ -99073,22 +100447,22 @@
     },
     {
       "chainId": 80094,
-      "address": "0xFf9c599D51C407A45D631c6e89cB047Efb88AeF6",
-      "name": "Pendle",
+      "address": "0xF9ee98099F5078078Bb8e17E6b4a4F95137E2037",
+      "name": "Equilibria Token",
       "decimals": 18,
-      "symbol": "PENDLE",
+      "symbol": "EQB",
       "tags": [],
       "extensions": {
         "oftInfo": {
           "peersInfo": {
             "1": {
-              "tokenAddress": "0x808507121B80c02388fAd14726482e061B8da827"
+              "tokenAddress": "0xfE80D611c6403f70e5B1b9B722D2B3510B740B2B"
             },
             "999": {
-              "tokenAddress": "0xD6Eb81136884713E843936843E286FD2a85A205A"
+              "tokenAddress": "0x3CE8426DC0B90a36f0e20D7c2acaaF4578ad4e50"
             }
           },
-          "oftAdapter": "0xFf9c599D51C407A45D631c6e89cB047Efb88AeF6",
+          "oftAdapter": "0xF9ee98099F5078078Bb8e17E6b4a4F95137E2037",
           "oftVersion": 3,
           "endpointVersion": 2,
           "endpointId": 30362,
@@ -99298,6 +100672,36 @@
             }
           },
           "oftAdapter": "0xdCB3D91555385DaE23e6B966b5626aa7A75Be940",
+          "oftVersion": 3,
+          "endpointVersion": 2,
+          "endpointId": 30362,
+          "oftSharedDecimals": 6
+        }
+      },
+      "isAcross": false,
+      "isOFT": true
+    },
+    {
+      "chainId": 80094,
+      "address": "0xecAc9C5F704e954931349Da37F60E39f515c11c1",
+      "name": "Lombard Staked Bitcoin",
+      "decimals": 8,
+      "symbol": "LBTC",
+      "logoURI": "https://s2.coinmarketcap.com/static/img/coins/128x128/33652.png",
+      "tags": [],
+      "extensions": {
+        "bridgeInfo": {
+          "1": {
+            "tokenAddress": "0x8236a87084f8B84306f72007F36F2618A5634494"
+          }
+        },
+        "oftInfo": {
+          "peersInfo": {
+            "1": {
+              "tokenAddress": "0x8236a87084f8B84306f72007F36F2618A5634494"
+            }
+          },
+          "oftAdapter": "0x630e12D53D4E041b8C5451aD035Ea841E08391d7",
           "oftVersion": 3,
           "endpointVersion": 2,
           "endpointId": 30362,
@@ -101758,6 +103162,57 @@
             }
           },
           "oftAdapter": "0xbcE9988376C6b9c0c035bdbc9060568031d51130",
+          "oftVersion": 3,
+          "endpointVersion": 2,
+          "endpointId": 30370,
+          "oftSharedDecimals": 6
+        }
+      },
+      "isAcross": false,
+      "isOFT": true
+    },
+    {
+      "chainId": 98866,
+      "address": "0xf9AA0FdFa7C8B40e844A09B0e6f0260Df120c2e8",
+      "name": "Reservoir",
+      "decimals": 18,
+      "symbol": "DAM",
+      "tags": [],
+      "extensions": {
+        "oftInfo": {
+          "peersInfo": {
+            "1": {
+              "tokenAddress": "0x0FedbA9178b70e8b54e2Af08eBffcf28A1e5A43B"
+            },
+            "56": {
+              "tokenAddress": "0xF9Ca3fE094212FfA705742D3626a8Ab96aAbABf8"
+            },
+            "130": {
+              "tokenAddress": "0x79187C0894435715ee9D1c68575AC35A6e56f526"
+            },
+            "146": {
+              "tokenAddress": "0x147e5189B14B688eb69c5d877622E47d9839D37b"
+            },
+            "999": {
+              "tokenAddress": "0xC6Eab56426Ae6E0DfE72EC1Ce2AAF73dAE0e4FF4"
+            },
+            "1329": {
+              "tokenAddress": "0x866d66F64FB81461903E1e38d998E747EcF35E78"
+            },
+            "8453": {
+              "tokenAddress": "0x71356761fD23e77E5D78c37C70fE78229Ca75a72"
+            },
+            "42161": {
+              "tokenAddress": "0x6c19e25bD34D063829DD05E2A5FAe165DDF2c8Dd"
+            },
+            "43114": {
+              "tokenAddress": "0xF9Ca3fE094212FfA705742D3626a8Ab96aAbABf8"
+            },
+            "80094": {
+              "tokenAddress": "0x71356761fD23e77E5D78c37C70fE78229Ca75a72"
+            }
+          },
+          "oftAdapter": "0xf9AA0FdFa7C8B40e844A09B0e6f0260Df120c2e8",
           "oftVersion": 3,
           "endpointVersion": 2,
           "endpointId": 30370,
@@ -104690,6 +106145,54 @@
             }
           },
           "oftAdapter": "0x4809010926aec940b550D34a46A52739f996D75D",
+          "oftVersion": 3,
+          "endpointVersion": 2,
+          "endpointId": 30375,
+          "oftSharedDecimals": 6
+        }
+      },
+      "isAcross": false,
+      "isOFT": true
+    },
+    {
+      "chainId": 747474,
+      "address": "0x866d66F64FB81461903E1e38d998E747EcF35E78",
+      "name": "Reservoir",
+      "decimals": 18,
+      "symbol": "DAM",
+      "tags": [],
+      "extensions": {
+        "oftInfo": {
+          "peersInfo": {
+            "1": {
+              "tokenAddress": "0x0FedbA9178b70e8b54e2Af08eBffcf28A1e5A43B"
+            },
+            "56": {
+              "tokenAddress": "0xF9Ca3fE094212FfA705742D3626a8Ab96aAbABf8"
+            },
+            "146": {
+              "tokenAddress": "0x147e5189B14B688eb69c5d877622E47d9839D37b"
+            },
+            "480": {
+              "tokenAddress": "0x79187C0894435715ee9D1c68575AC35A6e56f526"
+            },
+            "1329": {
+              "tokenAddress": "0x866d66F64FB81461903E1e38d998E747EcF35E78"
+            },
+            "8453": {
+              "tokenAddress": "0x71356761fD23e77E5D78c37C70fE78229Ca75a72"
+            },
+            "42161": {
+              "tokenAddress": "0x6c19e25bD34D063829DD05E2A5FAe165DDF2c8Dd"
+            },
+            "43114": {
+              "tokenAddress": "0xF9Ca3fE094212FfA705742D3626a8Ab96aAbABf8"
+            },
+            "80094": {
+              "tokenAddress": "0x71356761fD23e77E5D78c37C70fE78229Ca75a72"
+            }
+          },
+          "oftAdapter": "0x866d66F64FB81461903E1e38d998E747EcF35E78",
           "oftVersion": 3,
           "endpointVersion": 2,
           "endpointId": 30375,
