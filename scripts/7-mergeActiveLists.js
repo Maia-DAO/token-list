@@ -322,8 +322,8 @@ async function main() {
           // Track has inactive, also track its peers.
           inactiveOFTSet.add(key)
           for (const [chain, peer] of Object.entries(normalizedToken.extensions.peersInfo || {})) {
-            const key = peer.tokenAddress.toLowerCase() + '_' + chain
-            inactiveOFTSet.add(key)
+            const peerKey = peer.tokenAddress.toLowerCase() + '_' + chain
+            inactiveOFTSet.add(peerKey)
           }
 
         } else {
@@ -331,8 +331,8 @@ async function main() {
           activeOFTSet.add(key)
 
           for (const [chain, peer] of Object.entries(normalizedToken.extensions.peersInfo || {})) {
-            const key = peer.tokenAddress.toLowerCase() + '_' + chain
-            activeOFTSet.add(key)
+            const peerKey = peer.tokenAddress.toLowerCase() + '_' + chain
+            activeOFTSet.add(peerKey)
           }
 
         }
@@ -365,8 +365,8 @@ async function main() {
           // Track has inactive, also track its peers.
           inactiveOFTSet.add(key)
           for (const [chain, peer] of Object.entries(normalizedToken.extensions.peersInfo || {})) {
-            const key = peer.tokenAddress.toLowerCase() + '_' + chain
-            inactiveOFTSet.add(key)
+            const peerKey = peer.tokenAddress.toLowerCase() + '_' + chain
+            inactiveOFTSet.add(peerKey)
           }
 
 
@@ -375,8 +375,8 @@ async function main() {
           activeOFTSet.add(key)
 
           for (const [chain, peer] of Object.entries(normalizedToken.extensions.peersInfo || {})) {
-            const key = peer.tokenAddress.toLowerCase() + '_' + chain
-            activeOFTSet.add(key)
+            const peerKey = peer.tokenAddress.toLowerCase() + '_' + chain
+            activeOFTSet.add(peerKey)
           }
 
         }
@@ -392,18 +392,18 @@ async function main() {
     }
 
     // Check if there are tokens from activeOFTSet that are still in inactiveTokensArray.
-    for (const key of activeOFTSet) {
+    for (const activeSetKey of activeOFTSet) {
       // Remove from inactiveTokensArray if it is in activeOFTSet.
-      inactiveTokensArray = inactiveTokensArray.filter((token) => token.address.toLowerCase() + '_' + token.chainId !== key)
+      inactiveTokensArray = inactiveTokensArray.filter((token) => token.address.toLowerCase() + '_' + token.chainId !== activeSetKey)
     }
 
     // Check if there are tokens from inactiveOFTSet that are still in normalizedMap.
     for (const inactiveToken of inactiveTokensArray) {
-      const key = inactiveToken.address.toLowerCase() + '_' + inactiveToken.chainId
-      if (normalizedMap[key]) {
-        delete normalizedMap[key]
-      } else if (rootTokensMap[key]) {
-        delete rootTokensMap[key]
+      const inactiveTokenKey = inactiveToken.address.toLowerCase() + '_' + inactiveToken.chainId
+      if (normalizedMap[inactiveTokenKey]) {
+        delete normalizedMap[inactiveTokenKey]
+      } else if (rootTokensMap[inactiveTokenKey]) {
+        delete rootTokensMap[inactiveTokenKey]
       }
     }
 
