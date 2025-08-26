@@ -2,7 +2,7 @@ const fs = require('fs').promises
 const path = require('path')
 const { SupportedChainId } = require('maia-core-sdk')
 const { orderTokens } = require('./orderTokens')
-const { BLOCKED_TOKEN_SYMBOLS } = require('../configs')
+const { BLOCKED_TOKEN_SYMBOLS, EXTENDED_SUPPORTED_CHAIN_IDS } = require('../configs')
 
 
 /**
@@ -46,7 +46,7 @@ async function main() {
       const tokens = Array.isArray(list.tokens) ? list.tokens : Array.isArray(list) ? list : []
 
       for (const token of tokens) {
-        if (!Object.values(SupportedChainId).includes(token.chainId)) continue // Skip unsupported chain 
+        if (!Object.values(SupportedChainId).includes(token.chainId) && !EXTENDED_SUPPORTED_CHAIN_IDS.includes(token.chainId)) continue // Skip unsupported chain 
         const key = `${token.chainId}_${token.address.toLowerCase()}`
         if (!mergedMap.has(key)) {
           mergedMap.set(key, { ...token }) // clone to avoid mutating original
