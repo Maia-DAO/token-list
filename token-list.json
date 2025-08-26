@@ -1,8 +1,8 @@
 {
   "name": "Hermes Omnichain Token List",
-  "timestamp": "1756216096",
+  "timestamp": "1756217242",
   "version": {
-    "major": 140,
+    "major": 141,
     "minor": 0,
     "patch": 0
   },
@@ -29966,16 +29966,16 @@
       "tags": [],
       "extensions": {
         "oftInfo": {
-          "peersInfo": {
-            "1": {
-              "tokenAddress": "0x090185f2135308BaD17527004364eBcC2D37e5F6"
-            },
-            "42161": {
-              "tokenAddress": "0x34FbFB3e95011956aBAD82796f466bA88895f214"
-            },
-            "80094": {
-              "tokenAddress": "0x22581e7E93d66977849D094006fC2cF3aB9C8FfA"
-            }
+        "peersInfo": {
+          "1": {
+            "tokenAddress": "0x090185f2135308BaD17527004364eBcC2D37e5F6"
+          },
+          "42161": {
+            "tokenAddress": "0x34FbFB3e95011956aBAD82796f466bA88895f214"
+          },
+          "80094": {
+            "tokenAddress": "0x22581e7E93d66977849D094006fC2cF3aB9C8FfA"
+          }
           },
           "oftAdapter": "0x1D63c9409bb41b2Ab43259b843fF32c839A9ffa2",
           "oftVersion": 3,
@@ -30013,6 +30013,41 @@
             }
           },
           "oftAdapter": "0x84f682626302EA7BCA2A7c338b84863292131319",
+          "oftVersion": 3,
+          "endpointVersion": 2,
+          "endpointId": 30369,
+          "oftSharedDecimals": 6
+        }
+      },
+      "isAcross": false,
+      "isOFT": true
+    },
+    {
+      "chainId": 6900,
+      "address": "0xf4e097E36d2064E2bDCA96e60439f3A369522003",
+      "name": "USDa",
+      "decimals": 18,
+      "symbol": "USDa",
+      "logoURI": "https://s2.coinmarketcap.com/static/img/coins/128x128/35368.png",
+      "tags": [],
+      "extensions": {
+        "coingeckoId": "usda-2",
+        "coinMarketCapId": 35368,
+        "bridgeInfo": {
+          "1": {
+            "tokenAddress": "0x8A60E489004Ca22d775C5F2c657598278d17D9c2"
+          }
+        },
+        "oftInfo": {
+          "peersInfo": {
+            "1": {
+              "tokenAddress": "0x8A60E489004Ca22d775C5F2c657598278d17D9c2"
+            },
+            "56": {
+              "tokenAddress": "0x9356086146be5158E98aD827E21b5cF944699894"
+            }
+          },
+          "oftAdapter": "0xf4e097E36d2064E2bDCA96e60439f3A369522003",
           "oftVersion": 3,
           "endpointVersion": 2,
           "endpointId": 30369,
@@ -40723,20 +40758,39 @@
     },
     {
       "chainId": 42161,
-      "address": "0x3E6648C5a70A150A88bCE65F4aD4d506Fe15d2AF",
+      "address": "0x34FbFB3e95011956aBAD82796f466bA88895f214",
       "name": "Spell Token",
-      "symbol": "SPELL",
       "decimals": 18,
+      "symbol": "SPELL",
       "logoURI": "https://assets.coingecko.com/coins/images/15861/thumb/abracadabra-3.png?1622544862",
+      "tags": [],
       "extensions": {
-        "bridgeInfo": {
+        "oftInfo": {
+          "bridgeInfo": {
           "1": {
             "tokenAddress": "0x090185f2135308BaD17527004364eBcC2D37e5F6"
-          }
+            }
+          },
+          "peersInfo": {
+            "1": {
+              "tokenAddress": "0x090185f2135308BaD17527004364eBcC2D37e5F6"
+            },
+            "6900": {
+              "tokenAddress": "0x1D63c9409bb41b2Ab43259b843fF32c839A9ffa2"
+            },
+            "80094": {
+              "tokenAddress": "0x22581e7E93d66977849D094006fC2cF3aB9C8FfA"
+            }
+          },
+          "oftAdapter": "0x34FbFB3e95011956aBAD82796f466bA88895f214",
+          "oftVersion": 3,
+          "endpointVersion": 2,
+          "endpointId": 30110,
+          "oftSharedDecimals": 6
         }
       },
       "isAcross": false,
-      "isOFT": false
+      "isOFT": true
     },
     {
       "chainId": 42161,

@@ -1,8 +1,8 @@
 {
   "name": "Hermes Omnichain Inactive Token List",
-  "timestamp": "1755883424",
+  "timestamp": "1756217243",
   "version": {
-    "major": 85,
+    "major": 86,
     "minor": 0,
     "patch": 0
   },
@@ -22165,6 +22165,9 @@
             "43114": {
               "tokenAddress": "0x4809010926aec940b550D34a46A52739f996D75D"
             },
+            "80094": {
+              "tokenAddress": "0x316cd39632Cac4F4CdfC21757c4500FE12f64514"
+            },
             "98866": {
               "tokenAddress": "0x0BBcc2C1991d0aF8ec6A5eD922e6f5606923fE15"
             },
@@ -39047,7 +39050,7 @@
         },
         "feeInfo": {
           "137": {
-            "oftFee": 10
+            "oftFee": 1
           }
         },
         "oftInfo": {
@@ -51479,7 +51482,7 @@
         "coingeckoId": "good-game-us-dollar",
         "feeInfo": {
           "56": {
-            "oftFee": 10
+            "oftFee": 1
           }
         },
         "oftInfo": {
@@ -65913,41 +65916,6 @@
       "isOFT": true
     },
     {
-      "chainId": 6900,
-      "address": "0xf4e097E36d2064E2bDCA96e60439f3A369522003",
-      "name": "USDa",
-      "decimals": 18,
-      "symbol": "USDa",
-      "logoURI": "https://s2.coinmarketcap.com/static/img/coins/128x128/35368.png",
-      "tags": [],
-      "extensions": {
-        "coingeckoId": "usda-2",
-        "coinMarketCapId": 35368,
-        "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0x8A60E489004Ca22d775C5F2c657598278d17D9c2"
-          }
-        },
-        "oftInfo": {
-          "peersInfo": {
-            "1": {
-              "tokenAddress": "0x8A60E489004Ca22d775C5F2c657598278d17D9c2"
-            },
-            "56": {
-              "tokenAddress": "0x9356086146be5158E98aD827E21b5cF944699894"
-            }
-          },
-          "oftAdapter": "0xf4e097E36d2064E2bDCA96e60439f3A369522003",
-          "oftVersion": 3,
-          "endpointVersion": 2,
-          "endpointId": 30369,
-          "oftSharedDecimals": 6
-        }
-      },
-      "isAcross": false,
-      "isOFT": true
-    },
-    {
       "chainId": 8453,
       "address": "0x000000000000012DeF132E61759048bE5b5C6033",
       "name": "Cortex",
@@ -80038,37 +80006,6 @@
     },
     {
       "chainId": 42161,
-      "address": "0x34FbFB3e95011956aBAD82796f466bA88895f214",
-      "name": "SPELL",
-      "decimals": 18,
-      "symbol": "SPELL",
-      "logoURI": "https://assets.coingecko.com/coins/images/15861/thumb/abracadabra-3.png?1622544862",
-      "tags": [],
-      "extensions": {
-        "oftInfo": {
-          "peersInfo": {
-            "1": {
-              "tokenAddress": "0x090185f2135308BaD17527004364eBcC2D37e5F6"
-            },
-            "6900": {
-              "tokenAddress": "0x1D63c9409bb41b2Ab43259b843fF32c839A9ffa2"
-            },
-            "80094": {
-              "tokenAddress": "0x22581e7E93d66977849D094006fC2cF3aB9C8FfA"
-            }
-          },
-          "oftAdapter": "0x34FbFB3e95011956aBAD82796f466bA88895f214",
-          "oftVersion": 3,
-          "endpointVersion": 2,
-          "endpointId": 30110,
-          "oftSharedDecimals": 6
-        }
-      },
-      "isAcross": false,
-      "isOFT": true
-    },
-    {
-      "chainId": 42161,
       "address": "0x350F1F7d83c98bcCd19caB739Fa42F121a8d8d9C",
       "name": "frxBULLAS",
       "decimals": 18,
@@ -81996,6 +81933,9 @@
               "tokenAddress": "0x58538e6A46E07434d7E7375Bc268D3cb839C0133"
             },
             "34443": {
+              "tokenAddress": "0x58538e6A46E07434d7E7375Bc268D3cb839C0133"
+            },
+            "43114": {
               "tokenAddress": "0x58538e6A46E07434d7E7375Bc268D3cb839C0133"
             },
             "59144": {
@@ -99463,37 +99403,6 @@
     },
     {
       "chainId": 80094,
-      "address": "0x22581e7E93d66977849D094006fC2cF3aB9C8FfA",
-      "name": "SPELL",
-      "decimals": 18,
-      "symbol": "SPELL",
-      "logoURI": "https://assets.coingecko.com/coins/images/15861/thumb/abracadabra-3.png?1622544862",
-      "tags": [],
-      "extensions": {
-        "oftInfo": {
-          "peersInfo": {
-            "1": {
-              "tokenAddress": "0x090185f2135308BaD17527004364eBcC2D37e5F6"
-            },
-            "6900": {
-              "tokenAddress": "0x1D63c9409bb41b2Ab43259b843fF32c839A9ffa2"
-            },
-            "42161": {
-              "tokenAddress": "0x34FbFB3e95011956aBAD82796f466bA88895f214"
-            }
-          },
-          "oftAdapter": "0x22581e7E93d66977849D094006fC2cF3aB9C8FfA",
-          "oftVersion": 3,
-          "endpointVersion": 2,
-          "endpointId": 30362,
-          "oftSharedDecimals": 6
-        }
-      },
-      "isAcross": false,
-      "isOFT": true
-    },
-    {
-      "chainId": 80094,
       "address": "0x2492D0006411Af6C8bbb1c8afc1B0197350a79e9",
       "name": "Resolv USD",
       "decimals": 18,
@@ -99626,6 +99535,35 @@
       "tags": [],
       "extensions": {},
       "isAcross": false
+    },
+    {
+      "chainId": 80094,
+      "address": "0x316cd39632Cac4F4CdfC21757c4500FE12f64514",
+      "name": "Wrapped Savings rUSD",
+      "decimals": 18,
+      "symbol": "wsrUSD",
+      "tags": [],
+      "extensions": {
+        "bridgeInfo": {
+          "1": {
+            "tokenAddress": "0xd3fD63209FA2D55B07A0f6db36C2f43900be3094"
+          }
+        },
+        "oftInfo": {
+          "peersInfo": {
+            "1": {
+              "tokenAddress": "0xd3fD63209FA2D55B07A0f6db36C2f43900be3094"
+            }
+          },
+          "oftAdapter": "0x316cd39632Cac4F4CdfC21757c4500FE12f64514",
+          "oftVersion": 3,
+          "endpointVersion": 2,
+          "endpointId": 30362,
+          "oftSharedDecimals": 6
+        }
+      },
+      "isAcross": false,
+      "isOFT": true
     },
     {
       "chainId": 80094,
