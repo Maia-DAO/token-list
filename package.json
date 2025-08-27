@@ -10,7 +10,8 @@
     "merge": "node scripts/7-mergeActiveLists.js",
     "merge-others": "node scripts/8-mergeInactiveLists.js",
     "removeDupes": "node scripts/9-removeDupes.js",
-    "all": "yarn fetch && yarn filter && yarn merge && yarn merge-others && yarn removeDupes",
+    "filterMarketcap": "node scripts/10-filterOFTsByMarketcap.js",
+    "all": "yarn fetch && yarn filter && yarn merge && yarn merge-others && yarn removeDupes && yarn filterMarketcap",
     "dev": "yarn filter && yarn merge && yarn merge-others && yarn removeDupes",
     "lint": "yarn prettier . --check",
     "lint:fix": "yarn prettier . --write"
