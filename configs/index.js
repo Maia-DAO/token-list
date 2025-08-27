@@ -13,6 +13,7 @@ const BLOCKED_TOKEN_SYMBOLS = [
 
 // Partner token symbols that should be included in the primary token list
 const PARTNER_TOKEN_SYMBOLS = [
+  'FRAX',
   'frxUSD',
   'sfrxUSD',
   'frxETH',
@@ -41,6 +42,11 @@ const PARTNER_TOKEN_SYMBOLS = [
   'MAV',
   'ZRO',
   'WETH',
+  'wstETH',
+  'ETH',
+  'WBTC',
+  'BTC',
+  'OP',
   'USDC',
   'USDT',
   'USD₮0',
@@ -51,7 +57,9 @@ const PARTNER_TOKEN_SYMBOLS = [
   'Manta mETH',
   'mBTC',
   'Manta mBTC',
-  'stBTC'
+  'stBTC',
+  'MODE',
+  'pxETH',
 ]
 
 const NATIVE_OFT_ADAPTERS = {
