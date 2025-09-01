@@ -60,6 +60,14 @@ const PARTNER_TOKEN_SYMBOLS = [
   'stBTC',
   'MODE',
   'pxETH',
+  'aMAIA',
+  'aHERMES',
+  'ARA',
+  'ARA',
+  'WuL1s-USDT',
+  'WuL1s-USDC',
+  'WuOPs-ETH',
+  'WuOPs-USDC'
 ]
 
 const NATIVE_OFT_ADAPTERS = {
@@ -70,9 +78,6 @@ const NATIVE_OFT_ADAPTERS = {
   [747]: { ['0xd296588850bee2770136464ffdddd78c32f2a07c']: '0x0000000000000000000000000000000000000000' }, // FLOW has native OFT 
   [1329]: { ['0xbdf43ecadc5cef51b7d1772f722e40596bc1788b']: '0x0000000000000000000000000000000000000000' }, // SEI has native OFT 
 }
-
-
-
 
 // Coingecko and CoinMarketCap ID mappings for specific tokens
 const OVERRIDE_CG_CMC_ID = {
@@ -308,7 +313,7 @@ const CHAIN_KEYS = {
   1625: 'gravity',
   2345: 'goat',
   100: 'gnosis',
-  2818: 'morph',
+  2818: 'goat',
   59144: 'linea',
   122: 'fuse',
   1868: 'soneium',
