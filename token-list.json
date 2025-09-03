@@ -1,8 +1,8 @@
 {
   "name": "Hermes Omnichain Token List",
-  "timestamp": "1756816152",
+  "timestamp": "1756921809",
   "version": {
-    "major": 145,
+    "major": 146,
     "minor": 0,
     "patch": 0
   },
@@ -1191,6 +1191,26 @@
       "isOFT": false
     },
     {
+      "chainId": 1,
+      "address": "0x1ff1dC3cB9eeDbC6Eb2d99C03b30A05cA625fB5a",
+      "name": "Wrapped GHO Token",
+      "decimals": 18,
+      "symbol": "WGHO",
+      "logoURI": "https://assets.coingecko.com/coins/images/30663/standard/gho-token-logo.png?1720517092",
+      "tags": [],
+      "extensions": {
+        "acrossInfo": {
+          "232": {
+            "address": "0x6bDc36E20D267Ff0dd6097799f82e78907105e2F"
+          }
+        },
+        "coingeckoId": "gho"
+      },
+      "isAcross": true,
+      "isOFT": false,
+      "noLiquidityOnChain": true
+    },
+    {
       "name": "Reputation Augur v2",
       "address": "0x221657776846890989a759BA2973e427DfF5C9bB",
       "symbol": "REPv2",
@@ -1400,6 +1420,26 @@
           },
           "137": {
             "tokenAddress": "0x82617aA52dddf5Ed9Bb7B370ED777b3182A30fd1"
+          }
+        }
+      },
+      "isAcross": false,
+      "isOFT": false
+    },
+    {
+      "chainId": 1,
+      "address": "0x27054b13b1B798B345b591a4d22e6562d47eA75a",
+      "name": "AirSwap",
+      "symbol": "AST",
+      "decimals": 4,
+      "logoURI": "https://assets.coingecko.com/coins/images/1019/thumb/Airswap.png?1630903484",
+      "extensions": {
+        "bridgeInfo": {
+          "130": {
+            "tokenAddress": "0x7F3F14A49FE5D5009E4e0a09e76cB8468C09Ae56"
+          },
+          "137": {
+            "tokenAddress": "0x04bEa9FCE76943E90520489cCAb84E84C0198E29"
           }
         }
       },
@@ -5340,6 +5380,9 @@
           "137": {
             "address": "0x3c499c542cEF5E3811e1192ce70d8cC03d5c3359"
           },
+          "232": {
+            "address": "0x88F08E304EC4f90D644Cec3Fb69b8aD414acf884"
+          },
           "480": {
             "address": "0x79A02482A880bCE3F13e09Da970dC34db4CD24d1"
           },
@@ -5885,6 +5928,9 @@
           },
           "137": {
             "address": "0x7ceB23fD6bC0adD59E62ac25578270cFf1b9f619"
+          },
+          "232": {
+            "address": "0xE5ecd226b3032910CEaa43ba92EE8232f8237553"
           },
           "480": {
             "address": "0x4200000000000000000000000000000000000006"
@@ -8597,6 +8643,9 @@
           "137": {
             "address": "0x3c499c542cEF5E3811e1192ce70d8cC03d5c3359"
           },
+          "232": {
+            "address": "0x88F08E304EC4f90D644Cec3Fb69b8aD414acf884"
+          },
           "480": {
             "address": "0x79A02482A880bCE3F13e09Da970dC34db4CD24d1"
           },
@@ -8838,6 +8887,9 @@
           },
           "137": {
             "address": "0x7ceB23fD6bC0adD59E62ac25578270cFf1b9f619"
+          },
+          "232": {
+            "address": "0xE5ecd226b3032910CEaa43ba92EE8232f8237553"
           },
           "480": {
             "address": "0x4200000000000000000000000000000000000006"
@@ -9381,6 +9433,9 @@
           },
           "137": {
             "address": "0x2791Bca1f2de4661ED88A30C99A7a9449Aa84174"
+          },
+          "232": {
+            "address": "0x88F08E304EC4f90D644Cec3Fb69b8aD414acf884"
           },
           "480": {
             "address": "0x79A02482A880bCE3F13e09Da970dC34db4CD24d1"
@@ -10246,6 +10301,16 @@
       "noLiquidityOnChain": true
     },
     {
+      "chainId": 50,
+      "address": "0x951857744785E80e2De051c32EE7b25f9c458C42",
+      "name": "Wrapped XDC",
+      "symbol": "WXDC",
+      "decimals": 18,
+      "logoURI": "https://s2.coinmarketcap.com/static/img/coins/128x128/29189.png",
+      "isAcross": false,
+      "isOFT": false
+    },
+    {
       "chainId": 56,
       "address": "0x031b41e504677879370e9DBcF937283A8691Fa7f",
       "name": "Fetch ai",
@@ -10485,6 +10550,17 @@
     },
     {
       "chainId": 56,
+      "address": "0x20D39a5130F799b95B55a930E5b7eBC589eA9Ed8",
+      "name": "Heroes&Empires",
+      "decimals": 18,
+      "symbol": "HE",
+      "logoURI": "https://raw.githubusercontent.com/Uniswap/assets/master/blockchains/smartchain/assets/0x20D39a5130F799b95B55a930E5b7eBC589eA9Ed8/logo.png",
+      "tags": [],
+      "extensions": {},
+      "isAcross": false
+    },
+    {
+      "chainId": 56,
       "address": "0x2117E8b79e8E176A670c9fCf945d4348556bfFad",
       "name": "Euler",
       "decimals": 18,
@@ -10543,6 +10619,9 @@
           },
           "137": {
             "address": "0x7ceB23fD6bC0adD59E62ac25578270cFf1b9f619"
+          },
+          "232": {
+            "address": "0xE5ecd226b3032910CEaa43ba92EE8232f8237553"
           },
           "480": {
             "address": "0x4200000000000000000000000000000000000006"
@@ -11696,6 +11775,10 @@
             "address": "0x3c499c542cEF5E3811e1192ce70d8cC03d5c3359",
             "decimals": 6
           },
+          "232": {
+            "address": "0x88F08E304EC4f90D644Cec3Fb69b8aD414acf884",
+            "decimals": 6
+          },
           "480": {
             "address": "0x79A02482A880bCE3F13e09Da970dC34db4CD24d1",
             "decimals": 6
@@ -12753,6 +12836,9 @@
           "137": {
             "address": "0x3c499c542cEF5E3811e1192ce70d8cC03d5c3359"
           },
+          "232": {
+            "address": "0x88F08E304EC4f90D644Cec3Fb69b8aD414acf884"
+          },
           "480": {
             "address": "0x79A02482A880bCE3F13e09Da970dC34db4CD24d1"
           },
@@ -12952,6 +13038,9 @@
           },
           "137": {
             "address": "0x7ceB23fD6bC0adD59E62ac25578270cFf1b9f619"
+          },
+          "232": {
+            "address": "0xE5ecd226b3032910CEaa43ba92EE8232f8237553"
           },
           "480": {
             "address": "0x4200000000000000000000000000000000000006"
@@ -13845,6 +13934,9 @@
           "130": {
             "address": "0x078D782b760474a361dDA0AF3839290b0EF57AD6"
           },
+          "232": {
+            "address": "0x88F08E304EC4f90D644Cec3Fb69b8aD414acf884"
+          },
           "480": {
             "address": "0x79A02482A880bCE3F13e09Da970dC34db4CD24d1"
           },
@@ -14045,6 +14137,9 @@
           },
           "130": {
             "address": "0x078D782b760474a361dDA0AF3839290b0EF57AD6"
+          },
+          "232": {
+            "address": "0x88F08E304EC4f90D644Cec3Fb69b8aD414acf884"
           },
           "480": {
             "address": "0x79A02482A880bCE3F13e09Da970dC34db4CD24d1"
@@ -14528,6 +14623,9 @@
           },
           "130": {
             "address": "0x4200000000000000000000000000000000000006"
+          },
+          "232": {
+            "address": "0xE5ecd226b3032910CEaa43ba92EE8232f8237553"
           },
           "480": {
             "address": "0x4200000000000000000000000000000000000006"
@@ -16060,6 +16158,149 @@
       "noLiquidityOnChain": true
     },
     {
+      "chainId": 232,
+      "address": "0x6bDc36E20D267Ff0dd6097799f82e78907105e2F",
+      "name": "Wrapped GHO Token",
+      "decimals": 18,
+      "symbol": "WGHO",
+      "logoURI": "https://assets.coingecko.com/coins/images/30663/standard/gho-token-logo.png?1720517092",
+      "tags": [],
+      "extensions": {
+        "acrossInfo": {
+          "1": {
+            "address": "0x1ff1dC3cB9eeDbC6Eb2d99C03b30A05cA625fB5a"
+          }
+        },
+        "coingeckoId": "gho"
+      },
+      "isAcross": true,
+      "isOFT": false,
+      "noLiquidityOnChain": true
+    },
+    {
+      "chainId": 232,
+      "address": "0x88F08E304EC4f90D644Cec3Fb69b8aD414acf884",
+      "name": "USD Coin",
+      "decimals": 6,
+      "symbol": "USDC",
+      "logoURI": "https://assets.coingecko.com/coins/images/6319/standard/usdc.png?1696506694",
+      "tags": [],
+      "extensions": {
+        "acrossInfo": {
+          "1": {
+            "address": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48"
+          },
+          "10": {
+            "address": "0x0b2C639c533813f4Aa9D7837CAf62653d097Ff85"
+          },
+          "56": {
+            "address": "0x8AC76a51cc950d9822D68b83fE1Ad97B32Cd580d",
+            "decimals": 18
+          },
+          "130": {
+            "address": "0x078D782b760474a361dDA0AF3839290b0EF57AD6"
+          },
+          "137": {
+            "address": "0x3c499c542cEF5E3811e1192ce70d8cC03d5c3359"
+          },
+          "480": {
+            "address": "0x79A02482A880bCE3F13e09Da970dC34db4CD24d1"
+          },
+          "1135": {
+            "address": "0xF242275d3a6527d877f2c927a82D9b057609cc71"
+          },
+          "1868": {
+            "address": "0xbA9986D2381edf1DA03B0B9c1f8b00dc4AacC369"
+          },
+          "8453": {
+            "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913"
+          },
+          "34443": {
+            "address": "0xd988097fb8612cc24eeC14542bC03424c656005f"
+          },
+          "42161": {
+            "address": "0xaf88d065e77c8cC2239327C5EDb3A432268e5831"
+          },
+          "59144": {
+            "address": "0x176211869cA2b568f2A7D4EE941E073a821EE1ff"
+          },
+          "534352": {
+            "address": "0x06eFdBFf2a14a7c8E15944D1F4A48F9F95F663A4"
+          },
+          "7777777": {
+            "address": "0xCccCCccc7021b32EBb4e8C08314bD62F7c653EC4"
+          }
+        },
+        "coingeckoId": "usd-coin"
+      },
+      "isAcross": true,
+      "isOFT": false
+    },
+    {
+      "chainId": 232,
+      "address": "0xE5ecd226b3032910CEaa43ba92EE8232f8237553",
+      "name": "Ether",
+      "decimals": 18,
+      "symbol": "ETH",
+      "logoURI": "https://assets.coingecko.com/coins/images/279/standard/ethereum.png?1696501628",
+      "tags": [],
+      "extensions": {
+        "acrossInfo": {
+          "1": {
+            "address": "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
+          },
+          "10": {
+            "address": "0x4200000000000000000000000000000000000006"
+          },
+          "56": {
+            "address": "0x2170Ed0880ac9A755fd29B2688956BD959F933F8"
+          },
+          "130": {
+            "address": "0x4200000000000000000000000000000000000006"
+          },
+          "137": {
+            "address": "0x7ceB23fD6bC0adD59E62ac25578270cFf1b9f619"
+          },
+          "480": {
+            "address": "0x4200000000000000000000000000000000000006"
+          },
+          "1135": {
+            "address": "0x4200000000000000000000000000000000000006"
+          },
+          "1868": {
+            "address": "0x4200000000000000000000000000000000000006"
+          },
+          "8453": {
+            "address": "0x4200000000000000000000000000000000000006"
+          },
+          "34443": {
+            "address": "0x4200000000000000000000000000000000000006"
+          },
+          "42161": {
+            "address": "0x82aF49447D8a07e3bd95BD0d56f35241523fBab1"
+          },
+          "57073": {
+            "address": "0x4200000000000000000000000000000000000006"
+          },
+          "59144": {
+            "address": "0xe5D7C2a44FfDDf6b295A15c148167daaAf5Cf34f"
+          },
+          "81457": {
+            "address": "0x4300000000000000000000000000000000000004"
+          },
+          "534352": {
+            "address": "0x5300000000000000000000000000000000000004"
+          },
+          "7777777": {
+            "address": "0x4200000000000000000000000000000000000006"
+          }
+        },
+        "coingeckoId": "ethereum"
+      },
+      "isAcross": true,
+      "isOFT": false
+    },
+    {
       "chainId": 239,
       "address": "0x38C043856A109066d64a60c82e07848a1C58e7Dc",
       "name": "Euler",
@@ -17471,6 +17712,9 @@
           "137": {
             "address": "0x7ceB23fD6bC0adD59E62ac25578270cFf1b9f619"
           },
+          "232": {
+            "address": "0xE5ecd226b3032910CEaa43ba92EE8232f8237553"
+          },
           "1135": {
             "address": "0x4200000000000000000000000000000000000006"
           },
@@ -17659,6 +17903,9 @@
           },
           "137": {
             "address": "0x3c499c542cEF5E3811e1192ce70d8cC03d5c3359"
+          },
+          "232": {
+            "address": "0x88F08E304EC4f90D644Cec3Fb69b8aD414acf884"
           },
           "1135": {
             "address": "0xF242275d3a6527d877f2c927a82D9b057609cc71"
@@ -18851,6 +19098,9 @@
           "137": {
             "address": "0x7ceB23fD6bC0adD59E62ac25578270cFf1b9f619"
           },
+          "232": {
+            "address": "0xE5ecd226b3032910CEaa43ba92EE8232f8237553"
+          },
           "480": {
             "address": "0x4200000000000000000000000000000000000006"
           },
@@ -18912,6 +19162,9 @@
           },
           "137": {
             "address": "0x3c499c542cEF5E3811e1192ce70d8cC03d5c3359"
+          },
+          "232": {
+            "address": "0x88F08E304EC4f90D644Cec3Fb69b8aD414acf884"
           },
           "480": {
             "address": "0x79A02482A880bCE3F13e09Da970dC34db4CD24d1"
@@ -19760,6 +20013,9 @@
           "137": {
             "address": "0x7ceB23fD6bC0adD59E62ac25578270cFf1b9f619"
           },
+          "232": {
+            "address": "0xE5ecd226b3032910CEaa43ba92EE8232f8237553"
+          },
           "480": {
             "address": "0x4200000000000000000000000000000000000006"
           },
@@ -19876,6 +20132,9 @@
           },
           "137": {
             "address": "0x3c499c542cEF5E3811e1192ce70d8cC03d5c3359"
+          },
+          "232": {
+            "address": "0x88F08E304EC4f90D644Cec3Fb69b8aD414acf884"
           },
           "480": {
             "address": "0x79A02482A880bCE3F13e09Da970dC34db4CD24d1"
@@ -21857,6 +22116,9 @@
           "137": {
             "address": "0x7ceB23fD6bC0adD59E62ac25578270cFf1b9f619"
           },
+          "232": {
+            "address": "0xE5ecd226b3032910CEaa43ba92EE8232f8237553"
+          },
           "480": {
             "address": "0x4200000000000000000000000000000000000006"
           },
@@ -22531,6 +22793,9 @@
           },
           "137": {
             "address": "0x3c499c542cEF5E3811e1192ce70d8cC03d5c3359"
+          },
+          "232": {
+            "address": "0x88F08E304EC4f90D644Cec3Fb69b8aD414acf884"
           },
           "480": {
             "address": "0x79A02482A880bCE3F13e09Da970dC34db4CD24d1"
@@ -23567,6 +23832,9 @@
           "137": {
             "address": "0x3c499c542cEF5E3811e1192ce70d8cC03d5c3359"
           },
+          "232": {
+            "address": "0x88F08E304EC4f90D644Cec3Fb69b8aD414acf884"
+          },
           "480": {
             "address": "0x79A02482A880bCE3F13e09Da970dC34db4CD24d1"
           },
@@ -24088,6 +24356,9 @@
           "137": {
             "address": "0x7ceB23fD6bC0adD59E62ac25578270cFf1b9f619"
           },
+          "232": {
+            "address": "0xE5ecd226b3032910CEaa43ba92EE8232f8237553"
+          },
           "480": {
             "address": "0x4200000000000000000000000000000000000006"
           },
@@ -24603,6 +24874,9 @@
           },
           "137": {
             "address": "0x3c499c542cEF5E3811e1192ce70d8cC03d5c3359"
+          },
+          "232": {
+            "address": "0x88F08E304EC4f90D644Cec3Fb69b8aD414acf884"
           },
           "480": {
             "address": "0x79A02482A880bCE3F13e09Da970dC34db4CD24d1"
@@ -26389,6 +26663,9 @@
           "137": {
             "address": "0x7ceB23fD6bC0adD59E62ac25578270cFf1b9f619"
           },
+          "232": {
+            "address": "0xE5ecd226b3032910CEaa43ba92EE8232f8237553"
+          },
           "480": {
             "address": "0x4200000000000000000000000000000000000006"
           },
@@ -26757,6 +27034,9 @@
           },
           "137": {
             "address": "0x3c499c542cEF5E3811e1192ce70d8cC03d5c3359"
+          },
+          "232": {
+            "address": "0x88F08E304EC4f90D644Cec3Fb69b8aD414acf884"
           },
           "480": {
             "address": "0x79A02482A880bCE3F13e09Da970dC34db4CD24d1"
@@ -27264,6 +27544,9 @@
           },
           "137": {
             "address": "0x7ceB23fD6bC0adD59E62ac25578270cFf1b9f619"
+          },
+          "232": {
+            "address": "0xE5ecd226b3032910CEaa43ba92EE8232f8237553"
           },
           "480": {
             "address": "0x4200000000000000000000000000000000000006"
@@ -28243,6 +28526,9 @@
           },
           "137": {
             "address": "0x7ceB23fD6bC0adD59E62ac25578270cFf1b9f619"
+          },
+          "232": {
+            "address": "0xE5ecd226b3032910CEaa43ba92EE8232f8237553"
           },
           "480": {
             "address": "0x4200000000000000000000000000000000000006"
@@ -29368,6 +29654,9 @@
           "137": {
             "address": "0x3c499c542cEF5E3811e1192ce70d8cC03d5c3359"
           },
+          "232": {
+            "address": "0x88F08E304EC4f90D644Cec3Fb69b8aD414acf884"
+          },
           "480": {
             "address": "0x79A02482A880bCE3F13e09Da970dC34db4CD24d1"
           },
@@ -29545,6 +29834,9 @@
           },
           "137": {
             "address": "0x7ceB23fD6bC0adD59E62ac25578270cFf1b9f619"
+          },
+          "232": {
+            "address": "0xE5ecd226b3032910CEaa43ba92EE8232f8237553"
           },
           "480": {
             "address": "0x4200000000000000000000000000000000000006"
@@ -30240,6 +30532,9 @@
           "137": {
             "address": "0x7ceB23fD6bC0adD59E62ac25578270cFf1b9f619"
           },
+          "232": {
+            "address": "0xE5ecd226b3032910CEaa43ba92EE8232f8237553"
+          },
           "480": {
             "address": "0x4200000000000000000000000000000000000006"
           },
@@ -30301,6 +30596,9 @@
           },
           "137": {
             "address": "0x3c499c542cEF5E3811e1192ce70d8cC03d5c3359"
+          },
+          "232": {
+            "address": "0x88F08E304EC4f90D644Cec3Fb69b8aD414acf884"
           },
           "480": {
             "address": "0x79A02482A880bCE3F13e09Da970dC34db4CD24d1"
@@ -31474,20 +31772,6 @@
     },
     {
       "chainId": 42161,
-      "address": "0x6b43732a9AE9F8654d496c0A075Aa4Aa43057A0B",
-      "name": "Sugarverse",
-      "decimals": 18,
-      "symbol": "CNDY",
-      "logoURI": "https://s2.coinmarketcap.com/static/img/coins/128x128/34376.png",
-      "tags": [],
-      "extensions": {
-        "coingeckoId": "sugarverse",
-        "coinMarketCapId": 34376
-      },
-      "isAcross": false
-    },
-    {
-      "chainId": 42161,
       "address": "0x7189fb5B6504bbfF6a852B13B7B82a3c118fDc27",
       "name": "ether.fi governance token",
       "symbol": "ETHFI",
@@ -31918,6 +32202,9 @@
           "137": {
             "address": "0x7ceB23fD6bC0adD59E62ac25578270cFf1b9f619"
           },
+          "232": {
+            "address": "0xE5ecd226b3032910CEaa43ba92EE8232f8237553"
+          },
           "480": {
             "address": "0x4200000000000000000000000000000000000006"
           },
@@ -32307,6 +32594,9 @@
           "137": {
             "address": "0x2791Bca1f2de4661ED88A30C99A7a9449Aa84174"
           },
+          "232": {
+            "address": "0x88F08E304EC4f90D644Cec3Fb69b8aD414acf884"
+          },
           "480": {
             "address": "0x79A02482A880bCE3F13e09Da970dC34db4CD24d1"
           },
@@ -32633,6 +32923,9 @@
           },
           "137": {
             "address": "0x3c499c542cEF5E3811e1192ce70d8cC03d5c3359"
+          },
+          "232": {
+            "address": "0x88F08E304EC4f90D644Cec3Fb69b8aD414acf884"
           },
           "480": {
             "address": "0x79A02482A880bCE3F13e09Da970dC34db4CD24d1"
