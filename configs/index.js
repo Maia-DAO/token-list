@@ -314,6 +314,7 @@ const CHAIN_KEYS = {
   2345: 'goat',
   100: 'gnosis',
   2818: 'goat',
+  2818: 'morph',
   59144: 'linea',
   122: 'fuse',
   1868: 'soneium',
