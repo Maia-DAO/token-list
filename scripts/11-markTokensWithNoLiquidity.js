@@ -68,22 +68,28 @@ class TokenLiquidityChecker {
             geckoterminal: {
                 // GeckoTerminal network identifiers (different from DEXScreener)
                 1: 'eth',
-                56: 'bsc',
-                137: 'polygon_pos',
-                43114: 'avax',
-                250: 'fantom',
                 42161: 'arbitrum',
-                10: 'optimism',
+                1088: 'metis',
                 8453: 'base',
-                100: 'gnosis',
-                42170: 'arbitrum_nova',
-                25: 'cronos',
-                59144: 'linea',
-                81457: 'blast',
-                5000: 'mantle',
-                169: 'manta',
+                137: 'polygon_pos',
+                10: 'optimism',
+                56: 'bsc',
+                43114: 'avax',
+                1116: 'core',
                 534352: 'scroll',
-                34443: 'mode'
+                42220: 'celo',
+                50: 'xdc',
+                42170: 'arbitrum_nova',
+                1890: 'lightlink-phoenix',
+                1313161554: 'aurora',
+                204: 'opbnb',
+                169: 'manta-pacific',
+                100: 'xdai',
+                59144: 'linea',
+                122: 'fuse',
+                14: 'flare',
+                34443: 'mode',
+                5000: 'mantle',
             }
         };
     }
@@ -278,7 +284,7 @@ class TokenLiquidityChecker {
                 };
             }
 
-            const url = `https://api.dexscreener.com/latest/dex/tokens/v1/${chainId}/${tokenAddress}`;
+            const url = `https://api.dexscreener.com/tokens/v1/${chainName}/${tokenAddress}`;
             const response = await fetch(url);
 
             if (!response.ok) {
@@ -494,6 +500,8 @@ class TokenLiquidityChecker {
                         (result.hasLiquidity ? `$${result.totalLiquidity?.toFixed(2)}` : 'no liquidity') :
                         'failed';
 
+                    if (!result.success) checker.tokensToCheck.push(result)
+
                     console.log(`${current}/${total} - ${token.symbol} (${chainName}): ${status}`);
 
                     if (onProgress) onProgress(current, total, result);
@@ -501,7 +509,8 @@ class TokenLiquidityChecker {
             }
         );
 
-        // Aggregate results by original token
+        // Aggregate results by original token 
+        // TODO: unused peer analytics logic, use or delete
         const tokenResults = new Map();
 
         for (const result of results.results) {
@@ -512,30 +521,22 @@ class TokenLiquidityChecker {
                 tokenResults.set(tokenKey, {
                     token: originalToken,
                     totalLiquidity: 0,
-                    liquidityByChain: {},
                     hasAnyLiquidity: false,
                     supportedChains: 0,
-                    unsupportedChains: 0
+                    unsupportedChain: false
                 });
             }
 
             const tokenResult = tokenResults.get(tokenKey);
-            const chainName = CHAIN_KEYS[result.chainId] || result.chainId;
 
             if (result.success) {
-                tokenResult.supportedChains++;
                 if (result.hasLiquidity) {
                     tokenResult.hasAnyLiquidity = true;
                     tokenResult.totalLiquidity += result.totalLiquidity;
-                    tokenResult.liquidityByChain[chainName] = {
-                        liquidity: result.totalLiquidity,
-                        pairs: result.pairsCount,
-                        source: result.source
-                    };
                 }
             } else {
                 if (result.chainSupported === false) {
-                    tokenResult.unsupportedChains++;
+                    tokenResult.unsupportedChain = true;
                 }
             }
         }
@@ -558,23 +559,33 @@ class TokenLiquidityChecker {
     /**
      * Filter tokens that don't meet liquidity criteria
      */
-    filterTokensToFlag(tokenResults, options = {}) {
+    filterTokens(tokenResults, options = {}) {
         const {
             minimumLiquidity = MINIMUM_LIQUIDITY,
-            requireAnyLiquidity = true
+            requireAnyLiquidity = true,
+            trueIfBridgeableFalseIfNotBridgeable = true
         } = options;
 
         const tokensToFlag = tokenResults.filter(result => {
             const token = result.token;
 
-            // Skip if this is a partner token
-            if (options.partnerTokenSymbols && options.partnerTokenSymbols.includes(token.symbol)) {
+            // Skip if this is a partner token or no liquidity info for that chain
+            if (result.unsupportedChain || options.partnerTokenSymbols && options.partnerTokenSymbols.includes(token.symbol)) {
                 return false;
             }
 
-            // Return true if token should be REMOVED (insufficient liquidity)
-            if (requireAnyLiquidity && !result.hasAnyLiquidity) return true;
-            if (result.totalLiquidity < minimumLiquidity) return true;
+            const isUlysses = Boolean(token.underlyingAddress && token.underlyingAddress.length > 0)
+            const isBridgeable = Boolean(token.isOFT || token.isAcross)
+            const failsLiquidityChecks = (requireAnyLiquidity && !result.hasAnyLiquidity) || result.totalLiquidity < minimumLiquidity
+
+            // Only mark bridgeable tokens otherwise we will delete them
+            if (failsLiquidityChecks && !isUlysses) {
+                if (trueIfBridgeableFalseIfNotBridgeable) {
+                    if (isBridgeable) return true;
+                } else {
+                    if (!isBridgeable) return true;
+                }
+            }
 
             // Token has sufficient liquidity, don't remove
             return false;
@@ -676,22 +687,8 @@ class TokenLiquidityChecker {
         };
     }
 
-    /**
-     * Filter tokens by liquidity criteria
-     */
-    markTokensWithLowLiquidity(results, criteria = {}) {
-        const {
-            minimumLiquidity = MINIMUM_LIQUIDITY,
-            mustHaveLiquidity = true
-        } = criteria;
+    checkTheseTokensOut = []
 
-        return results.map(result => {
-            if (!result.success) return { ...result, noLocalLiquidity: true };
-            if (mustHaveLiquidity && !result.hasLiquidity) return { ...result, noLocalLiquidity: true };
-            if (result.totalLiquidity < minimumLiquidity) return { ...result, noLocalLiquidity: true };
-            return result;
-        });
-    }
 }
 
 async function runLiquidityCheck() {
@@ -717,9 +714,10 @@ async function runLiquidityCheck() {
         console.log(`Average liquidity per token: ${result.summary.averageLiquidityPerToken.toFixed(2)}`);
 
         // Show tokens with insufficient liquidity
-        const tokensToFlag = checker.filterTokensToFlag(result.tokenResults, {
+        const tokensToFlag = checker.filterTokens(result.tokenResults, {
             minimumLiquidity: MINIMUM_LIQUIDITY,
-            partnerTokenSymbols: PARTNER_TOKEN_SYMBOLS
+            partnerTokenSymbols: PARTNER_TOKEN_SYMBOLS,
+            trueIfBridgeableFalseIfNotBridgeable: true
         });
 
         // Load token lists
@@ -765,13 +763,68 @@ async function runLiquidityCheck() {
             console.log('All tokens meet minimum liquidity requirements');
         }
 
+        // Delete non-bridgeable tokens with insufficient liquidity 
+        const tokensToDelete = checker.filterTokens(result.tokenResults, {
+            minimumLiquidity: MINIMUM_LIQUIDITY,
+            partnerTokenSymbols: PARTNER_TOKEN_SYMBOLS,
+            trueIfBridgeableFalseIfNotBridgeable: false
+        });
+
+        if (tokensToDelete.length > 0) {
+            for (const tokenToDelete of tokensToDelete) {
+                const addrToDelete = checker.getTokenAddress(tokenToDelete.token);
+                const chainIdToDelete = tokenToDelete.token.chainId;
+                const sourceToDelete = tokenToDelete.token.source;
+
+                if (sourceToDelete === 'rootTokens') {
+                    tokenList.rootTokens = (tokenList.rootTokens || []).filter(
+                        t => checker.getTokenAddress(t) !== addrToDelete
+                    );
+
+                    console.log(`Removed root token ${addrToDelete} from rootTokens`);
+
+                } else if (sourceToDelete === 'tokens') {
+                    // tokens: remove items that match both address and chainId
+                    const before = (tokenList.tokens || []).length;
+                    tokenList.tokens = (tokenList.tokens || []).filter(
+                        t => !(checker.getTokenAddress(t) === addrToDelete && t.chainId === chainIdToDelete)
+                    );
+                    const after = tokenList.tokens.length;
+                    if (after < before) {
+                        console.log(`Removed active token ${addrToDelete} on chain ${chainIdToDelete}`);
+                    } else {
+                        console.warn(`Could not find active token ${addrToDelete} on chain ${chainIdToDelete}`);
+                    }
+
+                } else if (sourceToDelete === 'inactive') {
+                    // inactive list: same as tokens but on inactiveTokenList
+                    const before = (inactiveTokenList.tokens || []).length;
+                    inactiveTokenList.tokens = (inactiveTokenList.tokens || []).filter(
+                        t => !(checker.getTokenAddress(t) === addrToDelete && t.chainId === chainIdToDelete)
+                    );
+                    const after = inactiveTokenList.tokens.length;
+                    if (after < before) {
+                        console.log(`Removed inactive token ${addrToDelete} on chain ${chainIdToDelete}`);
+                    } else {
+                        console.warn(`Could not find inactive token ${addrToDelete} on chain ${chainIdToDelete}`);
+                    }
+
+                } else {
+                    console.warn(`Could not find list to edit for source: ${tokenToDelete.source}`);
+                }
+            }
+        } else {
+            console.log('All tokens meet minimum liquidity requirements');
+        }
+
         // Save updated files (use checker methods/properties)
         if (typeof checker.writeJson !== 'function') {
             throw new Error('checker.writeJson is not available - cannot save updated token lists.');
         }
         await Promise.all([
             checker.writeJson(checker.tokenListPath, tokenList),
-            checker.writeJson(checker.inactiveTokenListPath, inactiveTokenList)
+            checker.writeJson(checker.inactiveTokenListPath, inactiveTokenList),
+            checker.writeJson(path.resolve(__dirname, '../check-these-tokens-out.json'), checker.tokensToCheck)
         ]);
 
     } catch (error) {
