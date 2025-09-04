@@ -1,8 +1,9 @@
 const fs = require('fs').promises
 const path = require('path')
+const { SupportedChainId } = require('maia-core-sdk')
 const { getCoinLogo } = require('./getCoinLogo')
 const { orderTokens } = require('./orderTokens')
-const { OVERRIDE_LOGO, PARTNER_TOKEN_SYMBOLS, BLOCKED_TOKEN_SYMBOLS, NATIVE_OFT_ADAPTERS } = require('../configs')
+const { OVERRIDE_LOGO, PARTNER_TOKEN_SYMBOLS, BLOCKED_TOKEN_SYMBOLS, NATIVE_OFT_ADAPTERS, EXTENDED_SUPPORTED_CHAIN_IDS } = require('../configs')
 const { mergeExtensions, orderAttributes } = require('../helpers')
 
 // TODO: Add arbitrary Uniswap Token List support
@@ -47,8 +48,6 @@ function mergeTokenDataUlysses(existing, incoming) {
 
   return orderAttributes(merged)
 }
-
-
 
 /**
  * Normalize a token from the across list.
@@ -188,6 +187,20 @@ function isEqual(obj1, obj2) {
 }
 
 /**
+ * Parse .tokens from a token list json
+ * @param {*} raw - Token list json
+ * @returns - Parsed .tokens array
+ */
+const tryParseTokens = (raw) => {
+  try {
+    const j = JSON.parse(raw);
+    if (Array.isArray(j)) return j;
+    if (j && Array.isArray(j.tokens)) return j.tokens;
+  } catch (e) { /* ignore */ }
+  return [];
+};
+
+/**
  * Main merge function.
  */
 async function main() {
@@ -207,32 +220,23 @@ async function main() {
 
     // 4. Uniswap tokens from uniswap.json.
     const uniswapRaw = await fs.readFile(path.join('output', 'uniswap.json'), 'utf8')
-    let uniswapTokens = []
-    try {
-      const temp = JSON.parse(uniswapRaw)
-      if (Array.isArray(temp.tokens)) {
-        uniswapTokens = temp.tokens
-      } else if (Array.isArray(temp)) {
-        uniswapTokens = temp
-      }
-    } catch (err) {
-      console.error('Error parsing uniswap.json, assuming direct array:', err)
-    }
+    const uniswapTokens = await tryParseTokens(uniswapRaw)
 
     // 5. Wrapped Native tokens from wrappedNatives.json.
     const wrappedNativesRaw = await fs.readFile('wrappedNatives.json', 'utf8')
-    let wrappedNativeTokens = []
-    try {
-      const temp = JSON.parse(wrappedNativesRaw)
-      if (Array.isArray(temp.tokens)) {
-        wrappedNativeTokens = temp.tokens
-      } else if (Array.isArray(temp)) {
-        wrappedNativeTokens = temp
-      }
-    } catch (err) {
-      console.error('Error parsing wrappedNatives.json, assuming direct array:', err)
-    }
+    const wrappedNativeTokens = await tryParseTokens(wrappedNativesRaw)
 
+    // 6. Fetch TOKEN_LIST files
+    let tokenListFiles = {};
+    try {
+      const dir = path.dirname('output');
+      const files = await fs.readdir(dir);
+      const tokenFiles = files.filter(f => f.startsWith('TOKEN_LIST_'));
+      await Promise.all(tokenFiles.map(async (f) => {
+        tokenListFiles[f] = await tryParseTokens(await fs.readFile(path.join(dir, f), 'utf8'));
+      }));
+    } catch (e) {
+    }
 
     // -----------------------------------------------------------------
     // GROUPING TOKENS PER SOURCE
@@ -408,36 +412,44 @@ async function main() {
     }
 
 
-    // 2. Incorporate Uniswap tokens and Ulysses Root Tokens.
-    if (Array.isArray(uniswapTokens) && ulyssesData.rootTokens && Array.isArray(ulyssesData.rootTokens) && Array.isArray(wrappedNativeTokens)) {
-      uniswapTokens.concat(ulyssesData.rootTokens).concat(wrappedNativeTokens).forEach((token) => {
-        if (BLOCKED_TOKEN_SYMBOLS.includes(token.symbol)) {
-          console.warn(`skipping, blocked token ${token.symbol} on chain ${token.chainId}`)
-          return
-        }
-        if (!token.logoURI) delete token.logoURI // Remove empty logoURIs
-        // Default flags if undefined.
-        if (typeof token.isAcross === 'undefined') token.isAcross = false
-        if (typeof token.isOFT === 'undefined') token.isOFT = false
-        if (token.chainId === 42161) {
-          const rootKey = token.address.toLowerCase()
-          if (rootTokensMap[rootKey]) {
-            const existing = rootTokensMap[rootKey]
-            rootTokensMap[rootKey] = mergeTokenData(existing, token)
-          } else {
-            rootTokensMap[rootKey] = token
-          }
+    // 2. Incorporate Uniswap tokens, Ulysses Root Tokens and Wrapped Native Tokens.
+    const allUniswapFormatTokens = [
+      ...uniswapTokens,
+      ...wrappedNativeTokens,
+      ...ulyssesData.rootTokens,
+      ...Object.values(tokenListFiles).flat()
+    ];
+
+    const SUPPORTED_CHAINS = [...Object.values(SupportedChainId), ...EXTENDED_SUPPORTED_CHAIN_IDS].map(Number)
+
+    allUniswapFormatTokens.forEach((token) => {
+      if (BLOCKED_TOKEN_SYMBOLS.includes(token.symbol)) {
+        console.warn(`skipping, blocked token ${token.symbol} on chain ${token.chainId}`)
+        return
+      }
+      if (!SUPPORTED_CHAINS.includes(token.chainId)) return
+      if (!token.logoURI) delete token.logoURI // Remove empty logoURIs
+      // Default flags if undefined.
+      if (typeof token.isAcross === 'undefined') token.isAcross = false
+      if (typeof token.isOFT === 'undefined') token.isOFT = false
+      if (token.chainId === 42161) {
+        const rootKey = token.address.toLowerCase()
+        if (rootTokensMap[rootKey]) {
+          const existing = rootTokensMap[rootKey]
+          rootTokensMap[rootKey] = mergeTokenData(existing, token)
         } else {
-          const key = token.address.toLowerCase() + '_' + token.chainId
-          if (normalizedMap[key]) {
-            const existing = normalizedMap[key]
-            normalizedMap[key] = mergeTokenData(existing, token)
-          } else {
-            normalizedMap[key] = token
-          }
+          rootTokensMap[rootKey] = token
         }
-      })
-    }
+      } else {
+        const key = token.address.toLowerCase() + '_' + token.chainId
+        if (normalizedMap[key]) {
+          const existing = normalizedMap[key]
+          normalizedMap[key] = mergeTokenData(existing, token)
+        } else {
+          normalizedMap[key] = token
+        }
+      }
+    })
 
     // 3. Incorporate Ulysses tokens.
     if (ulyssesData.tokens && Array.isArray(ulyssesData.tokens)) {
