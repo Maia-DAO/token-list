@@ -6,8 +6,11 @@ const fs = require('fs').promises
  *
  * @param {string} url - The URL to fetch token data from.
  * @param {string} name - The name used to create the output filename.
+ * @param {function} conversionFunction - Optional conversion function to change list output format 
+  
+ }} name - The name used to create the output filename.
  */
-async function fetchList(url, name) {
+async function fetchList(url, name, conversionFunction, conversionFunctionAdditionalParams) {
   try {
     const response = await fetch(url)
     if (!response.ok) {
@@ -15,12 +18,25 @@ async function fetchList(url, name) {
     }
     const tokens = await response.json()
 
-    await fs.writeFile(`output/${name}.json`, JSON.stringify(tokens, null, 2))
+    const tokensToOutput = conversionFunction ? conversionFunction(tokens, conversionFunctionAdditionalParams) : tokens
+
+    await fs.writeFile(`output/${name}.json`, JSON.stringify(tokensToOutput, null, 2))
     console.log(`✅ Tokens data saved to output/${name}.json`)
   } catch (error) {
     console.error(`❌ Error fetching ${name} list:`, error)
   }
 }
+
+function convertOpenoceanList(list, chainId) {
+  return {
+    tokens: list?.data?.map((item) => ({
+      ...item,
+      logoURI: item.icon,
+      chainId
+    }))
+  }
+}
+
 
 /**
  * Main function to fetch token lists and write across mapping.
@@ -43,4 +59,35 @@ async function fetchList(url, name) {
     'https://raw.githubusercontent.com/The-Blockchain-Association/sec-notice-list/master/ba-sec-list.json',
     'ba'
   )
+
+  // Fetch List for each chain that supports swapping via Hermes
+  await fetchList('https://raw.githubusercontent.com/CamelotLabs/default-token-list/refs/heads/main/src/tokens/arbitrum-one.json', 'TOKEN_LIST_ARBITRUM_ONE'),
+    await fetchList('https://static.optimism.io/optimism.tokenlist.json', 'TOKEN_LIST_SUPERCHAIN'),
+    // await fetchList('https://stargate.finance/api/tokens', 'TOKEN_LIST_BLAST'),
+    await fetchList('https://raw.githubusercontent.com/InkySwap/swap-token-list/refs/heads/main/inkyswap-mainnet.tokenlist.json', 'TOKEN_LIST_INK'),
+    await fetchList('https://raw.githubusercontent.com/Consensys/linea-token-list/refs/heads/main/json/linea-mainnet-token-shortlist.json', 'TOKEN_LIST_LINEA'),
+    await fetchList('https://raw.githubusercontent.com/balancer/tokenlists/refs/heads/main/generated/balancer.tokenlist.json', 'TOKEN_LIST_BALANCER'),
+    // await fetchList('https://stargate.finance/api/tokens', 'TOKEN_LIST_MODE'),
+    // await fetchList('https://stargate.finance/api/tokens', 'TOKEN_LIST_POLYGON'),
+    await fetchList('https://raw.githubusercontent.com/scroll-tech/token-list/refs/heads/main/scroll.tokenlist.json', 'TOKEN_LIST_SCROLL'),
+    // await fetchList('https://stargate.finance/api/tokens', 'TOKEN_LIST_SONEIUM'),
+    // await fetchList('https://stargate.finance/api/tokens', 'TOKEN_LIST_UNICHAIN'),
+    // await fetchList('https://stargate.finance/api/tokens', 'TOKEN_LIST_WORLDCHAIN'),
+    // await fetchList('https://stargate.finance/api/tokens', 'TOKEN_LIST_ZORA'),
+    await fetchList('https://raw.githubusercontent.com/berachain/metadata/refs/heads/main/src/tokens/mainnet.json', 'TOKEN_LIST_BERA'),
+    // await fetchList('https://stargate.finance/api/tokens', 'TOKEN_LIST_SWELL'),
+    await fetchList('https://open-api.openocean.finance/v3/rootstock/tokenList', 'TOKEN_LIST_ROOTSTOCK', convertOpenoceanList, 30),
+    await fetchList('https://raw.githubusercontent.com/CamelotLabs/default-token-list/refs/heads/main/src/tokens/apechain.json', 'TOKEN_LIST_APE'),
+    await fetchList('https://raw.githubusercontent.com/celo-org/celo-token-list/refs/heads/main/celo.tokenlist.json', 'TOKEN_LIST_CELO'),
+    await fetchList('https://open-api.openocean.finance/v3/celo/tokenList', 'TOKEN_LIST_CELO_2', convertOpenoceanList, 42220),
+    await fetchList('https://open-api.openocean.finance/v3/sei/tokenList', 'TOKEN_LIST_SEI', convertOpenoceanList, 1329),
+    await fetchList('https://open-api.openocean.finance/v3/hyperevm/tokenList', 'TOKEN_LIST_HYPERLIQUID', convertOpenoceanList, 999),
+    await fetchList('https://open-api.openocean.finance/v3/opbnb/tokenList', 'TOKEN_LIST_OPBNB', convertOpenoceanList, 204),
+    await fetchList('https://raw.githubusercontent.com/Manta-Network/manta-pacific-token-list/refs/heads/main/json/manta-pacific-mainnet-token-list.json', 'TOKEN_LIST_MANTA'),
+    await fetchList('https://open-api.openocean.finance/v3/manta/tokenList', 'TOKEN_LIST_MANTA_2', convertOpenoceanList, 169),
+    // await fetchList('https://stargate.finance/api/tokens', 'TOKEN_LIST_GRAVITY'),
+    await fetchList('https://open-api.openocean.finance/v3/flare/tokenList', 'TOKEN_LIST_FLARE', convertOpenoceanList, 14),
+    await fetchList('https://raw.githubusercontent.com/mantlenetworkio/mantle-token-lists/refs/heads/main/mantle.tokenlist.json', 'TOKEN_LIST_MANTLE'),
+    await fetchList('https://raw.githubusercontent.com/CamelotLabs/default-token-list/refs/heads/main/src/tokens/plume.json', 'TOKEN_LIST_PLUMEPHOENIX'),
+    await fetchList('https://open-api.openocean.finance/v3/metis/tokenList', 'TOKEN_LIST_METIS', convertOpenoceanList, 1088)
 })()
