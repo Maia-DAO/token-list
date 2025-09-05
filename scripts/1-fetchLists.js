@@ -29,16 +29,33 @@ async function fetchList(url, name, conversionFunction, conversionFunctionAdditi
 
 function convertOpenoceanList(list, chainId) {
   return {
-    tokens: list?.data?.map((item) => ({
-      ...item,
-      logoURI: item.icon,
-      chainId,
-      extensions: {}
-    }))
+    tokens: list?.data?.map((item) => {
+      const { address, name, symbol, decimals, icon } = item
+
+      return {
+        chainId,
+        address,
+        name,
+        symbol,
+        decimals,
+        logoURI: icon,
+      }
+    })
   }
 }
 
-function pruneAttributes(list) {
+function convertCamelotList(list) {
+  return {
+    tokens: list?.map((item) => {
+      const { chainId, address, name, symbol, decimals, logoURI } = item
+      return ({
+        chainId, address, name, symbol, decimals, logoURI: logoURI.replace('BASE_URL', 'https://raw.githubusercontent.com/CamelotLabs/default-token-list/refs/heads/main/src')
+      })
+    })
+  }
+}
+
+function convertStandardList(list) {
   return {
     tokens: list?.tokens?.map((item) => {
       const { chainId, address, name, symbol, decimals, logoURI } = item
@@ -73,33 +90,33 @@ function pruneAttributes(list) {
   )
 
   // Fetch List for each chain that supports swapping via Hermes
-  await fetchList('https://raw.githubusercontent.com/CamelotLabs/default-token-list/refs/heads/main/src/tokens/arbitrum-one.json', 'TOKEN_LIST_ARBITRUM_ONE', pruneAttributes),
-    await fetchList('https://static.optimism.io/optimism.tokenlist.json', 'TOKEN_LIST_SUPERCHAIN', pruneAttributes),
+  await fetchList('https://raw.githubusercontent.com/CamelotLabs/default-token-list/refs/heads/main/src/tokens/arbitrum-one.json', 'TOKEN_LIST_ARBITRUM_ONE', convertCamelotList),
+    await fetchList('https://static.optimism.io/optimism.tokenlist.json', 'TOKEN_LIST_SUPERCHAIN', convertStandardList),
     // await fetchList('https://stargate.finance/api/tokens', 'TOKEN_LIST_BLAST'),
-    await fetchList('https://raw.githubusercontent.com/InkySwap/swap-token-list/refs/heads/main/inkyswap-mainnet.tokenlist.json', 'TOKEN_LIST_INK', pruneAttributes),
-    await fetchList('https://raw.githubusercontent.com/Consensys/linea-token-list/refs/heads/main/json/linea-mainnet-token-shortlist.json', 'TOKEN_LIST_LINEA', pruneAttributes),
-    await fetchList('https://raw.githubusercontent.com/balancer/tokenlists/refs/heads/main/generated/balancer.tokenlist.json', 'TOKEN_LIST_BALANCER', pruneAttributes),
+    await fetchList('https://raw.githubusercontent.com/InkySwap/swap-token-list/refs/heads/main/inkyswap-mainnet.tokenlist.json', 'TOKEN_LIST_INK', convertStandardList),
+    await fetchList('https://raw.githubusercontent.com/Consensys/linea-token-list/refs/heads/main/json/linea-mainnet-token-shortlist.json', 'TOKEN_LIST_LINEA', convertStandardList),
+    await fetchList('https://raw.githubusercontent.com/balancer/tokenlists/refs/heads/main/generated/balancer.tokenlist.json', 'TOKEN_LIST_BALANCER', convertStandardList),
     // await fetchList('https://stargate.finance/api/tokens', 'TOKEN_LIST_MODE'),
     // await fetchList('https://stargate.finance/api/tokens', 'TOKEN_LIST_POLYGON'),
-    await fetchList('https://raw.githubusercontent.com/scroll-tech/token-list/refs/heads/main/scroll.tokenlist.json', 'TOKEN_LIST_SCROLL', pruneAttributes),
+    await fetchList('https://raw.githubusercontent.com/scroll-tech/token-list/refs/heads/main/scroll.tokenlist.json', 'TOKEN_LIST_SCROLL', convertStandardList),
     // await fetchList('https://stargate.finance/api/tokens', 'TOKEN_LIST_SONEIUM'),
     // await fetchList('https://stargate.finance/api/tokens', 'TOKEN_LIST_UNICHAIN'),
     // await fetchList('https://stargate.finance/api/tokens', 'TOKEN_LIST_WORLDCHAIN'),
     // await fetchList('https://stargate.finance/api/tokens', 'TOKEN_LIST_ZORA'),
-    await fetchList('https://raw.githubusercontent.com/berachain/metadata/refs/heads/main/src/tokens/mainnet.json', 'TOKEN_LIST_BERA', pruneAttributes),
+    await fetchList('https://raw.githubusercontent.com/berachain/metadata/refs/heads/main/src/tokens/mainnet.json', 'TOKEN_LIST_BERA', convertStandardList),
     // await fetchList('https://stargate.finance/api/tokens', 'TOKEN_LIST_SWELL'),
     await fetchList('https://open-api.openocean.finance/v3/rootstock/tokenList', 'TOKEN_LIST_ROOTSTOCK', convertOpenoceanList, 30),
-    await fetchList('https://raw.githubusercontent.com/CamelotLabs/default-token-list/refs/heads/main/src/tokens/apechain.json', 'TOKEN_LIST_APE', pruneAttributes),
-    await fetchList('https://raw.githubusercontent.com/celo-org/celo-token-list/refs/heads/main/celo.tokenlist.json', 'TOKEN_LIST_CELO', pruneAttributes),
+    await fetchList('https://raw.githubusercontent.com/CamelotLabs/default-token-list/refs/heads/main/src/tokens/apechain.json', 'TOKEN_LIST_APE', convertCamelotList),
+    await fetchList('https://raw.githubusercontent.com/celo-org/celo-token-list/refs/heads/main/celo.tokenlist.json', 'TOKEN_LIST_CELO', convertStandardList),
     await fetchList('https://open-api.openocean.finance/v3/celo/tokenList', 'TOKEN_LIST_CELO_2', convertOpenoceanList, 42220),
     await fetchList('https://open-api.openocean.finance/v3/sei/tokenList', 'TOKEN_LIST_SEI', convertOpenoceanList, 1329),
     await fetchList('https://open-api.openocean.finance/v3/hyperevm/tokenList', 'TOKEN_LIST_HYPERLIQUID', convertOpenoceanList, 999),
     await fetchList('https://open-api.openocean.finance/v3/opbnb/tokenList', 'TOKEN_LIST_OPBNB', convertOpenoceanList, 204),
-    await fetchList('https://raw.githubusercontent.com/Manta-Network/manta-pacific-token-list/refs/heads/main/json/manta-pacific-mainnet-token-list.json', 'TOKEN_LIST_MANTA', pruneAttributes),
+    await fetchList('https://raw.githubusercontent.com/Manta-Network/manta-pacific-token-list/refs/heads/main/json/manta-pacific-mainnet-token-list.json', 'TOKEN_LIST_MANTA', convertStandardList),
     await fetchList('https://open-api.openocean.finance/v3/manta/tokenList', 'TOKEN_LIST_MANTA_2', convertOpenoceanList, 169),
     // await fetchList('https://stargate.finance/api/tokens', 'TOKEN_LIST_GRAVITY'),
     await fetchList('https://open-api.openocean.finance/v3/flare/tokenList', 'TOKEN_LIST_FLARE', convertOpenoceanList, 14),
-    await fetchList('https://raw.githubusercontent.com/mantlenetworkio/mantle-token-lists/refs/heads/main/mantle.tokenlist.json', 'TOKEN_LIST_MANTLE', pruneAttributes),
-    await fetchList('https://raw.githubusercontent.com/CamelotLabs/default-token-list/refs/heads/main/src/tokens/plume.json', 'TOKEN_LIST_PLUMEPHOENIX', pruneAttributes),
+    await fetchList('https://raw.githubusercontent.com/mantlenetworkio/mantle-token-lists/refs/heads/main/mantle.tokenlist.json', 'TOKEN_LIST_MANTLE', convertStandardList),
+    await fetchList('https://raw.githubusercontent.com/CamelotLabs/default-token-list/refs/heads/main/src/tokens/plume.json', 'TOKEN_LIST_PLUMEPHOENIX', convertCamelotList),
     await fetchList('https://open-api.openocean.finance/v3/metis/tokenList', 'TOKEN_LIST_METIS', convertOpenoceanList, 1088)
 })()
