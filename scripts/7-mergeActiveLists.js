@@ -1,6 +1,6 @@
 const fs = require('fs').promises
 const path = require('path')
-const { SupportedChainId } = require('maia-core-sdk')
+const { SupportedChainId, ZERO_ADDRESS } = require('maia-core-sdk')
 const { getCoinLogo } = require('./getCoinLogo')
 const { orderTokens } = require('./orderTokens')
 const { OVERRIDE_LOGO, PARTNER_TOKEN_SYMBOLS, BLOCKED_TOKEN_SYMBOLS, NATIVE_OFT_ADAPTERS, EXTENDED_SUPPORTED_CHAIN_IDS } = require('../configs')
@@ -229,11 +229,10 @@ async function main() {
     // 6. Fetch TOKEN_LIST files
     let tokenListFiles = {};
     try {
-      const dir = path.dirname('output');
-      const files = await fs.readdir(dir);
+      const files = await fs.readdir('output');
       const tokenFiles = files.filter(f => f.startsWith('TOKEN_LIST_'));
       await Promise.all(tokenFiles.map(async (f) => {
-        tokenListFiles[f] = await tryParseTokens(await fs.readFile(path.join(dir, f), 'utf8'));
+        tokenListFiles[f] = await tryParseTokens(await fs.readFile(path.join('output', f), 'utf8'));
       }));
     } catch (e) {
     }
@@ -428,6 +427,7 @@ async function main() {
         return
       }
       if (!SUPPORTED_CHAINS.includes(token.chainId)) return
+      if (token.address === ZERO_ADDRESS) return
       if (!token.logoURI) delete token.logoURI // Remove empty logoURIs
       // Default flags if undefined.
       if (typeof token.isAcross === 'undefined') token.isAcross = false
