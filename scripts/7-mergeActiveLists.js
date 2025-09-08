@@ -143,6 +143,11 @@ async function normalizeStargateToken(token) {
       delete token.extensions.peersInfo
     }
 
+    if (token.extensions.feeInfo) {
+      token.extensions.oftInfo.feeInfo = token.extensions.feeInfo
+      delete token.extensions.feeInfo
+    }
+
     if (token.oftAdapter) {
       token.extensions.oftInfo.oftAdapter = token.oftAdapter
     }
@@ -224,7 +229,7 @@ async function main() {
 
     // 5. Wrapped Native tokens from wrappedNatives.json.
     const wrappedNativesRaw = await fs.readFile('wrappedNatives.json', 'utf8')
-    const wrappedNativeTokens = await tryParseTokens(wrappedNativesRaw)
+    const wrappedNativeTokens = JSON.parse(wrappedNativesRaw)
 
     // 6. Fetch TOKEN_LIST files
     let tokenListFiles = {};
@@ -317,7 +322,7 @@ async function main() {
         const hasPeerInInactiveSet = (Object.entries(normalizedToken.extensions.peersInfo || {})).some(([, peer]) => inactiveOFTSet.has(peer.tokenAddress.toLowerCase() + '_' + peer.chain))
 
         // Delete from rootTokensMap if chain OFT count exceeds 5, in exception of partner tokens and already active tokens. If it or any of it's peers are inactive, always delete it.
-        if ((normalizedToken.isOFT && oftAmount >= 20 && !PARTNER_TOKEN_SYMBOLS.includes(normalizedToken.symbol) && !activeOFTSet.has(key) && !hasPeerInActiveSet) || inactiveOFTSet.has(key) || hasPeerInInactiveSet) {
+        if (!PARTNER_TOKEN_SYMBOLS.includes(normalizedToken.symbol) && ((normalizedToken.isOFT && oftAmount >= 20 && !activeOFTSet.has(key) && !hasPeerInActiveSet) || inactiveOFTSet.has(key) || hasPeerInInactiveSet)) {
           const tempToken = rootTokensMap[rootKey]
           delete rootTokensMap[rootKey]
           inactiveTokensArray.push(tempToken)
@@ -360,7 +365,7 @@ async function main() {
 
 
         // Delete from normalizedMap if chain OFT count exceeds 5, in exception of partner tokens and already active tokens. If it or any of it's peers are inactive, always delete it.
-        if ((normalizedToken.isOFT && oftAmount >= 5 && !PARTNER_TOKEN_SYMBOLS.includes(normalizedToken.symbol) && !activeOFTSet.has(key) && !hasPeerInActiveSet) || inactiveOFTSet.has(key) || hasPeerInInactiveSet) {
+        if (!PARTNER_TOKEN_SYMBOLS.includes(normalizedToken.symbol) && ((normalizedToken.isOFT && oftAmount >= 5 && !activeOFTSet.has(key) && !hasPeerInActiveSet) || inactiveOFTSet.has(key) || hasPeerInInactiveSet)) {
           const tempToken = normalizedMap[key]
           delete normalizedMap[key]
           inactiveTokensArray.push(tempToken)
