@@ -114,7 +114,7 @@ function convertStandardList(list) {
     await fetchList('https://open-api.openocean.finance/v3/opbnb/tokenList', 'TOKEN_LIST_OPBNB', convertOpenoceanList, 204),
     await fetchList('https://raw.githubusercontent.com/Manta-Network/manta-pacific-token-list/refs/heads/main/json/manta-pacific-mainnet-token-list.json', 'TOKEN_LIST_MANTA', convertStandardList),
     await fetchList('https://open-api.openocean.finance/v3/manta/tokenList', 'TOKEN_LIST_MANTA_2', convertOpenoceanList, 169),
-    // await fetchList('https://stargate.finance/api/tokens', 'TOKEN_LIST_GRAVITY'),
+    await fetchList('https://raw.githubusercontent.com/CamelotLabs/default-token-list/refs/heads/main/src/tokens/gravity.json', 'TOKEN_LIST_GRAVITY', convertCamelotList),
     await fetchList('https://open-api.openocean.finance/v3/flare/tokenList', 'TOKEN_LIST_FLARE', convertOpenoceanList, 14),
     await fetchList('https://raw.githubusercontent.com/mantlenetworkio/mantle-token-lists/refs/heads/main/mantle.tokenlist.json', 'TOKEN_LIST_MANTLE', convertStandardList),
     await fetchList('https://raw.githubusercontent.com/CamelotLabs/default-token-list/refs/heads/main/src/tokens/plume.json', 'TOKEN_LIST_PLUMEPHOENIX', convertCamelotList),
