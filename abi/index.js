@@ -17,6 +17,7 @@ const OFT_V2_ABI = [
   'function quoteOFTFee(uint16 dstChainId,uint256 amount) view returns (uint256 fee)',
   'function sharedDecimals() view returns (uint8)',
   'function getTrustedRemoteAddress(uint16) view returns (bytes)',
+  'function trustedRemoteLookup(uint16) view returns (bytes)',
 ]
 
 const OFT_V1_ABI = [

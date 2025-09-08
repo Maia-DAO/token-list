@@ -29,12 +29,13 @@ async function main() {
       const dst = tokens.find(
         (t) =>
           t.chainId === parseInt(chainId) &&
-          t.address.toLowerCase() === peerEntry.tokenAddress.toLowerCase() &&
+          (t.address.toLowerCase() === peerEntry.tokenAddress.toLowerCase() || t.oftAdapter.toLowerCase() === peerEntry.tokenAddress.toLowerCase()) &&
           t.extensions?.peersInfo?.[src.chainId]?.tokenAddress.toLowerCase() === src.address.toLowerCase()
       )
 
       // peerEntry should exist and match dst.address
       if (!dst) {
+        console.warn(`Didn't find peer for ${src.name}:${src.address} (${src.chainId}) on chain ${chainId}, expected: ${peerEntry.tokenAddress}!!!`)
         continue
       }
 
@@ -80,7 +81,8 @@ async function main() {
       )
 
       // peerEntry should exist and match dst.address
-      if (!dst) {
+      if (!dst || !dst.endpointId) {
+        console.error(`Missing Token or endpointId for ${src.chainId}_${src.address}: chain:${chainId} peer:${peerEntry.tokenAddress}`)
         continue
       }
 
