@@ -88,7 +88,6 @@ async function getCoinLogo(address, chainId, coingeckoId, coinmarketcapId) {
     const url = `https://raw.githubusercontent.com/Uniswap/assets/master/blockchains/${network}/assets/${address}/logo.png`
     const res = await fetchWithRetry(url)
     if (res) {
-      console.log("🚀 ~ uniNetworkMap ~ url:", res)
       cache[key] = url
       saveCache()
       return url
@@ -117,7 +116,6 @@ async function getCoinLogo(address, chainId, coingeckoId, coinmarketcapId) {
     const url = `https://raw.githubusercontent.com/trustwallet/assets/refs/heads/master/blockchains/${networkTrust}/assets/${address}/logo.png`
     const res = await fetchWithRetry(url)
     if (res) {
-      console.log("🚀 ~ trustwalletNetworkMap ~ url:", res)
       cache[key] = url
       saveCache()
       return url
@@ -129,7 +127,6 @@ async function getCoinLogo(address, chainId, coingeckoId, coinmarketcapId) {
     const url = `https://s2.coinmarketcap.com/static/img/coins/128x128/${coinmarketcapId}.png`
     const res = await fetchWithRetry(url)
     if (res) {
-      console.log("🚀 ~ coinmarketcapId ~ url:", res)
       cache[key] = url
       saveCache()
       return url
@@ -167,7 +164,6 @@ async function getCoinLogo(address, chainId, coingeckoId, coinmarketcapId) {
       const img = $('img.tw-rounded-full').first()
       const src = img.attr('src')
       if (src) {
-        console.log("🚀 ~ coinmarketcapId ~ url:", src)
         cache[key] = src
         saveCache()
         return src
