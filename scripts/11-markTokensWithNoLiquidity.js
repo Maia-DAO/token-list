@@ -500,7 +500,7 @@ class TokenLiquidityChecker {
                         (result.hasLiquidity ? `$${result.totalLiquidity?.toFixed(2)}` : 'no liquidity') :
                         'failed';
 
-                    if (!result.success) checker.tokensToCheck.push(result)
+                    if (!result.success) checker.checkTheseTokensOut.push(result)
 
                     console.log(`${current}/${total} - ${token.symbol} (${chainName}): ${status}`);
 
@@ -824,7 +824,7 @@ async function runLiquidityCheck() {
         await Promise.all([
             checker.writeJson(checker.tokenListPath, tokenList),
             checker.writeJson(checker.inactiveTokenListPath, inactiveTokenList),
-            checker.writeJson(path.resolve(__dirname, '../check-these-tokens-out.json'), checker.tokensToCheck)
+            checker.writeJson(path.resolve(__dirname, '../check-these-tokens-out.json'), checker.checkTheseTokensOut)
         ]);
 
     } catch (error) {

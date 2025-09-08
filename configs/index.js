@@ -121,6 +121,7 @@ const OVERRIDE_PEG = {
 
 // Override logos for specific tokens
 const OVERRIDE_LOGO = {
+  'agEUR': 'https://assets.coingecko.com/coins/images/19479/large/agEUR-4.png?1710726218',
   'EURA': 'https://assets.coingecko.com/coins/images/19479/large/agEUR-4.png?1710726218',
   'pxETH': 'https://raw.githubusercontent.com/balancer/tokenlists/main/src/assets/images/tokens/0x04c154b66cb340f3ae24111cc767e0184ed00cc6.png',
   'stBTC': 'https://raw.githubusercontent.com/trustwallet/assets/refs/heads/master/blockchains/ethereum/assets/0xf6718b2701D4a6498eF77D7c152b2137Ab28b8A3/logo.png',

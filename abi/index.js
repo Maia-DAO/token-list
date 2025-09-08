@@ -21,6 +21,7 @@ const OFT_V2_ABI = [
 ]
 
 const OFT_V1_ABI = [
+  'function send(uint16,bytes,uint256,address,address,bytes) payable',
   'function sendFrom(address from,uint16 dstChainId,bytes toAddress,uint256 amount,address payable refundAddress,address zroPaymentAddress,bytes adapterParams) payable',
 ]
 
