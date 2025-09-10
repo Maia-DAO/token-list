@@ -91,7 +91,9 @@ const PARTNER_TOKEN_SYMBOLS = [
   'FLR',
   'WFLR',
   'MNT',
-  'OOE'
+  'OOE',
+  'EURA',
+  'agEUR'
 ]
 
 const NATIVE_OFT_ADAPTERS = {
