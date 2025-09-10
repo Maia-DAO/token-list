@@ -529,8 +529,10 @@ async function main() {
         (token) => token.chainId === parseInt(chainId) && token.oftAdapter.toLowerCase() === peerAddress.toLowerCase()
       )
 
+      matchingToken.address = ethers.getAddress(matchingToken.address)
+
       if (matchingToken) {
-        t.extensions.peersInfo[chainId].tokenAddress = matchingToken.address
+        t.extensions.peersInfo[chainId].tokenAddress = ethers.getAddress(matchingToken.address)
         console.log(
           `✅ Found matching token for ${peerAddress} on chain ${chainId}: ${matchingToken.name} (${matchingToken.symbol} new address: ${matchingToken.address})`
         )
