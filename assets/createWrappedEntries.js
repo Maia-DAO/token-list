@@ -56,16 +56,31 @@ const CHAIN_ID_TO_NETWORK = {
   167000: 'taiko', // ExtendedSupportedChainId.TAIKO
   98866: 'plume_mainnet', // ExtendedSupportedChainId.PLUMEPHOENIX
   14: 'flare', // ExtendedSupportedChainId.FLARE
+  11501: 'bevm', // ExtendedSupportedChainId.BEVM
+  42170: 'arbitrum_nova', // ExtendedSupportedChainId.NOVA
+  4200: 'merlin', // ExtendedSupportedChainId.MERLIN
+
+  // --- other chains ---
+  200901: 'bitlayer',
+  480: 'worldchain',
+  291: 'orderly',
+  3338: 'peaq',
+  55244: 'superposition',
 }
 
 async function downloadLogo(token) {
   const networkName = CHAIN_ID_TO_NETWORK[token.chainId]
   if (!networkName) {
-    console.warn(`⚠️  No mapping for chainId ${token.chainId}, skipping ${token.symbol}`)
+    console.warn(`⚠️  No mapping for chainId ${token.chainId} - skipping ${token.symbol}`)
     return
   }
 
   try {
+    const saveDir = path.join('assets', networkName, token.address)
+    const savePath = path.join(saveDir, 'logo.png')
+
+    if (fs.existsSync(savePath)) return
+
     const res = await fetch(token.logoURI)
     if (!res.ok) {
       console.warn(`❌ Failed to fetch ${token.symbol} from ${token.logoURI}`)
@@ -73,8 +88,6 @@ async function downloadLogo(token) {
     }
 
     const buffer = await res.bytes()
-    const saveDir = path.join('assets', networkName, token.address)
-    const savePath = path.join(saveDir, 'logo.png')
 
     fs.mkdirSync(saveDir, { recursive: true })
     fs.writeFileSync(savePath, buffer)
