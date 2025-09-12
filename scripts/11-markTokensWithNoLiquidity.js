@@ -15,6 +15,7 @@ class TokenLiquidityChecker {
         // File paths (following your script structure)
         this.tokenListPath = options.tokenListPath || path.resolve(__dirname, '../token-list.json');
         this.inactiveTokenListPath = options.inactiveTokenListPath || path.resolve(__dirname, '../inactive-token-list.json');
+        this.wrappedNativeTokensListPath = path.resolve(__dirname, '../wrappedNatives.json');
         this.backupSuffix = options.backupSuffix || '.bak';
 
         // Rate limiting
@@ -116,6 +117,11 @@ class TokenLiquidityChecker {
 
     async writeJson(filePath, obj) {
         await fs.writeFile(filePath, JSON.stringify(obj, null, 2) + '\n', 'utf8');
+    }
+
+    async loadWrappedNatives(){
+        console.log('Loading wrapped native tokens...');
+        return this.readJson(this.wrappedNativeTokensListPath)
     }
 
     /**
@@ -561,22 +567,24 @@ class TokenLiquidityChecker {
      */
     filterTokens(tokenResults, options = {}) {
         const {
-            minimumLiquidity = MINIMUM_LIQUIDITY,
             requireAnyLiquidity = true,
-            trueIfBridgeableFalseIfNotBridgeable = true
+            minimumLiquidity = MINIMUM_LIQUIDITY,
+            trueIfBridgeableFalseIfNotBridgeable = true,
+            ignoreTokens = []
         } = options;
 
         const tokensToFlag = tokenResults.filter(result => {
             const token = result.token;
 
-            // Skip if this is a partner token or no liquidity info for that chain
-            if (result.unsupportedChain || options.partnerTokenSymbols && options.partnerTokenSymbols.includes(token.symbol)) {
-                return false;
-            }
+            // Skip if there's no liquidity info for that chain
+            if (result.unsupportedChain) return false;
 
-            const isUlysses = Boolean(token.underlyingAddress && token.underlyingAddress.length > 0)
-            const isBridgeable = Boolean(token.isOFT || token.isAcross)
-            const failsLiquidityChecks = (requireAnyLiquidity && !result.hasAnyLiquidity) || result.totalLiquidity < minimumLiquidity
+            // Skip if token is in ignoreTokensList
+            if (ignoreTokens.filter((t)=>this.getTokenAddress(t) === this.getTokenAddress(token) && t.chainId === token.chainId)?.length > 0) return false;
+
+            const isUlysses = Boolean(token.underlyingAddress && token.underlyingAddress.length > 0);
+            const isBridgeable = Boolean(token.isOFT || token.isAcross);
+            const failsLiquidityChecks = (requireAnyLiquidity && !result.hasAnyLiquidity) || result.totalLiquidity < minimumLiquidity;
 
             // Only mark bridgeable tokens otherwise we will delete them
             if (failsLiquidityChecks && !isUlysses) {
@@ -707,6 +715,8 @@ async function runLiquidityCheck() {
             minimumLiquidity: MINIMUM_LIQUIDITY,
         });
 
+        const wrappedNativesTokenList = await checker.loadWrappedNatives();
+
         console.log('\n=== LIQUIDITY ANALYSIS SUMMARY ===');
         console.log(`Total tokens analyzed: ${result.summary.totalTokens}`);
         console.log(`Total liquidity checks: ${result.summary.totalChecks}`);
@@ -716,7 +726,7 @@ async function runLiquidityCheck() {
         // Show tokens with insufficient liquidity
         const tokensToFlag = checker.filterTokens(result.tokenResults, {
             minimumLiquidity: MINIMUM_LIQUIDITY,
-            partnerTokenSymbols: PARTNER_TOKEN_SYMBOLS,
+            ignoreTokens: wrappedNativesTokenList,
             trueIfBridgeableFalseIfNotBridgeable: true
         });
 
@@ -766,7 +776,7 @@ async function runLiquidityCheck() {
         // Delete non-bridgeable tokens with insufficient liquidity 
         const tokensToDelete = checker.filterTokens(result.tokenResults, {
             minimumLiquidity: MINIMUM_LIQUIDITY,
-            partnerTokenSymbols: PARTNER_TOKEN_SYMBOLS,
+            ignoreTokens: wrappedNativesTokenList,
             trueIfBridgeableFalseIfNotBridgeable: false
         });
 
