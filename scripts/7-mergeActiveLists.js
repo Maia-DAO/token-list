@@ -3,7 +3,7 @@ const path = require('path')
 const { SupportedChainId, ZERO_ADDRESS } = require('maia-core-sdk')
 const { getCoinLogo } = require('./getCoinLogo')
 const { orderTokens } = require('./orderTokens')
-const { OVERRIDE_LOGO, PARTNER_TOKEN_SYMBOLS, BLOCKED_TOKEN_SYMBOLS, NATIVE_OFT_ADAPTERS, EXTENDED_SUPPORTED_CHAIN_IDS } = require('../configs')
+const { OVERRIDE_LOGO, PARTNER_TOKEN_SYMBOLS, CORE_TOKEN_SYMBOLS, BLOCKED_TOKEN_SYMBOLS, NATIVE_OFT_ADAPTERS, EXTENDED_SUPPORTED_CHAIN_IDS } = require('../configs')
 const { mergeExtensions, orderAttributes } = require('../helpers')
 
 // TODO: Add arbitrary Uniswap Token List support
@@ -318,11 +318,13 @@ async function main() {
         if (normalizedToken.isOFT) oftsPerChainMap[42161] = oftsPerChainMap[42161] + 1
         const oftAmount = oftsPerChainMap[42161]
 
-        const hasPeerInActiveSet = (Object.entries(normalizedToken.extensions.peersInfo || {})).some(([, peer]) => activeOFTSet.has(peer.tokenAddress.toLowerCase() + '_' + peer.chain))
-        const hasPeerInInactiveSet = (Object.entries(normalizedToken.extensions.peersInfo || {})).some(([, peer]) => inactiveOFTSet.has(peer.tokenAddress.toLowerCase() + '_' + peer.chain))
+        const hasPeerInActiveSet = (Object.entries(normalizedToken.extensions.peersInfo || {})).some(([chainId, peer]) => activeOFTSet.has(peer.tokenAddress.toLowerCase() + '_' + chainId))
+        const hasPeerInInactiveSet = (Object.entries(normalizedToken.extensions.peersInfo || {})).some(([chainId, peer]) => inactiveOFTSet.has(peer.tokenAddress.toLowerCase() + '_' + chainId))
+        
+        const vipToken = PARTNER_TOKEN_SYMBOLS.includes(normalizedToken.symbol) || CORE_TOKEN_SYMBOLS.includes(normalizedToken.symbol)
 
         // Delete from rootTokensMap if chain OFT count exceeds 5, in exception of partner tokens and already active tokens. If it or any of it's peers are inactive, always delete it.
-        if (!PARTNER_TOKEN_SYMBOLS.includes(normalizedToken.symbol) && ((normalizedToken.isOFT && oftAmount >= 20 && !activeOFTSet.has(key) && !hasPeerInActiveSet) || inactiveOFTSet.has(key) || hasPeerInInactiveSet)) {
+        if (!vipToken && ((normalizedToken.isOFT && oftAmount >= 20 && !activeOFTSet.has(key) && !hasPeerInActiveSet) || inactiveOFTSet.has(key) || hasPeerInInactiveSet)) {
           const tempToken = rootTokensMap[rootKey]
           delete rootTokensMap[rootKey]
           inactiveTokensArray.push(tempToken)
@@ -353,8 +355,8 @@ async function main() {
         const oftAmount = oftsPerChainMap[normalizedToken.chainId]
 
 
-        const hasPeerInActiveSet = (Object.entries(normalizedToken.extensions.peersInfo || {})).some(([, peer]) => activeOFTSet.has(peer.tokenAddress.toLowerCase() + '_' + peer.chain))
-        const hasPeerInInactiveSet = (Object.entries(normalizedToken.extensions.peersInfo || {})).some(([, peer]) => inactiveOFTSet.has(peer.tokenAddress.toLowerCase() + '_' + peer.chain))
+        const hasPeerInActiveSet = (Object.entries(normalizedToken.extensions.peersInfo || {})).some(([chainId, peer]) => activeOFTSet.has(peer.tokenAddress.toLowerCase() + '_' + chainId))
+        const hasPeerInInactiveSet = (Object.entries(normalizedToken.extensions.peersInfo || {})).some(([chainId, peer]) => inactiveOFTSet.has(peer.tokenAddress.toLowerCase() + '_' + chainId))
 
 
         if (!normalizedMap[key]) {
@@ -363,9 +365,10 @@ async function main() {
           normalizedMap[key] = mergeTokenData(normalizedMap[key], normalizedToken)
         }
 
+        const vipToken = PARTNER_TOKEN_SYMBOLS.includes(normalizedToken.symbol) || CORE_TOKEN_SYMBOLS.includes(normalizedToken.symbol)
 
         // Delete from normalizedMap if chain OFT count exceeds 5, in exception of partner tokens and already active tokens. If it or any of it's peers are inactive, always delete it.
-        if (!PARTNER_TOKEN_SYMBOLS.includes(normalizedToken.symbol) && ((normalizedToken.isOFT && oftAmount >= 5 && !activeOFTSet.has(key) && !hasPeerInActiveSet) || inactiveOFTSet.has(key) || hasPeerInInactiveSet)) {
+        if (!vipToken && ((normalizedToken.isOFT && oftAmount >= 5 && !activeOFTSet.has(key) && !hasPeerInActiveSet) || inactiveOFTSet.has(key) || hasPeerInInactiveSet)) {
           const tempToken = normalizedMap[key]
           delete normalizedMap[key]
           inactiveTokensArray.push(tempToken)
@@ -402,7 +405,12 @@ async function main() {
     // Check if there are tokens from activeOFTSet that are still in inactiveTokensArray.
     for (const activeSetKey of activeOFTSet) {
       // Remove from inactiveTokensArray if it is in activeOFTSet.
+      // const tokensToReAdd = inactiveTokensArray.filter((token) => token.address.toLowerCase() + '_' + token.chainId === activeSetKey)
       inactiveTokensArray = inactiveTokensArray.filter((token) => token.address.toLowerCase() + '_' + token.chainId !== activeSetKey)
+
+      // for (const tokenToReAdd of tokensToReAdd) {
+      //  normalizedMap[activeSetKey] = tokenToReAdd
+      // }
     }
 
     // Check if there are tokens from inactiveOFTSet that are still in normalizedMap.

@@ -2,7 +2,7 @@ const fs = require('fs').promises;
 const path = require('path');
 const { ZERO_ADDRESS } = require('maia-core-sdk');
 
-const { CHAIN_KEYS, PARTNER_TOKEN_SYMBOLS } = require('../configs');
+const { CHAIN_KEYS, PARTNER_TOKEN_SYMBOLS, CORE_TOKEN_SYMBOLS } = require('../configs');
 
 const MINIMUM_LIQUIDITY = 10_000;
 const BATCH_SIZE = 5;
@@ -570,7 +570,8 @@ class TokenLiquidityChecker {
             requireAnyLiquidity = true,
             minimumLiquidity = MINIMUM_LIQUIDITY,
             trueIfBridgeableFalseIfNotBridgeable = true,
-            ignoreTokens = []
+            ignoreTokens = [],
+            ignoreSymbols = []
         } = options;
 
         const tokensToFlag = tokenResults.filter(result => {
@@ -581,6 +582,10 @@ class TokenLiquidityChecker {
 
             // Skip if token is in ignoreTokensList
             if (ignoreTokens.filter((t)=>this.getTokenAddress(t) === this.getTokenAddress(token) && t.chainId === token.chainId)?.length > 0) return false;
+
+            // Skip if token is in ignoreSymbolsList
+            if (ignoreSymbols.includes(token.symbol)) return false;
+
 
             const isUlysses = Boolean(token.underlyingAddress && token.underlyingAddress.length > 0);
             const isBridgeable = Boolean(token.isOFT || token.isAcross);
@@ -727,6 +732,7 @@ async function runLiquidityCheck() {
         const tokensToFlag = checker.filterTokens(result.tokenResults, {
             minimumLiquidity: MINIMUM_LIQUIDITY,
             ignoreTokens: wrappedNativesTokenList,
+            ignoreSymbols: CORE_TOKEN_SYMBOLS,
             trueIfBridgeableFalseIfNotBridgeable: true
         });
 
@@ -777,6 +783,7 @@ async function runLiquidityCheck() {
         const tokensToDelete = checker.filterTokens(result.tokenResults, {
             minimumLiquidity: MINIMUM_LIQUIDITY,
             ignoreTokens: wrappedNativesTokenList,
+            ignoreSymbols: CORE_TOKEN_SYMBOLS,
             trueIfBridgeableFalseIfNotBridgeable: false
         });
 
