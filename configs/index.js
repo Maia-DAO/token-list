@@ -123,6 +123,7 @@ const OVERRIDE_PEG = {
 
 // Override logos for specific tokens
 const OVERRIDE_LOGO = {
+  'AUKI': 'https://assets.coingecko.com/coins/images/39811/standard/COINGECKO-200-x-200_%281%29.png?1724166209',
   'agEUR': 'https://assets.coingecko.com/coins/images/19479/large/agEUR-4.png?1710726218',
   'EURA': 'https://assets.coingecko.com/coins/images/19479/large/agEUR-4.png?1710726218',
   'pxETH': 'https://raw.githubusercontent.com/balancer/tokenlists/main/src/assets/images/tokens/0x04c154b66cb340f3ae24111cc767e0184ed00cc6.png',
