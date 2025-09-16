@@ -2,7 +2,7 @@ const fs = require('fs').promises;
 const path = require('path');
 const { ZERO_ADDRESS } = require('maia-core-sdk');
 
-const { CHAIN_KEYS, PARTNER_TOKEN_SYMBOLS, CORE_TOKEN_SYMBOLS } = require('../configs');
+const { CHAIN_KEYS, CORE_TOKEN_SYMBOLS } = require('../configs');
 
 const MINIMUM_LIQUIDITY = 10_000;
 const BATCH_SIZE = 5;
@@ -12,7 +12,7 @@ const REQUEST_DELAY = 1000;
 class TokenLiquidityChecker {
 
     constructor(options = {}) {
-        // File paths (following your script structure)
+        // File paths
         this.tokenListPath = options.tokenListPath || path.resolve(__dirname, '../token-list.json');
         this.inactiveTokenListPath = options.inactiveTokenListPath || path.resolve(__dirname, '../inactive-token-list.json');
         this.wrappedNativeTokensListPath = path.resolve(__dirname, '../wrappedNatives.json');
@@ -108,7 +108,7 @@ class TokenLiquidityChecker {
     }
 
     /**
-     * File I/O methods (following your script pattern)
+     * File I/O methods
      */
     async readJson(filePath) {
         const txt = await fs.readFile(filePath, 'utf8');
@@ -125,7 +125,7 @@ class TokenLiquidityChecker {
     }
 
     /**
-     * Load token lists from your JSON files
+     * Load token lists from JSON files
      */
     async loadTokenLists() {
         console.log('Loading token lists...');
@@ -281,6 +281,7 @@ class TokenLiquidityChecker {
             await this.rateLimit();
 
             const chainName = this.chainMappings.dexscreener[chainId];
+
             if (!chainName) {
                 const chainKey = CHAIN_KEYS[chainId];
                 return {
@@ -444,7 +445,7 @@ class TokenLiquidityChecker {
     }
 
     /**
-     * Process all tokens from your token lists
+     * Process all tokens from token lists
      */
     async processAllTokensFromLists(options = {}) {
         const {
@@ -506,7 +507,7 @@ class TokenLiquidityChecker {
                         (result.hasLiquidity ? `$${result.totalLiquidity?.toFixed(2)}` : 'no liquidity') :
                         'failed';
 
-                    if (!result.success) checker.checkTheseTokensOut.push(result)
+                    if (!result.success) this.checkTheseTokensOut.push(result)
 
                     console.log(`${current}/${total} - ${token.symbol} (${chainName}): ${status}`);
 
@@ -574,7 +575,7 @@ class TokenLiquidityChecker {
             ignoreSymbols = []
         } = options;
 
-        const tokensToFlag = tokenResults.filter(result => {
+        return tokenResults.filter(result => {
             const token = result.token;
 
             // Skip if there's no liquidity info for that chain
@@ -603,8 +604,6 @@ class TokenLiquidityChecker {
             // Token has sufficient liquidity, don't remove
             return false;
         });
-
-        return tokensToFlag;
     }
 
     async processTokenList(tokens, options = {}) {
