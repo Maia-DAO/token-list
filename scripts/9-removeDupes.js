@@ -89,30 +89,33 @@ try {
   process.exit(1)
 }
 
-const seen = new Set()
-
-// Generic dedupe+merge for one array
-function dedupeAndMerge(arr) {
-  // bucket by key
+// Merge and dedupe logic with active/inactive tracking
+function dedupeAndMergeCombined(activeTokens, rootTokens, inactiveTokens) {
   const buckets = new Map()
-  arr.forEach((item) => {
-    const cid = item.chainId
-    const keys = []
-    if (item.address) keys.push(`${item.address.toLowerCase()}_${cid}`)
-    if (item.underlyingAddress) keys.push(`${item.underlyingAddress.toLowerCase()}_${cid}`)
-    // one item may appear in multiple buckets; we’ll merge inside each bucket
-    keys.forEach((k) => {
-      if (!buckets.has(k)) buckets.set(k, [])
-      buckets.get(k).push(item)
-    })
-  })
 
-  // build final list, merging duplicates
-  const result = []
+  function addToBuckets(tokens, source) {
+    tokens.forEach((item) => {
+      const cid = item.chainId
+      const keys = []
+      if (item.address) keys.push(`${item.address.toLowerCase()}_${cid}`)
+      if (item.underlyingAddress) keys.push(`${item.underlyingAddress.toLowerCase()}_${cid}`)
+      keys.forEach((k) => {
+        if (!buckets.has(k)) buckets.set(k, [])
+        buckets.get(k).push({ ...item, __source: source })
+      })
+    })
+  }
+
+  addToBuckets(activeTokens, 'active')
+  addToBuckets(rootTokens, 'active-root')
+  addToBuckets(inactiveTokens, 'inactive')
+
+  const mergedActive = []
+  const mergedActiveRoot = []
+  const mergedInactive = []
+  const seen = new Set()
 
   buckets.forEach((group) => {
-    // pick the “merged” token for this key
-    // sort by population ascending: least-populated first
     group.sort((a, b) => populationScore(a) - populationScore(b))
     let merged = group[0]
     for (let i = 1; i < group.length; i++) {
@@ -120,53 +123,57 @@ function dedupeAndMerge(arr) {
     }
 
     const address = merged.address?.toLowerCase() ?? merged.underlyingAddress?.toLowerCase()
-
-    // ensure we only push each merged token once
     const uniqueId = `${address}_${merged.chainId}`
+
     if (!seen.has(uniqueId)) {
+      seen.add(uniqueId)
+
+      // If any part of the group came from active list, keep in active list
+      const hasActive = group.some((t) => t.__source === 'active')
+      const hasActiveRoot = group.some((t) => t.__source === 'active-root')
+
       if (group.length > 1) {
         console.log("= Duplicate Group:", group)
         console.log("=== Group merge result:", merged)
       }
-      result.push(merged)
-      seen.add(uniqueId)
+
+      for (const member of group){
+        delete member.__source
+      }
+
+      if (hasActiveRoot) {
+        mergedActiveRoot.push(merged)
+      } else if (hasActive) {
+        mergedActive.push(merged)
+      } else {
+        mergedInactive.push(merged)
+      }
     }
   })
 
-  // also include any tokens that never fell into a bucket
-  arr.forEach((item) => {
-    const cid = item.chainId
-    const id = `${item.address?.toLowerCase() ?? item.underlyingAddress?.toLowerCase() ?? ''}_${cid}`
-    if (!seen.has(id)) {
-      result.push(item)
-      seen.add(id)
-    }
-  })
-
-  return result
+  return { mergedActive, mergedActiveRoot, mergedInactive }
 }
 
-// Process both lists
-const mergedTokens = Array.isArray(dataActiveList.tokens) ? dedupeAndMerge(dataActiveList.tokens) : []
-const mergedRootTokens = Array.isArray(dataActiveList.rootTokens) ? dedupeAndMerge(dataActiveList.rootTokens) : []
+// Handle tokens
+const activeTokens = Array.isArray(dataActiveList.tokens) ? dataActiveList.tokens : []
+const activeRootTokens = Array.isArray(dataActiveList.rootTokens) ? dataActiveList.rootTokens : []
+const inactiveTokens = Array.isArray(dataInactiveList.tokens) ? dataInactiveList.tokens : []
 
-// Write out
+const { mergedActive, mergedActiveRoot, mergedInactive } = dedupeAndMergeCombined(activeTokens, activeRootTokens, inactiveTokens)
+
 const outData = {
   ...dataActiveList,
-  tokens: mergedTokens,
-  rootTokens: mergedRootTokens,
+  tokens: mergedActive,
+  rootTokens: mergedActiveRoot,
 }
 
 fs.writeFileSync(ACTIVE_LIST, JSON.stringify(outData, null, 2))
-console.log(`✅ Duplicates merged. Output written to ${ACTIVE_LIST}`)
+console.log(`✅ Merged tokens written to ${ACTIVE_LIST}`)
 
-const mergedInactiveTokens = Array.isArray(dataInactiveList.tokens) ? dedupeAndMerge(dataInactiveList.tokens) : []
-
-// Write out
 const outInactiveData = {
   ...dataInactiveList,
-  tokens: mergedInactiveTokens,
+  tokens: mergedInactive,
 }
 
 fs.writeFileSync(INACTIVE_LIST, JSON.stringify(outInactiveData, null, 2))
-console.log(`✅ Inactive duplicates merged. Output written to ${INACTIVE_LIST}`)
+console.log(`✅ Remaining inactive tokens written to ${INACTIVE_LIST}`)
