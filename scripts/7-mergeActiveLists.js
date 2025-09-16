@@ -3,7 +3,7 @@ const path = require('path')
 const { SupportedChainId, ZERO_ADDRESS } = require('maia-core-sdk')
 const { getCoinLogo } = require('./getCoinLogo')
 const { orderTokens } = require('./orderTokens')
-const { OVERRIDE_LOGO, PARTNER_TOKEN_SYMBOLS, CORE_TOKEN_SYMBOLS, BLOCKED_TOKEN_SYMBOLS, NATIVE_OFT_ADAPTERS, EXTENDED_SUPPORTED_CHAIN_IDS } = require('../configs')
+const { OVERRIDE_LOGO, PARTNER_TOKEN_SYMBOLS, CORE_TOKEN_SYMBOLS, BLOCKED_TOKEN_SYMBOLS, NATIVE_OFT_ADAPTERS, CHAINS_WITH_NO_SWAPPING, EXTENDED_SUPPORTED_CHAIN_IDS } = require('../configs')
 const { mergeExtensions, orderAttributes } = require('../helpers')
 
 // TODO: Add arbitrary Uniswap Token List support
@@ -483,8 +483,8 @@ async function main() {
     }
 
     // 4. Final tokens and rootTokens arrays.
-    const finalTokens = Object.values(normalizedMap).sort(orderTokens)
-    const finalRootTokens = Object.values(rootTokensMap).sort(orderTokens)
+    const finalTokens = Object.values(normalizedMap).filter((t) =>  t.isAcross || t.isOFT || wrappedNativeTokens.some((w)=> w.chainId === t.chainId && (t.address && w.address === t.address || t.underlyingAddress && w.underlyingAddress === t.underlyingAddress)) || !CHAINS_WITH_NO_SWAPPING.includes(t.chainId)).sort(orderTokens)
+    const finalRootTokens = Object.values(rootTokensMap).filter((t) =>  t.isAcross || t.isOFT || wrappedNativeTokens.some((w)=> w.chainId === t.chainId && (t.address && w.address === t.address || t.underlyingAddress && w.underlyingAddress === t.underlyingAddress)) || !CHAINS_WITH_NO_SWAPPING.includes(t.chainId)).sort(orderTokens)
 
     // -----------------------------------------------------------------
     // Build new merged output in complete token list format.

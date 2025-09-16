@@ -165,6 +165,25 @@ const OVERRIDE_LOGO = {
   'WNIBI': 'https://images-ext-1.discordapp.net/external/tM3n2iub1SLOqiey4mkfnl4Lfe4LR6ijT-Ixv7juEu8/https/silverswap.io/tokens/nibiru/WNIBI.png?format=webp&quality=lossless&width=450&height=450',
 }
 
+const CHAINS_WITH_NO_SWAPPING = [
+  252,
+  200901,
+  60808,
+  1116,
+  2345,
+  57073,
+  747474,
+  2818,
+  6900,
+  291,
+  3338,
+  1868,
+  239,
+  167000,
+  480,
+  7777777,
+]
+
 // Extended supported chain IDs 
 // @dev copied from hermes UI frontend chainInfo.ts 
 const EXTENDED_SUPPORTED_CHAIN_IDS = [
@@ -576,6 +595,7 @@ module.exports = {
   CHAIN_KEY_TO_EID,
   EID_TO_VERSION,
   SUPPORTED_CHAINS,
+  CHAINS_WITH_NO_SWAPPING,
   EXTENDED_SUPPORTED_CHAIN_IDS,
   OVERRIDE_PEG,
   OVERRIDE_LOGO,
