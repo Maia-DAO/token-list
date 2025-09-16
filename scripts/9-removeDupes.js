@@ -15,6 +15,8 @@ function mergeTokenData(existing, incoming) {
     extensions: mergeExtensions(existing.extensions, incoming.extensions),
   }
 
+  if (merged.underlyingAddress) delete merged.address
+
   return orderAttributes(merged)
 }
 
@@ -137,9 +139,7 @@ function dedupeAndMergeCombined(activeTokens, rootTokens, inactiveTokens) {
         console.log("=== Group merge result:", merged)
       }
 
-      for (const member of group){
-        delete member.__source
-      }
+      delete merged.__source
 
       if (hasActiveRoot) {
         mergedActiveRoot.push(merged)
