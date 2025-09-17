@@ -1,8 +1,8 @@
 {
   "name": "Hermes Omnichain Inactive Token List",
-  "timestamp": "1758115319",
+  "timestamp": "1758122517",
   "version": {
-    "major": 132,
+    "major": 133,
     "minor": 0,
     "patch": 0
   },
@@ -670,18 +670,12 @@
       "extensions": {
         "coinMarketCapId": 22943,
         "bridgeInfo": {
-          "1890": {
-            "tokenAddress": "0x519d3443cACc61bD844546eDAea48E5502021802"
-          },
           "8453": {
             "tokenAddress": "0x519d3443cACc61bD844546eDAea48E5502021802"
           }
         },
         "oftInfo": {
           "peersInfo": {
-            "1890": {
-              "tokenAddress": "0x519d3443cACc61bD844546eDAea48E5502021802"
-            },
             "8453": {
               "tokenAddress": "0x519d3443cACc61bD844546eDAea48E5502021802"
             }
@@ -1489,24 +1483,6 @@
     },
     {
       "chainId": 1,
-      "address": "0x16ECCfDbb4eE1A85A33f3A9B21175Cd7Ae753dB4",
-      "name": "Router Protocol",
-      "symbol": "ROUTE",
-      "decimals": 18,
-      "logoURI": "https://assets.coingecko.com/coins/images/13709/large/route_token_200x200-19.png?1611057698",
-      "extensions": {
-        "bridgeInfo": {
-          "137": {
-            "tokenAddress": "0x16ECCfDbb4eE1A85A33f3A9B21175Cd7Ae753dB4"
-          },
-          "42161": {
-            "tokenAddress": "0x5298060A95205BE6Dd4aBc21910A4bB23D6DCD8b"
-          }
-        }
-      }
-    },
-    {
-      "chainId": 1,
       "address": "0x171120219d3223E008558654ec3254A0F206edb2",
       "name": "Wrapped XX",
       "decimals": 9,
@@ -2229,8 +2205,7 @@
         }
       },
       "isAcross": false,
-      "isOFT": true,
-      "noLiquidityOnChain": true
+      "isOFT": true
     },
     {
       "chainId": 1,
@@ -3123,6 +3098,21 @@
     },
     {
       "chainId": 1,
+      "address": "0x34950Ff2b487d9E5282c5aB342d08A2f712eb79F",
+      "name": "Efforce",
+      "symbol": "WOZX",
+      "decimals": 18,
+      "logoURI": "https://assets.coingecko.com/coins/images/13310/large/rZ6Oe3dm_400x400.jpg?1607331889",
+      "extensions": {
+        "bridgeInfo": {
+          "137": {
+            "tokenAddress": "0x954622542cbB3a1492C3F52D4FD66F4059c029fF"
+          }
+        }
+      }
+    },
+    {
+      "chainId": 1,
       "address": "0x3496B523e5C00a4b4150D6721320CdDb234c3079",
       "name": "NUM Token",
       "symbol": "NUM",
@@ -3302,9 +3292,6 @@
             "42161": {
               "tokenAddress": "0x1572D48a52906B834FB236AA77831d669F6d87A1"
             },
-            "42170": {
-              "tokenAddress": "0xe2510aA4b019af3Eb835d3aC9c800382109A4631"
-            },
             "55244": {
               "tokenAddress": "0x8633aCcBeACa79D9a2dc11D682458cf5089b9dE9"
             },
@@ -3345,9 +3332,6 @@
             },
             "42161": {
               "minDstGas": 2000000
-            },
-            "42170": {
-              "minDstGas": 200000
             },
             "55244": {
               "minDstGas": 200000
@@ -3932,24 +3916,6 @@
     },
     {
       "chainId": 1,
-      "address": "0x444444444444C1a66F394025Ac839A535246FCc8",
-      "name": "Genius",
-      "symbol": "GENI",
-      "decimals": 9,
-      "logoURI": "https://assets.coingecko.com/coins/images/28621/large/GENI200x200.png?1672707726",
-      "extensions": {
-        "bridgeInfo": {
-          "56": {
-            "tokenAddress": "0x444444444444C1a66F394025Ac839A535246FCc8"
-          },
-          "43114": {
-            "tokenAddress": "0x444444444444C1a66F394025Ac839A535246FCc8"
-          }
-        }
-      }
-    },
-    {
-      "chainId": 1,
       "address": "0x446C9033E7516D820cc9a2ce2d0B7328b579406F",
       "name": "SOLVE",
       "symbol": "SOLVE",
@@ -4206,6 +4172,16 @@
       "isAcross": false,
       "isOFT": true,
       "noLiquidityOnChain": true
+    },
+    {
+      "chainId": 1,
+      "address": "0x4FE5851C9af07df9e5AD8217aFAE1ea72737Ebda",
+      "name": "Open Predict Token",
+      "symbol": "OPT",
+      "decimals": 18,
+      "isAcross": false,
+      "isOFT": false,
+      "extensions": {}
     },
     {
       "chainId": 1,
@@ -5102,15 +5078,6 @@
     },
     {
       "chainId": 1,
-      "address": "0x602f65BB8B8098Ad804E99DB6760Fd36208cD967",
-      "name": "Mops",
-      "symbol": "MOPS",
-      "decimals": 18,
-      "logoURI": "https://assets.coingecko.com/coins/images/26900/large/mops.png?1660724129",
-      "extensions": {}
-    },
-    {
-      "chainId": 1,
       "address": "0x6069c9223e8a5DA1ec49ac5525d4BB757Af72Cd8",
       "name": "MUSK Gold",
       "symbol": "MUSK",
@@ -5482,21 +5449,6 @@
     },
     {
       "chainId": 1,
-      "address": "0x6524B87960c2d573AE514fd4181777E7842435d4",
-      "name": "Benzene",
-      "symbol": "BZN",
-      "decimals": 18,
-      "logoURI": "https://assets.coingecko.com/coins/images/17368/large/bzn-logo-200.png?1627437320",
-      "extensions": {
-        "bridgeInfo": {
-          "137": {
-            "tokenAddress": "0xcD0D64C971AF8B477042130c5e6cD2A6f7842869"
-          }
-        }
-      }
-    },
-    {
-      "chainId": 1,
       "address": "0x656C00e1BcD96f256F224AD9112FF426Ef053733",
       "name": "Efinity",
       "symbol": "EFI",
@@ -5609,15 +5561,6 @@
       },
       "isAcross": false,
       "isOFT": true
-    },
-    {
-      "chainId": 1,
-      "address": "0x6595b8fD9C920C81500dCa94e53Cdc712513Fb1f",
-      "name": "Olyverse",
-      "symbol": "OLY",
-      "decimals": 18,
-      "logoURI": "https://assets.coingecko.com/coins/images/13983/large/oly-logo.png?1613461530",
-      "extensions": {}
     },
     {
       "chainId": 1,
@@ -7246,6 +7189,15 @@
     },
     {
       "chainId": 1,
+      "address": "0x7a5ce6abD131EA6B148a022CB76fc180ae3315A6",
+      "name": "bAlpha",
+      "symbol": "BALPHA",
+      "decimals": 18,
+      "logoURI": "https://assets.coingecko.com/coins/images/14224/large/logo_bAlpha_200.png?1615089190",
+      "extensions": {}
+    },
+    {
+      "chainId": 1,
       "address": "0x7aE0d42f23C33338dE15bFa89C7405c068d9dC0a",
       "name": "Shibaverse",
       "symbol": "VERSE",
@@ -7873,6 +7825,16 @@
     },
     {
       "chainId": 1,
+      "address": "0x8BA6DcC667d3FF64C1A2123cE72FF5F0199E5315",
+      "name": "AlexMasmej",
+      "symbol": "ALEX",
+      "decimals": 4,
+      "isAcross": false,
+      "isOFT": false,
+      "extensions": {}
+    },
+    {
+      "chainId": 1,
       "address": "0x8CdF550C04Bc9B9F10938368349C9c8051A772b6",
       "name": "mETH",
       "decimals": 18,
@@ -8189,6 +8151,15 @@
     },
     {
       "chainId": 1,
+      "address": "0x91a5de30e57831529a3c1aF636A78a7E4E83f3aa",
+      "name": "Hulk Inu",
+      "symbol": "HULK",
+      "decimals": 18,
+      "logoURI": "https://assets.coingecko.com/coins/images/26358/large/HULKINU_LOGO.png?1657593698",
+      "extensions": {}
+    },
+    {
+      "chainId": 1,
       "address": "0x93C9175E26F57d2888c7Df8B470C9eeA5C0b0A93",
       "name": "B cube ai",
       "symbol": "BCUBE",
@@ -8382,9 +8353,6 @@
             },
             "42161": {
               "tokenAddress": "0xe42E70881Ee9277Fa3F2dbb1F23eB38D12de2F9A"
-            },
-            "42170": {
-              "tokenAddress": "0x1709b7dFcd7204015fB18C43eFEAD543ADe43054"
             },
             "57073": {
               "tokenAddress": "0xe2510aA4b019af3Eb835d3aC9c800382109A4631"
@@ -8800,21 +8768,6 @@
     },
     {
       "chainId": 1,
-      "address": "0x9f4909Cc95FB870BF48C128C1Fdbb5F482797632",
-      "name": "Guzzler",
-      "symbol": "GZLR",
-      "decimals": 18,
-      "logoURI": "https://assets.coingecko.com/coins/images/20970/large/Screenshot-2021-11-27-at-22-57-22.png?1638153729",
-      "extensions": {
-        "bridgeInfo": {
-          "137": {
-            "tokenAddress": "0x6c6fcDEC44990079baac5c3062e8f0dAc5c4BA8E"
-          }
-        }
-      }
-    },
-    {
-      "chainId": 1,
       "address": "0x9fa69536d1cda4A04cFB50688294de75B505a9aE",
       "name": "DeRace",
       "symbol": "DERC",
@@ -9168,21 +9121,6 @@
       "isAcross": false,
       "isOFT": true,
       "noLiquidityOnChain": true
-    },
-    {
-      "chainId": 1,
-      "address": "0xB893A8049f250b57eFA8C62D51527a22404D7c9A",
-      "name": "American Shiba",
-      "symbol": "USHIBA",
-      "decimals": 9,
-      "logoURI": "https://assets.coingecko.com/coins/images/15650/large/american_shiba.PNG?1621476610",
-      "extensions": {
-        "bridgeInfo": {
-          "56": {
-            "tokenAddress": "0x01e04C6e0B2C93Bb4f8eE4B71072b861F9352660"
-          }
-        }
-      }
     },
     {
       "chainId": 1,
@@ -11346,9 +11284,6 @@
             },
             "42161": {
               "tokenAddress": "0xb5130F4767AB0ACC579f25a76e8f9E977CB3F948"
-            },
-            "42170": {
-              "tokenAddress": "0xb5130F4767AB0ACC579f25a76e8f9E977CB3F948"
             }
           },
           "oftAdapter": "0xb5130F4767AB0ACC579f25a76e8f9E977CB3F948",
@@ -11643,9 +11578,6 @@
             "1116": {
               "tokenAddress": "0xC7CC66a88e2f121Fb104344EAcB7BA7bCAe79DFA"
             },
-            "4200": {
-              "tokenAddress": "0xAFa5f9313F1F2b599173f24807a882F498Be118c"
-            },
             "5000": {
               "tokenAddress": "0x5f45Cd59BA7F2f6bcD935663F68Ee1dEbE3B8a10"
             },
@@ -11657,9 +11589,6 @@
             },
             "42161": {
               "tokenAddress": "0x8a555e4Fc287650f5E8CA1778A35dd44e893d6Aa"
-            },
-            "42170": {
-              "tokenAddress": "0x148CaF6FfBaBa15F35deE7e2813d1F4c6da288F3"
             },
             "42220": {
               "tokenAddress": "0x555a37E52791904c097ECAB03da0009a0c7c4FCf"
@@ -11714,9 +11643,6 @@
             "1116": {
               "minDstGas": 200000
             },
-            "4200": {
-              "minDstGas": 200000
-            },
             "5000": {
               "minDstGas": 200000
             },
@@ -11728,9 +11654,6 @@
             },
             "42161": {
               "minDstGas": 2000000
-            },
-            "42170": {
-              "minDstGas": 200000
             },
             "42220": {
               "minDstGas": 200000
@@ -11860,21 +11783,6 @@
       "isAcross": false,
       "isOFT": true,
       "noLiquidityOnChain": true
-    },
-    {
-      "chainId": 1,
-      "address": "0xc4C75F2A0cB1a9ACc33929512dc9733EA1Fd6fde",
-      "name": "Martin Shkreli Inu",
-      "symbol": "MSI",
-      "decimals": 18,
-      "logoURI": "https://assets.coingecko.com/coins/images/26365/large/jEYEUxUI_400x400.jpeg?1657600080",
-      "extensions": {
-        "bridgeInfo": {
-          "56": {
-            "tokenAddress": "0xe05D1C28B3f8127b5B058F101198Ede30Fe3961d"
-          }
-        }
-      }
     },
     {
       "chainId": 1,
@@ -14119,8 +14027,7 @@
         }
       },
       "isAcross": false,
-      "isOFT": true,
-      "noLiquidityOnChain": true
+      "isOFT": true
     },
     {
       "chainId": 10,
@@ -14530,9 +14437,6 @@
             "1116": {
               "tokenAddress": "0xC7CC66a88e2f121Fb104344EAcB7BA7bCAe79DFA"
             },
-            "4200": {
-              "tokenAddress": "0xAFa5f9313F1F2b599173f24807a882F498Be118c"
-            },
             "5000": {
               "tokenAddress": "0x5f45Cd59BA7F2f6bcD935663F68Ee1dEbE3B8a10"
             },
@@ -14544,9 +14448,6 @@
             },
             "42161": {
               "tokenAddress": "0x8a555e4Fc287650f5E8CA1778A35dd44e893d6Aa"
-            },
-            "42170": {
-              "tokenAddress": "0x148CaF6FfBaBa15F35deE7e2813d1F4c6da288F3"
             },
             "42220": {
               "tokenAddress": "0x555a37E52791904c097ECAB03da0009a0c7c4FCf"
@@ -14598,9 +14499,6 @@
             "1116": {
               "minDstGas": 200000
             },
-            "4200": {
-              "minDstGas": 200000
-            },
             "5000": {
               "minDstGas": 200000
             },
@@ -14612,9 +14510,6 @@
             },
             "42161": {
               "minDstGas": 2000000
-            },
-            "42170": {
-              "minDstGas": 200000
             },
             "42220": {
               "minDstGas": 200000
@@ -14688,9 +14583,6 @@
             "42161": {
               "tokenAddress": "0xCE0690a849FD00227A769BcC53c1C6266cc84483"
             },
-            "42170": {
-              "tokenAddress": "0x3922de582D630c221AebB2297d86e66bDED1E8D0"
-            },
             "42220": {
               "tokenAddress": "0x6a396A76EdB76d4d2E8a05d33fe4364a3942ab1e"
             },
@@ -14737,9 +14629,6 @@
             },
             "42161": {
               "minDstGas": 2000000
-            },
-            "42170": {
-              "minDstGas": 200000
             },
             "42220": {
               "minDstGas": 200000
@@ -15717,9 +15606,6 @@
             "42161": {
               "tokenAddress": "0xA698B510cE2A3ED439d93E3e2C79a9A87782164f"
             },
-            "42170": {
-              "tokenAddress": "0xeC5D4172DA5B15587dB2b955D7f5aa8C1c8ae496"
-            },
             "42220": {
               "tokenAddress": "0x8919eBCba6C8aBAB34A341fA0B3BA35fE3589dB2"
             },
@@ -15762,9 +15648,6 @@
               "minDstGas": 300000
             },
             "42161": {
-              "minDstGas": 300000
-            },
-            "42170": {
               "minDstGas": 300000
             },
             "42220": {
@@ -16114,9 +15997,6 @@
             "42161": {
               "tokenAddress": "0x5abB7FEA061a97329059f35635f24Cb946652C42"
             },
-            "42170": {
-              "tokenAddress": "0xab36258c317009A716440f87b83910B208e7c16b"
-            },
             "42220": {
               "tokenAddress": "0x8C756880599d31fA8c838a845056E7588C327c87"
             },
@@ -16153,9 +16033,6 @@
               "minDstGas": 200000
             },
             "42161": {
-              "minDstGas": 200000
-            },
-            "42170": {
               "minDstGas": 200000
             },
             "42220": {
@@ -16577,9 +16454,6 @@
               "tokenAddress": "0x89BAfaD9B675973F374EE541634afb9242d65Ffc"
             },
             "42161": {
-              "tokenAddress": "0x89BAfaD9B675973F374EE541634afb9242d65Ffc"
-            },
-            "42170": {
               "tokenAddress": "0x89BAfaD9B675973F374EE541634afb9242d65Ffc"
             },
             "42220": {
@@ -17633,9 +17507,6 @@
             "42161": {
               "tokenAddress": "0xe42E70881Ee9277Fa3F2dbb1F23eB38D12de2F9A"
             },
-            "42170": {
-              "tokenAddress": "0x1709b7dFcd7204015fB18C43eFEAD543ADe43054"
-            },
             "57073": {
               "tokenAddress": "0xe2510aA4b019af3Eb835d3aC9c800382109A4631"
             },
@@ -17731,9 +17602,6 @@
             "42161": {
               "tokenAddress": "0xA6964d554f5A3a1DD2f8a2bab9853Bdb883eFA32"
             },
-            "42170": {
-              "tokenAddress": "0x818529140C65Ad9152bcE5d87fF42632820CEBFB"
-            },
             "43114": {
               "tokenAddress": "0x6c4495b2eD95Ad3A2050aad60D410fA9782F08cA"
             },
@@ -17762,9 +17630,6 @@
             },
             "42161": {
               "minDstGas": 2000000
-            },
-            "42170": {
-              "minDstGas": 200000
             },
             "43114": {
               "minDstGas": 200000
@@ -18048,9 +17913,6 @@
             "42161": {
               "tokenAddress": "0xFD92930CA50ab900171643a8a47BC57d760a5d95"
             },
-            "42170": {
-              "tokenAddress": "0xc67505DEaA9C0c08B9bcf2F55476C66b77e0c82f"
-            },
             "42220": {
               "tokenAddress": "0xc67505DEaA9C0c08B9bcf2F55476C66b77e0c82f"
             },
@@ -18087,9 +17949,6 @@
               "minDstGas": 200000
             },
             "42161": {
-              "minDstGas": 200000
-            },
-            "42170": {
               "minDstGas": 200000
             },
             "42220": {
@@ -18152,9 +18011,6 @@
             "42161": {
               "tokenAddress": "0xD0f6733564BaE9aB83aE4FFC4a07073110aA9D21"
             },
-            "42170": {
-              "tokenAddress": "0x7a3E8E33De6789dD0378BDc2c8BFE5DBF3E9fbbA"
-            },
             "42220": {
               "tokenAddress": "0xE86B177C6464bA905F95ff82F1fD00a23465D86F"
             },
@@ -18195,9 +18051,6 @@
             },
             "42161": {
               "minDstGas": 2000000
-            },
-            "42170": {
-              "minDstGas": 200000
             },
             "42220": {
               "minDstGas": 200000
@@ -18296,9 +18149,6 @@
             "42161": {
               "tokenAddress": "0x1572D48a52906B834FB236AA77831d669F6d87A1"
             },
-            "42170": {
-              "tokenAddress": "0xe2510aA4b019af3Eb835d3aC9c800382109A4631"
-            },
             "55244": {
               "tokenAddress": "0x8633aCcBeACa79D9a2dc11D682458cf5089b9dE9"
             },
@@ -18339,9 +18189,6 @@
             },
             "42161": {
               "minDstGas": 2000000
-            },
-            "42170": {
-              "minDstGas": 200000
             },
             "55244": {
               "minDstGas": 200000
@@ -18741,6 +18588,21 @@
       "isAcross": false,
       "isOFT": true,
       "noLiquidityOnChain": true
+    },
+    {
+      "chainId": 56,
+      "address": "0x01e04C6e0B2C93Bb4f8eE4B71072b861F9352660",
+      "name": "American Shiba",
+      "symbol": "USHIBA",
+      "decimals": 18,
+      "logoURI": "https://assets.coingecko.com/coins/images/15650/large/american_shiba.PNG?1621476610",
+      "extensions": {
+        "bridgeInfo": {
+          "1": {
+            "tokenAddress": "0xB893A8049f250b57eFA8C62D51527a22404D7c9A"
+          }
+        }
+      }
     },
     {
       "chainId": 56,
@@ -19267,21 +19129,6 @@
     },
     {
       "chainId": 56,
-      "address": "0x0F9E4D49f25de22c2202aF916B681FBB3790497B",
-      "name": "PERL eco",
-      "symbol": "PERL",
-      "decimals": 18,
-      "logoURI": "https://assets.coingecko.com/coins/images/4682/large/PERL.eco-Icon-green_6x.png?1624365340",
-      "extensions": {
-        "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0xeca82185adCE47f39c684352B0439f030f860318"
-          }
-        }
-      }
-    },
-    {
-      "chainId": 56,
       "address": "0x0a3A21356793B49154Fd3BbE91CBc2A16c0457f5",
       "name": "RFOX",
       "symbol": "RFOX",
@@ -19491,6 +19338,21 @@
     },
     {
       "chainId": 56,
+      "address": "0x14016E85a25aeb13065688cAFB43044C2ef86784",
+      "name": "TrueUSD",
+      "symbol": "TUSD",
+      "decimals": 18,
+      "logoURI": "https://assets.coingecko.com/coins/images/3449/large/tusd.png?1618395665",
+      "extensions": {
+        "bridgeInfo": {
+          "1": {
+            "tokenAddress": "0x0000000000085d4780B73119b644AE5ecd22b376"
+          }
+        }
+      }
+    },
+    {
+      "chainId": 56,
       "address": "0x14778860E937f509e651192a90589dE711Fb88a9",
       "name": "CyberConnect",
       "decimals": 18,
@@ -19656,9 +19518,6 @@
             "42161": {
               "tokenAddress": "0xA698B510cE2A3ED439d93E3e2C79a9A87782164f"
             },
-            "42170": {
-              "tokenAddress": "0xeC5D4172DA5B15587dB2b955D7f5aa8C1c8ae496"
-            },
             "42220": {
               "tokenAddress": "0x8919eBCba6C8aBAB34A341fA0B3BA35fE3589dB2"
             },
@@ -19698,9 +19557,6 @@
               "minDstGas": 300000
             },
             "42161": {
-              "minDstGas": 300000
-            },
-            "42170": {
               "minDstGas": 300000
             },
             "42220": {
@@ -20128,9 +19984,6 @@
             "42161": {
               "tokenAddress": "0x1572D48a52906B834FB236AA77831d669F6d87A1"
             },
-            "42170": {
-              "tokenAddress": "0xe2510aA4b019af3Eb835d3aC9c800382109A4631"
-            },
             "55244": {
               "tokenAddress": "0x8633aCcBeACa79D9a2dc11D682458cf5089b9dE9"
             },
@@ -20171,9 +20024,6 @@
             },
             "42161": {
               "minDstGas": 2000000
-            },
-            "42170": {
-              "minDstGas": 200000
             },
             "55244": {
               "minDstGas": 200000
@@ -20533,21 +20383,6 @@
         "bridgeInfo": {
           "1": {
             "tokenAddress": "0x5a666c7d92E5fA7Edcb6390E4efD6d0CDd69cF37"
-          }
-        }
-      }
-    },
-    {
-      "chainId": 56,
-      "address": "0x2a4DFfa1Fa0F86CE7f0982F88Aecc199FB3476bc",
-      "name": "OccamFi",
-      "symbol": "OCC",
-      "decimals": 18,
-      "logoURI": "https://assets.coingecko.com/coins/images/14801/large/occfi.PNG?1618531140",
-      "extensions": {
-        "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0x2F109021aFe75B949429fe30523Ee7C0D5B27207"
           }
         }
       }
@@ -21299,9 +21134,6 @@
             "42161": {
               "tokenAddress": "0xD0f6733564BaE9aB83aE4FFC4a07073110aA9D21"
             },
-            "42170": {
-              "tokenAddress": "0x7a3E8E33De6789dD0378BDc2c8BFE5DBF3E9fbbA"
-            },
             "42220": {
               "tokenAddress": "0xE86B177C6464bA905F95ff82F1fD00a23465D86F"
             },
@@ -21342,9 +21174,6 @@
             },
             "42161": {
               "minDstGas": 2000000
-            },
-            "42170": {
-              "minDstGas": 200000
             },
             "42220": {
               "minDstGas": 200000
@@ -22529,9 +22358,6 @@
             "42161": {
               "tokenAddress": "0xCE0690a849FD00227A769BcC53c1C6266cc84483"
             },
-            "42170": {
-              "tokenAddress": "0x3922de582D630c221AebB2297d86e66bDED1E8D0"
-            },
             "42220": {
               "tokenAddress": "0x6a396A76EdB76d4d2E8a05d33fe4364a3942ab1e"
             },
@@ -22578,9 +22404,6 @@
             },
             "42161": {
               "minDstGas": 2000000
-            },
-            "42170": {
-              "minDstGas": 200000
             },
             "42220": {
               "minDstGas": 200000
@@ -23700,6 +23523,21 @@
     },
     {
       "chainId": 56,
+      "address": "0x8357c604c5533fa0053BeAaA1494Da552ceA38f7",
+      "name": "Spores Network",
+      "symbol": "SPO",
+      "decimals": 18,
+      "logoURI": "https://assets.coingecko.com/coins/images/17431/large/SPO_token.png?1627619762",
+      "extensions": {
+        "bridgeInfo": {
+          "1": {
+            "tokenAddress": "0xcbE771323587EA16dACB6016e269D7F08A7ACC4E"
+          }
+        }
+      }
+    },
+    {
+      "chainId": 56,
       "address": "0x840B20fA3D48Ac709fD841fcd878c3E8aaBd7087",
       "name": "GLUE",
       "decimals": 18,
@@ -23919,9 +23757,6 @@
             "42161": {
               "tokenAddress": "0x89BAfaD9B675973F374EE541634afb9242d65Ffc"
             },
-            "42170": {
-              "tokenAddress": "0x89BAfaD9B675973F374EE541634afb9242d65Ffc"
-            },
             "42220": {
               "tokenAddress": "0x89BAfaD9B675973F374EE541634afb9242d65Ffc"
             },
@@ -24023,21 +23858,6 @@
       "isAcross": false,
       "isOFT": true,
       "noLiquidityOnChain": true
-    },
-    {
-      "chainId": 56,
-      "address": "0x8fC4532bE3003fb5A3A2f9afc7e95b3bfbD5fAAb",
-      "name": "Arcona",
-      "symbol": "ARCONA",
-      "decimals": 18,
-      "logoURI": "https://assets.coingecko.com/coins/images/4312/large/icon_ARCONA_%281%29.png?1651823900",
-      "extensions": {
-        "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0x0f71B8De197A1C84d31de0F1fA7926c365F052B3"
-          }
-        }
-      }
     },
     {
       "chainId": 56,
@@ -24254,9 +24074,6 @@
             },
             "42161": {
               "tokenAddress": "0xe42E70881Ee9277Fa3F2dbb1F23eB38D12de2F9A"
-            },
-            "42170": {
-              "tokenAddress": "0x1709b7dFcd7204015fB18C43eFEAD543ADe43054"
             },
             "57073": {
               "tokenAddress": "0xe2510aA4b019af3Eb835d3aC9c800382109A4631"
@@ -26043,9 +25860,6 @@
             "42161": {
               "tokenAddress": "0x5abB7FEA061a97329059f35635f24Cb946652C42"
             },
-            "42170": {
-              "tokenAddress": "0xab36258c317009A716440f87b83910B208e7c16b"
-            },
             "42220": {
               "tokenAddress": "0x8C756880599d31fA8c838a845056E7588C327c87"
             },
@@ -26082,9 +25896,6 @@
               "minDstGas": 200000
             },
             "42161": {
-              "minDstGas": 200000
-            },
-            "42170": {
               "minDstGas": 200000
             },
             "42220": {
@@ -26696,6 +26507,21 @@
     },
     {
       "chainId": 56,
+      "address": "0xbcf39F0EDDa668C58371E519AF37CA705f2bFcbd",
+      "name": "Seascape Crowns",
+      "symbol": "CWS",
+      "decimals": 18,
+      "logoURI": "https://assets.coingecko.com/coins/images/13835/large/crowns_logo.png?1612176905",
+      "extensions": {
+        "bridgeInfo": {
+          "1": {
+            "tokenAddress": "0xaC0104Cca91D167873B8601d2e71EB3D4D8c33e0"
+          }
+        }
+      }
+    },
+    {
+      "chainId": 56,
       "address": "0xc08Cd26474722cE93F4D0c34D16201461c10AA8C",
       "name": "CARV",
       "decimals": 18,
@@ -26899,9 +26725,6 @@
             "42161": {
               "tokenAddress": "0xFD92930CA50ab900171643a8a47BC57d760a5d95"
             },
-            "42170": {
-              "tokenAddress": "0xc67505DEaA9C0c08B9bcf2F55476C66b77e0c82f"
-            },
             "42220": {
               "tokenAddress": "0xc67505DEaA9C0c08B9bcf2F55476C66b77e0c82f"
             },
@@ -26938,9 +26761,6 @@
               "minDstGas": 200000
             },
             "42161": {
-              "minDstGas": 200000
-            },
-            "42170": {
               "minDstGas": 200000
             },
             "42220": {
@@ -27237,9 +27057,6 @@
             "42161": {
               "tokenAddress": "0xA6964d554f5A3a1DD2f8a2bab9853Bdb883eFA32"
             },
-            "42170": {
-              "tokenAddress": "0x818529140C65Ad9152bcE5d87fF42632820CEBFB"
-            },
             "42220": {
               "tokenAddress": "0xBddc99fCFc76c3433F448F15B327b46eC7A6CC4d"
             },
@@ -27271,9 +27088,6 @@
             },
             "42161": {
               "minDstGas": 2000000
-            },
-            "42170": {
-              "minDstGas": 200000
             },
             "43114": {
               "minDstGas": 200000
@@ -27373,9 +27187,6 @@
             "1116": {
               "tokenAddress": "0xC7CC66a88e2f121Fb104344EAcB7BA7bCAe79DFA"
             },
-            "4200": {
-              "tokenAddress": "0xAFa5f9313F1F2b599173f24807a882F498Be118c"
-            },
             "5000": {
               "tokenAddress": "0x5f45Cd59BA7F2f6bcD935663F68Ee1dEbE3B8a10"
             },
@@ -27387,9 +27198,6 @@
             },
             "42161": {
               "tokenAddress": "0x8a555e4Fc287650f5E8CA1778A35dd44e893d6Aa"
-            },
-            "42170": {
-              "tokenAddress": "0x148CaF6FfBaBa15F35deE7e2813d1F4c6da288F3"
             },
             "42220": {
               "tokenAddress": "0x555a37E52791904c097ECAB03da0009a0c7c4FCf"
@@ -27441,9 +27249,6 @@
             "1116": {
               "minDstGas": 200000
             },
-            "4200": {
-              "minDstGas": 200000
-            },
             "5000": {
               "minDstGas": 200000
             },
@@ -27455,9 +27260,6 @@
             },
             "42161": {
               "minDstGas": 2000000
-            },
-            "42170": {
-              "minDstGas": 200000
             },
             "42220": {
               "minDstGas": 200000
@@ -28020,9 +27822,6 @@
             "42161": {
               "tokenAddress": "0xe42E70881Ee9277Fa3F2dbb1F23eB38D12de2F9A"
             },
-            "42170": {
-              "tokenAddress": "0x1709b7dFcd7204015fB18C43eFEAD543ADe43054"
-            },
             "57073": {
               "tokenAddress": "0xe2510aA4b019af3Eb835d3aC9c800382109A4631"
             },
@@ -28124,9 +27923,6 @@
             "42161": {
               "tokenAddress": "0x5abB7FEA061a97329059f35635f24Cb946652C42"
             },
-            "42170": {
-              "tokenAddress": "0xab36258c317009A716440f87b83910B208e7c16b"
-            },
             "42220": {
               "tokenAddress": "0x8C756880599d31fA8c838a845056E7588C327c87"
             },
@@ -28163,9 +27959,6 @@
               "minDstGas": 200000
             },
             "42161": {
-              "minDstGas": 200000
-            },
-            "42170": {
               "minDstGas": 200000
             },
             "42220": {
@@ -28213,9 +28006,6 @@
             "1088": {
               "tokenAddress": "0x5D425630796346F7d054C97753AE241fc592734b"
             },
-            "4200": {
-              "tokenAddress": "0xAFa5f9313F1F2b599173f24807a882F498Be118c"
-            },
             "5000": {
               "tokenAddress": "0x5f45Cd59BA7F2f6bcD935663F68Ee1dEbE3B8a10"
             },
@@ -28227,9 +28017,6 @@
             },
             "42161": {
               "tokenAddress": "0x8a555e4Fc287650f5E8CA1778A35dd44e893d6Aa"
-            },
-            "42170": {
-              "tokenAddress": "0x148CaF6FfBaBa15F35deE7e2813d1F4c6da288F3"
             },
             "42220": {
               "tokenAddress": "0x555a37E52791904c097ECAB03da0009a0c7c4FCf"
@@ -28266,9 +28053,6 @@
             "1088": {
               "minDstGas": 200000
             },
-            "4200": {
-              "minDstGas": 200000
-            },
             "5000": {
               "minDstGas": 200000
             },
@@ -28277,9 +28061,6 @@
             },
             "42161": {
               "minDstGas": 2000000
-            },
-            "42170": {
-              "minDstGas": 200000
             },
             "42220": {
               "minDstGas": 200000
@@ -28397,9 +28178,6 @@
             "42161": {
               "tokenAddress": "0xA6964d554f5A3a1DD2f8a2bab9853Bdb883eFA32"
             },
-            "42170": {
-              "tokenAddress": "0x818529140C65Ad9152bcE5d87fF42632820CEBFB"
-            },
             "42220": {
               "tokenAddress": "0xBddc99fCFc76c3433F448F15B327b46eC7A6CC4d"
             },
@@ -28431,9 +28209,6 @@
             },
             "42161": {
               "minDstGas": 2000000
-            },
-            "42170": {
-              "minDstGas": 200000
             },
             "43114": {
               "minDstGas": 200000
@@ -28528,9 +28303,6 @@
               "tokenAddress": "0x89BAfaD9B675973F374EE541634afb9242d65Ffc"
             },
             "42161": {
-              "tokenAddress": "0x89BAfaD9B675973F374EE541634afb9242d65Ffc"
-            },
-            "42170": {
               "tokenAddress": "0x89BAfaD9B675973F374EE541634afb9242d65Ffc"
             },
             "42220": {
@@ -28826,9 +28598,6 @@
             "42161": {
               "tokenAddress": "0xFD92930CA50ab900171643a8a47BC57d760a5d95"
             },
-            "42170": {
-              "tokenAddress": "0xc67505DEaA9C0c08B9bcf2F55476C66b77e0c82f"
-            },
             "42220": {
               "tokenAddress": "0xc67505DEaA9C0c08B9bcf2F55476C66b77e0c82f"
             },
@@ -28860,9 +28629,6 @@
             },
             "42161": {
               "minDstGas": 2000000
-            },
-            "42170": {
-              "minDstGas": 200000
             },
             "42220": {
               "minDstGas": 200000
@@ -29007,9 +28773,6 @@
             "42161": {
               "tokenAddress": "0xCE0690a849FD00227A769BcC53c1C6266cc84483"
             },
-            "42170": {
-              "tokenAddress": "0x3922de582D630c221AebB2297d86e66bDED1E8D0"
-            },
             "42220": {
               "tokenAddress": "0x6a396A76EdB76d4d2E8a05d33fe4364a3942ab1e"
             },
@@ -29044,9 +28807,6 @@
             },
             "42161": {
               "minDstGas": 2000000
-            },
-            "42170": {
-              "minDstGas": 200000
             },
             "42220": {
               "minDstGas": 200000
@@ -29140,9 +28900,6 @@
             "42161": {
               "tokenAddress": "0x1572D48a52906B834FB236AA77831d669F6d87A1"
             },
-            "42170": {
-              "tokenAddress": "0xe2510aA4b019af3Eb835d3aC9c800382109A4631"
-            },
             "55244": {
               "tokenAddress": "0x8633aCcBeACa79D9a2dc11D682458cf5089b9dE9"
             },
@@ -29183,9 +28940,6 @@
             },
             "42161": {
               "minDstGas": 2000000
-            },
-            "42170": {
-              "minDstGas": 200000
             },
             "55244": {
               "minDstGas": 200000
@@ -31002,9 +30756,6 @@
             "42161": {
               "tokenAddress": "0xe42E70881Ee9277Fa3F2dbb1F23eB38D12de2F9A"
             },
-            "42170": {
-              "tokenAddress": "0x1709b7dFcd7204015fB18C43eFEAD543ADe43054"
-            },
             "57073": {
               "tokenAddress": "0xe2510aA4b019af3Eb835d3aC9c800382109A4631"
             },
@@ -31252,9 +31003,6 @@
             "42161": {
               "tokenAddress": "0xA698B510cE2A3ED439d93E3e2C79a9A87782164f"
             },
-            "42170": {
-              "tokenAddress": "0xeC5D4172DA5B15587dB2b955D7f5aa8C1c8ae496"
-            },
             "42220": {
               "tokenAddress": "0x8919eBCba6C8aBAB34A341fA0B3BA35fE3589dB2"
             },
@@ -31297,9 +31045,6 @@
               "minDstGas": 300000
             },
             "42161": {
-              "minDstGas": 300000
-            },
-            "42170": {
               "minDstGas": 300000
             },
             "42220": {
@@ -31525,9 +31270,6 @@
             "42161": {
               "tokenAddress": "0xD0f6733564BaE9aB83aE4FFC4a07073110aA9D21"
             },
-            "42170": {
-              "tokenAddress": "0x7a3E8E33De6789dD0378BDc2c8BFE5DBF3E9fbbA"
-            },
             "42220": {
               "tokenAddress": "0xE86B177C6464bA905F95ff82F1fD00a23465D86F"
             },
@@ -31571,9 +31313,6 @@
             },
             "42161": {
               "minDstGas": 2000000
-            },
-            "42170": {
-              "minDstGas": 200000
             },
             "42220": {
               "minDstGas": 200000
@@ -31921,9 +31660,6 @@
             "1116": {
               "tokenAddress": "0xC7CC66a88e2f121Fb104344EAcB7BA7bCAe79DFA"
             },
-            "4200": {
-              "tokenAddress": "0xAFa5f9313F1F2b599173f24807a882F498Be118c"
-            },
             "5000": {
               "tokenAddress": "0x5f45Cd59BA7F2f6bcD935663F68Ee1dEbE3B8a10"
             },
@@ -31935,9 +31671,6 @@
             },
             "42161": {
               "tokenAddress": "0x8a555e4Fc287650f5E8CA1778A35dd44e893d6Aa"
-            },
-            "42170": {
-              "tokenAddress": "0x148CaF6FfBaBa15F35deE7e2813d1F4c6da288F3"
             },
             "42220": {
               "tokenAddress": "0x555a37E52791904c097ECAB03da0009a0c7c4FCf"
@@ -31989,9 +31722,6 @@
             "1116": {
               "minDstGas": 200000
             },
-            "4200": {
-              "minDstGas": 200000
-            },
             "5000": {
               "minDstGas": 200000
             },
@@ -32003,9 +31733,6 @@
             },
             "42161": {
               "minDstGas": 2000000
-            },
-            "42170": {
-              "minDstGas": 200000
             },
             "42220": {
               "minDstGas": 200000
@@ -32494,9 +32221,6 @@
             "42161": {
               "tokenAddress": "0x89BAfaD9B675973F374EE541634afb9242d65Ffc"
             },
-            "42170": {
-              "tokenAddress": "0x89BAfaD9B675973F374EE541634afb9242d65Ffc"
-            },
             "42220": {
               "tokenAddress": "0x89BAfaD9B675973F374EE541634afb9242d65Ffc"
             },
@@ -32731,9 +32455,6 @@
             "42161": {
               "tokenAddress": "0xCE0690a849FD00227A769BcC53c1C6266cc84483"
             },
-            "42170": {
-              "tokenAddress": "0x3922de582D630c221AebB2297d86e66bDED1E8D0"
-            },
             "42220": {
               "tokenAddress": "0x6a396A76EdB76d4d2E8a05d33fe4364a3942ab1e"
             },
@@ -32780,9 +32501,6 @@
             },
             "42161": {
               "minDstGas": 2000000
-            },
-            "42170": {
-              "minDstGas": 200000
             },
             "42220": {
               "minDstGas": 200000
@@ -32838,9 +32556,6 @@
             "42161": {
               "tokenAddress": "0xA6964d554f5A3a1DD2f8a2bab9853Bdb883eFA32"
             },
-            "42170": {
-              "tokenAddress": "0x818529140C65Ad9152bcE5d87fF42632820CEBFB"
-            },
             "42220": {
               "tokenAddress": "0xBddc99fCFc76c3433F448F15B327b46eC7A6CC4d"
             },
@@ -32866,9 +32581,6 @@
             },
             "42161": {
               "minDstGas": 2000000
-            },
-            "42170": {
-              "minDstGas": 200000
             },
             "43114": {
               "minDstGas": 200000
@@ -32942,8 +32654,7 @@
         }
       },
       "isAcross": false,
-      "isOFT": true,
-      "noLiquidityOnChain": true
+      "isOFT": true
     },
     {
       "chainId": 137,
@@ -33599,9 +33310,6 @@
             "42161": {
               "tokenAddress": "0x5abB7FEA061a97329059f35635f24Cb946652C42"
             },
-            "42170": {
-              "tokenAddress": "0xab36258c317009A716440f87b83910B208e7c16b"
-            },
             "42220": {
               "tokenAddress": "0x8C756880599d31fA8c838a845056E7588C327c87"
             },
@@ -33638,9 +33346,6 @@
               "minDstGas": 200000
             },
             "42161": {
-              "minDstGas": 200000
-            },
-            "42170": {
               "minDstGas": 200000
             },
             "42220": {
@@ -33805,9 +33510,6 @@
             "42161": {
               "tokenAddress": "0x1572D48a52906B834FB236AA77831d669F6d87A1"
             },
-            "42170": {
-              "tokenAddress": "0xe2510aA4b019af3Eb835d3aC9c800382109A4631"
-            },
             "55244": {
               "tokenAddress": "0x8633aCcBeACa79D9a2dc11D682458cf5089b9dE9"
             },
@@ -33848,9 +33550,6 @@
             },
             "42161": {
               "minDstGas": 2000000
-            },
-            "42170": {
-              "minDstGas": 200000
             },
             "55244": {
               "minDstGas": 200000
@@ -34551,9 +34250,6 @@
             "42161": {
               "tokenAddress": "0xFD92930CA50ab900171643a8a47BC57d760a5d95"
             },
-            "42170": {
-              "tokenAddress": "0xc67505DEaA9C0c08B9bcf2F55476C66b77e0c82f"
-            },
             "42220": {
               "tokenAddress": "0xc67505DEaA9C0c08B9bcf2F55476C66b77e0c82f"
             },
@@ -34590,9 +34286,6 @@
               "minDstGas": 200000
             },
             "42161": {
-              "minDstGas": 200000
-            },
-            "42170": {
               "minDstGas": 200000
             },
             "42220": {
@@ -36520,9 +36213,6 @@
             "137": {
               "tokenAddress": "0x70ea00aB512d13dAc5001C968F8D2263d179e2D2"
             },
-            "4200": {
-              "tokenAddress": "0xAFa5f9313F1F2b599173f24807a882F498Be118c"
-            },
             "34443": {
               "tokenAddress": "0x6E55472109E6aBE4054a8E8b8d9EdFfCb31032C5"
             },
@@ -36547,9 +36237,6 @@
               "minDstGas": 200000
             },
             "137": {
-              "minDstGas": 200000
-            },
-            "4200": {
               "minDstGas": 200000
             },
             "34443": {
@@ -36793,9 +36480,6 @@
             "42161": {
               "tokenAddress": "0x89BAfaD9B675973F374EE541634afb9242d65Ffc"
             },
-            "42170": {
-              "tokenAddress": "0x89BAfaD9B675973F374EE541634afb9242d65Ffc"
-            },
             "42220": {
               "tokenAddress": "0x89BAfaD9B675973F374EE541634afb9242d65Ffc"
             },
@@ -37023,9 +36707,6 @@
             "42161": {
               "tokenAddress": "0xCE0690a849FD00227A769BcC53c1C6266cc84483"
             },
-            "42170": {
-              "tokenAddress": "0x3922de582D630c221AebB2297d86e66bDED1E8D0"
-            },
             "42220": {
               "tokenAddress": "0x6a396A76EdB76d4d2E8a05d33fe4364a3942ab1e"
             },
@@ -37108,9 +36789,6 @@
             },
             "42161": {
               "tokenAddress": "0xe42E70881Ee9277Fa3F2dbb1F23eB38D12de2F9A"
-            },
-            "42170": {
-              "tokenAddress": "0x1709b7dFcd7204015fB18C43eFEAD543ADe43054"
             },
             "57073": {
               "tokenAddress": "0xe2510aA4b019af3Eb835d3aC9c800382109A4631"
@@ -37341,9 +37019,6 @@
             "42161": {
               "tokenAddress": "0xCE0690a849FD00227A769BcC53c1C6266cc84483"
             },
-            "42170": {
-              "tokenAddress": "0x3922de582D630c221AebB2297d86e66bDED1E8D0"
-            },
             "42220": {
               "tokenAddress": "0x6a396A76EdB76d4d2E8a05d33fe4364a3942ab1e"
             },
@@ -37419,9 +37094,6 @@
               "tokenAddress": "0x89BAfaD9B675973F374EE541634afb9242d65Ffc"
             },
             "42161": {
-              "tokenAddress": "0x89BAfaD9B675973F374EE541634afb9242d65Ffc"
-            },
-            "42170": {
               "tokenAddress": "0x89BAfaD9B675973F374EE541634afb9242d65Ffc"
             },
             "42220": {
@@ -37750,9 +37422,6 @@
             "42161": {
               "tokenAddress": "0x1572D48a52906B834FB236AA77831d669F6d87A1"
             },
-            "42170": {
-              "tokenAddress": "0xe2510aA4b019af3Eb835d3aC9c800382109A4631"
-            },
             "55244": {
               "tokenAddress": "0x8633aCcBeACa79D9a2dc11D682458cf5089b9dE9"
             },
@@ -37793,9 +37462,6 @@
             },
             "42161": {
               "minDstGas": 2000000
-            },
-            "42170": {
-              "minDstGas": 200000
             },
             "55244": {
               "minDstGas": 200000
@@ -38564,9 +38230,6 @@
             "1088": {
               "tokenAddress": "0x5D425630796346F7d054C97753AE241fc592734b"
             },
-            "4200": {
-              "tokenAddress": "0xAFa5f9313F1F2b599173f24807a882F498Be118c"
-            },
             "8453": {
               "tokenAddress": "0x5f45Cd59BA7F2f6bcD935663F68Ee1dEbE3B8a10"
             },
@@ -38597,9 +38260,6 @@
               "minDstGas": 200000
             },
             "1088": {
-              "minDstGas": 200000
-            },
-            "4200": {
               "minDstGas": 200000
             },
             "8453": {
@@ -39792,18 +39452,19 @@
       "symbol": "GG",
       "tags": [],
       "extensions": {
+        "bridgeInfo": {
+          "42161": {
+            "tokenAddress": "0x000000000026839b3f4181f2cF69336af6153b99"
+          }
+        },
         "oftInfo": {
           "peersInfo": {
             "42161": {
               "tokenAddress": "0x000000000026839b3f4181f2cF69336af6153b99"
-            },
-            "42170": {
-              "tokenAddress": "0x000000000026839b3f4181f2cF69336af6153b99"
             }
           },
           "feeInfo": {
-            "42161": {},
-            "42170": {}
+            "42161": {}
           },
           "oftAdapter": "0xCe44f26f720fd305539D0652F1F3F91fb0E636cA",
           "oftVersion": 2,
@@ -40159,7 +39820,8 @@
         }
       },
       "isAcross": false,
-      "isOFT": true
+      "isOFT": true,
+      "noLiquidityOnChain": true
     },
     {
       "chainId": 999,
@@ -40451,9 +40113,6 @@
             "42161": {
               "tokenAddress": "0x5abB7FEA061a97329059f35635f24Cb946652C42"
             },
-            "42170": {
-              "tokenAddress": "0xab36258c317009A716440f87b83910B208e7c16b"
-            },
             "42220": {
               "tokenAddress": "0x8C756880599d31fA8c838a845056E7588C327c87"
             },
@@ -40490,9 +40149,6 @@
               "minDstGas": 200000
             },
             "42161": {
-              "minDstGas": 200000
-            },
-            "42170": {
               "minDstGas": 200000
             },
             "42220": {
@@ -40815,9 +40471,6 @@
             "42161": {
               "tokenAddress": "0xA698B510cE2A3ED439d93E3e2C79a9A87782164f"
             },
-            "42170": {
-              "tokenAddress": "0xeC5D4172DA5B15587dB2b955D7f5aa8C1c8ae496"
-            },
             "43114": {
               "tokenAddress": "0x40E0E5A9736a568581a4F48Edc215271A7699a3f"
             },
@@ -40845,9 +40498,6 @@
               "minDstGas": 300000
             },
             "42161": {
-              "minDstGas": 300000
-            },
-            "42170": {
               "minDstGas": 300000
             },
             "43114": {
@@ -40898,9 +40548,6 @@
             "252": {
               "tokenAddress": "0x6f6aE8851a460406bBB3c929a415d2Df9305AcD5"
             },
-            "4200": {
-              "tokenAddress": "0xAFa5f9313F1F2b599173f24807a882F498Be118c"
-            },
             "5000": {
               "tokenAddress": "0x5f45Cd59BA7F2f6bcD935663F68Ee1dEbE3B8a10"
             },
@@ -40912,9 +40559,6 @@
             },
             "42161": {
               "tokenAddress": "0x8a555e4Fc287650f5E8CA1778A35dd44e893d6Aa"
-            },
-            "42170": {
-              "tokenAddress": "0x148CaF6FfBaBa15F35deE7e2813d1F4c6da288F3"
             },
             "43114": {
               "tokenAddress": "0x70ea00aB512d13dAc5001C968F8D2263d179e2D2"
@@ -40948,9 +40592,6 @@
             "252": {
               "minDstGas": 200000
             },
-            "4200": {
-              "minDstGas": 200000
-            },
             "5000": {
               "minDstGas": 200000
             },
@@ -40962,9 +40603,6 @@
             },
             "42161": {
               "minDstGas": 2000000
-            },
-            "42170": {
-              "minDstGas": 200000
             },
             "43114": {
               "minDstGas": 200000
@@ -41132,9 +40770,6 @@
             "42161": {
               "tokenAddress": "0xD0f6733564BaE9aB83aE4FFC4a07073110aA9D21"
             },
-            "42170": {
-              "tokenAddress": "0x7a3E8E33De6789dD0378BDc2c8BFE5DBF3E9fbbA"
-            },
             "43114": {
               "tokenAddress": "0xB8B29d483732717F77e90C3A669369E4994bC878"
             },
@@ -41166,9 +40801,6 @@
             },
             "42161": {
               "minDstGas": 2000000
-            },
-            "42170": {
-              "minDstGas": 200000
             },
             "43114": {
               "minDstGas": 200000
@@ -41401,9 +41033,6 @@
             "42161": {
               "tokenAddress": "0xA6964d554f5A3a1DD2f8a2bab9853Bdb883eFA32"
             },
-            "42170": {
-              "tokenAddress": "0x818529140C65Ad9152bcE5d87fF42632820CEBFB"
-            },
             "43114": {
               "tokenAddress": "0x6c4495b2eD95Ad3A2050aad60D410fA9782F08cA"
             },
@@ -41432,9 +41061,6 @@
             },
             "42161": {
               "minDstGas": 2000000
-            },
-            "42170": {
-              "minDstGas": 200000
             },
             "43114": {
               "minDstGas": 200000
@@ -41487,9 +41113,6 @@
             "42161": {
               "tokenAddress": "0xFD92930CA50ab900171643a8a47BC57d760a5d95"
             },
-            "42170": {
-              "tokenAddress": "0xc67505DEaA9C0c08B9bcf2F55476C66b77e0c82f"
-            },
             "42220": {
               "tokenAddress": "0xc67505DEaA9C0c08B9bcf2F55476C66b77e0c82f"
             },
@@ -41524,9 +41147,6 @@
             },
             "42161": {
               "minDstGas": 2000000
-            },
-            "42170": {
-              "minDstGas": 200000
             },
             "42220": {
               "minDstGas": 200000
@@ -41582,9 +41202,6 @@
             "42161": {
               "tokenAddress": "0xCE0690a849FD00227A769BcC53c1C6266cc84483"
             },
-            "42170": {
-              "tokenAddress": "0x3922de582D630c221AebB2297d86e66bDED1E8D0"
-            },
             "42220": {
               "tokenAddress": "0x6a396A76EdB76d4d2E8a05d33fe4364a3942ab1e"
             },
@@ -41619,9 +41236,6 @@
             },
             "42161": {
               "minDstGas": 2000000
-            },
-            "42170": {
-              "minDstGas": 200000
             },
             "42220": {
               "minDstGas": 200000
@@ -41804,9 +41418,6 @@
             "42161": {
               "tokenAddress": "0x5abB7FEA061a97329059f35635f24Cb946652C42"
             },
-            "42170": {
-              "tokenAddress": "0xab36258c317009A716440f87b83910B208e7c16b"
-            },
             "42220": {
               "tokenAddress": "0x8C756880599d31fA8c838a845056E7588C327c87"
             },
@@ -41843,9 +41454,6 @@
               "minDstGas": 200000
             },
             "42161": {
-              "minDstGas": 200000
-            },
-            "42170": {
               "minDstGas": 200000
             },
             "42220": {
@@ -41994,9 +41602,6 @@
             "42161": {
               "tokenAddress": "0xA6964d554f5A3a1DD2f8a2bab9853Bdb883eFA32"
             },
-            "42170": {
-              "tokenAddress": "0x818529140C65Ad9152bcE5d87fF42632820CEBFB"
-            },
             "43114": {
               "tokenAddress": "0x6c4495b2eD95Ad3A2050aad60D410fA9782F08cA"
             },
@@ -42025,9 +41630,6 @@
             },
             "42161": {
               "minDstGas": 2000000
-            },
-            "42170": {
-              "minDstGas": 200000
             },
             "43114": {
               "minDstGas": 200000
@@ -42148,9 +41750,6 @@
             "42161": {
               "tokenAddress": "0xCE0690a849FD00227A769BcC53c1C6266cc84483"
             },
-            "42170": {
-              "tokenAddress": "0x3922de582D630c221AebB2297d86e66bDED1E8D0"
-            },
             "42220": {
               "tokenAddress": "0x6a396A76EdB76d4d2E8a05d33fe4364a3942ab1e"
             },
@@ -42185,9 +41784,6 @@
             },
             "42161": {
               "minDstGas": 2000000
-            },
-            "42170": {
-              "minDstGas": 200000
             },
             "42220": {
               "minDstGas": 200000
@@ -42243,9 +41839,6 @@
             "42161": {
               "tokenAddress": "0xFD92930CA50ab900171643a8a47BC57d760a5d95"
             },
-            "42170": {
-              "tokenAddress": "0xc67505DEaA9C0c08B9bcf2F55476C66b77e0c82f"
-            },
             "42220": {
               "tokenAddress": "0xc67505DEaA9C0c08B9bcf2F55476C66b77e0c82f"
             },
@@ -42276,9 +41869,6 @@
               "minDstGas": 200000
             },
             "42161": {
-              "minDstGas": 200000
-            },
-            "42170": {
               "minDstGas": 200000
             },
             "42220": {
@@ -43601,9 +43191,6 @@
             "42161": {
               "tokenAddress": "0xe42E70881Ee9277Fa3F2dbb1F23eB38D12de2F9A"
             },
-            "42170": {
-              "tokenAddress": "0x1709b7dFcd7204015fB18C43eFEAD543ADe43054"
-            },
             "57073": {
               "tokenAddress": "0xe2510aA4b019af3Eb835d3aC9c800382109A4631"
             },
@@ -43967,155 +43554,6 @@
       "isOFT": true
     },
     {
-      "chainId": 4200,
-      "address": "0xAFa5f9313F1F2b599173f24807a882F498Be118c",
-      "name": "Merkly OFT",
-      "decimals": 18,
-      "symbol": "MERK",
-      "tags": [],
-      "extensions": {
-        "oftInfo": {
-          "peersInfo": {
-            "1": {
-              "tokenAddress": "0xc072c3EbAf165955C5aAd2DbB4293f771de6dbd3"
-            },
-            "10": {
-              "tokenAddress": "0x20279b6d57Ba6D3eF852f34800e43e39d46d6487"
-            },
-            "56": {
-              "tokenAddress": "0xe341f30Ea040bF3691aA069B8c5c213F72676421"
-            },
-            "100": {
-              "tokenAddress": "0x54b3297e1C739fe62be5c00473A2e6bb78adB0Ef"
-            },
-            "137": {
-              "tokenAddress": "0x70ea00aB512d13dAc5001C968F8D2263d179e2D2"
-            },
-            "169": {
-              "tokenAddress": "0x4fc0D96f3d70b4D9b75671Ab92e7Be01CaBE3863"
-            },
-            "252": {
-              "tokenAddress": "0x6f6aE8851a460406bBB3c929a415d2Df9305AcD5"
-            },
-            "1088": {
-              "tokenAddress": "0x5D425630796346F7d054C97753AE241fc592734b"
-            },
-            "5000": {
-              "tokenAddress": "0x5f45Cd59BA7F2f6bcD935663F68Ee1dEbE3B8a10"
-            },
-            "8453": {
-              "tokenAddress": "0x5f45Cd59BA7F2f6bcD935663F68Ee1dEbE3B8a10"
-            },
-            "34443": {
-              "tokenAddress": "0x6E55472109E6aBE4054a8E8b8d9EdFfCb31032C5"
-            },
-            "42161": {
-              "tokenAddress": "0x8a555e4Fc287650f5E8CA1778A35dd44e893d6Aa"
-            },
-            "42220": {
-              "tokenAddress": "0x555a37E52791904c097ECAB03da0009a0c7c4FCf"
-            },
-            "43114": {
-              "tokenAddress": "0x70ea00aB512d13dAc5001C968F8D2263d179e2D2"
-            },
-            "59144": {
-              "tokenAddress": "0x5f45Cd59BA7F2f6bcD935663F68Ee1dEbE3B8a10"
-            },
-            "81457": {
-              "tokenAddress": "0x6Ca118bdF9BD900Da5D3d85094D92C5B3b9c0DA5"
-            }
-          },
-          "feeInfo": {
-            "1": {
-              "minDstGas": 200000
-            },
-            "10": {
-              "minDstGas": 200000
-            },
-            "56": {
-              "minDstGas": 200000
-            },
-            "100": {
-              "minDstGas": 200000
-            },
-            "137": {
-              "minDstGas": 200000
-            },
-            "169": {
-              "minDstGas": 200000
-            },
-            "252": {
-              "minDstGas": 200000
-            },
-            "1088": {
-              "minDstGas": 200000
-            },
-            "5000": {
-              "minDstGas": 200000
-            },
-            "8453": {
-              "minDstGas": 200000
-            },
-            "34443": {
-              "minDstGas": 200000
-            },
-            "42161": {
-              "minDstGas": 2000000
-            },
-            "42220": {
-              "minDstGas": 200000
-            },
-            "43114": {
-              "minDstGas": 200000
-            },
-            "59144": {
-              "minDstGas": 200000
-            },
-            "81457": {
-              "minDstGas": 200000
-            }
-          },
-          "oftAdapter": "0xAFa5f9313F1F2b599173f24807a882F498Be118c",
-          "oftVersion": 1,
-          "endpointVersion": 1,
-          "endpointId": 266
-        }
-      },
-      "isAcross": false,
-      "isOFT": true,
-      "noLiquidityOnChain": true
-    },
-    {
-      "chainId": 4200,
-      "address": "0xAd6cA80Fe4D3c54f6433fF725d744772AaE87711",
-      "name": "WOO",
-      "decimals": 18,
-      "symbol": "WOO",
-      "tags": [],
-      "extensions": {
-        "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0x4691937a7508860F876c9c0a2a617E7d9E945D4B"
-          }
-        },
-        "oftInfo": {
-          "peersInfo": {
-            "1": {
-              "tokenAddress": "0x4691937a7508860F876c9c0a2a617E7d9E945D4B"
-            }
-          },
-          "oftAdapter": "0xAd6cA80Fe4D3c54f6433fF725d744772AaE87711",
-          "oftVersion": 3,
-          "endpointVersion": 2,
-          "endpointId": 30266,
-          "oftSharedDecimals": 6
-        }
-      },
-      "isAcross": false,
-      "isOFT": true,
-      "noLiquidityOnChain": true
-    },
-    {
       "chainId": 5000,
       "address": "0x005E16eccDFd3EA76E7B777A1bEb7b826E3AA7E3",
       "name": "Swapsicle ICE Token",
@@ -44223,9 +43661,6 @@
             },
             "42161": {
               "tokenAddress": "0xe42E70881Ee9277Fa3F2dbb1F23eB38D12de2F9A"
-            },
-            "42170": {
-              "tokenAddress": "0x1709b7dFcd7204015fB18C43eFEAD543ADe43054"
             },
             "57073": {
               "tokenAddress": "0xe2510aA4b019af3Eb835d3aC9c800382109A4631"
@@ -44676,9 +44111,6 @@
             "42161": {
               "tokenAddress": "0x5abB7FEA061a97329059f35635f24Cb946652C42"
             },
-            "42170": {
-              "tokenAddress": "0xab36258c317009A716440f87b83910B208e7c16b"
-            },
             "42220": {
               "tokenAddress": "0x8C756880599d31fA8c838a845056E7588C327c87"
             },
@@ -44715,9 +44147,6 @@
               "minDstGas": 200000
             },
             "42161": {
-              "minDstGas": 200000
-            },
-            "42170": {
               "minDstGas": 200000
             },
             "42220": {
@@ -44856,9 +44285,6 @@
             "42161": {
               "tokenAddress": "0xCE0690a849FD00227A769BcC53c1C6266cc84483"
             },
-            "42170": {
-              "tokenAddress": "0x3922de582D630c221AebB2297d86e66bDED1E8D0"
-            },
             "42220": {
               "tokenAddress": "0x6a396A76EdB76d4d2E8a05d33fe4364a3942ab1e"
             },
@@ -44902,9 +44328,6 @@
             },
             "42161": {
               "minDstGas": 2000000
-            },
-            "42170": {
-              "minDstGas": 200000
             },
             "42220": {
               "minDstGas": 200000
@@ -45033,17 +44456,11 @@
             "1088": {
               "tokenAddress": "0x5D425630796346F7d054C97753AE241fc592734b"
             },
-            "4200": {
-              "tokenAddress": "0xAFa5f9313F1F2b599173f24807a882F498Be118c"
-            },
             "8453": {
               "tokenAddress": "0x5f45Cd59BA7F2f6bcD935663F68Ee1dEbE3B8a10"
             },
             "42161": {
               "tokenAddress": "0x8a555e4Fc287650f5E8CA1778A35dd44e893d6Aa"
-            },
-            "42170": {
-              "tokenAddress": "0x148CaF6FfBaBa15F35deE7e2813d1F4c6da288F3"
             },
             "42220": {
               "tokenAddress": "0x555a37E52791904c097ECAB03da0009a0c7c4FCf"
@@ -45086,17 +44503,11 @@
             "1088": {
               "minDstGas": 200000
             },
-            "4200": {
-              "minDstGas": 200000
-            },
             "8453": {
               "minDstGas": 200000
             },
             "42161": {
               "minDstGas": 2000000
-            },
-            "42170": {
-              "minDstGas": 200000
             },
             "42220": {
               "minDstGas": 200000
@@ -45802,9 +45213,6 @@
             "42161": {
               "tokenAddress": "0xFD92930CA50ab900171643a8a47BC57d760a5d95"
             },
-            "42170": {
-              "tokenAddress": "0xc67505DEaA9C0c08B9bcf2F55476C66b77e0c82f"
-            },
             "42220": {
               "tokenAddress": "0xc67505DEaA9C0c08B9bcf2F55476C66b77e0c82f"
             },
@@ -45838,9 +45246,6 @@
               "minDstGas": 200000
             },
             "42161": {
-              "minDstGas": 200000
-            },
-            "42170": {
               "minDstGas": 200000
             },
             "42220": {
@@ -45900,9 +45305,6 @@
             "42161": {
               "tokenAddress": "0x1572D48a52906B834FB236AA77831d669F6d87A1"
             },
-            "42170": {
-              "tokenAddress": "0xe2510aA4b019af3Eb835d3aC9c800382109A4631"
-            },
             "55244": {
               "tokenAddress": "0x8633aCcBeACa79D9a2dc11D682458cf5089b9dE9"
             },
@@ -45943,9 +45345,6 @@
             },
             "42161": {
               "minDstGas": 2000000
-            },
-            "42170": {
-              "minDstGas": 200000
             },
             "55244": {
               "minDstGas": 200000
@@ -46601,9 +46000,6 @@
             "42161": {
               "tokenAddress": "0xA6964d554f5A3a1DD2f8a2bab9853Bdb883eFA32"
             },
-            "42170": {
-              "tokenAddress": "0x818529140C65Ad9152bcE5d87fF42632820CEBFB"
-            },
             "43114": {
               "tokenAddress": "0x6c4495b2eD95Ad3A2050aad60D410fA9782F08cA"
             },
@@ -46632,9 +46028,6 @@
             },
             "42161": {
               "minDstGas": 2000000
-            },
-            "42170": {
-              "minDstGas": 200000
             },
             "43114": {
               "minDstGas": 200000
@@ -46687,9 +46080,6 @@
             "42161": {
               "tokenAddress": "0xD0f6733564BaE9aB83aE4FFC4a07073110aA9D21"
             },
-            "42170": {
-              "tokenAddress": "0x7a3E8E33De6789dD0378BDc2c8BFE5DBF3E9fbbA"
-            },
             "42220": {
               "tokenAddress": "0xE86B177C6464bA905F95ff82F1fD00a23465D86F"
             },
@@ -46730,9 +46120,6 @@
             },
             "42161": {
               "minDstGas": 2000000
-            },
-            "42170": {
-              "minDstGas": 200000
             },
             "42220": {
               "minDstGas": 200000
@@ -47058,9 +46445,6 @@
             "42161": {
               "tokenAddress": "0x1572D48a52906B834FB236AA77831d669F6d87A1"
             },
-            "42170": {
-              "tokenAddress": "0xe2510aA4b019af3Eb835d3aC9c800382109A4631"
-            },
             "55244": {
               "tokenAddress": "0x8633aCcBeACa79D9a2dc11D682458cf5089b9dE9"
             },
@@ -47101,9 +46485,6 @@
             },
             "42161": {
               "minDstGas": 2000000
-            },
-            "42170": {
-              "minDstGas": 200000
             },
             "55244": {
               "minDstGas": 200000
@@ -47190,9 +46571,6 @@
             "42161": {
               "tokenAddress": "0xA698B510cE2A3ED439d93E3e2C79a9A87782164f"
             },
-            "42170": {
-              "tokenAddress": "0xeC5D4172DA5B15587dB2b955D7f5aa8C1c8ae496"
-            },
             "43114": {
               "tokenAddress": "0x40E0E5A9736a568581a4F48Edc215271A7699a3f"
             },
@@ -47226,9 +46604,6 @@
               "minDstGas": 300000
             },
             "42161": {
-              "minDstGas": 300000
-            },
-            "42170": {
               "minDstGas": 300000
             },
             "43114": {
@@ -49229,9 +48604,6 @@
           "peersInfo": {
             "1": {
               "tokenAddress": "0x0921799CB1d702148131024d18fCdE022129Dc73"
-            },
-            "1890": {
-              "tokenAddress": "0x519d3443cACc61bD844546eDAea48E5502021802"
             }
           },
           "oftAdapter": "0x5A1dEEF18E1DDb939bb298787896e45B5988243c",
@@ -49541,9 +48913,6 @@
             "1088": {
               "tokenAddress": "0x5D425630796346F7d054C97753AE241fc592734b"
             },
-            "4200": {
-              "tokenAddress": "0xAFa5f9313F1F2b599173f24807a882F498Be118c"
-            },
             "5000": {
               "tokenAddress": "0x5f45Cd59BA7F2f6bcD935663F68Ee1dEbE3B8a10"
             },
@@ -49552,9 +48921,6 @@
             },
             "42161": {
               "tokenAddress": "0x8a555e4Fc287650f5E8CA1778A35dd44e893d6Aa"
-            },
-            "42170": {
-              "tokenAddress": "0x148CaF6FfBaBa15F35deE7e2813d1F4c6da288F3"
             },
             "42220": {
               "tokenAddress": "0x555a37E52791904c097ECAB03da0009a0c7c4FCf"
@@ -49603,9 +48969,6 @@
             "1088": {
               "minDstGas": 200000
             },
-            "4200": {
-              "minDstGas": 200000
-            },
             "5000": {
               "minDstGas": 200000
             },
@@ -49614,9 +48977,6 @@
             },
             "42161": {
               "minDstGas": 2000000
-            },
-            "42170": {
-              "minDstGas": 200000
             },
             "42220": {
               "minDstGas": 200000
@@ -50907,9 +50267,6 @@
               "tokenAddress": "0x89BAfaD9B675973F374EE541634afb9242d65Ffc"
             },
             "42161": {
-              "tokenAddress": "0x89BAfaD9B675973F374EE541634afb9242d65Ffc"
-            },
-            "42170": {
               "tokenAddress": "0x89BAfaD9B675973F374EE541634afb9242d65Ffc"
             },
             "42220": {
@@ -53140,8 +52497,7 @@
         }
       },
       "isAcross": false,
-      "isOFT": true,
-      "noLiquidityOnChain": true
+      "isOFT": true
     },
     {
       "chainId": 8453,
@@ -53502,9 +52858,6 @@
             },
             "42161": {
               "tokenAddress": "0xb5130F4767AB0ACC579f25a76e8f9E977CB3F948"
-            },
-            "42170": {
-              "tokenAddress": "0xb5130F4767AB0ACC579f25a76e8f9E977CB3F948"
             }
           },
           "oftAdapter": "0xb5130F4767AB0ACC579f25a76e8f9E977CB3F948",
@@ -53720,9 +53073,6 @@
             "42161": {
               "tokenAddress": "0xCE0690a849FD00227A769BcC53c1C6266cc84483"
             },
-            "42170": {
-              "tokenAddress": "0x3922de582D630c221AebB2297d86e66bDED1E8D0"
-            },
             "42220": {
               "tokenAddress": "0x6a396A76EdB76d4d2E8a05d33fe4364a3942ab1e"
             },
@@ -53766,9 +53116,6 @@
             },
             "42161": {
               "minDstGas": 2000000
-            },
-            "42170": {
-              "minDstGas": 200000
             },
             "42220": {
               "minDstGas": 200000
@@ -54081,9 +53428,6 @@
             "42161": {
               "tokenAddress": "0xFD92930CA50ab900171643a8a47BC57d760a5d95"
             },
-            "42170": {
-              "tokenAddress": "0xc67505DEaA9C0c08B9bcf2F55476C66b77e0c82f"
-            },
             "42220": {
               "tokenAddress": "0xc67505DEaA9C0c08B9bcf2F55476C66b77e0c82f"
             },
@@ -54120,9 +53464,6 @@
               "minDstGas": 200000
             },
             "42161": {
-              "minDstGas": 200000
-            },
-            "42170": {
               "minDstGas": 200000
             },
             "42220": {
@@ -54303,9 +53644,6 @@
             "42161": {
               "tokenAddress": "0x5abB7FEA061a97329059f35635f24Cb946652C42"
             },
-            "42170": {
-              "tokenAddress": "0xab36258c317009A716440f87b83910B208e7c16b"
-            },
             "42220": {
               "tokenAddress": "0x8C756880599d31fA8c838a845056E7588C327c87"
             },
@@ -54342,9 +53680,6 @@
               "minDstGas": 200000
             },
             "42161": {
-              "minDstGas": 200000
-            },
-            "42170": {
               "minDstGas": 200000
             },
             "42220": {
@@ -54779,9 +54114,6 @@
             },
             "42161": {
               "tokenAddress": "0xe42E70881Ee9277Fa3F2dbb1F23eB38D12de2F9A"
-            },
-            "42170": {
-              "tokenAddress": "0x1709b7dFcd7204015fB18C43eFEAD543ADe43054"
             },
             "57073": {
               "tokenAddress": "0xe2510aA4b019af3Eb835d3aC9c800382109A4631"
@@ -55575,9 +54907,6 @@
             "42161": {
               "tokenAddress": "0xe42E70881Ee9277Fa3F2dbb1F23eB38D12de2F9A"
             },
-            "42170": {
-              "tokenAddress": "0x1709b7dFcd7204015fB18C43eFEAD543ADe43054"
-            },
             "57073": {
               "tokenAddress": "0xe2510aA4b019af3Eb835d3aC9c800382109A4631"
             },
@@ -55748,9 +55077,6 @@
             "1088": {
               "tokenAddress": "0x5D425630796346F7d054C97753AE241fc592734b"
             },
-            "4200": {
-              "tokenAddress": "0xAFa5f9313F1F2b599173f24807a882F498Be118c"
-            },
             "8453": {
               "tokenAddress": "0x5f45Cd59BA7F2f6bcD935663F68Ee1dEbE3B8a10"
             },
@@ -55787,9 +55113,6 @@
               "minDstGas": 200000
             },
             "1088": {
-              "minDstGas": 200000
-            },
-            "4200": {
               "minDstGas": 200000
             },
             "8453": {
@@ -56088,9 +55411,6 @@
             "42161": {
               "tokenAddress": "0x1572D48a52906B834FB236AA77831d669F6d87A1"
             },
-            "42170": {
-              "tokenAddress": "0xe2510aA4b019af3Eb835d3aC9c800382109A4631"
-            },
             "55244": {
               "tokenAddress": "0x8633aCcBeACa79D9a2dc11D682458cf5089b9dE9"
             },
@@ -56131,9 +55451,6 @@
             },
             "42161": {
               "minDstGas": 2000000
-            },
-            "42170": {
-              "minDstGas": 200000
             },
             "55244": {
               "minDstGas": 200000
@@ -56923,7 +56240,8 @@
         }
       },
       "isAcross": false,
-      "isOFT": true
+      "isOFT": true,
+      "noLiquidityOnChain": true
     },
     {
       "chainId": 42161,
@@ -56960,9 +56278,6 @@
               "tokenAddress": "0x1572D48a52906B834FB236AA77831d669F6d87A1"
             },
             "34443": {
-              "tokenAddress": "0xe2510aA4b019af3Eb835d3aC9c800382109A4631"
-            },
-            "42170": {
               "tokenAddress": "0xe2510aA4b019af3Eb835d3aC9c800382109A4631"
             },
             "55244": {
@@ -57004,9 +56319,6 @@
               "minDstGas": 200000
             },
             "34443": {
-              "minDstGas": 200000
-            },
-            "42170": {
               "minDstGas": 200000
             },
             "55244": {
@@ -58972,9 +58284,6 @@
             "8453": {
               "tokenAddress": "0xdd500A3f1177e8e21ecf64c8818F301e18565428"
             },
-            "42170": {
-              "tokenAddress": "0xab36258c317009A716440f87b83910B208e7c16b"
-            },
             "42220": {
               "tokenAddress": "0x8C756880599d31fA8c838a845056E7588C327c87"
             },
@@ -59011,9 +58320,6 @@
               "minDstGas": 200000
             },
             "8453": {
-              "minDstGas": 200000
-            },
-            "42170": {
               "minDstGas": 200000
             },
             "42220": {
@@ -60354,9 +59660,6 @@
             "8453": {
               "tokenAddress": "0x89BAfaD9B675973F374EE541634afb9242d65Ffc"
             },
-            "42170": {
-              "tokenAddress": "0x89BAfaD9B675973F374EE541634afb9242d65Ffc"
-            },
             "42220": {
               "tokenAddress": "0x89BAfaD9B675973F374EE541634afb9242d65Ffc"
             },
@@ -60512,9 +59815,6 @@
             "1116": {
               "tokenAddress": "0xC7CC66a88e2f121Fb104344EAcB7BA7bCAe79DFA"
             },
-            "4200": {
-              "tokenAddress": "0xAFa5f9313F1F2b599173f24807a882F498Be118c"
-            },
             "5000": {
               "tokenAddress": "0x5f45Cd59BA7F2f6bcD935663F68Ee1dEbE3B8a10"
             },
@@ -60523,9 +59823,6 @@
             },
             "34443": {
               "tokenAddress": "0x6E55472109E6aBE4054a8E8b8d9EdFfCb31032C5"
-            },
-            "42170": {
-              "tokenAddress": "0x148CaF6FfBaBa15F35deE7e2813d1F4c6da288F3"
             },
             "42220": {
               "tokenAddress": "0x555a37E52791904c097ECAB03da0009a0c7c4FCf"
@@ -60580,9 +59877,6 @@
             "1116": {
               "minDstGas": 200000
             },
-            "4200": {
-              "minDstGas": 200000
-            },
             "5000": {
               "minDstGas": 200000
             },
@@ -60590,9 +59884,6 @@
               "minDstGas": 200000
             },
             "34443": {
-              "minDstGas": 200000
-            },
-            "42170": {
               "minDstGas": 200000
             },
             "42220": {
@@ -61100,9 +60391,6 @@
             "8453": {
               "tokenAddress": "0x0aAa15291dcaDB13512d55a25Ea419309A38ab52"
             },
-            "42170": {
-              "tokenAddress": "0x818529140C65Ad9152bcE5d87fF42632820CEBFB"
-            },
             "42220": {
               "tokenAddress": "0xBddc99fCFc76c3433F448F15B327b46eC7A6CC4d"
             },
@@ -61133,9 +60421,6 @@
               "minDstGas": 200000
             },
             "8453": {
-              "minDstGas": 200000
-            },
-            "42170": {
               "minDstGas": 200000
             },
             "43114": {
@@ -61192,9 +60477,6 @@
             "8453": {
               "tokenAddress": "0x15A804f4DddD291d5f028AcfDBce787B9151763A"
             },
-            "42170": {
-              "tokenAddress": "0xeC5D4172DA5B15587dB2b955D7f5aa8C1c8ae496"
-            },
             "42220": {
               "tokenAddress": "0x8919eBCba6C8aBAB34A341fA0B3BA35fE3589dB2"
             },
@@ -61237,9 +60519,6 @@
               "minDstGas": 300000
             },
             "8453": {
-              "minDstGas": 300000
-            },
-            "42170": {
               "minDstGas": 300000
             },
             "42220": {
@@ -61763,9 +61042,6 @@
             "8453": {
               "tokenAddress": "0xbaa198F5eC7cc289ceE58510Ab8842C4B939D5F5"
             },
-            "42170": {
-              "tokenAddress": "0x3922de582D630c221AebB2297d86e66bDED1E8D0"
-            },
             "42220": {
               "tokenAddress": "0x6a396A76EdB76d4d2E8a05d33fe4364a3942ab1e"
             },
@@ -61811,9 +61087,6 @@
               "minDstGas": 200000
             },
             "8453": {
-              "minDstGas": 200000
-            },
-            "42170": {
               "minDstGas": 200000
             },
             "42220": {
@@ -61909,9 +61182,6 @@
             "8453": {
               "tokenAddress": "0x0b16d7aDf25799bD06489fe529541CB671979259"
             },
-            "42170": {
-              "tokenAddress": "0x7a3E8E33De6789dD0378BDc2c8BFE5DBF3E9fbbA"
-            },
             "42220": {
               "tokenAddress": "0xE86B177C6464bA905F95ff82F1fD00a23465D86F"
             },
@@ -61954,9 +61224,6 @@
               "minDstGas": 200000
             },
             "8453": {
-              "minDstGas": 200000
-            },
-            "42170": {
               "minDstGas": 200000
             },
             "42220": {
@@ -62553,9 +61820,6 @@
             "8453": {
               "tokenAddress": "0xc67505DEaA9C0c08B9bcf2F55476C66b77e0c82f"
             },
-            "42170": {
-              "tokenAddress": "0xc67505DEaA9C0c08B9bcf2F55476C66b77e0c82f"
-            },
             "42220": {
               "tokenAddress": "0xc67505DEaA9C0c08B9bcf2F55476C66b77e0c82f"
             },
@@ -62592,9 +61856,6 @@
               "minDstGas": 200000
             },
             "8453": {
-              "minDstGas": 200000
-            },
-            "42170": {
               "minDstGas": 200000
             },
             "42220": {
@@ -62746,21 +62007,6 @@
     },
     {
       "chainId": 42161,
-      "address": "0xadf5DD3E51bF28aB4F07e684eCF5d00691818790",
-      "name": "ICHI",
-      "symbol": "ICHI",
-      "decimals": 18,
-      "logoURI": "https://assets.coingecko.com/coins/images/13119/large/ICHI_%28Round%29.jpg?1614308761",
-      "extensions": {
-        "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0x111111517e4929D3dcbdfa7CCe55d30d4B6BC4d6"
-          }
-        }
-      }
-    },
-    {
-      "chainId": 42161,
       "address": "0xb5130F4767AB0ACC579f25a76e8f9E977CB3F948",
       "name": "Godcoin",
       "decimals": 18,
@@ -62781,9 +62027,6 @@
               "tokenAddress": "0xb5130F4767AB0ACC579f25a76e8f9E977CB3F948"
             },
             "8453": {
-              "tokenAddress": "0xb5130F4767AB0ACC579f25a76e8f9E977CB3F948"
-            },
-            "42170": {
               "tokenAddress": "0xb5130F4767AB0ACC579f25a76e8f9E977CB3F948"
             }
           },
@@ -63009,8 +62252,7 @@
         }
       },
       "isAcross": false,
-      "isOFT": true,
-      "noLiquidityOnChain": true
+      "isOFT": true
     },
     {
       "chainId": 42161,
@@ -63334,6 +62576,22 @@
     },
     {
       "chainId": 42161,
+      "address": "0xdD69DB25F6D620A7baD3023c5d32761D353D3De9",
+      "name": "Goerli ETH",
+      "decimals": 18,
+      "symbol": "GETH",
+      "tags": [],
+      "extensions": {
+        "bridgeInfo": {
+          "1": {
+            "tokenAddress": "0xdD69DB25F6D620A7baD3023c5d32761D353D3De9"
+          }
+        }
+      },
+      "isAcross": false
+    },
+    {
+      "chainId": 42161,
       "address": "0xda71EA8ef58D015de8C5cEA8f7B890db3A103E67",
       "name": "Emdx Token",
       "decimals": 18,
@@ -63451,9 +62709,6 @@
             },
             "34443": {
               "tokenAddress": "0x57CB483a4369B79EeB446487e8b36B268d9cE58B"
-            },
-            "42170": {
-              "tokenAddress": "0x1709b7dFcd7204015fB18C43eFEAD543ADe43054"
             },
             "57073": {
               "tokenAddress": "0xe2510aA4b019af3Eb835d3aC9c800382109A4631"
@@ -63826,966 +63081,6 @@
       "noLiquidityOnChain": true
     },
     {
-      "chainId": 42170,
-      "address": "0x000000000026839b3f4181f2cF69336af6153b99",
-      "name": "GG",
-      "decimals": 18,
-      "symbol": "GG",
-      "tags": [],
-      "extensions": {
-        "oftInfo": {
-          "peersInfo": {
-            "999": {
-              "tokenAddress": "0xCe44f26f720fd305539D0652F1F3F91fb0E636cA"
-            },
-            "33139": {
-              "tokenAddress": "0x000000000026839b3f4181f2cF69336af6153b99"
-            },
-            "42161": {
-              "tokenAddress": "0x000000000026839b3f4181f2cF69336af6153b99"
-            }
-          },
-          "feeInfo": {
-            "999": {},
-            "33139": {},
-            "42161": {}
-          },
-          "oftAdapter": "0x000000000026839b3f4181f2cF69336af6153b99",
-          "oftVersion": 2,
-          "endpointVersion": 1,
-          "endpointId": 175,
-          "oftSharedDecimals": 8
-        }
-      },
-      "isAcross": false,
-      "isOFT": true,
-      "noLiquidityOnChain": true
-    },
-    {
-      "chainId": 42170,
-      "address": "0x148CaF6FfBaBa15F35deE7e2813d1F4c6da288F3",
-      "name": "Merkly OFT",
-      "decimals": 18,
-      "symbol": "MERK",
-      "tags": [],
-      "extensions": {
-        "oftInfo": {
-          "peersInfo": {
-            "1": {
-              "tokenAddress": "0xc072c3EbAf165955C5aAd2DbB4293f771de6dbd3"
-            },
-            "10": {
-              "tokenAddress": "0x20279b6d57Ba6D3eF852f34800e43e39d46d6487"
-            },
-            "56": {
-              "tokenAddress": "0xe341f30Ea040bF3691aA069B8c5c213F72676421"
-            },
-            "100": {
-              "tokenAddress": "0x54b3297e1C739fe62be5c00473A2e6bb78adB0Ef"
-            },
-            "137": {
-              "tokenAddress": "0x70ea00aB512d13dAc5001C968F8D2263d179e2D2"
-            },
-            "1088": {
-              "tokenAddress": "0x5D425630796346F7d054C97753AE241fc592734b"
-            },
-            "5000": {
-              "tokenAddress": "0x5f45Cd59BA7F2f6bcD935663F68Ee1dEbE3B8a10"
-            },
-            "8453": {
-              "tokenAddress": "0x5f45Cd59BA7F2f6bcD935663F68Ee1dEbE3B8a10"
-            },
-            "34443": {
-              "tokenAddress": "0x6E55472109E6aBE4054a8E8b8d9EdFfCb31032C5"
-            },
-            "42161": {
-              "tokenAddress": "0x8a555e4Fc287650f5E8CA1778A35dd44e893d6Aa"
-            },
-            "42220": {
-              "tokenAddress": "0x555a37E52791904c097ECAB03da0009a0c7c4FCf"
-            },
-            "43114": {
-              "tokenAddress": "0x70ea00aB512d13dAc5001C968F8D2263d179e2D2"
-            },
-            "59144": {
-              "tokenAddress": "0x5f45Cd59BA7F2f6bcD935663F68Ee1dEbE3B8a10"
-            },
-            "81457": {
-              "tokenAddress": "0x6Ca118bdF9BD900Da5D3d85094D92C5B3b9c0DA5"
-            },
-            "7777777": {
-              "tokenAddress": "0xD838D5b87439e17B0194fd43e37300cD99Aa3DE0"
-            }
-          },
-          "feeInfo": {
-            "1": {
-              "minDstGas": 200000
-            },
-            "10": {
-              "minDstGas": 200000
-            },
-            "56": {
-              "minDstGas": 200000
-            },
-            "100": {
-              "minDstGas": 200000
-            },
-            "137": {
-              "minDstGas": 200000
-            },
-            "1088": {
-              "minDstGas": 200000
-            },
-            "5000": {
-              "minDstGas": 200000
-            },
-            "8453": {
-              "minDstGas": 200000
-            },
-            "42161": {
-              "minDstGas": 2000000
-            },
-            "42220": {
-              "minDstGas": 200000
-            },
-            "43114": {
-              "minDstGas": 200000
-            },
-            "59144": {
-              "minDstGas": 200000
-            },
-            "81457": {
-              "minDstGas": 200000
-            },
-            "7777777": {
-              "minDstGas": 200000
-            }
-          },
-          "oftAdapter": "0x148CaF6FfBaBa15F35deE7e2813d1F4c6da288F3",
-          "oftVersion": 1,
-          "endpointVersion": 1,
-          "endpointId": 175
-        }
-      },
-      "isAcross": false,
-      "isOFT": true,
-      "noLiquidityOnChain": true
-    },
-    {
-      "chainId": 42170,
-      "address": "0x1709b7dFcd7204015fB18C43eFEAD543ADe43054",
-      "name": "Decent Eth",
-      "decimals": 18,
-      "symbol": "DcntEth",
-      "tags": [],
-      "extensions": {
-        "oftInfo": {
-          "peersInfo": {
-            "1": {
-              "tokenAddress": "0x96F305198B3Bd5795B0eFc99133Ebf59511BBDeb"
-            },
-            "10": {
-              "tokenAddress": "0xEFa4486Cf8eBAe3137F1B5445808445D28a8511E"
-            },
-            "56": {
-              "tokenAddress": "0x92977dD9c96c24bB4118992E6aCaa5b5Fb5076b9"
-            },
-            "100": {
-              "tokenAddress": "0x1709b7dFcd7204015fB18C43eFEAD543ADe43054"
-            },
-            "137": {
-              "tokenAddress": "0x46988D12b2BDe2e92a4726f1186f2a67Ac00EF4a"
-            },
-            "204": {
-              "tokenAddress": "0x1709b7dFcd7204015fB18C43eFEAD543ADe43054"
-            },
-            "1996": {
-              "tokenAddress": "0xe2510aA4b019af3Eb835d3aC9c800382109A4631"
-            },
-            "5000": {
-              "tokenAddress": "0x0852123795bC6Aef3A3eb0212DED01607F9c58a5"
-            },
-            "8453": {
-              "tokenAddress": "0xeE36f22e552182faA608443d7e9cB4Bbf9F4F83a"
-            },
-            "34443": {
-              "tokenAddress": "0x57CB483a4369B79EeB446487e8b36B268d9cE58B"
-            },
-            "42161": {
-              "tokenAddress": "0xe42E70881Ee9277Fa3F2dbb1F23eB38D12de2F9A"
-            },
-            "57073": {
-              "tokenAddress": "0xe2510aA4b019af3Eb835d3aC9c800382109A4631"
-            },
-            "81457": {
-              "tokenAddress": "0x023dc290A515b15e1605d34e40C8748EEdf02C93"
-            },
-            "534352": {
-              "tokenAddress": "0xA287C0c182332927767D18dC73bb220f229dd7BA"
-            },
-            "7777777": {
-              "tokenAddress": "0xCCdcc13127c1BeE4331dCF5F55577c9A6e74edf5"
-            }
-          },
-          "oftAdapter": "0x1709b7dFcd7204015fB18C43eFEAD543ADe43054",
-          "oftVersion": 3,
-          "endpointVersion": 2,
-          "endpointId": 30175,
-          "oftSharedDecimals": 6
-        }
-      },
-      "isAcross": false,
-      "isOFT": true,
-      "noLiquidityOnChain": true
-    },
-    {
-      "chainId": 42170,
-      "address": "0x3922de582D630c221AebB2297d86e66bDED1E8D0",
-      "name": "DappGate by DappLabs",
-      "decimals": 18,
-      "symbol": "DLGATE",
-      "tags": [],
-      "extensions": {
-        "oftInfo": {
-          "peersInfo": {
-            "10": {
-              "tokenAddress": "0x207bCC253ba86ae10158c7642cE515e09Ff02F6A"
-            },
-            "56": {
-              "tokenAddress": "0x68363b856C91357cBfD148ABd6960870C6e95C01"
-            },
-            "100": {
-              "tokenAddress": "0xa966099BA4A2F7C5f509abA21352f3a622051025"
-            },
-            "137": {
-              "tokenAddress": "0x9b57378504dCc215c9063BbCeb19eEe2379B8613"
-            },
-            "1088": {
-              "tokenAddress": "0xf66C895e4a573f4418E357A1cC4fd28d3d9c3D4E"
-            },
-            "1116": {
-              "tokenAddress": "0xE429E2b18EABDB0B3Faa847fbB46Ff5DE8b59B45"
-            },
-            "5000": {
-              "tokenAddress": "0x53751403382B4d7dC18d745899Fc2687F0593070"
-            },
-            "8453": {
-              "tokenAddress": "0xbaa198F5eC7cc289ceE58510Ab8842C4B939D5F5"
-            },
-            "42161": {
-              "tokenAddress": "0xCE0690a849FD00227A769BcC53c1C6266cc84483"
-            },
-            "42220": {
-              "tokenAddress": "0x6a396A76EdB76d4d2E8a05d33fe4364a3942ab1e"
-            },
-            "43114": {
-              "tokenAddress": "0xa1F978b8f55662583Bb90dB1c8BA3CCdE697D127"
-            },
-            "59144": {
-              "tokenAddress": "0x36e48a4c1465DBDD493a5220610F706EECBE54FC"
-            }
-          },
-          "feeInfo": {
-            "10": {
-              "minDstGas": 200000
-            },
-            "56": {
-              "minDstGas": 200000
-            },
-            "100": {
-              "minDstGas": 200000
-            },
-            "137": {
-              "minDstGas": 200000
-            },
-            "1088": {
-              "minDstGas": 200000
-            },
-            "1116": {
-              "minDstGas": 200000
-            },
-            "5000": {
-              "minDstGas": 200000
-            },
-            "8453": {
-              "minDstGas": 200000
-            },
-            "42161": {
-              "minDstGas": 2000000
-            },
-            "42220": {
-              "minDstGas": 200000
-            },
-            "43114": {
-              "minDstGas": 200000
-            },
-            "59144": {
-              "minDstGas": 200000
-            }
-          },
-          "oftAdapter": "0x3922de582D630c221AebB2297d86e66bDED1E8D0",
-          "oftVersion": 1,
-          "endpointVersion": 1,
-          "endpointId": 175
-        }
-      },
-      "isAcross": false,
-      "isOFT": true,
-      "noLiquidityOnChain": true
-    },
-    {
-      "chainId": 42170,
-      "address": "0x7a3E8E33De6789dD0378BDc2c8BFE5DBF3E9fbbA",
-      "name": "BabyWhale OFT",
-      "decimals": 18,
-      "symbol": "BWHL",
-      "tags": [],
-      "extensions": {
-        "oftInfo": {
-          "peersInfo": {
-            "10": {
-              "tokenAddress": "0xdE3D84e555C9a46b88897DA45Ec9f35aCeD72C0B"
-            },
-            "56": {
-              "tokenAddress": "0x408bE6A5C550913B46B8FA9196c122083811Be96"
-            },
-            "137": {
-              "tokenAddress": "0x593E76D4787A81f7e8d56dDaa0b3526976b39bb4"
-            },
-            "1088": {
-              "tokenAddress": "0x84f4c0A290B5607fee0f2A1CDe5348540fecF6A1"
-            },
-            "8453": {
-              "tokenAddress": "0x0b16d7aDf25799bD06489fe529541CB671979259"
-            },
-            "42161": {
-              "tokenAddress": "0xD0f6733564BaE9aB83aE4FFC4a07073110aA9D21"
-            },
-            "42220": {
-              "tokenAddress": "0xE86B177C6464bA905F95ff82F1fD00a23465D86F"
-            },
-            "43114": {
-              "tokenAddress": "0xB8B29d483732717F77e90C3A669369E4994bC878"
-            },
-            "59144": {
-              "tokenAddress": "0xD4Ec29b8bceE8e4Abbe3Ff18a48923ef81314982"
-            },
-            "534352": {
-              "tokenAddress": "0x96930eD766Bb09C222A68c305Bfe1cA68228343b"
-            }
-          },
-          "feeInfo": {
-            "10": {
-              "minDstGas": 200000
-            },
-            "56": {
-              "minDstGas": 200000
-            },
-            "137": {
-              "minDstGas": 200000
-            },
-            "1088": {
-              "minDstGas": 200000
-            },
-            "8453": {
-              "minDstGas": 200000
-            },
-            "42161": {
-              "minDstGas": 2000000
-            },
-            "42220": {
-              "minDstGas": 200000
-            },
-            "43114": {
-              "minDstGas": 200000
-            },
-            "59144": {
-              "minDstGas": 200000
-            },
-            "534352": {
-              "minDstGas": 200000
-            }
-          },
-          "oftAdapter": "0x7a3E8E33De6789dD0378BDc2c8BFE5DBF3E9fbbA",
-          "oftVersion": 1,
-          "endpointVersion": 1,
-          "endpointId": 175
-        }
-      },
-      "isAcross": false,
-      "isOFT": true,
-      "noLiquidityOnChain": true
-    },
-    {
-      "chainId": 42170,
-      "address": "0x818529140C65Ad9152bcE5d87fF42632820CEBFB",
-      "name": "DappGate by DappLabs",
-      "decimals": 18,
-      "symbol": "DLGATE",
-      "tags": [],
-      "extensions": {
-        "oftInfo": {
-          "peersInfo": {
-            "10": {
-              "tokenAddress": "0xFC340113B34056669924da8c6a22f3D9b78A3bCa"
-            },
-            "56": {
-              "tokenAddress": "0xdea2895F965BD71EC0899ba0B20581f2FcC40A3C"
-            },
-            "100": {
-              "tokenAddress": "0x74f57E1171a0360670AED3b3DbC3a997Fb493d16"
-            },
-            "137": {
-              "tokenAddress": "0x9e01792EbE32909AA9B569bA542A932BFb3D4031"
-            },
-            "1088": {
-              "tokenAddress": "0xb13044854014131565a6A7E46dc24a0e3e9D163C"
-            },
-            "1116": {
-              "tokenAddress": "0xBddc99fCFc76c3433F448F15B327b46eC7A6CC4d"
-            },
-            "5000": {
-              "tokenAddress": "0x93E5f549327baB41a1e33daEBF27dF27502CC818"
-            },
-            "8453": {
-              "tokenAddress": "0x0aAa15291dcaDB13512d55a25Ea419309A38ab52"
-            },
-            "42161": {
-              "tokenAddress": "0xA6964d554f5A3a1DD2f8a2bab9853Bdb883eFA32"
-            },
-            "43114": {
-              "tokenAddress": "0x6c4495b2eD95Ad3A2050aad60D410fA9782F08cA"
-            },
-            "59144": {
-              "tokenAddress": "0xb13044854014131565a6A7E46dc24a0e3e9D163C"
-            }
-          },
-          "feeInfo": {
-            "10": {
-              "minDstGas": 200000
-            },
-            "56": {
-              "minDstGas": 200000
-            },
-            "100": {
-              "minDstGas": 200000
-            },
-            "137": {
-              "minDstGas": 200000
-            },
-            "1088": {
-              "minDstGas": 200000
-            },
-            "1116": {
-              "minDstGas": 200000
-            },
-            "8453": {
-              "minDstGas": 200000
-            },
-            "42161": {
-              "minDstGas": 2000000
-            },
-            "43114": {
-              "minDstGas": 200000
-            },
-            "59144": {
-              "minDstGas": 200000
-            }
-          },
-          "oftAdapter": "0x818529140C65Ad9152bcE5d87fF42632820CEBFB",
-          "oftVersion": 1,
-          "endpointVersion": 1,
-          "endpointId": 175
-        }
-      },
-      "isAcross": false,
-      "isOFT": true,
-      "noLiquidityOnChain": true
-    },
-    {
-      "chainId": 42170,
-      "address": "0x89BAfaD9B675973F374EE541634afb9242d65Ffc",
-      "name": "Etherway",
-      "decimals": 18,
-      "symbol": "OFT",
-      "tags": [],
-      "extensions": {
-        "oftInfo": {
-          "peersInfo": {
-            "10": {
-              "tokenAddress": "0x89BAfaD9B675973F374EE541634afb9242d65Ffc"
-            },
-            "56": {
-              "tokenAddress": "0x89BAfaD9B675973F374EE541634afb9242d65Ffc"
-            },
-            "100": {
-              "tokenAddress": "0x89BAfaD9B675973F374EE541634afb9242d65Ffc"
-            },
-            "137": {
-              "tokenAddress": "0x89BAfaD9B675973F374EE541634afb9242d65Ffc"
-            },
-            "169": {
-              "tokenAddress": "0x89BAfaD9B675973F374EE541634afb9242d65Ffc"
-            },
-            "204": {
-              "tokenAddress": "0x89BAfaD9B675973F374EE541634afb9242d65Ffc"
-            },
-            "8453": {
-              "tokenAddress": "0x89BAfaD9B675973F374EE541634afb9242d65Ffc"
-            },
-            "42161": {
-              "tokenAddress": "0x89BAfaD9B675973F374EE541634afb9242d65Ffc"
-            },
-            "42220": {
-              "tokenAddress": "0x89BAfaD9B675973F374EE541634afb9242d65Ffc"
-            },
-            "43114": {
-              "tokenAddress": "0x89BAfaD9B675973F374EE541634afb9242d65Ffc"
-            },
-            "59144": {
-              "tokenAddress": "0x89BAfaD9B675973F374EE541634afb9242d65Ffc"
-            },
-            "81457": {
-              "tokenAddress": "0x89BAfaD9B675973F374EE541634afb9242d65Ffc"
-            },
-            "534352": {
-              "tokenAddress": "0x89BAfaD9B675973F374EE541634afb9242d65Ffc"
-            },
-            "7777777": {
-              "tokenAddress": "0x89BAfaD9B675973F374EE541634afb9242d65Ffc"
-            }
-          },
-          "oftAdapter": "0x89BAfaD9B675973F374EE541634afb9242d65Ffc",
-          "oftVersion": 3,
-          "endpointVersion": 2,
-          "endpointId": 30175,
-          "oftSharedDecimals": 6
-        }
-      },
-      "isAcross": false,
-      "isOFT": true,
-      "noLiquidityOnChain": true
-    },
-    {
-      "chainId": 42170,
-      "address": "0xab36258c317009A716440f87b83910B208e7c16b",
-      "name": "TOINOU OFT",
-      "decimals": 18,
-      "symbol": "TOINOU",
-      "tags": [],
-      "extensions": {
-        "bridgeInfo": {
-          "43114": {
-            "tokenAddress": "0xbc27c6c32371b38c99125FBb37fDeaa1A1891e3D"
-          }
-        },
-        "oftInfo": {
-          "peersInfo": {
-            "1": {
-              "tokenAddress": "0x9bA7CA46BF503162fB98f0B8d9eE30482C2ada1e"
-            },
-            "10": {
-              "tokenAddress": "0x73c75655A76CAC8f7F1df18158F92BA06B4C0f6F"
-            },
-            "56": {
-              "tokenAddress": "0xF8dce96DffD42AA91Cd942FB03582c8294068186"
-            },
-            "100": {
-              "tokenAddress": "0x54Ba24B600Bc0C81441C22D6e8674A97a733aC19"
-            },
-            "137": {
-              "tokenAddress": "0xEC54242056917495C75D8814e5Ec62Be8932D391"
-            },
-            "1088": {
-              "tokenAddress": "0x10A8082a918922c2B6Cac1C49c86519056AF8d9a"
-            },
-            "1116": {
-              "tokenAddress": "0x736554cA47902A90687c162ba3dDF7FF59C9e0D1"
-            },
-            "5000": {
-              "tokenAddress": "0x43ABfebF18735c6E685A95CE1ca11DA05C4D7216"
-            },
-            "8453": {
-              "tokenAddress": "0xdd500A3f1177e8e21ecf64c8818F301e18565428"
-            },
-            "42161": {
-              "tokenAddress": "0x5abB7FEA061a97329059f35635f24Cb946652C42"
-            },
-            "42220": {
-              "tokenAddress": "0x8C756880599d31fA8c838a845056E7588C327c87"
-            },
-            "43114": {
-              "tokenAddress": "0xbc27c6c32371b38c99125FBb37fDeaa1A1891e3D"
-            },
-            "59144": {
-              "tokenAddress": "0x4BE6c416172FcB4720939F4c97D1b1435306D493"
-            },
-            "7777777": {
-              "tokenAddress": "0x08a86ed489cA76852160B739705D180536b72671"
-            }
-          },
-          "feeInfo": {
-            "10": {
-              "minDstGas": 200000
-            },
-            "56": {
-              "minDstGas": 200000
-            },
-            "100": {
-              "minDstGas": 200000
-            },
-            "137": {
-              "minDstGas": 200000
-            },
-            "1088": {
-              "minDstGas": 200000
-            },
-            "1116": {
-              "minDstGas": 200000
-            },
-            "5000": {
-              "minDstGas": 200000
-            },
-            "8453": {
-              "minDstGas": 200000
-            },
-            "42161": {
-              "minDstGas": 200000
-            },
-            "42220": {
-              "minDstGas": 200000
-            },
-            "43114": {
-              "minDstGas": 200000
-            },
-            "7777777": {
-              "minDstGas": 200000
-            }
-          },
-          "oftAdapter": "0xab36258c317009A716440f87b83910B208e7c16b",
-          "oftVersion": 1,
-          "endpointVersion": 1,
-          "endpointId": 175
-        }
-      },
-      "isAcross": false,
-      "isOFT": true,
-      "noLiquidityOnChain": true
-    },
-    {
-      "chainId": 42170,
-      "address": "0xb5130F4767AB0ACC579f25a76e8f9E977CB3F948",
-      "name": "Godcoin",
-      "decimals": 18,
-      "symbol": "GOD",
-      "logoURI": "https://s2.coinmarketcap.com/static/img/coins/128x128/35489.png",
-      "tags": [],
-      "extensions": {
-        "coingeckoId": "godcoin-2",
-        "coinMarketCapId": 35489,
-        "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0xb5130F4767AB0ACC579f25a76e8f9E977CB3F948"
-          }
-        },
-        "oftInfo": {
-          "peersInfo": {
-            "1": {
-              "tokenAddress": "0xb5130F4767AB0ACC579f25a76e8f9E977CB3F948"
-            },
-            "8453": {
-              "tokenAddress": "0xb5130F4767AB0ACC579f25a76e8f9E977CB3F948"
-            },
-            "42161": {
-              "tokenAddress": "0xb5130F4767AB0ACC579f25a76e8f9E977CB3F948"
-            }
-          },
-          "oftAdapter": "0xb5130F4767AB0ACC579f25a76e8f9E977CB3F948",
-          "oftVersion": 3,
-          "endpointVersion": 2,
-          "endpointId": 30175,
-          "oftSharedDecimals": 6
-        }
-      },
-      "isAcross": false,
-      "isOFT": true,
-      "noLiquidityOnChain": true
-    },
-    {
-      "chainId": 42170,
-      "address": "0xc67505DEaA9C0c08B9bcf2F55476C66b77e0c82f",
-      "name": "DappGate by DappLabs",
-      "decimals": 18,
-      "symbol": "DLGATE",
-      "tags": [],
-      "extensions": {
-        "oftInfo": {
-          "peersInfo": {
-            "10": {
-              "tokenAddress": "0xc67505DEaA9C0c08B9bcf2F55476C66b77e0c82f"
-            },
-            "56": {
-              "tokenAddress": "0xc67505DEaA9C0c08B9bcf2F55476C66b77e0c82f"
-            },
-            "100": {
-              "tokenAddress": "0xFD92930CA50ab900171643a8a47BC57d760a5d95"
-            },
-            "137": {
-              "tokenAddress": "0xc67505DEaA9C0c08B9bcf2F55476C66b77e0c82f"
-            },
-            "1088": {
-              "tokenAddress": "0xc67505DEaA9C0c08B9bcf2F55476C66b77e0c82f"
-            },
-            "1116": {
-              "tokenAddress": "0xc67505DEaA9C0c08B9bcf2F55476C66b77e0c82f"
-            },
-            "5000": {
-              "tokenAddress": "0xc67505DEaA9C0c08B9bcf2F55476C66b77e0c82f"
-            },
-            "8453": {
-              "tokenAddress": "0xc67505DEaA9C0c08B9bcf2F55476C66b77e0c82f"
-            },
-            "42161": {
-              "tokenAddress": "0xFD92930CA50ab900171643a8a47BC57d760a5d95"
-            },
-            "42220": {
-              "tokenAddress": "0xc67505DEaA9C0c08B9bcf2F55476C66b77e0c82f"
-            },
-            "43114": {
-              "tokenAddress": "0xc67505DEaA9C0c08B9bcf2F55476C66b77e0c82f"
-            },
-            "59144": {
-              "tokenAddress": "0xc67505DEaA9C0c08B9bcf2F55476C66b77e0c82f"
-            }
-          },
-          "feeInfo": {
-            "10": {
-              "minDstGas": 200000
-            },
-            "56": {
-              "minDstGas": 200000
-            },
-            "100": {
-              "minDstGas": 200000
-            },
-            "137": {
-              "minDstGas": 200000
-            },
-            "1088": {
-              "minDstGas": 200000
-            },
-            "1116": {
-              "minDstGas": 200000
-            },
-            "5000": {
-              "minDstGas": 200000
-            },
-            "8453": {
-              "minDstGas": 200000
-            },
-            "42161": {
-              "minDstGas": 2000000
-            },
-            "42220": {
-              "minDstGas": 200000
-            },
-            "43114": {
-              "minDstGas": 200000
-            },
-            "59144": {
-              "minDstGas": 200000
-            }
-          },
-          "oftAdapter": "0xc67505DEaA9C0c08B9bcf2F55476C66b77e0c82f",
-          "oftVersion": 1,
-          "endpointVersion": 1,
-          "endpointId": 175
-        }
-      },
-      "isAcross": false,
-      "isOFT": true,
-      "noLiquidityOnChain": true
-    },
-    {
-      "chainId": 42170,
-      "address": "0xe2510aA4b019af3Eb835d3aC9c800382109A4631",
-      "name": "Decent Eth",
-      "decimals": 18,
-      "symbol": "DcntEth",
-      "tags": [],
-      "extensions": {
-        "oftInfo": {
-          "peersInfo": {
-            "1": {
-              "tokenAddress": "0x39B1F7c5b1ae6a3Cb9bbbd616B44ceD9F53882E0"
-            },
-            "10": {
-              "tokenAddress": "0xe2510aA4b019af3Eb835d3aC9c800382109A4631"
-            },
-            "56": {
-              "tokenAddress": "0x21f6eC768058ca2B3701099f7cEA4c9a8CD63015"
-            },
-            "100": {
-              "tokenAddress": "0xe2510aA4b019af3Eb835d3aC9c800382109A4631"
-            },
-            "137": {
-              "tokenAddress": "0xFE0855903E32953DE8E63FF6585f3fB5a2b4DeFF"
-            },
-            "204": {
-              "tokenAddress": "0xe2510aA4b019af3Eb835d3aC9c800382109A4631"
-            },
-            "5000": {
-              "tokenAddress": "0xe2510aA4b019af3Eb835d3aC9c800382109A4631"
-            },
-            "8453": {
-              "tokenAddress": "0x1572D48a52906B834FB236AA77831d669F6d87A1"
-            },
-            "34443": {
-              "tokenAddress": "0xe2510aA4b019af3Eb835d3aC9c800382109A4631"
-            },
-            "42161": {
-              "tokenAddress": "0x1572D48a52906B834FB236AA77831d669F6d87A1"
-            },
-            "55244": {
-              "tokenAddress": "0x8633aCcBeACa79D9a2dc11D682458cf5089b9dE9"
-            },
-            "81457": {
-              "tokenAddress": "0x1572D48a52906B834FB236AA77831d669F6d87A1"
-            },
-            "534352": {
-              "tokenAddress": "0xe2510aA4b019af3Eb835d3aC9c800382109A4631"
-            },
-            "7777777": {
-              "tokenAddress": "0x1572D48a52906B834FB236AA77831d669F6d87A1"
-            }
-          },
-          "feeInfo": {
-            "1": {
-              "minDstGas": 200000
-            },
-            "10": {
-              "minDstGas": 200000
-            },
-            "56": {
-              "minDstGas": 200000
-            },
-            "100": {
-              "minDstGas": 200000
-            },
-            "137": {
-              "minDstGas": 200000
-            },
-            "204": {
-              "minDstGas": 200000
-            },
-            "5000": {
-              "minDstGas": 200000
-            },
-            "8453": {
-              "minDstGas": 200000
-            },
-            "34443": {
-              "minDstGas": 200000
-            },
-            "42161": {
-              "minDstGas": 2000000
-            },
-            "55244": {
-              "minDstGas": 200000
-            },
-            "81457": {
-              "minDstGas": 200000
-            },
-            "534352": {
-              "minDstGas": 200000
-            },
-            "7777777": {
-              "minDstGas": 200000
-            }
-          },
-          "oftAdapter": "0xe2510aA4b019af3Eb835d3aC9c800382109A4631",
-          "oftVersion": 2,
-          "endpointVersion": 1,
-          "endpointId": 175,
-          "oftSharedDecimals": 18
-        }
-      },
-      "isAcross": false,
-      "isOFT": true,
-      "noLiquidityOnChain": true
-    },
-    {
-      "chainId": 42170,
-      "address": "0xeC5D4172DA5B15587dB2b955D7f5aa8C1c8ae496",
-      "name": "Mintly OFT",
-      "decimals": 18,
-      "symbol": "MIN",
-      "tags": [],
-      "extensions": {
-        "oftInfo": {
-          "peersInfo": {
-            "10": {
-              "tokenAddress": "0x5BCe28f10a93C9B07A2e556fB039BCD23148217A"
-            },
-            "56": {
-              "tokenAddress": "0x179BB6Dc7c41ca42101Af158508D64cbD3956CCc"
-            },
-            "137": {
-              "tokenAddress": "0x56F091Df2e7e10A6308a447F7DB5aAd9C93e4A0A"
-            },
-            "1088": {
-              "tokenAddress": "0x58Ec28258Ef764B6A6425b2f24faF8Ad7416a476"
-            },
-            "8453": {
-              "tokenAddress": "0x15A804f4DddD291d5f028AcfDBce787B9151763A"
-            },
-            "42161": {
-              "tokenAddress": "0xA698B510cE2A3ED439d93E3e2C79a9A87782164f"
-            },
-            "43114": {
-              "tokenAddress": "0x40E0E5A9736a568581a4F48Edc215271A7699a3f"
-            },
-            "59144": {
-              "tokenAddress": "0x7F37Bd4bCe80Bf9Cd2eBbfd646C4E9B03cf29281"
-            }
-          },
-          "feeInfo": {
-            "10": {
-              "minDstGas": 300000
-            },
-            "56": {
-              "minDstGas": 300000
-            },
-            "137": {
-              "minDstGas": 300000
-            },
-            "1088": {
-              "minDstGas": 300000
-            },
-            "8453": {
-              "minDstGas": 300000
-            },
-            "42161": {
-              "minDstGas": 300000
-            },
-            "43114": {
-              "minDstGas": 300000
-            },
-            "59144": {
-              "minDstGas": 300000
-            }
-          },
-          "oftAdapter": "0xeC5D4172DA5B15587dB2b955D7f5aa8C1c8ae496",
-          "oftVersion": 1,
-          "endpointVersion": 1,
-          "endpointId": 175
-        }
-      },
-      "isAcross": false,
-      "isOFT": true,
-      "noLiquidityOnChain": true
-    },
-    {
       "chainId": 42220,
       "address": "0x040C66e5e6873996EBF672726b9a1fcacE3298De",
       "name": "Jesus",
@@ -64883,9 +63178,6 @@
             "204": {
               "tokenAddress": "0xDB3Bb6D5a8EeEAfc64C66C176900E6B82b23dd5f"
             },
-            "4200": {
-              "tokenAddress": "0xAFa5f9313F1F2b599173f24807a882F498Be118c"
-            },
             "5000": {
               "tokenAddress": "0x5f45Cd59BA7F2f6bcD935663F68Ee1dEbE3B8a10"
             },
@@ -64897,9 +63189,6 @@
             },
             "42161": {
               "tokenAddress": "0x8a555e4Fc287650f5E8CA1778A35dd44e893d6Aa"
-            },
-            "42170": {
-              "tokenAddress": "0x148CaF6FfBaBa15F35deE7e2813d1F4c6da288F3"
             },
             "43114": {
               "tokenAddress": "0x70ea00aB512d13dAc5001C968F8D2263d179e2D2"
@@ -64933,9 +63222,6 @@
             "204": {
               "minDstGas": 200000
             },
-            "4200": {
-              "minDstGas": 200000
-            },
             "5000": {
               "minDstGas": 200000
             },
@@ -64944,9 +63230,6 @@
             },
             "42161": {
               "minDstGas": 2000000
-            },
-            "42170": {
-              "minDstGas": 200000
             },
             "43114": {
               "minDstGas": 200000
@@ -65085,9 +63368,6 @@
             "42161": {
               "tokenAddress": "0xCE0690a849FD00227A769BcC53c1C6266cc84483"
             },
-            "42170": {
-              "tokenAddress": "0x3922de582D630c221AebB2297d86e66bDED1E8D0"
-            },
             "43114": {
               "tokenAddress": "0xa1F978b8f55662583Bb90dB1c8BA3CCdE697D127"
             },
@@ -65122,9 +63402,6 @@
             },
             "42161": {
               "minDstGas": 2000000
-            },
-            "42170": {
-              "minDstGas": 200000
             },
             "43114": {
               "minDstGas": 200000
@@ -65264,9 +63541,6 @@
             "42161": {
               "tokenAddress": "0x89BAfaD9B675973F374EE541634afb9242d65Ffc"
             },
-            "42170": {
-              "tokenAddress": "0x89BAfaD9B675973F374EE541634afb9242d65Ffc"
-            },
             "43114": {
               "tokenAddress": "0x89BAfaD9B675973F374EE541634afb9242d65Ffc"
             },
@@ -65339,9 +63613,6 @@
             "42161": {
               "tokenAddress": "0x5abB7FEA061a97329059f35635f24Cb946652C42"
             },
-            "42170": {
-              "tokenAddress": "0xab36258c317009A716440f87b83910B208e7c16b"
-            },
             "43114": {
               "tokenAddress": "0xbc27c6c32371b38c99125FBb37fDeaa1A1891e3D"
             },
@@ -65378,9 +63649,6 @@
               "minDstGas": 200000
             },
             "42161": {
-              "minDstGas": 200000
-            },
-            "42170": {
               "minDstGas": 200000
             },
             "43114": {
@@ -65510,9 +63778,6 @@
             "42161": {
               "tokenAddress": "0xD0f6733564BaE9aB83aE4FFC4a07073110aA9D21"
             },
-            "42170": {
-              "tokenAddress": "0x7a3E8E33De6789dD0378BDc2c8BFE5DBF3E9fbbA"
-            },
             "43114": {
               "tokenAddress": "0xB8B29d483732717F77e90C3A669369E4994bC878"
             },
@@ -65541,9 +63806,6 @@
             },
             "42161": {
               "minDstGas": 2000000
-            },
-            "42170": {
-              "minDstGas": 200000
             },
             "43114": {
               "minDstGas": 200000
@@ -65720,9 +63982,6 @@
             "42161": {
               "tokenAddress": "0xFD92930CA50ab900171643a8a47BC57d760a5d95"
             },
-            "42170": {
-              "tokenAddress": "0xc67505DEaA9C0c08B9bcf2F55476C66b77e0c82f"
-            },
             "43114": {
               "tokenAddress": "0xc67505DEaA9C0c08B9bcf2F55476C66b77e0c82f"
             },
@@ -65757,9 +64016,6 @@
             },
             "42161": {
               "minDstGas": 2000000
-            },
-            "42170": {
-              "minDstGas": 200000
             },
             "43114": {
               "minDstGas": 200000
@@ -65996,9 +64252,6 @@
             },
             "42161": {
               "tokenAddress": "0x3de0272b8Ee442e39101FB60281C1fb69aFa5782"
-            },
-            "42170": {
-              "tokenAddress": "0xab36258c317009A716440f87b83910B208e7c16b"
             },
             "42220": {
               "tokenAddress": "0xe1dDAa6AdA05B8f19fD16402D218198D43d4d61B"
@@ -66698,9 +64951,6 @@
             "42161": {
               "tokenAddress": "0xA698B510cE2A3ED439d93E3e2C79a9A87782164f"
             },
-            "42170": {
-              "tokenAddress": "0xeC5D4172DA5B15587dB2b955D7f5aa8C1c8ae496"
-            },
             "42220": {
               "tokenAddress": "0x8919eBCba6C8aBAB34A341fA0B3BA35fE3589dB2"
             },
@@ -66740,9 +64990,6 @@
               "minDstGas": 300000
             },
             "42161": {
-              "minDstGas": 300000
-            },
-            "42170": {
               "minDstGas": 300000
             },
             "42220": {
@@ -67207,9 +65454,6 @@
             "42161": {
               "tokenAddress": "0xA6964d554f5A3a1DD2f8a2bab9853Bdb883eFA32"
             },
-            "42170": {
-              "tokenAddress": "0x818529140C65Ad9152bcE5d87fF42632820CEBFB"
-            },
             "42220": {
               "tokenAddress": "0xBddc99fCFc76c3433F448F15B327b46eC7A6CC4d"
             },
@@ -67241,9 +65485,6 @@
             },
             "42161": {
               "minDstGas": 2000000
-            },
-            "42170": {
-              "minDstGas": 200000
             },
             "59144": {
               "minDstGas": 200000
@@ -67348,9 +65589,6 @@
             "1116": {
               "tokenAddress": "0xC7CC66a88e2f121Fb104344EAcB7BA7bCAe79DFA"
             },
-            "4200": {
-              "tokenAddress": "0xAFa5f9313F1F2b599173f24807a882F498Be118c"
-            },
             "5000": {
               "tokenAddress": "0x5f45Cd59BA7F2f6bcD935663F68Ee1dEbE3B8a10"
             },
@@ -67362,9 +65600,6 @@
             },
             "42161": {
               "tokenAddress": "0x8a555e4Fc287650f5E8CA1778A35dd44e893d6Aa"
-            },
-            "42170": {
-              "tokenAddress": "0x148CaF6FfBaBa15F35deE7e2813d1F4c6da288F3"
             },
             "42220": {
               "tokenAddress": "0x555a37E52791904c097ECAB03da0009a0c7c4FCf"
@@ -67416,9 +65651,6 @@
             "1116": {
               "minDstGas": 200000
             },
-            "4200": {
-              "minDstGas": 200000
-            },
             "5000": {
               "minDstGas": 200000
             },
@@ -67430,9 +65662,6 @@
             },
             "42161": {
               "minDstGas": 2000000
-            },
-            "42170": {
-              "minDstGas": 200000
             },
             "42220": {
               "minDstGas": 200000
@@ -67661,9 +65890,6 @@
               "tokenAddress": "0x89BAfaD9B675973F374EE541634afb9242d65Ffc"
             },
             "42161": {
-              "tokenAddress": "0x89BAfaD9B675973F374EE541634afb9242d65Ffc"
-            },
-            "42170": {
               "tokenAddress": "0x89BAfaD9B675973F374EE541634afb9242d65Ffc"
             },
             "42220": {
@@ -68172,9 +66398,6 @@
             "42161": {
               "tokenAddress": "0xD0f6733564BaE9aB83aE4FFC4a07073110aA9D21"
             },
-            "42170": {
-              "tokenAddress": "0x7a3E8E33De6789dD0378BDc2c8BFE5DBF3E9fbbA"
-            },
             "42220": {
               "tokenAddress": "0xE86B177C6464bA905F95ff82F1fD00a23465D86F"
             },
@@ -68218,9 +66441,6 @@
             },
             "42161": {
               "minDstGas": 2000000
-            },
-            "42170": {
-              "minDstGas": 200000
             },
             "42220": {
               "minDstGas": 200000
@@ -68600,9 +66820,6 @@
             "42161": {
               "tokenAddress": "0xCE0690a849FD00227A769BcC53c1C6266cc84483"
             },
-            "42170": {
-              "tokenAddress": "0x3922de582D630c221AebB2297d86e66bDED1E8D0"
-            },
             "42220": {
               "tokenAddress": "0x6a396A76EdB76d4d2E8a05d33fe4364a3942ab1e"
             },
@@ -68649,9 +66866,6 @@
             },
             "42161": {
               "minDstGas": 2000000
-            },
-            "42170": {
-              "minDstGas": 200000
             },
             "42220": {
               "minDstGas": 200000
@@ -68830,9 +67044,6 @@
             "42161": {
               "tokenAddress": "0x5abB7FEA061a97329059f35635f24Cb946652C42"
             },
-            "42170": {
-              "tokenAddress": "0xab36258c317009A716440f87b83910B208e7c16b"
-            },
             "42220": {
               "tokenAddress": "0x8C756880599d31fA8c838a845056E7588C327c87"
             },
@@ -68872,9 +67083,6 @@
               "minDstGas": 200000
             },
             "42161": {
-              "minDstGas": 200000
-            },
-            "42170": {
               "minDstGas": 200000
             },
             "42220": {
@@ -69112,9 +67320,6 @@
             "42161": {
               "tokenAddress": "0xFD92930CA50ab900171643a8a47BC57d760a5d95"
             },
-            "42170": {
-              "tokenAddress": "0xc67505DEaA9C0c08B9bcf2F55476C66b77e0c82f"
-            },
             "42220": {
               "tokenAddress": "0xc67505DEaA9C0c08B9bcf2F55476C66b77e0c82f"
             },
@@ -69151,9 +67356,6 @@
               "minDstGas": 200000
             },
             "42161": {
-              "minDstGas": 200000
-            },
-            "42170": {
               "minDstGas": 200000
             },
             "42220": {
@@ -69529,9 +67731,6 @@
             "42161": {
               "tokenAddress": "0x1572D48a52906B834FB236AA77831d669F6d87A1"
             },
-            "42170": {
-              "tokenAddress": "0xe2510aA4b019af3Eb835d3aC9c800382109A4631"
-            },
             "81457": {
               "tokenAddress": "0x1572D48a52906B834FB236AA77831d669F6d87A1"
             },
@@ -69572,9 +67771,6 @@
             },
             "42161": {
               "minDstGas": 2000000
-            },
-            "42170": {
-              "minDstGas": 200000
             },
             "81457": {
               "minDstGas": 200000
@@ -69892,6 +68088,39 @@
     },
     {
       "chainId": 57073,
+      "address": "0xc3eACf0612346366Db554C991D7858716db09f58",
+      "name": "KelpDao Restaked ETH",
+      "decimals": 18,
+      "symbol": "rsETH",
+      "logoURI": "https://s2.coinmarketcap.com/static/img/coins/128x128/29242.png",
+      "tags": [],
+      "extensions": {
+        "bridgeInfo": {
+          "1": {
+            "tokenAddress": "0xA1290d69c65A6Fe4DF752f95823fae25cB99e5A7"
+          }
+        },
+        "coingeckoId": "kelpdao-bridged-rseth-base",
+        "coinMarketCapId": 29242,
+        "oftInfo": {
+          "peersInfo": {
+            "1": {
+              "tokenAddress": "0xA1290d69c65A6Fe4DF752f95823fae25cB99e5A7"
+            }
+          },
+          "oftAdapter": "0xc3eACf0612346366Db554C991D7858716db09f58",
+          "oftVersion": 3,
+          "endpointVersion": 2,
+          "endpointId": 30339,
+          "oftSharedDecimals": 6
+        }
+      },
+      "isAcross": false,
+      "isOFT": true,
+      "noLiquidityOnChain": true
+    },
+    {
+      "chainId": 57073,
       "address": "0xcab283e4bb527Aa9b157Bae7180FeF19E2aaa71a",
       "name": "Rebasing Ink Staked ETH",
       "decimals": 18,
@@ -69961,9 +68190,6 @@
             },
             "42161": {
               "tokenAddress": "0xe42E70881Ee9277Fa3F2dbb1F23eB38D12de2F9A"
-            },
-            "42170": {
-              "tokenAddress": "0x1709b7dFcd7204015fB18C43eFEAD543ADe43054"
             },
             "81457": {
               "tokenAddress": "0x023dc290A515b15e1605d34e40C8748EEdf02C93"
@@ -70651,9 +68877,6 @@
             "42161": {
               "tokenAddress": "0xCE0690a849FD00227A769BcC53c1C6266cc84483"
             },
-            "42170": {
-              "tokenAddress": "0x3922de582D630c221AebB2297d86e66bDED1E8D0"
-            },
             "42220": {
               "tokenAddress": "0x6a396A76EdB76d4d2E8a05d33fe4364a3942ab1e"
             },
@@ -70697,9 +68920,6 @@
             },
             "42161": {
               "minDstGas": 2000000
-            },
-            "42170": {
-              "minDstGas": 200000
             },
             "42220": {
               "minDstGas": 200000
@@ -71147,9 +69367,6 @@
             "1088": {
               "tokenAddress": "0x5D425630796346F7d054C97753AE241fc592734b"
             },
-            "4200": {
-              "tokenAddress": "0xAFa5f9313F1F2b599173f24807a882F498Be118c"
-            },
             "5000": {
               "tokenAddress": "0x5f45Cd59BA7F2f6bcD935663F68Ee1dEbE3B8a10"
             },
@@ -71161,9 +69378,6 @@
             },
             "42161": {
               "tokenAddress": "0x8a555e4Fc287650f5E8CA1778A35dd44e893d6Aa"
-            },
-            "42170": {
-              "tokenAddress": "0x148CaF6FfBaBa15F35deE7e2813d1F4c6da288F3"
             },
             "42220": {
               "tokenAddress": "0x555a37E52791904c097ECAB03da0009a0c7c4FCf"
@@ -71203,9 +69417,6 @@
             "1088": {
               "minDstGas": 200000
             },
-            "4200": {
-              "minDstGas": 200000
-            },
             "5000": {
               "minDstGas": 200000
             },
@@ -71217,9 +69428,6 @@
             },
             "42161": {
               "minDstGas": 2000000
-            },
-            "42170": {
-              "minDstGas": 200000
             },
             "42220": {
               "minDstGas": 200000
@@ -71487,9 +69695,6 @@
             "42161": {
               "tokenAddress": "0xA698B510cE2A3ED439d93E3e2C79a9A87782164f"
             },
-            "42170": {
-              "tokenAddress": "0xeC5D4172DA5B15587dB2b955D7f5aa8C1c8ae496"
-            },
             "42220": {
               "tokenAddress": "0x8919eBCba6C8aBAB34A341fA0B3BA35fE3589dB2"
             },
@@ -71526,9 +69731,6 @@
               "minDstGas": 300000
             },
             "42161": {
-              "minDstGas": 300000
-            },
-            "42170": {
               "minDstGas": 300000
             },
             "42220": {
@@ -71752,9 +69954,6 @@
               "tokenAddress": "0x89BAfaD9B675973F374EE541634afb9242d65Ffc"
             },
             "42161": {
-              "tokenAddress": "0x89BAfaD9B675973F374EE541634afb9242d65Ffc"
-            },
-            "42170": {
               "tokenAddress": "0x89BAfaD9B675973F374EE541634afb9242d65Ffc"
             },
             "42220": {
@@ -72039,9 +70238,6 @@
             "42161": {
               "tokenAddress": "0xD0f6733564BaE9aB83aE4FFC4a07073110aA9D21"
             },
-            "42170": {
-              "tokenAddress": "0x7a3E8E33De6789dD0378BDc2c8BFE5DBF3E9fbbA"
-            },
             "42220": {
               "tokenAddress": "0xE86B177C6464bA905F95ff82F1fD00a23465D86F"
             },
@@ -72082,9 +70278,6 @@
             },
             "42161": {
               "minDstGas": 2000000
-            },
-            "42170": {
-              "minDstGas": 200000
             },
             "42220": {
               "minDstGas": 200000
@@ -72435,9 +70628,6 @@
             "42161": {
               "tokenAddress": "0xA6964d554f5A3a1DD2f8a2bab9853Bdb883eFA32"
             },
-            "42170": {
-              "tokenAddress": "0x818529140C65Ad9152bcE5d87fF42632820CEBFB"
-            },
             "43114": {
               "tokenAddress": "0x6c4495b2eD95Ad3A2050aad60D410fA9782F08cA"
             }
@@ -72466,9 +70656,6 @@
             },
             "42161": {
               "minDstGas": 2000000
-            },
-            "42170": {
-              "minDstGas": 200000
             },
             "43114": {
               "minDstGas": 200000
@@ -72678,9 +70865,6 @@
             "42161": {
               "tokenAddress": "0xFD92930CA50ab900171643a8a47BC57d760a5d95"
             },
-            "42170": {
-              "tokenAddress": "0xc67505DEaA9C0c08B9bcf2F55476C66b77e0c82f"
-            },
             "42220": {
               "tokenAddress": "0xc67505DEaA9C0c08B9bcf2F55476C66b77e0c82f"
             },
@@ -72714,9 +70898,6 @@
               "minDstGas": 200000
             },
             "42161": {
-              "minDstGas": 200000
-            },
-            "42170": {
               "minDstGas": 200000
             },
             "42220": {
@@ -74082,9 +72263,6 @@
             "42161": {
               "tokenAddress": "0xe42E70881Ee9277Fa3F2dbb1F23eB38D12de2F9A"
             },
-            "42170": {
-              "tokenAddress": "0x1709b7dFcd7204015fB18C43eFEAD543ADe43054"
-            },
             "57073": {
               "tokenAddress": "0xe2510aA4b019af3Eb835d3aC9c800382109A4631"
             },
@@ -74320,9 +72498,6 @@
             "42161": {
               "tokenAddress": "0x1572D48a52906B834FB236AA77831d669F6d87A1"
             },
-            "42170": {
-              "tokenAddress": "0xe2510aA4b019af3Eb835d3aC9c800382109A4631"
-            },
             "55244": {
               "tokenAddress": "0x8633aCcBeACa79D9a2dc11D682458cf5089b9dE9"
             },
@@ -74363,9 +72538,6 @@
             },
             "42161": {
               "minDstGas": 2000000
-            },
-            "42170": {
-              "minDstGas": 200000
             },
             "55244": {
               "minDstGas": 200000
@@ -75093,9 +73265,6 @@
             "1116": {
               "tokenAddress": "0xC7CC66a88e2f121Fb104344EAcB7BA7bCAe79DFA"
             },
-            "4200": {
-              "tokenAddress": "0xAFa5f9313F1F2b599173f24807a882F498Be118c"
-            },
             "5000": {
               "tokenAddress": "0x5f45Cd59BA7F2f6bcD935663F68Ee1dEbE3B8a10"
             },
@@ -75107,9 +73276,6 @@
             },
             "42161": {
               "tokenAddress": "0x8a555e4Fc287650f5E8CA1778A35dd44e893d6Aa"
-            },
-            "42170": {
-              "tokenAddress": "0x148CaF6FfBaBa15F35deE7e2813d1F4c6da288F3"
             },
             "42220": {
               "tokenAddress": "0x555a37E52791904c097ECAB03da0009a0c7c4FCf"
@@ -75161,9 +73327,6 @@
             "1116": {
               "minDstGas": 200000
             },
-            "4200": {
-              "minDstGas": 200000
-            },
             "5000": {
               "minDstGas": 200000
             },
@@ -75175,9 +73338,6 @@
             },
             "42161": {
               "minDstGas": 2000000
-            },
-            "42170": {
-              "minDstGas": 200000
             },
             "42220": {
               "minDstGas": 200000
@@ -75352,9 +73512,6 @@
               "tokenAddress": "0x89BAfaD9B675973F374EE541634afb9242d65Ffc"
             },
             "42161": {
-              "tokenAddress": "0x89BAfaD9B675973F374EE541634afb9242d65Ffc"
-            },
-            "42170": {
               "tokenAddress": "0x89BAfaD9B675973F374EE541634afb9242d65Ffc"
             },
             "42220": {
@@ -77926,9 +76083,6 @@
             "42161": {
               "tokenAddress": "0x89BAfaD9B675973F374EE541634afb9242d65Ffc"
             },
-            "42170": {
-              "tokenAddress": "0x89BAfaD9B675973F374EE541634afb9242d65Ffc"
-            },
             "42220": {
               "tokenAddress": "0x89BAfaD9B675973F374EE541634afb9242d65Ffc"
             },
@@ -77993,9 +76147,6 @@
             "42161": {
               "tokenAddress": "0xD0f6733564BaE9aB83aE4FFC4a07073110aA9D21"
             },
-            "42170": {
-              "tokenAddress": "0x7a3E8E33De6789dD0378BDc2c8BFE5DBF3E9fbbA"
-            },
             "43114": {
               "tokenAddress": "0xB8B29d483732717F77e90C3A669369E4994bC878"
             },
@@ -78030,9 +76181,6 @@
             },
             "42161": {
               "minDstGas": 2000000
-            },
-            "42170": {
-              "minDstGas": 200000
             },
             "43114": {
               "minDstGas": 200000
@@ -78266,9 +76414,6 @@
             },
             "42161": {
               "tokenAddress": "0xe42E70881Ee9277Fa3F2dbb1F23eB38D12de2F9A"
-            },
-            "42170": {
-              "tokenAddress": "0x1709b7dFcd7204015fB18C43eFEAD543ADe43054"
             },
             "57073": {
               "tokenAddress": "0xe2510aA4b019af3Eb835d3aC9c800382109A4631"
@@ -78697,9 +76842,6 @@
             "42161": {
               "tokenAddress": "0xCE0690a849FD00227A769BcC53c1C6266cc84483"
             },
-            "42170": {
-              "tokenAddress": "0x3922de582D630c221AebB2297d86e66bDED1E8D0"
-            },
             "42220": {
               "tokenAddress": "0x6a396A76EdB76d4d2E8a05d33fe4364a3942ab1e"
             },
@@ -79115,9 +77257,6 @@
             "42161": {
               "tokenAddress": "0x1572D48a52906B834FB236AA77831d669F6d87A1"
             },
-            "42170": {
-              "tokenAddress": "0xe2510aA4b019af3Eb835d3aC9c800382109A4631"
-            },
             "55244": {
               "tokenAddress": "0x8633aCcBeACa79D9a2dc11D682458cf5089b9dE9"
             },
@@ -79158,9 +77297,6 @@
             },
             "42161": {
               "minDstGas": 2000000
-            },
-            "42170": {
-              "minDstGas": 200000
             },
             "55244": {
               "minDstGas": 200000
@@ -79397,9 +77533,6 @@
             "42161": {
               "tokenAddress": "0x5abB7FEA061a97329059f35635f24Cb946652C42"
             },
-            "42170": {
-              "tokenAddress": "0xab36258c317009A716440f87b83910B208e7c16b"
-            },
             "42220": {
               "tokenAddress": "0x8C756880599d31fA8c838a845056E7588C327c87"
             },
@@ -79436,9 +77569,6 @@
               "minDstGas": 200000
             },
             "42161": {
-              "minDstGas": 200000
-            },
-            "42170": {
               "minDstGas": 200000
             },
             "42220": {
@@ -79498,9 +77628,6 @@
             "42161": {
               "tokenAddress": "0x1572D48a52906B834FB236AA77831d669F6d87A1"
             },
-            "42170": {
-              "tokenAddress": "0xe2510aA4b019af3Eb835d3aC9c800382109A4631"
-            },
             "55244": {
               "tokenAddress": "0x8633aCcBeACa79D9a2dc11D682458cf5089b9dE9"
             },
@@ -79541,9 +77668,6 @@
             },
             "42161": {
               "minDstGas": 2000000
-            },
-            "42170": {
-              "minDstGas": 200000
             },
             "55244": {
               "minDstGas": 200000
@@ -79724,9 +77848,6 @@
             "42161": {
               "tokenAddress": "0x89BAfaD9B675973F374EE541634afb9242d65Ffc"
             },
-            "42170": {
-              "tokenAddress": "0x89BAfaD9B675973F374EE541634afb9242d65Ffc"
-            },
             "42220": {
               "tokenAddress": "0x89BAfaD9B675973F374EE541634afb9242d65Ffc"
             },
@@ -79844,9 +77965,6 @@
             "42161": {
               "tokenAddress": "0xe42E70881Ee9277Fa3F2dbb1F23eB38D12de2F9A"
             },
-            "42170": {
-              "tokenAddress": "0x1709b7dFcd7204015fB18C43eFEAD543ADe43054"
-            },
             "57073": {
               "tokenAddress": "0xe2510aA4b019af3Eb835d3aC9c800382109A4631"
             },
@@ -79904,9 +78022,6 @@
             },
             "42161": {
               "tokenAddress": "0xCE0690a849FD00227A769BcC53c1C6266cc84483"
-            },
-            "42170": {
-              "tokenAddress": "0x3922de582D630c221AebB2297d86e66bDED1E8D0"
             },
             "42220": {
               "tokenAddress": "0x6a396A76EdB76d4d2E8a05d33fe4364a3942ab1e"
@@ -79991,9 +78106,6 @@
             "42161": {
               "tokenAddress": "0x8a555e4Fc287650f5E8CA1778A35dd44e893d6Aa"
             },
-            "42170": {
-              "tokenAddress": "0x148CaF6FfBaBa15F35deE7e2813d1F4c6da288F3"
-            },
             "42220": {
               "tokenAddress": "0x555a37E52791904c097ECAB03da0009a0c7c4FCf"
             },
@@ -80031,9 +78143,6 @@
             },
             "42161": {
               "minDstGas": 2000000
-            },
-            "42170": {
-              "minDstGas": 200000
             },
             "42220": {
               "minDstGas": 200000
@@ -80549,10 +78658,9 @@
       "extensions": {}
     }
   ],
-  "tags": {},
   "keywords": [
     "hermes",
-    "default"
+    "inactive"
   ],
   "logoURI": "https://raw.githubusercontent.com/Maia-DAO/token-list-v2/main/logos/Hermes-color.svg"
 }
