@@ -16,6 +16,7 @@ class TokenLiquidityChecker {
         this.tokenListPath = options.tokenListPath || path.resolve(__dirname, '../token-list.json');
         this.inactiveTokenListPath = options.inactiveTokenListPath || path.resolve(__dirname, '../inactive-token-list.json');
         this.wrappedNativeTokensListPath = path.resolve(__dirname, '../wrappedNatives.json');
+        this.ulyssesTokensListPath = path.resolve(__dirname, '../output/ulysses.json');
         this.backupSuffix = options.backupSuffix || '.bak';
 
         // Rate limiting
@@ -122,6 +123,11 @@ class TokenLiquidityChecker {
     async loadWrappedNatives(){
         console.log('Loading wrapped native tokens...');
         return this.readJson(this.wrappedNativeTokensListPath)
+    }
+
+    async loadUlysses(){
+        console.log('Loading Ulysses tokens...');
+        return this.readJson(this.ulyssesTokensListPath)
     }
 
     /**
@@ -274,64 +280,66 @@ class TokenLiquidityChecker {
     }
 
     /**
+     * Format Liquidity API repsonse
+     */
+    formatLiquidityResult = ({ success, totalLiquidity = 0, pairsCount = 0, error = null, chainSupported = true, source }) => {
+        return {
+            success,
+            hasLiquidity: success && totalLiquidity > 0,
+            totalLiquidity,
+            pairsCount,
+            chainSupported,
+            error: error || undefined,
+            source
+        };
+    };
+
+    /**
      * Check liquidity using DEXScreener API
      */
     async checkLiquidityDEXScreener(chainId, tokenAddress) {
         try {
             await this.rateLimit();
-
+    
             const chainName = this.chainMappings.dexscreener[chainId];
-
             if (!chainName) {
                 const chainKey = CHAIN_KEYS[chainId];
-                return {
+                return this.formatLiquidityResult({
                     success: false,
                     error: `Chain ${chainKey || chainId} not supported by DEXScreener`,
-                    chainSupported: false
-                };
+                    chainSupported: false,
+                    source: 'dexscreener'
+                });
             }
-
+    
             const url = `https://api.dexscreener.com/tokens/v1/${chainName}/${tokenAddress}`;
             const response = await fetch(url);
-
-            if (!response.ok) {
-                throw new Error(`HTTP ${response.status}`);
-            }
-
+    
+            if (!response.ok) throw new Error(`HTTP ${response.status}`);
+    
             const data = await response.json();
-
             if (!data || data.length === 0) {
-                return {
-                    success: true,
-                    hasLiquidity: false,
-                    totalLiquidity: 0,
-                    pairsCount: 0,
-                    chainSupported: true,
-                    source: 'dexscreener'
-                };
+                return this.formatLiquidityResult({ success: true, source: 'dexscreener' });
             }
-
-            // Calculate total liquidity
+    
             const totalLiquidity = data.reduce((sum, pair) => {
                 return sum + (parseFloat(pair.liquidity?.usd) || 0);
             }, 0);
-
-            return {
+    
+            return this.formatLiquidityResult({
                 success: true,
-                hasLiquidity: totalLiquidity > 0,
-                totalLiquidity: totalLiquidity,
+                totalLiquidity,
                 pairsCount: data.length,
-                chainSupported: true,
                 source: 'dexscreener'
-            };
-
+            });
+    
         } catch (error) {
-            return {
+            return this.formatLiquidityResult({
                 success: false,
                 error: error.message,
                 chainSupported: this.isChainSupported(chainId, 'dexscreener'),
                 source: 'dexscreener'
-            };
+            });
         }
     }
 
@@ -341,59 +349,46 @@ class TokenLiquidityChecker {
     async checkLiquidityGeckoTerminal(chainId, tokenAddress) {
         try {
             await this.rateLimit();
-
+    
             const networkName = this.chainMappings.geckoterminal[chainId];
             if (!networkName) {
                 const chainKey = CHAIN_KEYS[chainId];
-                return {
+                return this.formatLiquidityResult({
                     success: false,
                     error: `Chain ${chainKey || chainId} not supported by GeckoTerminal`,
-                    chainSupported: false
-                };
+                    chainSupported: false,
+                    source: 'geckoterminal'
+                });
             }
-
+    
             const url = `https://api.geckoterminal.com/api/v2/search/pools?query=${tokenAddress}&network=${networkName}&page=1`;
             const response = await fetch(url);
-
-            if (!response.ok) {
-                throw new Error(`HTTP ${response.status}`);
-            }
-
+    
+            if (!response.ok) throw new Error(`HTTP ${response.status}`);
+    
             const data = await response.json();
-
-            if (!data.data || data.data.length === 0) {
-                return {
-                    success: true,
-                    hasLiquidity: false,
-                    totalLiquidity: 0,
-                    pairsCount: 0,
-                    chainSupported: true,
-                    source: 'geckoterminal'
-                };
+            if (!data?.data || data.data.length === 0) {
+                return this.formatLiquidityResult({ success: true, source: 'geckoterminal' });
             }
-
-            // Calculate total liquidity from pools
+    
             const totalLiquidity = data.data.reduce((sum, pool) => {
-                const liquidityUsd = parseFloat(pool.attributes?.reserve_in_usd) || 0;
-                return sum + liquidityUsd;
+                return sum + (parseFloat(pool.attributes?.reserve_in_usd) || 0);
             }, 0);
-
-            return {
+    
+            return this.formatLiquidityResult({
                 success: true,
-                hasLiquidity: totalLiquidity > 0,
-                totalLiquidity: totalLiquidity,
+                totalLiquidity,
                 pairsCount: data.data.length,
-                chainSupported: true,
                 source: 'geckoterminal'
-            };
-
+            });
+    
         } catch (error) {
-            return {
+            return this.formatLiquidityResult({
                 success: false,
                 error: error.message,
                 chainSupported: this.isChainSupported(chainId, 'geckoterminal'),
                 source: 'geckoterminal'
-            };
+            });
         }
     }
 
@@ -402,10 +397,9 @@ class TokenLiquidityChecker {
      */
     async checkTokenLiquidity(tokenObject, options = {}) {
         const { primaryAPI = 'dexscreener', minimumLiquidity = MINIMUM_LIQUIDITY } = options;
-
-        const chainId = tokenObject.chainId;
+        const { chainId } = tokenObject;
         const tokenAddress = this.getTokenAddress(tokenObject.originalToken);
-
+    
         if (!chainId || !tokenAddress) {
             return {
                 success: false,
@@ -413,28 +407,24 @@ class TokenLiquidityChecker {
                 tokenObject
             };
         }
-
+    
         let result;
-
-        // Try primary API first
-        if (primaryAPI === 'dexscreener') {
-            result = await this.checkLiquidityDEXScreener(chainId, tokenAddress);
-
-            // If DEXScreener fails, try GeckoTerminal as backup
-            if (!result.success) {
-                console.log(`DEXScreener failed for ${tokenAddress}, trying GeckoTerminal...`);
-                result = await this.checkLiquidityGeckoTerminal(chainId, tokenAddress);
-            }
-        } else {
-            result = await this.checkLiquidityGeckoTerminal(chainId, tokenAddress);
-
-            // If GeckoTerminal fails, try DEXScreener as backup
-            if (!result.success) {
-                console.log(`GeckoTerminal failed for ${tokenAddress}, trying DEXScreener...`);
-                result = await this.checkLiquidityDEXScreener(chainId, tokenAddress);
-            }
+    
+        const primary = primaryAPI === 'dexscreener'
+            ? this.checkLiquidityDEXScreener
+            : this.checkLiquidityGeckoTerminal;
+    
+        const fallback = primaryAPI === 'dexscreener'
+            ? this.checkLiquidityGeckoTerminal
+            : this.checkLiquidityDEXScreener;
+    
+        result = await primary.call(this, chainId, tokenAddress);
+    
+        if (!result.success) {
+            console.log(`${primaryAPI} failed for ${tokenAddress}, trying fallback...`);
+            result = await fallback.call(this, chainId, tokenAddress);
         }
-
+    
         return {
             ...result,
             tokenObject,
@@ -522,7 +512,7 @@ class TokenLiquidityChecker {
 
         for (const result of results.results) {
             const originalToken = result.tokenObject.originalToken;
-            const tokenKey = `${originalToken.source}_${originalToken.chainId}_${this.getTokenAddress(originalToken)}`;
+            const tokenKey = `${originalToken.source}_${originalToken.chainId}_${this.getTokenAddress(originalToken).toLowerCase()}`;
 
             if (!tokenResults.has(tokenKey)) {
                 tokenResults.set(tokenKey, {
@@ -577,16 +567,15 @@ class TokenLiquidityChecker {
 
         return tokenResults.filter(result => {
             const token = result.token;
-
+            
             // Skip if there's no liquidity info for that chain
             if (result.unsupportedChain) return false;
-
+            
             // Skip if token is in ignoreTokensList
-            if (ignoreTokens.filter((t)=>this.getTokenAddress(t) === this.getTokenAddress(token) && t.chainId === token.chainId)?.length > 0) return false;
+            if (ignoreTokens.some((t)=> this.getTokenAddress(t).toLowerCase() === this.getTokenAddress(token).toLowerCase() && t.chainId === token.chainId)) return false;
 
             // Skip if token is in ignoreSymbolsList
             if (ignoreSymbols.includes(token.symbol)) return false;
-
 
             const isUlysses = Boolean(token.underlyingAddress && token.underlyingAddress.length > 0);
             const isBridgeable = Boolean(token.isOFT || token.isAcross);
@@ -720,6 +709,8 @@ async function runLiquidityCheck() {
         });
 
         const wrappedNativesTokenList = await checker.loadWrappedNatives();
+        const ulyssesTokenList = await checker.loadUlysses();
+        const tokensToIgnore = [...wrappedNativesTokenList, ...ulyssesTokenList.tokens, ...ulyssesTokenList.rootTokens]
 
         console.log('\n=== LIQUIDITY ANALYSIS SUMMARY ===');
         console.log(`Total tokens analyzed: ${result.summary.totalTokens}`);
@@ -730,7 +721,7 @@ async function runLiquidityCheck() {
         // Show tokens with insufficient liquidity
         const tokensToFlag = checker.filterTokens(result.tokenResults, {
             minimumLiquidity: MINIMUM_LIQUIDITY,
-            ignoreTokens: wrappedNativesTokenList,
+            ignoreTokens: tokensToIgnore,
             ignoreSymbols: CORE_TOKEN_SYMBOLS,
             trueIfBridgeableFalseIfNotBridgeable: true
         });
@@ -781,7 +772,7 @@ async function runLiquidityCheck() {
         // Delete non-bridgeable tokens with insufficient liquidity 
         const tokensToDelete = checker.filterTokens(result.tokenResults, {
             minimumLiquidity: MINIMUM_LIQUIDITY,
-            ignoreTokens: wrappedNativesTokenList,
+            ignoreTokens: tokensToIgnore,
             ignoreSymbols: CORE_TOKEN_SYMBOLS,
             trueIfBridgeableFalseIfNotBridgeable: false
         });
