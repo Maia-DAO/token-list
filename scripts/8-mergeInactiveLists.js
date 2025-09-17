@@ -1,7 +1,7 @@
 const fs = require('fs').promises
 const path = require('path')
 const { SupportedChainId } = require('maia-core-sdk')
-const { orderTokens } = require('./orderTokens')
+const { orderTokens } = require('../helpers')
 const { BLOCKED_TOKEN_SYMBOLS, EXTENDED_SUPPORTED_CHAIN_IDS } = require('../configs')
 
 
