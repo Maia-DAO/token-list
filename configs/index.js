@@ -165,6 +165,107 @@ const OVERRIDE_LOGO = {
   'WNIBI': 'https://images-ext-1.discordapp.net/external/tM3n2iub1SLOqiey4mkfnl4Lfe4LR6ijT-Ixv7juEu8/https/silverswap.io/tokens/nibiru/WNIBI.png?format=webp&quality=lossless&width=450&height=450',
 }
 
+// Wrapped Native Token Address Per Chain
+// @dev copied from hermes UI frontend wrappedNative.ts 
+const WRAPPED_NATIVES = {
+  [1]:
+    '0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2',
+  [42161]:
+    '0x82aF49447D8a07e3bd95BD0d56f35241523fBab1',
+  [8453]:
+    '0x4200000000000000000000000000000000000006',
+  [56]:
+    '0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c',
+  [80094]:
+    '0x6969696969696969696969696969696969696969',
+  [10]:
+  '0x4200000000000000000000000000000000000006',
+  [1088]:
+    '0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000',
+  [43114]:
+    '0xB31f66AA3C1e785363F0875A1B74E27b85FD66c7',
+  [146]:
+    '0x039e2fB66102314Ce7b64Ce5Ce3E5183bc94aD38',
+  [137]:
+    '0x0d500B1d8E8eF31E21C99d1Db9A6444d3ADf1270',
+  [1923]:
+    '0x4200000000000000000000000000000000000006',
+  [252]:
+    '0xFc00000000000000000000000000000000000002',
+  [30]:
+    '0x542fDA317318eBF1d3DEAf76E0b632741A7e677d',
+  [60808]:
+    '0x4200000000000000000000000000000000000006',
+  [747]:
+    '0xd3bF53DAC106A0290B0483EcBC89d40FcC961f3e',
+  [200901]:
+    '0x0E4cF4Affdb72b39Ea91fA726D291781cBd020bF',
+  [57073]:
+    '0x4200000000000000000000000000000000000006',
+  [1116]:
+    '0x40375C92d9FAf44d2f9db9Bd9ba41a3317a2404f',
+  [1996]:
+    '0x754cDAd6f5821077d6915004Be2cE05f93d176f8',
+  [534352]:
+    '0x5300000000000000000000000000000000000004',
+  [33139]:
+    '0x48b62137EdfA95a428D35C09E44256a739F6B557',
+  [42220]:
+    '0x471EcE3750Da237f93B8E339c536989b8978a438',
+  [239]:
+    '0xB63B9f0eb4A6E6f191529D71d4D88cc8900Df2C9',
+  [1329]:
+    '0xE30feDd158A2e3b13e9badaeABaFc5516e95e8C7',
+  [50]:
+    '0x951857744785E80e2De051c32EE7b25f9c458C42',
+  [480]:
+    '0x4200000000000000000000000000000000000006',
+  [747474]:
+    '0xEE7D8BCFb72bC1880D0Cf19822eB0A2e6577aB62',
+  [130]:
+    '0x4200000000000000000000000000000000000006',
+  [999]:
+    '0x5555555555555555555555555555555555555555',
+  [291]:
+    '0x4200000000000000000000000000000000000006',
+  [7777777]:
+    '0x4200000000000000000000000000000000000006',
+  [3338]:
+    '0x0000000000000000000000000000000000000809',
+  [204]:
+    '0x4200000000000000000000000000000000000006',
+  [55244]:
+    '0x1fB719f10b56d7a85DCD32f27f897375fB21cfdd',
+  [169]:
+    '0x0Dc808adcE2099A9F62AA87D9670745AbA741746',
+  [1625]:
+    '0xBB859E225ac8Fb6BE1C7e38D87b767e95Fef0EbD',
+  [2345]:
+    '0xbC10000000000000000000000000000000000000',
+  [100]:
+    '0xe91D153E0b41518A2Ce8Dd3D7944Fa863463a97d',
+  [2818]:
+    '0x5300000000000000000000000000000000000011',
+  [59144]:
+    '0xe5D7C2a44FfDDf6b295A15c148167daaAf5Cf34f',
+  [1868]:
+    '0x4200000000000000000000000000000000000006',
+  [6900]:
+    '0x0CaCF669f8446BeCA826913a3c6B96aCD4b02a97',
+  [167000]:
+    '0xA51894664A773981C6C112C43ce576f315d5b1B6',
+  [98866]:
+    '0xEa237441c92CAe6FC17Caaf9a7acB3f953be4bd1',
+  [14]:
+    '0x1D80c49BbBCd1C0911346656B529DF9E5c2F783d',
+  [34443]:
+    '0x4200000000000000000000000000000000000006',
+  [81457]:
+    '0x4300000000000000000000000000000000000004',
+  [5000]:
+    '0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000',
+}
+
 // List of chainIds without DEX Aggregation support in Hermes UI
 // @dev copied from hermes UI frontend bridging.ts
 const CHAINS_WITH_NO_SWAPPING = [
@@ -426,7 +527,7 @@ const CHAIN_KEY_TO_ID = {
   sonic: 146,
   polygon: 137,
   swell: 1923,
-  fraxtal: 252,
+  fraxtal: 252,    
   // Extended chain IDs
   xlayer: 196,
   rootstock: 30,
@@ -489,7 +590,7 @@ const CHAIN_KEY_TO_ID = {
   blast: 81457,
   bevm: 11501,
   mantle: 5000,
-}
+}              
 
 const OVERRIDE_LZNETWORKS = {
   'linea': 'zkconsensys-mainnet',
@@ -511,91 +612,12 @@ const EID_TO_VERSION = Object.values(CHAIN_KEY_TO_EID).reduce((map, { v1, v2 }) 
 }, {})
 
 
-// // Convert chain name to endpoint ID
-// const CHAIN_KEY_TO_EID = {
-//   ethereum: {
-//     v1: networkToEndpointId(chainAndStageToNetwork('ethereum', Stage.MAINNET), EndpointVersion.V1),
-//     v2: networkToEndpointId(chainAndStageToNetwork('ethereum', Stage.MAINNET), EndpointVersion.V2),
-//   },
-//   arbitrum: {
-//     v1: networkToEndpointId(chainAndStageToNetwork('arbitrum', Stage.MAINNET), EndpointVersion.V1),
-//     v2: networkToEndpointId(chainAndStageToNetwork('arbitrum', Stage.MAINNET), EndpointVersion.V2),
-//   },
-//   base: {
-//     v1: networkToEndpointId(chainAndStageToNetwork('base', Stage.MAINNET), EndpointVersion.V1),
-//     v2: networkToEndpointId(chainAndStageToNetwork('base', Stage.MAINNET), EndpointVersion.V2),
-//   },
-//   bsc: {
-//     v1: networkToEndpointId(chainAndStageToNetwork('bsc', Stage.MAINNET), EndpointVersion.V1),
-//     v2: networkToEndpointId(chainAndStageToNetwork('bsc', Stage.MAINNET), EndpointVersion.V2),
-//   },
-//   bera: {
-//     v1: networkToEndpointId(chainAndStageToNetwork('bera', Stage.MAINNET), EndpointVersion.V1),
-//     v2: networkToEndpointId(chainAndStageToNetwork('bera', Stage.MAINNET), EndpointVersion.V2),
-//   },
-//   optimism: {
-//     v1: networkToEndpointId(chainAndStageToNetwork('optimism', Stage.MAINNET), EndpointVersion.V1),
-//     v2: networkToEndpointId(chainAndStageToNetwork('optimism', Stage.MAINNET), EndpointVersion.V2),
-//   },
-//   metis: {
-//     v1: networkToEndpointId(chainAndStageToNetwork('metis', Stage.MAINNET), EndpointVersion.V1),
-//     v2: networkToEndpointId(chainAndStageToNetwork('metis', Stage.MAINNET), EndpointVersion.V2),
-//   },
-//   avalanche: {
-//     v1: networkToEndpointId(chainAndStageToNetwork('avalanche', Stage.MAINNET), EndpointVersion.V1),
-//     v2: networkToEndpointId(chainAndStageToNetwork('avalanche', Stage.MAINNET), EndpointVersion.V2),
-//   },
-//   sonic: {
-//     v1: networkToEndpointId(chainAndStageToNetwork('sonic', Stage.MAINNET), EndpointVersion.V1),
-//     v2: networkToEndpointId(chainAndStageToNetwork('sonic', Stage.MAINNET), EndpointVersion.V2),
-//   },
-//   polygon: {
-//     v1: networkToEndpointId(chainAndStageToNetwork('polygon', Stage.MAINNET), EndpointVersion.V1),
-//     v2: networkToEndpointId(chainAndStageToNetwork('polygon', Stage.MAINNET), EndpointVersion.V2),
-//   },
-//   swell: {
-//     v1: networkToEndpointId(chainAndStageToNetwork('swell', Stage.MAINNET), EndpointVersion.V1),
-//     v2: networkToEndpointId(chainAndStageToNetwork('swell', Stage.MAINNET), EndpointVersion.V2),
-//   },
-//   fraxtal: {
-//     v1: networkToEndpointId(chainAndStageToNetwork('fraxtal', Stage.MAINNET), EndpointVersion.V1),
-//     v2: networkToEndpointId(chainAndStageToNetwork('fraxtal', Stage.MAINNET), EndpointVersion.V2),
-//   },
-// }
-
-// // Convert eid to version
-// const EID_TO_VERSION = {
-//   [networkToEndpointId(chainAndStageToNetwork('ethereum', Stage.MAINNET), EndpointVersion.V1)]: 1,
-//   [networkToEndpointId(chainAndStageToNetwork('ethereum', Stage.MAINNET), EndpointVersion.V2)]: 2,
-//   [networkToEndpointId(chainAndStageToNetwork('arbitrum', Stage.MAINNET), EndpointVersion.V1)]: 1,
-//   [networkToEndpointId(chainAndStageToNetwork('arbitrum', Stage.MAINNET), EndpointVersion.V2)]: 2,
-//   [networkToEndpointId(chainAndStageToNetwork('base', Stage.MAINNET), EndpointVersion.V1)]: 1,
-//   [networkToEndpointId(chainAndStageToNetwork('base', Stage.MAINNET), EndpointVersion.V2)]: 2,
-//   [networkToEndpointId(chainAndStageToNetwork('bsc', Stage.MAINNET), EndpointVersion.V1)]: 1,
-//   [networkToEndpointId(chainAndStageToNetwork('bsc', Stage.MAINNET), EndpointVersion.V2)]: 2,
-//   [networkToEndpointId(chainAndStageToNetwork('bera', Stage.MAINNET), EndpointVersion.V1)]: 1,
-//   [networkToEndpointId(chainAndStageToNetwork('bera', Stage.MAINNET), EndpointVersion.V2)]: 2,
-//   [networkToEndpointId(chainAndStageToNetwork('optimism', Stage.MAINNET), EndpointVersion.V1)]: 1,
-//   [networkToEndpointId(chainAndStageToNetwork('optimism', Stage.MAINNET), EndpointVersion.V2)]: 2,
-//   [networkToEndpointId(chainAndStageToNetwork('metis', Stage.MAINNET), EndpointVersion.V1)]: 1,
-//   [networkToEndpointId(chainAndStageToNetwork('metis', Stage.MAINNET), EndpointVersion.V2)]: 2,
-//   [networkToEndpointId(chainAndStageToNetwork('avalanche', Stage.MAINNET), EndpointVersion.V1)]: 1,
-//   [networkToEndpointId(chainAndStageToNetwork('avalanche', Stage.MAINNET), EndpointVersion.V2)]: 2,
-//   [networkToEndpointId(chainAndStageToNetwork('sonic', Stage.MAINNET), EndpointVersion.V1)]: 1,
-//   [networkToEndpointId(chainAndStageToNetwork('sonic', Stage.MAINNET), EndpointVersion.V2)]: 2,
-//   [networkToEndpointId(chainAndStageToNetwork('polygon', Stage.MAINNET), EndpointVersion.V1)]: 1,
-//   [networkToEndpointId(chainAndStageToNetwork('polygon', Stage.MAINNET), EndpointVersion.V2)]: 2,
-//   [networkToEndpointId(chainAndStageToNetwork('swell', Stage.MAINNET), EndpointVersion.V1)]: 1,
-//   [networkToEndpointId(chainAndStageToNetwork('swell', Stage.MAINNET), EndpointVersion.V2)]: 2,
-//   [networkToEndpointId(chainAndStageToNetwork('fraxtal', Stage.MAINNET), EndpointVersion.V1)]: 1,
-//   [networkToEndpointId(chainAndStageToNetwork('fraxtal', Stage.MAINNET), EndpointVersion.V2)]: 2,
-// }
-
 module.exports = {
   CHAIN_KEYS,
   CHAIN_KEY_TO_ID,
   CHAIN_KEY_TO_EID,
   EID_TO_VERSION,
+  WRAPPED_NATIVES,
   SUPPORTED_CHAINS,
   CHAINS_WITH_NO_SWAPPING,
   EXTENDED_SUPPORTED_CHAIN_IDS,
