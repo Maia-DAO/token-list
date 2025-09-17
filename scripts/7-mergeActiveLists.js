@@ -1,12 +1,10 @@
 const fs = require('fs').promises
 const path = require('path')
 const { SupportedChainId, ZERO_ADDRESS } = require('maia-core-sdk')
-const { getCoinLogo } = require('./getCoinLogo')
-const { orderTokens } = require('./orderTokens')
-const { OVERRIDE_LOGO, PARTNER_TOKEN_SYMBOLS, CORE_TOKEN_SYMBOLS, BLOCKED_TOKEN_SYMBOLS, NATIVE_OFT_ADAPTERS, CHAINS_WITH_NO_SWAPPING, EXTENDED_SUPPORTED_CHAIN_IDS } = require('../configs')
-const { mergeExtensions, orderAttributes } = require('../helpers')
 
-// TODO: Add arbitrary Uniswap Token List support
+const { OVERRIDE_LOGO, PARTNER_TOKEN_SYMBOLS, CORE_TOKEN_SYMBOLS, BLOCKED_TOKEN_SYMBOLS, NATIVE_OFT_ADAPTERS, CHAINS_WITH_NO_SWAPPING, EXTENDED_SUPPORTED_CHAIN_IDS } = require('../configs')
+const { getCoinLogo } = require('./getCoinLogo')
+const { mergeExtensions, orderAttributes, orderTokens } = require('../helpers')
 
 // ---------------------------------------------------------------------
 // Normalization functions for tokens to the unified format

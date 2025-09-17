@@ -100,6 +100,36 @@ function orderAttributes(token) {
   return ordered
 }
 
+/**
+ * Comparator Function.
+ * @param {*} a - item to compare 
+ * @param {*} b - item to compare
+ * @returns -1 if smaller, 1 if greater or 0 if equal
+ */
+function sort(a, b) {
+  if (a < b) return -1
+  if (a > b) return 1
+  return 0
+}
+
+/**
+ * Orders tokens for a consistent output. 
+ * @param {*} tokenA - token to compare
+ * @param {*} tokenB - token to compare
+ * @returns -1 if smaller, 1 if greater or 0 if equal
+ */
+function orderTokens(tokenA, tokenB) {
+  if (tokenA.chainId === tokenB.chainId) {
+    const addressA = tokenA.address ?? tokenA.underlyingAddress
+    const addressB = tokenB.address ?? tokenB.underlyingAddress
+
+    return sort(addressA, addressB)
+  }
+
+  return sort(tokenA.chainId, tokenB.chainId)
+}
+
+
 // TODO: Update once non-EVM chains are supported
 /**
  * Function to get a clean, normalized address.
@@ -272,4 +302,5 @@ module.exports = {
   mergeExtensions,
   orderExtensions,
   orderAttributes,
+  orderTokens
 }
