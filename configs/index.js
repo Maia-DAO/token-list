@@ -165,6 +165,8 @@ const OVERRIDE_LOGO = {
   'WNIBI': 'https://images-ext-1.discordapp.net/external/tM3n2iub1SLOqiey4mkfnl4Lfe4LR6ijT-Ixv7juEu8/https/silverswap.io/tokens/nibiru/WNIBI.png?format=webp&quality=lossless&width=450&height=450',
 }
 
+// List of chainIds without DEX Aggregation support in Hermes UI
+// @dev copied from hermes UI frontend bridging.ts
 const CHAINS_WITH_NO_SWAPPING = [
   252,
   200901,
