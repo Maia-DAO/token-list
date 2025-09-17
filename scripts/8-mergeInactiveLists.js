@@ -108,8 +108,7 @@ async function main() {
       timestamp: Math.floor(Date.now() / 1000).toString(),
       version: { major: 1, minor: 0, patch: 0 }, // default version if no previous exists
       tokens: finalTokens,
-      tags: {},
-      keywords: ['hermes', 'default'],
+      keywords: ['hermes', 'inactive'],
       logoURI: 'https://raw.githubusercontent.com/Maia-DAO/token-list-v2/main/logos/Hermes-color.svg',
     }
 

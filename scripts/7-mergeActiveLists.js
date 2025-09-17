@@ -493,7 +493,6 @@ async function main() {
       version: { major: 1, minor: 0, patch: 0 }, // default version if no previous exists
       tokens: finalTokens,
       rootTokens: finalRootTokens,
-      tags: {},
       keywords: ['hermes', 'default'],
       logoURI: 'https://raw.githubusercontent.com/Maia-DAO/token-list-v2/main/logos/Hermes-color.svg',
     }
