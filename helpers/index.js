@@ -4,8 +4,8 @@ const { CHAIN_KEY_TO_ID } = require('../configs')
 const { MULTICALL3_ABI, MULTICALL3_ADDRESS, MULTICALL3_ADDRESSES } = require('../abi')
 
 /**
- * Merge two extensions objects, combining their properties. 
- * @param {object} ext1 - the first extensions object  
+ * Merge two extensions objects, combining their properties.
+ * @param {object} ext1 - the first extensions object
  * @param {object} ext2 - the second extensions object
  * @returns {object} a new object with merged properties
  */
@@ -30,35 +30,29 @@ function mergeExtensions(ext1 = {}, ext2 = {}) {
  *   [ coingeckoId, coinMarketCapId, bridgeInfo, acrossInfo, oftInfo, …rest ]
  */
 function orderExtensions(ext = {}) {
-  const ordered = {};
-  const priority = [
-    'coingeckoId',
-    'coinMarketCapId',
-    'bridgeInfo',
-    'acrossInfo',
-    'oftInfo'
-  ];
+  const ordered = {}
+  const priority = ['coingeckoId', 'coinMarketCapId', 'bridgeInfo', 'acrossInfo', 'oftInfo']
 
   // copy priority keys first (if present)
   for (const key of priority) {
     if (key in ext) {
-      ordered[key] = ext[key];
+      ordered[key] = ext[key]
     }
   }
 
   // then copy all the rest
   for (const key of Object.keys(ext)) {
     if (!(key in ordered)) {
-      ordered[key] = ext[key];
+      ordered[key] = ext[key]
     }
   }
 
-  return ordered;
+  return ordered
 }
 
 /**
  * Orders the attributes of a token object to ensure consistent output.
- * @param {object} token 
+ * @param {object} token
  * @returns {object} a new token object with attributes ordered
  */
 function orderAttributes(token) {
@@ -102,7 +96,7 @@ function orderAttributes(token) {
 
 /**
  * Comparator Function.
- * @param {*} a - item to compare 
+ * @param {*} a - item to compare
  * @param {*} b - item to compare
  * @returns -1 if smaller, 1 if greater or 0 if equal
  */
@@ -113,7 +107,7 @@ function sort(a, b) {
 }
 
 /**
- * Orders tokens for a consistent output. 
+ * Orders tokens for a consistent output.
  * @param {*} tokenA - token to compare
  * @param {*} tokenB - token to compare
  * @returns -1 if smaller, 1 if greater or 0 if equal
@@ -129,12 +123,11 @@ function orderTokens(tokenA, tokenB) {
   return sort(tokenA.chainId, tokenB.chainId)
 }
 
-
 // TODO: Update once non-EVM chains are supported
 /**
  * Function to get a clean, normalized address.
  * @param {string} input - the input address string
- * @returns {string|undefined} - a normalized address string or undefined if invalid 
+ * @returns {string|undefined} - a normalized address string or undefined if invalid
  */
 function cleanAddress(input) {
   if (typeof input !== 'string') return undefined
@@ -143,12 +136,12 @@ function cleanAddress(input) {
 }
 
 /**
- * MultiCall function with fallback mechanism. 
- * @param {string} chainKey - the chain key to use for RPC selection 
- * @param {*} calls - an array of calls to make, each with { target: string, callData: string } 
- * @param {*} batchSize - optional batch size for multicall, defaults to all calls in one batch 
- * @param {*} delayMs - optional delay in milliseconds between batches, defaults to 250ms 
- * @returns {Promise<Array>} - resolves to an array of return data from the multicall 
+ * MultiCall function with fallback mechanism.
+ * @param {string} chainKey - the chain key to use for RPC selection
+ * @param {*} calls - an array of calls to make, each with { target: string, callData: string }
+ * @param {*} batchSize - optional batch size for multicall, defaults to all calls in one batch
+ * @param {*} delayMs - optional delay in milliseconds between batches, defaults to 250ms
+ * @returns {Promise<Array>} - resolves to an array of return data from the multicall
  */
 async function multiCallWithFallback(chainKey, calls, batchSize = undefined, delayMs = 250) {
   const rpcsCache = JSON.parse(fs.readFileSync('configs/rpcs.json', 'utf8'))
@@ -178,7 +171,6 @@ async function multiCallWithFallback(chainKey, calls, batchSize = undefined, del
     rpcsCache[chainKey] = rpcList
 
     fs.writeFileSync('configs/rpcs.json', JSON.stringify(rpcsCache, null, 2))
-
   }
 
   const BATCH = batchSize || calls.length
@@ -214,7 +206,7 @@ async function multiCallWithFallback(chainKey, calls, batchSize = undefined, del
       if (provider && typeof provider.destroy === 'function') {
         try {
           provider.destroy()
-        } catch { }
+        } catch {}
       }
     }
   }
@@ -223,12 +215,12 @@ async function multiCallWithFallback(chainKey, calls, batchSize = undefined, del
 }
 
 // /**
-//  * MultiCall function with fallback mechanism. 
-//  * @param {string} chainKey - the chain key to use for RPC selection 
-//  * @param {*} calls - an array of calls to make, each with { target: string, callData: string } 
-//  * @param {*} batchSize - optional batch size for multicall, defaults to all calls in one batch 
-//  * @param {*} delayMs - optional delay in milliseconds between batches, defaults to 250ms 
-//  * @returns {Promise<Array>} - resolves to an array of return data from the multicall 
+//  * MultiCall function with fallback mechanism.
+//  * @param {string} chainKey - the chain key to use for RPC selection
+//  * @param {*} calls - an array of calls to make, each with { target: string, callData: string }
+//  * @param {*} batchSize - optional batch size for multicall, defaults to all calls in one batch
+//  * @param {*} delayMs - optional delay in milliseconds between batches, defaults to 250ms
+//  * @returns {Promise<Array>} - resolves to an array of return data from the multicall
 //  */
 // async function multiCallWithFallback(chainKey, calls, batchSize = undefined, delayMs = 250) {
 //   const rpcsCache = JSON.parse(fs.readFileSync('configs/rpcs.json', 'utf8'))
@@ -302,5 +294,5 @@ module.exports = {
   mergeExtensions,
   orderExtensions,
   orderAttributes,
-  orderTokens
+  orderTokens,
 }

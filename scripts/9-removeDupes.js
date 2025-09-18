@@ -135,8 +135,8 @@ function dedupeAndMergeCombined(activeTokens, rootTokens, inactiveTokens) {
       const hasActiveRoot = group.some((t) => t.__source === 'active-root')
 
       if (group.length > 1) {
-        console.log("= Duplicate Group:", group)
-        console.log("=== Group merge result:", merged)
+        console.log('= Duplicate Group:', group)
+        console.log('=== Group merge result:', merged)
       }
 
       delete merged.__source
@@ -159,7 +159,11 @@ const activeTokens = Array.isArray(dataActiveList.tokens) ? dataActiveList.token
 const activeRootTokens = Array.isArray(dataActiveList.rootTokens) ? dataActiveList.rootTokens : []
 const inactiveTokens = Array.isArray(dataInactiveList.tokens) ? dataInactiveList.tokens : []
 
-const { mergedActive, mergedActiveRoot, mergedInactive } = dedupeAndMergeCombined(activeTokens, activeRootTokens, inactiveTokens)
+const { mergedActive, mergedActiveRoot, mergedInactive } = dedupeAndMergeCombined(
+  activeTokens,
+  activeRootTokens,
+  inactiveTokens
+)
 
 const outData = {
   ...dataActiveList,

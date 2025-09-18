@@ -54,7 +54,7 @@ async function fetchWithRetry(url, options = {}, retries = 3, delayMs = 2000) {
 
 /**
  * Attempts to get a token logo URI from multiple sources.
- * @param {string} address 
+ * @param {string} address
  * @param {number} chainId
  * @param {string} coingeckoId
  * @param {string} coinmarketcapId
@@ -63,7 +63,7 @@ async function fetchWithRetry(url, options = {}, retries = 3, delayMs = 2000) {
 async function getCoinLogo(address, chainId, coingeckoId, coinmarketcapId) {
   const key = `${chainId}:${address}`
   if (cache[key]) return cache[key]
-  // return undefined
+  return undefined
 
   // 1) Uniswap assets
   const uniNetworkMap = {
@@ -80,7 +80,7 @@ async function getCoinLogo(address, chainId, coingeckoId, coinmarketcapId) {
     130: 'unichain',
     100: 'xdai',
     1868: 'soneium',
-    81457: 'blast'
+    81457: 'blast',
   }
 
   const network = uniNetworkMap[chainId]
@@ -108,7 +108,7 @@ async function getCoinLogo(address, chainId, coingeckoId, coinmarketcapId) {
     169: 'manta',
     5000: 'mantle',
     204: 'opbnb',
-    100: 'xdai'
+    100: 'xdai',
   }
 
   const networkTrust = trustwalletNetworkMap[chainId]
@@ -156,7 +156,7 @@ async function getCoinLogo(address, chainId, coingeckoId, coinmarketcapId) {
   // 5) CoinGecko scraped
   if (coingeckoId) {
     const page = await fetchWithRetry(`https://www.coingecko.com/en/coins/${coingeckoId}`, {
-      headers: { 'User-Agent': 'Mozilla/5.0' }
+      headers: { 'User-Agent': 'Mozilla/5.0' },
     })
     if (page) {
       const html = await page.text()
@@ -174,30 +174,26 @@ async function getCoinLogo(address, chainId, coingeckoId, coinmarketcapId) {
   // 6) Jumper Coins List
   try {
     const jumperUrl = `https://raw.githubusercontent.com/jumperexchange/jumper-exchange/cf0bc19be474f2bcb0b908007531837b89de1bfc/src/utils/coins.ts`
-    const resJ = await fetchWithRetry(jumperUrl);
+    const resJ = await fetchWithRetry(jumperUrl)
     if (resJ) {
-      const text = await resJ.text();
+      const text = await resJ.text()
       // Extract the TypeScript array literal
-      const match = text.match(/const coins = \[((?:\{[\s\S]*?\},?)+)\]/m);
+      const match = text.match(/const coins = \[((?:\{[\s\S]*?\},?)+)\]/m)
       if (match) {
-        const arrText = '[' + match[1] + ']';
+        const arrText = '[' + match[1] + ']'
         // Convert TS-like objects to valid JSON
-        const jsonText = arrText
-          .replace(/([\{,]\s*)([a-zA-Z0-9_]+):/g, '$1"$2":')
-          .replace(/'/g, '"');
-        const coins = JSON.parse(jsonText);
-        const entry = coins.find(
-          (c) => c.chainId === chainId && c.address.toLowerCase() === address.toLowerCase()
-        );
+        const jsonText = arrText.replace(/([\{,]\s*)([a-zA-Z0-9_]+):/g, '$1"$2":').replace(/'/g, '"')
+        const coins = JSON.parse(jsonText)
+        const entry = coins.find((c) => c.chainId === chainId && c.address.toLowerCase() === address.toLowerCase())
         if (entry?.logoURI) {
-          cache[key] = entry.logoURI;
-          saveCache();
-          return entry.logoURI;
+          cache[key] = entry.logoURI
+          saveCache()
+          return entry.logoURI
         }
       }
     }
   } catch (err) {
-    console.warn(`Jumper list failed for ${key}: ${err.message}`);
+    console.warn(`Jumper list failed for ${key}: ${err.message}`)
   }
 
   // nothing found

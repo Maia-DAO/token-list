@@ -5,7 +5,7 @@ const { orderTokens } = require('../helpers')
 const { BLOCKED_TOKEN_SYMBOLS, EXTENDED_SUPPORTED_CHAIN_IDS } = require('../configs')
 
 function encodeSpaces(url) {
-  return url.replace(/ /g, '%20');
+  return url.replace(/ /g, '%20')
 }
 
 /**
@@ -49,7 +49,11 @@ async function main() {
       const tokens = Array.isArray(list.tokens) ? list.tokens : Array.isArray(list) ? list : []
 
       for (const token of tokens) {
-        if (!Object.values(SupportedChainId).includes(token.chainId) && !EXTENDED_SUPPORTED_CHAIN_IDS.includes(token.chainId)) continue // Skip unsupported chain 
+        if (
+          !Object.values(SupportedChainId).includes(token.chainId) &&
+          !EXTENDED_SUPPORTED_CHAIN_IDS.includes(token.chainId)
+        )
+          continue // Skip unsupported chain
         const key = `${token.chainId}_${token.address.toLowerCase()}`
         if (!mergedMap.has(key)) {
           mergedMap.set(key, { ...token }) // clone to avoid mutating original
@@ -58,7 +62,6 @@ async function main() {
     }
 
     const mergedTokens = Array.from(mergedMap.values())
-
 
     const inactivesRaw = await fs.readFile('output/inactives.json', 'utf8')
     const inactiveList = JSON.parse(inactivesRaw)
@@ -106,8 +109,8 @@ async function main() {
       .sort(orderTokens)
       .filter((t) => !BLOCKED_TOKEN_SYMBOLS.includes(t.symbol))
       .map((t) => {
-        if (t.logoURI) t.logoURI = encodeSpaces(t.logoURI);
-        return t;
+        if (t.logoURI) t.logoURI = encodeSpaces(t.logoURI)
+        return t
       })
 
     // --- Write out the combined list ---

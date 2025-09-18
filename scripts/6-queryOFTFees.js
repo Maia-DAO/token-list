@@ -29,13 +29,16 @@ async function main() {
       const dst = tokens.find(
         (t) =>
           t.chainId === parseInt(chainId) &&
-          (t.address.toLowerCase() === peerEntry.tokenAddress.toLowerCase() || t.oftAdapter.toLowerCase() === peerEntry.tokenAddress.toLowerCase()) &&
+          (t.address.toLowerCase() === peerEntry.tokenAddress.toLowerCase() ||
+            t.oftAdapter.toLowerCase() === peerEntry.tokenAddress.toLowerCase()) &&
           t.extensions?.peersInfo?.[src.chainId]?.tokenAddress.toLowerCase() === src.address.toLowerCase()
       )
 
       // peerEntry should exist and match dst.address
       if (!dst) {
-        console.warn(`Didn't find peer for ${src.name}:${src.address} (${src.chainId}) on chain ${chainId}, expected: ${peerEntry.tokenAddress}!!!`)
+        console.warn(
+          `Didn't find peer for ${src.name}:${src.address} (${src.chainId}) on chain ${chainId}, expected: ${peerEntry.tokenAddress}!!!`
+        )
         continue
       }
 
@@ -82,7 +85,9 @@ async function main() {
 
       // peerEntry should exist and match dst.address
       if (!dst || !dst.endpointId) {
-        console.error(`Missing Token or endpointId for ${src.chainId}_${src.address}: chain:${chainId} peer:${peerEntry.tokenAddress}`)
+        console.error(
+          `Missing Token or endpointId for ${src.chainId}_${src.address}: chain:${chainId} peer:${peerEntry.tokenAddress}`
+        )
         continue
       }
 
@@ -229,11 +234,7 @@ async function main() {
 
       const { src } = isOAppCallsByChain[chainKey][idx]
 
-      if (
-        !hex ||
-        hex === '0x' ||
-        Object.keys(src.extensions?.peersInfo || {}).length === 0
-      ) {
+      if (!hex || hex === '0x' || Object.keys(src.extensions?.peersInfo || {}).length === 0) {
         console.warn(`Empty lzEndpoint return for ${src.chainKey} - ${src.oftAdapter}`)
         isOApp = false
       }
@@ -320,9 +321,7 @@ async function main() {
     if (token.address && token.address !== '0x00') token.address = ethers.getAddress(token.address)
     if (token.oftAdapter && token.oftAdapter !== '0x00') token.oftAdapter = ethers.getAddress(token.oftAdapter)
 
-    const noPeers =
-      !token.extensions?.peersInfo ||
-      Object.keys(token.extensions.peersInfo).length === 0
+    const noPeers = !token.extensions?.peersInfo || Object.keys(token.extensions.peersInfo).length === 0
 
     if (noPeers) {
       if (token.extensions) delete token.extensions.peersInfo
@@ -351,8 +350,10 @@ async function main() {
         // if found, copy over the missing properties
         token.extensions = token.extensions || {}
         if (!token.icon && peer.icon) token.icon = peer.icon
-        if (peer.extensions?.coingeckoId && !token.extensions.coingeckoId) token.extensions.coingeckoId = peer.extensions.coingeckoId
-        if (peer.extensions?.coinMarketCapId && !token.extensions.coinMarketCapId) token.extensions.coinMarketCapId = peer.extensions.coinMarketCapId
+        if (peer.extensions?.coingeckoId && !token.extensions.coingeckoId)
+          token.extensions.coingeckoId = peer.extensions.coingeckoId
+        if (peer.extensions?.coinMarketCapId && !token.extensions.coinMarketCapId)
+          token.extensions.coinMarketCapId = peer.extensions.coinMarketCapId
       }
     }
   }
