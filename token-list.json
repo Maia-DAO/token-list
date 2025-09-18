@@ -1,8 +1,8 @@
 {
   "name": "Hermes Omnichain Token List",
-  "timestamp": "1758192344",
+  "timestamp": "1758209696",
   "version": {
-    "major": 197,
+    "major": 199,
     "minor": 0,
     "patch": 0
   },
@@ -119,6 +119,16 @@
           }
         }
       },
+      "isAcross": false,
+      "isOFT": false
+    },
+    {
+      "chainId": 1,
+      "address": "0x0275E1001e293C46CFe158B3702AADe0B99f88a5",
+      "name": "Oiler",
+      "symbol": "OIL",
+      "decimals": 18,
+      "logoURI": "https://raw.githubusercontent.com/balancer/tokenlists/main/src/assets/images/tokens/0x0275e1001e293c46cfe158b3702aade0b99f88a5.png",
       "isAcross": false,
       "isOFT": false
     },
@@ -422,6 +432,16 @@
         "coingeckoId": "dotcom"
       },
       "isAcross": false
+    },
+    {
+      "chainId": 1,
+      "address": "0x06F3C323f0238c72BF35011071f2b5B7F43A054c",
+      "name": "MASQ",
+      "symbol": "MASQ",
+      "decimals": 18,
+      "logoURI": "https://ethereum-optimism.github.io/data/MASQ/logo.png",
+      "isAcross": false,
+      "isOFT": false
     },
     {
       "chainId": 1,
@@ -1179,6 +1199,16 @@
     },
     {
       "chainId": 1,
+      "address": "0x15Ee120fD69BEc86C1d38502299af7366a41D1a6",
+      "name": "BitANT",
+      "symbol": "BitANT",
+      "decimals": 18,
+      "logoURI": "https://ethereum-optimism.github.io/data/BitANT/logo.png",
+      "isAcross": false,
+      "isOFT": false
+    },
+    {
+      "chainId": 1,
       "address": "0x163f8C2467924be0ae7B5347228CABF260318753",
       "name": "Worldcoin",
       "symbol": "WLD",
@@ -1668,6 +1698,26 @@
     },
     {
       "chainId": 1,
+      "address": "0x221657776846890989a759BA2973e427DfF5C9bB",
+      "name": "Reputation",
+      "symbol": "REPv2",
+      "decimals": 18,
+      "logoURI": "https://assets-cdn.trustwallet.com/blockchains/ethereum/assets/0x221657776846890989a759BA2973e427DfF5C9bB/logo.png",
+      "extensions": {
+        "bridgeInfo": {
+          "130": {
+            "tokenAddress": "0xE86B1E5613a5761D005a2D00D8a1B4ad1e72A8c4"
+          },
+          "137": {
+            "tokenAddress": "0x6563c1244820CfBd6Ca8820FBdf0f2847363F733"
+          }
+        }
+      },
+      "isAcross": false,
+      "isOFT": false
+    },
+    {
+      "chainId": 1,
       "address": "0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599",
       "name": "Wrapped BTC",
       "symbol": "WBTC",
@@ -2144,29 +2194,6 @@
     },
     {
       "chainId": 1,
-      "address": "0x321c2fe4446c7c963dc41dd58879af648838f98d",
-      "name": "Cryptex",
-      "symbol": "CTX",
-      "decimals": 18,
-      "logoURI": "https://ethereum-optimism.github.io/data/CTX/logo.svg",
-      "extensions": {
-        "bridgeInfo": {
-          "130": {
-            "tokenAddress": "0x36fA435F6def83cbB7a0706d035C9eA062fCb619"
-          },
-          "137": {
-            "tokenAddress": "0x8c208BC2A808a088a78398fed8f2640cab0b6EDb"
-          },
-          "42161": {
-            "tokenAddress": "0x84F5c2cFba754E76DD5aE4fB369CfC920425E12b"
-          }
-        }
-      },
-      "isAcross": false,
-      "isOFT": false
-    },
-    {
-      "chainId": 1,
       "address": "0x32353A6C91143bfd6C7d363B546e62a9A2489A20",
       "name": "Adventure Gold",
       "symbol": "AGLD",
@@ -2631,7 +2658,7 @@
       "name": "mBTC",
       "symbol": "mBTC",
       "decimals": 18,
-      "logoURI": "https://icons-ckg.pages.dev/stargate-light/tokens/manta mbtc.svg",
+      "logoURI": "https://icons-ckg.pages.dev/stargate-light/tokens/manta%20mbtc.svg",
       "tags": [],
       "extensions": {
         "bridgeInfo": {
@@ -2722,6 +2749,16 @@
           }
         }
       },
+      "isAcross": false,
+      "isOFT": false
+    },
+    {
+      "chainId": 1,
+      "address": "0x4156D3342D5c385a87D264F90653733592000581",
+      "name": "Salt",
+      "symbol": "SALT",
+      "decimals": 8,
+      "logoURI": "https://assets.coingecko.com/coins/images/962/large/salt.png?1548608746",
       "isAcross": false,
       "isOFT": false
     },
@@ -3036,6 +3073,38 @@
     },
     {
       "chainId": 1,
+      "address": "0x491604c0FDF08347Dd1fa4Ee062a822A5DD06B5D",
+      "name": "Cartesi Token",
+      "symbol": "CTSI",
+      "decimals": 18,
+      "logoURI": "https://ethereum-optimism.github.io/data/CTSI/logo.svg",
+      "extensions": {
+        "bridgeInfo": {
+          "56": {
+            "tokenAddress": "0x8dA443F84fEA710266C8eB6bC34B71702d033EF2"
+          },
+          "130": {
+            "tokenAddress": "0xa7073F530856cD32c2037150dd9763B9BAaED2C5"
+          },
+          "137": {
+            "tokenAddress": "0x2727Ab1c2D22170ABc9b595177B2D5C6E1Ab7B7B"
+          },
+          "8453": {
+            "tokenAddress": "0x259Fac10c5CbFEFE3E710e1D9467f70a76138d45"
+          },
+          "42161": {
+            "tokenAddress": "0x319f865b287fCC10b30d8cE6144e8b6D1b476999"
+          },
+          "43114": {
+            "tokenAddress": "0x6b289CCeAA8639e3831095D75A3e43520faBf552"
+          }
+        }
+      },
+      "isAcross": false,
+      "isOFT": false
+    },
+    {
+      "chainId": 1,
       "address": "0x4956b52aE2fF65D74CA2d61207523288e4528f96",
       "name": "Resolv Liquidity Provider Token",
       "symbol": "RLP",
@@ -3111,6 +3180,16 @@
           }
         }
       },
+      "isAcross": false,
+      "isOFT": false
+    },
+    {
+      "chainId": 1,
+      "address": "0x4Ddc2D193948926D02f9B1fE9e1daa0718270ED5",
+      "name": "Compound Ether",
+      "symbol": "cETH",
+      "decimals": 8,
+      "logoURI": "https://assets.coingecko.com/coins/images/10643/large/ceth2.JPG?1581389598",
       "isAcross": false,
       "isOFT": false
     },
@@ -3718,16 +3797,6 @@
           }
         }
       },
-      "isAcross": false,
-      "isOFT": false
-    },
-    {
-      "chainId": 1,
-      "address": "0x57F5E098CaD7A3D1Eed53991D4d66C45C9AF7812",
-      "name": "Wrapped Mountain Protocol USD",
-      "symbol": "wUSDM",
-      "decimals": 18,
-      "logoURI": "https://raw.githubusercontent.com/balancer/tokenlists/main/src/assets/images/tokens/0x57f5e098cad7a3d1eed53991d4d66c45c9af7812.png",
       "isAcross": false,
       "isOFT": false
     },
@@ -4396,16 +4465,6 @@
     },
     {
       "chainId": 1,
-      "address": "0x6399c842dd2be3de30bf99bc7d1bbf6fa3650e70",
-      "name": "Premia",
-      "symbol": "PREMIA",
-      "decimals": 18,
-      "logoURI": "https://ethereum-optimism.github.io/data/PREMIA/logo.svg",
-      "isAcross": false,
-      "isOFT": false
-    },
-    {
-      "chainId": 1,
       "address": "0x643C4E15d7d62Ad0aBeC4a9BD4b001aA3Ef52d66",
       "name": "Syrup Token",
       "symbol": "SYRUP",
@@ -4445,23 +4504,6 @@
           },
           "137": {
             "tokenAddress": "0x63400d9586873eB03c84F76755D26Ef2a9a2abeF"
-          }
-        }
-      },
-      "isAcross": false,
-      "isOFT": false
-    },
-    {
-      "chainId": 1,
-      "address": "0x64D91f12Ece7362F91A6f8E7940Cd55F05060b92",
-      "name": "ASH",
-      "symbol": "ASH",
-      "decimals": 18,
-      "logoURI": "https://assets.coingecko.com/coins/images/15714/thumb/omnPqaTY.png?1622820503",
-      "extensions": {
-        "bridgeInfo": {
-          "130": {
-            "tokenAddress": "0x4b355De6Ea44711f0353Ed89545705395a30d7Fb"
           }
         }
       },
@@ -5222,6 +5264,16 @@
     },
     {
       "chainId": 1,
+      "address": "0x73C69d24ad28e2d43D03CBf35F79fE26EBDE1011",
+      "name": "ARCH",
+      "symbol": "ARCH",
+      "decimals": 18,
+      "logoURI": "https://raw.githubusercontent.com/balancer/tokenlists/main/src/assets/images/tokens/0x73c69d24ad28e2d43d03cbf35f79fe26ebde1011.png",
+      "isAcross": false,
+      "isOFT": false
+    },
+    {
+      "chainId": 1,
       "address": "0x7420B4b9a0110cdC71fB720908340C03F9Bc03EC",
       "name": "JasmyCoin",
       "symbol": "JASMY",
@@ -5369,16 +5421,6 @@
     },
     {
       "chainId": 1,
-      "address": "0x761a3557184cbc07b7493da0661c41177b2f97fa",
-      "name": "ValleyDAO Token",
-      "symbol": "GROW",
-      "decimals": 18,
-      "logoURI": "https://ethereum-optimism.github.io/data/GROW/logo.svg",
-      "isAcross": false,
-      "isOFT": false
-    },
-    {
-      "chainId": 1,
       "address": "0x767FE9EDC9E0dF98E07454847909b5E959D7ca0E",
       "name": "Illuvium",
       "symbol": "ILV",
@@ -5478,6 +5520,16 @@
         "coinMarketCapId": 36632
       },
       "isAcross": false
+    },
+    {
+      "chainId": 1,
+      "address": "0x7968bc6a03017eA2de509AAA816F163Db0f35148",
+      "name": "Hedget",
+      "symbol": "HGET",
+      "decimals": 6,
+      "logoURI": "https://assets.coingecko.com/coins/images/12453/large/Hedget.png?1599944809",
+      "isAcross": false,
+      "isOFT": false
     },
     {
       "chainId": 1,
@@ -6370,7 +6422,7 @@
       "name": "mETH",
       "symbol": "mETH",
       "decimals": 18,
-      "logoURI": "https://icons-ckg.pages.dev/stargate-light/tokens/manta meth.svg",
+      "logoURI": "https://icons-ckg.pages.dev/stargate-light/tokens/manta%20meth.svg",
       "tags": [],
       "extensions": {
         "bridgeInfo": {
@@ -7571,6 +7623,16 @@
     },
     {
       "chainId": 1,
+      "address": "0xAcfa209Fb73bF3Dd5bBfb1101B9Bc999C49062a5",
+      "name": "Blockchain Certified Data Token",
+      "symbol": "BCDT",
+      "decimals": 18,
+      "logoURI": "https://assets.coingecko.com/coins/images/2014/large/evidenz-512.png?1594871754",
+      "isAcross": false,
+      "isOFT": false
+    },
+    {
+      "chainId": 1,
       "address": "0xB17548c7B510427baAc4e267BEa62e800b247173",
       "name": "Swarm Markets",
       "symbol": "SMT",
@@ -8320,6 +8382,16 @@
     },
     {
       "chainId": 1,
+      "address": "0xCB56b52316041A62B6b5D0583DcE4A8AE7a3C629",
+      "name": "Cigarette Token",
+      "symbol": "CIG",
+      "decimals": 18,
+      "logoURI": "https://ethereum-optimism.github.io/data/CIG/logo.svg",
+      "isAcross": false,
+      "isOFT": false
+    },
+    {
+      "chainId": 1,
       "address": "0xCC4304A31d09258b0029eA7FE63d032f52e44EFe",
       "name": "TrustSwap Token",
       "symbol": "SWAP",
@@ -8433,16 +8505,6 @@
       "symbol": "tETH",
       "decimals": 18,
       "logoURI": "https://raw.githubusercontent.com/balancer/tokenlists/main/src/assets/images/tokens/0xd11c452fc99cf405034ee446803b6f6c1f6d5ed8.png",
-      "isAcross": false,
-      "isOFT": false
-    },
-    {
-      "chainId": 1,
-      "address": "0xD23Ac27148aF6A2f339BD82D0e3CFF380b5093de",
-      "name": "SIREN",
-      "symbol": "SI",
-      "decimals": 18,
-      "logoURI": "https://assets-cdn.trustwallet.com/blockchains/ethereum/assets/0xD23Ac27148aF6A2f339BD82D0e3CFF380b5093de/logo.png",
       "isAcross": false,
       "isOFT": false
     },
@@ -8754,6 +8816,16 @@
           }
         }
       },
+      "isAcross": false,
+      "isOFT": false
+    },
+    {
+      "chainId": 1,
+      "address": "0xE4CFE9eAa8Cdb0942A80B7bC68fD8Ab0F6D44903",
+      "name": "XEND",
+      "symbol": "XEND",
+      "decimals": 18,
+      "logoURI": "https://raw.githubusercontent.com/balancer/tokenlists/main/src/assets/images/tokens/0xe4cfe9eaa8cdb0942a80b7bc68fd8ab0f6d44903.png",
       "isAcross": false,
       "isOFT": false
     },
@@ -10933,23 +11005,6 @@
     },
     {
       "chainId": 1,
-      "address": "0xe343167631d89B6Ffc58B88d6b7fB0228795491D",
-      "name": "Global Dollar",
-      "symbol": "USDG",
-      "decimals": 6,
-      "logoURI": "https://assets.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png",
-      "extensions": {
-        "bridgeInfo": {
-          "130": {
-            "tokenAddress": "0x2A22868610610199D43fE93A16661473A9f86f1E"
-          }
-        }
-      },
-      "isAcross": false,
-      "isOFT": false
-    },
-    {
-      "chainId": 1,
       "address": "0xe3944AB788A60ca266f1eEc3C26925b95f6370aD",
       "name": "Precipitate.AI",
       "symbol": "RAIN",
@@ -11478,6 +11533,16 @@
     },
     {
       "chainId": 10,
+      "address": "0x01B8b6384298D4848E3BE63D4C9D17830EeE488A",
+      "name": "DAOhaus Token on Optimism",
+      "symbol": "HAUS",
+      "decimals": 18,
+      "logoURI": "https://ethereum-optimism.github.io/data/HAUS/logo.png",
+      "isAcross": false,
+      "isOFT": false
+    },
+    {
+      "chainId": 10,
       "address": "0x01bFF41798a0BcF287b996046Ca68b395DbC1071",
       "name": "USD₮0",
       "symbol": "USD₮0",
@@ -11832,8 +11897,7 @@
         }
       },
       "isAcross": false,
-      "isOFT": true,
-      "noLiquidityOnChain": true
+      "isOFT": true
     },
     {
       "chainId": 10,
@@ -12865,17 +12929,6 @@
     },
     {
       "chainId": 10,
-      "address": "0x8aE125E8653821E851F12A49F7765db9a9ce7384",
-      "name": "Dola USD Stablecoin",
-      "symbol": "DOLA",
-      "decimals": 18,
-      "logoURI": "https://assets.coingecko.com/coins/images/14287/large/dola.png?1696513984",
-      "extensions": {},
-      "isAcross": false,
-      "isOFT": false
-    },
-    {
-      "chainId": 10,
       "globalAddress": "0x2Ae0aB7d71115b604748963ffBe1C069FA2fa342",
       "localAddress": {
         "10": "0x293c4ADE498833b8eA748ad606e8e05C95d80d2b"
@@ -13107,16 +13160,6 @@
       "decimals": 18,
       "logoURI": "https://assets.coingecko.com/coins/images/20764/standard/reth.png?1696520159",
       "extensions": {}
-    },
-    {
-      "chainId": 10,
-      "address": "0x9a2e53158e12bc09270af10c16a466cb2b5d7836",
-      "name": "Metronome2",
-      "symbol": "MET",
-      "decimals": 18,
-      "logoURI": "https://ethereum-optimism.github.io/data/MET/logo.svg",
-      "isAcross": false,
-      "isOFT": false
     },
     {
       "chainId": 10,
@@ -13437,6 +13480,16 @@
       "symbol": "ERN",
       "decimals": 18,
       "logoURI": "https://assets.coingecko.com/coins/images/29744/large/ERN200x200.png?1696528676",
+      "isAcross": false,
+      "isOFT": false
+    },
+    {
+      "chainId": 10,
+      "address": "0xc98B98d17435AA00830c87eA02474C5007E1f272",
+      "name": "BitBTC",
+      "symbol": "BitBTC",
+      "decimals": 18,
+      "logoURI": "https://ethereum-optimism.github.io/data/BitBTC/logo.png",
       "isAcross": false,
       "isOFT": false
     },
@@ -15047,24 +15100,6 @@
     },
     {
       "chainId": 56,
-      "address": "0x52242cbAb41e290E9E17CCC50Cc437bB60020a9d",
-      "name": "WrappedNCG",
-      "symbol": "WNCG",
-      "decimals": 18,
-      "logoURI": "https://icons-ckg.pages.dev/stargate-light/tokens/wncg.svg",
-      "tags": [],
-      "extensions": {
-        "coingeckoId": "wrapped-ncg",
-        "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0xf203Ca1769ca8e9e8FE1DA9D147DB68B6c919817"
-          }
-        }
-      },
-      "isAcross": false
-    },
-    {
-      "chainId": 56,
       "address": "0x52CE071Bd9b1C4B00A0b92D298c512478CaD67e8",
       "name": "Compound",
       "symbol": "COMP",
@@ -16042,6 +16077,23 @@
         "bridgeInfo": {
           "1": {
             "tokenAddress": "0xAC51066d7bEC65Dc4589368da368b212745d63E8"
+          }
+        }
+      },
+      "isAcross": false,
+      "isOFT": false
+    },
+    {
+      "chainId": 56,
+      "address": "0xAD29AbB318791D579433D831ed122aFeAf29dcfe",
+      "name": "Fantom",
+      "symbol": "FTM",
+      "decimals": 18,
+      "logoURI": "https://assets.coingecko.com/coins/images/4001/thumb/Fantom.png?1558015016",
+      "extensions": {
+        "bridgeInfo": {
+          "1": {
+            "tokenAddress": "0x4E15361FD6b4BB609Fa63C81A2be19d873717870"
           }
         }
       },
@@ -17569,23 +17621,6 @@
     },
     {
       "chainId": 130,
-      "address": "0x8f187aA05619a017077f5308904739877ce9eA21",
-      "name": "Uniswap",
-      "symbol": "UNI",
-      "decimals": 18,
-      "logoURI": "https://ethereum-optimism.github.io/data/UNI/logo.png",
-      "extensions": {
-        "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0x1f9840a85d5aF5bf1D1762F925BDADdC4201F984"
-          }
-        }
-      },
-      "isAcross": false,
-      "isOFT": false
-    },
-    {
-      "chainId": 130,
       "address": "0x90581eCa9469D8D7F5D3B60f4715027aDFCf7927",
       "name": "Frax Price Index",
       "symbol": "FPI",
@@ -17934,6 +17969,23 @@
       "logoURI": "https://raw.githubusercontent.com/balancer/tokenlists/main/src/assets/images/tokens/0x0d500b1d8e8ef31e21c99d1db9a6444d3adf1270.png",
       "tags": [],
       "extensions": {},
+      "isAcross": false,
+      "isOFT": false
+    },
+    {
+      "chainId": 137,
+      "address": "0x0df0f72EE0e5c9B7ca761ECec42754992B2Da5BF",
+      "name": "Automata",
+      "symbol": "ATA",
+      "decimals": 18,
+      "logoURI": "https://assets.coingecko.com/coins/images/15985/thumb/ATA.jpg?1622535745",
+      "extensions": {
+        "bridgeInfo": {
+          "1": {
+            "tokenAddress": "0xA2120b9e674d3fC3875f415A7DF52e382F141225"
+          }
+        }
+      },
       "isAcross": false,
       "isOFT": false
     },
@@ -18455,6 +18507,23 @@
     },
     {
       "chainId": 137,
+      "address": "0x3e121107F6F22DA4911079845a470757aF4e1A1b",
+      "name": "Frax Share",
+      "symbol": "FXS",
+      "decimals": 18,
+      "logoURI": "https://assets.coingecko.com/coins/images/13423/thumb/frax_share.png?1608478989",
+      "extensions": {
+        "bridgeInfo": {
+          "1": {
+            "tokenAddress": "0x3432B6A60D23Ca0dFCa7761B7ab56459D9C964D0"
+          }
+        }
+      },
+      "isAcross": false,
+      "isOFT": false
+    },
+    {
+      "chainId": 137,
       "address": "0x430EF9263E76DAE63c84292C3409D61c598E9682",
       "name": "PYR Token",
       "symbol": "PYR",
@@ -18646,23 +18715,6 @@
     },
     {
       "chainId": 137,
-      "address": "0x553d3D295e0f695B9228246232eDF400ed3560B5",
-      "name": "Paxos Gold (PoS)",
-      "symbol": "PAXG",
-      "decimals": 18,
-      "logoURI": "https://raw.githubusercontent.com/balancer/tokenlists/main/src/assets/images/tokens/0x553d3d295e0f695b9228246232edf400ed3560b5.png",
-      "extensions": {
-        "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0x45804880De22913dAFE09f4980848ECE6EcbAf78"
-          }
-        }
-      },
-      "isAcross": false,
-      "isOFT": false
-    },
-    {
-      "chainId": 137,
       "address": "0x5Bff88cA1442c2496f7E475E9e7786383Bc070c0",
       "name": "Staked Frax USD",
       "symbol": "sfrxUSD",
@@ -18755,23 +18807,6 @@
         "bridgeInfo": {
           "1": {
             "tokenAddress": "0x0763fdCCF1aE541A5961815C0872A8c5Bc6DE4d7"
-          }
-        }
-      },
-      "isAcross": false,
-      "isOFT": false
-    },
-    {
-      "chainId": 137,
-      "address": "0x61299774020dA444Af134c82fa83E3810b309991",
-      "name": "Render Token",
-      "symbol": "RNDR",
-      "decimals": 18,
-      "logoURI": "https://assets.coingecko.com/coins/images/11636/large/rndr.png?1638840934",
-      "extensions": {
-        "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0x6De037ef9aD2725EB40118Bb1702EBb27e4Aeb24"
           }
         }
       },
@@ -19517,6 +19552,16 @@
     },
     {
       "chainId": 137,
+      "address": "0xDBf31dF14B66535aF65AaC99C32e9eA844e14501",
+      "name": "renBTC",
+      "symbol": "renBTC",
+      "decimals": 8,
+      "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xEB4C2781e4ebA804CE9a9803C67d0893436bB27D/logo.png",
+      "isAcross": false,
+      "isOFT": false
+    },
+    {
+      "chainId": 137,
       "address": "0xDC3326e71D45186F113a2F448984CA0e8D201995",
       "name": "XSGD",
       "symbol": "XSGD",
@@ -19655,16 +19700,6 @@
       "isAcross": false,
       "isOFT": true,
       "noLiquidityOnChain": true
-    },
-    {
-      "chainId": 137,
-      "address": "0xE111178A87A3BFf0c8d18DECBa5798827539Ae99",
-      "name": "STASIS EURS Token (PoS)",
-      "symbol": "EURS",
-      "decimals": 2,
-      "logoURI": "https://assets.coingecko.com/coins/images/5164/large/EURS_300x300.png?1550571779",
-      "isAcross": false,
-      "isOFT": false
     },
     {
       "chainId": 137,
@@ -20992,7 +21027,7 @@
       "name": "mBTC",
       "symbol": "mBTC",
       "decimals": 18,
-      "logoURI": "https://icons-ckg.pages.dev/stargate-light/tokens/manta mbtc.svg",
+      "logoURI": "https://icons-ckg.pages.dev/stargate-light/tokens/manta%20mbtc.svg",
       "tags": [],
       "extensions": {
         "bridgeInfo": {
@@ -21321,7 +21356,7 @@
       "name": "mETH",
       "symbol": "mETH",
       "decimals": 18,
-      "logoURI": "https://icons-ckg.pages.dev/stargate-light/tokens/manta meth.svg",
+      "logoURI": "https://icons-ckg.pages.dev/stargate-light/tokens/manta%20meth.svg",
       "tags": [],
       "extensions": {
         "bridgeInfo": {
@@ -21348,22 +21383,22 @@
     },
     {
       "chainId": 169,
-      "address": "0xb73603C5d87fA094B7314C74ACE2e64D165016fb",
-      "name": "USD Coin",
+      "address": "0xb73603c5d87fa094b7314c74ace2e64d165016fb",
+      "name": "Bridged USD Coin (Manta Pacific)",
       "symbol": "USDC",
       "decimals": 6,
-      "logoURI": "https://s2.coinmarketcap.com/static/img/coins/64x64/3408.png",
+      "logoURI": "https://s3.openocean.finance/token_logos/logos/1696854390695_9268415263413137.png",
       "extensions": {},
       "isAcross": false,
       "isOFT": false
     },
     {
       "chainId": 169,
-      "address": "0xf417F5A458eC102B90352F697D6e2Ac3A3d2851f",
-      "name": "Tether USD",
+      "address": "0xf417f5a458ec102b90352f697d6e2ac3a3d2851f",
+      "name": "Bridged Tether (Manta Pacific)",
       "symbol": "USDT",
       "decimals": 6,
-      "logoURI": "https://s2.coinmarketcap.com/static/img/coins/64x64/825.png",
+      "logoURI": "https://s3.openocean.finance/token_logos/logos/1704871492997_20965532266384757.png",
       "extensions": {},
       "isAcross": false,
       "isOFT": false
@@ -21929,7 +21964,7 @@
       "name": "Frax Share",
       "symbol": "FXS",
       "decimals": 18,
-      "logoURI": "https://icons-ckg.pages.dev/stargate-light/tokens/fxs (old).svg",
+      "logoURI": "https://icons-ckg.pages.dev/stargate-light/tokens/fxs%20(old).svg",
       "tags": [],
       "extensions": {
         "coingeckoId": "frax-share",
@@ -23682,6 +23717,16 @@
     },
     {
       "chainId": 999,
+      "address": "0x0aD339d66BF4AeD5ce31c64Bc37B3244b6394A77",
+      "name": "Resolv USD",
+      "symbol": "USR",
+      "decimals": 18,
+      "logoURI": "https://coin-images.coingecko.com/coins/images/66152/large/usr.jpg?1748492157",
+      "isAcross": false,
+      "isOFT": false
+    },
+    {
+      "chainId": 999,
       "address": "0x11735dBd0B97CfA7Accf47d005673BA185f7fd49",
       "name": "CATBAL",
       "symbol": "CATBAL",
@@ -24358,7 +24403,7 @@
       "name": "Frax Share",
       "symbol": "FXS",
       "decimals": 18,
-      "logoURI": "https://icons-ckg.pages.dev/stargate-light/tokens/fxs (old).svg",
+      "logoURI": "https://icons-ckg.pages.dev/stargate-light/tokens/fxs%20(old).svg",
       "tags": [],
       "extensions": {
         "bridgeInfo": {
@@ -28458,7 +28503,7 @@
       "name": "Frax Share",
       "symbol": "FXS",
       "decimals": 18,
-      "logoURI": "https://icons-ckg.pages.dev/stargate-light/tokens/fxs (old).svg",
+      "logoURI": "https://icons-ckg.pages.dev/stargate-light/tokens/fxs%20(old).svg",
       "tags": [],
       "extensions": {
         "bridgeInfo": {
@@ -28579,16 +28624,6 @@
       "tags": [],
       "extensions": {},
       "isAcross": false
-    },
-    {
-      "chainId": 8453,
-      "address": "0x2C24497D4086490e7EaD87CC12597fb50c2E6eD6",
-      "name": "SynFutures",
-      "symbol": "F",
-      "decimals": 18,
-      "logoURI": "https://ethereum-optimism.github.io/data/F/logo.svg",
-      "isAcross": false,
-      "isOFT": false
     },
     {
       "chainId": 8453,
@@ -29041,6 +29076,16 @@
       },
       "isAcross": false,
       "isOFT": true
+    },
+    {
+      "chainId": 8453,
+      "address": "0x4EA71A20e655794051D1eE8b6e4A3269B13ccaCc",
+      "name": "Static Aave Base USDC",
+      "symbol": "AaveUSDC",
+      "decimals": 6,
+      "logoURI": "https://raw.githubusercontent.com/balancer/tokenlists/main/src/assets/images/tokens/0xe719aef17468c7e10c0c205be62c990754dff7e5.png",
+      "isAcross": false,
+      "isOFT": false
     },
     {
       "chainId": 8453,
@@ -29911,16 +29956,6 @@
     },
     {
       "chainId": 8453,
-      "address": "0x881ed0fcef78120a135ec6cc66cef2779fe95bba",
-      "name": "DogeGF",
-      "symbol": "DOGEGF",
-      "decimals": 18,
-      "logoURI": "https://ethereum-optimism.github.io/data/DOGEGF/logo.svg",
-      "isAcross": false,
-      "isOFT": false
-    },
-    {
-      "chainId": 8453,
       "address": "0x8Ee73c484A26e0A5df2Ee2a4960B789967dd0415",
       "name": "Curve DAO Token",
       "symbol": "CRV",
@@ -30298,8 +30333,7 @@
         }
       },
       "isAcross": false,
-      "isOFT": true,
-      "noLiquidityOnChain": true
+      "isOFT": true
     },
     {
       "chainId": 8453,
@@ -30325,16 +30359,6 @@
       "symbol": "TRAC",
       "decimals": 18,
       "logoURI": "https://ethereum-optimism.github.io/data/TRAC/logo.png",
-      "isAcross": false,
-      "isOFT": false
-    },
-    {
-      "chainId": 8453,
-      "address": "0xA88594D404727625A9437C3f886C7643872296AE",
-      "name": "Moonwell",
-      "symbol": "WELL",
-      "decimals": 18,
-      "logoURI": "https://assets.coingecko.com/coins/images/26133/large/WELL.png?1696525221",
       "isAcross": false,
       "isOFT": false
     },
@@ -30574,16 +30598,6 @@
     },
     {
       "chainId": 8453,
-      "address": "0xC7DcCA0a3e69bD762C8DB257f868f76Be36c8514",
-      "name": "KiboShib",
-      "symbol": "KIBSHI",
-      "decimals": 18,
-      "logoURI": "https://ethereum-optimism.github.io/data/KIBSHI/logo.svg",
-      "isAcross": false,
-      "isOFT": false
-    },
-    {
-      "chainId": 8453,
       "address": "0xCa5E0dB4B1C43280C00029786d992d6E8ab57521",
       "name": "TOSHINME",
       "symbol": "TOSHINME",
@@ -30627,16 +30641,6 @@
     },
     {
       "chainId": 8453,
-      "address": "0xD1dB4851bcF5B41442cAA32025Ce0Afe6B8EabC2",
-      "name": "Based ZoomerCoin",
-      "symbol": "ZOOMER",
-      "decimals": 18,
-      "logoURI": "https://ethereum-optimism.github.io/data/ZOOMER/logo.png",
-      "isAcross": false,
-      "isOFT": false
-    },
-    {
-      "chainId": 8453,
       "address": "0xD2e92077ad4d7d50D7d60be13FffE3FB52cc0B9f",
       "name": "zerebro",
       "symbol": "ZEREBRO",
@@ -30663,6 +30667,16 @@
       "symbol": "RSS3",
       "decimals": 18,
       "logoURI": "https://ethereum-optimism.github.io/data/RSS3/logo.png",
+      "isAcross": false,
+      "isOFT": false
+    },
+    {
+      "chainId": 8453,
+      "address": "0xDf690C65d067035364a58369C26820D3696D7799",
+      "name": "Wrapped HOGE",
+      "symbol": "wHOGE",
+      "decimals": 9,
+      "logoURI": "https://ethereum-optimism.github.io/data/wHOGE/logo.svg",
       "isAcross": false,
       "isOFT": false
     },
@@ -31185,6 +31199,25 @@
     },
     {
       "chainId": 8453,
+      "address": "0xbFd5206962267c7b4b4A8B3D76AC2E1b2A5c4d5e",
+      "name": "Osaka Protocol",
+      "symbol": "OSAK",
+      "decimals": 18,
+      "logoURI": "https://coin-images.coingecko.com/coins/images/30911/large/osak_logo.png?1696529756",
+      "tags": [],
+      "extensions": {
+        "coingeckoId": "osaka-protocol",
+        "bridgeInfo": {
+          "1": {
+            "tokenAddress": "0xa21Af1050F7B26e0cfF45ee51548254C41ED6b5c"
+          }
+        }
+      },
+      "isAcross": false,
+      "isOFT": false
+    },
+    {
+      "chainId": 8453,
       "address": "0xc1CBa3fCea344f92D9239c08C0568f6F2F0ee452",
       "name": "Wrapped liquid staked Ether 2.0",
       "symbol": "wstETH",
@@ -31206,6 +31239,16 @@
     },
     {
       "chainId": 8453,
+      "address": "0xc5102fe9359fd9a28f877a67e36b0f050d81a3cc",
+      "name": "Hop",
+      "symbol": "HOP",
+      "decimals": 18,
+      "logoURI": "https://ethereum-optimism.github.io/data/HOP/logo.svg",
+      "isAcross": false,
+      "isOFT": false
+    },
+    {
+      "chainId": 8453,
       "address": "0xc5fecC3a29Fb57B5024eEc8a2239d4621e111CBE",
       "name": "1INCH Token",
       "symbol": "1INCH",
@@ -31218,17 +31261,6 @@
           }
         }
       },
-      "isAcross": false,
-      "isOFT": false
-    },
-    {
-      "chainId": 8453,
-      "address": "0xc63529297dE076eB15fcbE873AE9136E446cFbB9",
-      "name": "Gyroscope",
-      "symbol": "GYFI",
-      "decimals": 18,
-      "logoURI": "https://raw.githubusercontent.com/balancer/tokenlists/main/src/assets/images/tokens/0xc63529297de076eb15fcbe873ae9136e446cfbb9.png",
-      "extensions": {},
       "isAcross": false,
       "isOFT": false
     },
@@ -31493,16 +31525,6 @@
       "isAcross": true,
       "isOFT": false,
       "noLiquidityOnChain": true
-    },
-    {
-      "chainId": 8453,
-      "address": "0xdae49c25fad3a62a8e8bfb6da12c46be611f9f7a",
-      "name": "Kryll",
-      "symbol": "KRL",
-      "decimals": 18,
-      "logoURI": "https://ethereum-optimism.github.io/data/KRL/logo.svg",
-      "isAcross": false,
-      "isOFT": false
     },
     {
       "chainId": 8453,
@@ -31993,6 +32015,16 @@
       "isAcross": false,
       "isOFT": true,
       "noLiquidityOnChain": true
+    },
+    {
+      "chainId": 33139,
+      "address": "0xf4D9235269a96aaDaFc9aDAe454a0618eBE37949",
+      "name": "Wrapped Ether",
+      "symbol": "wETH",
+      "decimals": 18,
+      "logoURI": "https://raw.githubusercontent.com/CamelotLabs/default-token-list/refs/heads/main/src/assets/weth.svg",
+      "isAcross": false,
+      "isOFT": false
     },
     {
       "chainId": 34443,
@@ -33328,11 +33360,11 @@
     },
     {
       "chainId": 42220,
-      "address": "0x02De4766C272abc10Bc88c220D214A26960a7e92",
-      "name": "Toucan Protocol: Nature Carbon Tonne",
+      "address": "0x02de4766c272abc10bc88c220d214a26960a7e92",
+      "name": "Nature Carbon Tonne",
       "symbol": "NCT",
       "decimals": 18,
-      "logoURI": "https://s3.openocean.finance/token_logos/logos/1675829616951_850937178200651.png",
+      "logoURI": "https://toucan.earth/img/icons/nct.svg",
       "extensions": {},
       "isAcross": false,
       "isOFT": false
@@ -33340,10 +33372,10 @@
     {
       "chainId": 42220,
       "address": "0x105d4A9306D2E55a71d2Eb95B81553AE1dC20d7B",
-      "name": "StableCoin of Philippine Peso ",
+      "name": "PUSO",
       "symbol": "PUSO",
       "decimals": 18,
-      "logoURI": "https://s3.openocean.finance/token_logos/logos/1727346907695_7813305376148663.png",
+      "logoURI": "https://raw.githubusercontent.com/mento-protocol/mento-web/refs/heads/main/public/tokens/PUSO.svg",
       "extensions": {},
       "isAcross": false,
       "isOFT": false
@@ -33351,10 +33383,10 @@
     {
       "chainId": 42220,
       "address": "0x122013fd7dF1C6F636a5bb8f03108E876548b455",
-      "name": "WETH",
+      "name": "Optics v2 WETH",
       "symbol": "WETH",
       "decimals": 18,
-      "logoURI": "https://s3.openocean.finance/token_logos/logos/1685699747341_5881896037632324.png",
+      "logoURI": "https://raw.githubusercontent.com/ubeswap/default-token-list/master/assets/asset_WETH.png",
       "extensions": {},
       "isAcross": false,
       "isOFT": false
@@ -33375,7 +33407,7 @@
       "name": "Celo",
       "symbol": "CELO",
       "decimals": 18,
-      "logoURI": "https://s3.openocean.finance/token_logos/logos/1675828631474_42987407614787054.png",
+      "logoURI": "https://celo-org.github.io/celo-token-list/assets/celo_logo.svg",
       "tags": [],
       "extensions": {},
       "isAcross": false,
@@ -33387,7 +33419,7 @@
       "name": "Tether USD",
       "symbol": "USDT",
       "decimals": 6,
-      "logoURI": "https://s3.openocean.finance/token_logos/logos/1711958283427_8361118994675902.png",
+      "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xdAC17F958D2ee523a2206206994597C13D831ec7/logo.png",
       "tags": [],
       "extensions": {
         "coingeckoId": "tether",
@@ -33466,11 +33498,22 @@
     },
     {
       "chainId": 42220,
-      "address": "0x765de816845861e75a25fca122bb6898b8b1282a",
+      "address": "0x765DE816845861e75A25fCA122bb6898B8B1282a",
       "name": "Celo Dollar",
       "symbol": "cUSD",
       "decimals": 18,
-      "logoURI": "https://s3.openocean.finance/token_logos/logos/1675828746085_7502299595931938.png",
+      "logoURI": "https://raw.githubusercontent.com/mento-protocol/mento-web/refs/heads/main/public/tokens/cUSD.svg",
+      "extensions": {},
+      "isAcross": false,
+      "isOFT": false
+    },
+    {
+      "chainId": 42220,
+      "address": "0x8A567e2aE79CA692Bd748aB832081C45de4041eA",
+      "name": "Celo Colombian Peso",
+      "symbol": "cCOP",
+      "decimals": 18,
+      "logoURI": "https://raw.githubusercontent.com/mento-protocol/mento-web/refs/heads/main/public/tokens/cCOP.svg",
       "extensions": {},
       "isAcross": false,
       "isOFT": false
@@ -33487,22 +33530,11 @@
     },
     {
       "chainId": 42220,
-      "address": "0x8a567e2ae79ca692bd748ab832081c45de4041ea",
-      "name": "cCOP",
-      "symbol": "cCOP",
+      "address": "0x918146359264C492BD6934071c6Bd31C854EDBc3",
+      "name": "Moola cUSD",
+      "symbol": "mcUSD",
       "decimals": 18,
-      "logoURI": "https://s3.openocean.finance/token_logos/logos/1737569746031_5460155970722878.png",
-      "extensions": {},
-      "isAcross": false,
-      "isOFT": false
-    },
-    {
-      "chainId": 42220,
-      "address": "0x918146359264c492bd6934071c6bd31c854edbc3",
-      "name": "Moola Celo Dollars",
-      "symbol": "MCUSD",
-      "decimals": 18,
-      "logoURI": "https://s3.openocean.finance/token_logos/logos/1675829080997_615033629767729.png",
+      "logoURI": "https://raw.githubusercontent.com/ubeswap/default-token-list/master/assets/asset_mcUSD.png",
       "extensions": {},
       "isAcross": false,
       "isOFT": false
@@ -33626,11 +33658,22 @@
     },
     {
       "chainId": 42220,
-      "address": "0xE273Ad7ee11dCfAA87383aD5977EE1504aC07568",
-      "name": "mcEUR",
-      "symbol": "MCEUR",
+      "address": "0xD8763CBa276a3738E6DE85b4b3bF5FDed6D6cA73",
+      "name": "Celo Euro",
+      "symbol": "cEUR",
       "decimals": 18,
-      "logoURI": "https://s3.openocean.finance/token_logos/logos/1675829702477_7469835111262206.png",
+      "logoURI": "https://raw.githubusercontent.com/mento-protocol/mento-web/refs/heads/main/public/tokens/cEUR.svg",
+      "extensions": {},
+      "isAcross": false,
+      "isOFT": false
+    },
+    {
+      "chainId": 42220,
+      "address": "0xE273Ad7ee11dCfAA87383aD5977EE1504aC07568",
+      "name": "Moola cEUR",
+      "symbol": "mcEUR",
+      "decimals": 18,
+      "logoURI": "https://raw.githubusercontent.com/ubeswap/default-token-list/master/assets/asset_mcEUR.png",
       "extensions": {},
       "isAcross": false,
       "isOFT": false
@@ -33671,7 +33714,7 @@
       "name": "USD Coin",
       "symbol": "USDC",
       "decimals": 6,
-      "logoURI": "https://s3.openocean.finance/token_logos/logos/1708755995919_09115639592216684.png",
+      "logoURI": "https://raw.githubusercontent.com/compound-finance/token-list/master/assets/asset_USDC.svg",
       "extensions": {
         "bridgeInfo": {
           "1": {
@@ -33679,17 +33722,6 @@
           }
         }
       },
-      "isAcross": false,
-      "isOFT": false
-    },
-    {
-      "chainId": 42220,
-      "address": "0xd8763cba276a3738e6de85b4b3bf5fded6d6ca73",
-      "name": "Celo Euro",
-      "symbol": "cEUR",
-      "decimals": 18,
-      "logoURI": "https://s3.openocean.finance/token_logos/logos/1685699623744_8960314561820863.png",
-      "extensions": {},
       "isAcross": false,
       "isOFT": false
     },
@@ -33716,10 +33748,10 @@
     {
       "chainId": 42220,
       "address": "0xfaea5f3404bba20d3cc2f8c4b0a888f55a3c7313",
-      "name": "cGHS",
+      "name": "Celo Ghanaian Cedi",
       "symbol": "cGHS",
       "decimals": 18,
-      "logoURI": "https://s3.openocean.finance/token_logos/logos/1743153847570_12271891552043601.png",
+      "logoURI": "https://raw.githubusercontent.com/mento-protocol/mento-web/refs/heads/main/public/tokens/cGHS.svg",
       "extensions": {},
       "isAcross": false,
       "isOFT": false
@@ -36027,6 +36059,16 @@
     },
     {
       "chainId": 59144,
+      "address": "0x1a51b19CE03dbE0Cb44C1528E34a7EDD7771E9Af",
+      "name": "Lynex",
+      "symbol": "LYNX",
+      "decimals": 18,
+      "logoURI": "https://s2.coinmarketcap.com/static/img/coins/64x64/29525.png",
+      "isAcross": false,
+      "isOFT": false
+    },
+    {
+      "chainId": 59144,
       "address": "0x1a7e4e63778B4f12a199C062f3eFdD288afCBce8",
       "name": "EURA",
       "symbol": "EURA",
@@ -36121,6 +36163,16 @@
       "isAcross": false,
       "isOFT": true,
       "noLiquidityOnChain": true
+    },
+    {
+      "chainId": 59144,
+      "address": "0x1bE3735Dd0C0Eb229fB11094B6c277192349EBbf",
+      "name": "LUBE",
+      "symbol": "LUBE",
+      "decimals": 18,
+      "logoURI": "https://pbs.twimg.com/profile_images/1725003585157787648/4nbkBLVA_400x400.jpg",
+      "isAcross": false,
+      "isOFT": false
     },
     {
       "chainId": 59144,
@@ -37265,6 +37317,16 @@
     },
     {
       "chainId": 80094,
+      "address": "0x231A6BD8eB88Cfa42776B7Ac575CeCAf82bf1E21",
+      "name": "Beraplug",
+      "symbol": "PLUG",
+      "decimals": 18,
+      "logoURI": "https://res.cloudinary.com/duv0g402y/image/upload/v1743017404/tokens/pj0avz3gekjw6ih76xjv.png",
+      "isAcross": false,
+      "isOFT": false
+    },
+    {
+      "chainId": 80094,
       "address": "0x28e0e3B9817012b356119dF9e217c25932D609c2",
       "name": "Burr Governance Token",
       "symbol": "BURR",
@@ -37977,16 +38039,6 @@
       "noLiquidityOnChain": true
     },
     {
-      "chainId": 80094,
-      "address": "0xff12470a969Dd362EB6595FFB44C82c959Fe9ACc",
-      "name": "USDa",
-      "symbol": "USDa",
-      "decimals": 18,
-      "logoURI": "https://coin-images.coingecko.com/coins/images/51599/large/SUSDA.png?1731604761",
-      "isAcross": false,
-      "isOFT": false
-    },
-    {
       "chainId": 81457,
       "address": "0x1f55a02A049033E3419a8E2975cF3F572F4e6E9A",
       "name": "Staked Frax Ether",
@@ -38029,7 +38081,7 @@
       "name": "Frax Share",
       "symbol": "FXS",
       "decimals": 18,
-      "logoURI": "https://icons-ckg.pages.dev/stargate-light/tokens/fxs (old).svg",
+      "logoURI": "https://icons-ckg.pages.dev/stargate-light/tokens/fxs%20(old).svg",
       "tags": [],
       "extensions": {
         "bridgeInfo": {
@@ -40800,6 +40852,16 @@
       "noLiquidityOnChain": true
     },
     {
+      "chainId": 534352,
+      "address": "0xf610A9dfB7C89644979b4A0f27063E9e7d7Cda32",
+      "name": "Wrapped stETH",
+      "symbol": "wstETH",
+      "decimals": 18,
+      "logoURI": "https://scroll-tech.github.io/token-list/data/wstETH/logo.svg",
+      "isAcross": false,
+      "isOFT": false
+    },
+    {
       "chainId": 747474,
       "address": "0x3Ec3849C33291a9eF4c5dB86De593EB4A37fDe45",
       "name": "Staked Frax Ether",
@@ -43053,6 +43115,17 @@
     },
     {
       "chainId": 42161,
+      "address": "0x2193c45244AF12C280941281c8aa67dD08be0a64",
+      "name": "Lodestar Ether",
+      "symbol": "lETH",
+      "decimals": 8,
+      "logoURI": "https://raw.githubusercontent.com/balancer/tokenlists/main/src/assets/images/tokens/0x2193c45244af12c280941281c8aa67dd08be0a64.png",
+      "extensions": {},
+      "isAcross": false,
+      "isOFT": false
+    },
+    {
+      "chainId": 42161,
       "address": "0x223738a747383d6F9f827d95964e4d8E8AC754cE",
       "name": "Aura BAL",
       "symbol": "auraBAL",
@@ -44598,8 +44671,7 @@
         }
       },
       "isAcross": false,
-      "isOFT": true,
-      "noLiquidityOnChain": true
+      "isOFT": true
     },
     {
       "chainId": 42161,
@@ -45076,16 +45148,6 @@
       "symbol": "WOM",
       "decimals": 18,
       "logoURI": "https://raw.githubusercontent.com/CamelotLabs/default-token-list/refs/heads/main/src/assets/wom.svg",
-      "isAcross": false,
-      "isOFT": false
-    },
-    {
-      "chainId": 42161,
-      "address": "0x7C8a1A80FDd00C9Cccd6EbD573E9EcB49BFa2a59",
-      "name": "AICODE",
-      "symbol": "AICODE",
-      "decimals": 18,
-      "logoURI": "https://raw.githubusercontent.com/CamelotLabs/default-token-list/refs/heads/main/src/assets/aicode.svg",
       "isAcross": false,
       "isOFT": false
     },
@@ -45824,16 +45886,6 @@
     },
     {
       "chainId": 42161,
-      "address": "0xAad4187a81689AF72d91966c8119756E425cD7CF",
-      "name": "GMX Market Index",
-      "symbol": "GMI",
-      "decimals": 18,
-      "logoURI": "https://raw.githubusercontent.com/CamelotLabs/default-token-list/refs/heads/main/src/assets/gmi.jpg",
-      "isAcross": false,
-      "isOFT": false
-    },
-    {
-      "chainId": 42161,
       "address": "0xAcDd57300F214E2530Db0F5283036686BB85d67c",
       "name": "Ulysses Optimism Stack USDC",
       "symbol": "uOPs-USDC",
@@ -46378,6 +46430,16 @@
       "symbol": "uL1s-USDT",
       "decimals": 18,
       "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xba100000625a3754423978a60c9317c58a424e3D/logo.png",
+      "isAcross": false,
+      "isOFT": false
+    },
+    {
+      "chainId": 42161,
+      "address": "0xF65247B6ED3E7FDbAC313959B3f62475FBB5F8E4",
+      "name": "BrightPool Exchange Token",
+      "symbol": "BRIX",
+      "decimals": 9,
+      "logoURI": "https://raw.githubusercontent.com/CamelotLabs/default-token-list/refs/heads/main/src/assets/brix.png",
       "isAcross": false,
       "isOFT": false
     },
@@ -47471,12 +47533,39 @@
     },
     {
       "chainId": 42161,
+      "address": "0xf0D43f46Cea02bBb5E616bF6d795D4f8719cD80d",
+      "name": "ZELEBOBA",
+      "symbol": "ZELEBOBA",
+      "decimals": 9,
+      "logoURI": "https://raw.githubusercontent.com/CamelotLabs/default-token-list/refs/heads/main/src/assets/zeleboba.png",
+      "isAcross": false,
+      "isOFT": false
+    },
+    {
+      "chainId": 42161,
       "address": "0xf0cb2dc0db5e6c66B9a70Ac27B06b878da017028",
       "name": "Olympus",
       "symbol": "OHM",
       "decimals": 9,
       "logoURI": "https://assets.coingecko.com/coins/images/14483/large/token_OHM_%281%29.png?1628311611",
       "extensions": {},
+      "isAcross": false,
+      "isOFT": false
+    },
+    {
+      "chainId": 42161,
+      "address": "0xf75eE6D319741057a82a88Eeff1DbAFAB7307b69",
+      "name": "KRYLL",
+      "symbol": "KRL",
+      "decimals": 18,
+      "logoURI": "https://assets.coingecko.com/coins/images/2807/thumb/krl.png?1547036979",
+      "extensions": {
+        "bridgeInfo": {
+          "1": {
+            "tokenAddress": "0x464eBE77c293E473B48cFe96dDCf88fcF7bFDAC0"
+          }
+        }
+      },
       "isAcross": false,
       "isOFT": false
     },
