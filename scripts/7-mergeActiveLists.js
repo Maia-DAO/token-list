@@ -255,7 +255,11 @@ async function main() {
     const wrappedNativesRaw = await fs.readFile('wrappedNatives.json', 'utf8')
     const wrappedNativeTokens = JSON.parse(wrappedNativesRaw)
 
-    // 6. Fetch TOKEN_LIST files
+    // 6. Additional tokens from additionalTokens.json.
+    const additionalTokensRaw = await fs.readFile('additionalTokens.json', 'utf8')
+    const additionalTokens = JSON.parse(additionalTokensRaw)
+
+    // 7. Fetch TOKEN_LIST files
     let tokenListFiles = {};
     try {
       const files = await fs.readdir('output');
@@ -452,6 +456,7 @@ async function main() {
       ...uniswapTokens,
       ...wrappedNativeTokens,
       ...ulyssesData.rootTokens,
+      ...additionalTokens,
       ...Object.values(tokenListFiles).flat()
     ];
 
