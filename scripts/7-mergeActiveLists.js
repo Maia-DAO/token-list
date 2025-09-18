@@ -2,7 +2,7 @@ const fs = require('fs').promises
 const path = require('path')
 const { SupportedChainId, ZERO_ADDRESS } = require('maia-core-sdk')
 
-const { OVERRIDE_LOGO, PARTNER_TOKEN_SYMBOLS, CORE_TOKEN_SYMBOLS, BLOCKED_TOKEN_SYMBOLS, NATIVE_OFT_ADAPTERS, CHAINS_WITH_NO_SWAPPING, EXTENDED_SUPPORTED_CHAIN_IDS } = require('../configs')
+const { OVERRIDE_LOGO, OVERRIDE_LOGO_BY_URL, PARTNER_TOKEN_SYMBOLS, CORE_TOKEN_SYMBOLS, BLOCKED_TOKEN_SYMBOLS, NATIVE_OFT_ADAPTERS, CHAINS_WITH_NO_SWAPPING, EXTENDED_SUPPORTED_CHAIN_IDS } = require('../configs')
 const { getCoinLogo } = require('./getCoinLogo')
 const { mergeExtensions, orderAttributes, orderTokens } = require('../helpers')
 
@@ -136,7 +136,7 @@ async function normalizeAcrossToken(data) {
  */
 async function normalizeStargateToken(token) {
   const fallbackLogoTokenAddress = token?.extensions?.bridgeInfo && token.extensions.bridgeInfo.length === 1 ? Array.from(token.extensions.bridgeInfo.values())[0] : undefined
-  let tokenLogoURI = token.icon ?? OVERRIDE_LOGO[token.symbol]
+  let tokenLogoURI = OVERRIDE_LOGO_BY_URL[token.icon] ?? token.icon ?? OVERRIDE_LOGO[token.symbol]
   if (!tokenLogoURI) tokenLogoURI = await getCoinLogo(token.address, token.chainId, token.extensions?.coingeckoId, token.extensions?.coinMarketCapId)
   if (!tokenLogoURI && fallbackLogoTokenAddress) tokenLogoURI = await getCoinLogo(fallbackLogoTokenAddress, token.chainId, undefined, undefined)
 

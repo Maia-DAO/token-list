@@ -165,6 +165,10 @@ const OVERRIDE_LOGO = {
   'WNIBI': 'https://images-ext-1.discordapp.net/external/tM3n2iub1SLOqiey4mkfnl4Lfe4LR6ijT-Ixv7juEu8/https/silverswap.io/tokens/nibiru/WNIBI.png?format=webp&quality=lossless&width=450&height=450',
 }
 
+const OVERRIDE_LOGO_BY_URL = {
+  'https://icons-ckg.pages.dev/stargate-light/tokens/usd₮0.svg': 'https://coin-images.coingecko.com/coins/images/53705/large/usdt0.jpg?1737086183',
+}
+
 // Wrapped Native Token Address Per Chain
 // @dev copied from hermes UI frontend wrappedNative.ts 
 const WRAPPED_NATIVES = {
@@ -623,6 +627,7 @@ module.exports = {
   EXTENDED_SUPPORTED_CHAIN_IDS,
   OVERRIDE_PEG,
   OVERRIDE_LOGO,
+  OVERRIDE_LOGO_BY_URL,
   OVERRIDE_CG_CMC_ID,
   CORE_TOKEN_SYMBOLS,
   PARTNER_TOKEN_SYMBOLS,
