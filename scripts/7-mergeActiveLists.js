@@ -118,7 +118,6 @@ async function normalizeStargateToken(token) {
     return undefined
   }
 
-
   const result = {
     chainId: token.chainId,
     address: token.address,
@@ -127,10 +126,11 @@ async function normalizeStargateToken(token) {
     symbol: token.symbol,
     logoURI: tokenLogoURI ?? null,
     tags: [],
-    extensions: token.extensions ? token.extensions : {},
     isAcross: false,
     isOFT: token.isOFT, // not all tokens in stargate list are OFT
   }
+
+  if (token.extensions) result.extensions = token.extensions
 
   if (token.isOFT) {
     token.extensions = token.extensions || {}
@@ -270,17 +270,16 @@ async function main() {
           // Merge into rootTokensMap.
           const rootKey = token.address.toLowerCase()
           if (!rootTokensMap[rootKey]) {
-            rootTokensMap[rootKey] = token
+            rootTokensMap[rootKey] = orderAttributes(token)
           }
         } else {
           // Merge into normalizedMap.
           const key = token.address.toLowerCase() + '_' + token.chainId
           if (!normalizedMap[key]) {
-            normalizedMap[key] = token
+            normalizedMap[key] = orderAttributes(token)
           }
         }
       })
-
     }
 
     // Process Stargate tokens.
@@ -306,7 +305,7 @@ async function main() {
         const rootKey = normalizedToken.address.toLowerCase()
 
         if (!rootTokensMap[rootKey]) {
-          rootTokensMap[rootKey] = normalizedToken
+          rootTokensMap[rootKey] = orderAttributes(normalizedToken)
         } else {
           rootTokensMap[rootKey] = mergeTokenData(rootTokensMap[rootKey], normalizedToken)
         }
@@ -358,7 +357,7 @@ async function main() {
 
 
         if (!normalizedMap[key]) {
-          normalizedMap[key] = normalizedToken
+          normalizedMap[key] = orderAttributes(normalizedToken)
         } else {
           normalizedMap[key] = mergeTokenData(normalizedMap[key], normalizedToken)
         }
@@ -449,7 +448,7 @@ async function main() {
           const existing = rootTokensMap[rootKey]
           rootTokensMap[rootKey] = mergeTokenData(existing, token)
         } else {
-          rootTokensMap[rootKey] = token
+          rootTokensMap[rootKey] = orderAttributes(token)
         }
       } else {
         const key = token.address.toLowerCase() + '_' + token.chainId
@@ -457,7 +456,7 @@ async function main() {
           const existing = normalizedMap[key]
           normalizedMap[key] = mergeTokenData(existing, token)
         } else {
-          normalizedMap[key] = token
+          normalizedMap[key] = orderAttributes(token)
         }
       }
     })
@@ -475,7 +474,7 @@ async function main() {
           const existing = normalizedMap[key]
           normalizedMap[key] = mergeTokenDataUlysses(existing, token)
         } else {
-          normalizedMap[key] = token
+          normalizedMap[key] = orderAttributes(token)
         }
       })
     }
