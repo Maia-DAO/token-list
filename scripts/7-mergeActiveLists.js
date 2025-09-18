@@ -10,6 +10,32 @@ const { mergeExtensions, orderAttributes, orderTokens } = require('../helpers')
 // Normalization functions for tokens to the unified format
 // ---------------------------------------------------------------------
 
+function encodeSpaces(url) {
+  return url.replace(/ /g, '%20');
+}
+
+function finalCleanTokens(tokenMap, wrappedNativeTokens) {
+  return Object.values(tokenMap)
+    .filter((t) =>
+      t.isAcross ||
+      t.isOFT ||
+      wrappedNativeTokens.some((w) =>
+        w.chainId === t.chainId &&
+        (
+          (t.address && w.address === t.address) ||
+          (t.underlyingAddress && w.underlyingAddress === t.underlyingAddress)
+        )
+      ) ||
+      !CHAINS_WITH_NO_SWAPPING.includes(t.chainId)
+    )
+    .map((t) => {
+      if (t.logoURI) t.logoURI = encodeSpaces(t.logoURI);
+      return t;
+    })
+    .sort(orderTokens);
+}
+
+
 function mergeTokenData(existing, incoming) {
   const merged = {
     ...existing,
@@ -480,8 +506,8 @@ async function main() {
     }
 
     // 4. Final tokens and rootTokens arrays.
-    const finalTokens = Object.values(normalizedMap).filter((t) =>  t.isAcross || t.isOFT || wrappedNativeTokens.some((w)=> w.chainId === t.chainId && (t.address && w.address === t.address || t.underlyingAddress && w.underlyingAddress === t.underlyingAddress)) || !CHAINS_WITH_NO_SWAPPING.includes(t.chainId)).sort(orderTokens)
-    const finalRootTokens = Object.values(rootTokensMap).filter((t) =>  t.isAcross || t.isOFT || wrappedNativeTokens.some((w)=> w.chainId === t.chainId && (t.address && w.address === t.address || t.underlyingAddress && w.underlyingAddress === t.underlyingAddress)) || !CHAINS_WITH_NO_SWAPPING.includes(t.chainId)).sort(orderTokens)
+    const finalTokens = finalCleanTokens(normalizedMap, wrappedNativeTokens);
+    const finalRootTokens = finalCleanTokens(rootTokensMap, wrappedNativeTokens);
 
     // -----------------------------------------------------------------
     // Build new merged output in complete token list format.

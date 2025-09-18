@@ -4,6 +4,9 @@ const { SupportedChainId } = require('maia-core-sdk')
 const { orderTokens } = require('../helpers')
 const { BLOCKED_TOKEN_SYMBOLS, EXTENDED_SUPPORTED_CHAIN_IDS } = require('../configs')
 
+function encodeSpaces(url) {
+  return url.replace(/ /g, '%20');
+}
 
 /**
  * Bumps version by incrementing the patch version.
@@ -100,7 +103,12 @@ async function main() {
         }
         return memo
       }, [])
-      .sort(orderTokens).filter((t) => !BLOCKED_TOKEN_SYMBOLS.includes(t.symbol))
+      .sort(orderTokens)
+      .filter((t) => !BLOCKED_TOKEN_SYMBOLS.includes(t.symbol))
+      .map((t) => {
+        if (t.logoURI) t.logoURI = encodeSpaces(t.logoURI);
+        return t;
+      })
 
     // --- Write out the combined list ---
     const newInactiveOutput = {
