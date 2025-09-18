@@ -1,8 +1,8 @@
 {
   "name": "Hermes Omnichain Inactive Token List",
-  "timestamp": "1758209157",
+  "timestamp": "1758213336",
   "version": {
-    "major": 139,
+    "major": 140,
     "minor": 0,
     "patch": 0
   },
@@ -2741,8 +2741,7 @@
         }
       },
       "isAcross": false,
-      "isOFT": true,
-      "noLiquidityOnChain": true
+      "isOFT": true
     },
     {
       "chainId": 1,
@@ -5340,6 +5339,21 @@
     },
     {
       "chainId": 1,
+      "address": "0x6524B87960c2d573AE514fd4181777E7842435d4",
+      "name": "Benzene",
+      "symbol": "BZN",
+      "decimals": 18,
+      "logoURI": "https://assets.coingecko.com/coins/images/17368/large/bzn-logo-200.png?1627437320",
+      "extensions": {
+        "bridgeInfo": {
+          "137": {
+            "tokenAddress": "0xcD0D64C971AF8B477042130c5e6cD2A6f7842869"
+          }
+        }
+      }
+    },
+    {
+      "chainId": 1,
       "address": "0x656C00e1BcD96f256F224AD9112FF426Ef053733",
       "name": "Efinity",
       "symbol": "EFI",
@@ -6419,15 +6433,6 @@
       "isAcross": false,
       "isOFT": true,
       "noLiquidityOnChain": true
-    },
-    {
-      "chainId": 1,
-      "address": "0x74bE64B45D394FA57816c1950E94dBB8d7A7B306",
-      "name": "Givewell Inu",
-      "symbol": "GINU",
-      "decimals": 9,
-      "logoURI": "https://assets.coingecko.com/coins/images/28323/large/5FADC518-3EE8-4914-A627-602B9C3FAFB4.jpeg?1669445878",
-      "extensions": {}
     },
     {
       "chainId": 1,
@@ -9575,6 +9580,21 @@
     },
     {
       "chainId": 1,
+      "address": "0xD478161C952357F05f0292B56012Cd8457F1cfbF",
+      "name": "Polkamarkets",
+      "symbol": "POLK",
+      "decimals": 18,
+      "logoURI": "https://assets.coingecko.com/coins/images/14084/large/polkamarkets.jpg?1614179979",
+      "extensions": {
+        "bridgeInfo": {
+          "42161": {
+            "tokenAddress": "0x9AeF5d778a7BfCd469E997aDcdA5629d9439c917"
+          }
+        }
+      }
+    },
+    {
+      "chainId": 1,
       "address": "0xD567B5F02b9073aD3a982a099a23Bf019FF11d1c",
       "name": "Gamestarter",
       "symbol": "GAME",
@@ -12497,8 +12517,7 @@
         }
       },
       "isAcross": false,
-      "isOFT": true,
-      "noLiquidityOnChain": true
+      "isOFT": true
     },
     {
       "chainId": 1,
@@ -12812,6 +12831,15 @@
       "symbol": "VIBE",
       "decimals": 18,
       "logoURI": "https://assets.coingecko.com/coins/images/948/large/vibe.png?1547034809",
+      "extensions": {}
+    },
+    {
+      "chainId": 1,
+      "address": "0xe9B076B476D8865cDF79D1Cf7DF420EE397a7f75",
+      "name": "Unification",
+      "symbol": "FUND",
+      "decimals": 9,
+      "logoURI": "https://assets.coingecko.com/coins/images/7845/large/DV80FOp.png?1554953278",
       "extensions": {}
     },
     {
@@ -30257,8 +30285,7 @@
         }
       },
       "isAcross": false,
-      "isOFT": true,
-      "noLiquidityOnChain": true
+      "isOFT": true
     },
     {
       "chainId": 137,
@@ -31018,6 +31045,21 @@
       "isAcross": false,
       "isOFT": true,
       "noLiquidityOnChain": true
+    },
+    {
+      "chainId": 137,
+      "address": "0x638Df98Ad8069a15569dA5a6b01181804c47e34c",
+      "name": "Dafi Protocol",
+      "symbol": "DAFI",
+      "decimals": 18,
+      "logoURI": "https://assets.coingecko.com/coins/images/14428/large/Dafi_Black_Icon.png?1616040406",
+      "extensions": {
+        "bridgeInfo": {
+          "1": {
+            "tokenAddress": "0xFc979087305A826c2B2a0056cFAbA50aad3E6439"
+          }
+        }
+      }
     },
     {
       "chainId": 137,
@@ -33311,7 +33353,8 @@
         }
       },
       "isAcross": false,
-      "isOFT": true
+      "isOFT": true,
+      "noLiquidityOnChain": true
     },
     {
       "chainId": 137,
@@ -52895,7 +52938,8 @@
         }
       },
       "isAcross": false,
-      "isOFT": true
+      "isOFT": true,
+      "noLiquidityOnChain": true
     },
     {
       "chainId": 8453,
@@ -56780,7 +56824,8 @@
         }
       },
       "isAcross": false,
-      "isOFT": true
+      "isOFT": true,
+      "noLiquidityOnChain": true
     },
     {
       "chainId": 42161,
@@ -66409,16 +66454,6 @@
     },
     {
       "chainId": 43114,
-      "address": "0xaD4CB79293322c07973ee83Aed5DF66A53214dc6",
-      "name": "Shell Token (Stargate)",
-      "symbol": "SHELL",
-      "decimals": 18,
-      "tags": [],
-      "extensions": {},
-      "isAcross": false
-    },
-    {
-      "chainId": 43114,
       "address": "0xba0Dda8762C24dA9487f5FA026a9B64b695A07Ea",
       "name": "OX Coin",
       "symbol": "OX",
@@ -73221,7 +73256,8 @@
         }
       },
       "isAcross": false,
-      "isOFT": true
+      "isOFT": true,
+      "noLiquidityOnChain": true
     },
     {
       "chainId": 81457,

@@ -1,8 +1,8 @@
 {
   "name": "Hermes Omnichain Token List",
-  "timestamp": "1758209696",
+  "timestamp": "1758213336",
   "version": {
-    "major": 199,
+    "major": 200,
     "minor": 0,
     "patch": 0
   },
@@ -1063,6 +1063,16 @@
     },
     {
       "chainId": 1,
+      "address": "0x11DFC652eb62c723ad8c2ae731FcEdE58aB07564",
+      "name": "Liquid Agent",
+      "symbol": "LIQUID",
+      "decimals": 18,
+      "logoURI": "https://etherscan.io/token/images/liquidagentai_32.svg",
+      "isAcross": false,
+      "isOFT": false
+    },
+    {
+      "chainId": 1,
       "address": "0x1202F5C7b4B9E47a1A484E8B270be34dbbC75055",
       "name": "Wrapped stUSR",
       "symbol": "wstUSR",
@@ -1376,16 +1386,6 @@
       "symbol": "TOWER",
       "decimals": 18,
       "logoURI": "https://ethereum-optimism.github.io/data/TOWER/logo.svg",
-      "isAcross": false,
-      "isOFT": false
-    },
-    {
-      "chainId": 1,
-      "address": "0x1D96Fd43EE07Aa79f8Fd003cbdF404fb5ce41AD2",
-      "name": "Qawalla Token",
-      "symbol": "QWLA",
-      "decimals": 18,
-      "logoURI": "https://ethereum-optimism.github.io/data/QWLA/logo.svg",
       "isAcross": false,
       "isOFT": false
     },
@@ -5809,6 +5809,16 @@
     },
     {
       "chainId": 1,
+      "address": "0x7f792db54B0e580Cdc755178443f0430Cf799aCa",
+      "name": "Volt Inu",
+      "symbol": "VOLT",
+      "decimals": 9,
+      "logoURI": "https://etherscan.io/token/images/voltinu3_32.png",
+      "isAcross": false,
+      "isOFT": false
+    },
+    {
+      "chainId": 1,
       "address": "0x808507121B80c02388fAd14726482e061B8da827",
       "name": "Pendle",
       "symbol": "PENDLE",
@@ -7461,23 +7471,6 @@
       "symbol": "MVL",
       "decimals": 18,
       "logoURI": "https://ethereum-optimism.github.io/data/MVL/logo.svg",
-      "isAcross": false,
-      "isOFT": false
-    },
-    {
-      "chainId": 1,
-      "address": "0xA9B1Eb5908CfC3cdf91F9B8B3a74108598009096",
-      "name": "Bounce",
-      "symbol": "AUCTION",
-      "decimals": 18,
-      "logoURI": "https://assets.coingecko.com/coins/images/13860/thumb/1_KtgpRIJzuwfHe0Rl0avP_g.jpeg?1612412025",
-      "extensions": {
-        "bridgeInfo": {
-          "130": {
-            "tokenAddress": "0x82F90996a4F67Eb388116B3C6F35B6Ea91BeF68E"
-          }
-        }
-      },
       "isAcross": false,
       "isOFT": false
     },
@@ -9431,6 +9424,16 @@
     },
     {
       "chainId": 1,
+      "address": "0xaAAf91D9b90dF800Df4F55c205fd6989c977E73a",
+      "name": "Monolith TKN",
+      "symbol": "TKN",
+      "decimals": 8,
+      "logoURI": "https://assets-cdn.trustwallet.com/blockchains/ethereum/assets/0xaAAf91D9b90dF800Df4F55c205fd6989c977E73a/logo.png",
+      "isAcross": false,
+      "isOFT": false
+    },
+    {
+      "chainId": 1,
       "address": "0xaD55aebc9b8c03FC43cd9f62260391c13c23e7c0",
       "name": "Compounding Open Dollar",
       "symbol": "cUSDO",
@@ -10102,6 +10105,16 @@
       "symbol": "RED",
       "decimals": 18,
       "logoURI": "https://coin-images.coingecko.com/coins/images/53640/large/RedStone_Logo_New_White.png?1740640919",
+      "isAcross": false,
+      "isOFT": false
+    },
+    {
+      "chainId": 1,
+      "address": "0xc5102fe9359fd9a28f877a67e36b0f050d81a3cc",
+      "name": "Hop",
+      "symbol": "HOP",
+      "decimals": 18,
+      "logoURI": "https://ethereum-optimism.github.io/data/HOP/logo.svg",
       "isAcross": false,
       "isOFT": false
     },
@@ -15637,6 +15650,16 @@
     },
     {
       "chainId": 56,
+      "address": "0x7f792db54B0e580Cdc755178443f0430Cf799aCa",
+      "name": "Volt Inu",
+      "symbol": "VOLT",
+      "decimals": 9,
+      "logoURI": "https://etherscan.io/token/images/voltinu3_32.png",
+      "isAcross": false,
+      "isOFT": false
+    },
+    {
+      "chainId": 56,
       "address": "0x80Eede496655FB9047dd39d9f418d5483ED600df",
       "name": "Frax USD",
       "symbol": "frxUSD",
@@ -16099,6 +16122,24 @@
       },
       "isAcross": false,
       "isOFT": false
+    },
+    {
+      "chainId": 56,
+      "address": "0xBF05279F9Bf1CE69bBFEd670813b7e431142Afa4",
+      "name": "Million",
+      "symbol": "MM",
+      "decimals": 18,
+      "logoURI": "https://assets.coingecko.com/coins/images/16825/standard/logo200x200.png?1696516393",
+      "tags": [],
+      "extensions": {
+        "coingeckoId": "million",
+        "bridgeInfo": {
+          "1": {
+            "tokenAddress": "0x6B4c7A5e3f0B99FCD83e9c089BDDD6c7FCe5c611"
+          }
+        }
+      },
+      "isAcross": false
     },
     {
       "chainId": 56,
@@ -18815,6 +18856,23 @@
     },
     {
       "chainId": 137,
+      "address": "0x61299774020dA444Af134c82fa83E3810b309991",
+      "name": "Render Token",
+      "symbol": "RNDR",
+      "decimals": 18,
+      "logoURI": "https://assets.coingecko.com/coins/images/11636/large/rndr.png?1638840934",
+      "extensions": {
+        "bridgeInfo": {
+          "1": {
+            "tokenAddress": "0x6De037ef9aD2725EB40118Bb1702EBb27e4Aeb24"
+          }
+        }
+      },
+      "isAcross": false,
+      "isOFT": false
+    },
+    {
+      "chainId": 137,
       "address": "0x62F594339830b90AE4C084aE7D223fFAFd9658A7",
       "name": "Sphere Finance",
       "symbol": "SPHERE",
@@ -21383,6 +21441,16 @@
     },
     {
       "chainId": 169,
+      "address": "0xEc901DA9c68E90798BbBb74c11406A32A70652C3",
+      "name": "StakeStone Ether",
+      "symbol": "STONE",
+      "decimals": 18,
+      "logoURI": "https://s3.openocean.finance/token_logos/logos/1704871627809_46567452258674025.png",
+      "isAcross": false,
+      "isOFT": false
+    },
+    {
+      "chainId": 169,
       "address": "0xb73603c5d87fa094b7314c74ace2e64d165016fb",
       "name": "Bridged USD Coin (Manta Pacific)",
       "symbol": "USDC",
@@ -23712,6 +23780,16 @@
       "symbol": "USOL",
       "decimals": 9,
       "logoURI": "https://coin-images.coingecko.com/coins/images/67159/large/solana.jpg?1751940039",
+      "isAcross": false,
+      "isOFT": false
+    },
+    {
+      "chainId": 999,
+      "address": "0x0a3d8466F5dE586FA5F6DE117301e2f90bCC5c48",
+      "name": "Resolv Liquidity Provider Token",
+      "symbol": "RLP",
+      "decimals": 18,
+      "logoURI": "https://raw.githubusercontent.com/balancer/tokenlists/main/src/assets/images/tokens/0x0a3d8466f5de586fa5f6de117301e2f90bcc5c48.png",
       "isAcross": false,
       "isOFT": false
     },
@@ -28627,6 +28705,16 @@
     },
     {
       "chainId": 8453,
+      "address": "0x2C24497D4086490e7EaD87CC12597fb50c2E6eD6",
+      "name": "SynFutures",
+      "symbol": "F",
+      "decimals": 18,
+      "logoURI": "https://ethereum-optimism.github.io/data/F/logo.svg",
+      "isAcross": false,
+      "isOFT": false
+    },
+    {
+      "chainId": 8453,
       "address": "0x2C8C89C442436CC6C0a77943E09c8Daf49Da3161",
       "name": "ZEEBU",
       "symbol": "ZBU",
@@ -29664,6 +29752,16 @@
     },
     {
       "chainId": 8453,
+      "address": "0x703D57164CA270b0B330A87FD159CfEF1490c0a5",
+      "name": "Rai.Finance",
+      "symbol": "SOFI",
+      "decimals": 18,
+      "logoURI": "https://ethereum-optimism.github.io/data/SOFI/logo.svg",
+      "isAcross": false,
+      "isOFT": false
+    },
+    {
+      "chainId": 8453,
       "address": "0x7300B37DfdfAb110d83290A29DfB31B1740219fE",
       "name": "Mamo",
       "symbol": "MAMO",
@@ -30657,6 +30755,16 @@
       "symbol": "ZCHF",
       "decimals": 18,
       "logoURI": "https://raw.githubusercontent.com/balancer/tokenlists/main/src/assets/images/tokens/0xd4dd9e2f021bb459d5a5f6c24c12fe09c5d45553.png",
+      "isAcross": false,
+      "isOFT": false
+    },
+    {
+      "chainId": 8453,
+      "address": "0xDEc933e2392AD908263e70A386fbF34e703Ffe8F",
+      "name": "Wrapped Backed Coinbase Global",
+      "symbol": "wbCOIN",
+      "decimals": 18,
+      "logoURI": "https://raw.githubusercontent.com/balancer/tokenlists/main/src/assets/images/tokens/0xdec933e2392ad908263e70a386fbf34e703ffe8f.png",
       "isAcross": false,
       "isOFT": false
     },
@@ -38768,8 +38876,7 @@
         }
       },
       "isAcross": false,
-      "isOFT": true,
-      "noLiquidityOnChain": true
+      "isOFT": true
     },
     {
       "chainId": 81457,
@@ -42459,16 +42566,6 @@
           }
         }
       },
-      "isAcross": false,
-      "isOFT": false
-    },
-    {
-      "chainId": 42161,
-      "address": "0x10393c20975cF177a3513071bC110f7962CD67da",
-      "name": "Jones DAO",
-      "symbol": "JONES",
-      "decimals": 18,
-      "logoURI": "https://raw.githubusercontent.com/CamelotLabs/default-token-list/refs/heads/main/src/assets/jones.svg",
       "isAcross": false,
       "isOFT": false
     },
