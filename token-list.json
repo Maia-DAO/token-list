@@ -1,8 +1,8 @@
 {
   "name": "Hermes Omnichain Token List",
-  "timestamp": "1758632780",
+  "timestamp": "1758646252",
   "version": {
-    "major": 227,
+    "major": 228,
     "minor": 0,
     "patch": 0
   },
@@ -483,7 +483,7 @@
               "tokenAddress": "0x8b9Ee39195eA99d6ddD68030F44131116bc218F6"
             },
             "3338": {
-              "tokenAddress": "0x0000000000000000000000000000000000000000"
+              "tokenAddress": "0x0000000000000000000000000000000000000809"
             }
           },
           "oftAdapter": "0x1EeF208926667594E5136e89D0e9DD6907959197",
@@ -5915,7 +5915,7 @@
         "oftInfo": {
           "peersInfo": {
             "239": {
-              "tokenAddress": "0x1219c409faBe2C27Bd0D1A565daeed9Bd9f271dE"
+              "tokenAddress": "0x0000000000000000000000000000000000000000"
             }
           },
           "oftAdapter": "0x1219c409faBe2C27Bd0D1A565daeed9Bd9f271dE",
@@ -7082,7 +7082,7 @@
               "tokenAddress": "0x1EeF208926667594E5136e89D0e9DD6907959197"
             },
             "3338": {
-              "tokenAddress": "0x0000000000000000000000000000000000000000"
+              "tokenAddress": "0x0000000000000000000000000000000000000809"
             }
           },
           "oftAdapter": "0x8b9Ee39195eA99d6ddD68030F44131116bc218F6",
@@ -9842,8 +9842,7 @@
         }
       },
       "isAcross": false,
-      "isOFT": true,
-      "noLiquidityOnChain": true
+      "isOFT": true
     },
     {
       "chainId": 146,
@@ -10337,8 +10336,7 @@
         }
       },
       "isAcross": false,
-      "isOFT": true,
-      "noLiquidityOnChain": true
+      "isOFT": true
     },
     {
       "chainId": 146,
@@ -13137,8 +13135,7 @@
         }
       },
       "isAcross": false,
-      "isOFT": true,
-      "noLiquidityOnChain": true
+      "isOFT": true
     },
     {
       "chainId": 999,
@@ -16541,8 +16538,7 @@
         }
       },
       "isAcross": false,
-      "isOFT": true,
-      "noLiquidityOnChain": true
+      "isOFT": true
     },
     {
       "chainId": 8453,
@@ -18910,8 +18906,8 @@
     },
     {
       "chainId": 42161,
-      "globalAddress": "0x54b6e28a869a56f4e34d1187ae0a35b7dd3be111",
-      "underlyingAddress": "0x54b6e28a869a56f4e34d1187ae0a35b7dd3be111",
+      "globalAddress": "0x54b6e28A869a56f4e34d1187ae0a35b7dD3be111",
+      "underlyingAddress": "0x54b6e28A869a56f4e34d1187ae0a35b7dD3be111",
       "name": "Vote Maia - Votes",
       "symbol": "vMAIA-V",
       "decimals": 18,
@@ -23438,7 +23434,7 @@
       "localAddress": {
         "84532": "0x783f3186d43d29fE4C24be6E0a89bfF0489694c2"
       },
-      "underlyingAddress": "0x2d82c4b9ff582d02cc89675f2d086cb7953a555a",
+      "underlyingAddress": "0x2d82C4b9ff582d02CC89675f2D086Cb7953A555a",
       "name": "Tether USD",
       "symbol": "USDT",
       "decimals": 6,
@@ -23462,7 +23458,7 @@
       "localAddress": {
         "84532": "0x46C5CcaAFf452f6849d1e1D08D602AB78acf8980"
       },
-      "underlyingAddress": "0x78af7b91a77a47010fe26fe39bd499d279e0debb",
+      "underlyingAddress": "0x78Af7B91A77a47010fE26FE39Bd499d279E0debb",
       "name": "USDCoin",
       "symbol": "USDC",
       "decimals": 6,
@@ -23474,7 +23470,7 @@
       "localAddress": {
         "84532": "0xe877494E312fF15cD5aAf85a8a0324052807964c"
       },
-      "underlyingAddress": "0xaeb28175adf61fa6d74a39b2246b6c65d5bcc71c",
+      "underlyingAddress": "0xAEB28175AdF61Fa6d74A39b2246B6c65D5Bcc71C",
       "name": "Dai Stablecoin",
       "symbol": "DAI",
       "decimals": 18,
