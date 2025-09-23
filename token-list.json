@@ -483,7 +483,7 @@
               "tokenAddress": "0x8b9Ee39195eA99d6ddD68030F44131116bc218F6"
             },
             "3338": {
-              "tokenAddress": "0x0000000000000000000000000000000000000809"
+              "tokenAddress": "0x0000000000000000000000000000000000000000"
             }
           },
           "oftAdapter": "0x1EeF208926667594E5136e89D0e9DD6907959197",
@@ -7082,7 +7082,7 @@
               "tokenAddress": "0x1EeF208926667594E5136e89D0e9DD6907959197"
             },
             "3338": {
-              "tokenAddress": "0x0000000000000000000000000000000000000809"
+              "tokenAddress": "0x0000000000000000000000000000000000000000"
             }
           },
           "oftAdapter": "0x8b9Ee39195eA99d6ddD68030F44131116bc218F6",
@@ -15243,40 +15243,6 @@
       "isOFT": true
     },
     {
-      "chainId": 3338,
-      "address": "0x0000000000000000000000000000000000000809",
-      "name": "PEAQ",
-      "symbol": "PEAQ",
-      "decimals": 18,
-      "logoURI": "https://s2.coinmarketcap.com/static/img/coins/128x128/14588.png",
-      "tags": [],
-      "extensions": {
-        "coingeckoId": "peaq-2",
-        "bridgeInfo": {
-          "56": {
-            "tokenAddress": "0x8b9Ee39195eA99d6ddD68030F44131116bc218F6"
-          }
-        },
-        "oftInfo": {
-          "peersInfo": {
-            "1": {
-              "tokenAddress": "0x1EeF208926667594E5136e89D0e9DD6907959197"
-            },
-            "56": {
-              "tokenAddress": "0x8b9Ee39195eA99d6ddD68030F44131116bc218F6"
-            }
-          },
-          "oftAdapter": "0xe4103e80c967f58591a1d7cA443ed7E392FeD862",
-          "oftVersion": 3,
-          "endpointVersion": 2,
-          "endpointId": 30302,
-          "oftSharedDecimals": 6
-        }
-      },
-      "isAcross": false,
-      "isOFT": true
-    },
-    {
       "chainId": 5000,
       "address": "0x371c7ec6D8039ff7933a2AA28EB827Ffe1F52f07",
       "name": "JoeToken",
@@ -17669,7 +17635,8 @@
         "coingeckoId": "pooltogether"
       },
       "isAcross": true,
-      "isOFT": false
+      "isOFT": false,
+      "noLiquidityOnChain": true
     },
     {
       "chainId": 8453,
@@ -27328,7 +27295,8 @@
         }
       },
       "isAcross": false,
-      "isOFT": true
+      "isOFT": true,
+      "noLiquidityOnChain": true
     },
     {
       "chainId": 42161,
