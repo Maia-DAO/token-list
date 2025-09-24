@@ -1,6 +1,7 @@
 // download-logos.js
 const fs = require('fs')
 const path = require('path')
+const sharp = require('sharp')
 const nativeTokens = require('../wrappedNatives.json')
 const activeList = require('../token-list.json')
 const inactiveList = require('../inactive-token-list.json')
@@ -27,7 +28,8 @@ async function downloadLogo(token) {
   }
 
   try {
-    const saveDir = path.join('assets', networkName, getAddressFromEntry(token), 'logo')
+    const saveDir = path.join('assets', networkName, getAddressFromEntry(token))
+    const savePath = path.join(saveDir, 'logo.png')
 
     if (fs.existsSync(saveDir)) return
     if (!token.logoURI) return
@@ -39,18 +41,21 @@ async function downloadLogo(token) {
       return
     }
 
+    let buffer = await res.bytes()
+
     let fileType
-    const contentType = res.headers.get('content-type')
+    const contentType = res.headers.get('content-type').toLowerCase()
     if (contentType.includes('image/png')) {
-      fileType = 'png'
-    } else if (contentType.includes('image/svg')) {
-      fileType = 'svg'
+      // do nothing
+    } else if (
+      contentType.includes('image/svg') ||
+      contentType.includes('image/jpeg') ||
+      contentType.includes('image/jpg')
+    ) {
+      buffer = await sharp(buffer).png().toBuffer()
     } else {
       throw new Error('Unknown image type:', contentType)
     }
-    const savePath = path.join(saveDir, 'index.' + fileType)
-
-    const buffer = await res.bytes()
 
     fs.mkdirSync(saveDir, { recursive: true })
     fs.writeFileSync(savePath, buffer)
