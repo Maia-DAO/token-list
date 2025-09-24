@@ -45,16 +45,8 @@ async function downloadLogo(token) {
 
     let fileType
     const contentType = res.headers.get('content-type').toLowerCase()
-    if (contentType.includes('image/png')) {
-      // do nothing
-    } else if (
-      contentType.includes('image/svg') ||
-      contentType.includes('image/jpeg') ||
-      contentType.includes('image/jpg')
-    ) {
+    if (!contentType.includes('image/png')) {
       buffer = await sharp(buffer).png().toBuffer()
-    } else {
-      throw new Error('Unknown image type:', contentType)
     }
 
     fs.mkdirSync(saveDir, { recursive: true })
