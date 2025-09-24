@@ -11,6 +11,14 @@ function getAddressFromEntry(token) {
   return token.address ?? token.underlyingAddress
 }
 
+function normalizeUrl(logoURI) {
+  if (logoURI.startsWith('ipfs://')) {
+    const cid = logoURI.replace('ipfs://', '')
+    return `https://ipfs.io/ipfs/${cid}`
+  }
+  return logoURI
+}
+
 async function downloadLogo(token) {
   const networkName = CHAIN_ID_TO_NETWORK[token.chainId]
   if (!networkName) {
@@ -19,17 +27,28 @@ async function downloadLogo(token) {
   }
 
   try {
-    const saveDir = path.join('assets', networkName, getAddressFromEntry(token))
-    const savePath = path.join(saveDir, 'logo.png')
+    const saveDir = path.join('assets', networkName, getAddressFromEntry(token), 'logo')
 
-    if (fs.existsSync(savePath)) return
+    if (fs.existsSync(saveDir)) return
     if (!token.logoURI) return
 
-    const res = await fetch(token.logoURI)
+    const url = normalizeUrl(token.logoURI)
+    const res = await fetch(url)
     if (!res.ok) {
-      console.warn(`❌ Failed to fetch ${token.chainId} ${token.symbol} from ${token.logoURI}`)
+      console.warn(`❌ Failed to fetch ${token.chainId} ${token.symbol} from ${url}`)
       return
     }
+
+    let fileType
+    const contentType = res.headers.get('content-type')
+    if (contentType.includes('image/png')) {
+      fileType = 'png'
+    } else if (contentType.includes('image/svg')) {
+      fileType = 'svg'
+    } else {
+      throw new Error('Unknown image type:', contentType)
+    }
+    const savePath = path.join(saveDir, 'index.' + fileType)
 
     const buffer = await res.bytes()
 
