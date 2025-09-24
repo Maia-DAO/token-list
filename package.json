@@ -15,7 +15,7 @@
     "all": "yarn fetch && yarn filter && yarn merge && yarn merge-others && yarn removeDupes && yarn markLiquidity",
     "dev": "yarn filter && yarn merge && yarn merge-others && yarn removeDupes",
     "wrapped-natives": "node scripts/generateWrappedNatives/index.js",
-    "wrapped-assets": "node assets/createWrappedEntries.js",
+    "generate-assets": "node assets/generateAssets.js",
     "test-lists": "node scripts/test-lists.js",
     "lint": "yarn prettier . --check",
     "lint:fix": "yarn prettier . --write"
