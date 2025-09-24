@@ -1,8 +1,8 @@
 {
   "name": "Hermes Omnichain Token List",
-  "timestamp": "1758660591",
+  "timestamp": "1758704793",
   "version": {
-    "major": 230,
+    "major": 232,
     "minor": 0,
     "patch": 0
   },
@@ -1900,6 +1900,17 @@
     },
     {
       "chainId": 1,
+      "address": "0x7ce89243Cc0d9e746609c57845ECCbD9bB4B7315",
+      "name": "Lily's Coin",
+      "symbol": "LILY",
+      "decimals": 18,
+      "logoURI": "https://icons-ckg.pages.dev/stargate-light/tokens/lily.svg",
+      "tags": [],
+      "extensions": {},
+      "isAcross": false
+    },
+    {
+      "chainId": 1,
       "address": "0x7f39C581F595B53c5cb19bD0b3f8dA6c935E2Ca0",
       "name": "Wrapped liquid staked Ether 2.0",
       "symbol": "wstETH",
@@ -2242,17 +2253,6 @@
       },
       "isAcross": false,
       "isOFT": true
-    },
-    {
-      "chainId": 1,
-      "address": "0x949D48EcA67b17269629c7194F4b727d4Ef9E5d6",
-      "name": "Merit Circle",
-      "symbol": "MC",
-      "decimals": 18,
-      "logoURI": "https://raw.githubusercontent.com/Uniswap/assets/master/blockchains/ethereum/assets/0x949D48EcA67b17269629c7194F4b727d4Ef9E5d6/logo.png",
-      "tags": [],
-      "extensions": {},
-      "isAcross": false
     },
     {
       "chainId": 1,
@@ -3134,17 +3134,6 @@
     },
     {
       "chainId": 1,
-      "address": "0xc690F7C7FcfFA6a82b79faB7508c466FEfdfc8c5",
-      "name": "Lympo tokens",
-      "symbol": "LYM",
-      "decimals": 18,
-      "logoURI": "https://icons-ckg.pages.dev/stargate-light/tokens/lym.svg",
-      "tags": [],
-      "extensions": {},
-      "isAcross": false
-    },
-    {
-      "chainId": 1,
       "address": "0xcc72a24452CDAe7889C90f654Db47F66b646931D",
       "name": "Chill House",
       "symbol": "CHILLHOUSE",
@@ -3620,8 +3609,7 @@
         }
       },
       "isAcross": false,
-      "isOFT": true,
-      "noLiquidityOnChain": true
+      "isOFT": true
     },
     {
       "chainId": 1,
@@ -16599,6 +16587,17 @@
     },
     {
       "chainId": 8453,
+      "address": "0x80CA9EdCE4583B8043351A1046F18244b24eF869",
+      "name": "AVA",
+      "symbol": "AVA",
+      "decimals": 18,
+      "logoURI": "https://icons-ckg.pages.dev/stargate-light/tokens/ava.svg",
+      "tags": [],
+      "extensions": {},
+      "isAcross": false
+    },
+    {
+      "chainId": 8453,
       "globalAddress": "0x57D627b04e397Bd8c32C4aAA05Ec02AD20F0F033",
       "localAddress": {
         "8453": "0x09Ca2E52636E01187b2797896c99061914BF8854"
@@ -17256,17 +17255,6 @@
       },
       "isAcross": false,
       "isOFT": true
-    },
-    {
-      "chainId": 8453,
-      "address": "0xaB10E517f3138b17108B32129E8C8446AD44a267",
-      "name": "Battle.tech by Virtuals",
-      "symbol": "BTA",
-      "decimals": 18,
-      "logoURI": "https://icons-ckg.pages.dev/stargate-light/tokens/bta.svg",
-      "tags": [],
-      "extensions": {},
-      "isAcross": false
     },
     {
       "chainId": 8453,
@@ -23016,8 +23004,7 @@
         }
       },
       "isAcross": false,
-      "isOFT": true,
-      "noLiquidityOnChain": true
+      "isOFT": true
     },
     {
       "chainId": 81457,
@@ -24204,7 +24191,8 @@
         }
       },
       "isAcross": false,
-      "isOFT": true
+      "isOFT": true,
+      "noLiquidityOnChain": true
     },
     {
       "chainId": 534352,
@@ -25646,8 +25634,7 @@
         }
       },
       "isAcross": false,
-      "isOFT": true,
-      "noLiquidityOnChain": true
+      "isOFT": true
     },
     {
       "chainId": 42161,
@@ -25759,6 +25746,20 @@
       },
       "isAcross": false,
       "isOFT": true
+    },
+    {
+      "chainId": 42161,
+      "address": "0x6b43732a9AE9F8654d496c0A075Aa4Aa43057A0B",
+      "name": "Sugarverse",
+      "symbol": "CNDY",
+      "decimals": 18,
+      "logoURI": "https://icons-ckg.pages.dev/stargate-light/tokens/cndy.svg",
+      "tags": [],
+      "extensions": {
+        "coingeckoId": "sugarverse",
+        "coinMarketCapId": 34376
+      },
+      "isAcross": false
     },
     {
       "chainId": 42161,
@@ -26506,7 +26507,8 @@
         }
       },
       "isAcross": false,
-      "isOFT": true
+      "isOFT": true,
+      "noLiquidityOnChain": true
     },
     {
       "chainId": 42161,
@@ -26990,8 +26992,7 @@
         }
       },
       "isAcross": false,
-      "isOFT": true,
-      "noLiquidityOnChain": true
+      "isOFT": true
     },
     {
       "chainId": 42161,
