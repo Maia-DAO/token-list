@@ -1,10 +1,12 @@
-// mergeUniswapLists.js
-// Hardcoded input files array—no CLI args needed.
-
-const { SupportedChainId } = require('maia-core-sdk')
-const { orderTokens } = require('./orderTokens')
 const fs = require('fs').promises
 const path = require('path')
+const { SupportedChainId } = require('maia-core-sdk')
+const { orderTokens } = require('../helpers')
+const { BLOCKED_TOKEN_SYMBOLS, EXTENDED_SUPPORTED_CHAIN_IDS } = require('../configs')
+
+function encodeSpaces(url) {
+  return url.replace(/ /g, '%20')
+}
 
 /**
  * Bumps version by incrementing the patch version.
@@ -47,7 +49,11 @@ async function main() {
       const tokens = Array.isArray(list.tokens) ? list.tokens : Array.isArray(list) ? list : []
 
       for (const token of tokens) {
-        if (!Object.values(SupportedChainId).includes(token.chainId)) continue // Skip unsupported chain 
+        if (
+          !Object.values(SupportedChainId).includes(token.chainId) &&
+          !EXTENDED_SUPPORTED_CHAIN_IDS.includes(token.chainId)
+        )
+          continue // Skip unsupported chain
         const key = `${token.chainId}_${token.address.toLowerCase()}`
         if (!mergedMap.has(key)) {
           mergedMap.set(key, { ...token }) // clone to avoid mutating original
@@ -56,6 +62,9 @@ async function main() {
     }
 
     const mergedTokens = Array.from(mergedMap.values())
+
+    const inactivesRaw = await fs.readFile('output/inactives.json', 'utf8')
+    const inactiveList = JSON.parse(inactivesRaw)
 
     // --- Step 3: Enrich from existing token-list.json ---
     let existingList
@@ -67,6 +76,15 @@ async function main() {
       process.exit(1)
     }
 
+    // Move tokens without logos to the inactive list
+    const tokensWithoutLogo = existingList.tokens.filter((token) => !token.logoURI || token.logoURI === '')
+    const rootTokensWithoutLogo = existingList.rootTokens.filter((token) => !token.logoURI || token.logoURI === '')
+    const allTokens = mergedTokens.concat(tokensWithoutLogo).concat(rootTokensWithoutLogo).concat(inactiveList)
+
+    // Delete tokens without logos from the main list
+    existingList.tokens = existingList.tokens.filter((token) => token.logoURI && token.logoURI !== '')
+    existingList.rootTokens = existingList.rootTokens.filter((token) => token.logoURI && token.logoURI !== '')
+
     const existingMap = new Map(
       (existingList.tokens || [])
         .filter((t) => typeof t.address === 'string' && t.address.length > 0)
@@ -74,7 +92,7 @@ async function main() {
     )
 
     // Copy over extensions, isAcross, isOFT
-    const finalTokens = mergedTokens
+    const finalTokens = allTokens
       .reduce((memo, token) => {
         const key = `${token.chainId}_${token.address.toLowerCase()}`
         const existing = existingMap.get(key)
@@ -82,13 +100,18 @@ async function main() {
           memo.push({
             ...token,
             extensions: token.extensions || {},
-            isAcross: false,
-            isOFT: false,
+            isAcross: token.isAcross,
+            isOFT: token.isOFT,
           })
         }
         return memo
       }, [])
       .sort(orderTokens)
+      .filter((t) => !BLOCKED_TOKEN_SYMBOLS.includes(t.symbol))
+      .map((t) => {
+        if (t.logoURI) t.logoURI = encodeSpaces(t.logoURI)
+        return t
+      })
 
     // --- Write out the combined list ---
     const newInactiveOutput = {
@@ -96,8 +119,7 @@ async function main() {
       timestamp: Math.floor(Date.now() / 1000).toString(),
       version: { major: 1, minor: 0, patch: 0 }, // default version if no previous exists
       tokens: finalTokens,
-      tags: {},
-      keywords: ['hermes', 'default'],
+      keywords: ['hermes', 'inactive'],
       logoURI: 'https://raw.githubusercontent.com/Maia-DAO/token-list-v2/main/logos/Hermes-color.svg',
     }
 
@@ -134,6 +156,9 @@ async function main() {
 
     await fs.writeFile('inactive-token-list.json', JSON.stringify(finalInactiveOutput, null, 2))
     console.log(`✅  inactive-token-list.json written with ${finalTokens.length} tokens`)
+
+    await fs.writeFile('token-list.json', JSON.stringify(existingList, null, 2))
+    console.log(`✅  removed tokens without logos from token-list.json`)
   } catch (err) {
     console.error('❌  Error merging inactive tokens:', err.message)
   }

@@ -1,8 +1,8 @@
 require('dotenv').config()
 const fs = require('fs')
 const { ethers } = require('ethers')
-
-const { OAPP_ABI, OFT_V3_ABI, OFT_V2_ABI, multiCallWithFallback } = require('../constants')
+const { multiCallWithFallback } = require('../helpers')
+const { OAPP_ABI, OFT_V3_ABI, OFT_V2_ABI } = require('../abi')
 
 const TOKENS_FILE = 'output/usableStargateTokens.json'
 const OUT_FILE = 'output/usableStargateTokensEnhanced.json'
@@ -29,12 +29,16 @@ async function main() {
       const dst = tokens.find(
         (t) =>
           t.chainId === parseInt(chainId) &&
-          t.address.toLowerCase() === peerEntry.tokenAddress.toLowerCase() &&
+          (t.address.toLowerCase() === peerEntry.tokenAddress.toLowerCase() ||
+            t.oftAdapter.toLowerCase() === peerEntry.tokenAddress.toLowerCase()) &&
           t.extensions?.peersInfo?.[src.chainId]?.tokenAddress.toLowerCase() === src.address.toLowerCase()
       )
 
       // peerEntry should exist and match dst.address
       if (!dst) {
+        console.warn(
+          `Didn't find peer for ${src.name}:${src.address} (${src.chainId}) on chain ${chainId}, expected: ${peerEntry.tokenAddress}!!!`
+        )
         continue
       }
 
@@ -80,7 +84,10 @@ async function main() {
       )
 
       // peerEntry should exist and match dst.address
-      if (!dst) {
+      if (!dst || !dst.endpointId) {
+        console.error(
+          `Missing Token or endpointId for ${src.chainId}_${src.address}: chain:${chainId} peer:${peerEntry.tokenAddress}`
+        )
         continue
       }
 
@@ -137,8 +144,14 @@ async function main() {
     const aggregateCalls = feeCalls.concat(gasCalls).concat(oAppCalls)
 
     console.log(`==> Aggregating on ${chainKey}…`)
+    let returnData
     // Use tryAggregate to allow individual call failures without reverting batch
-    const returnData = await multiCallWithFallback(chainKey, aggregateCalls, 500, 200)
+    try {
+      returnData = await multiCallWithFallback(chainKey, aggregateCalls, 500, 200)
+    } catch (err) {
+      console.error(` multicall failed on chain ${chainKey}: ${err.message}`)
+      continue
+    }
 
     // Split results
     const feeData = returnData.slice(0, feeCalls.length)
@@ -221,14 +234,7 @@ async function main() {
 
       const { src } = isOAppCallsByChain[chainKey][idx]
 
-      if (
-        !hex ||
-        hex === '0x' ||
-        src.symbol === 'USDC' ||
-        src.symbol === 'DAI' ||
-        src.symbol === 'WETH' ||
-        Object.keys(src.extensions?.peersInfo || {}).length === 0
-      ) {
+      if (!hex || hex === '0x' || Object.keys(src.extensions?.peersInfo || {}).length === 0) {
         console.warn(`Empty lzEndpoint return for ${src.chainKey} - ${src.oftAdapter}`)
         isOApp = false
       }
@@ -312,13 +318,14 @@ async function main() {
 
   // Remove empty extensions.feeInfo and extensions.bridgeInfo
   for (const token of enhanced) {
-    if (token.oftAdapter) token.oftAdapter = ethers.getAddress(token.oftAdapter) 
+    if (token.address && token.address !== '0x00') token.address = ethers.getAddress(token.address)
+    if (token.oftAdapter && token.oftAdapter !== '0x00') token.oftAdapter = ethers.getAddress(token.oftAdapter)
 
-    if (token?.extensions && Object.keys(token.extensions).length === 0) {
-      delete token.extensions
-    }
-    if (token?.extensions?.peersInfo && Object.keys(token.extensions.peersInfo).length === 0) {
-      delete token.extensions.peersInfo
+    const noPeers = !token.extensions?.peersInfo || Object.keys(token.extensions.peersInfo).length === 0
+
+    if (noPeers) {
+      if (token.extensions) delete token.extensions.peersInfo
+
       delete token.isOFT
       delete token.oftAdapter
       delete token.oftSharedDecimals
@@ -327,11 +334,27 @@ async function main() {
       delete token.endpointId
       delete token.isBridgeable
     }
+
+    if (!token.extensions || Object.keys(token.extensions).length === 0) {
+      delete token.extensions
+    }
     if (token?.extensions?.feeInfo && Object.keys(token.extensions.feeInfo).length === 0) {
       delete token.extensions.feeInfo
     }
     if (token?.extensions?.bridgeInfo && Object.keys(token.extensions.bridgeInfo).length === 0) {
       delete token.extensions.bridgeInfo
+    }
+    if (!token.icon || !token.extensions?.coingeckoId || !token.extensions?.coinMarketCapId) {
+      for (const peer of enhanced) {
+        if (peer.name !== token.name) continue
+        // if found, copy over the missing properties
+        token.extensions = token.extensions || {}
+        if (!token.icon && peer.icon) token.icon = peer.icon
+        if (peer.extensions?.coingeckoId && !token.extensions.coingeckoId)
+          token.extensions.coingeckoId = peer.extensions.coingeckoId
+        if (peer.extensions?.coinMarketCapId && !token.extensions.coinMarketCapId)
+          token.extensions.coinMarketCapId = peer.extensions.coinMarketCapId
+      }
     }
   }
 

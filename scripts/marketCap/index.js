@@ -1,8 +1,9 @@
 require('dotenv').config()
 const TOKEN_LIST = require('../../token-list.json')
+const INACTIVE_TOKEN_LIST = require('../../inactive-token-list.json')
 
 function getAllOFTs() {
-  return [...Object.values(TOKEN_LIST.tokens), ...Object.values(TOKEN_LIST.rootTokens)].filter((token) => token.isOFT)
+  return [...TOKEN_LIST.tokens, ...TOKEN_LIST.rootTokens, ...INACTIVE_TOKEN_LIST.tokens].filter((token) => token.isOFT)
 }
 
 function groupBy(array, keyFn) {

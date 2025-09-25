@@ -1,15 +1,7 @@
 const fs = require('fs')
-const {
-  CHAIN_KEY_TO_ID,
-  CHAIN_KEY_TO_EID,
-  SUPPORTED_CHAINS,
-  CHAIN_KEYS,
-  OVERRIDE_PEG,
-  mergeExtensions,
-  cleanAddress,
-} = require('../constants')
 const { ZERO_ADDRESS } = require('maia-core-sdk')
-const { ethers } = require('ethers')
+const { CHAIN_KEY_TO_ID, CHAIN_KEY_TO_EID, SUPPORTED_CHAINS } = require('../configs')
+const { mergeExtensions, cleanAddress } = require('../helpers')
 
 async function main() {
   // Load baseline and OFT data
@@ -24,7 +16,6 @@ async function main() {
 
   const results = []
   const missingAdapters = []
-  const bridgeMap = {}
 
   // Iterate each supported chain
   for (const chainKey of SUPPORTED_CHAINS) {
@@ -33,6 +24,11 @@ async function main() {
     const chainData = ofts[chainKey]
     const chainId = CHAIN_KEY_TO_ID[chainKey]
     if (!chainData) continue
+    // TODO: REVIEW THIS CHECK WE MAY BE MISSING SOME CHAINS
+    if (!chainData.addressToOApp || !chainData.tokens) {
+      console.warn(`skipping, no addressToOApp or no tokens on chain ${chainKey}`)
+      continue
+    }
 
     // Iterate each token entry in OFT
     for (let [adapter, oAppInfo] of Object.entries(chainData.addressToOApp)) {
@@ -96,25 +92,15 @@ async function main() {
         coinMarketCapId: adapterInfo?.cmcId,
       })
 
-      // Bridge mapping
-      const peg = OVERRIDE_PEG[base.symbol] ?? tokenInfo?.peggedTo
-      if (peg?.address) {
-        const pegKey = peg.address.toLowerCase() + peg.chainName
-        bridgeMap[pegKey] = bridgeMap[pegKey] || {}
-        bridgeMap[pegKey][chainId] = { tokenAddress: ethers.getAddress(tokenAddress) }
-        if (SUPPORTED_CHAINS.includes(peg.chainName)) {
-          extensions = mergeExtensions(extensions, {
-            bridgeInfo: {
-              [CHAIN_KEY_TO_ID[peg.chainName]]: { tokenAddress: ethers.getAddress(peg.address) },
-            },
-          })
-        }
-      }
-
       const tokenEid =
         (tokenInfo?.eid ?? (adapterInfo?.oftVersion === 3 || adapterInfo?.endpointVersion === 2))
-          ? CHAIN_KEY_TO_EID[chainKey].v2
-          : CHAIN_KEY_TO_EID[chainKey].v1
+          ? CHAIN_KEY_TO_EID[chainKey]?.v2
+          : CHAIN_KEY_TO_EID[chainKey]?.v1
+
+      if (!tokenEid) {
+        console.warn('Skipping, no EID found for chainKey: ', chainKey)
+        continue
+      }
 
       // Assemble enriched token
       const enriched = {
@@ -135,17 +121,9 @@ async function main() {
         extensions,
       }
       if (tokenInfo?.fee) enriched.fee = tokenInfo.fee
+      if (tokenInfo?.peggedTo) enriched.peggedTo = tokenInfo.peggedTo
 
       results.push(enriched)
-    }
-  }
-
-  // Attach bridgeInfo from mapping
-  for (const token of results) {
-    const mapKey = token.address?.toLowerCase() + token.chainKey
-    const bi = bridgeMap[mapKey]
-    if (bi && Object.keys(bi).length) {
-      token.extensions = mergeExtensions(token.extensions, { bridgeInfo: bi })
     }
   }
 

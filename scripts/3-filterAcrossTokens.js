@@ -1,6 +1,7 @@
 const fs = require('fs').promises
 const { SupportedChainId } = require('maia-core-sdk')
 const { TOKEN_SYMBOLS_MAP, TOKEN_EQUIVALENCE_REMAPPING } = require('@across-protocol/constants')
+const { EXTENDED_SUPPORTED_CHAIN_IDS } = require('../configs')
 
 const ACROSS_API_ENDPOINT = 'https://across.to/api'
 
@@ -83,7 +84,7 @@ const TESTNET_CHAIN_IDS = [
 ]
 
 // Convert SupportedChainId to an array of numbers.
-const SUPPORTED_CHAINS = Object.values(SupportedChainId)
+const SUPPORTED_CHAINS = [...Object.values(SupportedChainId), ...EXTENDED_SUPPORTED_CHAIN_IDS]
   .map(Number)
   .filter((value) => !TESTNET_CHAIN_IDS.includes(value))
 

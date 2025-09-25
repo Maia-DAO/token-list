@@ -1,38 +1,39 @@
-name: Scheduled Weekly Run
-
-on:
-  schedule:
-    # Runs at 11:00 PM UTC every Wednesday (midnight CEST)
-    - cron: '0 23 1 * *'
-  workflow_dispatch:
-
-env:
-  STARGATE_API: ${{ secrets.STARGATE_API }}
-
-jobs:
-  run-all:
-    runs-on: ubuntu-latest
-    environment: Prod
-
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v3
-
-      - name: Cache yarn dependencies
-        uses: actions/cache@v3
-        with:
-          path: ~/.yarn/cache
-          key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
-          restore-keys: |
-            ${{ runner.os }}-yarn-
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: '20.x'
-
-      - name: Install dependencies
-        run: yarn install --frozen-lockfile
-
-      - name: Run all scripts
-        run: yarn all
+#name: Scheduled Weekly Run
+#
+#on:
+#  schedule:
+#    Runs at 11:00 PM UTC every Wednesday (midnight CEST)
+#    - cron: '0 23 1 * *'
+#  workflow_dispatch:
+#
+#env:
+#  STARGATE_API: ${{ secrets.STARGATE_API }}
+#
+#jobs:
+#  run-all:
+#    runs-on: ubuntu-latest
+#    environment: Prod
+#
+#    steps:
+#      - name: Checkout repository
+#        uses: actions/checkout@v3
+#
+#      - name: Cache yarn dependencies
+#        uses: actions/cache@v3
+#        with:
+#          path: ~/.yarn/cache
+#          key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
+#          restore-keys: |
+#            ${{ runner.os }}-yarn-
+#
+#      - name: Setup Node.js
+#        uses: actions/setup-node@v3
+#        with:
+#          node-version: '20.x'
+#
+#      - name: Install dependencies
+#        run: yarn install --frozen-lockfile
+#
+#      - name: Run all scripts
+#        run: yarn all
+#

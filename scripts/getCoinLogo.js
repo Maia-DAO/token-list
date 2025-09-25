@@ -53,43 +53,152 @@ async function fetchWithRetry(url, options = {}, retries = 3, delayMs = 2000) {
 }
 
 /**
- * Fetches the CoinGecko token logo URL by slug (coingeckoId).
- * Caches results to avoid repeated requests.
- * @param {string} slug — e.g. "bitcoin", "polygon"
- * @returns {Promise<string|null>} — Absolute URL to the logo, or null if not found
+ * Attempts to get a token logo URI from multiple sources.
+ * @param {string} address
+ * @param {number} chainId
+ * @param {string} coingeckoId
+ * @param {string} coinmarketcapId
+ * @returns {Promise<string|undefined>}
  */
-async function getCoinLogo(slug) {
-  // Return from cache if exists
-  if (cache[slug]) {
-    return cache[slug]
+async function getCoinLogo(address, chainId, coingeckoId, coinmarketcapId) {
+  const key = `${chainId}:${address}`
+  if (cache[key]) return cache[key]
+  return undefined
+
+  // 1) Uniswap assets
+  const uniNetworkMap = {
+    1: 'ethereum',
+    56: 'smartchain',
+    10: 'optimism',
+    42161: 'arbitrum',
+    43114: 'avalanchec',
+    137: 'polygon',
+    8453: 'base',
+    1088: 'metis',
+    42220: 'celo',
+    50: 'xdc',
+    130: 'unichain',
+    100: 'xdai',
+    1868: 'soneium',
+    81457: 'blast',
   }
 
-  const pageUrl = `https://www.coingecko.com/en/coins/${slug}`
-  const headers = { 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)' }
-  try {
-    const res = await fetchWithRetry(pageUrl, { headers })
-
-    if (!res) {
-      console.warn(`No response for ${slug}, returning without logo.`)
-      return null
-    }
-
-    const html = await res.text()
-    const $ = cheerio.load(html)
-    const img = $('img.tw-rounded-full').first()
-    const src = img.attr('src')?.trim() || null
-
-    // Cache and save
-    if (src) {
-      cache[slug] = src
+  const network = uniNetworkMap[chainId]
+  if (network) {
+    const url = `https://raw.githubusercontent.com/Uniswap/assets/master/blockchains/${network}/assets/${address}/logo.png`
+    const res = await fetchWithRetry(url)
+    if (res) {
+      cache[key] = url
       saveCache()
+      return url
     }
-
-    return src
-  } catch (err) {
-    console.error(`❌ Failed to fetch logo for ${slug}:`, err.message)
-    return null
   }
+
+  // 2) TrustWallet assets
+  const trustwalletNetworkMap = {
+    1: 'ethereum',
+    56: 'binance',
+    10: 'optimism',
+    1088: 'metis',
+    42161: 'arbitrum',
+    43114: 'avalanchec',
+    137: 'polygon',
+    8453: 'base',
+    146: 'sonic',
+    169: 'manta',
+    5000: 'mantle',
+    204: 'opbnb',
+    100: 'xdai',
+  }
+
+  const networkTrust = trustwalletNetworkMap[chainId]
+  if (networkTrust) {
+    const url = `https://raw.githubusercontent.com/trustwallet/assets/refs/heads/master/blockchains/${networkTrust}/assets/${address}/logo.png`
+    const res = await fetchWithRetry(url)
+    if (res) {
+      cache[key] = url
+      saveCache()
+      return url
+    }
+  }
+
+  // 3) CoinMarketCap static 128x128
+  if (coinmarketcapId) {
+    const url = `https://s2.coinmarketcap.com/static/img/coins/128x128/${coinmarketcapId}.png`
+    const res = await fetchWithRetry(url)
+    if (res) {
+      cache[key] = url
+      saveCache()
+      return url
+    }
+  }
+
+  // 4) CoinGecko API lookup
+  if (coingeckoId) {
+    try {
+      const res = await fetchWithRetry(
+        `https://api.coingecko.com/api/v3/coins/${coingeckoId}?localization=false&tickers=false&market_data=false&community_data=false&developer_data=false&sparkline=false`
+      )
+      if (res) {
+        const data = await res.json()
+        const url = data.image?.small || data.image?.thumb || null
+        if (url) {
+          cache[key] = url
+          saveCache()
+          return url
+        }
+      }
+    } catch (err) {
+      console.warn(`CoinGecko API failed for ${coingeckoId}: ${err.message}`)
+    }
+  }
+
+  // 5) CoinGecko scraped
+  if (coingeckoId) {
+    const page = await fetchWithRetry(`https://www.coingecko.com/en/coins/${coingeckoId}`, {
+      headers: { 'User-Agent': 'Mozilla/5.0' },
+    })
+    if (page) {
+      const html = await page.text()
+      const $ = cheerio.load(html)
+      const img = $('img.tw-rounded-full').first()
+      const src = img.attr('src')
+      if (src) {
+        cache[key] = src
+        saveCache()
+        return src
+      }
+    }
+  }
+
+  // 6) Jumper Coins List
+  try {
+    const jumperUrl = `https://raw.githubusercontent.com/jumperexchange/jumper-exchange/cf0bc19be474f2bcb0b908007531837b89de1bfc/src/utils/coins.ts`
+    const resJ = await fetchWithRetry(jumperUrl)
+    if (resJ) {
+      const text = await resJ.text()
+      // Extract the TypeScript array literal
+      const match = text.match(/const coins = \[((?:\{[\s\S]*?\},?)+)\]/m)
+      if (match) {
+        const arrText = '[' + match[1] + ']'
+        // Convert TS-like objects to valid JSON
+        const jsonText = arrText.replace(/([\{,]\s*)([a-zA-Z0-9_]+):/g, '$1"$2":').replace(/'/g, '"')
+        const coins = JSON.parse(jsonText)
+        const entry = coins.find((c) => c.chainId === chainId && c.address.toLowerCase() === address.toLowerCase())
+        if (entry?.logoURI) {
+          cache[key] = entry.logoURI
+          saveCache()
+          return entry.logoURI
+        }
+      }
+    }
+  } catch (err) {
+    console.warn(`Jumper list failed for ${key}: ${err.message}`)
+  }
+
+  // nothing found
+  console.warn(`No response for ${key}, returning without logo.`)
+  return undefined
 }
 
 module.exports = { getCoinLogo }

@@ -1,18 +1,18 @@
 const fs = require('fs')
 const path = require('path')
 const { ethers } = require('ethers')
-
+const { ZERO_ADDRESS } = require('maia-core-sdk')
+const { multiCallWithFallback, mergeExtensions } = require('../helpers')
+const { OFT_V3_ABI, OFT_V2_ABI, ERC20_MINIMAL_ABI } = require('../abi')
 const {
-  OFT_V3_ABI,
-  OFT_V2_ABI,
-  ERC20_MINIMAL_ABI,
+  OVERRIDE_PEG,
+  OVERRIDE_CG_CMC_ID,
   SUPPORTED_CHAINS,
   CHAIN_KEY_TO_ID,
+  CHAIN_KEYS,
   EID_TO_VERSION,
   CHAIN_KEY_TO_EID,
-  multiCallWithFallback,
-} = require('../constants')
-const { ZERO_ADDRESS } = require('maia-core-sdk')
+} = require('../configs')
 
 async function main() {
   // ─── A) Load initial tokens from usableStargateTokens.json ─────────────────────────
@@ -144,6 +144,7 @@ async function main() {
       const ifaceERC = new ethers.Interface(ERC20_MINIMAL_ABI)
       const ifaceV2 = new ethers.Interface(OFT_V2_ABI)
       const ifaceV1 = new ethers.Interface([
+        'function send(uint16,bytes,uint256,address,address,bytes) payable',
         'function sendFrom(address,uint16,bytes,uint256,address,address,bytes) payable',
       ])
 
@@ -208,6 +209,13 @@ async function main() {
           callData: ifaceV1.encodeFunctionData('sendFrom', [zeroAddress, 0, '0x', 0, zeroAddress, zeroAddress, '0x']),
         })
         decodeInfoPart2.push({ type: 'checkSendV1', token: t })
+
+        // 8. V1.send(dummy) - custom OFTCore Implementation used by EURA
+        callsPart2.push({
+          target: adapter,
+          callData: ifaceV1.encodeFunctionData('send', [0, '0x', 0, zeroAddress, zeroAddress, '0x']),
+        })
+        decodeInfoPart2.push({ type: 'checkSendV1_withSendAbi', token: t })
       }
 
       // Multicall for Part 2
@@ -297,9 +305,19 @@ async function main() {
                 token.endpointId = CHAIN_KEY_TO_EID[token.chainKey].v1
               }
             }
+          } else if (type === 'checkSendV1_withSendAbi') {
+            if (raw && raw !== '0x' && !token._remove) {
+              token.oftVersion = 1
+              // OFT V1 implies Endpoint V1
+              token.endpointVersion = 1
+              if (!token.endpointId || EID_TO_VERSION[token.endpointId] === 2) {
+                token.endpointId = CHAIN_KEY_TO_EID[token.chainKey].v1
+              }
+            }
           }
-        } catch {
+        } catch (error) {
           // ignore individual decode errors
+          console.warn('DECODING ERROR! ---> TOKEN:', token, ' ERROR:', error)
         }
       }
 
@@ -323,7 +341,11 @@ async function main() {
           if (otherChainKey === chainKey) continue
 
           const destChainId = requireV3 ? CHAIN_KEY_TO_EID[otherChainKey].v2 : CHAIN_KEY_TO_EID[otherChainKey].v1
-          if (!destChainId) continue
+
+          if (!destChainId) {
+            console.warn('Skipping, no EID found for chainKey: ', otherChainKey)
+            continue
+          }
 
           if (requireV3) {
             // V3.peers(destChainId)
@@ -338,10 +360,10 @@ async function main() {
               destChainId,
             })
           } else {
-            // V2,V1.getTrustedRemoteAddress(destChainId)
+            // V2,V1.trustedRemoteLookup(destChainId)
             callsPart3.push({
               target: adapter,
-              callData: ifaceV2b.encodeFunctionData('getTrustedRemoteAddress', [destChainId]),
+              callData: ifaceV2b.encodeFunctionData('trustedRemoteLookup', [destChainId]),
             })
             decodeInfoPart3.push({
               type: 'trusted',
@@ -390,12 +412,7 @@ async function main() {
               if (!addrBytes || addrBytes === '0x' || addrBytes === zeroBytes32) continue
 
               const rawAddressHex = '0x' + addrBytes.slice(-40)
-              let peerAddr
-              try {
-                peerAddr = ethers.getAddress(rawAddressHex)
-              } catch {
-                continue
-              }
+              const peerAddr = ethers.getAddress(rawAddressHex)
 
               token.extensions.peersInfo[chainId] = { tokenAddress: peerAddr }
 
@@ -418,21 +435,24 @@ async function main() {
             } else if (type === 'trusted') {
               // decode V2.getTrustedRemoteAddress(uint16)
               const ifaceV2c = new ethers.Interface(OFT_V2_ABI)
-              const decoded = ifaceV2c.decodeFunctionResult('getTrustedRemoteAddress', raw)
-              const returned = decoded[0]
-              if (!returned || returned === '0x' || returned === ZERO_ADDRESS) continue
+              const decoded = ifaceV2c.decodeFunctionResult('trustedRemoteLookup', raw)
+              let returned = decoded[0]
+              if (!returned || returned === '0x') continue
+              returned = returned.slice(0, 42) // extract only remote address
+              if (returned === ZERO_ADDRESS) continue
+              const peerAddr = ethers.getAddress(returned)
 
-              token.extensions.peersInfo[chainId] = { tokenAddress: returned }
+              token.extensions.peersInfo[chainId] = { tokenAddress: peerAddr }
 
               // If unseen, enqueue new
-              const mapKey = `${destChainKey.toLowerCase()}:${returned.toLowerCase()}`
+              const mapKey = `${destChainKey.toLowerCase()}:${peerAddr.toLowerCase()}`
               if (!seenAdapters.has(mapKey)) {
                 const newIndex = tokens.length
                 const newToken = {
                   chainKey: destChainKey,
                   chainId: CHAIN_KEY_TO_ID[destChainKey],
-                  oftAdapter: returned,
-                  address: returned,
+                  oftAdapter: peerAddr,
+                  address: peerAddr,
                   extensions: {},
                   index: newIndex,
                 }
@@ -443,6 +463,7 @@ async function main() {
             }
           } catch {
             // ignore decode/update errors
+            console.warn('DECODING ERROR! ---> TOKEN:', token, destChainKey, ' ERROR:', error)
           }
         }
       }
@@ -452,7 +473,7 @@ async function main() {
     toProcess = newTokens
   }
 
-  // ─── C) Final filtering & write‐out ────────────────────────────────────────────
+  // ─── C) Final population, filtering & write‐out ────────────────────────────────────────────
   const finalTokens = tokens.filter((t) => !t._remove)
 
   // Re‐index 0…N−1
@@ -460,32 +481,76 @@ async function main() {
     finalTokens[i].index = i
   }
 
+  // Bridge mapping
+  const bridgeMap = {}
+
+  // Add Initial Bridge Info Population
+  for (const t of finalTokens) {
+    const peg = OVERRIDE_PEG[t.symbol] ?? t.peggedTo
+    if (peg?.address) {
+      // if (peg?.address && peg?.chainName && (peg.address !== tokenAddress || peg.chainName !== chainKey)) {
+      const pegKey = peg.address.toLowerCase() + peg.chainName
+      bridgeMap[pegKey] = bridgeMap[pegKey] || {}
+      bridgeMap[pegKey][t.chainId] = { tokenAddress: ethers.getAddress(t.address) }
+      if (SUPPORTED_CHAINS.includes(peg.chainName)) {
+        t.extensions = mergeExtensions(t.extensions, {
+          bridgeInfo: {
+            [CHAIN_KEY_TO_ID[peg.chainName]]: { tokenAddress: ethers.getAddress(peg.address) },
+          },
+        })
+      }
+    }
+  }
+
+  // Attach bridgeInfo from mapping
+  for (const token of finalTokens) {
+    const mapKey = token.address?.toLowerCase() + CHAIN_KEYS[token.chainId]
+    const bi = bridgeMap[mapKey]
+    if (bi && Object.keys(bi).length) {
+      token.extensions = mergeExtensions(token.extensions, { bridgeInfo: bi })
+    }
+    const overrideInfo = OVERRIDE_CG_CMC_ID[token.symbol]
+
+    if (overrideInfo && (overrideInfo.coingeckoId || overrideInfo.coinMarketCapId)) {
+      token.extensions = mergeExtensions(token.extensions, {
+        ...(overrideInfo.coingeckoId && { coingeckoId: overrideInfo.coingeckoId }),
+        ...(overrideInfo.coinMarketCapId && { coinMarketCapId: overrideInfo.coinMarketCapId }),
+      })
+    }
+  }
+
   // TODO: Add Bridge Info Population loop where we find main token by peer amount and chain priority (TVL ranking) with easy overrides for off-cases
-  // For each peersInfo token address find a matching token address in the tokens array that has that token address as oftAdapter and same chainId
+  // For each peersInfo token address find a matching token address in the tokens array that has that token address as oftAdapter and same chainId and so we can populate the peersInfo tokenAddress with the token address
   for (const t of finalTokens) {
     if (!t.extensions || !t.extensions.peersInfo) continue
 
     const needsIcon = !(t?.icon && t?.icon?.length > 0)
     let needsBridgeInfo = !t?.extensions?.bridgeInfo || Object.keys(t?.extensions?.bridgeInfo || {}).length === 0
+    let needsCoingeckoId = !t?.extensions?.coingeckoId
+    let needsCoinMarketCapId = !t?.extensions?.coinMarketCapId
 
-    if (needsBridgeInfo && Object.keys(t?.extensions?.peersInfo || {}).length === 1) {
-      t.extensions.bridgeInfo = t.extensions.peersInfo
-      needsBridgeInfo = false
-    }
-
-    for (const [chainId, peerInfo] of Object.entries(t.extensions.peersInfo)) {
+    for (const [chainId, peerInfo] of Object.entries(t.extensions.peersInfo) || {}) {
       const peerAddress = peerInfo.tokenAddress
+
       const matchingToken = tokens.find(
         (token) => token.chainId === parseInt(chainId) && token.oftAdapter.toLowerCase() === peerAddress.toLowerCase()
       )
 
+      matchingToken.address = ethers.getAddress(matchingToken.address)
+
       if (matchingToken) {
-        t.extensions.peersInfo[chainId].tokenAddress = matchingToken.address
+        t.extensions.peersInfo[chainId].tokenAddress = ethers.getAddress(matchingToken.address)
         console.log(
           `✅ Found matching token for ${peerAddress} on chain ${chainId}: ${matchingToken.name} (${matchingToken.symbol} new address: ${matchingToken.address})`
         )
 
+        if (needsBridgeInfo && Object.keys(t?.extensions?.peersInfo || {}).length === 1) {
+          t.extensions.bridgeInfo = t.extensions.peersInfo
+          needsBridgeInfo = false
+        }
+
         if (needsIcon && matchingToken?.icon && matchingToken?.icon?.length > 0) t.icon = matchingToken.icon
+
         if (
           needsBridgeInfo &&
           matchingToken?.extensions?.bridgeInfo &&
@@ -493,6 +558,16 @@ async function main() {
         ) {
           t.extensions.bridgeInfo = matchingToken.extensions.bridgeInfo
           needsBridgeInfo = false
+        }
+
+        if (needsCoingeckoId && matchingToken?.extensions?.coingeckoId) {
+          t.extensions.coingeckoId = matchingToken.extensions.coingeckoId
+          needsCoingeckoId = false
+        }
+
+        if (needsCoinMarketCapId && matchingToken?.extensions?.coinMarketCapId) {
+          t.extensions.coinMarketCapId = matchingToken.extensions.coinMarketCapId
+          needsCoinMarketCapId = false
         }
       } else {
         console.warn(
