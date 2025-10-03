@@ -12,10 +12,10 @@
     "removeDupes": "node scripts/9-removeDupes.js",
     "filterMarketcap": "node scripts/10-filterOFTsByMarketcap.js",
     "markLiquidity": "node scripts/11-markTokensWithNoLiquidity.js",
-    "all": "yarn fetch && yarn filter && yarn merge && yarn merge-others && yarn removeDupes && yarn markLiquidity",
-    "dev": "yarn filter && yarn merge && yarn merge-others && yarn removeDupes",
     "wrapped-natives": "node scripts/generateWrappedNatives/index.js",
     "generate-assets": "node assets/generateAssets.js",
+    "all": "yarn fetch && yarn filter && yarn merge && yarn merge-others && yarn removeDupes && yarn markLiquidity && yarn wrapped-natives && yarn generate-assets",
+    "dev": "yarn filter && yarn merge && yarn merge-others && yarn removeDupes",
     "test-lists": "node scripts/test-lists.js",
     "lint": "yarn prettier . --check",
     "lint:fix": "yarn prettier . --write"
