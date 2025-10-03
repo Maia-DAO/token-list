@@ -15,6 +15,7 @@
     "wrapped-natives": "node scripts/generateWrappedNatives/index.js",
     "generate-assets": "node assets/generateAssets.js",
     "bridge-routes": "node scripts/generateBridgeRoutes/index.js",
+    "remove-logos": "node scripts/12-removeLogoURIs.js",
     "all": "yarn fetch && yarn filter && yarn merge && yarn merge-others && yarn removeDupes && yarn markLiquidity && yarn bridge-routes && yarn wrapped-natives && yarn generate-assets",
     "dev": "yarn filter && yarn merge && yarn merge-others && yarn removeDupes",
     "test-lists": "node scripts/test-lists.js",
