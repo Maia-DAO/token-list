@@ -4,13 +4,12 @@ const { CHAIN_KEY_TO_ID } = require('../configs')
 const { MULTICALL3_ABI, MULTICALL3_ADDRESS, MULTICALL3_ADDRESSES } = require('../abi')
 
 /**
- * Converts a string to an enum-like key by uppercasing and replacing hyphens with underscores. 
+ * Converts a string to an enum-like key by uppercasing and replacing hyphens with underscores.
  * @param {string} str - the input string
  * @returns {string} - the enum-like key
  * @dev This is useful for converting chain keys to our UI's chain enum format. (e.g. 'my-chain' → 'MY_CHAIN')
  */
 const enumKey = (str) => String(str).toUpperCase().replace(/-/g, '_')
-
 
 // TODO: Update once non-EVM chains are supported
 /**
@@ -53,6 +52,7 @@ function mergeExtensions(ext1 = {}, ext2 = {}) {
 function orderExtensions(ext = {}) {
   const ordered = {}
   const priority = ['coingeckoId', 'coinMarketCapId', 'bridgeInfo', 'acrossInfo', 'oftInfo']
+  const oftInfoPriority = ['oftAdapter', 'oftVersion', 'endpointVersion', 'endpointId', 'oftSharedDecimals']
 
   // copy priority keys first (if present)
   for (const key of priority) {
@@ -66,6 +66,26 @@ function orderExtensions(ext = {}) {
     if (!(key in ordered)) {
       ordered[key] = ext[key]
     }
+  }
+
+  // if oftInfo is present, order its keys too
+  if (ordered.oftInfo && typeof ordered.oftInfo === 'object') {
+    const orderedOftInfo = {}
+
+    // copy oftInfo priority keys first (if present)
+    for (const key of oftInfoPriority) {
+      if (key in ordered.oftInfo) {
+        orderedOftInfo[key] = ordered.oftInfo[key]
+      }
+    }
+
+    // then copy all the rest
+    for (const key of Object.keys(ordered.oftInfo)) {
+      if (!(key in orderedOftInfo)) {
+        orderedOftInfo[key] = ordered.oftInfo[key]
+      }
+    }
+    ordered.oftInfo = orderedOftInfo
   }
 
   return ordered
@@ -92,11 +112,6 @@ function orderAttributes(token) {
     'extensions',
     'isAcross',
     'isOFT',
-    'oftAdapter',
-    'oftVersion',
-    'endpointVersion',
-    'endpointId',
-    'oftSharedDecimals',
   ]
 
   keysOrder.forEach((key) => {
@@ -111,6 +126,8 @@ function orderAttributes(token) {
       ordered[key] = token[key]
     }
   })
+
+  if (ordered.extensions) ordered.extensions = orderExtensions(ordered.extensions)
 
   return ordered
 }
