@@ -14,6 +14,7 @@ const {
 } = require('../configs')
 const { getCoinLogo } = require('./getCoinLogo')
 const { mergeExtensions, orderAttributes, orderTokens } = require('../helpers')
+const { getAddress } = require('ethers')
 
 // ---------------------------------------------------------------------
 // Normalization functions for tokens to the unified format
@@ -32,13 +33,14 @@ function finalCleanTokens(tokenMap, wrappedNativeTokens) {
         wrappedNativeTokens.some(
           (w) =>
             w.chainId === t.chainId &&
-            ((t.address && w.address === t.address) ||
-              (t.underlyingAddress && w.underlyingAddress === t.underlyingAddress))
+            ((t.address && w.address.toLowerCase() === t.address.toLowerCase()) ||
+              (t.underlyingAddress && w.underlyingAddress?.toLowerCase() === t.underlyingAddress?.toLowerCase()))
         ) ||
         !CHAINS_WITH_NO_SWAPPING.includes(t.chainId)
     )
     .map((t) => {
       if (t.logoURI) t.logoURI = encodeSpaces(t.logoURI)
+      if (t.address) t.address = getAddress(t.address)
       return t
     })
     .sort(orderTokens)
@@ -95,14 +97,14 @@ function mergeTokenDataUlysses(existing, incoming) {
  *
  * Each address entry from across is converted to a separate token.
  */
-async function normalizeAcrossToken(data) {
+async function normalizeAcrossToken(data, supportedChains) {
   const tokens = []
   // Convert addresses keys to numbers.
   for (const key in data.addresses) {
     const chainId = Number(key)
     const decimals = data.addresses[key].decimals
     if (decimals) continue
-    const address = data.addresses[key].address
+    const address = getAddress(data.addresses[key].address.toLowerCase())
     tokens.push({
       chainId,
       address,
@@ -112,12 +114,20 @@ async function normalizeAcrossToken(data) {
       logoURI: (await getCoinLogo(address, chainId, data.coingeckoId, undefined)) ?? null,
       tags: [],
       extensions: {
-        acrossInfo: Object.entries(data.addresses).reduce((memo, [chain, value]) => {
-          if (Number(chain) !== chainId) {
-            memo[chain] = value
-          }
-          return memo
-        }, {}),
+        acrossInfo: Object.fromEntries(
+          Object.entries(data.addresses)
+            .filter(([chain]) => {
+              const chainNumber = Number(chain)
+              return chainNumber !== chainId && supportedChains.includes(chainNumber)
+            })
+            .map(([chain, value]) => [
+              chain,
+              {
+                ...value,
+                address: getAddress(value.address.toLowerCase()),
+              },
+            ])
+        ),
         coingeckoId: data.coingeckoId,
       },
       isAcross: true, // from across list
@@ -172,7 +182,7 @@ async function normalizeStargateToken(token) {
 
   const result = {
     chainId: token.chainId,
-    address: token.address,
+    address: getAddress(token.address.toLowerCase()),
     name: token.name ?? token.symbol,
     decimals: token.decimals,
     symbol: token.symbol,
@@ -185,37 +195,42 @@ async function normalizeStargateToken(token) {
   if (token.extensions) result.extensions = token.extensions
 
   if (token.isOFT) {
-    token.extensions = token.extensions || {}
-    token.extensions.oftInfo = token.extensions.oftInfo || {}
+    result.extensions = token.extensions || {}
+    result.extensions.oftInfo = token.extensions.oftInfo || {}
 
     if (token.extensions.peersInfo) {
-      token.extensions.oftInfo.peersInfo = token.extensions.peersInfo
+      result.extensions.oftInfo.peersInfo = token.extensions.peersInfo
       delete token.extensions.peersInfo
     }
 
     if (token.extensions.feeInfo) {
-      token.extensions.oftInfo.feeInfo = token.extensions.feeInfo
+      result.extensions.oftInfo.feeInfo = token.extensions.feeInfo
       delete token.extensions.feeInfo
     }
 
     if (token.oftAdapter) {
-      token.extensions.oftInfo.oftAdapter = token.oftAdapter
+      result.extensions.oftInfo.oftAdapter = getAddress(token.oftAdapter)
+      delete token.oftAdapter
     }
 
     if (token.oftVersion) {
-      token.extensions.oftInfo.oftVersion = token.oftVersion
+      result.extensions.oftInfo.oftVersion = token.oftVersion
+      delete token.oftVersion
     }
 
     if (token.endpointVersion) {
-      token.extensions.oftInfo.endpointVersion = token.endpointVersion
+      result.extensions.oftInfo.endpointVersion = token.endpointVersion
+      delete token.endpointVersion
     }
 
     if (token.endpointId) {
-      token.extensions.oftInfo.endpointId = token.endpointId
+      result.extensions.oftInfo.endpointId = token.endpointId
+      delete token.endpointId
     }
 
     if (token.oftSharedDecimals) {
-      token.extensions.oftInfo.oftSharedDecimals = token.oftSharedDecimals
+      result.extensions.oftInfo.oftSharedDecimals = token.oftSharedDecimals
+      delete token.oftSharedDecimals
     }
   }
 
@@ -250,7 +265,10 @@ const tryParseTokens = (raw) => {
   try {
     const j = JSON.parse(raw)
     if (Array.isArray(j)) return j
-    if (j && Array.isArray(j.tokens)) return j.tokens
+    if (j && Array.isArray(j.tokens)) return j.tokens.map((t) => {
+      t.address = getAddress(t.address)
+      return t
+    })
   } catch (e) {
     /* ignore */
   }
@@ -261,6 +279,9 @@ const tryParseTokens = (raw) => {
  * Main merge function.
  */
 async function main() {
+  // Supported Chains
+  const SUPPORTED_CHAINS = [...Object.values(SupportedChainId), ...EXTENDED_SUPPORTED_CHAIN_IDS].map(Number)
+
   try {
     // Read source files from the output directory.
     // 1. Across tokens from filteredAcrossTokens.json
@@ -274,6 +295,7 @@ async function main() {
     // 3. Ulysses tokens from ulysses.json
     const ulyssesRaw = await fs.readFile(path.join('output', 'ulysses.json'), 'utf8')
     const ulyssesData = JSON.parse(ulyssesRaw)
+    const ulyssesTokens = [...ulyssesData.tokens, ...ulyssesData.rootTokens]
 
     // 4. Uniswap tokens from uniswap.json.
     const uniswapRaw = await fs.readFile(path.join('output', 'uniswap.json'), 'utf8')
@@ -303,20 +325,14 @@ async function main() {
     // GROUPING TOKENS PER SOURCE
     // -----------------------------------------------------------------
 
-    // 1. Build the normalized map from Across and Stargate tokens.
+    // 1. Build the normalized map from Across, Stargate and other tokens.
     const normalizedMap = {}
     const rootTokensMap = {}
-    const oftsPerChainMap = {}
-
-    let inactiveTokensArray = []
-
-    const activeOFTSet = new Set()
-    const inactiveOFTSet = new Set()
 
     // Process Across tokens.
     for (const symbol in acrossData) {
       const tokenData = acrossData[symbol]
-      const normalizedArray = await normalizeAcrossToken(tokenData, normalizedMap, rootTokensMap)
+      const normalizedArray = await normalizeAcrossToken(tokenData, SUPPORTED_CHAINS)
       normalizedArray.forEach((token) => {
         if (BLOCKED_TOKEN_SYMBOLS.includes(token.symbol)) {
           console.warn(`skipping, blocked token ${token.symbol} on chain ${token.chainId}`)
@@ -340,6 +356,10 @@ async function main() {
       })
     }
 
+    // First pass: collect all OFT tokens and build peer relationship maps
+    const allOFTTokens = []
+    const peerRelationships = new Map() // tokenKey -> Set of peer keys
+
     // Process Stargate tokens.
     for (const token of stargateTokens) {
       const normalizedToken = await normalizeStargateToken(token)
@@ -359,142 +379,227 @@ async function main() {
         continue
       }
 
-      if (normalizedToken.chainId === 42161) {
-        const rootKey = normalizedToken.address.toLowerCase()
+      const key = normalizedToken.address.toLowerCase() + '_' + normalizedToken.chainId
+      allOFTTokens.push({ token: normalizedToken, key })
 
-        if (!rootTokensMap[rootKey]) {
-          rootTokensMap[rootKey] = orderAttributes(normalizedToken)
-        } else {
-          rootTokensMap[rootKey] = mergeTokenData(rootTokensMap[rootKey], normalizedToken)
+      // Build peer relationships for OFT tokens
+      if (normalizedToken.isOFT && normalizedToken.extensions?.oftInfo?.peersInfo) {
+        const peers = new Set()
+        for (const [chainId, peerInfo] of Object.entries(normalizedToken.extensions.oftInfo.peersInfo)) {
+          const peerKey = peerInfo.tokenAddress.toLowerCase() + '_' + chainId
+          peers.add(peerKey)
+        }
+        peerRelationships.set(key, peers)
+      }
+    }
+
+    // Second pass: determine which OFTs should be active/inactive based on peer relationships and limits
+    const oftsPerChainMap = {}
+    const activeOFTSet = new Set()
+    const inactiveOFTSet = new Set()
+    const vipTokens = new Set()
+
+    // Build bidirectional peer relationships map
+    const fullPeerGroups = new Map() // Maps each token to its full peer group
+
+    // First build all peer groups
+    for (const { token, key } of allOFTTokens) {
+      if (!fullPeerGroups.has(key)) {
+        fullPeerGroups.set(key, new Set([key]))
+      }
+
+      if (token.isOFT && token.extensions?.oftInfo?.peersInfo) {
+        const currentGroup = fullPeerGroups.get(key)
+
+        for (const [chainId, peerInfo] of Object.entries(token.extensions.oftInfo.peersInfo)) {
+          const peerKey = peerInfo.tokenAddress.toLowerCase() + '_' + chainId
+          currentGroup.add(peerKey)
+
+          // Ensure peer also has this token in its group
+          if (!fullPeerGroups.has(peerKey)) {
+            fullPeerGroups.set(peerKey, new Set([peerKey]))
+          }
+          fullPeerGroups.get(peerKey).add(key)
+        }
+      }
+    }
+
+    // Merge overlapping peer groups (transitive closure)
+    let changed = true
+    while (changed) {
+      changed = false
+      for (const [key1, group1] of fullPeerGroups) {
+        for (const [key2, group2] of fullPeerGroups) {
+          if (key1 !== key2) {
+            // Check if groups overlap
+            const hasOverlap = Array.from(group1).some((k) => group2.has(k))
+            if (hasOverlap) {
+              // Merge groups
+              const beforeSize = group1.size
+              group2.forEach((k) => group1.add(k))
+              if (group1.size > beforeSize) {
+                changed = true
+                // Update all members to point to the merged group
+                group1.forEach((k) => fullPeerGroups.set(k, group1))
+              }
+            }
+          }
+        }
+      }
+    }
+
+    // First, identify VIP tokens and their entire peer groups (always active)
+    for (const { token, key } of allOFTTokens) {
+      if (
+        PARTNER_TOKEN_SYMBOLS.includes(token.symbol) ||
+        CORE_TOKEN_SYMBOLS.includes(token.symbol) ||
+        ulyssesTokens.some(
+          (ulyssesToken) =>
+            (ulyssesToken.address?.toLowerCase() === token.address?.toLowerCase() ||
+              ulyssesToken.underlyingAddress?.toLowerCase() === token.address?.toLowerCase()) &&
+            ulyssesToken.chainId === token.chainId
+        )
+      ) {
+        vipTokens.add(key)
+        // Mark entire peer group as active
+        const peerGroup = fullPeerGroups.get(key) || new Set([key])
+        peerGroup.forEach((peerKey) => activeOFTSet.add(peerKey))
+      }
+    }
+
+    // Process tokens by chain and apply limits
+    const tokensByChain = new Map()
+    for (const { token, key } of allOFTTokens) {
+      if (!tokensByChain.has(token.chainId)) {
+        tokensByChain.set(token.chainId, [])
+      }
+      tokensByChain.get(token.chainId).push({ token, key })
+    }
+
+    // Track which peer groups have been processed
+    const processedGroups = new Set()
+
+    for (const [chainId, tokens] of tokensByChain) {
+      const limit = chainId === 42161 ? 20 : 5
+      let oftCount = 0
+
+      for (const { token, key } of tokens) {
+        if (!token.isOFT) continue
+
+        // Skip if already marked as active (VIP or peer of VIP)
+        if (activeOFTSet.has(key)) {
+          oftCount++
+          continue
         }
 
-        const key = normalizedToken.address.toLowerCase() + '_' + 42161
-        oftsPerChainMap[42161] = oftsPerChainMap[42161] || 0
-        if (normalizedToken.isOFT) oftsPerChainMap[42161] = oftsPerChainMap[42161] + 1
-        const oftAmount = oftsPerChainMap[42161]
+        // Skip if already processed as inactive
+        if (inactiveOFTSet.has(key)) {
+          continue
+        }
 
-        const hasPeerInActiveSet = Object.entries(normalizedToken.extensions.peersInfo || {}).some(([chainId, peer]) =>
-          activeOFTSet.has(peer.tokenAddress.toLowerCase() + '_' + chainId)
-        )
-        const hasPeerInInactiveSet = Object.entries(normalizedToken.extensions.peersInfo || {}).some(
-          ([chainId, peer]) => inactiveOFTSet.has(peer.tokenAddress.toLowerCase() + '_' + chainId)
-        )
+        // Get the full peer group for this token
+        const peerGroup = fullPeerGroups.get(key) || new Set([key])
 
-        const vipToken =
-          PARTNER_TOKEN_SYMBOLS.includes(normalizedToken.symbol) || CORE_TOKEN_SYMBOLS.includes(normalizedToken.symbol)
+        // Check if ANY token in the peer group is already active
+        const hasActivePeer = Array.from(peerGroup).some((peerKey) => activeOFTSet.has(peerKey))
 
-        // Delete from rootTokensMap if chain OFT count exceeds 5, in exception of partner tokens and already active tokens. If it or any of it's peers are inactive, always delete it.
-        if (
-          !vipToken &&
-          ((normalizedToken.isOFT && oftAmount >= 20 && !activeOFTSet.has(key) && !hasPeerInActiveSet) ||
-            inactiveOFTSet.has(key) ||
-            hasPeerInInactiveSet)
-        ) {
-          const tempToken = rootTokensMap[rootKey]
-          delete rootTokensMap[rootKey]
-          inactiveTokensArray.push(tempToken)
+        if (hasActivePeer) {
+          // If any peer is active, entire group should be active
+          peerGroup.forEach((peerKey) => activeOFTSet.add(peerKey))
+          oftCount++
+        } else if (oftCount < limit) {
+          // Within limit, mark entire peer group as active
+          peerGroup.forEach((peerKey) => activeOFTSet.add(peerKey))
+          processedGroups.add(peerGroup)
+          oftCount++
+        } else {
+          // Exceeds limit, mark entire peer group as inactive
+          // But ONLY if no peer is active on ANY chain
+          let shouldMarkInactive = true
+          for (const peerKey of peerGroup) {
+            if (activeOFTSet.has(peerKey)) {
+              shouldMarkInactive = false
+              break
+            }
+          }
 
-          // Track has inactive, also track its peers.
-          inactiveOFTSet.add(key)
-          for (const [chain, peer] of Object.entries(normalizedToken.extensions.peersInfo || {})) {
-            const peerKey = peer.tokenAddress.toLowerCase() + '_' + chain
-            inactiveOFTSet.add(peerKey)
+          if (shouldMarkInactive) {
+            peerGroup.forEach((peerKey) => inactiveOFTSet.add(peerKey))
+            processedGroups.add(peerGroup)
+          } else {
+            // Some peer is active, so mark all as active
+            peerGroup.forEach((peerKey) => activeOFTSet.add(peerKey))
+            oftCount++
+          }
+        }
+      }
+
+      oftsPerChainMap[chainId] = oftCount
+    }
+
+    // Final validation: ensure no token is both active and inactive
+    for (const key of inactiveOFTSet) {
+      if (activeOFTSet.has(key)) {
+        inactiveOFTSet.delete(key)
+      }
+    }
+
+    // Third pass: actually place tokens in maps and build inactive array
+    let inactiveTokensArray = []
+    const inactiveTokensMap = {} // Use a map to prevent duplicates and allow merging
+
+    for (const { token, key } of allOFTTokens) {
+      // Handle native OFT adapters
+      if (token?.extensions?.oftInfo?.peersInfo && Object.keys(token.extensions.oftInfo.peersInfo).length > 0) {
+        for (const [chainId, peerInfo] of Object.entries(token.extensions.oftInfo.peersInfo) || {}) {
+          const nativeOFTAdapter = NATIVE_OFT_ADAPTERS[parseInt(chainId)]?.[peerInfo.tokenAddress.toLowerCase()]
+          if (nativeOFTAdapter) {
+            token.extensions.oftInfo.peersInfo[chainId] = { tokenAddress: nativeOFTAdapter }
+          }
+        }
+      }
+
+      if (token.chainId === 42161) {
+        const rootKey = token.address.toLowerCase()
+
+        if (inactiveOFTSet.has(key) && !activeOFTSet.has(key)) {
+          // Store in inactive map to handle duplicates
+          const inactiveKey = token.address.toLowerCase() + '_' + token.chainId
+          if (!inactiveTokensMap[inactiveKey]) {
+            inactiveTokensMap[inactiveKey] = orderAttributes(token)
+          } else {
+            // Merge with existing inactive token entry, preserving OFT info
+            inactiveTokensMap[inactiveKey] = mergeTokenData(inactiveTokensMap[inactiveKey], token)
           }
         } else {
-          // Track active OFTs and their peers.
-          activeOFTSet.add(key)
-
-          for (const [chain, peer] of Object.entries(normalizedToken.extensions.peersInfo || {})) {
-            const peerKey = peer.tokenAddress.toLowerCase() + '_' + chain
-            activeOFTSet.add(peerKey)
+          if (!rootTokensMap[rootKey]) {
+            rootTokensMap[rootKey] = orderAttributes(token)
+          } else {
+            rootTokensMap[rootKey] = mergeTokenData(rootTokensMap[rootKey], token)
           }
         }
       } else {
-        const key = normalizedToken.address.toLowerCase() + '_' + normalizedToken.chainId
-
-        oftsPerChainMap[normalizedToken.chainId] = oftsPerChainMap[normalizedToken.chainId] || 0
-        if (normalizedToken.isOFT)
-          oftsPerChainMap[normalizedToken.chainId] = oftsPerChainMap[normalizedToken.chainId] + 1
-        const oftAmount = oftsPerChainMap[normalizedToken.chainId]
-
-        const hasPeerInActiveSet = Object.entries(normalizedToken.extensions.peersInfo || {}).some(([chainId, peer]) =>
-          activeOFTSet.has(peer.tokenAddress.toLowerCase() + '_' + chainId)
-        )
-        const hasPeerInInactiveSet = Object.entries(normalizedToken.extensions.peersInfo || {}).some(
-          ([chainId, peer]) => inactiveOFTSet.has(peer.tokenAddress.toLowerCase() + '_' + chainId)
-        )
-
-        if (!normalizedMap[key]) {
-          normalizedMap[key] = orderAttributes(normalizedToken)
-        } else {
-          normalizedMap[key] = mergeTokenData(normalizedMap[key], normalizedToken)
-        }
-
-        const vipToken =
-          PARTNER_TOKEN_SYMBOLS.includes(normalizedToken.symbol) || CORE_TOKEN_SYMBOLS.includes(normalizedToken.symbol)
-
-        // Delete from normalizedMap if chain OFT count exceeds 5, in exception of partner tokens and already active tokens. If it or any of it's peers are inactive, always delete it.
-        if (
-          !vipToken &&
-          ((normalizedToken.isOFT && oftAmount >= 5 && !activeOFTSet.has(key) && !hasPeerInActiveSet) ||
-            inactiveOFTSet.has(key) ||
-            hasPeerInInactiveSet)
-        ) {
-          const tempToken = normalizedMap[key]
-          delete normalizedMap[key]
-          inactiveTokensArray.push(tempToken)
-
-          // Track has inactive, also track its peers.
-          inactiveOFTSet.add(key)
-          for (const [chain, peer] of Object.entries(normalizedToken.extensions.peersInfo || {})) {
-            const peerKey = peer.tokenAddress.toLowerCase() + '_' + chain
-            inactiveOFTSet.add(peerKey)
+        if (inactiveOFTSet.has(key) && !activeOFTSet.has(key)) {
+          // Store in inactive map to handle duplicates
+          const inactiveKey = token.address.toLowerCase() + '_' + token.chainId
+          if (!inactiveTokensMap[inactiveKey]) {
+            inactiveTokensMap[inactiveKey] = orderAttributes(token)
+          } else {
+            // Merge with existing inactive token entry, preserving OFT info
+            inactiveTokensMap[inactiveKey] = mergeTokenData(inactiveTokensMap[inactiveKey], token)
           }
         } else {
-          // Track active OFTs and their peers.
-          activeOFTSet.add(key)
-
-          for (const [chain, peer] of Object.entries(normalizedToken.extensions.peersInfo || {})) {
-            const peerKey = peer.tokenAddress.toLowerCase() + '_' + chain
-            activeOFTSet.add(peerKey)
-          }
-        }
-      }
-      if (
-        normalizedToken?.extensions?.oftInfo?.peersInfo &&
-        Object.keys(normalizedToken.extensions.oftInfo.peersInfo).length > 0
-      ) {
-        for (const [chainId, peerInfo] of Object.entries(normalizedToken.extensions.oftInfo.peersInfo) || {}) {
-          const nativeOFTAdapter = NATIVE_OFT_ADAPTERS[parseInt(chainId)]?.[peerInfo.tokenAddress.toLowerCase()]
-          if (nativeOFTAdapter) {
-            normalizedToken.extensions.oftInfo.peersInfo[chainId] = { tokenAddress: nativeOFTAdapter }
+          if (!normalizedMap[key]) {
+            normalizedMap[key] = orderAttributes(token)
+          } else {
+            normalizedMap[key] = mergeTokenData(normalizedMap[key], token)
           }
         }
       }
     }
 
-    // Check if there are tokens from activeOFTSet that are still in inactiveTokensArray.
-    for (const activeSetKey of activeOFTSet) {
-      // Remove from inactiveTokensArray if it is in activeOFTSet.
-      // const tokensToReAdd = inactiveTokensArray.filter((token) => token.address.toLowerCase() + '_' + token.chainId === activeSetKey)
-      inactiveTokensArray = inactiveTokensArray.filter(
-        (token) => token.address.toLowerCase() + '_' + token.chainId !== activeSetKey
-      )
-
-      // for (const tokenToReAdd of tokensToReAdd) {
-      //  normalizedMap[activeSetKey] = tokenToReAdd
-      // }
-    }
-
-    // Check if there are tokens from inactiveOFTSet that are still in normalizedMap.
-    for (const inactiveToken of inactiveTokensArray) {
-      const inactiveTokenKey = inactiveToken.address.toLowerCase() + '_' + inactiveToken.chainId
-      if (normalizedMap[inactiveTokenKey]) {
-        delete normalizedMap[inactiveTokenKey]
-      } else if (rootTokensMap[inactiveTokenKey]) {
-        delete rootTokensMap[inactiveTokenKey]
-      }
-    }
+    // Convert inactive map to array
+    inactiveTokensArray = Object.values(inactiveTokensMap)
 
     // 2. Incorporate Uniswap tokens, Ulysses Root Tokens and Wrapped Native Tokens.
     const allUniswapFormatTokens = [
@@ -505,8 +610,6 @@ async function main() {
       ...Object.values(tokenListFiles).flat(),
     ]
 
-    const SUPPORTED_CHAINS = [...Object.values(SupportedChainId), ...EXTENDED_SUPPORTED_CHAIN_IDS].map(Number)
-
     allUniswapFormatTokens.forEach((token) => {
       if (BLOCKED_TOKEN_SYMBOLS.includes(token.symbol)) {
         console.warn(`skipping, blocked token ${token.symbol} on chain ${token.chainId}`)
@@ -514,6 +617,19 @@ async function main() {
       }
       if (!SUPPORTED_CHAINS.includes(token.chainId)) return
       if (token.address === ZERO_ADDRESS) return
+
+      token.address = getAddress(token.address)
+
+      if (
+        inactiveTokensArray.some(
+          (inactive) =>
+            (inactive.address === token.address || inactive.underlyingAddress === token.address) &&
+            inactive.chainId === token.chainId
+        )
+      ) {
+        return
+      }
+
       if (!token.logoURI) delete token.logoURI // Remove empty logoURIs
       // Default flags if undefined.
       if (typeof token.isAcross === 'undefined') token.isAcross = false
@@ -545,7 +661,12 @@ async function main() {
           return
         }
         if (!token.logoURI) delete token.logoURI // Remove empty logoURIs
+
+        token.underlyingAddress = getAddress(token.underlyingAddress)
+        token.globalAddress = getAddress(token.globalAddress)
+
         const key = token.underlyingAddress.toLowerCase() + '_' + token.chainId
+
         if (normalizedMap[key]) {
           const existing = normalizedMap[key]
           normalizedMap[key] = mergeTokenDataUlysses(existing, token)
