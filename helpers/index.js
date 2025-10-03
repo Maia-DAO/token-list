@@ -52,7 +52,7 @@ function mergeExtensions(ext1 = {}, ext2 = {}) {
 function orderExtensions(ext = {}) {
   const ordered = {}
   const priority = ['coingeckoId', 'coinMarketCapId', 'bridgeInfo', 'acrossInfo', 'oftInfo']
-  const oftInfoPriority = ['oftAdapter', 'oftVersion', 'endpointVersion', 'endpointId', 'oftSharedDecimals']
+  const oftInfoPriority = ['peersInfo', 'oftAdapter', 'oftVersion', 'endpointVersion', 'endpointId', 'oftSharedDecimals']
 
   // copy priority keys first (if present)
   for (const key of priority) {
