@@ -1,7 +1,7 @@
 const { networkToEndpointId, chainAndStageToNetwork, EndpointVersion, Stage } = require('@layerzerolabs/lz-definitions')
 
 // Tokens to drop
-const BLOCKED_TOKEN_SYMBOLS = ['STG']
+const BLOCKED_TOKEN_SYMBOLS = ['STG', 'CAW']
 
 // Partner token symbols that should be included in the primary token list
 const PARTNER_TOKEN_SYMBOLS = [
@@ -86,6 +86,21 @@ const PARTNER_TOKEN_SYMBOLS = [
   'OOE',
   'EURA',
   'agEUR',
+  'OVR,',
+  'SLC',
+  'ANYONE',
+  'AUKI',
+  'USDF',
+  'USDa',
+  'sUSDa',
+  'orbETH',
+  'stNIBI',
+  'USR',
+  'pufETH',
+  'cbBTC',
+  'solvBTC',
+  'M-BTC',
+  'wstUSR'
 ]
 
 const CORE_TOKEN_SYMBOLS = [
@@ -141,6 +156,7 @@ const OVERRIDE_PEG = {
 
 // Override logos for specific tokens
 const OVERRIDE_LOGO = {
+  orbETH: 'https://assets.coingecko.com/coins/images/54981/standard/orbETH-token_icon.png?1743026013',
   AUKI: 'https://assets.coingecko.com/coins/images/39811/standard/COINGECKO-200-x-200_%281%29.png?1724166209',
   agEUR: 'https://assets.coingecko.com/coins/images/19479/large/agEUR-4.png?1710726218',
   EURA: 'https://assets.coingecko.com/coins/images/19479/large/agEUR-4.png?1710726218',
@@ -510,6 +526,18 @@ const CHAIN_KEY_TO_ID = {
   mantle: 5000,
 }
 
+const CHAIN_KEYS_NAME_OVERRIDE = {
+  arbitrum: 'arbitrum_one',
+  ethereum: 'mainnet',
+  avalanche: 'avax',
+}
+
+const CHAIN_KEY_TO_UI_NAME = Object.fromEntries(
+  Object.entries(CHAIN_KEYS).map(([, value]) => {
+    return [value, CHAIN_KEYS_NAME_OVERRIDE[value] || value]
+  })
+)
+
 const OVERRIDE_LZNETWORKS = {
   linea: 'zkconsensys-mainnet',
 }
@@ -533,6 +561,7 @@ module.exports = {
   CHAIN_KEYS,
   CHAIN_KEY_TO_ID,
   CHAIN_KEY_TO_EID,
+  CHAIN_KEY_TO_UI_NAME,
   EID_TO_VERSION,
   WRAPPED_NATIVES,
   SUPPORTED_CHAINS,
