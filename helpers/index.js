@@ -3,9 +3,6 @@ const { ethers } = require('ethers')
 const { CHAIN_KEY_TO_ID } = require('../configs')
 const { MULTICALL3_ABI, MULTICALL3_ADDRESS, MULTICALL3_ADDRESSES } = require('../abi')
 
-// 'my-chain' → 'MY_CHAIN'
-const enumKey = (str) => String(str).toUpperCase().replace(/-/g, '_')
-
 /**
  * Converts a string to an enum-like key by uppercasing and replacing hyphens with underscores. 
  * @param {string} str - the input string
