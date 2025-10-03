@@ -12,7 +12,9 @@ const {
   CHAIN_KEYS,
   EID_TO_VERSION,
   CHAIN_KEY_TO_EID,
+  NATIVE_OFT_ADAPTERS,
 } = require('../configs')
+const { exit } = require('process')
 
 async function main() {
   // ─── A) Load initial tokens from usableStargateTokens.json ─────────────────────────
@@ -34,6 +36,10 @@ async function main() {
   const zeroBytes32 = '0x0000000000000000000000000000000000000000000000000000000000000000'
   const zeroAddress = ZERO_ADDRESS
 
+  // Store discovered peer connections (unverified)
+  // Structure: Map<"chainKey:adapter", Map<"destChainKey", "peerAddress">>
+  const discoveredPeers = new Map()
+
   // ─── B) Loop rounds until no new tokens are discovered ────────────────────────
   while (toProcess.length > 0) {
     console.log(`\n=== Starting a new round. ${toProcess.length} token(s) to process. ===`)
@@ -41,7 +47,7 @@ async function main() {
 
     // Group toProcess by chainKey
     const byChain = toProcess.reduce((acc, t) => {
-      ;(acc[t.chainKey] = acc[t.chainKey] || []).push(t)
+      ; (acc[t.chainKey] = acc[t.chainKey] || []).push(t)
       return acc
     }, {})
 
@@ -388,7 +394,7 @@ async function main() {
           continue
         }
 
-        // Decode Part 3
+        // Decode Part 3 - Store discovered peers WITHOUT adding to token yet
         for (let i = 0; i < decodeInfoPart3.length; i++) {
           const { type, token, destChainKey } = decodeInfoPart3[i]
           const raw = returnData3[i]
@@ -396,12 +402,10 @@ async function main() {
           if (!raw || raw === '0x' || raw === zeroBytes32) continue // skip empty results
 
           try {
-            // Ensure peersInfo exists
-            token.extensions = token.extensions || {}
-            token.extensions.peersInfo = token.extensions.peersInfo || {}
-
             const chainId = CHAIN_KEY_TO_ID[destChainKey]
             if (!chainId) continue
+
+            let peerAddr = null
 
             if (type === 'peers') {
               // decode V3.peers(uint32)
@@ -412,26 +416,7 @@ async function main() {
               if (!addrBytes || addrBytes === '0x' || addrBytes === zeroBytes32) continue
 
               const rawAddressHex = '0x' + addrBytes.slice(-40)
-              const peerAddr = ethers.getAddress(rawAddressHex)
-
-              token.extensions.peersInfo[chainId] = { tokenAddress: peerAddr }
-
-              // If unseen, queue a new token
-              const mapKey = `${destChainKey.toLowerCase()}:${peerAddr.toLowerCase()}`
-              if (!seenAdapters.has(mapKey)) {
-                const newIndex = tokens.length
-                const newToken = {
-                  chainKey: destChainKey,
-                  chainId: CHAIN_KEY_TO_ID[destChainKey],
-                  oftAdapter: peerAddr,
-                  address: peerAddr,
-                  extensions: {},
-                  index: newIndex,
-                }
-                tokens.push(newToken)
-                newTokens.push(newToken)
-                seenAdapters.set(mapKey, true)
-              }
+              peerAddr = ethers.getAddress(rawAddressHex)
             } else if (type === 'trusted') {
               // decode V2.getTrustedRemoteAddress(uint16)
               const ifaceV2c = new ethers.Interface(OFT_V2_ABI)
@@ -440,11 +425,20 @@ async function main() {
               if (!returned || returned === '0x') continue
               returned = returned.slice(0, 42) // extract only remote address
               if (returned === ZERO_ADDRESS) continue
-              const peerAddr = ethers.getAddress(returned)
+              peerAddr = ethers.getAddress(returned)
 
-              token.extensions.peersInfo[chainId] = { tokenAddress: peerAddr }
+              if (peerAddr === '0x000000000000000000000000000000000000dEaD') continue
+            }
 
-              // If unseen, enqueue new
+            if (peerAddr) {
+              // Store discovered peer for later verification
+              const tokenKey = `${token.chainKey.toLowerCase()}:${token.oftAdapter.toLowerCase()}`
+              if (!discoveredPeers.has(tokenKey)) {
+                discoveredPeers.set(tokenKey, new Map())
+              }
+              discoveredPeers.get(tokenKey).set(destChainKey.toLowerCase(), peerAddr.toLowerCase())
+
+              // If unseen, queue a new token for processing
               const mapKey = `${destChainKey.toLowerCase()}:${peerAddr.toLowerCase()}`
               if (!seenAdapters.has(mapKey)) {
                 const newIndex = tokens.length
@@ -461,7 +455,7 @@ async function main() {
                 seenAdapters.set(mapKey, true)
               }
             }
-          } catch {
+          } catch (error) {
             // ignore decode/update errors
             console.warn('DECODING ERROR! ---> TOKEN:', token, destChainKey, ' ERROR:', error)
           }
@@ -473,7 +467,59 @@ async function main() {
     toProcess = newTokens
   }
 
-  // ─── C) Final population, filtering & write‐out ────────────────────────────────────────────
+  // ─── C) Verify bidirectional connections and add only confirmed peers ─────────────
+  console.log('\n=== Verifying bidirectional peer connections ===')
+  
+  for (const token of tokens) {
+    if (token._remove) continue
+
+    const tokenKey = `${token.chainKey.toLowerCase()}:${token.oftAdapter.toLowerCase()}`
+    const tokenPeers = discoveredPeers.get(tokenKey)
+
+    if (!tokenPeers || tokenPeers.size === 0) continue
+
+    // Ensure extensions structure exists
+    token.extensions = token.extensions || {}
+    token.extensions.peersInfo = token.extensions.peersInfo || {}
+
+    // Check each discovered peer for bidirectional connection
+    for (const [destChainKey, peerAddr] of tokenPeers) {
+      const destChainId = CHAIN_KEY_TO_ID[destChainKey]
+      
+      // Check if this peer is a native OFT adapter - if so, skip bidirectional check
+      if (destChainId && NATIVE_OFT_ADAPTERS[destChainId]?.[peerAddr]) {
+        // Native OFT adapter - automatically trust this connection
+        token.extensions.peersInfo[destChainId] = { tokenAddress: ethers.getAddress(peerAddr) }
+        console.log(`✅ Native OFT adapter connection confirmed: ${token.chainKey}:${token.oftAdapter} → ${destChainKey}:${peerAddr}`)
+        continue
+      }
+
+      const peerKey = `${destChainKey}:${peerAddr}`
+      const peerConnections = discoveredPeers.get(peerKey)
+
+      // Check if peer has a connection back to this token
+      if (peerConnections && peerConnections.has(token.chainKey.toLowerCase())) {
+        const backConnection = peerConnections.get(token.chainKey.toLowerCase())
+        
+        // Verify the back-connection points to this token's adapter
+        if (backConnection === token.oftAdapter.toLowerCase()) {
+          // Bidirectional connection confirmed!
+          if (destChainId) {
+            token.extensions.peersInfo[destChainId] = { tokenAddress: ethers.getAddress(peerAddr) }
+            console.log(`✅ Bidirectional connection confirmed: ${token.chainKey}:${token.oftAdapter} ↔ ${destChainKey}:${peerAddr}`)
+          }
+        } else {
+          console.log(`❌ Unidirectional connection rejected: ${token.chainKey}:${token.oftAdapter} → ${destChainKey}:${peerAddr} (peer points back to ${backConnection})`)
+        }
+      } else {
+        console.log(`❌ Unidirectional connection rejected: ${token.chainKey}:${token.oftAdapter} → ${destChainKey}:${peerAddr} (no back-connection)`)
+      }
+    }
+  }
+
+  exit
+
+  // ─── D) Final population, filtering & write‐out ────────────────────────────────────────
   const finalTokens = tokens.filter((t) => !t._remove)
 
   // Re‐index 0…N−1
@@ -536,10 +582,9 @@ async function main() {
         (token) => token.chainId === parseInt(chainId) && token.oftAdapter.toLowerCase() === peerAddress.toLowerCase()
       )
 
-      matchingToken.address = ethers.getAddress(matchingToken.address)
-
       if (matchingToken) {
-        t.extensions.peersInfo[chainId].tokenAddress = ethers.getAddress(matchingToken.address)
+        matchingToken.address = ethers.getAddress(matchingToken.address)
+        t.extensions.peersInfo[chainId].tokenAddress = matchingToken.address
         console.log(
           `✅ Found matching token for ${peerAddress} on chain ${chainId}: ${matchingToken.name} (${matchingToken.symbol} new address: ${matchingToken.address})`
         )
@@ -569,13 +614,30 @@ async function main() {
           t.extensions.coinMarketCapId = matchingToken.extensions.coinMarketCapId
           needsCoinMarketCapId = false
         }
+
+        // Only remove if no bidirectional connection exists AND not a native adapter
+        if (Object.keys(matchingToken?.extensions?.peersInfo || {})?.length === 0 && !NATIVE_OFT_ADAPTERS[chainId]?.[t.extensions.peersInfo[chainId]?.tokenAddress?.toLowerCase()]) {
+          delete t.extensions.peersInfo[chainId]
+        }
       } else {
-        console.warn(
-          `⚠️ Token ${t.address}: No matching token found for peer address ${peerAddress} on chain ${chainId}`
-        )
+        if (!NATIVE_OFT_ADAPTERS[chainId]?.[t.extensions.peersInfo[chainId]?.tokenAddress?.toLowerCase()]) {
+          delete t.extensions.peersInfo[chainId]
+          console.warn(
+            `⚠️ Token ${t.address}: No matching token found, deleting entry for peer address ${peerAddress} on chain ${chainId}.`
+          )
+        }
       }
     }
   }
+
+  // Log summary of connections
+  let bidirectionalCount = 0
+  for (const t of finalTokens) {
+    if (t.extensions?.peersInfo) {
+      bidirectionalCount += Object.keys(t.extensions.peersInfo).length
+    }
+  }
+  console.log(`\n📊 Summary: ${bidirectionalCount} bidirectional peer connections confirmed`)
 
   fs.writeFileSync(inputPath, JSON.stringify(finalTokens, null, 2), 'utf8')
   console.log(`\n✅ Finished. Wrote ${finalTokens.length} tokens to ${inputPath}.`)

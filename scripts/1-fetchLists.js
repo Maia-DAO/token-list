@@ -1,5 +1,6 @@
 require('dotenv').config()
 const fs = require('fs').promises
+const { Agent, fetch: undiciFetch } = require('undici')
 
 /**
  * Fetch token data from a given URL and write it to an output file.
@@ -7,39 +8,95 @@ const fs = require('fs').promises
  * @param {string} url - The URL to fetch token data from.
  * @param {string} name - The name used to create the output filename.
  * @param {function} conversionFunction - Optional conversion function to change list output format 
-  
- }} name - The name used to create the output filename.
  */
 async function fetchList(url, name, conversionFunction, conversionFunctionAdditionalParams, origin) {
-  try {
-    const response = await fetch(
-      url,
-      origin
-        ? {
-            headers: {
-              Origin: origin,
-            },
-          }
-        : undefined
-    )
-    if (!response.ok) {
-      throw new Error(`Error fetching data from ${url}: ${response.statusText}`)
+  const agent = new Agent({ connect: { family: 4 } }); // force IPv4 (fix connection errors)
+  const headers = origin ? { Origin: origin } : undefined;
+  const timeoutMs = 15_000;
+  const maxAttempts = 2;
+
+  for (let attempt = 1; attempt <= maxAttempts; attempt++) {
+    const ac = new AbortController();
+    const timer = setTimeout(() => ac.abort(), timeoutMs);
+
+    try {
+      const res = await undiciFetch(url, { dispatcher: agent, signal: ac.signal, headers });
+
+      clearTimeout(timer);
+
+      if (!res.ok) {
+        throw new Error(`Error fetching data from ${url}: ${res.status} ${res.statusText}`);
+      }
+
+      const tokens = await res.json();
+      const tokensToOutput = conversionFunction ? await conversionFunction(tokens, conversionFunctionAdditionalParams) : tokens;
+
+      await fs.writeFile(`output/${name}.json`, JSON.stringify(tokensToOutput, null, 2));
+      console.log(`✅ Tokens data saved to output/${name}.json`);
+      return;
+    } catch (error) {
+      clearTimeout(timer);
+
+      // If abort due to timeout, show helpful hint
+      if (error.name === 'AbortError') {
+        console.warn(`⚠️ Fetch attempt ${attempt} aborted after ${timeoutMs}ms (${url})`);
+      } else {
+        console.warn(`⚠️ Fetch attempt ${attempt} failed: ${error.message}`);
+      }
+
+      if (attempt < maxAttempts) {
+        // tiny backoff before retry
+        await new Promise((r) => setTimeout(r, 500 * attempt));
+        console.info(`ℹ️ Retrying fetch (${attempt + 1}/${maxAttempts})...`);
+        continue;
+      }
+
+      // final failure
+      console.error(`❌ Error fetching ${name} list:`, error);
+      return; // preserve previous behavior of logging and not throwing
     }
-    const tokens = await response.json()
-
-    const tokensToOutput = conversionFunction ? conversionFunction(tokens, conversionFunctionAdditionalParams) : tokens
-
-    await fs.writeFile(`output/${name}.json`, JSON.stringify(tokensToOutput, null, 2))
-    console.log(`✅ Tokens data saved to output/${name}.json`)
-  } catch (error) {
-    console.error(`❌ Error fetching ${name} list:`, error)
   }
 }
 
-function convertOpenoceanList(list, chainId) {
+
+async function convertOpenoceanList(list, chainId) {
   return {
-    tokens: list?.data?.map((item) => {
+    tokens: await Promise.all(list?.data?.map(async (item) => {
       const { address, name, symbol, decimals, icon } = item
+
+      if (icon) {
+        try {
+          const logoResp = await fetch(icon, { method: "HEAD" })
+          if (!logoResp.ok) {
+            console.warn(`⚠️  No logo ${symbol || address} on chain ${chainId} – logoURI returned ${logoResp.status}`)
+            return {
+              chainId,
+              address,
+              name,
+              symbol,
+              decimals,
+            }
+          }
+        } catch (err) {
+          console.warn(`⚠️  No logo ${symbol || address} on chain ${chainId} – error fetching logoURI: ${err.message}`)
+          return {
+              chainId,
+              address,
+              name,
+              symbol,
+              decimals,
+            }
+        }
+      } else {
+        console.warn(`⚠️  No logo ${symbol || address} on chain ${chainId} – missing logoURI`)
+        return {
+              chainId,
+              address,
+              name,
+              symbol,
+              decimals,
+            }
+      }
 
       return {
         chainId,
@@ -50,32 +107,106 @@ function convertOpenoceanList(list, chainId) {
         logoURI: icon,
       }
     }),
+    )
   }
 }
 
-function convertCamelotList(list) {
+async function convertCamelotList(list) {
   return {
-    tokens: list?.map((item) => {
-      const { chainId, address, name, symbol, decimals, logoURI } = item
+    tokens: await Promise.all(list?.map(async (item) => {
+      const { chainId, address, name, symbol, decimals, logoURI: logoURIRaw } = item
+
+      const logoURI = logoURIRaw?.replace(
+        'BASE_URL',
+        'https://raw.githubusercontent.com/CamelotLabs/default-token-list/refs/heads/main/src'
+      )
+      
+      if (logoURI) {
+        try {
+          const logoResp = await fetch(logoURI, { method: "HEAD" })
+          if (!logoResp.ok) {
+            console.warn(`⚠️  No logo ${symbol || address} on chain ${chainId} – logoURI returned ${logoResp.status}`)
+            return {
+              chainId,
+              address,
+              name,
+              symbol,
+              decimals,
+            }
+          }
+        } catch (err) {
+          console.warn(`⚠️  No logo ${symbol || address} on chain ${chainId} – error fetching logoURI: ${err.message}`)
+          return {
+              chainId,
+              address,
+              name,
+              symbol,
+              decimals,
+            }
+        }
+      } else {
+        console.warn(`⚠️  No logo ${symbol || address} on chain ${chainId} – missing logoURI`)
+        return {
+              chainId,
+              address,
+              name,
+              symbol,
+              decimals,
+            }
+      }
+
       return {
         chainId,
         address,
         name,
         symbol,
         decimals,
-        logoURI: logoURI.replace(
-          'BASE_URL',
-          'https://raw.githubusercontent.com/CamelotLabs/default-token-list/refs/heads/main/src'
-        ),
+        logoURI
       }
     }),
+    )
   }
 }
 
-function convertStandardList(list) {
+async function convertStandardList(list) {
   return {
-    tokens: list?.tokens?.map((item) => {
+    tokens: await Promise.all(list?.tokens?.map(async (item) => {
       const { chainId, address, name, symbol, decimals, logoURI } = item
+
+      if (logoURI) {
+        try {
+          const logoResp = await fetch(logoURI, { method: "HEAD" })
+          if (!logoResp.ok) {
+            console.warn(`⚠️  No logo ${symbol || address} on chain ${chainId} – logoURI returned ${logoResp.status}`)
+            return {
+              chainId,
+              address,
+              name,
+              symbol,
+              decimals,
+            }
+          }
+        } catch (err) {
+          console.warn(`⚠️  No logo ${symbol || address} on chain ${chainId} – error fetching logoURI: ${err.message}`)
+          return {
+              chainId,
+              address,
+              name,
+              symbol,
+              decimals,
+            }
+        }
+      } else {
+        console.warn(`⚠️  No logo ${symbol || address} on chain ${chainId} – missing logoURI`)
+        return {
+              chainId,
+              address,
+              name,
+              symbol,
+              decimals,
+            }
+      }
+
       return {
         chainId,
         address,
@@ -85,13 +216,14 @@ function convertStandardList(list) {
         logoURI,
       }
     }),
+    )
   }
 }
 
 /**
  * Main function to fetch token lists and write across mapping.
  */
-;(async () => {
+; (async () => {
   // Active Lists
   await fetchList('https://stargate.finance/api/tokens', 'stargate')
   await fetchList(process.env.STARGATE_API, 'ofts')
@@ -141,7 +273,7 @@ function convertStandardList(list) {
       convertStandardList
     ),
     // await fetchList('https://stargate.finance/api/tokens', 'TOKEN_LIST_SONEIUM'),
-    // await fetchList('https://stargate.finance/api/tokens', 'TOKEN_LIST_UNICHAIN'),
+    // await fetchList('https://stargate.finance/api/tokens', 'TOKEN_LIST_UNICHAIN'), 
     // await fetchList('https://stargate.finance/api/tokens', 'TOKEN_LIST_WORLDCHAIN'),
     // await fetchList('https://stargate.finance/api/tokens', 'TOKEN_LIST_ZORA'),
     await fetchList(
