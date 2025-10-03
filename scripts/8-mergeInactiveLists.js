@@ -79,7 +79,7 @@ async function main() {
     // Move tokens without logos to the inactive list
     const tokensWithoutLogo = existingList.tokens.filter((token) => !token.logoURI || token.logoURI === '')
     const rootTokensWithoutLogo = existingList.rootTokens.filter((token) => !token.logoURI || token.logoURI === '')
-    const allTokens = mergedTokens.concat(tokensWithoutLogo).concat(rootTokensWithoutLogo).concat(inactiveList)
+    const allTokens = [...mergedTokens, ...tokensWithoutLogo, ...rootTokensWithoutLogo, ...inactiveList]
 
     // Delete tokens without logos from the main list
     existingList.tokens = existingList.tokens.filter((token) => token.logoURI && token.logoURI !== '')

@@ -317,8 +317,8 @@ class TokenLiquidityChecker {
       if (!chainName) {
         const chainKey = CHAIN_KEYS[chainId]
         return this.formatLiquidityResult({
-          success: false,
-          error: `Chain ${chainKey || chainId} not supported by DEXScreener`,
+        success: false,
+        error: `Chain ${chainKey || chainId} not supported by DEXScreener`,
           chainSupported: false,
           source: 'dexscreener',
         })
@@ -402,7 +402,7 @@ class TokenLiquidityChecker {
     }
   }
 
-  /**
+   /**
    * Check liquidity for a single token with fallback APIs
    */
   async checkTokenLiquidity(tokenObject, options = {}) {
@@ -418,17 +418,36 @@ class TokenLiquidityChecker {
       }
     }
 
-    let result
-
     const primary = primaryAPI === 'dexscreener' ? this.checkLiquidityDEXScreener : this.checkLiquidityGeckoTerminal
-
     const fallback = primaryAPI === 'dexscreener' ? this.checkLiquidityGeckoTerminal : this.checkLiquidityDEXScreener
+    const fallbackAPI = primaryAPI === 'dexscreener' ? 'geckoterminal' : 'dexscreener'
 
-    result = await primary.call(this, chainId, tokenAddress)
+    // Try primary API first
+    let result = await primary.call(this, chainId, tokenAddress)
 
+    // If primary fails, try fallback
     if (!result.success) {
-      console.log(`${primaryAPI} failed for ${tokenAddress}, trying fallback...`)
-      result = await fallback.call(this, chainId, tokenAddress)
+      console.log(`${primaryAPI} failed for ${tokenAddress}, trying ${fallbackAPI}...`)
+      const fallbackResult = await fallback.call(this, chainId, tokenAddress)
+      
+      // Use fallback result if the fallback API supports the chain
+      if (fallbackResult.chainSupported !== false) {
+        result = fallbackResult
+      }
+      // If fallback also doesn't support the chain, keep the original result
+      // but mark as unsupported by both APIs
+      else if (result.chainSupported === false) {
+        result.chainSupported = false
+        result.error = `Chain ${CHAIN_KEYS[chainId] || chainId} not supported by either ${primaryAPI} or ${fallbackAPI}`
+      }
+    }
+
+    // If neither API supports this chain, we should not process this token
+    const chainSupportedByEither = this.isChainSupported(chainId, 'dexscreener') || this.isChainSupported(chainId, 'geckoterminal')
+    
+    if (!chainSupportedByEither) {
+      result.chainSupported = false
+      result.error = `Chain ${CHAIN_KEYS[chainId] || chainId} not supported by either DEXScreener or GeckoTerminal`
     }
 
     return {
@@ -500,9 +519,14 @@ class TokenLiquidityChecker {
             ? result.hasLiquidity
               ? `$${result.totalLiquidity?.toFixed(2)}`
               : 'no liquidity'
-            : 'failed'
+            : result.chainSupported === false 
+              ? 'chain not supported'
+              : 'failed'
 
-          if (!result.success) this.checkTheseTokensOut.push(result)
+          // Only add to debug list if it's a real failure, not unsupported chain
+          if (!result.success && result.chainSupported !== false) {
+            this.checkTheseTokensOut.push(result)
+          }
 
           console.log(`${current}/${total} - ${token.symbol} (${chainName}): ${status}`)
 
@@ -512,7 +536,6 @@ class TokenLiquidityChecker {
     )
 
     // Aggregate results by original token
-    // TODO: unused peer analytics logic, use or delete
     const tokenResults = new Map()
 
     for (const result of results.results) {
@@ -536,7 +559,9 @@ class TokenLiquidityChecker {
           tokenResult.hasAnyLiquidity = true
           tokenResult.totalLiquidity += result.totalLiquidity
         }
+        tokenResult.supportedChains++
       } else {
+        // Only mark as unsupported if the chain is actually unsupported by all APIs
         if (result.chainSupported === false) {
           tokenResult.unsupportedChain = true
         }
@@ -550,6 +575,7 @@ class TokenLiquidityChecker {
         totalTokens: tokensToCheck.length,
         totalChecks: liquidityChecks.length,
         tokensWithLiquidity: Array.from(tokenResults.values()).filter((r) => r.hasAnyLiquidity).length,
+        tokensOnUnsupportedChains: Array.from(tokenResults.values()).filter((r) => r.unsupportedChain).length,
         averageLiquidityPerToken:
           Array.from(tokenResults.values())
             .filter((r) => r.hasAnyLiquidity)

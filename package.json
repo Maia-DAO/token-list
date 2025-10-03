@@ -12,10 +12,11 @@
     "removeDupes": "node scripts/9-removeDupes.js",
     "filterMarketcap": "node scripts/10-filterOFTsByMarketcap.js",
     "markLiquidity": "node scripts/11-markTokensWithNoLiquidity.js",
-    "all": "yarn fetch && yarn filter && yarn merge && yarn merge-others && yarn removeDupes && yarn markLiquidity",
-    "dev": "yarn filter && yarn merge && yarn merge-others && yarn removeDupes",
     "wrapped-natives": "node scripts/generateWrappedNatives/index.js",
     "generate-assets": "node assets/generateAssets.js",
+    "bridge-routes": "node scripts/generateBridgeRoutes/index.js",
+    "all": "yarn fetch && yarn filter && yarn merge && yarn merge-others && yarn removeDupes && yarn markLiquidity && yarn bridge-routes && yarn wrapped-natives && yarn generate-assets",
+    "dev": "yarn filter && yarn merge && yarn merge-others && yarn removeDupes",
     "test-lists": "node scripts/test-lists.js",
     "lint": "yarn prettier . --check",
     "lint:fix": "yarn prettier . --write"
@@ -27,7 +28,8 @@
     "dotenv": "^16.5.0",
     "ethers": "^6.13.7",
     "maia-core-sdk": "^1.0.59",
-    "sharp": "0.34.4"
+    "sharp": "0.34.4",
+    "undici": "^7.16.0"
   },
   "devDependencies": {
     "prettier": "3.5.3"
