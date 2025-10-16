@@ -402,11 +402,6 @@
         }
       },
       "oftInfo": {
-        "oftAdapter": "0xd86fBBd0c8715d2C1f40e451e5C3514e65E7576A",
-        "oftVersion": 3,
-        "endpointVersion": 2,
-        "endpointId": 30255,
-        "oftSharedDecimals": 6,
         "peersInfo": {
           "1": {
             "tokenAddress": "0x04ACaF8D2865c0714F79da09645C13FD2888977f"
@@ -468,7 +463,12 @@
           "747474": {
             "tokenAddress": "0x64445f0aecC51E94aD52d8AC56b7190e764E561a"
           }
-        }
+        },
+        "oftAdapter": "0xd86fBBd0c8715d2C1f40e451e5C3514e65E7576A",
+        "oftVersion": 3,
+        "endpointVersion": 2,
+        "endpointId": 30255,
+        "oftSharedDecimals": 6
       }
     },
     "isAcross": false,
@@ -564,19 +564,22 @@
       "bridgeInfo": {
         "1": {
           "tokenAddress": "0xd83E3d560bA6F05094d9D8B3EB8aaEA571D1864E"
+        },
+        "534352": {
+          "tokenAddress": "0xd83E3d560bA6F05094d9D8B3EB8aaEA571D1864E"
         }
       },
       "oftInfo": {
-        "oftAdapter": "0x2B7E48511ea616101834f09945c11F7d78D9136d",
-        "oftVersion": 3,
-        "endpointVersion": 2,
-        "endpointId": 30367,
-        "oftSharedDecimals": 6,
         "peersInfo": {
           "1": {
             "tokenAddress": "0xd83E3d560bA6F05094d9D8B3EB8aaEA571D1864E"
           }
-        }
+        },
+        "oftAdapter": "0x2B7E48511ea616101834f09945c11F7d78D9136d",
+        "oftVersion": 3,
+        "endpointVersion": 2,
+        "endpointId": 30367,
+        "oftSharedDecimals": 6
       }
     },
     "isAcross": false,
@@ -743,14 +746,12 @@
       "bridgeInfo": {
         "56": {
           "tokenAddress": "0x8b9Ee39195eA99d6ddD68030F44131116bc218F6"
+        },
+        "8453": {
+          "tokenAddress": "0x9B56B112BbD6343a8961a093315A9A60b8cB1F36"
         }
       },
       "oftInfo": {
-        "oftAdapter": "0xe4103e80c967f58591a1d7cA443ed7E392FeD862",
-        "oftVersion": 3,
-        "endpointVersion": 2,
-        "endpointId": 30302,
-        "oftSharedDecimals": 6,
         "peersInfo": {
           "1": {
             "tokenAddress": "0x1EeF208926667594E5136e89D0e9DD6907959197"
@@ -758,7 +759,12 @@
           "56": {
             "tokenAddress": "0x8b9Ee39195eA99d6ddD68030F44131116bc218F6"
           }
-        }
+        },
+        "oftAdapter": "0xe4103e80c967f58591a1d7cA443ed7E392FeD862",
+        "oftVersion": 3,
+        "endpointVersion": 2,
+        "endpointId": 30302,
+        "oftSharedDecimals": 6
       }
     },
     "isAcross": false,
@@ -785,11 +791,6 @@
     "tags": [],
     "extensions": {
       "oftInfo": {
-        "oftAdapter": "0x4DF4eFa0a3707b6Cc964F62042E8a303A0376F54",
-        "oftVersion": 3,
-        "endpointVersion": 2,
-        "endpointId": 30369,
-        "oftSharedDecimals": 6,
         "peersInfo": {
           "1": {
             "tokenAddress": "0x8A47e412a865198b9d5f10fF2e54f788f1696195"
@@ -803,7 +804,12 @@
           "42161": {
             "tokenAddress": "0x80cf4350c702D466ef65305A73726349e98d7f57"
           }
-        }
+        },
+        "oftAdapter": "0x4DF4eFa0a3707b6Cc964F62042E8a303A0376F54",
+        "oftVersion": 3,
+        "endpointVersion": 2,
+        "endpointId": 30369,
+        "oftSharedDecimals": 6
       }
     },
     "isAcross": false,
@@ -947,7 +953,7 @@
     "name": "Wrapped Ether",
     "symbol": "WETH",
     "decimals": 18,
-    "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2/logo.png",
+    "logoURI": "https://raw.githubusercontent.com/CamelotLabs/default-token-list/refs/heads/main/src/assets/weth.svg",
     "tags": [],
     "extensions": {
       "coingeckoId": "ethereum",
@@ -1010,7 +1016,7 @@
     "name": "Celo",
     "symbol": "CELO",
     "decimals": 18,
-    "logoURI": "https://s3.openocean.finance/token_logos/logos/1675828631474_42987407614787054.png",
+    "logoURI": "https://celo-org.github.io/celo-token-list/assets/celo_logo.svg",
     "tags": [],
     "extensions": {},
     "isAcross": false,

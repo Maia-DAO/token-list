@@ -1,0 +1,637 @@
+const fs = require('fs')
+const path = require('path')
+const { ethers } = require('ethers')
+const { ZERO_ADDRESS } = require('maia-core-sdk')
+const { multiCallWithFallback, mergeExtensions } = require('../helpers')
+const { OFT_V3_ABI, OFT_V2_ABI, ERC20_MINIMAL_ABI } = require('../abi')
+const {
+  OVERRIDE_PEG,
+  OVERRIDE_CG_CMC_ID,
+  SUPPORTED_CHAINS,
+  CHAIN_KEY_TO_ID,
+  CHAIN_KEYS,
+  EID_TO_VERSION,
+  CHAIN_KEY_TO_EID,
+  NATIVE_OFT_ADAPTERS,
+} = require('../configs')
+
+async function main() {
+  // ─── A) Load initial tokens from usableStargateTokens.json ─────────────────────────
+  const inputPath = path.resolve(__dirname, '../output/usableStargateTokens.json')
+  let tokens = JSON.parse(fs.readFileSync(inputPath, 'utf8'))
+
+  // Build a lookup map to avoid enqueueing duplicates:
+  const seenAdapters = new Map()
+  tokens.forEach((t, idx) => {
+    t.index = idx // assign initial index
+    const mapKey = `${t.chainKey.toLowerCase()}:${t.oftAdapter.toLowerCase()}`
+    seenAdapters.set(mapKey, true)
+  })
+
+  // Tokens that still need to go through Parts 1→3.
+  let toProcess = [...tokens]
+
+  // Constants
+  const zeroBytes32 = '0x0000000000000000000000000000000000000000000000000000000000000000'
+  const zeroAddress = ZERO_ADDRESS
+
+  // Store discovered peer connections (unverified)
+  // Structure: Map<"chainKey:adapter", Map<"destChainKey", "peerAddress">>
+  const discoveredPeers = new Map()
+
+  // ─── B) Loop rounds until no new tokens are discovered ────────────────────────
+  while (toProcess.length > 0) {
+    console.log(`\n=== Starting a new round. ${toProcess.length} token(s) to process. ===`)
+    const newTokens = [] // will collect any freshly discovered peers
+
+    // Group toProcess by chainKey
+    const byChain = toProcess.reduce((acc, t) => {
+      ; (acc[t.chainKey] = acc[t.chainKey] || []).push(t)
+      return acc
+    }, {})
+
+    // For each chainKey, do Parts 1,2,3 in large batches:
+    for (const [chainKey, chainTokens] of Object.entries(byChain)) {
+      console.log(`\n→ Processing chainKey="${chainKey}" with ${chainTokens.length} token(s).`)
+
+      //
+      // ──────────────────────────────────────────────────────────────────────────────
+      // PART 1: endpoint()/lzEndpoint() + token() (3 calls per token)
+      // ──────────────────────────────────────────────────────────────────────────────
+      //
+
+      // Build one multicall batch for all tokens on this chainKey
+      const ifaceEndpoint = new ethers.Interface([
+        'function endpoint() view returns (uint16)',
+        'function lzEndpoint() view returns (uint16)',
+      ])
+      const ifaceProxy = new ethers.Interface(['function token() view returns (address)'])
+
+      const callsPart1 = []
+      const decodeInfoPart1 = [] // decoding helper parallel array
+
+      for (const t of chainTokens) {
+        const adapter = t.oftAdapter
+        // 1. endpoint()
+        callsPart1.push({
+          target: adapter,
+          callData: ifaceEndpoint.encodeFunctionData('endpoint', []),
+        })
+        decodeInfoPart1.push({ type: 'endpoint', token: t })
+
+        // 2. lzEndpoint()
+        callsPart1.push({
+          target: adapter,
+          callData: ifaceEndpoint.encodeFunctionData('lzEndpoint', []),
+        })
+        decodeInfoPart1.push({ type: 'lzEndpoint', token: t })
+
+        // 3. token()
+        callsPart1.push({
+          target: adapter,
+          callData: ifaceProxy.encodeFunctionData('token', []),
+        })
+        decodeInfoPart1.push({ type: 'token', token: t })
+      }
+
+      // Multicall for Part 1
+      let returnData1
+      try {
+        returnData1 = await multiCallWithFallback(chainKey, callsPart1, 500, 200)
+      } catch (err) {
+        console.error(`  [P1] multicall failed on chain ${chainKey}: ${err.message}`)
+        // If Part 1 fails entirely for this chainKey, skip Parts 2 & 3 for these tokens
+        continue
+      }
+
+      // Decode Part 1
+      for (let i = 0; i < decodeInfoPart1.length; i++) {
+        const { type, token } = decodeInfoPart1[i]
+        const raw = returnData1[i]
+
+        try {
+          if (type === 'endpoint') {
+            // If endpoint() returns non‐zero, mark V2
+            if (raw && raw !== '0x' && raw.length > 0) {
+              token.endpointVersion = 2
+              if (!token.endpointId || EID_TO_VERSION[token.endpointId] === 1) {
+                token.endpointId = CHAIN_KEY_TO_EID[token.chainKey].v2
+              }
+            }
+          } else if (type === 'lzEndpoint') {
+            // If lzEndpoint() returns non‐zero, mark V1
+            if (raw && raw !== '0x' && raw.length > 0) {
+              token.endpointVersion = 1
+              if (!token.endpointId || EID_TO_VERSION[token.endpointId] === 2) {
+                token.endpointId = CHAIN_KEY_TO_EID[token.chainKey].v1
+              }
+            }
+          } else if (type === 'token') {
+            // If token() returns a non‐zero address, override token.address
+            if (raw && raw !== '0x') {
+              const decodedAddr = ifaceProxy.decodeFunctionResult('token', raw)[0]
+              if (decodedAddr && decodedAddr.toLowerCase() !== zeroAddress) {
+                token.address = decodedAddr
+              }
+            }
+          }
+        } catch (e) {
+          // ignore individual decode errors
+        }
+      }
+
+      //
+      // ──────────────────────────────────────────────────────────────────────────────
+      // PART 2: sharedDecimals + ERC20 name/symbol/decimals + send/sendFrom checks
+      // ──────────────────────────────────────────────────────────────────────────────
+      //
+      const ifaceV3 = new ethers.Interface(OFT_V3_ABI)
+      const ifaceERC = new ethers.Interface(ERC20_MINIMAL_ABI)
+      const ifaceV2 = new ethers.Interface(OFT_V2_ABI)
+      const ifaceV1 = new ethers.Interface([
+        'function send(uint16,bytes,uint256,address,address,bytes) payable',
+        'function sendFrom(address,uint16,bytes,uint256,address,address,bytes) payable',
+      ])
+
+      const callsPart2 = []
+      const decodeInfoPart2 = []
+
+      for (const t of chainTokens) {
+        const adapter = t.oftAdapter
+        const tokenAddr = t.address
+
+        // 1. sharedDecimals()
+        callsPart2.push({
+          target: adapter,
+          callData: ifaceV3.encodeFunctionData('sharedDecimals', []),
+        })
+        decodeInfoPart2.push({ type: 'sharedDecimals', token: t })
+
+        // 2. name()
+        callsPart2.push({
+          target: tokenAddr,
+          callData: ifaceERC.encodeFunctionData('name', []),
+        })
+        decodeInfoPart2.push({ type: 'ercName', token: t })
+
+        // 3. symbol()
+        callsPart2.push({
+          target: tokenAddr,
+          callData: ifaceERC.encodeFunctionData('symbol', []),
+        })
+        decodeInfoPart2.push({ type: 'ercSymbol', token: t })
+
+        // 4. decimals()
+        callsPart2.push({
+          target: tokenAddr,
+          callData: ifaceERC.encodeFunctionData('decimals', []),
+        })
+        decodeInfoPart2.push({ type: 'ercDecimals', token: t })
+
+        // 5. V3.send(dummy)
+        callsPart2.push({
+          target: adapter,
+          callData: ifaceV3.encodeFunctionData('send', [[0, zeroBytes32, 0, 0, '0x', '0x', '0x'], [0, 0], zeroAddress]),
+        })
+        decodeInfoPart2.push({ type: 'checkSendV3', token: t })
+
+        // 6. V2.sendFrom(dummy)
+        callsPart2.push({
+          target: adapter,
+          callData: ifaceV2.encodeFunctionData('sendFrom', [
+            zeroAddress,
+            0,
+            zeroBytes32,
+            0,
+            [zeroAddress, zeroAddress, '0x'],
+          ]),
+        })
+        decodeInfoPart2.push({ type: 'checkSendV2', token: t })
+
+        // 7. V1.sendFrom(dummy)
+        callsPart2.push({
+          target: adapter,
+          callData: ifaceV1.encodeFunctionData('sendFrom', [zeroAddress, 0, '0x', 0, zeroAddress, zeroAddress, '0x']),
+        })
+        decodeInfoPart2.push({ type: 'checkSendV1', token: t })
+
+        // 8. V1.send(dummy) - custom OFTCore Implementation used by EURA
+        callsPart2.push({
+          target: adapter,
+          callData: ifaceV1.encodeFunctionData('send', [0, '0x', 0, zeroAddress, zeroAddress, '0x']),
+        })
+        decodeInfoPart2.push({ type: 'checkSendV1_withSendAbi', token: t })
+      }
+
+      // Multicall for Part 2
+      let returnData2
+      try {
+        returnData2 = await multiCallWithFallback(chainKey, callsPart2, 500, 200)
+      } catch (err) {
+        console.error(`  [P2] multicall failed on chain ${chainKey}: ${err.message}`)
+        // Skip Part 3 for these tokens if Part 2 fails.
+        continue
+      }
+
+      // Decode Part 2
+      for (let i = 0; i < decodeInfoPart2.length; i++) {
+        const { type, token } = decodeInfoPart2[i]
+        const raw = returnData2[i]
+
+        try {
+          if (type === 'sharedDecimals') {
+            if (raw && raw !== '0x') {
+              const sharedDecimals = parseInt(ifaceV3.decodeFunctionResult('sharedDecimals', raw)[0])
+              if (sharedDecimals > 0) {
+                token.oftSharedDecimals = sharedDecimals
+                // Shared Decimals implies V2
+                token.endpointVersion = 2
+                if (!token.endpointId || EID_TO_VERSION[token.endpointId] === 1) {
+                  token.endpointId = CHAIN_KEY_TO_EID[token.chainKey].v2
+                }
+              }
+            } else {
+              if (token.oftSharedDecimals) delete token.oftSharedDecimals // remove if not returned
+            }
+          } else if (type === 'ercName') {
+            if (raw && raw !== '0x') {
+              try {
+                token.name = ifaceERC.decodeFunctionResult('name', raw)[0]
+              } catch {
+                token._remove = true
+              }
+            } else {
+              token._remove = true
+            }
+          } else if (type === 'ercSymbol') {
+            if (raw && raw !== '0x') {
+              try {
+                token.symbol = ifaceERC.decodeFunctionResult('symbol', raw)[0]
+              } catch {
+                token._remove = true
+              }
+            } else {
+              token._remove = true
+            }
+          } else if (type === 'ercDecimals') {
+            if (raw && raw !== '0x') {
+              try {
+                token.decimals = parseInt(ifaceERC.decodeFunctionResult('decimals', raw)[0])
+              } catch {
+                token._remove = true
+              }
+            } else {
+              token._remove = true
+            }
+          } else if (type === 'checkSendV3') {
+            if (raw && raw !== '0x' && !token._remove) {
+              token.oftVersion = 3
+              // OFT V3 implies Endpoint V2
+              token.endpointVersion = 2
+              if (!token.endpointId || EID_TO_VERSION[token.endpointId] === 1) {
+                token.endpointId = CHAIN_KEY_TO_EID[token.chainKey].v2
+              }
+            }
+          } else if (type === 'checkSendV2') {
+            if (raw && raw !== '0x' && !token._remove) {
+              token.oftVersion = 2
+              // OFT V2 implies Endpoint V1
+              token.endpointVersion = 1
+              if (!token.endpointId || EID_TO_VERSION[token.endpointId] === 2) {
+                token.endpointId = CHAIN_KEY_TO_EID[token.chainKey].v1
+              }
+            }
+          } else if (type === 'checkSendV1') {
+            if (raw && raw !== '0x' && !token._remove) {
+              token.oftVersion = 1
+              // OFT V1 implies Endpoint V1
+              token.endpointVersion = 1
+              if (!token.endpointId || EID_TO_VERSION[token.endpointId] === 2) {
+                token.endpointId = CHAIN_KEY_TO_EID[token.chainKey].v1
+              }
+            }
+          } else if (type === 'checkSendV1_withSendAbi') {
+            if (raw && raw !== '0x' && !token._remove) {
+              token.oftVersion = 1
+              // OFT V1 implies Endpoint V1
+              token.endpointVersion = 1
+              if (!token.endpointId || EID_TO_VERSION[token.endpointId] === 2) {
+                token.endpointId = CHAIN_KEY_TO_EID[token.chainKey].v1
+              }
+            }
+          }
+        } catch (error) {
+          // ignore individual decode errors
+          console.warn('DECODING ERROR! ---> TOKEN:', token, ' ERROR:', error)
+        }
+      }
+
+      //
+      // ──────────────────────────────────────────────────────────────────────────────
+      // PART 3: discover peers (one call per token×destChain, batched)
+      // ──────────────────────────────────────────────────────────────────────────────
+      const callsPart3 = []
+      const decodeInfoPart3 = []
+
+      for (const t of chainTokens) {
+        if (t._remove) continue // skip non-tokens
+
+        const adapter = t.oftAdapter
+        const eid = t.endpointId
+        const requireV3 = EID_TO_VERSION[eid] === 2 || t.endpointVersion === 2
+        const ifaceV3b = new ethers.Interface(OFT_V3_ABI)
+        const ifaceV2b = new ethers.Interface(OFT_V2_ABI)
+
+        for (const otherChainKey of SUPPORTED_CHAINS) {
+          if (otherChainKey === chainKey) continue
+
+          const destChainId = requireV3 ? CHAIN_KEY_TO_EID[otherChainKey].v2 : CHAIN_KEY_TO_EID[otherChainKey].v1
+
+          if (!destChainId) {
+            console.warn('Skipping, no EID found for chainKey: ', otherChainKey)
+            continue
+          }
+
+          if (requireV3) {
+            // V3.peers(destChainId)
+            callsPart3.push({
+              target: adapter,
+              callData: ifaceV3b.encodeFunctionData('peers', [destChainId]),
+            })
+            decodeInfoPart3.push({
+              type: 'peers',
+              token: t,
+              destChainKey: otherChainKey,
+              destChainId,
+            })
+          } else {
+            // V2,V1.trustedRemoteLookup(destChainId)
+            callsPart3.push({
+              target: adapter,
+              callData: ifaceV2b.encodeFunctionData('trustedRemoteLookup', [destChainId]),
+            })
+            decodeInfoPart3.push({
+              type: 'trusted',
+              token: t,
+              destChainKey: otherChainKey,
+              destChainId,
+            })
+          }
+        }
+      }
+
+      if (callsPart3.length === 0) {
+        console.log(`  [P3] No peer calls needed for chain ${chainKey}.`)
+      } else {
+        // Batch size = #callsPart3
+        let returnData3
+        try {
+          returnData3 = await multiCallWithFallback(chainKey, callsPart3, 500, 200)
+        } catch (err) {
+          console.error(`  [P3] multicall failed on chain ${chainKey}: ${err.message}`)
+          // Skip decoding if Part 3 fails
+          continue
+        }
+
+        // Decode Part 3 - Store discovered peers WITHOUT adding to token yet
+        for (let i = 0; i < decodeInfoPart3.length; i++) {
+          const { type, token, destChainKey } = decodeInfoPart3[i]
+          const raw = returnData3[i]
+
+          if (!raw || raw === '0x' || raw === zeroBytes32) continue // skip empty results
+
+          try {
+            const chainId = CHAIN_KEY_TO_ID[destChainKey]
+            if (!chainId) continue
+
+            let peerAddr = null
+
+            if (type === 'peers') {
+              // decode V3.peers(uint32)
+              const ifaceV3c = new ethers.Interface(OFT_V3_ABI)
+              const decoded = ifaceV3c.decodeFunctionResult('peers', raw)
+              const addrBytes = decoded[0]
+
+              if (!addrBytes || addrBytes === '0x' || addrBytes === zeroBytes32) continue
+
+              const rawAddressHex = '0x' + addrBytes.slice(-40)
+              peerAddr = ethers.getAddress(rawAddressHex)
+            } else if (type === 'trusted') {
+              // decode V2.getTrustedRemoteAddress(uint16)
+              const ifaceV2c = new ethers.Interface(OFT_V2_ABI)
+              const decoded = ifaceV2c.decodeFunctionResult('trustedRemoteLookup', raw)
+              let returned = decoded[0]
+              if (!returned || returned === '0x') continue
+              returned = returned.slice(0, 42) // extract only remote address
+              if (returned === ZERO_ADDRESS) continue
+              peerAddr = ethers.getAddress(returned)
+
+              if (peerAddr === '0x000000000000000000000000000000000000dEaD') continue
+            }
+
+            if (peerAddr) {
+              // Store discovered peer for later verification
+              const tokenKey = `${token.chainKey.toLowerCase()}:${token.oftAdapter.toLowerCase()}`
+              if (!discoveredPeers.has(tokenKey)) {
+                discoveredPeers.set(tokenKey, new Map())
+              }
+              discoveredPeers.get(tokenKey).set(destChainKey.toLowerCase(), peerAddr.toLowerCase())
+
+              // If unseen, queue a new token for processing
+              const mapKey = `${destChainKey.toLowerCase()}:${peerAddr.toLowerCase()}`
+              if (!seenAdapters.has(mapKey)) {
+                const newIndex = tokens.length
+                const newToken = {
+                  chainKey: destChainKey,
+                  chainId: CHAIN_KEY_TO_ID[destChainKey],
+                  oftAdapter: peerAddr,
+                  address: peerAddr,
+                  extensions: {},
+                  index: newIndex,
+                }
+                tokens.push(newToken)
+                newTokens.push(newToken)
+                seenAdapters.set(mapKey, true)
+              }
+            }
+          } catch (error) {
+            // ignore decode/update errors
+            console.warn('DECODING ERROR! ---> TOKEN:', token, destChainKey, ' ERROR:', error)
+          }
+        }
+      }
+    }
+
+    // All tokens in toProcess have now been handled.  Next round uses newTokens.
+    toProcess = newTokens
+  }
+
+  // ─── C) Verify bidirectional connections and add only confirmed peers ─────────────
+  console.log('\n=== Verifying bidirectional peer connections ===')
+  
+  for (const token of tokens) {
+    if (token._remove) continue
+
+    const tokenKey = `${token.chainKey.toLowerCase()}:${token.oftAdapter.toLowerCase()}`
+    const tokenPeers = discoveredPeers.get(tokenKey)
+
+    if (!tokenPeers || tokenPeers.size === 0) continue
+
+    // Ensure extensions structure exists
+    token.extensions = token.extensions || {}
+    token.extensions.peersInfo = token.extensions.peersInfo || {}
+
+    // Check each discovered peer for bidirectional connection
+    for (const [destChainKey, peerAddr] of tokenPeers) {
+      const peerKey = `${destChainKey}:${peerAddr}`
+      const peerConnections = discoveredPeers.get(peerKey)
+
+      // Check if peer has a connection back to this token
+      if (peerConnections && peerConnections.has(token.chainKey.toLowerCase())) {
+        const backConnection = peerConnections.get(token.chainKey.toLowerCase())
+        
+        // Verify the back-connection points to this token's adapter
+        if (backConnection === token.oftAdapter.toLowerCase()) {
+          // Bidirectional connection confirmed!
+          const chainId = CHAIN_KEY_TO_ID[destChainKey.toUpperCase()] || CHAIN_KEY_TO_ID[destChainKey]
+          if (chainId) {
+            token.extensions.peersInfo[chainId] = { tokenAddress: ethers.getAddress(peerAddr) }
+            console.log(`✅ Bidirectional connection confirmed: ${token.chainKey}:${token.oftAdapter} ↔ ${destChainKey}:${peerAddr}`)
+          }
+        } else {
+          console.log(`❌ Unidirectional connection rejected: ${token.chainKey}:${token.oftAdapter} → ${destChainKey}:${peerAddr} (peer points back to ${backConnection})`)
+        }
+      } else {
+        console.log(`❌ Unidirectional connection rejected: ${token.chainKey}:${token.oftAdapter} → ${destChainKey}:${peerAddr} (no back-connection)`)
+      }
+    }
+  }
+
+  // ─── D) Final population, filtering & write‐out ────────────────────────────────────────
+  const finalTokens = tokens.filter((t) => !t._remove)
+
+  // Re‐index 0…N−1
+  for (let i = 0; i < finalTokens.length; i++) {
+    finalTokens[i].index = i
+  }
+
+  // Bridge mapping
+  const bridgeMap = {}
+
+  // Add Initial Bridge Info Population
+  for (const t of finalTokens) {
+    const peg = OVERRIDE_PEG[t.symbol] ?? t.peggedTo
+    if (peg?.address) {
+      // if (peg?.address && peg?.chainName && (peg.address !== tokenAddress || peg.chainName !== chainKey)) {
+      const pegKey = peg.address.toLowerCase() + peg.chainName
+      bridgeMap[pegKey] = bridgeMap[pegKey] || {}
+      bridgeMap[pegKey][t.chainId] = { tokenAddress: ethers.getAddress(t.address) }
+      if (SUPPORTED_CHAINS.includes(peg.chainName)) {
+        t.extensions = mergeExtensions(t.extensions, {
+          bridgeInfo: {
+            [CHAIN_KEY_TO_ID[peg.chainName]]: { tokenAddress: ethers.getAddress(peg.address) },
+          },
+        })
+      }
+    }
+  }
+
+  // Attach bridgeInfo from mapping
+  for (const token of finalTokens) {
+    const mapKey = token.address?.toLowerCase() + CHAIN_KEYS[token.chainId]
+    const bi = bridgeMap[mapKey]
+    if (bi && Object.keys(bi).length) {
+      token.extensions = mergeExtensions(token.extensions, { bridgeInfo: bi })
+    }
+    const overrideInfo = OVERRIDE_CG_CMC_ID[token.symbol]
+
+    if (overrideInfo && (overrideInfo.coingeckoId || overrideInfo.coinMarketCapId)) {
+      token.extensions = mergeExtensions(token.extensions, {
+        ...(overrideInfo.coingeckoId && { coingeckoId: overrideInfo.coingeckoId }),
+        ...(overrideInfo.coinMarketCapId && { coinMarketCapId: overrideInfo.coinMarketCapId }),
+      })
+    }
+  }
+
+  // TODO: Add Bridge Info Population loop where we find main token by peer amount and chain priority (TVL ranking) with easy overrides for off-cases
+  // For each peersInfo token address find a matching token address in the tokens array that has that token address as oftAdapter and same chainId and so we can populate the peersInfo tokenAddress with the token address
+  for (const t of finalTokens) {
+    if (!t.extensions || !t.extensions.peersInfo) continue
+
+    const needsIcon = !(t?.icon && t?.icon?.length > 0)
+    let needsBridgeInfo = !t?.extensions?.bridgeInfo || Object.keys(t?.extensions?.bridgeInfo || {}).length === 0
+    let needsCoingeckoId = !t?.extensions?.coingeckoId
+    let needsCoinMarketCapId = !t?.extensions?.coinMarketCapId
+
+    for (const [chainId, peerInfo] of Object.entries(t.extensions.peersInfo) || {}) {
+      const peerAddress = peerInfo.tokenAddress
+
+      const matchingToken = tokens.find(
+        (token) => token.chainId === parseInt(chainId) && token.oftAdapter.toLowerCase() === peerAddress.toLowerCase()
+      )
+
+      if (matchingToken) {
+        matchingToken.address = ethers.getAddress(matchingToken.address)
+        t.extensions.peersInfo[chainId].tokenAddress = matchingToken.address
+        console.log(
+          `✅ Found matching token for ${peerAddress} on chain ${chainId}: ${matchingToken.name} (${matchingToken.symbol} new address: ${matchingToken.address})`
+        )
+
+        if (needsBridgeInfo && Object.keys(t?.extensions?.peersInfo || {}).length === 1) {
+          t.extensions.bridgeInfo = t.extensions.peersInfo
+          needsBridgeInfo = false
+        }
+
+        if (needsIcon && matchingToken?.icon && matchingToken?.icon?.length > 0) t.icon = matchingToken.icon
+
+        if (
+          needsBridgeInfo &&
+          matchingToken?.extensions?.bridgeInfo &&
+          Object.keys(matchingToken?.extensions?.bridgeInfo || {}).length === 1
+        ) {
+          t.extensions.bridgeInfo = matchingToken.extensions.bridgeInfo
+          needsBridgeInfo = false
+        }
+
+        if (needsCoingeckoId && matchingToken?.extensions?.coingeckoId) {
+          t.extensions.coingeckoId = matchingToken.extensions.coingeckoId
+          needsCoingeckoId = false
+        }
+
+        if (needsCoinMarketCapId && matchingToken?.extensions?.coinMarketCapId) {
+          t.extensions.coinMarketCapId = matchingToken.extensions.coinMarketCapId
+          needsCoinMarketCapId = false
+        }
+
+        // Only remove if no bidirectional connection exists AND not a native adapter
+        if (Object.keys(matchingToken?.extensions?.peersInfo || {})?.length === 0 && !NATIVE_OFT_ADAPTERS[chainId]?.[t.extensions.peersInfo[chainId]?.tokenAddress?.toLowerCase()]) {
+          delete t.extensions.peersInfo[chainId]
+        }
+      } else {
+        if (!NATIVE_OFT_ADAPTERS[chainId]?.[t.extensions.peersInfo[chainId]?.tokenAddress?.toLowerCase()]) {
+          delete t.extensions.peersInfo[chainId]
+          console.warn(
+            `⚠️ Token ${t.address}: No matching token found, deleting entry for peer address ${peerAddress} on chain ${chainId}.`
+          )
+        }
+      }
+    }
+  }
+
+  // Log summary of connections
+  let bidirectionalCount = 0
+  for (const t of finalTokens) {
+    if (t.extensions?.peersInfo) {
+      bidirectionalCount += Object.keys(t.extensions.peersInfo).length
+    }
+  }
+  console.log(`\n📊 Summary: ${bidirectionalCount} bidirectional peer connections confirmed`)
+
+  fs.writeFileSync(inputPath, JSON.stringify(finalTokens, null, 2), 'utf8')
+  console.log(`\n✅ Finished. Wrote ${finalTokens.length} tokens to ${inputPath}.`)
+}
+
+main().catch((e) => {
+  console.error('Fatal error in main():', e)
+  process.exit(1)
+})
