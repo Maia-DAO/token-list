@@ -517,8 +517,6 @@ async function main() {
     }
   }
 
-  exit
-
   // ─── D) Final population, filtering & write‐out ────────────────────────────────────────
   const finalTokens = tokens.filter((t) => !t._remove)
 
