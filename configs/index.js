@@ -14,6 +14,7 @@ const PARTNER_TOKEN_SYMBOLS = [
   'FXS',
   'FPI',
   'EUL',
+  'weETH',
   'ORDER',
   'XDC',
   'WXDC',
