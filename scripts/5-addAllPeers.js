@@ -98,7 +98,7 @@ async function main() {
       // Multicall for Part 1
       let returnData1
       try {
-        returnData1 = await multiCallWithFallback(chainKey, callsPart1, 500, 200)
+        returnData1 = await multiCallWithFallback(chainKey, callsPart1, 50, 300)
       } catch (err) {
         console.error(`  [P1] multicall failed on chain ${chainKey}: ${err.message}`)
         // If Part 1 fails entirely for this chainKey, skip Parts 2 & 3 for these tokens
@@ -227,7 +227,7 @@ async function main() {
       // Multicall for Part 2
       let returnData2
       try {
-        returnData2 = await multiCallWithFallback(chainKey, callsPart2, 500, 200)
+        returnData2 = await multiCallWithFallback(chainKey, callsPart2, 50, 300)
       } catch (err) {
         console.error(`  [P2] multicall failed on chain ${chainKey}: ${err.message}`)
         // Skip Part 3 for these tokens if Part 2 fails.
@@ -387,7 +387,7 @@ async function main() {
         // Batch size = #callsPart3
         let returnData3
         try {
-          returnData3 = await multiCallWithFallback(chainKey, callsPart3, 500, 200)
+          returnData3 = await multiCallWithFallback(chainKey, callsPart3, 50, 300)
         } catch (err) {
           console.error(`  [P3] multicall failed on chain ${chainKey}: ${err.message}`)
           // Skip decoding if Part 3 fails

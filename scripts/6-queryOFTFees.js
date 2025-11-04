@@ -147,7 +147,7 @@ async function main() {
     let returnData
     // Use tryAggregate to allow individual call failures without reverting batch
     try {
-      returnData = await multiCallWithFallback(chainKey, aggregateCalls, 500, 200)
+      returnData = await multiCallWithFallback(chainKey, aggregateCalls, 50, 300)
     } catch (err) {
       console.error(` multicall failed on chain ${chainKey}: ${err.message}`)
       continue
