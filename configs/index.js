@@ -157,6 +157,7 @@ const OVERRIDE_PEG = {
 
 // Override logos for specific tokens
 const OVERRIDE_LOGO = {
+  USDRIF: 'https://assets.coingecko.com/coins/images/39869/standard/USDRIF.webp?1724500201',
   orbETH: 'https://assets.coingecko.com/coins/images/54981/standard/orbETH-token_icon.png?1743026013',
   AUKI: 'https://assets.coingecko.com/coins/images/39811/standard/COINGECKO-200-x-200_%281%29.png?1724166209',
   agEUR: 'https://assets.coingecko.com/coins/images/19479/large/agEUR-4.png?1710726218',
@@ -167,6 +168,7 @@ const OVERRIDE_LOGO = {
     'https://raw.githubusercontent.com/trustwallet/assets/refs/heads/master/blockchains/ethereum/assets/0xf6718b2701D4a6498eF77D7c152b2137Ab28b8A3/logo.png',
   WBTC: 'https://s2.coinmarketcap.com/static/img/coins/128x128/3717.png',
   RBTC: 'https://s2.coinmarketcap.com/static/img/coins/128x128/3626.png',
+  WRBTC: 'https://s2.coinmarketcap.com/static/img/coins/128x128/3626.png',
   REUNI: 'https://s2.coinmarketcap.com/static/img/coins/128x128/23996.png',
   sUSDa: 'https://s2.coinmarketcap.com/static/img/coins/128x128/35538.png',
   UNB: 'https://s2.coinmarketcap.com/static/img/coins/128x128/7846.png',
@@ -181,6 +183,8 @@ const OVERRIDE_LOGO = {
 }
 
 const OVERRIDE_LOGO_BY_URL = {
+  'https://icons-ckg.pages.dev/stargate-light/tokens/usdrif.svg':
+    'https://assets.coingecko.com/coins/images/39869/standard/USDRIF.webp?1724500201',
   'https://icons-ckg.pages.dev/stargate-light/tokens/usd₮0.svg':
     'https://coin-images.coingecko.com/coins/images/53705/large/usdt0.jpg?1737086183',
 }
