@@ -5,6 +5,7 @@ const BLOCKED_TOKEN_SYMBOLS = ['STG', 'CAW']
 
 // Partner token symbols that should be included in the primary token list
 const PARTNER_TOKEN_SYMBOLS = [
+  'ARB',
   'FRAX',
   'frxUSD',
   'sfrxUSD',
