@@ -102,7 +102,10 @@ const PARTNER_TOKEN_SYMBOLS = [
   'cbBTC',
   'solvBTC',
   'M-BTC',
-  'wstUSR'
+  'wstUSR',
+  'ynETHx',
+  'ynBTCx',
+  'ynRWAx',
 ]
 
 const CORE_TOKEN_SYMBOLS = [
@@ -138,6 +141,8 @@ const NATIVE_OFT_ADAPTERS = {
   [1996]: { ['0x7393ae4835fdfed4f25e46a10d6bdb2fd49a2706']: '0x0000000000000000000000000000000000000000' }, // SANKO has native OFT
   [747]: { ['0xd296588850bee2770136464ffdddd78c32f2a07c']: '0x0000000000000000000000000000000000000000' }, // FLOW has native OFT
   [1329]: { ['0xbdf43ecadc5cef51b7d1772f722e40596bc1788b']: '0x0000000000000000000000000000000000000000' }, // SEI has native OFT
+  [5064014]: { ['0x80f981abc18a48cfdbde5556f9b72e6a726f0ff3']: '0x0000000000000000000000000000000000000000' }, // ETHEREAL has native OFT
+  [9745]: { ['0x405fbc9004d857903bfd6b3357792d71a50726b0']: '0x0000000000000000000000000000000000000000' }, // PLASMA has native OFT
 }
 
 // Coingecko and CoinMarketCap ID mappings for specific tokens
@@ -241,12 +246,18 @@ const WRAPPED_NATIVES = {
   [34443]: '0x4200000000000000000000000000000000000006',
   [81457]: '0x4300000000000000000000000000000000000004',
   [5000]: '0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000',
+  [1890]: '0x7EbeF2A4b1B09381Ec5B9dF8C5c6f2dBECA59c73',
+  [43111]: '0x4200000000000000000000000000000000000006',
+  [5064014]: '0xB6fC4B1BFF391e5F6b4a3D2C7Bda1FeE3524692D',
+  [143]: '0x3bd359C1119dA7Da1D913D1C4D2B7c461115433A',
+  [9745]: '0x6100E367285b01F48D07953803A2d8dCA5D19873',
 }
 
 // List of chainIds without DEX Aggregation support in Hermes UI
 // @dev copied from hermes UI frontend bridging.ts
 const CHAINS_WITH_NO_SWAPPING = [
-  252, 200901, 60808, 1116, 2345, 57073, 747474, 2818, 6900, 291, 3338, 1868, 239, 167000, 480, 7777777,
+  252, 200901, 60808, 1116, 2345, 57073, 747474, 2818, 6900, 291, 3338, 1868, 239, 167000, 480, 7777777, 1890, 43111,
+  5064014, 143, 9745,
 ]
 
 // Extended supported chain IDs
@@ -290,7 +301,7 @@ const EXTENDED_SUPPORTED_CHAIN_IDS = [
   // 1380012617,
   34443, 81457,
   // 11501,
-  5000,
+  5000, 1890, 43111, 5064014, 143, 9745,
 ]
 
 // Supported chains List.
@@ -331,7 +342,6 @@ const SUPPORTED_CHAINS = [
   'worldchain',
   'katana',
   // 'nova',
-  // 'lightlink',
   // 'aurora',
   // 'hemi',
   // 'cronoszkevm',
@@ -370,6 +380,11 @@ const SUPPORTED_CHAINS = [
   'blast',
   // 'bevm',
   'mantle',
+  'lightlink',
+  'hemi',
+  'ethereal',
+  'monad',
+  'plasma',
 ]
 
 // Maps chainId to chainKey in ofts.json
@@ -411,7 +426,6 @@ const CHAIN_KEYS = {
   480: 'worldchain',
   747474: 'katana',
   // 42170: 'nova',
-  // 1890: 'lightlink',
   // 1313161554: 'aurora',
   // 43111: 'hemi',
   // 388: 'cronoszkevm',
@@ -451,6 +465,11 @@ const CHAIN_KEYS = {
   81457: 'blast',
   // 11501: 'bevm',
   5000: 'mantle',
+  43111: 'hemi',
+  1890: 'lightlink',
+  5064014: 'ethereal',
+  143: 'monad',
+  9745: 'plasma',
 }
 
 // Mapping of chainKey to chain ID
@@ -491,7 +510,6 @@ const CHAIN_KEY_TO_ID = {
   worldchain: 480,
   katana: 747474,
   // nova: 42170,
-  // lightlink: 1890,
   // aurora: 1313161554,
   // hemi: 43111,
   // cronoszkevm: 388,
@@ -530,6 +548,11 @@ const CHAIN_KEY_TO_ID = {
   blast: 81457,
   // bevm: 11501,
   mantle: 5000,
+  hemi: 43111,
+  lightlink: 1890,
+  ethereal: 5064014,
+  monad: 143,
+  plasma: 9745,
 }
 
 const CHAIN_KEYS_NAME_OVERRIDE = {
@@ -550,6 +573,7 @@ const OVERRIDE_LZNETWORKS = {
 
 const CHAIN_KEY_TO_EID = Object.values(CHAIN_KEYS).reduce((map, chainKey) => {
   const net = OVERRIDE_LZNETWORKS[chainKey] ?? chainAndStageToNetwork(chainKey, Stage.MAINNET)
+
   map[chainKey] = {
     v1: networkToEndpointId(net, EndpointVersion.V1),
     v2: networkToEndpointId(net, EndpointVersion.V2),
