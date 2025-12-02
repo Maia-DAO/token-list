@@ -106,6 +106,15 @@ const PARTNER_TOKEN_SYMBOLS = [
   'ynETHx',
   'ynBTCx',
   'ynRWAx',
+  'LL',
+  'WMON',
+  'XPL',
+  'WXPL',
+  'ynBTCk',
+  'HEMI',
+  'hemiBTC',
+  'rsETH',
+  'enzoBTC'
 ]
 
 const CORE_TOKEN_SYMBOLS = [
