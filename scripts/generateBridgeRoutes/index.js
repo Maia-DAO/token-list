@@ -147,7 +147,7 @@ function generateBridgeRoutes() {
     const allTokens = [
       ...(tokenList.tokens || []),
       ...(tokenList.rootTokens || []),
-      ...(inactiveTokenList.tokens || []),
+      // ...(inactiveTokenList.tokens || []),
     ]
 
     console.log(`Processing ${allTokens.length} tokens...`)
@@ -177,6 +177,12 @@ function generateBridgeRoutes() {
           const targetChainId = parseInt(peerChainId)
           if (targetChainId !== chainId) {
             bridgeRoutes[chainId].add(targetChainId)
+
+            // if (!bridgeRoutes[targetChainId]) {
+            //     bridgeRoutes[targetChainId] = new Set()
+            //   }
+
+            //   bridgeRoutes[targetChainId].add(chainId)
 
             // Native OFTs need to ve reverse linked and always have liquidity on their origin chain
             if (peersInfo[peerChainId].tokenAddress === ZERO_ADDRESS) {
@@ -292,7 +298,7 @@ function generateTypeScriptOutput(bridgeRoutes) {
 import { ExtendedSupportedChainId, UISupportedChainId } from 'constants/chainInfo'
 import { SupportedChainId } from 'maia-core-sdk'
 
-export interface BridgeRoutesMapping {
+interface BridgeRoutesMapping {
   [chainId: number]: UISupportedChainId[];
 }
 
@@ -306,7 +312,7 @@ export interface BridgeRoutesMapping {
  * Note: Only includes tokens with liquidity (noLiquidityOnChain !== true)
  */
 
-export const BRIDGE_ROUTES: BridgeRoutesMapping = {
+const BRIDGE_ROUTES: BridgeRoutesMapping = {
 ${chains
   .map((chainId) => {
     const routes = recognizedBridgeRoutes[chainId]
@@ -325,27 +331,6 @@ ${chains
  */
 export function getReachableChains(fromChainId: UISupportedChainId): UISupportedChainId[] {
   return BRIDGE_ROUTES[fromChainId] || [];
-}
-
-/**
- * Helper function to check if two chains are connected via bridge
- * @param fromChainId - The source chain ID
- * @param toChainId - The destination chain ID
- * @returns Boolean indicating if the chains are connected
- */
-export function canBridge(fromChainId: UISupportedChainId, toChainId: UISupportedChainId): boolean {
-  const reachableChains = BRIDGE_ROUTES[fromChainId] || [];
-  return reachableChains.includes(toChainId);
-}
-
-/**
- * Helper function to get all unique chain IDs that have bridge routes
- * @returns Array of all chain IDs with bridge capabilities
- */
-export function getAllBridgeChains(): UISupportedChainId[] {
-  return Object.keys(BRIDGE_ROUTES)
-    .map(Number)
-    .filter((id): id is UISupportedChainId => !isNaN(id));
 }
 `
 }
