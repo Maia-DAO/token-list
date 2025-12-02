@@ -1,8 +1,8 @@
 {
   "name": "Hermes Omnichain Inactive Token List",
-  "timestamp": "1764609421",
+  "timestamp": "1764619472",
   "version": {
-    "major": 183,
+    "major": 184,
     "minor": 0,
     "patch": 0
   },
@@ -646,49 +646,6 @@
     },
     {
       "chainId": 1,
-      "address": "0x06ea695B91700071B161A434fED42D1DcbAD9f00",
-      "name": "Hemi Bitcoin",
-      "symbol": "hemiBTC",
-      "decimals": 8,
-      "logoURI": "https://icons-ckg.pages.dev/stargate-light/tokens/hemibtc.svg",
-      "tags": [],
-      "extensions": {
-        "bridgeInfo": {
-          "43111": {
-            "tokenAddress": "0xAA40c0c7644e0b2B224509571e10ad20d9C4ef28"
-          }
-        },
-        "oftInfo": {
-          "peersInfo": {
-            "10": {
-              "tokenAddress": "0xB5259c05764468c33C9c36e327cAAD020a8E5Fe1"
-            },
-            "56": {
-              "tokenAddress": "0x64b5bb3b7eF0267019fee5b826c60Cb9B7609373"
-            },
-            "8453": {
-              "tokenAddress": "0xC6FFfA0E234E5Ec80B8654Cb351dA90A092F6C95"
-            },
-            "42161": {
-              "tokenAddress": "0x1855911ab07ed5Cd056008F409b709DfA9D01183"
-            },
-            "43111": {
-              "tokenAddress": "0xAA40c0c7644e0b2B224509571e10ad20d9C4ef28"
-            }
-          },
-          "oftAdapter": "0x06ea695B91700071B161A434fED42D1DcbAD9f00",
-          "oftVersion": 3,
-          "endpointVersion": 2,
-          "endpointId": 30101,
-          "oftSharedDecimals": 6
-        }
-      },
-      "isAcross": false,
-      "isOFT": true,
-      "noLiquidityOnChain": true
-    },
-    {
-      "chainId": 1,
       "address": "0x08AD83D779BDf2BBE1ad9cc0f78aa0D24AB97802",
       "name": "Robonomics Web Services",
       "symbol": "RWS",
@@ -763,9 +720,6 @@
         },
         "oftInfo": {
           "peersInfo": {
-            "6900": {
-              "tokenAddress": "0x1D63c9409bb41b2Ab43259b843fF32c839A9ffa2"
-            },
             "42161": {
               "tokenAddress": "0x34FbFB3e95011956aBAD82796f466bA88895f214"
             },
@@ -797,42 +751,6 @@
           }
         }
       }
-    },
-    {
-      "chainId": 1,
-      "address": "0x0921799CB1d702148131024d18fCdE022129Dc73",
-      "name": "LightLink",
-      "symbol": "LL",
-      "decimals": 18,
-      "logoURI": "https://icons-ckg.pages.dev/stargate-light/tokens/ll.svg",
-      "tags": [],
-      "extensions": {
-        "bridgeInfo": {
-          "1890": {
-            "tokenAddress": "0x519d3443cACc61bD844546eDAea48E5502021802"
-          },
-          "8453": {
-            "tokenAddress": "0x519d3443cACc61bD844546eDAea48E5502021802"
-          }
-        },
-        "oftInfo": {
-          "peersInfo": {
-            "1890": {
-              "tokenAddress": "0x519d3443cACc61bD844546eDAea48E5502021802"
-            },
-            "8453": {
-              "tokenAddress": "0x519d3443cACc61bD844546eDAea48E5502021802"
-            }
-          },
-          "oftAdapter": "0xA14a10000BD3c2C3Be3A6A1d151BFcE1359dc4A6",
-          "oftVersion": 3,
-          "endpointVersion": 2,
-          "endpointId": 30101,
-          "oftSharedDecimals": 6
-        }
-      },
-      "isAcross": false,
-      "isOFT": true
     },
     {
       "chainId": 1,
@@ -3458,6 +3376,21 @@
     },
     {
       "chainId": 1,
+      "address": "0x34950Ff2b487d9E5282c5aB342d08A2f712eb79F",
+      "name": "Efforce",
+      "symbol": "WOZX",
+      "decimals": 18,
+      "logoURI": "https://assets.coingecko.com/coins/images/13310/large/rZ6Oe3dm_400x400.jpg?1607331889",
+      "extensions": {
+        "bridgeInfo": {
+          "137": {
+            "tokenAddress": "0x954622542cbB3a1492C3F52D4FD66F4059c029fF"
+          }
+        }
+      }
+    },
+    {
+      "chainId": 1,
       "address": "0x3496B523e5C00a4b4150D6721320CdDb234c3079",
       "name": "NUM Token",
       "symbol": "NUM",
@@ -5117,6 +5050,24 @@
     },
     {
       "chainId": 1,
+      "address": "0x4f640F2529ee0cF119A2881485845FA8e61A782A",
+      "name": "ORE Network",
+      "symbol": "ORE",
+      "decimals": 18,
+      "logoURI": "https://assets.coingecko.com/coins/images/18917/large/ORE_FullColor.png?1633921977",
+      "extensions": {
+        "bridgeInfo": {
+          "56": {
+            "tokenAddress": "0x4EF285c8cbe52267c022c39da98b97ca4b7e2fF9"
+          },
+          "137": {
+            "tokenAddress": "0xD52f6CA48882Be8fbaa98ce390db18e1dbe1062d"
+          }
+        }
+      }
+    },
+    {
+      "chainId": 1,
       "address": "0x4fE83213D56308330EC302a8BD641f1d0113A4Cc",
       "name": "NuCypher",
       "symbol": "NU",
@@ -6394,6 +6345,21 @@
     },
     {
       "chainId": 1,
+      "address": "0x5a666c7d92E5fA7Edcb6390E4efD6d0CDd69cF37",
+      "name": "Unmarshal",
+      "symbol": "MARSH",
+      "decimals": 18,
+      "logoURI": "https://assets.coingecko.com/coins/images/14554/large/img_circle_256x256.png?1616997706",
+      "extensions": {
+        "bridgeInfo": {
+          "56": {
+            "tokenAddress": "0x2FA5dAF6Fe0708fBD63b1A7D1592577284f52256"
+          }
+        }
+      }
+    },
+    {
+      "chainId": 1,
       "address": "0x5bBe36152d3CD3eB7183A82470b39b29EedF068B",
       "name": "Hord ETH Staking",
       "symbol": "hETH",
@@ -7126,67 +7092,6 @@
     },
     {
       "chainId": 1,
-      "address": "0x68589adc7687A23Ff2B06fb032b997f09B44Ed5d",
-      "name": "YieldNest Restaked BTC - Kernel",
-      "symbol": "ynBTCk",
-      "decimals": 18,
-      "logoURI": "https://icons-ckg.pages.dev/stargate-light/tokens/ynbtck.svg",
-      "tags": [],
-      "extensions": {
-        "bridgeInfo": {
-          "10": {
-            "tokenAddress": "0x68589adc7687A23Ff2B06fb032b997f09B44Ed5d"
-          },
-          "56": {
-            "tokenAddress": "0x78839cE14a8213779128Ee4da6D75E1326606A56"
-          },
-          "8453": {
-            "tokenAddress": "0x68589adc7687A23Ff2B06fb032b997f09B44Ed5d"
-          },
-          "42161": {
-            "tokenAddress": "0x68589adc7687A23Ff2B06fb032b997f09B44Ed5d"
-          },
-          "43111": {
-            "tokenAddress": "0x68589adc7687A23Ff2B06fb032b997f09B44Ed5d"
-          },
-          "167000": {
-            "tokenAddress": "0x68589adc7687A23Ff2B06fb032b997f09B44Ed5d"
-          }
-        },
-        "oftInfo": {
-          "peersInfo": {
-            "10": {
-              "tokenAddress": "0x68589adc7687A23Ff2B06fb032b997f09B44Ed5d"
-            },
-            "56": {
-              "tokenAddress": "0x78839cE14a8213779128Ee4da6D75E1326606A56"
-            },
-            "8453": {
-              "tokenAddress": "0x68589adc7687A23Ff2B06fb032b997f09B44Ed5d"
-            },
-            "42161": {
-              "tokenAddress": "0x68589adc7687A23Ff2B06fb032b997f09B44Ed5d"
-            },
-            "43111": {
-              "tokenAddress": "0x68589adc7687A23Ff2B06fb032b997f09B44Ed5d"
-            },
-            "167000": {
-              "tokenAddress": "0x68589adc7687A23Ff2B06fb032b997f09B44Ed5d"
-            }
-          },
-          "oftAdapter": "0xFD72FbB61798f3bcB707F5Ba98CB72a87CCa02A2",
-          "oftVersion": 3,
-          "endpointVersion": 2,
-          "endpointId": 30101,
-          "oftSharedDecimals": 6
-        }
-      },
-      "isAcross": false,
-      "isOFT": true,
-      "noLiquidityOnChain": true
-    },
-    {
-      "chainId": 1,
       "address": "0x68749665FF8D2d112Fa859AA293F07A622782F38",
       "name": "Tether Gold",
       "symbol": "XAUt",
@@ -7422,115 +7327,6 @@
     },
     {
       "chainId": 1,
-      "address": "0x6A9A65B84843F5fD4aC9a0471C4fc11AFfFBce4a",
-      "name": "Lorenzo Wrapped Bitcoin",
-      "symbol": "enzoBTC",
-      "decimals": 8,
-      "logoURI": "https://icons-ckg.pages.dev/stargate-light/tokens/enzobtc.svg",
-      "tags": [],
-      "extensions": {
-        "bridgeInfo": {
-          "30": {
-            "tokenAddress": "0x6A9A65B84843F5fD4aC9a0471C4fc11AFfFBce4a"
-          },
-          "56": {
-            "tokenAddress": "0x6A9A65B84843F5fD4aC9a0471C4fc11AFfFBce4a"
-          },
-          "146": {
-            "tokenAddress": "0x6A9A65B84843F5fD4aC9a0471C4fc11AFfFBce4a"
-          },
-          "1116": {
-            "tokenAddress": "0x6A9A65B84843F5fD4aC9a0471C4fc11AFfFBce4a"
-          },
-          "1329": {
-            "tokenAddress": "0x6A9A65B84843F5fD4aC9a0471C4fc11AFfFBce4a"
-          },
-          "1868": {
-            "tokenAddress": "0x6A9A65B84843F5fD4aC9a0471C4fc11AFfFBce4a"
-          },
-          "1923": {
-            "tokenAddress": "0x6A9A65B84843F5fD4aC9a0471C4fc11AFfFBce4a"
-          },
-          "2345": {
-            "tokenAddress": "0x6A9A65B84843F5fD4aC9a0471C4fc11AFfFBce4a"
-          },
-          "2818": {
-            "tokenAddress": "0x6A9A65B84843F5fD4aC9a0471C4fc11AFfFBce4a"
-          },
-          "8453": {
-            "tokenAddress": "0x6A9A65B84843F5fD4aC9a0471C4fc11AFfFBce4a"
-          },
-          "43111": {
-            "tokenAddress": "0x6A9A65B84843F5fD4aC9a0471C4fc11AFfFBce4a"
-          },
-          "80094": {
-            "tokenAddress": "0x6A9A65B84843F5fD4aC9a0471C4fc11AFfFBce4a"
-          },
-          "98866": {
-            "tokenAddress": "0x6A9A65B84843F5fD4aC9a0471C4fc11AFfFBce4a"
-          },
-          "167000": {
-            "tokenAddress": "0x6A9A65B84843F5fD4aC9a0471C4fc11AFfFBce4a"
-          }
-        },
-        "oftInfo": {
-          "peersInfo": {
-            "30": {
-              "tokenAddress": "0x6A9A65B84843F5fD4aC9a0471C4fc11AFfFBce4a"
-            },
-            "56": {
-              "tokenAddress": "0x6A9A65B84843F5fD4aC9a0471C4fc11AFfFBce4a"
-            },
-            "146": {
-              "tokenAddress": "0x6A9A65B84843F5fD4aC9a0471C4fc11AFfFBce4a"
-            },
-            "1116": {
-              "tokenAddress": "0x6A9A65B84843F5fD4aC9a0471C4fc11AFfFBce4a"
-            },
-            "1329": {
-              "tokenAddress": "0x6A9A65B84843F5fD4aC9a0471C4fc11AFfFBce4a"
-            },
-            "1868": {
-              "tokenAddress": "0x6A9A65B84843F5fD4aC9a0471C4fc11AFfFBce4a"
-            },
-            "1923": {
-              "tokenAddress": "0x6A9A65B84843F5fD4aC9a0471C4fc11AFfFBce4a"
-            },
-            "2345": {
-              "tokenAddress": "0x6A9A65B84843F5fD4aC9a0471C4fc11AFfFBce4a"
-            },
-            "2818": {
-              "tokenAddress": "0x6A9A65B84843F5fD4aC9a0471C4fc11AFfFBce4a"
-            },
-            "8453": {
-              "tokenAddress": "0x6A9A65B84843F5fD4aC9a0471C4fc11AFfFBce4a"
-            },
-            "43111": {
-              "tokenAddress": "0x6A9A65B84843F5fD4aC9a0471C4fc11AFfFBce4a"
-            },
-            "80094": {
-              "tokenAddress": "0x6A9A65B84843F5fD4aC9a0471C4fc11AFfFBce4a"
-            },
-            "98866": {
-              "tokenAddress": "0x6A9A65B84843F5fD4aC9a0471C4fc11AFfFBce4a"
-            },
-            "167000": {
-              "tokenAddress": "0x6A9A65B84843F5fD4aC9a0471C4fc11AFfFBce4a"
-            }
-          },
-          "oftAdapter": "0xaa0D222436152050501E91DC07A45b1112f8b60f",
-          "oftVersion": 3,
-          "endpointVersion": 2,
-          "endpointId": 30101,
-          "oftSharedDecimals": 6
-        }
-      },
-      "isAcross": false,
-      "isOFT": true,
-      "noLiquidityOnChain": true
-    },
-    {
-      "chainId": 1,
       "address": "0x6B4c7A5e3f0B99FCD83e9c089BDDD6c7FCe5c611",
       "name": "Million",
       "symbol": "MM",
@@ -7620,21 +7416,6 @@
       "isAcross": false,
       "isOFT": true,
       "noLiquidityOnChain": true
-    },
-    {
-      "chainId": 1,
-      "address": "0x6BeA7CFEF803D1e3d5f7C0103f7ded065644e197",
-      "name": "Gamma Strategies",
-      "symbol": "GAMMA",
-      "decimals": 18,
-      "logoURI": "https://assets.coingecko.com/coins/images/21975/large/gamma-token-200.png?1640566576",
-      "extensions": {
-        "bridgeInfo": {
-          "137": {
-            "tokenAddress": "0x9620330926467ED3279ffCFba8327C24625732EA"
-          }
-        }
-      }
     },
     {
       "chainId": 1,
@@ -8404,6 +8185,21 @@
     },
     {
       "chainId": 1,
+      "address": "0x71Fc1F555a39E0B698653AB0b475488EC3c34D57",
+      "name": "Rainmaker Games",
+      "symbol": "RAIN",
+      "decimals": 18,
+      "logoURI": "https://assets.coingecko.com/coins/images/21485/large/Final-Flip-Rain-Makers-44-1.png?1639362827",
+      "extensions": {
+        "bridgeInfo": {
+          "56": {
+            "tokenAddress": "0x6Bcd897D4BA5675F860C7418ddc034f6c5610114"
+          }
+        }
+      }
+    },
+    {
+      "chainId": 1,
       "address": "0x725C263e32c72dDC3A19bEa12C5a0479a81eE688",
       "name": "Bridge Mutual",
       "symbol": "BMI",
@@ -8581,8 +8377,7 @@
         }
       },
       "isAcross": false,
-      "isOFT": true,
-      "noLiquidityOnChain": true
+      "isOFT": true
     },
     {
       "chainId": 1,
@@ -10315,7 +10110,8 @@
         }
       },
       "isAcross": false,
-      "isOFT": true
+      "isOFT": true,
+      "noLiquidityOnChain": true
     },
     {
       "chainId": 1,
@@ -11658,135 +11454,6 @@
           }
         }
       }
-    },
-    {
-      "chainId": 1,
-      "address": "0xA1290d69c65A6Fe4DF752f95823fae25cB99e5A7",
-      "name": "rsETH",
-      "symbol": "rsETH",
-      "decimals": 18,
-      "logoURI": "https://icons-ckg.pages.dev/stargate-light/tokens/rseth.svg",
-      "tags": [],
-      "extensions": {
-        "bridgeInfo": {
-          "10": {
-            "tokenAddress": "0x4186BFC76E2E237523CBC30FD220FE055156b41F"
-          },
-          "130": {
-            "tokenAddress": "0xc3eACf0612346366Db554C991D7858716db09f58"
-          },
-          "146": {
-            "tokenAddress": "0xd75787bA9ABa324420d522BdA84c08c87e5099b1"
-          },
-          "169": {
-            "tokenAddress": "0x4186BFC76E2E237523CBC30FD220FE055156b41F"
-          },
-          "239": {
-            "tokenAddress": "0x9eCaf80c1303CCA8791aFBc0AD405c8a35e8d9f1"
-          },
-          "1923": {
-            "tokenAddress": "0xc3eACf0612346366Db554C991D7858716db09f58"
-          },
-          "8453": {
-            "tokenAddress": "0x1Bc71130A0e39942a7658878169764Bbd8A45993"
-          },
-          "9745": {
-            "tokenAddress": "0x9eCaf80c1303CCA8791aFBc0AD405c8a35e8d9f1"
-          },
-          "34443": {
-            "tokenAddress": "0x4186BFC76E2E237523CBC30FD220FE055156b41F"
-          },
-          "42161": {
-            "tokenAddress": "0x4186BFC76E2E237523CBC30FD220FE055156b41F"
-          },
-          "43111": {
-            "tokenAddress": "0xc3eACf0612346366Db554C991D7858716db09f58"
-          },
-          "43114": {
-            "tokenAddress": "0xc430c78Da6E4AF49bD115F0329D154Bb135f1363"
-          },
-          "57073": {
-            "tokenAddress": "0xc3eACf0612346366Db554C991D7858716db09f58"
-          },
-          "59144": {
-            "tokenAddress": "0x4186BFC76E2E237523CBC30FD220FE055156b41F"
-          },
-          "80094": {
-            "tokenAddress": "0x4186BFC76E2E237523CBC30FD220FE055156b41F"
-          },
-          "81457": {
-            "tokenAddress": "0x4186BFC76E2E237523CBC30FD220FE055156b41F"
-          },
-          "534352": {
-            "tokenAddress": "0x65421ba909200b81640d98B979d07487C9781B66"
-          }
-        },
-        "oftInfo": {
-          "peersInfo": {
-            "10": {
-              "tokenAddress": "0x4186BFC76E2E237523CBC30FD220FE055156b41F"
-            },
-            "130": {
-              "tokenAddress": "0xc3eACf0612346366Db554C991D7858716db09f58"
-            },
-            "146": {
-              "tokenAddress": "0xd75787bA9ABa324420d522BdA84c08c87e5099b1"
-            },
-            "169": {
-              "tokenAddress": "0x4186BFC76E2E237523CBC30FD220FE055156b41F"
-            },
-            "239": {
-              "tokenAddress": "0x9eCaf80c1303CCA8791aFBc0AD405c8a35e8d9f1"
-            },
-            "999": {
-              "tokenAddress": "0xa321D2A72DB265c04d5C1318Ed69a719681bBAdE"
-            },
-            "1923": {
-              "tokenAddress": "0xc3eACf0612346366Db554C991D7858716db09f58"
-            },
-            "8453": {
-              "tokenAddress": "0x1Bc71130A0e39942a7658878169764Bbd8A45993"
-            },
-            "9745": {
-              "tokenAddress": "0x9eCaf80c1303CCA8791aFBc0AD405c8a35e8d9f1"
-            },
-            "34443": {
-              "tokenAddress": "0x4186BFC76E2E237523CBC30FD220FE055156b41F"
-            },
-            "42161": {
-              "tokenAddress": "0x4186BFC76E2E237523CBC30FD220FE055156b41F"
-            },
-            "43111": {
-              "tokenAddress": "0xc3eACf0612346366Db554C991D7858716db09f58"
-            },
-            "43114": {
-              "tokenAddress": "0xc430c78Da6E4AF49bD115F0329D154Bb135f1363"
-            },
-            "57073": {
-              "tokenAddress": "0xc3eACf0612346366Db554C991D7858716db09f58"
-            },
-            "59144": {
-              "tokenAddress": "0x4186BFC76E2E237523CBC30FD220FE055156b41F"
-            },
-            "80094": {
-              "tokenAddress": "0x4186BFC76E2E237523CBC30FD220FE055156b41F"
-            },
-            "81457": {
-              "tokenAddress": "0x4186BFC76E2E237523CBC30FD220FE055156b41F"
-            },
-            "534352": {
-              "tokenAddress": "0x65421ba909200b81640d98B979d07487C9781B66"
-            }
-          },
-          "oftAdapter": "0x85d456B2DfF1fd8245387C0BfB64Dfb700e98Ef3",
-          "oftVersion": 3,
-          "endpointVersion": 2,
-          "endpointId": 30101,
-          "oftSharedDecimals": 6
-        }
-      },
-      "isAcross": false,
-      "isOFT": true
     },
     {
       "chainId": 1,
@@ -13869,15 +13536,6 @@
     },
     {
       "chainId": 1,
-      "address": "0xE80C0cd204D654CEbe8dd64A4857cAb6Be8345a3",
-      "name": "JPEG d",
-      "symbol": "JPEG",
-      "decimals": 18,
-      "logoURI": "https://assets.coingecko.com/coins/images/24025/large/et_43CNi_400x400.jpg?1646100264",
-      "extensions": {}
-    },
-    {
-      "chainId": 1,
       "address": "0xE868084cf08F3c3db11f4B73a95473762d9463f7",
       "name": "Yala stablecoin",
       "symbol": "YU",
@@ -14777,15 +14435,18 @@
     },
     {
       "chainId": 1,
-      "address": "0xaB37e1358b639Fd877f015027Bb62d3ddAa7557E",
-      "name": "Lien",
-      "symbol": "LIEN",
-      "decimals": 8,
-      "logoURI": "https://assets.coingecko.com/coins/images/12224/large/Lien.png?1598262819",
+      "address": "0xaDB2437e6F65682B85F814fBc12FeC0508A7B1D0",
+      "name": "UNCX Network",
+      "symbol": "UNCX",
+      "decimals": 18,
+      "logoURI": "https://assets.coingecko.com/coins/images/12871/large/uncx.png?1676952157",
       "extensions": {
         "bridgeInfo": {
           "56": {
-            "tokenAddress": "0x5d684ADaf3FcFe9CFb5ceDe3abf02F0Cdd1012E3"
+            "tokenAddress": "0x09a6c44c3947B69E2B45F4D51b67E6a39ACfB506"
+          },
+          "137": {
+            "tokenAddress": "0x9EECD634c7a934F752aF0EB90DdA9Ecc262F199F"
           }
         }
       }
@@ -15991,7 +15652,8 @@
         }
       },
       "isAcross": false,
-      "isOFT": true
+      "isOFT": true,
+      "noLiquidityOnChain": true
     },
     {
       "chainId": 1,
@@ -17309,6 +16971,15 @@
       "isAcross": false,
       "isOFT": true,
       "noLiquidityOnChain": true
+    },
+    {
+      "chainId": 1,
+      "address": "0xe9B076B476D8865cDF79D1Cf7DF420EE397a7f75",
+      "name": "Unification",
+      "symbol": "FUND",
+      "decimals": 9,
+      "logoURI": "https://assets.coingecko.com/coins/images/7845/large/DV80FOp.png?1554953278",
+      "extensions": {}
     },
     {
       "chainId": 1,
@@ -19667,67 +19338,6 @@
     },
     {
       "chainId": 10,
-      "address": "0x4186BFC76E2E237523CBC30FD220FE055156b41F",
-      "name": "KelpDao Restaked ETH",
-      "symbol": "rsETH",
-      "decimals": 18,
-      "logoURI": "https://icons-ckg.pages.dev/stargate-light/tokens/rseth.svg",
-      "tags": [],
-      "extensions": {
-        "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0xA1290d69c65A6Fe4DF752f95823fae25cB99e5A7"
-          }
-        },
-        "oftInfo": {
-          "peersInfo": {
-            "1": {
-              "tokenAddress": "0xA1290d69c65A6Fe4DF752f95823fae25cB99e5A7"
-            },
-            "146": {
-              "tokenAddress": "0x9eCaf80c1303CCA8791aFBc0AD405c8a35e8d9f1"
-            },
-            "169": {
-              "tokenAddress": "0x4186BFC76E2E237523CBC30FD220FE055156b41F"
-            },
-            "1923": {
-              "tokenAddress": "0xc3eACf0612346366Db554C991D7858716db09f58"
-            },
-            "8453": {
-              "tokenAddress": "0x1Bc71130A0e39942a7658878169764Bbd8A45993"
-            },
-            "34443": {
-              "tokenAddress": "0x4186BFC76E2E237523CBC30FD220FE055156b41F"
-            },
-            "42161": {
-              "tokenAddress": "0x4186BFC76E2E237523CBC30FD220FE055156b41F"
-            },
-            "43111": {
-              "tokenAddress": "0xc3eACf0612346366Db554C991D7858716db09f58"
-            },
-            "59144": {
-              "tokenAddress": "0x4186BFC76E2E237523CBC30FD220FE055156b41F"
-            },
-            "81457": {
-              "tokenAddress": "0x4186BFC76E2E237523CBC30FD220FE055156b41F"
-            },
-            "534352": {
-              "tokenAddress": "0x65421ba909200b81640d98B979d07487C9781B66"
-            }
-          },
-          "oftAdapter": "0x4186BFC76E2E237523CBC30FD220FE055156b41F",
-          "oftVersion": 3,
-          "endpointVersion": 2,
-          "endpointId": 30111,
-          "oftSharedDecimals": 6
-        }
-      },
-      "isAcross": false,
-      "isOFT": true,
-      "noLiquidityOnChain": true
-    },
-    {
-      "chainId": 10,
       "address": "0x42069d11A2CC72388a2e06210921E839Cfbd3280",
       "name": "GnomeLand",
       "symbol": "GNOME",
@@ -20339,52 +19949,6 @@
             }
           },
           "oftAdapter": "0x17F2Bf4eEB0591c25ac52a1e6385A25f4F445130",
-          "oftVersion": 3,
-          "endpointVersion": 2,
-          "endpointId": 30111,
-          "oftSharedDecimals": 6
-        }
-      },
-      "isAcross": false,
-      "isOFT": true,
-      "noLiquidityOnChain": true
-    },
-    {
-      "chainId": 10,
-      "address": "0x68589adc7687A23Ff2B06fb032b997f09B44Ed5d",
-      "name": "YieldNest Restaked BTC - Kernel",
-      "symbol": "ynBTCk",
-      "decimals": 18,
-      "logoURI": "https://icons-ckg.pages.dev/stargate-light/tokens/ynbtck.svg",
-      "tags": [],
-      "extensions": {
-        "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0x68589adc7687A23Ff2B06fb032b997f09B44Ed5d"
-          }
-        },
-        "oftInfo": {
-          "peersInfo": {
-            "1": {
-              "tokenAddress": "0x68589adc7687A23Ff2B06fb032b997f09B44Ed5d"
-            },
-            "56": {
-              "tokenAddress": "0x78839cE14a8213779128Ee4da6D75E1326606A56"
-            },
-            "8453": {
-              "tokenAddress": "0x68589adc7687A23Ff2B06fb032b997f09B44Ed5d"
-            },
-            "42161": {
-              "tokenAddress": "0x68589adc7687A23Ff2B06fb032b997f09B44Ed5d"
-            },
-            "43111": {
-              "tokenAddress": "0x68589adc7687A23Ff2B06fb032b997f09B44Ed5d"
-            },
-            "167000": {
-              "tokenAddress": "0x68589adc7687A23Ff2B06fb032b997f09B44Ed5d"
-            }
-          },
-          "oftAdapter": "0xFD72FbB61798f3bcB707F5Ba98CB72a87CCa02A2",
           "oftVersion": 3,
           "endpointVersion": 2,
           "endpointId": 30111,
@@ -21686,49 +21250,6 @@
           "oftVersion": 1,
           "endpointVersion": 1,
           "endpointId": 111
-        }
-      },
-      "isAcross": false,
-      "isOFT": true,
-      "noLiquidityOnChain": true
-    },
-    {
-      "chainId": 10,
-      "address": "0xB5259c05764468c33C9c36e327cAAD020a8E5Fe1",
-      "name": "Hemi Bitcoin",
-      "symbol": "hemiBTC",
-      "decimals": 8,
-      "logoURI": "https://icons-ckg.pages.dev/stargate-light/tokens/hemibtc.svg",
-      "tags": [],
-      "extensions": {
-        "bridgeInfo": {
-          "43111": {
-            "tokenAddress": "0xAA40c0c7644e0b2B224509571e10ad20d9C4ef28"
-          }
-        },
-        "oftInfo": {
-          "peersInfo": {
-            "1": {
-              "tokenAddress": "0x06ea695B91700071B161A434fED42D1DcbAD9f00"
-            },
-            "56": {
-              "tokenAddress": "0x64b5bb3b7eF0267019fee5b826c60Cb9B7609373"
-            },
-            "8453": {
-              "tokenAddress": "0xC6FFfA0E234E5Ec80B8654Cb351dA90A092F6C95"
-            },
-            "42161": {
-              "tokenAddress": "0x1855911ab07ed5Cd056008F409b709DfA9D01183"
-            },
-            "43111": {
-              "tokenAddress": "0xAA40c0c7644e0b2B224509571e10ad20d9C4ef28"
-            }
-          },
-          "oftAdapter": "0xB5259c05764468c33C9c36e327cAAD020a8E5Fe1",
-          "oftVersion": 3,
-          "endpointVersion": 2,
-          "endpointId": 30111,
-          "oftSharedDecimals": 6
         }
       },
       "isAcross": false,
@@ -23263,39 +22784,6 @@
           "endpointVersion": 2,
           "endpointId": 30333,
           "oftSharedDecimals": 8
-        }
-      },
-      "isAcross": false,
-      "isOFT": true
-    },
-    {
-      "chainId": 30,
-      "address": "0x6A9A65B84843F5fD4aC9a0471C4fc11AFfFBce4a",
-      "name": "Lorenzo Wrapped Bitcoin",
-      "symbol": "enzoBTC",
-      "decimals": 8,
-      "logoURI": "https://icons-ckg.pages.dev/stargate-light/tokens/enzobtc.svg",
-      "tags": [],
-      "extensions": {
-        "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0x6A9A65B84843F5fD4aC9a0471C4fc11AFfFBce4a"
-          }
-        },
-        "oftInfo": {
-          "peersInfo": {
-            "1": {
-              "tokenAddress": "0x6A9A65B84843F5fD4aC9a0471C4fc11AFfFBce4a"
-            },
-            "56": {
-              "tokenAddress": "0x6A9A65B84843F5fD4aC9a0471C4fc11AFfFBce4a"
-            }
-          },
-          "oftAdapter": "0xaa0D222436152050501E91DC07A45b1112f8b60f",
-          "oftVersion": 3,
-          "endpointVersion": 2,
-          "endpointId": 30333,
-          "oftSharedDecimals": 6
         }
       },
       "isAcross": false,
@@ -26283,39 +25771,6 @@
     },
     {
       "chainId": 56,
-      "address": "0x405FBc9004D857903bFD6b3357792D71a50726b0",
-      "name": "Plasma",
-      "symbol": "XPL",
-      "decimals": 18,
-      "logoURI": "https://icons-ckg.pages.dev/stargate-light/tokens/xpl.svg",
-      "tags": [],
-      "extensions": {
-        "bridgeInfo": {
-          "9745": {
-            "tokenAddress": "0x0000000000000000000000000000000000000000"
-          }
-        },
-        "oftInfo": {
-          "peersInfo": {
-            "130": {
-              "tokenAddress": "0x139451953Ef1865c096F89C5e522C081DC3b5f11"
-            },
-            "9745": {
-              "tokenAddress": "0x0000000000000000000000000000000000000000"
-            }
-          },
-          "oftAdapter": "0x405FBc9004D857903bFD6b3357792D71a50726b0",
-          "oftVersion": 3,
-          "endpointVersion": 2,
-          "endpointId": 30102,
-          "oftSharedDecimals": 6
-        }
-      },
-      "isAcross": false,
-      "isOFT": true
-    },
-    {
-      "chainId": 56,
       "address": "0x408bE6A5C550913B46B8FA9196c122083811Be96",
       "name": "BabyWhale OFT",
       "symbol": "BWHL",
@@ -27337,36 +26792,6 @@
     },
     {
       "chainId": 56,
-      "address": "0x5fFD0EAdc186AF9512542d0d5e5eAFC65d5aFc5B",
-      "name": "Hemi",
-      "symbol": "HEMI",
-      "decimals": 18,
-      "logoURI": "https://icons-ckg.pages.dev/stargate-light/tokens/hemi.svg",
-      "tags": [],
-      "extensions": {
-        "bridgeInfo": {
-          "43111": {
-            "tokenAddress": "0x99e3dE3817F6081B2568208337ef83295b7f591D"
-          }
-        },
-        "oftInfo": {
-          "peersInfo": {
-            "43111": {
-              "tokenAddress": "0x99e3dE3817F6081B2568208337ef83295b7f591D"
-            }
-          },
-          "oftAdapter": "0x5fFD0EAdc186AF9512542d0d5e5eAFC65d5aFc5B",
-          "oftVersion": 3,
-          "endpointVersion": 2,
-          "endpointId": 30102,
-          "oftSharedDecimals": 6
-        }
-      },
-      "isAcross": false,
-      "isOFT": true
-    },
-    {
-      "chainId": 56,
       "address": "0x61DBbBb552dc893ab3aAd09F289f811E67cEf285",
       "name": "Skate",
       "symbol": "SKATE",
@@ -27521,49 +26946,6 @@
       },
       "isAcross": false,
       "isOFT": true
-    },
-    {
-      "chainId": 56,
-      "address": "0x64b5bb3b7eF0267019fee5b826c60Cb9B7609373",
-      "name": "Hemi Bitcoin",
-      "symbol": "hemiBTC",
-      "decimals": 8,
-      "logoURI": "https://icons-ckg.pages.dev/stargate-light/tokens/hemibtc.svg",
-      "tags": [],
-      "extensions": {
-        "bridgeInfo": {
-          "43111": {
-            "tokenAddress": "0xAA40c0c7644e0b2B224509571e10ad20d9C4ef28"
-          }
-        },
-        "oftInfo": {
-          "peersInfo": {
-            "1": {
-              "tokenAddress": "0x06ea695B91700071B161A434fED42D1DcbAD9f00"
-            },
-            "10": {
-              "tokenAddress": "0xB5259c05764468c33C9c36e327cAAD020a8E5Fe1"
-            },
-            "8453": {
-              "tokenAddress": "0xC6FFfA0E234E5Ec80B8654Cb351dA90A092F6C95"
-            },
-            "42161": {
-              "tokenAddress": "0x1855911ab07ed5Cd056008F409b709DfA9D01183"
-            },
-            "43111": {
-              "tokenAddress": "0xAA40c0c7644e0b2B224509571e10ad20d9C4ef28"
-            }
-          },
-          "oftAdapter": "0x64b5bb3b7eF0267019fee5b826c60Cb9B7609373",
-          "oftVersion": 3,
-          "endpointVersion": 2,
-          "endpointId": 30102,
-          "oftSharedDecimals": 6
-        }
-      },
-      "isAcross": false,
-      "isOFT": true,
-      "noLiquidityOnChain": true
     },
     {
       "chainId": 56,
@@ -27825,76 +27207,6 @@
             }
           },
           "oftAdapter": "0x6A661312938D22A2A0e27F585073E4406903990a",
-          "oftVersion": 3,
-          "endpointVersion": 2,
-          "endpointId": 30102,
-          "oftSharedDecimals": 6
-        }
-      },
-      "isAcross": false,
-      "isOFT": true,
-      "noLiquidityOnChain": true
-    },
-    {
-      "chainId": 56,
-      "address": "0x6A9A65B84843F5fD4aC9a0471C4fc11AFfFBce4a",
-      "name": "Lorenzo Wrapped Bitcoin",
-      "symbol": "enzoBTC",
-      "decimals": 8,
-      "logoURI": "https://icons-ckg.pages.dev/stargate-light/tokens/enzobtc.svg",
-      "tags": [],
-      "extensions": {
-        "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0x6A9A65B84843F5fD4aC9a0471C4fc11AFfFBce4a"
-          }
-        },
-        "oftInfo": {
-          "peersInfo": {
-            "1": {
-              "tokenAddress": "0x6A9A65B84843F5fD4aC9a0471C4fc11AFfFBce4a"
-            },
-            "30": {
-              "tokenAddress": "0x6A9A65B84843F5fD4aC9a0471C4fc11AFfFBce4a"
-            },
-            "146": {
-              "tokenAddress": "0x6A9A65B84843F5fD4aC9a0471C4fc11AFfFBce4a"
-            },
-            "1116": {
-              "tokenAddress": "0x6A9A65B84843F5fD4aC9a0471C4fc11AFfFBce4a"
-            },
-            "1329": {
-              "tokenAddress": "0x6A9A65B84843F5fD4aC9a0471C4fc11AFfFBce4a"
-            },
-            "1868": {
-              "tokenAddress": "0x6A9A65B84843F5fD4aC9a0471C4fc11AFfFBce4a"
-            },
-            "1923": {
-              "tokenAddress": "0x6A9A65B84843F5fD4aC9a0471C4fc11AFfFBce4a"
-            },
-            "2345": {
-              "tokenAddress": "0x6A9A65B84843F5fD4aC9a0471C4fc11AFfFBce4a"
-            },
-            "2818": {
-              "tokenAddress": "0x6A9A65B84843F5fD4aC9a0471C4fc11AFfFBce4a"
-            },
-            "8453": {
-              "tokenAddress": "0x6A9A65B84843F5fD4aC9a0471C4fc11AFfFBce4a"
-            },
-            "43111": {
-              "tokenAddress": "0x6A9A65B84843F5fD4aC9a0471C4fc11AFfFBce4a"
-            },
-            "80094": {
-              "tokenAddress": "0x6A9A65B84843F5fD4aC9a0471C4fc11AFfFBce4a"
-            },
-            "98866": {
-              "tokenAddress": "0x6A9A65B84843F5fD4aC9a0471C4fc11AFfFBce4a"
-            },
-            "167000": {
-              "tokenAddress": "0x6A9A65B84843F5fD4aC9a0471C4fc11AFfFBce4a"
-            }
-          },
-          "oftAdapter": "0xaa0D222436152050501E91DC07A45b1112f8b60f",
           "oftVersion": 3,
           "endpointVersion": 2,
           "endpointId": 30102,
@@ -28386,52 +27698,6 @@
             }
           },
           "oftAdapter": "0x77A4B0BfE5C7257F67a1DE1B99aA7E157035B1b2",
-          "oftVersion": 3,
-          "endpointVersion": 2,
-          "endpointId": 30102,
-          "oftSharedDecimals": 6
-        }
-      },
-      "isAcross": false,
-      "isOFT": true,
-      "noLiquidityOnChain": true
-    },
-    {
-      "chainId": 56,
-      "address": "0x78839cE14a8213779128Ee4da6D75E1326606A56",
-      "name": "YieldNest Restaked BTC - Kernel",
-      "symbol": "ynBTCk",
-      "decimals": 18,
-      "logoURI": "https://icons-ckg.pages.dev/stargate-light/tokens/ynbtck.svg",
-      "tags": [],
-      "extensions": {
-        "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0x68589adc7687A23Ff2B06fb032b997f09B44Ed5d"
-          }
-        },
-        "oftInfo": {
-          "peersInfo": {
-            "1": {
-              "tokenAddress": "0x68589adc7687A23Ff2B06fb032b997f09B44Ed5d"
-            },
-            "10": {
-              "tokenAddress": "0x68589adc7687A23Ff2B06fb032b997f09B44Ed5d"
-            },
-            "8453": {
-              "tokenAddress": "0x68589adc7687A23Ff2B06fb032b997f09B44Ed5d"
-            },
-            "42161": {
-              "tokenAddress": "0x68589adc7687A23Ff2B06fb032b997f09B44Ed5d"
-            },
-            "43111": {
-              "tokenAddress": "0x68589adc7687A23Ff2B06fb032b997f09B44Ed5d"
-            },
-            "167000": {
-              "tokenAddress": "0x68589adc7687A23Ff2B06fb032b997f09B44Ed5d"
-            }
-          },
-          "oftAdapter": "0x18fC76B4EBb856AF08AE041EcA0c0B0881DfD058",
           "oftVersion": 3,
           "endpointVersion": 2,
           "endpointId": 30102,
@@ -29402,21 +28668,6 @@
       "isAcross": false,
       "isOFT": true,
       "noLiquidityOnChain": true
-    },
-    {
-      "chainId": 56,
-      "address": "0x8fC4532bE3003fb5A3A2f9afc7e95b3bfbD5fAAb",
-      "name": "Arcona",
-      "symbol": "ARCONA",
-      "decimals": 18,
-      "logoURI": "https://assets.coingecko.com/coins/images/4312/large/icon_ARCONA_%281%29.png?1651823900",
-      "extensions": {
-        "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0x0f71B8De197A1C84d31de0F1fA7926c365F052B3"
-          }
-        }
-      }
     },
     {
       "chainId": 56,
@@ -32486,21 +31737,6 @@
     },
     {
       "chainId": 56,
-      "address": "0xc5E6689C9c8B02be7C49912Ef19e79cF24977f03",
-      "name": "Alpaca City",
-      "symbol": "ALPA",
-      "decimals": 18,
-      "logoURI": "https://assets.coingecko.com/coins/images/13070/large/alpaca_logo.png?1604895862",
-      "extensions": {
-        "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0x7cA4408137eb639570F8E647d9bD7B7E8717514A"
-          }
-        }
-      }
-    },
-    {
-      "chainId": 56,
       "address": "0xc67505DEaA9C0c08B9bcf2F55476C66b77e0c82f",
       "name": "DappGate by DappLabs",
       "symbol": "DLGATE",
@@ -35215,39 +34451,6 @@
     },
     {
       "chainId": 130,
-      "address": "0x139451953Ef1865c096F89C5e522C081DC3b5f11",
-      "name": "Plasma",
-      "symbol": "XPL",
-      "decimals": 18,
-      "logoURI": "https://icons-ckg.pages.dev/stargate-light/tokens/xpl.svg",
-      "tags": [],
-      "extensions": {
-        "bridgeInfo": {
-          "9745": {
-            "tokenAddress": "0x0000000000000000000000000000000000000000"
-          }
-        },
-        "oftInfo": {
-          "peersInfo": {
-            "56": {
-              "tokenAddress": "0x405FBc9004D857903bFD6b3357792D71a50726b0"
-            },
-            "9745": {
-              "tokenAddress": "0x0000000000000000000000000000000000000000"
-            }
-          },
-          "oftAdapter": "0x139451953Ef1865c096F89C5e522C081DC3b5f11",
-          "oftVersion": 3,
-          "endpointVersion": 2,
-          "endpointId": 30320,
-          "oftSharedDecimals": 6
-        }
-      },
-      "isAcross": false,
-      "isOFT": true
-    },
-    {
-      "chainId": 130,
       "address": "0x1FC12eBAF4B749f31b959e868EcF8e5fd5B92513",
       "name": "Wilder World",
       "symbol": "WILD",
@@ -35767,36 +34970,6 @@
       "isAcross": false,
       "isOFT": true,
       "noLiquidityOnChain": true
-    },
-    {
-      "chainId": 130,
-      "address": "0xc3eACf0612346366Db554C991D7858716db09f58",
-      "name": "KelpDao Restaked ETH",
-      "symbol": "rsETH",
-      "decimals": 18,
-      "logoURI": "https://icons-ckg.pages.dev/stargate-light/tokens/rseth.svg",
-      "tags": [],
-      "extensions": {
-        "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0xA1290d69c65A6Fe4DF752f95823fae25cB99e5A7"
-          }
-        },
-        "oftInfo": {
-          "peersInfo": {
-            "1": {
-              "tokenAddress": "0xA1290d69c65A6Fe4DF752f95823fae25cB99e5A7"
-            }
-          },
-          "oftAdapter": "0xc3eACf0612346366Db554C991D7858716db09f58",
-          "oftVersion": 3,
-          "endpointVersion": 2,
-          "endpointId": 30320,
-          "oftSharedDecimals": 6
-        }
-      },
-      "isAcross": false,
-      "isOFT": true
     },
     {
       "chainId": 130,
@@ -36436,6 +35609,21 @@
       },
       "isAcross": false,
       "isOFT": true
+    },
+    {
+      "chainId": 137,
+      "address": "0x1631244689EC1fEcbDD22fb5916E920dFC9b8D30",
+      "name": "Ovr",
+      "symbol": "OVR",
+      "decimals": 18,
+      "logoURI": "https://assets.coingecko.com/coins/images/13429/large/ovr_logo.png?1608518911",
+      "extensions": {
+        "bridgeInfo": {
+          "1": {
+            "tokenAddress": "0x21BfBDa47A0B4B5b1248c767Ee49F7caA9B23697"
+          }
+        }
+      }
     },
     {
       "chainId": 137,
@@ -37255,6 +36443,16 @@
     },
     {
       "chainId": 137,
+      "address": "0x53D76f967De13E7F95e90196438DCe695eCFA957",
+      "name": "Shine (PoS)",
+      "symbol": "SHN",
+      "decimals": 18,
+      "isAcross": false,
+      "isOFT": false,
+      "extensions": {}
+    },
+    {
+      "chainId": 137,
       "address": "0x5647Fe4281F8F6F01E84BCE775AD4b828A7b8927",
       "name": "Million",
       "symbol": "MM",
@@ -37804,21 +37002,6 @@
       "isAcross": false,
       "isOFT": true,
       "noLiquidityOnChain": true
-    },
-    {
-      "chainId": 137,
-      "address": "0x6811079E3c63ED96Eb005384d7E7ec8810E3D521",
-      "name": "xSUSHI",
-      "symbol": "XSUSHI",
-      "decimals": 18,
-      "logoURI": "https://assets.coingecko.com/coins/images/13725/large/xsushi.png?1612538526",
-      "extensions": {
-        "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0x8798249c2E607446EfB7Ad49eC89dD1865Ff4272"
-          }
-        }
-      }
     },
     {
       "chainId": 137,
@@ -41898,6 +41081,16 @@
     },
     {
       "chainId": 143,
+      "address": "0x3bd359C1119dA7Da1D913D1C4D2B7c461115433A",
+      "name": "Wrapped MON",
+      "symbol": "WMON",
+      "decimals": 18,
+      "isAcross": false,
+      "isOFT": false,
+      "extensions": {}
+    },
+    {
+      "chainId": 143,
       "address": "0x474eD38C256A7FA0f3B8c48496CE1102ab0eA91E",
       "name": "Eagle",
       "symbol": "EAGLE",
@@ -42674,40 +41867,6 @@
     },
     {
       "chainId": 146,
-      "address": "0x6A9A65B84843F5fD4aC9a0471C4fc11AFfFBce4a",
-      "name": "Lorenzo Wrapped Bitcoin",
-      "symbol": "enzoBTC",
-      "decimals": 8,
-      "logoURI": "https://icons-ckg.pages.dev/stargate-light/tokens/enzobtc.svg",
-      "tags": [],
-      "extensions": {
-        "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0x6A9A65B84843F5fD4aC9a0471C4fc11AFfFBce4a"
-          }
-        },
-        "oftInfo": {
-          "peersInfo": {
-            "1": {
-              "tokenAddress": "0x6A9A65B84843F5fD4aC9a0471C4fc11AFfFBce4a"
-            },
-            "56": {
-              "tokenAddress": "0x6A9A65B84843F5fD4aC9a0471C4fc11AFfFBce4a"
-            }
-          },
-          "oftAdapter": "0xaa0D222436152050501E91DC07A45b1112f8b60f",
-          "oftVersion": 3,
-          "endpointVersion": 2,
-          "endpointId": 30332,
-          "oftSharedDecimals": 6
-        }
-      },
-      "isAcross": false,
-      "isOFT": true,
-      "noLiquidityOnChain": true
-    },
-    {
-      "chainId": 146,
       "address": "0x6bedE1c6009a78c222D9BDb7974bb67847fdB68c",
       "name": "US Bitcoin Dollar",
       "symbol": "USBD",
@@ -42945,43 +42104,6 @@
       },
       "isAcross": false,
       "isOFT": true
-    },
-    {
-      "chainId": 146,
-      "address": "0x9eCaf80c1303CCA8791aFBc0AD405c8a35e8d9f1",
-      "name": "KelpDao Restaked ETH",
-      "symbol": "rsETH",
-      "decimals": 18,
-      "logoURI": "https://icons-ckg.pages.dev/stargate-light/tokens/rseth.svg",
-      "tags": [],
-      "extensions": {
-        "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0xA1290d69c65A6Fe4DF752f95823fae25cB99e5A7"
-          }
-        },
-        "oftInfo": {
-          "peersInfo": {
-            "10": {
-              "tokenAddress": "0x4186BFC76E2E237523CBC30FD220FE055156b41F"
-            },
-            "8453": {
-              "tokenAddress": "0x1Bc71130A0e39942a7658878169764Bbd8A45993"
-            },
-            "42161": {
-              "tokenAddress": "0x4186BFC76E2E237523CBC30FD220FE055156b41F"
-            }
-          },
-          "oftAdapter": "0x9eCaf80c1303CCA8791aFBc0AD405c8a35e8d9f1",
-          "oftVersion": 3,
-          "endpointVersion": 2,
-          "endpointId": 30332,
-          "oftSharedDecimals": 6
-        }
-      },
-      "isAcross": false,
-      "isOFT": true,
-      "noLiquidityOnChain": true
     },
     {
       "chainId": 146,
@@ -43487,37 +42609,6 @@
     },
     {
       "chainId": 146,
-      "address": "0xd75787bA9ABa324420d522BdA84c08c87e5099b1",
-      "name": "KelpDao Restaked ETH",
-      "symbol": "rsETH",
-      "decimals": 18,
-      "logoURI": "https://icons-ckg.pages.dev/stargate-light/tokens/rseth.svg",
-      "tags": [],
-      "extensions": {
-        "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0xA1290d69c65A6Fe4DF752f95823fae25cB99e5A7"
-          }
-        },
-        "oftInfo": {
-          "peersInfo": {
-            "1": {
-              "tokenAddress": "0xA1290d69c65A6Fe4DF752f95823fae25cB99e5A7"
-            }
-          },
-          "oftAdapter": "0xd75787bA9ABa324420d522BdA84c08c87e5099b1",
-          "oftVersion": 3,
-          "endpointVersion": 2,
-          "endpointId": 30332,
-          "oftSharedDecimals": 6
-        }
-      },
-      "isAcross": false,
-      "isOFT": true,
-      "noLiquidityOnChain": true
-    },
-    {
-      "chainId": 146,
       "address": "0xe90FE2DE4A415aD48B6DcEc08bA6ae98231948Ac",
       "name": "Trevee Token",
       "symbol": "TREVEE",
@@ -43871,64 +42962,6 @@
           "endpointVersion": 1,
           "endpointId": 217,
           "oftSharedDecimals": 8
-        }
-      },
-      "isAcross": false,
-      "isOFT": true,
-      "noLiquidityOnChain": true
-    },
-    {
-      "chainId": 169,
-      "address": "0x4186BFC76E2E237523CBC30FD220FE055156b41F",
-      "name": "KelpDao Restaked ETH",
-      "symbol": "rsETH",
-      "decimals": 18,
-      "logoURI": "https://icons-ckg.pages.dev/stargate-light/tokens/rseth.svg",
-      "tags": [],
-      "extensions": {
-        "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0xA1290d69c65A6Fe4DF752f95823fae25cB99e5A7"
-          }
-        },
-        "oftInfo": {
-          "peersInfo": {
-            "1": {
-              "tokenAddress": "0xA1290d69c65A6Fe4DF752f95823fae25cB99e5A7"
-            },
-            "10": {
-              "tokenAddress": "0x4186BFC76E2E237523CBC30FD220FE055156b41F"
-            },
-            "1923": {
-              "tokenAddress": "0xc3eACf0612346366Db554C991D7858716db09f58"
-            },
-            "8453": {
-              "tokenAddress": "0x1Bc71130A0e39942a7658878169764Bbd8A45993"
-            },
-            "34443": {
-              "tokenAddress": "0x4186BFC76E2E237523CBC30FD220FE055156b41F"
-            },
-            "42161": {
-              "tokenAddress": "0x4186BFC76E2E237523CBC30FD220FE055156b41F"
-            },
-            "43111": {
-              "tokenAddress": "0xc3eACf0612346366Db554C991D7858716db09f58"
-            },
-            "59144": {
-              "tokenAddress": "0x4186BFC76E2E237523CBC30FD220FE055156b41F"
-            },
-            "81457": {
-              "tokenAddress": "0x4186BFC76E2E237523CBC30FD220FE055156b41F"
-            },
-            "534352": {
-              "tokenAddress": "0x65421ba909200b81640d98B979d07487C9781B66"
-            }
-          },
-          "oftAdapter": "0x4186BFC76E2E237523CBC30FD220FE055156b41F",
-          "oftVersion": 3,
-          "endpointVersion": 2,
-          "endpointId": 30217,
-          "oftSharedDecimals": 6
         }
       },
       "isAcross": false,
@@ -45558,36 +44591,6 @@
             }
           },
           "oftAdapter": "0xE14C486b93C3B62F76F88cf8FE4B36fb672f3B26",
-          "oftVersion": 3,
-          "endpointVersion": 2,
-          "endpointId": 30377,
-          "oftSharedDecimals": 6
-        }
-      },
-      "isAcross": false,
-      "isOFT": true
-    },
-    {
-      "chainId": 239,
-      "address": "0x9eCaf80c1303CCA8791aFBc0AD405c8a35e8d9f1",
-      "name": "KelpDao Restaked ETH",
-      "symbol": "rsETH",
-      "decimals": 18,
-      "logoURI": "https://icons-ckg.pages.dev/stargate-light/tokens/rseth.svg",
-      "tags": [],
-      "extensions": {
-        "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0xA1290d69c65A6Fe4DF752f95823fae25cB99e5A7"
-          }
-        },
-        "oftInfo": {
-          "peersInfo": {
-            "1": {
-              "tokenAddress": "0xA1290d69c65A6Fe4DF752f95823fae25cB99e5A7"
-            }
-          },
-          "oftAdapter": "0x9eCaf80c1303CCA8791aFBc0AD405c8a35e8d9f1",
           "oftVersion": 3,
           "endpointVersion": 2,
           "endpointId": 30377,
@@ -47413,8 +46416,7 @@
         }
       },
       "isAcross": false,
-      "isOFT": true,
-      "noLiquidityOnChain": true
+      "isOFT": true
     },
     {
       "chainId": 999,
@@ -47866,37 +46868,6 @@
             }
           },
           "oftAdapter": "0xFa44C2634fF17CBE26dc3007D36BD61c79068c14",
-          "oftVersion": 3,
-          "endpointVersion": 2,
-          "endpointId": 30367,
-          "oftSharedDecimals": 6
-        }
-      },
-      "isAcross": false,
-      "isOFT": true,
-      "noLiquidityOnChain": true
-    },
-    {
-      "chainId": 999,
-      "address": "0xa321D2A72DB265c04d5C1318Ed69a719681bBAdE",
-      "name": "KelpDao Restaked ETH",
-      "symbol": "rsETH",
-      "decimals": 18,
-      "logoURI": "https://icons-ckg.pages.dev/stargate-light/tokens/rseth.svg",
-      "tags": [],
-      "extensions": {
-        "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0xA1290d69c65A6Fe4DF752f95823fae25cB99e5A7"
-          }
-        },
-        "oftInfo": {
-          "peersInfo": {
-            "1": {
-              "tokenAddress": "0xA1290d69c65A6Fe4DF752f95823fae25cB99e5A7"
-            }
-          },
-          "oftAdapter": "0xa321D2A72DB265c04d5C1318Ed69a719681bBAdE",
           "oftVersion": 3,
           "endpointVersion": 2,
           "endpointId": 30367,
@@ -49551,40 +48522,6 @@
     },
     {
       "chainId": 1116,
-      "address": "0x6A9A65B84843F5fD4aC9a0471C4fc11AFfFBce4a",
-      "name": "Lorenzo Wrapped Bitcoin",
-      "symbol": "enzoBTC",
-      "decimals": 8,
-      "logoURI": "https://icons-ckg.pages.dev/stargate-light/tokens/enzobtc.svg",
-      "tags": [],
-      "extensions": {
-        "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0x6A9A65B84843F5fD4aC9a0471C4fc11AFfFBce4a"
-          }
-        },
-        "oftInfo": {
-          "peersInfo": {
-            "1": {
-              "tokenAddress": "0x6A9A65B84843F5fD4aC9a0471C4fc11AFfFBce4a"
-            },
-            "56": {
-              "tokenAddress": "0x6A9A65B84843F5fD4aC9a0471C4fc11AFfFBce4a"
-            }
-          },
-          "oftAdapter": "0xaa0D222436152050501E91DC07A45b1112f8b60f",
-          "oftVersion": 3,
-          "endpointVersion": 2,
-          "endpointId": 30153,
-          "oftSharedDecimals": 6
-        }
-      },
-      "isAcross": false,
-      "isOFT": true,
-      "noLiquidityOnChain": true
-    },
-    {
-      "chainId": 1116,
       "address": "0x6C0805dfdBdC36866cb86b8Ae78419D8fc60139e",
       "name": "BabyWhale OFT",
       "symbol": "BWHL",
@@ -50518,40 +49455,6 @@
     },
     {
       "chainId": 1329,
-      "address": "0x6A9A65B84843F5fD4aC9a0471C4fc11AFfFBce4a",
-      "name": "Lorenzo Wrapped Bitcoin",
-      "symbol": "enzoBTC",
-      "decimals": 8,
-      "logoURI": "https://icons-ckg.pages.dev/stargate-light/tokens/enzobtc.svg",
-      "tags": [],
-      "extensions": {
-        "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0x6A9A65B84843F5fD4aC9a0471C4fc11AFfFBce4a"
-          }
-        },
-        "oftInfo": {
-          "peersInfo": {
-            "1": {
-              "tokenAddress": "0x6A9A65B84843F5fD4aC9a0471C4fc11AFfFBce4a"
-            },
-            "56": {
-              "tokenAddress": "0x6A9A65B84843F5fD4aC9a0471C4fc11AFfFBce4a"
-            }
-          },
-          "oftAdapter": "0xaa0D222436152050501E91DC07A45b1112f8b60f",
-          "oftVersion": 3,
-          "endpointVersion": 2,
-          "endpointId": 30280,
-          "oftSharedDecimals": 6
-        }
-      },
-      "isAcross": false,
-      "isOFT": true,
-      "noLiquidityOnChain": true
-    },
-    {
-      "chainId": 1329,
       "address": "0x6eAf19b2FC24552925dB245F9Ff613157a7dbb4C",
       "name": "Staked Stream USD",
       "symbol": "xUSD",
@@ -51255,40 +50158,6 @@
     },
     {
       "chainId": 1868,
-      "address": "0x6A9A65B84843F5fD4aC9a0471C4fc11AFfFBce4a",
-      "name": "Lorenzo Wrapped Bitcoin",
-      "symbol": "enzoBTC",
-      "decimals": 8,
-      "logoURI": "https://icons-ckg.pages.dev/stargate-light/tokens/enzobtc.svg",
-      "tags": [],
-      "extensions": {
-        "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0x6A9A65B84843F5fD4aC9a0471C4fc11AFfFBce4a"
-          }
-        },
-        "oftInfo": {
-          "peersInfo": {
-            "1": {
-              "tokenAddress": "0x6A9A65B84843F5fD4aC9a0471C4fc11AFfFBce4a"
-            },
-            "56": {
-              "tokenAddress": "0x6A9A65B84843F5fD4aC9a0471C4fc11AFfFBce4a"
-            }
-          },
-          "oftAdapter": "0xaa0D222436152050501E91DC07A45b1112f8b60f",
-          "oftVersion": 3,
-          "endpointVersion": 2,
-          "endpointId": 30340,
-          "oftSharedDecimals": 6
-        }
-      },
-      "isAcross": false,
-      "isOFT": true,
-      "noLiquidityOnChain": true
-    },
-    {
-      "chainId": 1868,
       "address": "0x80137510979822322193FC997d400D5A6C747bf7",
       "name": "StakeStone Ether",
       "symbol": "STONE",
@@ -51388,37 +50257,13 @@
     },
     {
       "chainId": 1890,
-      "address": "0x519d3443cACc61bD844546eDAea48E5502021802",
-      "name": "LightLink",
-      "symbol": "LL",
+      "address": "0x7EbeF2A4b1B09381Ec5B9dF8C5c6f2dBECA59c73",
+      "name": "Wrapped ETH",
+      "symbol": "WETH",
       "decimals": 18,
-      "logoURI": "https://icons-ckg.pages.dev/stargate-light/tokens/ll.svg",
-      "tags": [],
-      "extensions": {
-        "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0x0921799CB1d702148131024d18fCdE022129Dc73"
-          }
-        },
-        "oftInfo": {
-          "peersInfo": {
-            "1": {
-              "tokenAddress": "0x0921799CB1d702148131024d18fCdE022129Dc73"
-            },
-            "8453": {
-              "tokenAddress": "0x519d3443cACc61bD844546eDAea48E5502021802"
-            }
-          },
-          "oftAdapter": "0x5A1dEEF18E1DDb939bb298787896e45B5988243c",
-          "oftVersion": 3,
-          "endpointVersion": 2,
-          "endpointId": 30309,
-          "oftSharedDecimals": 6
-        }
-      },
       "isAcross": false,
-      "isOFT": true,
-      "noLiquidityOnChain": true
+      "isOFT": false,
+      "extensions": {}
     },
     {
       "chainId": 1890,
@@ -51729,39 +50574,6 @@
     },
     {
       "chainId": 1923,
-      "address": "0x6A9A65B84843F5fD4aC9a0471C4fc11AFfFBce4a",
-      "name": "Lorenzo Wrapped Bitcoin",
-      "symbol": "enzoBTC",
-      "decimals": 8,
-      "logoURI": "https://icons-ckg.pages.dev/stargate-light/tokens/enzobtc.svg",
-      "tags": [],
-      "extensions": {
-        "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0x6A9A65B84843F5fD4aC9a0471C4fc11AFfFBce4a"
-          }
-        },
-        "oftInfo": {
-          "peersInfo": {
-            "1": {
-              "tokenAddress": "0x6A9A65B84843F5fD4aC9a0471C4fc11AFfFBce4a"
-            },
-            "56": {
-              "tokenAddress": "0x6A9A65B84843F5fD4aC9a0471C4fc11AFfFBce4a"
-            }
-          },
-          "oftAdapter": "0xaa0D222436152050501E91DC07A45b1112f8b60f",
-          "oftVersion": 3,
-          "endpointVersion": 2,
-          "endpointId": 30335,
-          "oftSharedDecimals": 6
-        }
-      },
-      "isAcross": false,
-      "isOFT": true
-    },
-    {
-      "chainId": 1923,
       "address": "0x9ab96A4668456896d45c301Bc3A15Cee76AA7B8D",
       "name": "Relend Network USDC",
       "symbol": "rUSDC",
@@ -51817,63 +50629,6 @@
             }
           },
           "oftAdapter": "0xc2606AADe4bdd978a4fa5a6edb3b66657acEe6F8",
-          "oftVersion": 3,
-          "endpointVersion": 2,
-          "endpointId": 30335,
-          "oftSharedDecimals": 6
-        }
-      },
-      "isAcross": false,
-      "isOFT": true
-    },
-    {
-      "chainId": 1923,
-      "address": "0xc3eACf0612346366Db554C991D7858716db09f58",
-      "name": "KelpDao Restaked ETH",
-      "symbol": "rsETH",
-      "decimals": 18,
-      "logoURI": "https://icons-ckg.pages.dev/stargate-light/tokens/rseth.svg",
-      "tags": [],
-      "extensions": {
-        "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0xA1290d69c65A6Fe4DF752f95823fae25cB99e5A7"
-          }
-        },
-        "oftInfo": {
-          "peersInfo": {
-            "1": {
-              "tokenAddress": "0xA1290d69c65A6Fe4DF752f95823fae25cB99e5A7"
-            },
-            "10": {
-              "tokenAddress": "0x4186BFC76E2E237523CBC30FD220FE055156b41F"
-            },
-            "169": {
-              "tokenAddress": "0x4186BFC76E2E237523CBC30FD220FE055156b41F"
-            },
-            "8453": {
-              "tokenAddress": "0x1Bc71130A0e39942a7658878169764Bbd8A45993"
-            },
-            "34443": {
-              "tokenAddress": "0x4186BFC76E2E237523CBC30FD220FE055156b41F"
-            },
-            "42161": {
-              "tokenAddress": "0x4186BFC76E2E237523CBC30FD220FE055156b41F"
-            },
-            "43111": {
-              "tokenAddress": "0xc3eACf0612346366Db554C991D7858716db09f58"
-            },
-            "59144": {
-              "tokenAddress": "0x4186BFC76E2E237523CBC30FD220FE055156b41F"
-            },
-            "81457": {
-              "tokenAddress": "0x4186BFC76E2E237523CBC30FD220FE055156b41F"
-            },
-            "534352": {
-              "tokenAddress": "0x65421ba909200b81640d98B979d07487C9781B66"
-            }
-          },
-          "oftAdapter": "0xc3eACf0612346366Db554C991D7858716db09f58",
           "oftVersion": 3,
           "endpointVersion": 2,
           "endpointId": 30335,
@@ -51977,39 +50732,6 @@
             }
           },
           "oftAdapter": "0x1E0d0303a8c4aD428953f5ACB1477dB42bb838cf",
-          "oftVersion": 3,
-          "endpointVersion": 2,
-          "endpointId": 30361,
-          "oftSharedDecimals": 6
-        }
-      },
-      "isAcross": false,
-      "isOFT": true
-    },
-    {
-      "chainId": 2345,
-      "address": "0x6A9A65B84843F5fD4aC9a0471C4fc11AFfFBce4a",
-      "name": "Lorenzo Wrapped Bitcoin",
-      "symbol": "enzoBTC",
-      "decimals": 8,
-      "logoURI": "https://icons-ckg.pages.dev/stargate-light/tokens/enzobtc.svg",
-      "tags": [],
-      "extensions": {
-        "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0x6A9A65B84843F5fD4aC9a0471C4fc11AFfFBce4a"
-          }
-        },
-        "oftInfo": {
-          "peersInfo": {
-            "1": {
-              "tokenAddress": "0x6A9A65B84843F5fD4aC9a0471C4fc11AFfFBce4a"
-            },
-            "56": {
-              "tokenAddress": "0x6A9A65B84843F5fD4aC9a0471C4fc11AFfFBce4a"
-            }
-          },
-          "oftAdapter": "0xaa0D222436152050501E91DC07A45b1112f8b60f",
           "oftVersion": 3,
           "endpointVersion": 2,
           "endpointId": 30361,
@@ -52235,39 +50957,6 @@
             }
           },
           "oftAdapter": "0x58adE43A276ddF3e101941571eDe398a32492Ed7",
-          "oftVersion": 3,
-          "endpointVersion": 2,
-          "endpointId": 30322,
-          "oftSharedDecimals": 6
-        }
-      },
-      "isAcross": false,
-      "isOFT": true
-    },
-    {
-      "chainId": 2818,
-      "address": "0x6A9A65B84843F5fD4aC9a0471C4fc11AFfFBce4a",
-      "name": "Lorenzo Wrapped Bitcoin",
-      "symbol": "enzoBTC",
-      "decimals": 8,
-      "logoURI": "https://icons-ckg.pages.dev/stargate-light/tokens/enzobtc.svg",
-      "tags": [],
-      "extensions": {
-        "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0x6A9A65B84843F5fD4aC9a0471C4fc11AFfFBce4a"
-          }
-        },
-        "oftInfo": {
-          "peersInfo": {
-            "1": {
-              "tokenAddress": "0x6A9A65B84843F5fD4aC9a0471C4fc11AFfFBce4a"
-            },
-            "56": {
-              "tokenAddress": "0x6A9A65B84843F5fD4aC9a0471C4fc11AFfFBce4a"
-            }
-          },
-          "oftAdapter": "0xaa0D222436152050501E91DC07A45b1112f8b60f",
           "oftVersion": 3,
           "endpointVersion": 2,
           "endpointId": 30322,
@@ -55874,67 +54563,6 @@
     },
     {
       "chainId": 8453,
-      "address": "0x1Bc71130A0e39942a7658878169764Bbd8A45993",
-      "name": "KelpDao Restaked ETH",
-      "symbol": "rsETH",
-      "decimals": 18,
-      "logoURI": "https://icons-ckg.pages.dev/stargate-light/tokens/rseth.svg",
-      "tags": [],
-      "extensions": {
-        "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0xA1290d69c65A6Fe4DF752f95823fae25cB99e5A7"
-          }
-        },
-        "oftInfo": {
-          "peersInfo": {
-            "1": {
-              "tokenAddress": "0xA1290d69c65A6Fe4DF752f95823fae25cB99e5A7"
-            },
-            "10": {
-              "tokenAddress": "0x4186BFC76E2E237523CBC30FD220FE055156b41F"
-            },
-            "146": {
-              "tokenAddress": "0x9eCaf80c1303CCA8791aFBc0AD405c8a35e8d9f1"
-            },
-            "169": {
-              "tokenAddress": "0x4186BFC76E2E237523CBC30FD220FE055156b41F"
-            },
-            "1923": {
-              "tokenAddress": "0xc3eACf0612346366Db554C991D7858716db09f58"
-            },
-            "34443": {
-              "tokenAddress": "0x4186BFC76E2E237523CBC30FD220FE055156b41F"
-            },
-            "42161": {
-              "tokenAddress": "0x4186BFC76E2E237523CBC30FD220FE055156b41F"
-            },
-            "43111": {
-              "tokenAddress": "0xc3eACf0612346366Db554C991D7858716db09f58"
-            },
-            "59144": {
-              "tokenAddress": "0x4186BFC76E2E237523CBC30FD220FE055156b41F"
-            },
-            "81457": {
-              "tokenAddress": "0x4186BFC76E2E237523CBC30FD220FE055156b41F"
-            },
-            "534352": {
-              "tokenAddress": "0x65421ba909200b81640d98B979d07487C9781B66"
-            }
-          },
-          "oftAdapter": "0x1Bc71130A0e39942a7658878169764Bbd8A45993",
-          "oftVersion": 3,
-          "endpointVersion": 2,
-          "endpointId": 30184,
-          "oftSharedDecimals": 6
-        }
-      },
-      "isAcross": false,
-      "isOFT": true,
-      "noLiquidityOnChain": true
-    },
-    {
-      "chainId": 8453,
       "address": "0x1Df715C006A323A3E63Fc470f7cbBb7212af4948",
       "name": "Time is Up",
       "symbol": "TUP",
@@ -58170,39 +56798,6 @@
     },
     {
       "chainId": 8453,
-      "address": "0x519d3443cACc61bD844546eDAea48E5502021802",
-      "name": "LightLink",
-      "symbol": "LL",
-      "decimals": 18,
-      "logoURI": "https://icons-ckg.pages.dev/stargate-light/tokens/ll.svg",
-      "tags": [],
-      "extensions": {
-        "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0x0921799CB1d702148131024d18fCdE022129Dc73"
-          }
-        },
-        "oftInfo": {
-          "peersInfo": {
-            "1": {
-              "tokenAddress": "0x0921799CB1d702148131024d18fCdE022129Dc73"
-            },
-            "1890": {
-              "tokenAddress": "0x519d3443cACc61bD844546eDAea48E5502021802"
-            }
-          },
-          "oftAdapter": "0x5A1dEEF18E1DDb939bb298787896e45B5988243c",
-          "oftVersion": 3,
-          "endpointVersion": 2,
-          "endpointId": 30184,
-          "oftSharedDecimals": 6
-        }
-      },
-      "isAcross": false,
-      "isOFT": true
-    },
-    {
-      "chainId": 8453,
       "address": "0x526728DBc96689597F85ae4cd716d4f7fCcBAE9d",
       "name": "Metronome Synth USD",
       "symbol": "msUSD",
@@ -58877,52 +57472,6 @@
     },
     {
       "chainId": 8453,
-      "address": "0x68589adc7687A23Ff2B06fb032b997f09B44Ed5d",
-      "name": "YieldNest Restaked BTC - Kernel",
-      "symbol": "ynBTCk",
-      "decimals": 18,
-      "logoURI": "https://icons-ckg.pages.dev/stargate-light/tokens/ynbtck.svg",
-      "tags": [],
-      "extensions": {
-        "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0x68589adc7687A23Ff2B06fb032b997f09B44Ed5d"
-          }
-        },
-        "oftInfo": {
-          "peersInfo": {
-            "1": {
-              "tokenAddress": "0x68589adc7687A23Ff2B06fb032b997f09B44Ed5d"
-            },
-            "10": {
-              "tokenAddress": "0x68589adc7687A23Ff2B06fb032b997f09B44Ed5d"
-            },
-            "56": {
-              "tokenAddress": "0x78839cE14a8213779128Ee4da6D75E1326606A56"
-            },
-            "42161": {
-              "tokenAddress": "0x68589adc7687A23Ff2B06fb032b997f09B44Ed5d"
-            },
-            "43111": {
-              "tokenAddress": "0x68589adc7687A23Ff2B06fb032b997f09B44Ed5d"
-            },
-            "167000": {
-              "tokenAddress": "0x68589adc7687A23Ff2B06fb032b997f09B44Ed5d"
-            }
-          },
-          "oftAdapter": "0xFD72FbB61798f3bcB707F5Ba98CB72a87CCa02A2",
-          "oftVersion": 3,
-          "endpointVersion": 2,
-          "endpointId": 30184,
-          "oftSharedDecimals": 6
-        }
-      },
-      "isAcross": false,
-      "isOFT": true,
-      "noLiquidityOnChain": true
-    },
-    {
-      "chainId": 8453,
       "address": "0x688AEe022AA544f150678B8E5720b6b96a9E9a2F",
       "name": "Syrup Token",
       "symbol": "SYRUP",
@@ -58969,40 +57518,6 @@
             }
           },
           "oftAdapter": "0x69420f9E38a4e60a62224C489be4BF7a94402496",
-          "oftVersion": 3,
-          "endpointVersion": 2,
-          "endpointId": 30184,
-          "oftSharedDecimals": 6
-        }
-      },
-      "isAcross": false,
-      "isOFT": true,
-      "noLiquidityOnChain": true
-    },
-    {
-      "chainId": 8453,
-      "address": "0x6A9A65B84843F5fD4aC9a0471C4fc11AFfFBce4a",
-      "name": "Lorenzo Wrapped Bitcoin",
-      "symbol": "enzoBTC",
-      "decimals": 8,
-      "logoURI": "https://icons-ckg.pages.dev/stargate-light/tokens/enzobtc.svg",
-      "tags": [],
-      "extensions": {
-        "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0x6A9A65B84843F5fD4aC9a0471C4fc11AFfFBce4a"
-          }
-        },
-        "oftInfo": {
-          "peersInfo": {
-            "1": {
-              "tokenAddress": "0x6A9A65B84843F5fD4aC9a0471C4fc11AFfFBce4a"
-            },
-            "56": {
-              "tokenAddress": "0x6A9A65B84843F5fD4aC9a0471C4fc11AFfFBce4a"
-            }
-          },
-          "oftAdapter": "0xaa0D222436152050501E91DC07A45b1112f8b60f",
           "oftVersion": 3,
           "endpointVersion": 2,
           "endpointId": 30184,
@@ -61558,49 +60073,6 @@
             }
           },
           "oftAdapter": "0xC61f9663E05fccd84d4D6c56A373093437ECB899",
-          "oftVersion": 3,
-          "endpointVersion": 2,
-          "endpointId": 30184,
-          "oftSharedDecimals": 6
-        }
-      },
-      "isAcross": false,
-      "isOFT": true,
-      "noLiquidityOnChain": true
-    },
-    {
-      "chainId": 8453,
-      "address": "0xC6FFfA0E234E5Ec80B8654Cb351dA90A092F6C95",
-      "name": "Hemi Bitcoin",
-      "symbol": "hemiBTC",
-      "decimals": 8,
-      "logoURI": "https://icons-ckg.pages.dev/stargate-light/tokens/hemibtc.svg",
-      "tags": [],
-      "extensions": {
-        "bridgeInfo": {
-          "43111": {
-            "tokenAddress": "0xAA40c0c7644e0b2B224509571e10ad20d9C4ef28"
-          }
-        },
-        "oftInfo": {
-          "peersInfo": {
-            "1": {
-              "tokenAddress": "0x06ea695B91700071B161A434fED42D1DcbAD9f00"
-            },
-            "10": {
-              "tokenAddress": "0xB5259c05764468c33C9c36e327cAAD020a8E5Fe1"
-            },
-            "56": {
-              "tokenAddress": "0x64b5bb3b7eF0267019fee5b826c60Cb9B7609373"
-            },
-            "42161": {
-              "tokenAddress": "0x1855911ab07ed5Cd056008F409b709DfA9D01183"
-            },
-            "43111": {
-              "tokenAddress": "0xAA40c0c7644e0b2B224509571e10ad20d9C4ef28"
-            }
-          },
-          "oftAdapter": "0xC6FFfA0E234E5Ec80B8654Cb351dA90A092F6C95",
           "oftVersion": 3,
           "endpointVersion": 2,
           "endpointId": 30184,
@@ -65486,36 +63958,6 @@
     },
     {
       "chainId": 9745,
-      "address": "0x9eCaf80c1303CCA8791aFBc0AD405c8a35e8d9f1",
-      "name": "KelpDao Restaked ETH",
-      "symbol": "rsETH",
-      "decimals": 18,
-      "logoURI": "https://icons-ckg.pages.dev/stargate-light/tokens/rseth.svg",
-      "tags": [],
-      "extensions": {
-        "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0xA1290d69c65A6Fe4DF752f95823fae25cB99e5A7"
-          }
-        },
-        "oftInfo": {
-          "peersInfo": {
-            "1": {
-              "tokenAddress": "0xA1290d69c65A6Fe4DF752f95823fae25cB99e5A7"
-            }
-          },
-          "oftAdapter": "0x9eCaf80c1303CCA8791aFBc0AD405c8a35e8d9f1",
-          "oftVersion": 3,
-          "endpointVersion": 2,
-          "endpointId": 30383,
-          "oftSharedDecimals": 6
-        }
-      },
-      "isAcross": false,
-      "isOFT": true
-    },
-    {
-      "chainId": 9745,
       "address": "0xD51d2517D11BFD7017C162A219D5E026F886Aef1",
       "name": "Equilibria Token",
       "symbol": "EQB",
@@ -66494,64 +64936,6 @@
             }
           },
           "oftAdapter": "0x3d63825B0d8669307366E6c8202f656b9E91D368",
-          "oftVersion": 3,
-          "endpointVersion": 2,
-          "endpointId": 30260,
-          "oftSharedDecimals": 6
-        }
-      },
-      "isAcross": false,
-      "isOFT": true,
-      "noLiquidityOnChain": true
-    },
-    {
-      "chainId": 34443,
-      "address": "0x4186BFC76E2E237523CBC30FD220FE055156b41F",
-      "name": "KelpDao Restaked ETH",
-      "symbol": "rsETH",
-      "decimals": 18,
-      "logoURI": "https://icons-ckg.pages.dev/stargate-light/tokens/rseth.svg",
-      "tags": [],
-      "extensions": {
-        "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0xA1290d69c65A6Fe4DF752f95823fae25cB99e5A7"
-          }
-        },
-        "oftInfo": {
-          "peersInfo": {
-            "1": {
-              "tokenAddress": "0xA1290d69c65A6Fe4DF752f95823fae25cB99e5A7"
-            },
-            "10": {
-              "tokenAddress": "0x4186BFC76E2E237523CBC30FD220FE055156b41F"
-            },
-            "169": {
-              "tokenAddress": "0x4186BFC76E2E237523CBC30FD220FE055156b41F"
-            },
-            "1923": {
-              "tokenAddress": "0xc3eACf0612346366Db554C991D7858716db09f58"
-            },
-            "8453": {
-              "tokenAddress": "0x1Bc71130A0e39942a7658878169764Bbd8A45993"
-            },
-            "42161": {
-              "tokenAddress": "0x4186BFC76E2E237523CBC30FD220FE055156b41F"
-            },
-            "43111": {
-              "tokenAddress": "0xc3eACf0612346366Db554C991D7858716db09f58"
-            },
-            "59144": {
-              "tokenAddress": "0x4186BFC76E2E237523CBC30FD220FE055156b41F"
-            },
-            "81457": {
-              "tokenAddress": "0x4186BFC76E2E237523CBC30FD220FE055156b41F"
-            },
-            "534352": {
-              "tokenAddress": "0x65421ba909200b81640d98B979d07487C9781B66"
-            }
-          },
-          "oftAdapter": "0x4186BFC76E2E237523CBC30FD220FE055156b41F",
           "oftVersion": 3,
           "endpointVersion": 2,
           "endpointId": 30260,
@@ -68599,49 +66983,6 @@
     },
     {
       "chainId": 42161,
-      "address": "0x1855911ab07ed5Cd056008F409b709DfA9D01183",
-      "name": "Hemi Bitcoin",
-      "symbol": "hemiBTC",
-      "decimals": 8,
-      "logoURI": "https://icons-ckg.pages.dev/stargate-light/tokens/hemibtc.svg",
-      "tags": [],
-      "extensions": {
-        "bridgeInfo": {
-          "43111": {
-            "tokenAddress": "0xAA40c0c7644e0b2B224509571e10ad20d9C4ef28"
-          }
-        },
-        "oftInfo": {
-          "peersInfo": {
-            "1": {
-              "tokenAddress": "0x06ea695B91700071B161A434fED42D1DcbAD9f00"
-            },
-            "10": {
-              "tokenAddress": "0xB5259c05764468c33C9c36e327cAAD020a8E5Fe1"
-            },
-            "56": {
-              "tokenAddress": "0x64b5bb3b7eF0267019fee5b826c60Cb9B7609373"
-            },
-            "8453": {
-              "tokenAddress": "0xC6FFfA0E234E5Ec80B8654Cb351dA90A092F6C95"
-            },
-            "43111": {
-              "tokenAddress": "0xAA40c0c7644e0b2B224509571e10ad20d9C4ef28"
-            }
-          },
-          "oftAdapter": "0x1855911ab07ed5Cd056008F409b709DfA9D01183",
-          "oftVersion": 3,
-          "endpointVersion": 2,
-          "endpointId": 30110,
-          "oftSharedDecimals": 6
-        }
-      },
-      "isAcross": false,
-      "isOFT": true,
-      "noLiquidityOnChain": true
-    },
-    {
-      "chainId": 42161,
       "address": "0x188fb5f5Ae5BBE4154d5778F2bbb2Fb985c94d25",
       "name": "OpenBlox Token",
       "symbol": "OBX",
@@ -69633,9 +67974,6 @@
             "1": {
               "tokenAddress": "0x090185f2135308BaD17527004364eBcC2D37e5F6"
             },
-            "6900": {
-              "tokenAddress": "0x1D63c9409bb41b2Ab43259b843fF32c839A9ffa2"
-            },
             "80094": {
               "tokenAddress": "0x22581e7E93d66977849D094006fC2cF3aB9C8FfA"
             }
@@ -70206,67 +68544,6 @@
     },
     {
       "chainId": 42161,
-      "address": "0x4186BFC76E2E237523CBC30FD220FE055156b41F",
-      "name": "KelpDao Restaked ETH",
-      "symbol": "rsETH",
-      "decimals": 18,
-      "logoURI": "https://icons-ckg.pages.dev/stargate-light/tokens/rseth.svg",
-      "tags": [],
-      "extensions": {
-        "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0xA1290d69c65A6Fe4DF752f95823fae25cB99e5A7"
-          }
-        },
-        "oftInfo": {
-          "peersInfo": {
-            "1": {
-              "tokenAddress": "0xA1290d69c65A6Fe4DF752f95823fae25cB99e5A7"
-            },
-            "10": {
-              "tokenAddress": "0x4186BFC76E2E237523CBC30FD220FE055156b41F"
-            },
-            "146": {
-              "tokenAddress": "0x9eCaf80c1303CCA8791aFBc0AD405c8a35e8d9f1"
-            },
-            "169": {
-              "tokenAddress": "0x4186BFC76E2E237523CBC30FD220FE055156b41F"
-            },
-            "1923": {
-              "tokenAddress": "0xc3eACf0612346366Db554C991D7858716db09f58"
-            },
-            "8453": {
-              "tokenAddress": "0x1Bc71130A0e39942a7658878169764Bbd8A45993"
-            },
-            "34443": {
-              "tokenAddress": "0x4186BFC76E2E237523CBC30FD220FE055156b41F"
-            },
-            "43111": {
-              "tokenAddress": "0xc3eACf0612346366Db554C991D7858716db09f58"
-            },
-            "59144": {
-              "tokenAddress": "0x4186BFC76E2E237523CBC30FD220FE055156b41F"
-            },
-            "81457": {
-              "tokenAddress": "0x4186BFC76E2E237523CBC30FD220FE055156b41F"
-            },
-            "534352": {
-              "tokenAddress": "0x65421ba909200b81640d98B979d07487C9781B66"
-            }
-          },
-          "oftAdapter": "0x4186BFC76E2E237523CBC30FD220FE055156b41F",
-          "oftVersion": 3,
-          "endpointVersion": 2,
-          "endpointId": 30110,
-          "oftSharedDecimals": 6
-        }
-      },
-      "isAcross": false,
-      "isOFT": true,
-      "noLiquidityOnChain": true
-    },
-    {
-      "chainId": 42161,
       "address": "0x42069d11A2CC72388a2e06210921E839Cfbd3280",
       "name": "GnomeLand",
       "symbol": "GNOME",
@@ -70344,21 +68621,6 @@
       "isAcross": false,
       "isOFT": true,
       "noLiquidityOnChain": true
-    },
-    {
-      "chainId": 42161,
-      "address": "0x431402e8b9dE9aa016C743880e04E517074D8cEC",
-      "name": "Hegic",
-      "symbol": "HEGIC",
-      "decimals": 18,
-      "logoURI": "https://assets.coingecko.com/coins/images/12454/large/new.png?1628668523",
-      "extensions": {
-        "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0x584bC13c7D411c00c01A62e8019472dE68768430"
-          }
-        }
-      }
     },
     {
       "chainId": 42161,
@@ -71475,52 +69737,6 @@
           "oftVersion": 1,
           "endpointVersion": 1,
           "endpointId": 110
-        }
-      },
-      "isAcross": false,
-      "isOFT": true,
-      "noLiquidityOnChain": true
-    },
-    {
-      "chainId": 42161,
-      "address": "0x68589adc7687A23Ff2B06fb032b997f09B44Ed5d",
-      "name": "YieldNest Restaked BTC - Kernel",
-      "symbol": "ynBTCk",
-      "decimals": 18,
-      "logoURI": "https://icons-ckg.pages.dev/stargate-light/tokens/ynbtck.svg",
-      "tags": [],
-      "extensions": {
-        "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0x68589adc7687A23Ff2B06fb032b997f09B44Ed5d"
-          }
-        },
-        "oftInfo": {
-          "peersInfo": {
-            "1": {
-              "tokenAddress": "0x68589adc7687A23Ff2B06fb032b997f09B44Ed5d"
-            },
-            "10": {
-              "tokenAddress": "0x68589adc7687A23Ff2B06fb032b997f09B44Ed5d"
-            },
-            "56": {
-              "tokenAddress": "0x78839cE14a8213779128Ee4da6D75E1326606A56"
-            },
-            "8453": {
-              "tokenAddress": "0x68589adc7687A23Ff2B06fb032b997f09B44Ed5d"
-            },
-            "43111": {
-              "tokenAddress": "0x68589adc7687A23Ff2B06fb032b997f09B44Ed5d"
-            },
-            "167000": {
-              "tokenAddress": "0x68589adc7687A23Ff2B06fb032b997f09B44Ed5d"
-            }
-          },
-          "oftAdapter": "0xFD72FbB61798f3bcB707F5Ba98CB72a87CCa02A2",
-          "oftVersion": 3,
-          "endpointVersion": 2,
-          "endpointId": 30110,
-          "oftSharedDecimals": 6
         }
       },
       "isAcross": false,
@@ -75631,6 +73847,21 @@
     },
     {
       "chainId": 42161,
+      "address": "0xaeF5bbcbFa438519a5ea80B4c7181B4E78d419f2",
+      "name": "Rai Reflex Index",
+      "symbol": "RAI",
+      "decimals": 18,
+      "logoURI": "https://assets.coingecko.com/coins/images/14004/thumb/RAI-logo-coin.png?1613592334",
+      "extensions": {
+        "bridgeInfo": {
+          "1": {
+            "tokenAddress": "0x03ab458634910AaD20eF5f1C8ee96F1D6ac54919"
+          }
+        }
+      }
+    },
+    {
+      "chainId": 42161,
       "address": "0xb08D8BeCAB1bf76A9Ce3d2d5fa946F65EC1d3e83",
       "name": "GammaSwap",
       "symbol": "GS",
@@ -76117,7 +74348,8 @@
         }
       },
       "isAcross": false,
-      "isOFT": true
+      "isOFT": true,
+      "noLiquidityOnChain": true
     },
     {
       "chainId": 42161,
@@ -78311,81 +76543,13 @@
     },
     {
       "chainId": 43111,
-      "address": "0x68589adc7687A23Ff2B06fb032b997f09B44Ed5d",
-      "name": "YieldNest Restaked BTC - Kernel",
-      "symbol": "ynBTCk",
+      "address": "0x4200000000000000000000000000000000000006",
+      "name": "Wrapped ETH",
+      "symbol": "WETH",
       "decimals": 18,
-      "logoURI": "https://icons-ckg.pages.dev/stargate-light/tokens/ynbtck.svg",
-      "tags": [],
-      "extensions": {
-        "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0x68589adc7687A23Ff2B06fb032b997f09B44Ed5d"
-          }
-        },
-        "oftInfo": {
-          "peersInfo": {
-            "1": {
-              "tokenAddress": "0x68589adc7687A23Ff2B06fb032b997f09B44Ed5d"
-            },
-            "10": {
-              "tokenAddress": "0x68589adc7687A23Ff2B06fb032b997f09B44Ed5d"
-            },
-            "56": {
-              "tokenAddress": "0x78839cE14a8213779128Ee4da6D75E1326606A56"
-            },
-            "8453": {
-              "tokenAddress": "0x68589adc7687A23Ff2B06fb032b997f09B44Ed5d"
-            },
-            "42161": {
-              "tokenAddress": "0x68589adc7687A23Ff2B06fb032b997f09B44Ed5d"
-            },
-            "167000": {
-              "tokenAddress": "0x68589adc7687A23Ff2B06fb032b997f09B44Ed5d"
-            }
-          },
-          "oftAdapter": "0xFD72FbB61798f3bcB707F5Ba98CB72a87CCa02A2",
-          "oftVersion": 3,
-          "endpointVersion": 2,
-          "endpointId": 30329,
-          "oftSharedDecimals": 6
-        }
-      },
       "isAcross": false,
-      "isOFT": true
-    },
-    {
-      "chainId": 43111,
-      "address": "0x6A9A65B84843F5fD4aC9a0471C4fc11AFfFBce4a",
-      "name": "Lorenzo Wrapped Bitcoin",
-      "symbol": "enzoBTC",
-      "decimals": 8,
-      "logoURI": "https://icons-ckg.pages.dev/stargate-light/tokens/enzobtc.svg",
-      "tags": [],
-      "extensions": {
-        "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0x6A9A65B84843F5fD4aC9a0471C4fc11AFfFBce4a"
-          }
-        },
-        "oftInfo": {
-          "peersInfo": {
-            "1": {
-              "tokenAddress": "0x6A9A65B84843F5fD4aC9a0471C4fc11AFfFBce4a"
-            },
-            "56": {
-              "tokenAddress": "0x6A9A65B84843F5fD4aC9a0471C4fc11AFfFBce4a"
-            }
-          },
-          "oftAdapter": "0xaa0D222436152050501E91DC07A45b1112f8b60f",
-          "oftVersion": 3,
-          "endpointVersion": 2,
-          "endpointId": 30329,
-          "oftSharedDecimals": 6
-        }
-      },
-      "isAcross": false,
-      "isOFT": true
+      "isOFT": false,
+      "extensions": {}
     },
     {
       "chainId": 43111,
@@ -78494,90 +76658,6 @@
     },
     {
       "chainId": 43111,
-      "address": "0x99e3dE3817F6081B2568208337ef83295b7f591D",
-      "name": "Hemi",
-      "symbol": "HEMI",
-      "decimals": 18,
-      "logoURI": "https://icons-ckg.pages.dev/stargate-light/tokens/hemi.svg",
-      "tags": [],
-      "extensions": {
-        "bridgeInfo": {
-          "56": {
-            "tokenAddress": "0x5fFD0EAdc186AF9512542d0d5e5eAFC65d5aFc5B"
-          }
-        },
-        "oftInfo": {
-          "peersInfo": {
-            "56": {
-              "tokenAddress": "0x5fFD0EAdc186AF9512542d0d5e5eAFC65d5aFc5B"
-            }
-          },
-          "oftAdapter": "0xf14A494Fb66927Df0b1495E5F09b410e5D8517C3",
-          "oftVersion": 3,
-          "endpointVersion": 2,
-          "endpointId": 30329,
-          "oftSharedDecimals": 6
-        }
-      },
-      "isAcross": false,
-      "isOFT": true
-    },
-    {
-      "chainId": 43111,
-      "address": "0xAA40c0c7644e0b2B224509571e10ad20d9C4ef28",
-      "name": "Hemi Bitcoin",
-      "symbol": "hemiBTC",
-      "decimals": 8,
-      "logoURI": "https://icons-ckg.pages.dev/stargate-light/tokens/hemibtc.svg",
-      "tags": [],
-      "extensions": {
-        "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0x06ea695B91700071B161A434fED42D1DcbAD9f00"
-          },
-          "10": {
-            "tokenAddress": "0xB5259c05764468c33C9c36e327cAAD020a8E5Fe1"
-          },
-          "56": {
-            "tokenAddress": "0x64b5bb3b7eF0267019fee5b826c60Cb9B7609373"
-          },
-          "8453": {
-            "tokenAddress": "0xC6FFfA0E234E5Ec80B8654Cb351dA90A092F6C95"
-          },
-          "42161": {
-            "tokenAddress": "0x1855911ab07ed5Cd056008F409b709DfA9D01183"
-          }
-        },
-        "oftInfo": {
-          "peersInfo": {
-            "1": {
-              "tokenAddress": "0x06ea695B91700071B161A434fED42D1DcbAD9f00"
-            },
-            "10": {
-              "tokenAddress": "0xB5259c05764468c33C9c36e327cAAD020a8E5Fe1"
-            },
-            "56": {
-              "tokenAddress": "0x64b5bb3b7eF0267019fee5b826c60Cb9B7609373"
-            },
-            "8453": {
-              "tokenAddress": "0xC6FFfA0E234E5Ec80B8654Cb351dA90A092F6C95"
-            },
-            "42161": {
-              "tokenAddress": "0x1855911ab07ed5Cd056008F409b709DfA9D01183"
-            }
-          },
-          "oftAdapter": "0xDefa4A253a0Ec96a2e6D74A409B3B348924bf390",
-          "oftVersion": 3,
-          "endpointVersion": 2,
-          "endpointId": 30329,
-          "oftSharedDecimals": 6
-        }
-      },
-      "isAcross": false,
-      "isOFT": true
-    },
-    {
-      "chainId": 43111,
       "address": "0xBF7d0F62B64B23053949B3a88a03da5Bfd35b2E2",
       "name": "Metronome Synth ETH",
       "symbol": "msETH",
@@ -78623,63 +76703,6 @@
           "oftVersion": 1,
           "endpointVersion": 1,
           "endpointId": 329
-        }
-      },
-      "isAcross": false,
-      "isOFT": true
-    },
-    {
-      "chainId": 43111,
-      "address": "0xc3eACf0612346366Db554C991D7858716db09f58",
-      "name": "KelpDao Restaked ETH",
-      "symbol": "rsETH",
-      "decimals": 18,
-      "logoURI": "https://icons-ckg.pages.dev/stargate-light/tokens/rseth.svg",
-      "tags": [],
-      "extensions": {
-        "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0xA1290d69c65A6Fe4DF752f95823fae25cB99e5A7"
-          }
-        },
-        "oftInfo": {
-          "peersInfo": {
-            "1": {
-              "tokenAddress": "0xA1290d69c65A6Fe4DF752f95823fae25cB99e5A7"
-            },
-            "10": {
-              "tokenAddress": "0x4186BFC76E2E237523CBC30FD220FE055156b41F"
-            },
-            "169": {
-              "tokenAddress": "0x4186BFC76E2E237523CBC30FD220FE055156b41F"
-            },
-            "1923": {
-              "tokenAddress": "0xc3eACf0612346366Db554C991D7858716db09f58"
-            },
-            "8453": {
-              "tokenAddress": "0x1Bc71130A0e39942a7658878169764Bbd8A45993"
-            },
-            "34443": {
-              "tokenAddress": "0x4186BFC76E2E237523CBC30FD220FE055156b41F"
-            },
-            "42161": {
-              "tokenAddress": "0x4186BFC76E2E237523CBC30FD220FE055156b41F"
-            },
-            "59144": {
-              "tokenAddress": "0x4186BFC76E2E237523CBC30FD220FE055156b41F"
-            },
-            "81457": {
-              "tokenAddress": "0x4186BFC76E2E237523CBC30FD220FE055156b41F"
-            },
-            "534352": {
-              "tokenAddress": "0x65421ba909200b81640d98B979d07487C9781B66"
-            }
-          },
-          "oftAdapter": "0xc3eACf0612346366Db554C991D7858716db09f58",
-          "oftVersion": 3,
-          "endpointVersion": 2,
-          "endpointId": 30329,
-          "oftSharedDecimals": 6
         }
       },
       "isAcross": false,
@@ -82253,21 +80276,6 @@
     },
     {
       "chainId": 43114,
-      "address": "0xbd3936eC8D83A5D4e73ecA625eCFa006da8C8F52",
-      "name": "UREEQA",
-      "symbol": "URQA",
-      "decimals": 18,
-      "logoURI": "https://assets.coingecko.com/coins/images/14605/large/R_O2enOX_400x400.png?1617243310",
-      "extensions": {
-        "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0x1735Db6AB5BAa19eA55d0AdcEeD7bcDc008B3136"
-          }
-        }
-      }
-    },
-    {
-      "chainId": 43114,
       "address": "0xc3e5a8A1c3B0b4c81F85Ec322554187B3575C478",
       "name": "Omnisea",
       "symbol": "OSEA",
@@ -82315,37 +80323,6 @@
           "oftVersion": 1,
           "endpointVersion": 1,
           "endpointId": 106
-        }
-      },
-      "isAcross": false,
-      "isOFT": true,
-      "noLiquidityOnChain": true
-    },
-    {
-      "chainId": 43114,
-      "address": "0xc430c78Da6E4AF49bD115F0329D154Bb135f1363",
-      "name": "KelpDao Restaked ETH",
-      "symbol": "rsETH",
-      "decimals": 18,
-      "logoURI": "https://icons-ckg.pages.dev/stargate-light/tokens/rseth.svg",
-      "tags": [],
-      "extensions": {
-        "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0xA1290d69c65A6Fe4DF752f95823fae25cB99e5A7"
-          }
-        },
-        "oftInfo": {
-          "peersInfo": {
-            "1": {
-              "tokenAddress": "0xA1290d69c65A6Fe4DF752f95823fae25cB99e5A7"
-            }
-          },
-          "oftAdapter": "0xc430c78Da6E4AF49bD115F0329D154Bb135f1363",
-          "oftVersion": 3,
-          "endpointVersion": 2,
-          "endpointId": 30106,
-          "oftSharedDecimals": 6
         }
       },
       "isAcross": false,
@@ -82620,7 +80597,8 @@
         }
       },
       "isAcross": false,
-      "isOFT": true
+      "isOFT": true,
+      "noLiquidityOnChain": true
     },
     {
       "chainId": 43114,
@@ -83422,37 +81400,6 @@
             }
           },
           "oftAdapter": "0xA1bE1572B4beef24f812EfDc58bdc41D56a0dAB2",
-          "oftVersion": 3,
-          "endpointVersion": 2,
-          "endpointId": 30339,
-          "oftSharedDecimals": 6
-        }
-      },
-      "isAcross": false,
-      "isOFT": true,
-      "noLiquidityOnChain": true
-    },
-    {
-      "chainId": 57073,
-      "address": "0xc3eACf0612346366Db554C991D7858716db09f58",
-      "name": "KelpDao Restaked ETH",
-      "symbol": "rsETH",
-      "decimals": 18,
-      "logoURI": "https://icons-ckg.pages.dev/stargate-light/tokens/rseth.svg",
-      "tags": [],
-      "extensions": {
-        "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0xA1290d69c65A6Fe4DF752f95823fae25cB99e5A7"
-          }
-        },
-        "oftInfo": {
-          "peersInfo": {
-            "1": {
-              "tokenAddress": "0xA1290d69c65A6Fe4DF752f95823fae25cB99e5A7"
-            }
-          },
-          "oftAdapter": "0xc3eACf0612346366Db554C991D7858716db09f58",
           "oftVersion": 3,
           "endpointVersion": 2,
           "endpointId": 30339,
@@ -84270,64 +82217,6 @@
             }
           },
           "oftAdapter": "0x413bF752b33e76562dc876182141e2329716f250",
-          "oftVersion": 3,
-          "endpointVersion": 2,
-          "endpointId": 30183,
-          "oftSharedDecimals": 6
-        }
-      },
-      "isAcross": false,
-      "isOFT": true,
-      "noLiquidityOnChain": true
-    },
-    {
-      "chainId": 59144,
-      "address": "0x4186BFC76E2E237523CBC30FD220FE055156b41F",
-      "name": "KelpDao Restaked ETH",
-      "symbol": "rsETH",
-      "decimals": 18,
-      "logoURI": "https://icons-ckg.pages.dev/stargate-light/tokens/rseth.svg",
-      "tags": [],
-      "extensions": {
-        "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0xA1290d69c65A6Fe4DF752f95823fae25cB99e5A7"
-          }
-        },
-        "oftInfo": {
-          "peersInfo": {
-            "1": {
-              "tokenAddress": "0xA1290d69c65A6Fe4DF752f95823fae25cB99e5A7"
-            },
-            "10": {
-              "tokenAddress": "0x4186BFC76E2E237523CBC30FD220FE055156b41F"
-            },
-            "169": {
-              "tokenAddress": "0x4186BFC76E2E237523CBC30FD220FE055156b41F"
-            },
-            "1923": {
-              "tokenAddress": "0xc3eACf0612346366Db554C991D7858716db09f58"
-            },
-            "8453": {
-              "tokenAddress": "0x1Bc71130A0e39942a7658878169764Bbd8A45993"
-            },
-            "34443": {
-              "tokenAddress": "0x4186BFC76E2E237523CBC30FD220FE055156b41F"
-            },
-            "42161": {
-              "tokenAddress": "0x4186BFC76E2E237523CBC30FD220FE055156b41F"
-            },
-            "43111": {
-              "tokenAddress": "0xc3eACf0612346366Db554C991D7858716db09f58"
-            },
-            "81457": {
-              "tokenAddress": "0x4186BFC76E2E237523CBC30FD220FE055156b41F"
-            },
-            "534352": {
-              "tokenAddress": "0x65421ba909200b81640d98B979d07487C9781B66"
-            }
-          },
-          "oftAdapter": "0x4186BFC76E2E237523CBC30FD220FE055156b41F",
           "oftVersion": 3,
           "endpointVersion": 2,
           "endpointId": 30183,
@@ -86881,9 +84770,6 @@
             "1": {
               "tokenAddress": "0x090185f2135308BaD17527004364eBcC2D37e5F6"
             },
-            "6900": {
-              "tokenAddress": "0x1D63c9409bb41b2Ab43259b843fF32c839A9ffa2"
-            },
             "42161": {
               "tokenAddress": "0x34FbFB3e95011956aBAD82796f466bA88895f214"
             }
@@ -87028,37 +84914,6 @@
     },
     {
       "chainId": 80094,
-      "address": "0x4186BFC76E2E237523CBC30FD220FE055156b41F",
-      "name": "KelpDao Restaked ETH",
-      "symbol": "rsETH",
-      "decimals": 18,
-      "logoURI": "https://icons-ckg.pages.dev/stargate-light/tokens/rseth.svg",
-      "tags": [],
-      "extensions": {
-        "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0xA1290d69c65A6Fe4DF752f95823fae25cB99e5A7"
-          }
-        },
-        "oftInfo": {
-          "peersInfo": {
-            "1": {
-              "tokenAddress": "0xA1290d69c65A6Fe4DF752f95823fae25cB99e5A7"
-            }
-          },
-          "oftAdapter": "0x4186BFC76E2E237523CBC30FD220FE055156b41F",
-          "oftVersion": 3,
-          "endpointVersion": 2,
-          "endpointId": 30362,
-          "oftSharedDecimals": 6
-        }
-      },
-      "isAcross": false,
-      "isOFT": true,
-      "noLiquidityOnChain": true
-    },
-    {
-      "chainId": 80094,
       "address": "0x521ccc884c3bc358C84e7e918e1575E45Eb164ff",
       "name": "Pleasing USD",
       "symbol": "PUSD",
@@ -87142,40 +84997,6 @@
             }
           },
           "oftAdapter": "0x5475611Dffb8ef4d697Ae39df9395513b6E947d7",
-          "oftVersion": 3,
-          "endpointVersion": 2,
-          "endpointId": 30362,
-          "oftSharedDecimals": 6
-        }
-      },
-      "isAcross": false,
-      "isOFT": true,
-      "noLiquidityOnChain": true
-    },
-    {
-      "chainId": 80094,
-      "address": "0x6A9A65B84843F5fD4aC9a0471C4fc11AFfFBce4a",
-      "name": "Lorenzo Wrapped Bitcoin",
-      "symbol": "enzoBTC",
-      "decimals": 8,
-      "logoURI": "https://icons-ckg.pages.dev/stargate-light/tokens/enzobtc.svg",
-      "tags": [],
-      "extensions": {
-        "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0x6A9A65B84843F5fD4aC9a0471C4fc11AFfFBce4a"
-          }
-        },
-        "oftInfo": {
-          "peersInfo": {
-            "1": {
-              "tokenAddress": "0x6A9A65B84843F5fD4aC9a0471C4fc11AFfFBce4a"
-            },
-            "56": {
-              "tokenAddress": "0x6A9A65B84843F5fD4aC9a0471C4fc11AFfFBce4a"
-            }
-          },
-          "oftAdapter": "0xaa0D222436152050501E91DC07A45b1112f8b60f",
           "oftVersion": 3,
           "endpointVersion": 2,
           "endpointId": 30362,
@@ -88730,64 +86551,6 @@
     },
     {
       "chainId": 81457,
-      "address": "0x4186BFC76E2E237523CBC30FD220FE055156b41F",
-      "name": "KelpDao Restaked ETH",
-      "symbol": "rsETH",
-      "decimals": 18,
-      "logoURI": "https://icons-ckg.pages.dev/stargate-light/tokens/rseth.svg",
-      "tags": [],
-      "extensions": {
-        "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0xA1290d69c65A6Fe4DF752f95823fae25cB99e5A7"
-          }
-        },
-        "oftInfo": {
-          "peersInfo": {
-            "1": {
-              "tokenAddress": "0xA1290d69c65A6Fe4DF752f95823fae25cB99e5A7"
-            },
-            "10": {
-              "tokenAddress": "0x4186BFC76E2E237523CBC30FD220FE055156b41F"
-            },
-            "169": {
-              "tokenAddress": "0x4186BFC76E2E237523CBC30FD220FE055156b41F"
-            },
-            "1923": {
-              "tokenAddress": "0xc3eACf0612346366Db554C991D7858716db09f58"
-            },
-            "8453": {
-              "tokenAddress": "0x1Bc71130A0e39942a7658878169764Bbd8A45993"
-            },
-            "34443": {
-              "tokenAddress": "0x4186BFC76E2E237523CBC30FD220FE055156b41F"
-            },
-            "42161": {
-              "tokenAddress": "0x4186BFC76E2E237523CBC30FD220FE055156b41F"
-            },
-            "43111": {
-              "tokenAddress": "0xc3eACf0612346366Db554C991D7858716db09f58"
-            },
-            "59144": {
-              "tokenAddress": "0x4186BFC76E2E237523CBC30FD220FE055156b41F"
-            },
-            "534352": {
-              "tokenAddress": "0x65421ba909200b81640d98B979d07487C9781B66"
-            }
-          },
-          "oftAdapter": "0x4186BFC76E2E237523CBC30FD220FE055156b41F",
-          "oftVersion": 3,
-          "endpointVersion": 2,
-          "endpointId": 30243,
-          "oftSharedDecimals": 6
-        }
-      },
-      "isAcross": false,
-      "isOFT": true,
-      "noLiquidityOnChain": true
-    },
-    {
-      "chainId": 81457,
       "address": "0x41cF7ea4Ba650191e829A6bD31B9e2049C78D858",
       "name": "MetaStreet V2 Deposit: PPG-WETH:5",
       "symbol": "mWETH-PPG:5",
@@ -90198,39 +87961,6 @@
     },
     {
       "chainId": 98866,
-      "address": "0x6A9A65B84843F5fD4aC9a0471C4fc11AFfFBce4a",
-      "name": "Lorenzo Wrapped Bitcoin",
-      "symbol": "enzoBTC",
-      "decimals": 8,
-      "logoURI": "https://icons-ckg.pages.dev/stargate-light/tokens/enzobtc.svg",
-      "tags": [],
-      "extensions": {
-        "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0x6A9A65B84843F5fD4aC9a0471C4fc11AFfFBce4a"
-          }
-        },
-        "oftInfo": {
-          "peersInfo": {
-            "1": {
-              "tokenAddress": "0x6A9A65B84843F5fD4aC9a0471C4fc11AFfFBce4a"
-            },
-            "56": {
-              "tokenAddress": "0x6A9A65B84843F5fD4aC9a0471C4fc11AFfFBce4a"
-            }
-          },
-          "oftAdapter": "0xaa0D222436152050501E91DC07A45b1112f8b60f",
-          "oftVersion": 3,
-          "endpointVersion": 2,
-          "endpointId": 30370,
-          "oftSharedDecimals": 6
-        }
-      },
-      "isAcross": false,
-      "isOFT": true
-    },
-    {
-      "chainId": 98866,
       "address": "0x6bedE1c6009a78c222D9BDb7974bb67847fdB68c",
       "name": "US Bitcoin Dollar",
       "symbol": "USBD",
@@ -90543,86 +88273,6 @@
           "oftVersion": 2,
           "endpointVersion": 1,
           "endpointId": 290,
-          "oftSharedDecimals": 6
-        }
-      },
-      "isAcross": false,
-      "isOFT": true,
-      "noLiquidityOnChain": true
-    },
-    {
-      "chainId": 167000,
-      "address": "0x68589adc7687A23Ff2B06fb032b997f09B44Ed5d",
-      "name": "YieldNest Restaked BTC - Kernel",
-      "symbol": "ynBTCk",
-      "decimals": 18,
-      "logoURI": "https://icons-ckg.pages.dev/stargate-light/tokens/ynbtck.svg",
-      "tags": [],
-      "extensions": {
-        "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0x68589adc7687A23Ff2B06fb032b997f09B44Ed5d"
-          }
-        },
-        "oftInfo": {
-          "peersInfo": {
-            "1": {
-              "tokenAddress": "0x68589adc7687A23Ff2B06fb032b997f09B44Ed5d"
-            },
-            "10": {
-              "tokenAddress": "0x68589adc7687A23Ff2B06fb032b997f09B44Ed5d"
-            },
-            "56": {
-              "tokenAddress": "0x78839cE14a8213779128Ee4da6D75E1326606A56"
-            },
-            "8453": {
-              "tokenAddress": "0x68589adc7687A23Ff2B06fb032b997f09B44Ed5d"
-            },
-            "42161": {
-              "tokenAddress": "0x68589adc7687A23Ff2B06fb032b997f09B44Ed5d"
-            },
-            "43111": {
-              "tokenAddress": "0x68589adc7687A23Ff2B06fb032b997f09B44Ed5d"
-            }
-          },
-          "oftAdapter": "0xFD72FbB61798f3bcB707F5Ba98CB72a87CCa02A2",
-          "oftVersion": 3,
-          "endpointVersion": 2,
-          "endpointId": 30290,
-          "oftSharedDecimals": 6
-        }
-      },
-      "isAcross": false,
-      "isOFT": true,
-      "noLiquidityOnChain": true
-    },
-    {
-      "chainId": 167000,
-      "address": "0x6A9A65B84843F5fD4aC9a0471C4fc11AFfFBce4a",
-      "name": "Lorenzo Wrapped Bitcoin",
-      "symbol": "enzoBTC",
-      "decimals": 8,
-      "logoURI": "https://icons-ckg.pages.dev/stargate-light/tokens/enzobtc.svg",
-      "tags": [],
-      "extensions": {
-        "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0x6A9A65B84843F5fD4aC9a0471C4fc11AFfFBce4a"
-          }
-        },
-        "oftInfo": {
-          "peersInfo": {
-            "1": {
-              "tokenAddress": "0x6A9A65B84843F5fD4aC9a0471C4fc11AFfFBce4a"
-            },
-            "56": {
-              "tokenAddress": "0x6A9A65B84843F5fD4aC9a0471C4fc11AFfFBce4a"
-            }
-          },
-          "oftAdapter": "0xcAF020c4C8C2443C9F6E0b161604335fa0D07eD8",
-          "oftVersion": 3,
-          "endpointVersion": 2,
-          "endpointId": 30290,
           "oftSharedDecimals": 6
         }
       },
@@ -91363,64 +89013,6 @@
             }
           },
           "oftAdapter": "0x58538e6A46E07434d7E7375Bc268D3cb839C0133",
-          "oftVersion": 3,
-          "endpointVersion": 2,
-          "endpointId": 30214,
-          "oftSharedDecimals": 6
-        }
-      },
-      "isAcross": false,
-      "isOFT": true,
-      "noLiquidityOnChain": true
-    },
-    {
-      "chainId": 534352,
-      "address": "0x65421ba909200b81640d98B979d07487C9781B66",
-      "name": "KelpDao Restaked ETH",
-      "symbol": "rsETH",
-      "decimals": 18,
-      "logoURI": "https://icons-ckg.pages.dev/stargate-light/tokens/rseth.svg",
-      "tags": [],
-      "extensions": {
-        "bridgeInfo": {
-          "1": {
-            "tokenAddress": "0xA1290d69c65A6Fe4DF752f95823fae25cB99e5A7"
-          }
-        },
-        "oftInfo": {
-          "peersInfo": {
-            "1": {
-              "tokenAddress": "0xA1290d69c65A6Fe4DF752f95823fae25cB99e5A7"
-            },
-            "10": {
-              "tokenAddress": "0x4186BFC76E2E237523CBC30FD220FE055156b41F"
-            },
-            "169": {
-              "tokenAddress": "0x4186BFC76E2E237523CBC30FD220FE055156b41F"
-            },
-            "1923": {
-              "tokenAddress": "0xc3eACf0612346366Db554C991D7858716db09f58"
-            },
-            "8453": {
-              "tokenAddress": "0x1Bc71130A0e39942a7658878169764Bbd8A45993"
-            },
-            "34443": {
-              "tokenAddress": "0x4186BFC76E2E237523CBC30FD220FE055156b41F"
-            },
-            "42161": {
-              "tokenAddress": "0x4186BFC76E2E237523CBC30FD220FE055156b41F"
-            },
-            "43111": {
-              "tokenAddress": "0xc3eACf0612346366Db554C991D7858716db09f58"
-            },
-            "59144": {
-              "tokenAddress": "0x4186BFC76E2E237523CBC30FD220FE055156b41F"
-            },
-            "81457": {
-              "tokenAddress": "0x4186BFC76E2E237523CBC30FD220FE055156b41F"
-            }
-          },
-          "oftAdapter": "0x65421ba909200b81640d98B979d07487C9781B66",
           "oftVersion": 3,
           "endpointVersion": 2,
           "endpointId": 30214,
