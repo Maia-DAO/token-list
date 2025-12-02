@@ -54,6 +54,10 @@ const CHAIN_ID_TO_NETWORK = {
   11501: 'bevm', // ExtendedSupportedChainId.BEVM
   42170: 'arbitrum_nova', // ExtendedSupportedChainId.NOVA
   4200: 'merlin', // ExtendedSupportedChainId.MERLIN
+  1890: 'lightlink', // DefiLlama name
+  43111: 'hemi', // DefiLlama name
+  143: 'monad', // DefiLlama name
+  9745: 'plasma', // DefiLlama name
 
   // --- other chains ---
   200901: 'bitlayer',
@@ -61,6 +65,8 @@ const CHAIN_ID_TO_NETWORK = {
   291: 'orderly',
   3338: 'peaq',
   55244: 'superposition',
+
+
 }
 
 exports.CHAIN_ID_TO_NETWORK = CHAIN_ID_TO_NETWORK
