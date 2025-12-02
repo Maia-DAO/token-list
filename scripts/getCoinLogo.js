@@ -63,7 +63,7 @@ async function fetchWithRetry(url, options = {}, retries = 3, delayMs = 2000) {
 async function getCoinLogo(address, chainId, coingeckoId, coinmarketcapId) {
   const key = `${chainId}:${address}`
   if (cache[key]) return cache[key]
-  return undefined
+  // return undefined
 
   // 1) Uniswap assets
   const uniNetworkMap = {
@@ -81,6 +81,7 @@ async function getCoinLogo(address, chainId, coingeckoId, coinmarketcapId) {
     100: 'xdai',
     1868: 'soneium',
     81457: 'blast',
+    143: 'monad',
   }
 
   const network = uniNetworkMap[chainId]
@@ -109,6 +110,8 @@ async function getCoinLogo(address, chainId, coingeckoId, coinmarketcapId) {
     5000: 'mantle',
     204: 'opbnb',
     100: 'xdai',
+    143: 'monad',
+    9745: 'plasma'
   }
 
   const networkTrust = trustwalletNetworkMap[chainId]
