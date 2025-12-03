@@ -22,13 +22,13 @@ async function fetchList(url, name, conversionFunction, conversionFunctionAdditi
     try {
       const res = await undiciFetch(url, { dispatcher: agent, signal: ac.signal, headers });
 
-      clearTimeout(timer);
-
       if (!res.ok) {
+        clearTimeout(timer);
         throw new Error(`Error fetching data from ${url}: ${res.status} ${res.statusText}`);
       }
 
       const tokens = await res.json();
+      clearTimeout(timer); // Clear timeout only after body is fully read
       const tokensToOutput = conversionFunction ? await conversionFunction(tokens, conversionFunctionAdditionalParams) : tokens;
 
       await fs.writeFile(`output/${name}.json`, JSON.stringify(tokensToOutput, null, 2));
@@ -315,6 +315,18 @@ async function convertStandardList(list) {
       'TOKEN_LIST_HYPERLIQUID',
       convertOpenoceanList,
       999
+    ),
+    await fetchList(
+      'https://open-api.openocean.finance/v3/monad/tokenList',
+      'TOKEN_LIST_MONAD',
+      convertOpenoceanList,
+      143
+    ),
+    await fetchList(
+      'https://open-api.openocean.finance/v3/plasma/tokenList',
+      'TOKEN_LIST_PLASMA',
+      convertOpenoceanList,
+      9745
     ),
     await fetchList(
       'https://open-api.openocean.finance/v3/opbnb/tokenList',
