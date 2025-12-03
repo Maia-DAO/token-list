@@ -65,6 +65,8 @@ class TokenLiquidityChecker {
         34443: 'mode',
         81457: 'blast',
         5000: 'mantle',
+        9745: 'plasma',
+        143: 'monad',
       },
       geckoterminal: {
         // GeckoTerminal network identifiers (different from DEXScreener)
@@ -91,6 +93,8 @@ class TokenLiquidityChecker {
         14: 'flare',
         34443: 'mode',
         5000: 'mantle',
+        9745: 'plasma',
+        143: 'monad',
       },
     }
   }
