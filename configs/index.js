@@ -107,6 +107,7 @@ const PARTNER_TOKEN_SYMBOLS = [
   'ynBTCx',
   'ynRWAx',
   'LL',
+  'MON',
   'WMON',
   'XPL',
   'WXPL',
@@ -172,6 +173,8 @@ const OVERRIDE_PEG = {
 
 // Override logos for specific tokens
 const OVERRIDE_LOGO = {
+  WMON: 'https://raw.githubusercontent.com/trustwallet/assets/refs/heads/master/blockchains/monad/assets/0x3bd359C1119dA7Da1D913D1C4D2B7c461115433A/logo.png',
+  WETH: 'https://raw.githubusercontent.com/trustwallet/assets/c6108b1a2708c01a8c637b80e0f69e77085d4174/blockchains/ethereum/assets/0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2/logo.png',
   USDRIF: 'https://assets.coingecko.com/coins/images/39869/standard/USDRIF.webp?1724500201',
   orbETH: 'https://assets.coingecko.com/coins/images/54981/standard/orbETH-token_icon.png?1743026013',
   AUKI: 'https://assets.coingecko.com/coins/images/39811/standard/COINGECKO-200-x-200_%281%29.png?1724166209',
@@ -266,7 +269,7 @@ const WRAPPED_NATIVES = {
 // @dev copied from hermes UI frontend bridging.ts
 const CHAINS_WITH_NO_SWAPPING = [
   252, 200901, 60808, 1116, 2345, 57073, 747474, 2818, 6900, 291, 3338, 1868, 239, 167000, 480, 7777777, 1890, 43111,
-  5064014, 143, 9745,
+  5064014, 
 ]
 
 // Extended supported chain IDs
