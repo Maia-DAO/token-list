@@ -83,12 +83,14 @@ class TokenLiquidityChecker {
         252: 'fraxtal',
         57073: 'ink',
         1116: 'core',
+        1923: 'swellchain',
+        5330: 'superseed',
         534352: 'scroll',
+        33139: 'apechain',
         42220: 'celo',
         1329: 'sei-evm',
         50: 'xdc',
         42170: 'arbitrum_nova',
-        1890: 'lightlink-phoenix',
         1313161554: 'aurora',
         480: 'worldchain',
         747474: 'katana',
@@ -96,10 +98,23 @@ class TokenLiquidityChecker {
         999: 'hyperevm',
         204: 'opbnb',
         169: 'manta-pacific',
+        239: 'tac',
+        60808: 'bob-network',
+        2345: 'goat',
+        55244: 'superposition',
         100: 'xdai',
         59144: 'linea',
         122: 'fuse',
         1868: 'soneium',
+        1030: 'cfx',
+        1514: 'story',
+        167000: 'taiko',
+        6900: 'nibiru',
+        1625: 'gravity-alpha',
+        232: 'lens',
+        6001: 'bouncebit',
+        200901: 'bitlayer',
+        1996: 'sanko-mainnet',
         14: 'flare',
         98866: 'plume-network',
         2818: 'morph-l2',
@@ -110,6 +125,7 @@ class TokenLiquidityChecker {
         9745: 'plasma',
         43111: 'hemi',
         143: 'monad',
+        1890:'lightlink-phoenix'
       },
     }
   }
@@ -336,8 +352,8 @@ class TokenLiquidityChecker {
       if (!chainName) {
         const chainKey = CHAIN_KEYS[chainId]
         return this.formatLiquidityResult({
-        success: false,
-        error: `Chain ${chainKey || chainId} not supported by DEXScreener`,
+          success: false,
+          error: `Chain ${chainKey || chainId} not supported by DEXScreener`,
           chainSupported: false,
           source: 'dexscreener',
         })
@@ -421,7 +437,7 @@ class TokenLiquidityChecker {
     }
   }
 
-   /**
+  /**
    * Check liquidity for a single token with fallback APIs
    */
   async checkTokenLiquidity(tokenObject, options = {}) {
@@ -448,7 +464,7 @@ class TokenLiquidityChecker {
     if (!result.success) {
       console.log(`${primaryAPI} failed for ${tokenAddress}, trying ${fallbackAPI}...`)
       const fallbackResult = await fallback.call(this, chainId, tokenAddress)
-      
+
       // Use fallback result if the fallback API supports the chain
       if (fallbackResult.chainSupported !== false) {
         result = fallbackResult
@@ -462,8 +478,9 @@ class TokenLiquidityChecker {
     }
 
     // If neither API supports this chain, we should not process this token
-    const chainSupportedByEither = this.isChainSupported(chainId, 'dexscreener') || this.isChainSupported(chainId, 'geckoterminal')
-    
+    const chainSupportedByEither =
+      this.isChainSupported(chainId, 'dexscreener') || this.isChainSupported(chainId, 'geckoterminal')
+
     if (!chainSupportedByEither) {
       result.chainSupported = false
       result.error = `Chain ${CHAIN_KEYS[chainId] || chainId} not supported by either DEXScreener or GeckoTerminal`
@@ -538,7 +555,7 @@ class TokenLiquidityChecker {
             ? result.hasLiquidity
               ? `$${result.totalLiquidity?.toFixed(2)}`
               : 'no liquidity'
-            : result.chainSupported === false 
+            : result.chainSupported === false
               ? 'chain not supported'
               : 'failed'
 
