@@ -81,6 +81,7 @@ const TESTNET_CHAIN_IDS = [
   SupportedChainId.OPTIMISM_SEPOLIA,
   SupportedChainId.BASE_SEPOLIA,
   SupportedChainId.POLYGON_AMOY,
+  534352, // REMOVE SCROLL CHAIN
 ]
 
 // Convert SupportedChainId to an array of numbers.
