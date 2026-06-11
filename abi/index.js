@@ -25,6 +25,11 @@ const OFT_V1_ABI = [
   'function sendFrom(address from,uint16 dstChainId,bytes toAddress,uint256 amount,address payable refundAddress,address zroPaymentAddress,bytes adapterParams) payable',
 ]
 
+const ENDPOINT_V2_ABI = [
+  'function getSendLibrary(address sender, uint32 dstEid) view returns (address)',
+  'function getConfig(address oapp, address lib, uint32 eid, uint32 configType) view returns (bytes)',
+]
+
 const MULTICALL3_ABI = [
   'function tryAggregate(bool requireSuccess, tuple(address target, bytes callData)[] calls) view returns (tuple(bool,bytes)[])',
 ]
@@ -45,6 +50,7 @@ const MULTICALL3_ADDRESSES = (chainKey) => {
 
 module.exports = {
   OAPP_ABI,
+  ENDPOINT_V2_ABI,
   OFT_V3_ABI,
   OFT_V2_ABI,
   OFT_V1_ABI,

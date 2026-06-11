@@ -6,7 +6,7 @@
   "description": "Fetch and manage token lists",
   "scripts": {
     "fetch": "node scripts/1-fetchLists.js",
-    "filter": "node scripts/2-filterStargateTokens.js && node scripts/3-filterAcrossTokens.js && node scripts/4-addOFTAdapters.js && node scripts/5-addAllPeers.js && node scripts/6-queryOFTFees.js",
+    "filter": "node scripts/2-filterStargateTokens.js && node scripts/3-filterAcrossTokens.js && node scripts/4-addOFTAdapters.js && node scripts/5-addAllPeers.js && node scripts/5b-filterBlockedDVNs.js && node scripts/6-queryOFTFees.js",
     "merge": "node scripts/7-mergeActiveLists.js",
     "merge-others": "node scripts/8-mergeInactiveLists.js",
     "removeDupes": "node scripts/9-removeDupes.js",

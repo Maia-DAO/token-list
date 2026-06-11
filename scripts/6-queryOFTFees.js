@@ -171,7 +171,16 @@ async function main() {
       tokenFeeMap[src.address + src.chainKey] ||= {}
 
       if (src.oftVersion === 3 || src.endpointVersion === 2) {
-        const [, , receipt] = ifaceV3.decodeFunctionResult('quoteOFT', hex)
+        let receipt
+        try {
+          ;[, , receipt] = ifaceV3.decodeFunctionResult('quoteOFT', hex)
+        } catch (err) {
+          console.warn(
+            `Failed to decode v3 quoteOFT for ${src.symbol} from ${src.chainKey} to ${dst.chainKey}:`,
+            err.message
+          )
+          return
+        }
         const sent = BigInt(receipt.sent)
         const received = BigInt(receipt.received)
         const fee = sent > 0n ? ((sent - received) * 10000n) / sent : 10000n
@@ -362,4 +371,7 @@ async function main() {
   console.log(`Enhanced tokens saved to ${OUT_FILE}`)
 }
 
-main().catch(console.error)
+main().catch((e) => {
+  console.error(e)
+  process.exitCode = 1
+})

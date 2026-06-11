@@ -24,25 +24,9 @@
             "1": {
               "tokenAddress": "0xf6718b2701D4a6498eF77D7c152b2137Ab28b8A3"
             }
-          },
-          "oftInfo": {
-            "peersInfo": {
-              "1": {
-                "tokenAddress": "0xf6718b2701D4a6498eF77D7c152b2137Ab28b8A3"
-              },
-              "56": {
-                "tokenAddress": "0xf6718b2701D4a6498eF77D7c152b2137Ab28b8A3"
-              }
-            },
-            "oftAdapter": "0xbcE9988376C6b9c0c035bdbc9060568031d51130",
-            "oftVersion": 3,
-            "endpointVersion": 2,
-            "endpointId": 30333,
-            "oftSharedDecimals": 6
           }
         },
         "isAcross": false,
-        "isOFT": true,
         "source": "tokens"
       }
     },
@@ -103,79 +87,27 @@
     "hasLiquidity": false,
     "totalLiquidity": 0,
     "pairsCount": 0,
-    "chainSupported": "lightlink-phoenix",
+    "chainSupported": "xdc",
     "error": "HTTP 429",
     "source": "geckoterminal",
     "tokenObject": {
-      "chainId": 1890,
-      "address": "0x519d3443cACc61bD844546eDAea48E5502021802",
-      "symbol": "LL",
+      "chainId": 50,
+      "address": "0x951857744785E80e2De051c32EE7b25f9c458C42",
+      "symbol": "WXDC",
       "originalToken": {
-        "chainId": 1890,
-        "address": "0x519d3443cACc61bD844546eDAea48E5502021802",
-        "name": "LightLink",
-        "symbol": "LL",
+        "chainId": 50,
+        "address": "0x951857744785E80e2De051c32EE7b25f9c458C42",
+        "name": "Wrapped XDC",
+        "symbol": "WXDC",
         "decimals": 18,
-        "logoURI": "https://icons-ckg.pages.dev/stargate-light/tokens/ll.svg",
-        "tags": [],
-        "extensions": {
-          "bridgeInfo": {
-            "1": {
-              "tokenAddress": "0x0921799CB1d702148131024d18fCdE022129Dc73"
-            }
-          },
-          "oftInfo": {
-            "peersInfo": {
-              "1": {
-                "tokenAddress": "0x0921799CB1d702148131024d18fCdE022129Dc73"
-              },
-              "8453": {
-                "tokenAddress": "0x519d3443cACc61bD844546eDAea48E5502021802"
-              }
-            },
-            "oftAdapter": "0x5A1dEEF18E1DDb939bb298787896e45B5988243c",
-            "oftVersion": 3,
-            "endpointVersion": 2,
-            "endpointId": 30309,
-            "oftSharedDecimals": 6
-          }
-        },
-        "isAcross": false,
-        "isOFT": true,
-        "source": "tokens"
-      }
-    },
-    "chainId": 1890,
-    "tokenAddress": "0x519d3443cACc61bD844546eDAea48E5502021802",
-    "meetsMinimumLiquidity": false
-  },
-  {
-    "success": false,
-    "hasLiquidity": false,
-    "totalLiquidity": 0,
-    "pairsCount": 0,
-    "chainSupported": "lightlink-phoenix",
-    "error": "HTTP 429",
-    "source": "geckoterminal",
-    "tokenObject": {
-      "chainId": 1890,
-      "address": "0x7EbeF2A4b1B09381Ec5B9dF8C5c6f2dBECA59c73",
-      "symbol": "WETH",
-      "originalToken": {
-        "chainId": 1890,
-        "address": "0x7EbeF2A4b1B09381Ec5B9dF8C5c6f2dBECA59c73",
-        "name": "Wrapped ETH",
-        "symbol": "WETH",
-        "decimals": 18,
-        "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/c6108b1a2708c01a8c637b80e0f69e77085d4174/blockchains/ethereum/assets/0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2/logo.png",
-        "extensions": {},
+        "logoURI": "https://s2.coinmarketcap.com/static/img/coins/128x128/29189.png",
         "isAcross": false,
         "isOFT": false,
         "source": "tokens"
       }
     },
-    "chainId": 1890,
-    "tokenAddress": "0x7EbeF2A4b1B09381Ec5B9dF8C5c6f2dBECA59c73",
+    "chainId": 50,
+    "tokenAddress": "0x951857744785E80e2De051c32EE7b25f9c458C42",
     "meetsMinimumLiquidity": false
   },
   {
@@ -183,136 +115,55 @@
     "hasLiquidity": false,
     "totalLiquidity": 0,
     "pairsCount": 0,
-    "chainSupported": "swellchain",
+    "chainSupported": "tac",
     "error": "HTTP 429",
     "source": "geckoterminal",
     "tokenObject": {
-      "chainId": 1923,
-      "address": "0x0555E30da8f98308EdB960aa94C0Db47230d2B9c",
-      "symbol": "WBTC",
+      "chainId": 239,
+      "address": "0xb1b385542B6E80F77B94393Ba8342c3Af699f15c",
+      "symbol": "USR",
       "originalToken": {
-        "chainId": 1923,
-        "address": "0x0555E30da8f98308EdB960aa94C0Db47230d2B9c",
-        "name": "Wrapped BTC",
-        "symbol": "WBTC",
-        "decimals": 8,
-        "logoURI": "https://icons-ckg.pages.dev/stargate-light/tokens/wbtc.svg",
+        "chainId": 239,
+        "address": "0xb1b385542B6E80F77B94393Ba8342c3Af699f15c",
+        "name": "Resolv USD",
+        "symbol": "USR",
+        "decimals": 18,
+        "logoURI": "https://icons-ckg.pages.dev/stargate-light/tokens/usr.svg",
         "tags": [],
         "extensions": {
           "bridgeInfo": {
             "1": {
-              "tokenAddress": "0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599"
+              "tokenAddress": "0x66a1E37c9b0eAddca17d3662D6c05F4DECf3e110"
             }
           },
           "oftInfo": {
             "peersInfo": {
               "1": {
-                "tokenAddress": "0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599"
-              },
-              "10": {
-                "tokenAddress": "0x0555E30da8f98308EdB960aa94C0Db47230d2B9c"
+                "tokenAddress": "0x66a1E37c9b0eAddca17d3662D6c05F4DECf3e110"
               },
               "56": {
-                "tokenAddress": "0x0555E30da8f98308EdB960aa94C0Db47230d2B9c"
-              },
-              "130": {
-                "tokenAddress": "0x0555E30da8f98308EdB960aa94C0Db47230d2B9c"
-              },
-              "146": {
-                "tokenAddress": "0x0555E30da8f98308EdB960aa94C0Db47230d2B9c"
-              },
-              "747": {
-                "tokenAddress": "0x717DAE2BaF7656BE9a9B01deE31d571a9d4c9579"
+                "tokenAddress": "0x2492D0006411Af6C8bbb1c8afc1B0197350a79e9"
               },
               "999": {
-                "tokenAddress": "0x0555E30da8f98308EdB960aa94C0Db47230d2B9c"
-              },
-              "1329": {
-                "tokenAddress": "0x0555E30da8f98308EdB960aa94C0Db47230d2B9c"
+                "tokenAddress": "0x0aD339d66BF4AeD5ce31c64Bc37B3244b6394A77"
               },
               "1868": {
-                "tokenAddress": "0x0555E30da8f98308EdB960aa94C0Db47230d2B9c"
+                "tokenAddress": "0xb1b385542B6E80F77B94393Ba8342c3Af699f15c"
               },
               "8453": {
-                "tokenAddress": "0x0555E30da8f98308EdB960aa94C0Db47230d2B9c"
+                "tokenAddress": "0x35E5dB674D8e93a03d814FA0ADa70731efe8a4b9"
               },
-              "43114": {
-                "tokenAddress": "0x0555E30da8f98308EdB960aa94C0Db47230d2B9c"
-              },
-              "60808": {
-                "tokenAddress": "0x0555E30da8f98308EdB960aa94C0Db47230d2B9c"
+              "42161": {
+                "tokenAddress": "0x2492D0006411Af6C8bbb1c8afc1B0197350a79e9"
               },
               "80094": {
-                "tokenAddress": "0x0555E30da8f98308EdB960aa94C0Db47230d2B9c"
+                "tokenAddress": "0x2492D0006411Af6C8bbb1c8afc1B0197350a79e9"
               }
             },
-            "oftAdapter": "0x0555E30da8f98308EdB960aa94C0Db47230d2B9c",
+            "oftAdapter": "0xb1b385542B6E80F77B94393Ba8342c3Af699f15c",
             "oftVersion": 3,
             "endpointVersion": 2,
-            "endpointId": 30335,
-            "oftSharedDecimals": 8
-          }
-        },
-        "isAcross": false,
-        "isOFT": true,
-        "source": "tokens"
-      }
-    },
-    "chainId": 1923,
-    "tokenAddress": "0x0555E30da8f98308EdB960aa94C0Db47230d2B9c",
-    "meetsMinimumLiquidity": false
-  },
-  {
-    "success": false,
-    "hasLiquidity": false,
-    "totalLiquidity": 0,
-    "pairsCount": 0,
-    "chainSupported": "swellchain",
-    "error": "HTTP 429",
-    "source": "geckoterminal",
-    "tokenObject": {
-      "chainId": 1923,
-      "address": "0x102d758f688a4C1C5a80b116bD945d4455460282",
-      "symbol": "USD₮0",
-      "originalToken": {
-        "chainId": 1923,
-        "address": "0x102d758f688a4C1C5a80b116bD945d4455460282",
-        "name": "Stargate USD₮0 (Bridged)",
-        "symbol": "USD₮0",
-        "decimals": 6,
-        "logoURI": "https://ethereum-optimism.github.io/data/USD%E2%82%AE0/logo.png",
-        "tags": [],
-        "extensions": {
-          "bridgeInfo": {
-            "42161": {
-              "tokenAddress": "0xFd086bC7CD5C481DCC9C85ebE478A1C0b69FCbb9"
-            }
-          },
-          "oftInfo": {
-            "peersInfo": {
-              "10": {
-                "tokenAddress": "0x01bFF41798a0BcF287b996046Ca68b395DbC1071"
-              },
-              "480": {
-                "tokenAddress": "0x102d758f688a4C1C5a80b116bD945d4455460282"
-              },
-              "1868": {
-                "tokenAddress": "0x102d758f688a4C1C5a80b116bD945d4455460282"
-              },
-              "8453": {
-                "tokenAddress": "0x102d758f688a4C1C5a80b116bD945d4455460282"
-              },
-              "34443": {
-                "tokenAddress": "0x102d758f688a4C1C5a80b116bD945d4455460282"
-              },
-              "7777777": {
-                "tokenAddress": "0x102d758f688a4C1C5a80b116bD945d4455460282"
-              }
-            },
-            "oftAdapter": "0x62cbBe71B58f648BeE45D2AFe5EC51c2fCac25b2",
-            "oftVersion": 3,
-            "endpointVersion": 2,
-            "endpointId": 30335,
+            "endpointId": 30377,
             "oftSharedDecimals": 6
           }
         },
@@ -321,8 +172,8 @@
         "source": "tokens"
       }
     },
-    "chainId": 1923,
-    "tokenAddress": "0x102d758f688a4C1C5a80b116bD945d4455460282",
+    "chainId": 239,
+    "tokenAddress": "0xb1b385542B6E80F77B94393Ba8342c3Af699f15c",
     "meetsMinimumLiquidity": false
   },
   {
@@ -330,30 +181,111 @@
     "hasLiquidity": false,
     "totalLiquidity": 0,
     "pairsCount": 0,
-    "chainSupported": "swellchain",
+    "chainSupported": "tac",
     "error": "HTTP 429",
     "source": "geckoterminal",
     "tokenObject": {
-      "chainId": 1923,
-      "address": "0x4200000000000000000000000000000000000006",
-      "symbol": "WETH",
+      "chainId": 239,
+      "address": "0xB63B9f0eb4A6E6f191529D71d4D88cc8900Df2C9",
+      "symbol": "WTAC",
       "originalToken": {
-        "chainId": 1923,
-        "globalAddress": "0xD3A4608982Be16c20561cEAe37146C660C44700c",
-        "localAddress": {
-          "1923": "0xCc74BDF637fAAA6717270E2491b274B158bC5ea9"
-        },
-        "underlyingAddress": "0x4200000000000000000000000000000000000006",
-        "name": "Wrapped Ether",
-        "symbol": "WETH",
+        "chainId": 239,
+        "address": "0xB63B9f0eb4A6E6f191529D71d4D88cc8900Df2C9",
+        "name": "Wrapped TAC",
+        "symbol": "WTAC",
         "decimals": 18,
-        "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/c6108b1a2708c01a8c637b80e0f69e77085d4174/blockchains/ethereum/assets/0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2/logo.png",
-        "extensions": {},
+        "logoURI": "https://meta.tac.build/ft/image/0xB63B9f0eb4A6E6f191529D71d4D88cc8900Df2C9",
+        "isAcross": false,
+        "isOFT": false,
         "source": "tokens"
       }
     },
-    "chainId": 1923,
-    "tokenAddress": "0x4200000000000000000000000000000000000006",
+    "chainId": 239,
+    "tokenAddress": "0xB63B9f0eb4A6E6f191529D71d4D88cc8900Df2C9",
+    "meetsMinimumLiquidity": false
+  },
+  {
+    "success": false,
+    "hasLiquidity": false,
+    "totalLiquidity": 0,
+    "pairsCount": 0,
+    "chainSupported": "gravity-alpha",
+    "error": "HTTP 429",
+    "source": "geckoterminal",
+    "tokenObject": {
+      "chainId": 1625,
+      "address": "0xFbDa5F676cB37624f28265A144A48B0d6e87d3b6",
+      "symbol": "USDC",
+      "originalToken": {
+        "chainId": 1625,
+        "address": "0xFbDa5F676cB37624f28265A144A48B0d6e87d3b6",
+        "name": "USD Coin",
+        "symbol": "USDC",
+        "decimals": 6,
+        "logoURI": "https://raw.githubusercontent.com/CamelotLabs/default-token-list/refs/heads/main/src/assets/usdc.svg",
+        "isAcross": false,
+        "isOFT": false,
+        "source": "tokens"
+      }
+    },
+    "chainId": 1625,
+    "tokenAddress": "0xFbDa5F676cB37624f28265A144A48B0d6e87d3b6",
+    "meetsMinimumLiquidity": false
+  },
+  {
+    "success": false,
+    "hasLiquidity": false,
+    "totalLiquidity": 0,
+    "pairsCount": 0,
+    "chainSupported": "gravity-alpha",
+    "error": "HTTP 429",
+    "source": "geckoterminal",
+    "tokenObject": {
+      "chainId": 1625,
+      "address": "0xc314b8637B05A294Ae9D9C29300d5f667c748baD",
+      "symbol": "atETH",
+      "originalToken": {
+        "chainId": 1625,
+        "address": "0xc314b8637B05A294Ae9D9C29300d5f667c748baD",
+        "name": "Latch staked ETH",
+        "symbol": "atETH",
+        "decimals": 18,
+        "logoURI": "https://raw.githubusercontent.com/CamelotLabs/default-token-list/refs/heads/main/src/assets/ateth.svg",
+        "isAcross": false,
+        "isOFT": false,
+        "source": "tokens"
+      }
+    },
+    "chainId": 1625,
+    "tokenAddress": "0xc314b8637B05A294Ae9D9C29300d5f667c748baD",
+    "meetsMinimumLiquidity": false
+  },
+  {
+    "success": false,
+    "hasLiquidity": false,
+    "totalLiquidity": 0,
+    "pairsCount": 0,
+    "chainSupported": "gravity-alpha",
+    "error": "HTTP 429",
+    "source": "geckoterminal",
+    "tokenObject": {
+      "chainId": 1625,
+      "address": "0xf6f832466Cd6C21967E0D954109403f36Bc8ceaA",
+      "symbol": "wETH",
+      "originalToken": {
+        "chainId": 1625,
+        "address": "0xf6f832466Cd6C21967E0D954109403f36Bc8ceaA",
+        "name": "Wrapped Ether",
+        "symbol": "wETH",
+        "decimals": 18,
+        "logoURI": "https://raw.githubusercontent.com/CamelotLabs/default-token-list/refs/heads/main/src/assets/weth.svg",
+        "isAcross": false,
+        "isOFT": false,
+        "source": "tokens"
+      }
+    },
+    "chainId": 1625,
+    "tokenAddress": "0xf6f832466Cd6C21967E0D954109403f36Bc8ceaA",
     "meetsMinimumLiquidity": false
   },
   {
@@ -396,6 +328,9 @@
               "59144": {
                 "tokenAddress": "0xB1Fe27b32fFb5CE54E272C096547F1e86c19e72F"
               },
+              "80094": {
+                "tokenAddress": "0x850CDF416668210ED0c36bfFF5d21921C7adA3b8"
+              },
               "534352": {
                 "tokenAddress": "0x89f17aB70cAFB1468D633056161573efEfeA0713"
               }
@@ -414,6 +349,35 @@
     },
     "chainId": 1923,
     "tokenAddress": "0x18d33689AE5d02649a859A1CF16c9f0563975258",
+    "meetsMinimumLiquidity": false
+  },
+  {
+    "success": false,
+    "hasLiquidity": false,
+    "totalLiquidity": 0,
+    "pairsCount": 0,
+    "chainSupported": "swellchain",
+    "error": "HTTP 429",
+    "source": "geckoterminal",
+    "tokenObject": {
+      "chainId": 1923,
+      "address": "0x3d63825B0d8669307366E6c8202f656b9E91D368",
+      "symbol": "WGC",
+      "originalToken": {
+        "chainId": 1923,
+        "address": "0x3d63825B0d8669307366E6c8202f656b9E91D368",
+        "name": "Wild Goat Coin",
+        "symbol": "WGC",
+        "decimals": 6,
+        "logoURI": "https://assets.coingecko.com/coins/images/37966/standard/COIN_200x200.png?1716778831",
+        "tags": [],
+        "extensions": {},
+        "isAcross": false,
+        "source": "tokens"
+      }
+    },
+    "chainId": 1923,
+    "tokenAddress": "0x3d63825B0d8669307366E6c8202f656b9E91D368",
     "meetsMinimumLiquidity": false
   },
   {
@@ -446,42 +410,6 @@
             "peersInfo": {
               "1": {
                 "tokenAddress": "0x4c9EDD5852cd905f086C759E8383e09bff1E68B3"
-              },
-              "10": {
-                "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
-              },
-              "56": {
-                "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
-              },
-              "169": {
-                "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
-              },
-              "252": {
-                "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
-              },
-              "1088": {
-                "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
-              },
-              "5000": {
-                "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
-              },
-              "8453": {
-                "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
-              },
-              "34443": {
-                "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
-              },
-              "42161": {
-                "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
-              },
-              "59144": {
-                "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
-              },
-              "81457": {
-                "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
-              },
-              "534352": {
-                "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
               }
             },
             "oftAdapter": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34",
@@ -525,30 +453,45 @@
             "1": {
               "tokenAddress": "0x6A9A65B84843F5fD4aC9a0471C4fc11AFfFBce4a"
             }
-          },
-          "oftInfo": {
-            "peersInfo": {
-              "1": {
-                "tokenAddress": "0x6A9A65B84843F5fD4aC9a0471C4fc11AFfFBce4a"
-              },
-              "56": {
-                "tokenAddress": "0x6A9A65B84843F5fD4aC9a0471C4fc11AFfFBce4a"
-              }
-            },
-            "oftAdapter": "0xaa0D222436152050501E91DC07A45b1112f8b60f",
-            "oftVersion": 3,
-            "endpointVersion": 2,
-            "endpointId": 30335,
-            "oftSharedDecimals": 6
           }
         },
         "isAcross": false,
-        "isOFT": true,
         "source": "tokens"
       }
     },
     "chainId": 1923,
     "tokenAddress": "0x6A9A65B84843F5fD4aC9a0471C4fc11AFfFBce4a",
+    "meetsMinimumLiquidity": false
+  },
+  {
+    "success": false,
+    "hasLiquidity": false,
+    "totalLiquidity": 0,
+    "pairsCount": 0,
+    "chainSupported": "swellchain",
+    "error": "HTTP 429",
+    "source": "geckoterminal",
+    "tokenObject": {
+      "chainId": 1923,
+      "address": "0x4200000000000000000000000000000000000006",
+      "symbol": "WETH",
+      "originalToken": {
+        "chainId": 1923,
+        "globalAddress": "0xD3A4608982Be16c20561cEAe37146C660C44700c",
+        "localAddress": {
+          "1923": "0xCc74BDF637fAAA6717270E2491b274B158bC5ea9"
+        },
+        "underlyingAddress": "0x4200000000000000000000000000000000000006",
+        "name": "Wrapped Ether",
+        "symbol": "WETH",
+        "decimals": 18,
+        "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/c6108b1a2708c01a8c637b80e0f69e77085d4174/blockchains/ethereum/assets/0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2/logo.png",
+        "extensions": {},
+        "source": "tokens"
+      }
+    },
+    "chainId": 1923,
+    "tokenAddress": "0x4200000000000000000000000000000000000006",
     "meetsMinimumLiquidity": false
   },
   {
@@ -581,9 +524,6 @@
             "peersInfo": {
               "1": {
                 "tokenAddress": "0xd9Fcd98c322942075A5C3860693e9f4f03AAE07b"
-              },
-              "8453": {
-                "tokenAddress": "0xa153Ad732F831a79b5575Fa02e793EC4E99181b0"
               }
             },
             "oftAdapter": "0xD0148dDB69f4d8182Ef863d6f81ED6519D8c83a2",
@@ -600,6 +540,131 @@
     },
     "chainId": 1923,
     "tokenAddress": "0x80ccFBec4b8c82265abdc226Ad3Df84C0726E7A3",
+    "meetsMinimumLiquidity": false
+  },
+  {
+    "success": false,
+    "hasLiquidity": false,
+    "totalLiquidity": 0,
+    "pairsCount": 0,
+    "chainSupported": "swellchain",
+    "error": "HTTP 429",
+    "source": "geckoterminal",
+    "tokenObject": {
+      "chainId": 1923,
+      "address": "0x9ab96A4668456896d45c301Bc3A15Cee76AA7B8D",
+      "symbol": "rUSDC",
+      "originalToken": {
+        "chainId": 1923,
+        "address": "0x9ab96A4668456896d45c301Bc3A15Cee76AA7B8D",
+        "name": "Relend Network USDC",
+        "symbol": "rUSDC",
+        "decimals": 6,
+        "logoURI": "https://icons-ckg.pages.dev/stargate-light/tokens/rusdc.svg",
+        "tags": [],
+        "extensions": {},
+        "isAcross": false,
+        "source": "tokens"
+      }
+    },
+    "chainId": 1923,
+    "tokenAddress": "0x9ab96A4668456896d45c301Bc3A15Cee76AA7B8D",
+    "meetsMinimumLiquidity": false
+  },
+  {
+    "success": false,
+    "hasLiquidity": false,
+    "totalLiquidity": 0,
+    "pairsCount": 0,
+    "chainSupported": "swellchain",
+    "error": "HTTP 429",
+    "source": "geckoterminal",
+    "tokenObject": {
+      "chainId": 1923,
+      "address": "0xc3eACf0612346366Db554C991D7858716db09f58",
+      "symbol": "rsETH",
+      "originalToken": {
+        "chainId": 1923,
+        "address": "0xc3eACf0612346366Db554C991D7858716db09f58",
+        "name": "KelpDao Restaked ETH",
+        "symbol": "rsETH",
+        "decimals": 18,
+        "logoURI": "https://icons-ckg.pages.dev/stargate-light/tokens/rseth.svg",
+        "tags": [],
+        "extensions": {
+          "bridgeInfo": {
+            "1": {
+              "tokenAddress": "0xA1290d69c65A6Fe4DF752f95823fae25cB99e5A7"
+            }
+          },
+          "oftInfo": {
+            "peersInfo": {
+              "1": {
+                "tokenAddress": "0xA1290d69c65A6Fe4DF752f95823fae25cB99e5A7"
+              }
+            },
+            "oftAdapter": "0xc3eACf0612346366Db554C991D7858716db09f58",
+            "oftVersion": 3,
+            "endpointVersion": 2,
+            "endpointId": 30335,
+            "oftSharedDecimals": 6
+          }
+        },
+        "isAcross": false,
+        "isOFT": true,
+        "source": "tokens"
+      }
+    },
+    "chainId": 1923,
+    "tokenAddress": "0xc3eACf0612346366Db554C991D7858716db09f58",
+    "meetsMinimumLiquidity": false
+  },
+  {
+    "success": false,
+    "hasLiquidity": false,
+    "totalLiquidity": 0,
+    "pairsCount": 0,
+    "chainSupported": "swellchain",
+    "error": "HTTP 429",
+    "source": "geckoterminal",
+    "tokenObject": {
+      "chainId": 1923,
+      "address": "0xf6718b2701D4a6498eF77D7c152b2137Ab28b8A3",
+      "symbol": "stBTC",
+      "originalToken": {
+        "chainId": 1923,
+        "address": "0xf6718b2701D4a6498eF77D7c152b2137Ab28b8A3",
+        "name": "Lorenzo stBTC",
+        "symbol": "stBTC",
+        "decimals": 18,
+        "logoURI": "https://icons-ckg.pages.dev/stargate-light/tokens/stbtc.svg",
+        "tags": [],
+        "extensions": {
+          "bridgeInfo": {
+            "1": {
+              "tokenAddress": "0xf6718b2701D4a6498eF77D7c152b2137Ab28b8A3"
+            }
+          },
+          "oftInfo": {
+            "peersInfo": {
+              "56": {
+                "tokenAddress": "0xf6718b2701D4a6498eF77D7c152b2137Ab28b8A3"
+              }
+            },
+            "oftAdapter": "0xbcE9988376C6b9c0c035bdbc9060568031d51130",
+            "oftVersion": 3,
+            "endpointVersion": 2,
+            "endpointId": 30335,
+            "oftSharedDecimals": 6
+          }
+        },
+        "isAcross": false,
+        "isOFT": true,
+        "source": "tokens"
+      }
+    },
+    "chainId": 1923,
+    "tokenAddress": "0xf6718b2701D4a6498eF77D7c152b2137Ab28b8A3",
     "meetsMinimumLiquidity": false
   },
   {
@@ -685,132 +750,6 @@
     "hasLiquidity": false,
     "totalLiquidity": 0,
     "pairsCount": 0,
-    "chainSupported": "swellchain",
-    "error": "HTTP 429",
-    "source": "geckoterminal",
-    "tokenObject": {
-      "chainId": 1923,
-      "address": "0xc3eACf0612346366Db554C991D7858716db09f58",
-      "symbol": "rsETH",
-      "originalToken": {
-        "chainId": 1923,
-        "address": "0xc3eACf0612346366Db554C991D7858716db09f58",
-        "name": "KelpDao Restaked ETH",
-        "symbol": "rsETH",
-        "decimals": 18,
-        "logoURI": "https://icons-ckg.pages.dev/stargate-light/tokens/rseth.svg",
-        "tags": [],
-        "extensions": {
-          "bridgeInfo": {
-            "1": {
-              "tokenAddress": "0xA1290d69c65A6Fe4DF752f95823fae25cB99e5A7"
-            }
-          },
-          "oftInfo": {
-            "peersInfo": {
-              "1": {
-                "tokenAddress": "0xA1290d69c65A6Fe4DF752f95823fae25cB99e5A7"
-              },
-              "10": {
-                "tokenAddress": "0x4186BFC76E2E237523CBC30FD220FE055156b41F"
-              },
-              "169": {
-                "tokenAddress": "0x4186BFC76E2E237523CBC30FD220FE055156b41F"
-              },
-              "8453": {
-                "tokenAddress": "0x1Bc71130A0e39942a7658878169764Bbd8A45993"
-              },
-              "34443": {
-                "tokenAddress": "0x4186BFC76E2E237523CBC30FD220FE055156b41F"
-              },
-              "42161": {
-                "tokenAddress": "0x4186BFC76E2E237523CBC30FD220FE055156b41F"
-              },
-              "43111": {
-                "tokenAddress": "0xc3eACf0612346366Db554C991D7858716db09f58"
-              },
-              "59144": {
-                "tokenAddress": "0x4186BFC76E2E237523CBC30FD220FE055156b41F"
-              },
-              "81457": {
-                "tokenAddress": "0x4186BFC76E2E237523CBC30FD220FE055156b41F"
-              },
-              "534352": {
-                "tokenAddress": "0x65421ba909200b81640d98B979d07487C9781B66"
-              }
-            },
-            "oftAdapter": "0xc3eACf0612346366Db554C991D7858716db09f58",
-            "oftVersion": 3,
-            "endpointVersion": 2,
-            "endpointId": 30335,
-            "oftSharedDecimals": 6
-          }
-        },
-        "isAcross": false,
-        "isOFT": true,
-        "source": "tokens"
-      }
-    },
-    "chainId": 1923,
-    "tokenAddress": "0xc3eACf0612346366Db554C991D7858716db09f58",
-    "meetsMinimumLiquidity": false
-  },
-  {
-    "success": false,
-    "hasLiquidity": false,
-    "totalLiquidity": 0,
-    "pairsCount": 0,
-    "chainSupported": "swellchain",
-    "error": "HTTP 429",
-    "source": "geckoterminal",
-    "tokenObject": {
-      "chainId": 1923,
-      "address": "0xf6718b2701D4a6498eF77D7c152b2137Ab28b8A3",
-      "symbol": "stBTC",
-      "originalToken": {
-        "chainId": 1923,
-        "address": "0xf6718b2701D4a6498eF77D7c152b2137Ab28b8A3",
-        "name": "Lorenzo stBTC",
-        "symbol": "stBTC",
-        "decimals": 18,
-        "logoURI": "https://icons-ckg.pages.dev/stargate-light/tokens/stbtc.svg",
-        "tags": [],
-        "extensions": {
-          "bridgeInfo": {
-            "1": {
-              "tokenAddress": "0xf6718b2701D4a6498eF77D7c152b2137Ab28b8A3"
-            }
-          },
-          "oftInfo": {
-            "peersInfo": {
-              "1": {
-                "tokenAddress": "0xf6718b2701D4a6498eF77D7c152b2137Ab28b8A3"
-              },
-              "56": {
-                "tokenAddress": "0xf6718b2701D4a6498eF77D7c152b2137Ab28b8A3"
-              }
-            },
-            "oftAdapter": "0xbcE9988376C6b9c0c035bdbc9060568031d51130",
-            "oftVersion": 3,
-            "endpointVersion": 2,
-            "endpointId": 30335,
-            "oftSharedDecimals": 6
-          }
-        },
-        "isAcross": false,
-        "isOFT": true,
-        "source": "tokens"
-      }
-    },
-    "chainId": 1923,
-    "tokenAddress": "0xf6718b2701D4a6498eF77D7c152b2137Ab28b8A3",
-    "meetsMinimumLiquidity": false
-  },
-  {
-    "success": false,
-    "hasLiquidity": false,
-    "totalLiquidity": 0,
-    "pairsCount": 0,
     "chainSupported": "sanko-mainnet",
     "error": "HTTP 429",
     "source": "geckoterminal",
@@ -870,106 +809,6 @@
     "hasLiquidity": false,
     "totalLiquidity": 0,
     "pairsCount": 0,
-    "chainSupported": "sanko-mainnet",
-    "error": "HTTP 429",
-    "source": "geckoterminal",
-    "tokenObject": {
-      "chainId": 1996,
-      "address": "0xaAA55490721b72A3112323FC274e9798796CcE85",
-      "symbol": "orbETH",
-      "originalToken": {
-        "chainId": 1996,
-        "address": "0xaAA55490721b72A3112323FC274e9798796CcE85",
-        "name": "Orbit ETH OFT",
-        "symbol": "orbETH",
-        "decimals": 18,
-        "logoURI": "https://assets.coingecko.com/coins/images/54981/standard/orbETH-token_icon.png?1743026013",
-        "tags": [],
-        "extensions": {
-          "oftInfo": {
-            "peersInfo": {
-              "33139": {
-                "tokenAddress": "0xaAA55490721b72A3112323FC274e9798796CcE85"
-              },
-              "42161": {
-                "tokenAddress": "0xcF6C2bb97a8978321C9e207afE8A2037fa9be45C"
-              },
-              "55244": {
-                "tokenAddress": "0xCeE9B58C2CDB01b8bf75a27e96Ec09Bf885ef55a"
-              }
-            },
-            "oftAdapter": "0xaAA55490721b72A3112323FC274e9798796CcE85",
-            "oftVersion": 3,
-            "endpointVersion": 2,
-            "endpointId": 30278,
-            "oftSharedDecimals": 6
-          }
-        },
-        "isAcross": false,
-        "isOFT": true,
-        "source": "tokens"
-      }
-    },
-    "chainId": 1996,
-    "tokenAddress": "0xaAA55490721b72A3112323FC274e9798796CcE85",
-    "meetsMinimumLiquidity": false
-  },
-  {
-    "success": false,
-    "hasLiquidity": false,
-    "totalLiquidity": 0,
-    "pairsCount": 0,
-    "chainSupported": "goat",
-    "error": "HTTP 429",
-    "source": "geckoterminal",
-    "tokenObject": {
-      "chainId": 2345,
-      "address": "0x6A9A65B84843F5fD4aC9a0471C4fc11AFfFBce4a",
-      "symbol": "enzoBTC",
-      "originalToken": {
-        "chainId": 2345,
-        "address": "0x6A9A65B84843F5fD4aC9a0471C4fc11AFfFBce4a",
-        "name": "Lorenzo Wrapped Bitcoin",
-        "symbol": "enzoBTC",
-        "decimals": 8,
-        "logoURI": "https://icons-ckg.pages.dev/stargate-light/tokens/enzobtc.svg",
-        "tags": [],
-        "extensions": {
-          "bridgeInfo": {
-            "1": {
-              "tokenAddress": "0x6A9A65B84843F5fD4aC9a0471C4fc11AFfFBce4a"
-            }
-          },
-          "oftInfo": {
-            "peersInfo": {
-              "1": {
-                "tokenAddress": "0x6A9A65B84843F5fD4aC9a0471C4fc11AFfFBce4a"
-              },
-              "56": {
-                "tokenAddress": "0x6A9A65B84843F5fD4aC9a0471C4fc11AFfFBce4a"
-              }
-            },
-            "oftAdapter": "0xaa0D222436152050501E91DC07A45b1112f8b60f",
-            "oftVersion": 3,
-            "endpointVersion": 2,
-            "endpointId": 30361,
-            "oftSharedDecimals": 6
-          }
-        },
-        "isAcross": false,
-        "isOFT": true,
-        "source": "tokens"
-      }
-    },
-    "chainId": 2345,
-    "tokenAddress": "0x6A9A65B84843F5fD4aC9a0471C4fc11AFfFBce4a",
-    "meetsMinimumLiquidity": false
-  },
-  {
-    "success": false,
-    "hasLiquidity": false,
-    "totalLiquidity": 0,
-    "pairsCount": 0,
     "chainSupported": "goat",
     "error": "HTTP 429",
     "source": "geckoterminal",
@@ -991,141 +830,6 @@
     },
     "chainId": 2345,
     "tokenAddress": "0xbC10000000000000000000000000000000000000",
-    "meetsMinimumLiquidity": false
-  },
-  {
-    "success": false,
-    "hasLiquidity": false,
-    "totalLiquidity": 0,
-    "pairsCount": 0,
-    "chainSupported": "morph-l2",
-    "error": "HTTP 429",
-    "source": "geckoterminal",
-    "tokenObject": {
-      "chainId": 2818,
-      "address": "0x6A9A65B84843F5fD4aC9a0471C4fc11AFfFBce4a",
-      "symbol": "enzoBTC",
-      "originalToken": {
-        "chainId": 2818,
-        "address": "0x6A9A65B84843F5fD4aC9a0471C4fc11AFfFBce4a",
-        "name": "Lorenzo Wrapped Bitcoin",
-        "symbol": "enzoBTC",
-        "decimals": 8,
-        "logoURI": "https://icons-ckg.pages.dev/stargate-light/tokens/enzobtc.svg",
-        "tags": [],
-        "extensions": {
-          "bridgeInfo": {
-            "1": {
-              "tokenAddress": "0x6A9A65B84843F5fD4aC9a0471C4fc11AFfFBce4a"
-            }
-          },
-          "oftInfo": {
-            "peersInfo": {
-              "1": {
-                "tokenAddress": "0x6A9A65B84843F5fD4aC9a0471C4fc11AFfFBce4a"
-              },
-              "56": {
-                "tokenAddress": "0x6A9A65B84843F5fD4aC9a0471C4fc11AFfFBce4a"
-              }
-            },
-            "oftAdapter": "0xaa0D222436152050501E91DC07A45b1112f8b60f",
-            "oftVersion": 3,
-            "endpointVersion": 2,
-            "endpointId": 30322,
-            "oftSharedDecimals": 6
-          }
-        },
-        "isAcross": false,
-        "isOFT": true,
-        "source": "tokens"
-      }
-    },
-    "chainId": 2818,
-    "tokenAddress": "0x6A9A65B84843F5fD4aC9a0471C4fc11AFfFBce4a",
-    "meetsMinimumLiquidity": false
-  },
-  {
-    "success": false,
-    "hasLiquidity": false,
-    "totalLiquidity": 0,
-    "pairsCount": 0,
-    "chainSupported": "morph-l2",
-    "error": "HTTP 429",
-    "source": "geckoterminal",
-    "tokenObject": {
-      "chainId": 2818,
-      "address": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34",
-      "symbol": "USDe",
-      "originalToken": {
-        "chainId": 2818,
-        "address": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34",
-        "name": "USDe",
-        "symbol": "USDe",
-        "decimals": 18,
-        "logoURI": "https://icons-ckg.pages.dev/stargate-light/tokens/usde.svg",
-        "tags": [],
-        "extensions": {
-          "bridgeInfo": {
-            "1": {
-              "tokenAddress": "0x4c9EDD5852cd905f086C759E8383e09bff1E68B3"
-            }
-          },
-          "oftInfo": {
-            "peersInfo": {
-              "1": {
-                "tokenAddress": "0x4c9EDD5852cd905f086C759E8383e09bff1E68B3"
-              },
-              "10": {
-                "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
-              },
-              "56": {
-                "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
-              },
-              "169": {
-                "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
-              },
-              "252": {
-                "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
-              },
-              "1088": {
-                "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
-              },
-              "5000": {
-                "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
-              },
-              "8453": {
-                "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
-              },
-              "34443": {
-                "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
-              },
-              "42161": {
-                "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
-              },
-              "59144": {
-                "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
-              },
-              "81457": {
-                "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
-              },
-              "534352": {
-                "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
-              }
-            },
-            "oftAdapter": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34",
-            "oftVersion": 3,
-            "endpointVersion": 2,
-            "endpointId": 30322,
-            "oftSharedDecimals": 6
-          }
-        },
-        "isAcross": false,
-        "isOFT": true,
-        "source": "tokens"
-      }
-    },
-    "chainId": 2818,
-    "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34",
     "meetsMinimumLiquidity": false
   },
   {
@@ -1186,6 +890,57 @@
     "hasLiquidity": false,
     "totalLiquidity": 0,
     "pairsCount": 0,
+    "chainSupported": "goat",
+    "error": "HTTP 429",
+    "source": "geckoterminal",
+    "tokenObject": {
+      "chainId": 2345,
+      "address": "0x6A9A65B84843F5fD4aC9a0471C4fc11AFfFBce4a",
+      "symbol": "enzoBTC",
+      "originalToken": {
+        "chainId": 2345,
+        "address": "0x6A9A65B84843F5fD4aC9a0471C4fc11AFfFBce4a",
+        "name": "Lorenzo Wrapped Bitcoin",
+        "symbol": "enzoBTC",
+        "decimals": 8,
+        "logoURI": "https://icons-ckg.pages.dev/stargate-light/tokens/enzobtc.svg",
+        "tags": [],
+        "extensions": {
+          "bridgeInfo": {
+            "1": {
+              "tokenAddress": "0x6A9A65B84843F5fD4aC9a0471C4fc11AFfFBce4a"
+            }
+          },
+          "oftInfo": {
+            "peersInfo": {
+              "1": {
+                "tokenAddress": "0x6A9A65B84843F5fD4aC9a0471C4fc11AFfFBce4a"
+              },
+              "56": {
+                "tokenAddress": "0x6A9A65B84843F5fD4aC9a0471C4fc11AFfFBce4a"
+              }
+            },
+            "oftAdapter": "0xaa0D222436152050501E91DC07A45b1112f8b60f",
+            "oftVersion": 3,
+            "endpointVersion": 2,
+            "endpointId": 30361,
+            "oftSharedDecimals": 6
+          }
+        },
+        "isAcross": false,
+        "isOFT": true,
+        "source": "tokens"
+      }
+    },
+    "chainId": 2345,
+    "tokenAddress": "0x6A9A65B84843F5fD4aC9a0471C4fc11AFfFBce4a",
+    "meetsMinimumLiquidity": false
+  },
+  {
+    "success": false,
+    "hasLiquidity": false,
+    "totalLiquidity": 0,
+    "pairsCount": 0,
     "chainSupported": "morph-l2",
     "error": "HTTP 429",
     "source": "geckoterminal",
@@ -1207,6 +962,54 @@
     },
     "chainId": 2818,
     "tokenAddress": "0x5300000000000000000000000000000000000011",
+    "meetsMinimumLiquidity": false
+  },
+  {
+    "success": false,
+    "hasLiquidity": false,
+    "totalLiquidity": 0,
+    "pairsCount": 0,
+    "chainSupported": "morph-l2",
+    "error": "HTTP 429",
+    "source": "geckoterminal",
+    "tokenObject": {
+      "chainId": 2818,
+      "address": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34",
+      "symbol": "USDe",
+      "originalToken": {
+        "chainId": 2818,
+        "address": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34",
+        "name": "USDe",
+        "symbol": "USDe",
+        "decimals": 18,
+        "logoURI": "https://icons-ckg.pages.dev/stargate-light/tokens/usde.svg",
+        "tags": [],
+        "extensions": {
+          "bridgeInfo": {
+            "1": {
+              "tokenAddress": "0x4c9EDD5852cd905f086C759E8383e09bff1E68B3"
+            }
+          },
+          "oftInfo": {
+            "peersInfo": {
+              "1": {
+                "tokenAddress": "0x4c9EDD5852cd905f086C759E8383e09bff1E68B3"
+              }
+            },
+            "oftAdapter": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34",
+            "oftVersion": 3,
+            "endpointVersion": 2,
+            "endpointId": 30322,
+            "oftSharedDecimals": 6
+          }
+        },
+        "isAcross": false,
+        "isOFT": true,
+        "source": "tokens"
+      }
+    },
+    "chainId": 2818,
+    "tokenAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34",
     "meetsMinimumLiquidity": false
   },
   {
@@ -1297,6 +1100,144 @@
     "source": "geckoterminal",
     "tokenObject": {
       "chainId": 2818,
+      "address": "0xe7cd86e13AC4309349F30B3435a9d337750fC82D",
+      "symbol": "USDT0",
+      "originalToken": {
+        "chainId": 2818,
+        "address": "0xe7cd86e13AC4309349F30B3435a9d337750fC82D",
+        "name": "USDT0",
+        "symbol": "USDT0",
+        "decimals": 6,
+        "logoURI": "https://icons-ckg.pages.dev/stargate-light/tokens/usdt0.svg",
+        "tags": [],
+        "extensions": {
+          "bridgeInfo": {
+            "1": {
+              "tokenAddress": "0xdAC17F958D2ee523a2206206994597C13D831ec7"
+            }
+          },
+          "oftInfo": {
+            "peersInfo": {
+              "1": {
+                "tokenAddress": "0xdAC17F958D2ee523a2206206994597C13D831ec7"
+              },
+              "10": {
+                "tokenAddress": "0x01bFF41798a0BcF287b996046Ca68b395DbC1071"
+              },
+              "14": {
+                "tokenAddress": "0xe7cd86e13AC4309349F30B3435a9d337750fC82D"
+              },
+              "30": {
+                "tokenAddress": "0x779Ded0c9e1022225f8E0630b35a9b54bE713736"
+              },
+              "130": {
+                "tokenAddress": "0x9151434b16b9763660705744891fA906F660EcC5"
+              },
+              "137": {
+                "tokenAddress": "0xc2132D05D31c914a87C6611C10748AEb04B58e8F"
+              },
+              "143": {
+                "tokenAddress": "0xe7cd86e13AC4309349F30B3435a9d337750fC82D"
+              },
+              "999": {
+                "tokenAddress": "0xB8CE59FC3717ada4C02eaDF9682A9e934F625ebb"
+              },
+              "1329": {
+                "tokenAddress": "0x9151434b16b9763660705744891fA906F660EcC5"
+              },
+              "5000": {
+                "tokenAddress": "0x779Ded0c9e1022225f8E0630b35a9b54bE713736"
+              },
+              "9745": {
+                "tokenAddress": "0xB8CE59FC3717ada4C02eaDF9682A9e934F625ebb"
+              },
+              "42161": {
+                "tokenAddress": "0xFd086bC7CD5C481DCC9C85ebE478A1C0b69FCbb9"
+              },
+              "57073": {
+                "tokenAddress": "0x0200C29006150606B650577BBE7B6248F58470c1"
+              },
+              "80094": {
+                "tokenAddress": "0x779Ded0c9e1022225f8E0630b35a9b54bE713736"
+              }
+            },
+            "oftAdapter": "0xcb768e263FB1C62214E7cab4AA8d036D76dc59CC",
+            "oftVersion": 3,
+            "endpointVersion": 2,
+            "endpointId": 30322,
+            "oftSharedDecimals": 6
+          }
+        },
+        "isAcross": false,
+        "isOFT": true,
+        "source": "tokens"
+      }
+    },
+    "chainId": 2818,
+    "tokenAddress": "0xe7cd86e13AC4309349F30B3435a9d337750fC82D",
+    "meetsMinimumLiquidity": false
+  },
+  {
+    "success": false,
+    "hasLiquidity": false,
+    "totalLiquidity": 0,
+    "pairsCount": 0,
+    "chainSupported": "morph-l2",
+    "error": "HTTP 429",
+    "source": "geckoterminal",
+    "tokenObject": {
+      "chainId": 2818,
+      "address": "0x6A9A65B84843F5fD4aC9a0471C4fc11AFfFBce4a",
+      "symbol": "enzoBTC",
+      "originalToken": {
+        "chainId": 2818,
+        "address": "0x6A9A65B84843F5fD4aC9a0471C4fc11AFfFBce4a",
+        "name": "Lorenzo Wrapped Bitcoin",
+        "symbol": "enzoBTC",
+        "decimals": 8,
+        "logoURI": "https://icons-ckg.pages.dev/stargate-light/tokens/enzobtc.svg",
+        "tags": [],
+        "extensions": {
+          "bridgeInfo": {
+            "1": {
+              "tokenAddress": "0x6A9A65B84843F5fD4aC9a0471C4fc11AFfFBce4a"
+            }
+          },
+          "oftInfo": {
+            "peersInfo": {
+              "1": {
+                "tokenAddress": "0x6A9A65B84843F5fD4aC9a0471C4fc11AFfFBce4a"
+              },
+              "56": {
+                "tokenAddress": "0x6A9A65B84843F5fD4aC9a0471C4fc11AFfFBce4a"
+              }
+            },
+            "oftAdapter": "0xaa0D222436152050501E91DC07A45b1112f8b60f",
+            "oftVersion": 3,
+            "endpointVersion": 2,
+            "endpointId": 30322,
+            "oftSharedDecimals": 6
+          }
+        },
+        "isAcross": false,
+        "isOFT": true,
+        "source": "tokens"
+      }
+    },
+    "chainId": 2818,
+    "tokenAddress": "0x6A9A65B84843F5fD4aC9a0471C4fc11AFfFBce4a",
+    "meetsMinimumLiquidity": false
+  },
+  {
+    "success": false,
+    "hasLiquidity": false,
+    "totalLiquidity": 0,
+    "pairsCount": 0,
+    "chainSupported": "morph-l2",
+    "error": "HTTP 429",
+    "source": "geckoterminal",
+    "tokenObject": {
+      "chainId": 2818,
       "address": "0xff12470a969Dd362EB6595FFB44C82c959Fe9ACc",
       "symbol": "USDa",
       "originalToken": {
@@ -1338,6 +1279,54 @@
     },
     "chainId": 2818,
     "tokenAddress": "0xff12470a969Dd362EB6595FFB44C82c959Fe9ACc",
+    "meetsMinimumLiquidity": false
+  },
+  {
+    "success": false,
+    "hasLiquidity": false,
+    "totalLiquidity": 0,
+    "pairsCount": 0,
+    "chainSupported": "morph-l2",
+    "error": "HTTP 429",
+    "source": "geckoterminal",
+    "tokenObject": {
+      "chainId": 2818,
+      "address": "0xecAc9C5F704e954931349Da37F60E39f515c11c1",
+      "symbol": "LBTC",
+      "originalToken": {
+        "chainId": 2818,
+        "address": "0xecAc9C5F704e954931349Da37F60E39f515c11c1",
+        "name": "Lombard Staked Bitcoin",
+        "symbol": "LBTC",
+        "decimals": 8,
+        "logoURI": "https://icons-ckg.pages.dev/stargate-light/tokens/lbtc.svg",
+        "tags": [],
+        "extensions": {
+          "bridgeInfo": {
+            "1": {
+              "tokenAddress": "0x8236a87084f8B84306f72007F36F2618A5634494"
+            }
+          },
+          "oftInfo": {
+            "peersInfo": {
+              "1": {
+                "tokenAddress": "0x8236a87084f8B84306f72007F36F2618A5634494"
+              }
+            },
+            "oftAdapter": "0x2e1871Fc8ac793dCf2A74Ce004eE21D913763565",
+            "oftVersion": 3,
+            "endpointVersion": 2,
+            "endpointId": 30322,
+            "oftSharedDecimals": 6
+          }
+        },
+        "isAcross": false,
+        "isOFT": true,
+        "source": "tokens"
+      }
+    },
+    "chainId": 2818,
+    "tokenAddress": "0xecAc9C5F704e954931349Da37F60E39f515c11c1",
     "meetsMinimumLiquidity": false
   },
   {
@@ -1402,6 +1391,59 @@
     "source": "geckoterminal",
     "tokenObject": {
       "chainId": 6900,
+      "address": "0x84f682626302EA7BCA2A7c338b84863292131319",
+      "symbol": "sUSDa",
+      "originalToken": {
+        "chainId": 6900,
+        "address": "0x84f682626302EA7BCA2A7c338b84863292131319",
+        "name": "USDa saving token",
+        "symbol": "sUSDa",
+        "decimals": 18,
+        "logoURI": "https://icons-ckg.pages.dev/stargate-light/tokens/susda.svg",
+        "tags": [],
+        "extensions": {
+          "coingeckoId": "susda",
+          "coinMarketCapId": 35538,
+          "bridgeInfo": {
+            "1": {
+              "tokenAddress": "0x2B66AAdE1e9C062FF411bd47C44E0Ad696d43BD9"
+            }
+          },
+          "oftInfo": {
+            "peersInfo": {
+              "1": {
+                "tokenAddress": "0x2B66AAdE1e9C062FF411bd47C44E0Ad696d43BD9"
+              },
+              "56": {
+                "tokenAddress": "0x73a325103935b0B5E7AA3acA6dba74AD22f82B03"
+              }
+            },
+            "oftAdapter": "0x84f682626302EA7BCA2A7c338b84863292131319",
+            "oftVersion": 3,
+            "endpointVersion": 2,
+            "endpointId": 30369,
+            "oftSharedDecimals": 6
+          }
+        },
+        "isAcross": false,
+        "isOFT": true,
+        "source": "tokens"
+      }
+    },
+    "chainId": 6900,
+    "tokenAddress": "0x84f682626302EA7BCA2A7c338b84863292131319",
+    "meetsMinimumLiquidity": false
+  },
+  {
+    "success": false,
+    "hasLiquidity": false,
+    "totalLiquidity": 0,
+    "pairsCount": 0,
+    "chainSupported": "nibiru",
+    "error": "HTTP 429",
+    "source": "geckoterminal",
+    "tokenObject": {
+      "chainId": 6900,
       "address": "0x1d1715ecE22A6Ab6349196e7054E61de3Ac2Ea3D",
       "symbol": "ynETHx",
       "originalToken": {
@@ -1441,107 +1483,6 @@
     },
     "chainId": 6900,
     "tokenAddress": "0x1d1715ecE22A6Ab6349196e7054E61de3Ac2Ea3D",
-    "meetsMinimumLiquidity": false
-  },
-  {
-    "success": false,
-    "hasLiquidity": false,
-    "totalLiquidity": 0,
-    "pairsCount": 0,
-    "chainSupported": "nibiru",
-    "error": "HTTP 429",
-    "source": "geckoterminal",
-    "tokenObject": {
-      "chainId": 6900,
-      "address": "0x9568F2AFd09D845D48Cf999244e18B1a9467eAdB",
-      "symbol": "cbBTC",
-      "originalToken": {
-        "chainId": 6900,
-        "address": "0x9568F2AFd09D845D48Cf999244e18B1a9467eAdB",
-        "name": "Coinbase Wrapped BTC",
-        "symbol": "cbBTC",
-        "decimals": 8,
-        "logoURI": "https://icons-ckg.pages.dev/stargate-light/tokens/cbbtc.svg",
-        "tags": [],
-        "extensions": {
-          "bridgeInfo": {
-            "1": {
-              "tokenAddress": "0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf"
-            }
-          },
-          "oftInfo": {
-            "peersInfo": {
-              "1": {
-                "tokenAddress": "0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf"
-              }
-            },
-            "oftAdapter": "0x9568F2AFd09D845D48Cf999244e18B1a9467eAdB",
-            "oftVersion": 3,
-            "endpointVersion": 2,
-            "endpointId": 30369,
-            "oftSharedDecimals": 6
-          }
-        },
-        "isAcross": false,
-        "isOFT": true,
-        "source": "tokens"
-      }
-    },
-    "chainId": 6900,
-    "tokenAddress": "0x9568F2AFd09D845D48Cf999244e18B1a9467eAdB",
-    "meetsMinimumLiquidity": false
-  },
-  {
-    "success": false,
-    "hasLiquidity": false,
-    "totalLiquidity": 0,
-    "pairsCount": 0,
-    "chainSupported": "nibiru",
-    "error": "HTTP 429",
-    "source": "geckoterminal",
-    "tokenObject": {
-      "chainId": 6900,
-      "address": "0xf4e097E36d2064E2bDCA96e60439f3A369522003",
-      "symbol": "USDa",
-      "originalToken": {
-        "chainId": 6900,
-        "address": "0xf4e097E36d2064E2bDCA96e60439f3A369522003",
-        "name": "USDa",
-        "symbol": "USDa",
-        "decimals": 18,
-        "logoURI": "https://icons-ckg.pages.dev/stargate-light/tokens/usda.svg",
-        "tags": [],
-        "extensions": {
-          "coingeckoId": "usda-2",
-          "coinMarketCapId": 35368,
-          "bridgeInfo": {
-            "1": {
-              "tokenAddress": "0x8A60E489004Ca22d775C5F2c657598278d17D9c2"
-            }
-          },
-          "oftInfo": {
-            "peersInfo": {
-              "1": {
-                "tokenAddress": "0x8A60E489004Ca22d775C5F2c657598278d17D9c2"
-              },
-              "56": {
-                "tokenAddress": "0x9356086146be5158E98aD827E21b5cF944699894"
-              }
-            },
-            "oftAdapter": "0xf4e097E36d2064E2bDCA96e60439f3A369522003",
-            "oftVersion": 3,
-            "endpointVersion": 2,
-            "endpointId": 30369,
-            "oftSharedDecimals": 6
-          }
-        },
-        "isAcross": false,
-        "isOFT": true,
-        "source": "tokens"
-      }
-    },
-    "chainId": 6900,
-    "tokenAddress": "0xf4e097E36d2064E2bDCA96e60439f3A369522003",
     "meetsMinimumLiquidity": false
   },
   {
@@ -1615,37 +1556,141 @@
     "hasLiquidity": false,
     "totalLiquidity": 0,
     "pairsCount": 0,
-    "chainSupported": "hemi",
+    "chainSupported": "nibiru",
     "error": "HTTP 429",
     "source": "geckoterminal",
     "tokenObject": {
-      "chainId": 43111,
-      "address": "0xf6718b2701D4a6498eF77D7c152b2137Ab28b8A3",
-      "symbol": "stBTC",
+      "chainId": 6900,
+      "address": "0xf4e097E36d2064E2bDCA96e60439f3A369522003",
+      "symbol": "USDa",
       "originalToken": {
-        "chainId": 43111,
-        "address": "0xf6718b2701D4a6498eF77D7c152b2137Ab28b8A3",
-        "name": "Lorenzo stBTC",
-        "symbol": "stBTC",
+        "chainId": 6900,
+        "address": "0xf4e097E36d2064E2bDCA96e60439f3A369522003",
+        "name": "USDa",
+        "symbol": "USDa",
         "decimals": 18,
-        "logoURI": "https://icons-ckg.pages.dev/stargate-light/tokens/stbtc.svg",
+        "logoURI": "https://icons-ckg.pages.dev/stargate-light/tokens/usda.svg",
         "tags": [],
         "extensions": {
+          "coingeckoId": "usda-2",
+          "coinMarketCapId": 35368,
           "bridgeInfo": {
             "1": {
-              "tokenAddress": "0xf6718b2701D4a6498eF77D7c152b2137Ab28b8A3"
+              "tokenAddress": "0x8A60E489004Ca22d775C5F2c657598278d17D9c2"
             }
           },
           "oftInfo": {
             "peersInfo": {
               "1": {
-                "tokenAddress": "0xf6718b2701D4a6498eF77D7c152b2137Ab28b8A3"
+                "tokenAddress": "0x8A60E489004Ca22d775C5F2c657598278d17D9c2"
               },
               "56": {
-                "tokenAddress": "0xf6718b2701D4a6498eF77D7c152b2137Ab28b8A3"
+                "tokenAddress": "0x9356086146be5158E98aD827E21b5cF944699894"
               }
             },
-            "oftAdapter": "0xbcE9988376C6b9c0c035bdbc9060568031d51130",
+            "oftAdapter": "0xf4e097E36d2064E2bDCA96e60439f3A369522003",
+            "oftVersion": 3,
+            "endpointVersion": 2,
+            "endpointId": 30369,
+            "oftSharedDecimals": 6
+          }
+        },
+        "isAcross": false,
+        "isOFT": true,
+        "source": "tokens"
+      }
+    },
+    "chainId": 6900,
+    "tokenAddress": "0xf4e097E36d2064E2bDCA96e60439f3A369522003",
+    "meetsMinimumLiquidity": false
+  },
+  {
+    "success": false,
+    "hasLiquidity": false,
+    "totalLiquidity": 0,
+    "pairsCount": 0,
+    "chainSupported": "nibiru",
+    "error": "HTTP 429",
+    "source": "geckoterminal",
+    "tokenObject": {
+      "chainId": 6900,
+      "address": "0xfCfc58685101e2914cBCf7551B432500db84eAa8",
+      "symbol": "MIM",
+      "originalToken": {
+        "chainId": 6900,
+        "address": "0xfCfc58685101e2914cBCf7551B432500db84eAa8",
+        "name": "Magic Internet Money",
+        "symbol": "MIM",
+        "decimals": 18,
+        "logoURI": "https://icons-ckg.pages.dev/stargate-light/tokens/mim.svg",
+        "tags": [],
+        "extensions": {
+          "bridgeInfo": {
+            "1": {
+              "tokenAddress": "0x99D8a9C45b2ecA8864373A26D1459e3Dff1e17F3"
+            }
+          },
+          "oftInfo": {
+            "peersInfo": {
+              "1": {
+                "tokenAddress": "0x99D8a9C45b2ecA8864373A26D1459e3Dff1e17F3"
+              },
+              "999": {
+                "tokenAddress": "0xe33Ec16788d0CDC1c707553cB7c5bCC93EF0a779"
+              },
+              "80094": {
+                "tokenAddress": "0x5B82028cfc477C4E7ddA7FF33d59A23FA7Be002a"
+              }
+            },
+            "oftAdapter": "0xfCfc58685101e2914cBCf7551B432500db84eAa8",
+            "oftVersion": 3,
+            "endpointVersion": 2,
+            "endpointId": 30369,
+            "oftSharedDecimals": 6
+          }
+        },
+        "isAcross": false,
+        "isOFT": true,
+        "source": "tokens"
+      }
+    },
+    "chainId": 6900,
+    "tokenAddress": "0xfCfc58685101e2914cBCf7551B432500db84eAa8",
+    "meetsMinimumLiquidity": false
+  },
+  {
+    "success": false,
+    "hasLiquidity": false,
+    "totalLiquidity": 0,
+    "pairsCount": 0,
+    "chainSupported": "hemi",
+    "error": "HTTP 429",
+    "source": "geckoterminal",
+    "tokenObject": {
+      "chainId": 43111,
+      "address": "0xc3eACf0612346366Db554C991D7858716db09f58",
+      "symbol": "rsETH",
+      "originalToken": {
+        "chainId": 43111,
+        "address": "0xc3eACf0612346366Db554C991D7858716db09f58",
+        "name": "KelpDao Restaked ETH",
+        "symbol": "rsETH",
+        "decimals": 18,
+        "logoURI": "https://icons-ckg.pages.dev/stargate-light/tokens/rseth.svg",
+        "tags": [],
+        "extensions": {
+          "bridgeInfo": {
+            "1": {
+              "tokenAddress": "0xA1290d69c65A6Fe4DF752f95823fae25cB99e5A7"
+            }
+          },
+          "oftInfo": {
+            "peersInfo": {
+              "1": {
+                "tokenAddress": "0xA1290d69c65A6Fe4DF752f95823fae25cB99e5A7"
+              }
+            },
+            "oftAdapter": "0xc3eACf0612346366Db554C991D7858716db09f58",
             "oftVersion": 3,
             "endpointVersion": 2,
             "endpointId": 30329,
@@ -1658,7 +1703,7 @@
       }
     },
     "chainId": 43111,
-    "tokenAddress": "0xf6718b2701D4a6498eF77D7c152b2137Ab28b8A3",
+    "tokenAddress": "0xc3eACf0612346366Db554C991D7858716db09f58",
     "meetsMinimumLiquidity": false
   },
   {
@@ -1695,80 +1740,49 @@
     "hasLiquidity": false,
     "totalLiquidity": 0,
     "pairsCount": 0,
-    "chainSupported": "superposition",
-    "error": "HTTP 429",
-    "source": "geckoterminal",
-    "tokenObject": {
-      "chainId": 55244,
-      "address": "0xCeE9B58C2CDB01b8bf75a27e96Ec09Bf885ef55a",
-      "symbol": "orbETH",
-      "originalToken": {
-        "chainId": 55244,
-        "address": "0xCeE9B58C2CDB01b8bf75a27e96Ec09Bf885ef55a",
-        "name": "Orbit ETH OFT",
-        "symbol": "orbETH",
-        "decimals": 18,
-        "logoURI": "https://assets.coingecko.com/coins/images/54981/standard/orbETH-token_icon.png?1743026013",
-        "tags": [],
-        "extensions": {
-          "oftInfo": {
-            "peersInfo": {
-              "1996": {
-                "tokenAddress": "0xaAA55490721b72A3112323FC274e9798796CcE85"
-              },
-              "42161": {
-                "tokenAddress": "0xcF6C2bb97a8978321C9e207afE8A2037fa9be45C"
-              }
-            },
-            "oftAdapter": "0xCeE9B58C2CDB01b8bf75a27e96Ec09Bf885ef55a",
-            "oftVersion": 3,
-            "endpointVersion": 2,
-            "endpointId": 30327,
-            "oftSharedDecimals": 6
-          }
-        },
-        "isAcross": false,
-        "isOFT": true,
-        "source": "tokens"
-      }
-    },
-    "chainId": 55244,
-    "tokenAddress": "0xCeE9B58C2CDB01b8bf75a27e96Ec09Bf885ef55a",
-    "meetsMinimumLiquidity": false
-  },
-  {
-    "success": false,
-    "hasLiquidity": false,
-    "totalLiquidity": 0,
-    "pairsCount": 0,
     "chainSupported": "plume-network",
     "error": "HTTP 429",
     "source": "geckoterminal",
     "tokenObject": {
       "chainId": 98866,
-      "address": "0x3Ec3849C33291a9eF4c5dB86De593EB4A37fDe45",
-      "symbol": "sfrxETH",
+      "address": "0x185716BEB4ccBFa547B00eAd24Ac6705BD47b8f0",
+      "symbol": "ynRWAx",
       "originalToken": {
         "chainId": 98866,
-        "address": "0x3Ec3849C33291a9eF4c5dB86De593EB4A37fDe45",
-        "name": "Staked Frax Ether",
-        "symbol": "sfrxETH",
+        "address": "0x185716BEB4ccBFa547B00eAd24Ac6705BD47b8f0",
+        "name": "YieldNest RWA MAX",
+        "symbol": "ynRWAx",
         "decimals": 18,
-        "logoURI": "https://icons-ckg.pages.dev/stargate-light/tokens/sfrxeth.svg",
+        "logoURI": "https://icons-ckg.pages.dev/stargate-light/tokens/ynrwax.svg",
         "tags": [],
         "extensions": {
           "bridgeInfo": {
-            "252": {
-              "tokenAddress": "0xFC00000000000000000000000000000000000005"
+            "1": {
+              "tokenAddress": "0x01Ba69727E2860b37bc1a2bd56999c1aFb4C15D8"
             }
           },
           "oftInfo": {
             "peersInfo": {
-              "252": {
-                "tokenAddress": "0xFC00000000000000000000000000000000000005"
+              "1": {
+                "tokenAddress": "0x01Ba69727E2860b37bc1a2bd56999c1aFb4C15D8"
+              },
+              "56": {
+                "tokenAddress": "0x185716BEB4ccBFa547B00eAd24Ac6705BD47b8f0"
+              },
+              "137": {
+                "tokenAddress": "0x185716BEB4ccBFa547B00eAd24Ac6705BD47b8f0"
+              },
+              "8453": {
+                "tokenAddress": "0x185716BEB4ccBFa547B00eAd24Ac6705BD47b8f0"
+              },
+              "42161": {
+                "tokenAddress": "0x185716BEB4ccBFa547B00eAd24Ac6705BD47b8f0"
+              },
+              "43114": {
+                "tokenAddress": "0x185716BEB4ccBFa547B00eAd24Ac6705BD47b8f0"
               }
             },
-            "oftAdapter": "0x3Ec3849C33291a9eF4c5dB86De593EB4A37fDe45",
+            "oftAdapter": "0xb2E4756F63dC9fd132Ca423e27F15aec59b3b130",
             "oftVersion": 3,
             "endpointVersion": 2,
             "endpointId": 30370,
@@ -1781,7 +1795,123 @@
       }
     },
     "chainId": 98866,
-    "tokenAddress": "0x3Ec3849C33291a9eF4c5dB86De593EB4A37fDe45",
+    "tokenAddress": "0x185716BEB4ccBFa547B00eAd24Ac6705BD47b8f0",
+    "meetsMinimumLiquidity": false
+  },
+  {
+    "success": false,
+    "hasLiquidity": false,
+    "totalLiquidity": 0,
+    "pairsCount": 0,
+    "chainSupported": "plume-network",
+    "error": "HTTP 429",
+    "source": "geckoterminal",
+    "tokenObject": {
+      "chainId": 98866,
+      "address": "0x1ddc55D04A3F632B63b3008C78fBB93015e54BA8",
+      "symbol": "USDa",
+      "originalToken": {
+        "chainId": 98866,
+        "address": "0x1ddc55D04A3F632B63b3008C78fBB93015e54BA8",
+        "name": "USDa",
+        "symbol": "USDa",
+        "decimals": 18,
+        "logoURI": "https://icons-ckg.pages.dev/stargate-light/tokens/usda.svg",
+        "tags": [],
+        "extensions": {
+          "coingeckoId": "usda-2",
+          "coinMarketCapId": 35368,
+          "bridgeInfo": {
+            "1": {
+              "tokenAddress": "0x8A60E489004Ca22d775C5F2c657598278d17D9c2"
+            }
+          },
+          "oftInfo": {
+            "peersInfo": {
+              "1": {
+                "tokenAddress": "0x8A60E489004Ca22d775C5F2c657598278d17D9c2"
+              },
+              "56": {
+                "tokenAddress": "0x9356086146be5158E98aD827E21b5cF944699894"
+              }
+            },
+            "oftAdapter": "0x1ddc55D04A3F632B63b3008C78fBB93015e54BA8",
+            "oftVersion": 3,
+            "endpointVersion": 2,
+            "endpointId": 30370,
+            "oftSharedDecimals": 6
+          }
+        },
+        "isAcross": false,
+        "isOFT": true,
+        "source": "tokens"
+      }
+    },
+    "chainId": 98866,
+    "tokenAddress": "0x1ddc55D04A3F632B63b3008C78fBB93015e54BA8",
+    "meetsMinimumLiquidity": false
+  },
+  {
+    "success": false,
+    "hasLiquidity": false,
+    "totalLiquidity": 0,
+    "pairsCount": 0,
+    "chainSupported": "plume-network",
+    "error": "HTTP 429",
+    "source": "geckoterminal",
+    "tokenObject": {
+      "chainId": 98866,
+      "address": "0x39d1F90eF89C52dDA276194E9a832b484ee45574",
+      "symbol": "pETH",
+      "originalToken": {
+        "chainId": 98866,
+        "address": "0x39d1F90eF89C52dDA276194E9a832b484ee45574",
+        "name": "Plume Staked ETH",
+        "symbol": "pETH",
+        "decimals": 18,
+        "logoURI": "https://raw.githubusercontent.com/CamelotLabs/default-token-list/refs/heads/main/src/assets/peth.svg",
+        "isAcross": false,
+        "isOFT": false,
+        "source": "tokens"
+      }
+    },
+    "chainId": 98866,
+    "tokenAddress": "0x39d1F90eF89C52dDA276194E9a832b484ee45574",
+    "meetsMinimumLiquidity": false
+  },
+  {
+    "success": false,
+    "hasLiquidity": false,
+    "totalLiquidity": 0,
+    "pairsCount": 0,
+    "chainSupported": "plume-network",
+    "error": "HTTP 429",
+    "source": "geckoterminal",
+    "tokenObject": {
+      "chainId": 98866,
+      "address": "0x3c48130227B657630e5D30F136A8CBB110640aA5",
+      "symbol": "RECORD",
+      "originalToken": {
+        "chainId": 98866,
+        "address": "0x3c48130227B657630e5D30F136A8CBB110640aA5",
+        "name": "RECORD",
+        "symbol": "RECORD",
+        "decimals": 18,
+        "logoURI": "https://icons-ckg.pages.dev/stargate-light/tokens/record.svg",
+        "tags": [],
+        "extensions": {
+          "bridgeInfo": {
+            "8453": {
+              "tokenAddress": "0xE642657E4F43e6DcF0bd73Ef24008394574Dee28"
+            }
+          }
+        },
+        "isAcross": false,
+        "source": "tokens"
+      }
+    },
+    "chainId": 98866,
+    "tokenAddress": "0x3c48130227B657630e5D30F136A8CBB110640aA5",
     "meetsMinimumLiquidity": false
   },
   {
@@ -1806,8 +1936,8 @@
         "tags": [],
         "extensions": {
           "bridgeInfo": {
-            "252": {
-              "tokenAddress": "0xFC00000000000000000000000000000000000006"
+            "1": {
+              "tokenAddress": "0x5E8422345238F34275888049021821E8E08CAa1f"
             }
           },
           "oftInfo": {
@@ -1830,6 +1960,41 @@
     },
     "chainId": 98866,
     "tokenAddress": "0x43eDD7f3831b08FE70B7555ddD373C8bF65a9050",
+    "meetsMinimumLiquidity": false
+  },
+  {
+    "success": false,
+    "hasLiquidity": false,
+    "totalLiquidity": 0,
+    "pairsCount": 0,
+    "chainSupported": "plume-network",
+    "error": "HTTP 429",
+    "source": "geckoterminal",
+    "tokenObject": {
+      "chainId": 98866,
+      "address": "0x4BD908ff60527B12460A53Dde29cc46e3A432122",
+      "symbol": "slvlUSD",
+      "originalToken": {
+        "chainId": 98866,
+        "address": "0x4BD908ff60527B12460A53Dde29cc46e3A432122",
+        "name": "Staked Level USD OFT",
+        "symbol": "slvlUSD",
+        "decimals": 18,
+        "logoURI": "https://icons-ckg.pages.dev/stargate-light/tokens/slvlusd.svg",
+        "tags": [],
+        "extensions": {
+          "bridgeInfo": {
+            "1": {
+              "tokenAddress": "0x4737D9b4592B40d51e110b94c9C043c6654067Ae"
+            }
+          }
+        },
+        "isAcross": false,
+        "source": "tokens"
+      }
+    },
+    "chainId": 98866,
+    "tokenAddress": "0x4BD908ff60527B12460A53Dde29cc46e3A432122",
     "meetsMinimumLiquidity": false
   },
   {
@@ -1892,6 +2057,145 @@
     "source": "geckoterminal",
     "tokenObject": {
       "chainId": 98866,
+      "address": "0x64445f0aecC51E94aD52d8AC56b7190e764E561a",
+      "symbol": "WFRAX",
+      "originalToken": {
+        "chainId": 98866,
+        "address": "0x64445f0aecC51E94aD52d8AC56b7190e764E561a",
+        "name": "Wrapped Frax",
+        "symbol": "WFRAX",
+        "decimals": 18,
+        "logoURI": "https://icons-ckg.pages.dev/stargate-light/tokens/wfrax.svg",
+        "tags": [],
+        "extensions": {
+          "bridgeInfo": {
+            "1": {
+              "tokenAddress": "0x04ACaF8D2865c0714F79da09645C13FD2888977f"
+            }
+          },
+          "coingeckoId": "wrapped-frax",
+          "coinMarketCapId": 37362,
+          "oftInfo": {
+            "peersInfo": {
+              "252": {
+                "tokenAddress": "0xFc00000000000000000000000000000000000002"
+              }
+            },
+            "oftAdapter": "0x64445f0aecC51E94aD52d8AC56b7190e764E561a",
+            "oftVersion": 3,
+            "endpointVersion": 2,
+            "endpointId": 30370,
+            "oftSharedDecimals": 6
+          }
+        },
+        "isAcross": false,
+        "isOFT": true,
+        "source": "tokens"
+      }
+    },
+    "chainId": 98866,
+    "tokenAddress": "0x64445f0aecC51E94aD52d8AC56b7190e764E561a",
+    "meetsMinimumLiquidity": false
+  },
+  {
+    "success": false,
+    "hasLiquidity": false,
+    "totalLiquidity": 0,
+    "pairsCount": 0,
+    "chainSupported": "plume-network",
+    "error": "HTTP 429",
+    "source": "geckoterminal",
+    "tokenObject": {
+      "chainId": 98866,
+      "address": "0x656f38E2FB1521c873929f2138e28D288b4Fd976",
+      "symbol": "sUSDa",
+      "originalToken": {
+        "chainId": 98866,
+        "address": "0x656f38E2FB1521c873929f2138e28D288b4Fd976",
+        "name": "USDa saving token",
+        "symbol": "sUSDa",
+        "decimals": 18,
+        "logoURI": "https://icons-ckg.pages.dev/stargate-light/tokens/susda.svg",
+        "tags": [],
+        "extensions": {
+          "coingeckoId": "susda",
+          "coinMarketCapId": 35538,
+          "bridgeInfo": {
+            "1": {
+              "tokenAddress": "0x2B66AAdE1e9C062FF411bd47C44E0Ad696d43BD9"
+            }
+          },
+          "oftInfo": {
+            "peersInfo": {
+              "1": {
+                "tokenAddress": "0x2B66AAdE1e9C062FF411bd47C44E0Ad696d43BD9"
+              },
+              "56": {
+                "tokenAddress": "0x73a325103935b0B5E7AA3acA6dba74AD22f82B03"
+              }
+            },
+            "oftAdapter": "0x656f38E2FB1521c873929f2138e28D288b4Fd976",
+            "oftVersion": 3,
+            "endpointVersion": 2,
+            "endpointId": 30370,
+            "oftSharedDecimals": 6
+          }
+        },
+        "isAcross": false,
+        "isOFT": true,
+        "source": "tokens"
+      }
+    },
+    "chainId": 98866,
+    "tokenAddress": "0x656f38E2FB1521c873929f2138e28D288b4Fd976",
+    "meetsMinimumLiquidity": false
+  },
+  {
+    "success": false,
+    "hasLiquidity": false,
+    "totalLiquidity": 0,
+    "pairsCount": 0,
+    "chainSupported": "plume-network",
+    "error": "HTTP 429",
+    "source": "geckoterminal",
+    "tokenObject": {
+      "chainId": 98866,
+      "address": "0x6bedE1c6009a78c222D9BDb7974bb67847fdB68c",
+      "symbol": "USBD",
+      "originalToken": {
+        "chainId": 98866,
+        "address": "0x6bedE1c6009a78c222D9BDb7974bb67847fdB68c",
+        "name": "US Bitcoin Dollar",
+        "symbol": "USBD",
+        "decimals": 18,
+        "logoURI": "https://s2.coinmarketcap.com/static/img/coins/128x128/36149.png",
+        "tags": [],
+        "extensions": {
+          "bridgeInfo": {
+            "1": {
+              "tokenAddress": "0x6bedE1c6009a78c222D9BDb7974bb67847fdB68c"
+            }
+          },
+          "coinMarketCapId": 36149
+        },
+        "isAcross": false,
+        "source": "tokens"
+      }
+    },
+    "chainId": 98866,
+    "tokenAddress": "0x6bedE1c6009a78c222D9BDb7974bb67847fdB68c",
+    "meetsMinimumLiquidity": false
+  },
+  {
+    "success": false,
+    "hasLiquidity": false,
+    "totalLiquidity": 0,
+    "pairsCount": 0,
+    "chainSupported": "plume-network",
+    "error": "HTTP 429",
+    "source": "geckoterminal",
+    "tokenObject": {
+      "chainId": 98866,
       "address": "0x6A9A65B84843F5fD4aC9a0471C4fc11AFfFBce4a",
       "symbol": "enzoBTC",
       "originalToken": {
@@ -1907,25 +2211,9 @@
             "1": {
               "tokenAddress": "0x6A9A65B84843F5fD4aC9a0471C4fc11AFfFBce4a"
             }
-          },
-          "oftInfo": {
-            "peersInfo": {
-              "1": {
-                "tokenAddress": "0x6A9A65B84843F5fD4aC9a0471C4fc11AFfFBce4a"
-              },
-              "56": {
-                "tokenAddress": "0x6A9A65B84843F5fD4aC9a0471C4fc11AFfFBce4a"
-              }
-            },
-            "oftAdapter": "0xaa0D222436152050501E91DC07A45b1112f8b60f",
-            "oftVersion": 3,
-            "endpointVersion": 2,
-            "endpointId": 30370,
-            "oftSharedDecimals": 6
           }
         },
         "isAcross": false,
-        "isOFT": true,
         "source": "tokens"
       }
     },
@@ -1943,70 +2231,22 @@
     "source": "geckoterminal",
     "tokenObject": {
       "chainId": 98866,
-      "address": "0x9fbC367B9Bb966a2A537989817A088AFCaFFDC4c",
-      "symbol": "nELIXIR",
+      "address": "0x78adD880A697070c1e765Ac44D65323a0DcCE913",
+      "symbol": "USDC.e",
       "originalToken": {
         "chainId": 98866,
-        "address": "0x9fbC367B9Bb966a2A537989817A088AFCaFFDC4c",
-        "name": "Nest Elixir Vault",
-        "symbol": "nELIXIR",
+        "address": "0x78adD880A697070c1e765Ac44D65323a0DcCE913",
+        "name": "Bridged USDC (Stargate)",
+        "symbol": "USDC.e",
         "decimals": 6,
-        "logoURI": "https://raw.githubusercontent.com/CamelotLabs/default-token-list/refs/heads/main/src/assets/nelixir.svg",
+        "logoURI": "https://raw.githubusercontent.com/CamelotLabs/default-token-list/refs/heads/main/src/assets/usdc.svg",
         "isAcross": false,
         "isOFT": false,
         "source": "tokens"
       }
     },
     "chainId": 98866,
-    "tokenAddress": "0x9fbC367B9Bb966a2A537989817A088AFCaFFDC4c",
-    "meetsMinimumLiquidity": false
-  },
-  {
-    "success": false,
-    "hasLiquidity": false,
-    "totalLiquidity": 0,
-    "pairsCount": 0,
-    "chainSupported": "plume-network",
-    "error": "HTTP 429",
-    "source": "geckoterminal",
-    "tokenObject": {
-      "chainId": 98866,
-      "address": "0x90581eCa9469D8D7F5D3B60f4715027aDFCf7927",
-      "symbol": "FPI",
-      "originalToken": {
-        "chainId": 98866,
-        "address": "0x90581eCa9469D8D7F5D3B60f4715027aDFCf7927",
-        "name": "Frax Price Index",
-        "symbol": "FPI",
-        "decimals": 18,
-        "logoURI": "https://icons-ckg.pages.dev/stargate-light/tokens/fpi.svg",
-        "tags": [],
-        "extensions": {
-          "bridgeInfo": {
-            "252": {
-              "tokenAddress": "0xFc00000000000000000000000000000000000003"
-            }
-          },
-          "oftInfo": {
-            "peersInfo": {
-              "252": {
-                "tokenAddress": "0xFc00000000000000000000000000000000000003"
-              }
-            },
-            "oftAdapter": "0x90581eCa9469D8D7F5D3B60f4715027aDFCf7927",
-            "oftVersion": 3,
-            "endpointVersion": 2,
-            "endpointId": 30370,
-            "oftSharedDecimals": 6
-          }
-        },
-        "isAcross": false,
-        "isOFT": true,
-        "source": "tokens"
-      }
-    },
-    "chainId": 98866,
-    "tokenAddress": "0x90581eCa9469D8D7F5D3B60f4715027aDFCf7927",
+    "tokenAddress": "0x78adD880A697070c1e765Ac44D65323a0DcCE913",
     "meetsMinimumLiquidity": false
   },
   {
@@ -2069,106 +2309,70 @@
     "source": "geckoterminal",
     "tokenObject": {
       "chainId": 98866,
-      "address": "0x78adD880A697070c1e765Ac44D65323a0DcCE913",
-      "symbol": "USDC.e",
+      "address": "0x90581eCa9469D8D7F5D3B60f4715027aDFCf7927",
+      "symbol": "FPI",
       "originalToken": {
         "chainId": 98866,
-        "address": "0x78adD880A697070c1e765Ac44D65323a0DcCE913",
-        "name": "Bridged USDC (Stargate)",
-        "symbol": "USDC.e",
-        "decimals": 6,
-        "logoURI": "https://raw.githubusercontent.com/CamelotLabs/default-token-list/refs/heads/main/src/assets/usdc.svg",
-        "isAcross": false,
-        "isOFT": false,
-        "source": "tokens"
-      }
-    },
-    "chainId": 98866,
-    "tokenAddress": "0x78adD880A697070c1e765Ac44D65323a0DcCE913",
-    "meetsMinimumLiquidity": false
-  },
-  {
-    "success": false,
-    "hasLiquidity": false,
-    "totalLiquidity": 0,
-    "pairsCount": 0,
-    "chainSupported": "plume-network",
-    "error": "HTTP 429",
-    "source": "geckoterminal",
-    "tokenObject": {
-      "chainId": 98866,
-      "address": "0xE72Fe64840F4EF80E3Ec73a1c749491b5c938CB9",
-      "symbol": "nTBILL",
-      "originalToken": {
-        "chainId": 98866,
-        "address": "0xE72Fe64840F4EF80E3Ec73a1c749491b5c938CB9",
-        "name": "Nest Treasuries Vault",
-        "symbol": "nTBILL",
-        "decimals": 6,
-        "logoURI": "https://raw.githubusercontent.com/CamelotLabs/default-token-list/refs/heads/main/src/assets/ntbill.svg",
-        "isAcross": false,
-        "isOFT": false,
-        "source": "tokens"
-      }
-    },
-    "chainId": 98866,
-    "tokenAddress": "0xE72Fe64840F4EF80E3Ec73a1c749491b5c938CB9",
-    "meetsMinimumLiquidity": false
-  },
-  {
-    "success": false,
-    "hasLiquidity": false,
-    "totalLiquidity": 0,
-    "pairsCount": 0,
-    "chainSupported": "plume-network",
-    "error": "HTTP 429",
-    "source": "geckoterminal",
-    "tokenObject": {
-      "chainId": 98866,
-      "address": "0xda6087E69C51E7D31b6DBAD276a3c44703DFdCAd",
-      "symbol": "USDT",
-      "originalToken": {
-        "chainId": 98866,
-        "address": "0xda6087E69C51E7D31b6DBAD276a3c44703DFdCAd",
-        "name": "Bridged stgUSDT",
-        "symbol": "USDT",
-        "decimals": 6,
-        "logoURI": "https://raw.githubusercontent.com/CamelotLabs/default-token-list/refs/heads/main/src/assets/usdt.svg",
-        "isAcross": false,
-        "isOFT": false,
-        "source": "tokens"
-      }
-    },
-    "chainId": 98866,
-    "tokenAddress": "0xda6087E69C51E7D31b6DBAD276a3c44703DFdCAd",
-    "meetsMinimumLiquidity": false
-  },
-  {
-    "success": false,
-    "hasLiquidity": false,
-    "totalLiquidity": 0,
-    "pairsCount": 0,
-    "chainSupported": "plume-network",
-    "error": "HTTP 429",
-    "source": "geckoterminal",
-    "tokenObject": {
-      "chainId": 98866,
-      "address": "0xca59cA09E5602fAe8B629DeE83FfA819741f14be",
-      "symbol": "WETH",
-      "originalToken": {
-        "chainId": 98866,
-        "address": "0xca59cA09E5602fAe8B629DeE83FfA819741f14be",
-        "name": "Wrapped Ether (Stargate)",
-        "symbol": "WETH",
+        "address": "0x90581eCa9469D8D7F5D3B60f4715027aDFCf7927",
+        "name": "Frax Price Index",
+        "symbol": "FPI",
         "decimals": 18,
-        "logoURI": "https://raw.githubusercontent.com/CamelotLabs/default-token-list/refs/heads/main/src/assets/weth.svg",
+        "logoURI": "https://icons-ckg.pages.dev/stargate-light/tokens/fpi.svg",
+        "tags": [],
+        "extensions": {
+          "bridgeInfo": {
+            "252": {
+              "tokenAddress": "0xFc00000000000000000000000000000000000003"
+            }
+          },
+          "oftInfo": {
+            "peersInfo": {
+              "252": {
+                "tokenAddress": "0xFc00000000000000000000000000000000000003"
+              }
+            },
+            "oftAdapter": "0x90581eCa9469D8D7F5D3B60f4715027aDFCf7927",
+            "oftVersion": 3,
+            "endpointVersion": 2,
+            "endpointId": 30370,
+            "oftSharedDecimals": 6
+          }
+        },
+        "isAcross": false,
+        "isOFT": true,
+        "source": "tokens"
+      }
+    },
+    "chainId": 98866,
+    "tokenAddress": "0x90581eCa9469D8D7F5D3B60f4715027aDFCf7927",
+    "meetsMinimumLiquidity": false
+  },
+  {
+    "success": false,
+    "hasLiquidity": false,
+    "totalLiquidity": 0,
+    "pairsCount": 0,
+    "chainSupported": "plume-network",
+    "error": "HTTP 429",
+    "source": "geckoterminal",
+    "tokenObject": {
+      "chainId": 98866,
+      "address": "0x9fbC367B9Bb966a2A537989817A088AFCaFFDC4c",
+      "symbol": "nELIXIR",
+      "originalToken": {
+        "chainId": 98866,
+        "address": "0x9fbC367B9Bb966a2A537989817A088AFCaFFDC4c",
+        "name": "Nest Elixir Vault",
+        "symbol": "nELIXIR",
+        "decimals": 6,
+        "logoURI": "https://raw.githubusercontent.com/CamelotLabs/default-token-list/refs/heads/main/src/assets/nelixir.svg",
         "isAcross": false,
         "isOFT": false,
         "source": "tokens"
       }
     },
     "chainId": 98866,
-    "tokenAddress": "0xca59cA09E5602fAe8B629DeE83FfA819741f14be",
+    "tokenAddress": "0x9fbC367B9Bb966a2A537989817A088AFCaFFDC4c",
     "meetsMinimumLiquidity": false
   },
   {
@@ -2210,42 +2414,85 @@
     "source": "geckoterminal",
     "tokenObject": {
       "chainId": 98866,
-      "address": "0xd88eC8396e7b9731a2C0D564d520bee427b4B5E5",
-      "symbol": "RWAX",
+      "address": "0x92fa3dC96bD5A9B1abE112782Dfd2A1bc34880b1",
+      "symbol": "lvlUSD",
       "originalToken": {
         "chainId": 98866,
-        "address": "0xd88eC8396e7b9731a2C0D564d520bee427b4B5E5",
-        "name": "RWAX",
-        "symbol": "RWAX",
+        "address": "0x92fa3dC96bD5A9B1abE112782Dfd2A1bc34880b1",
+        "name": "Level USD OFT",
+        "symbol": "lvlUSD",
         "decimals": 18,
-        "logoURI": "https://icons-ckg.pages.dev/stargate-light/tokens/rwax.svg",
+        "logoURI": "https://icons-ckg.pages.dev/stargate-light/tokens/lvlusd.svg",
         "tags": [],
         "extensions": {
           "bridgeInfo": {
-            "8453": {
-              "tokenAddress": "0xe0023E73aab4fE9a22f059a9d27E857E027eE3dc"
+            "1": {
+              "tokenAddress": "0x7C1156E515aA1A2E851674120074968C905aAF37"
             }
-          },
-          "oftInfo": {
-            "peersInfo": {
-              "8453": {
-                "tokenAddress": "0xe0023E73aab4fE9a22f059a9d27E857E027eE3dc"
-              }
-            },
-            "oftAdapter": "0xd88eC8396e7b9731a2C0D564d520bee427b4B5E5",
-            "oftVersion": 3,
-            "endpointVersion": 2,
-            "endpointId": 30370,
-            "oftSharedDecimals": 6
           }
         },
         "isAcross": false,
-        "isOFT": true,
         "source": "tokens"
       }
     },
     "chainId": 98866,
-    "tokenAddress": "0xd88eC8396e7b9731a2C0D564d520bee427b4B5E5",
+    "tokenAddress": "0x92fa3dC96bD5A9B1abE112782Dfd2A1bc34880b1",
+    "meetsMinimumLiquidity": false
+  },
+  {
+    "success": false,
+    "hasLiquidity": false,
+    "totalLiquidity": 0,
+    "pairsCount": 0,
+    "chainSupported": "plume-network",
+    "error": "HTTP 429",
+    "source": "geckoterminal",
+    "tokenObject": {
+      "chainId": 98866,
+      "address": "0xca59cA09E5602fAe8B629DeE83FfA819741f14be",
+      "symbol": "WETH",
+      "originalToken": {
+        "chainId": 98866,
+        "address": "0xca59cA09E5602fAe8B629DeE83FfA819741f14be",
+        "name": "Wrapped Ether (Stargate)",
+        "symbol": "WETH",
+        "decimals": 18,
+        "logoURI": "https://raw.githubusercontent.com/CamelotLabs/default-token-list/refs/heads/main/src/assets/weth.svg",
+        "isAcross": false,
+        "isOFT": false,
+        "source": "tokens"
+      }
+    },
+    "chainId": 98866,
+    "tokenAddress": "0xca59cA09E5602fAe8B629DeE83FfA819741f14be",
+    "meetsMinimumLiquidity": false
+  },
+  {
+    "success": false,
+    "hasLiquidity": false,
+    "totalLiquidity": 0,
+    "pairsCount": 0,
+    "chainSupported": "plume-network",
+    "error": "HTTP 429",
+    "source": "geckoterminal",
+    "tokenObject": {
+      "chainId": 98866,
+      "address": "0xda6087E69C51E7D31b6DBAD276a3c44703DFdCAd",
+      "symbol": "USDT",
+      "originalToken": {
+        "chainId": 98866,
+        "address": "0xda6087E69C51E7D31b6DBAD276a3c44703DFdCAd",
+        "name": "Bridged stgUSDT",
+        "symbol": "USDT",
+        "decimals": 6,
+        "logoURI": "https://raw.githubusercontent.com/CamelotLabs/default-token-list/refs/heads/main/src/assets/usdt.svg",
+        "isAcross": false,
+        "isOFT": false,
+        "source": "tokens"
+      }
+    },
+    "chainId": 98866,
+    "tokenAddress": "0xda6087E69C51E7D31b6DBAD276a3c44703DFdCAd",
     "meetsMinimumLiquidity": false
   },
   {
@@ -2286,54 +2533,6 @@
     "source": "geckoterminal",
     "tokenObject": {
       "chainId": 98866,
-      "address": "0xe9e8330a71912F03E54E7D93795acD9a56f070Aa",
-      "symbol": "PayUSD",
-      "originalToken": {
-        "chainId": 98866,
-        "address": "0xe9e8330a71912F03E54E7D93795acD9a56f070Aa",
-        "name": "Pay USD",
-        "symbol": "PayUSD",
-        "decimals": 6,
-        "logoURI": "https://icons-ckg.pages.dev/stargate-light/tokens/payusd.svg",
-        "tags": [],
-        "extensions": {
-          "bridgeInfo": {
-            "1": {
-              "tokenAddress": "0x6c3ea9036406852006290770BEdFcAbA0e23A0e8"
-            }
-          },
-          "oftInfo": {
-            "peersInfo": {
-              "1": {
-                "tokenAddress": "0x6c3ea9036406852006290770BEdFcAbA0e23A0e8"
-              }
-            },
-            "oftAdapter": "0xe9e8330a71912F03E54E7D93795acD9a56f070Aa",
-            "oftVersion": 3,
-            "endpointVersion": 2,
-            "endpointId": 30370,
-            "oftSharedDecimals": 6
-          }
-        },
-        "isAcross": false,
-        "isOFT": true,
-        "source": "tokens"
-      }
-    },
-    "chainId": 98866,
-    "tokenAddress": "0xe9e8330a71912F03E54E7D93795acD9a56f070Aa",
-    "meetsMinimumLiquidity": false
-  },
-  {
-    "success": false,
-    "hasLiquidity": false,
-    "totalLiquidity": 0,
-    "pairsCount": 0,
-    "chainSupported": "plume-network",
-    "error": "HTTP 429",
-    "source": "geckoterminal",
-    "tokenObject": {
-      "chainId": 98866,
       "address": "0xf6718b2701D4a6498eF77D7c152b2137Ab28b8A3",
       "symbol": "stBTC",
       "originalToken": {
@@ -2352,9 +2551,6 @@
           },
           "oftInfo": {
             "peersInfo": {
-              "1": {
-                "tokenAddress": "0xf6718b2701D4a6498eF77D7c152b2137Ab28b8A3"
-              },
               "56": {
                 "tokenAddress": "0xf6718b2701D4a6498eF77D7c152b2137Ab28b8A3"
               }
@@ -2380,191 +2576,34 @@
     "hasLiquidity": false,
     "totalLiquidity": 0,
     "pairsCount": 0,
-    "chainSupported": "bitlayer",
+    "chainSupported": "plume-network",
     "error": "HTTP 429",
     "source": "geckoterminal",
     "tokenObject": {
-      "chainId": 200901,
-      "address": "0x91BD7F5E328AEcd1024E4118ADE0Ccb786f55DB1",
-      "symbol": "USDa",
+      "chainId": 98866,
+      "address": "0xe9e8330a71912F03E54E7D93795acD9a56f070Aa",
+      "symbol": "PayUSD",
       "originalToken": {
-        "chainId": 200901,
-        "address": "0x91BD7F5E328AEcd1024E4118ADE0Ccb786f55DB1",
-        "name": "USDa",
-        "symbol": "USDa",
-        "decimals": 18,
-        "logoURI": "https://icons-ckg.pages.dev/stargate-light/tokens/usda.svg",
-        "tags": [],
-        "extensions": {
-          "coingeckoId": "usda-2",
-          "coinMarketCapId": 35368,
-          "bridgeInfo": {
-            "1": {
-              "tokenAddress": "0x8A60E489004Ca22d775C5F2c657598278d17D9c2"
-            }
-          },
-          "oftInfo": {
-            "peersInfo": {
-              "1": {
-                "tokenAddress": "0x8A60E489004Ca22d775C5F2c657598278d17D9c2"
-              },
-              "56": {
-                "tokenAddress": "0x9356086146be5158E98aD827E21b5cF944699894"
-              }
-            },
-            "oftAdapter": "0x91BD7F5E328AEcd1024E4118ADE0Ccb786f55DB1",
-            "oftVersion": 3,
-            "endpointVersion": 2,
-            "endpointId": 30314,
-            "oftSharedDecimals": 6
-          }
-        },
-        "isAcross": false,
-        "isOFT": true,
-        "source": "tokens"
-      }
-    },
-    "chainId": 200901,
-    "tokenAddress": "0x91BD7F5E328AEcd1024E4118ADE0Ccb786f55DB1",
-    "meetsMinimumLiquidity": false
-  },
-  {
-    "success": false,
-    "hasLiquidity": false,
-    "totalLiquidity": 0,
-    "pairsCount": 0,
-    "chainSupported": "bitlayer",
-    "error": "HTTP 429",
-    "source": "geckoterminal",
-    "tokenObject": {
-      "chainId": 200901,
-      "address": "0x0E4cF4Affdb72b39Ea91fA726D291781cBd020bF",
-      "symbol": "WBTC",
-      "originalToken": {
-        "chainId": 200901,
-        "address": "0x0E4cF4Affdb72b39Ea91fA726D291781cBd020bF",
-        "name": "Wrapped BTC",
-        "symbol": "WBTC",
-        "decimals": 18,
-        "logoURI": "https://s2.coinmarketcap.com/static/img/coins/128x128/3717.png",
-        "isAcross": false,
-        "isOFT": false,
-        "source": "tokens"
-      }
-    },
-    "chainId": 200901,
-    "tokenAddress": "0x0E4cF4Affdb72b39Ea91fA726D291781cBd020bF",
-    "meetsMinimumLiquidity": false
-  },
-  {
-    "success": false,
-    "hasLiquidity": false,
-    "totalLiquidity": 0,
-    "pairsCount": 0,
-    "chainSupported": "bitlayer",
-    "error": "HTTP 429",
-    "source": "geckoterminal",
-    "tokenObject": {
-      "chainId": 200901,
-      "address": "0xE8cfc9F5C3Ad6EeeceD88534aA641355451DB326",
-      "symbol": "sUSDa",
-      "originalToken": {
-        "chainId": 200901,
-        "address": "0xE8cfc9F5C3Ad6EeeceD88534aA641355451DB326",
-        "name": "USDa saving token",
-        "symbol": "sUSDa",
-        "decimals": 18,
-        "logoURI": "https://icons-ckg.pages.dev/stargate-light/tokens/susda.svg",
-        "tags": [],
-        "extensions": {
-          "coingeckoId": "susda",
-          "coinMarketCapId": 35538,
-          "bridgeInfo": {
-            "1": {
-              "tokenAddress": "0x2B66AAdE1e9C062FF411bd47C44E0Ad696d43BD9"
-            }
-          },
-          "oftInfo": {
-            "peersInfo": {
-              "1": {
-                "tokenAddress": "0x2B66AAdE1e9C062FF411bd47C44E0Ad696d43BD9"
-              },
-              "56": {
-                "tokenAddress": "0x73a325103935b0B5E7AA3acA6dba74AD22f82B03"
-              }
-            },
-            "oftAdapter": "0xE8cfc9F5C3Ad6EeeceD88534aA641355451DB326",
-            "oftVersion": 3,
-            "endpointVersion": 2,
-            "endpointId": 30314,
-            "oftSharedDecimals": 6
-          }
-        },
-        "isAcross": false,
-        "isOFT": true,
-        "source": "tokens"
-      }
-    },
-    "chainId": 200901,
-    "tokenAddress": "0xE8cfc9F5C3Ad6EeeceD88534aA641355451DB326",
-    "meetsMinimumLiquidity": false
-  },
-  {
-    "success": false,
-    "hasLiquidity": false,
-    "totalLiquidity": 0,
-    "pairsCount": 0,
-    "chainSupported": "xdc",
-    "error": "HTTP 429",
-    "source": "geckoterminal",
-    "tokenObject": {
-      "chainId": 50,
-      "address": "0x81B244d0be055EF3BEF1b09B7826Cc2b108B2cBD",
-      "symbol": "PRFI",
-      "originalToken": {
-        "chainId": 50,
-        "address": "0x81B244d0be055EF3BEF1b09B7826Cc2b108B2cBD",
-        "name": "PRFI",
-        "symbol": "PRFI",
-        "decimals": 18,
-        "logoURI": "https://icons-ckg.pages.dev/stargate-light/tokens/prfi.svg",
+        "chainId": 98866,
+        "address": "0xe9e8330a71912F03E54E7D93795acD9a56f070Aa",
+        "name": "Pay USD",
+        "symbol": "PayUSD",
+        "decimals": 6,
+        "logoURI": "https://icons-ckg.pages.dev/stargate-light/tokens/payusd.svg",
         "tags": [],
         "extensions": {
           "bridgeInfo": {
             "1": {
-              "tokenAddress": "0x7BBCf1B600565AE023a1806ef637Af4739dE3255"
+              "tokenAddress": "0x6c3ea9036406852006290770BEdFcAbA0e23A0e8"
             }
-          },
-          "coingeckoId": "primefi",
-          "oftInfo": {
-            "peersInfo": {
-              "1": {
-                "tokenAddress": "0x7BBCf1B600565AE023a1806ef637Af4739dE3255"
-              },
-              "999": {
-                "tokenAddress": "0x7BBCf1B600565AE023a1806ef637Af4739dE3255"
-              },
-              "8453": {
-                "tokenAddress": "0x7BBCf1B600565AE023a1806ef637Af4739dE3255"
-              },
-              "42161": {
-                "tokenAddress": "0x7BBCf1B600565AE023a1806ef637Af4739dE3255"
-              }
-            },
-            "oftAdapter": "0x81B244d0be055EF3BEF1b09B7826Cc2b108B2cBD",
-            "oftVersion": 3,
-            "endpointVersion": 2,
-            "endpointId": 30365,
-            "oftSharedDecimals": 6
           }
         },
         "isAcross": false,
-        "isOFT": true,
-        "source": "inactive"
+        "source": "tokens"
       }
     },
-    "chainId": 50,
-    "tokenAddress": "0x81B244d0be055EF3BEF1b09B7826Cc2b108B2cBD",
+    "chainId": 98866,
+    "tokenAddress": "0xe9e8330a71912F03E54E7D93795acD9a56f070Aa",
     "meetsMinimumLiquidity": false
   },
   {
@@ -2625,37 +2664,37 @@
     "hasLiquidity": false,
     "totalLiquidity": 0,
     "pairsCount": 0,
-    "chainSupported": "swellchain",
+    "chainSupported": "morph-l2",
     "error": "HTTP 429",
     "source": "geckoterminal",
     "tokenObject": {
-      "chainId": 1923,
-      "address": "0x9ab96A4668456896d45c301Bc3A15Cee76AA7B8D",
-      "symbol": "rUSDC",
+      "chainId": 2818,
+      "address": "0x211Cc4DD073734dA055fbF44a2b4667d5E5fE5d2",
+      "symbol": "sUSDe",
       "originalToken": {
-        "chainId": 1923,
-        "address": "0x9ab96A4668456896d45c301Bc3A15Cee76AA7B8D",
-        "name": "Relend Network USDC",
-        "symbol": "rUSDC",
-        "decimals": 6,
-        "logoURI": "https://icons-ckg.pages.dev/stargate-light/tokens/rusdc.svg",
+        "chainId": 2818,
+        "address": "0x211Cc4DD073734dA055fbF44a2b4667d5E5fE5d2",
+        "name": "Staked USDe",
+        "symbol": "sUSDe",
+        "decimals": 18,
+        "logoURI": "https://icons-ckg.pages.dev/stargate-light/tokens/susde.svg",
         "tags": [],
         "extensions": {
           "bridgeInfo": {
             "1": {
-              "tokenAddress": "0xCB35Be279968F6c53EBF73c8d9D5d7AAf4d34956"
+              "tokenAddress": "0x9D39A5DE30e57443BfF2A8307A4256c8797A3497"
             }
           },
           "oftInfo": {
             "peersInfo": {
               "1": {
-                "tokenAddress": "0xCB35Be279968F6c53EBF73c8d9D5d7AAf4d34956"
+                "tokenAddress": "0x9D39A5DE30e57443BfF2A8307A4256c8797A3497"
               }
             },
-            "oftAdapter": "0x9ab96A4668456896d45c301Bc3A15Cee76AA7B8D",
+            "oftAdapter": "0x211Cc4DD073734dA055fbF44a2b4667d5E5fE5d2",
             "oftVersion": 3,
             "endpointVersion": 2,
-            "endpointId": 30335,
+            "endpointId": 30322,
             "oftSharedDecimals": 6
           }
         },
@@ -2664,8 +2703,8 @@
         "source": "inactive"
       }
     },
-    "chainId": 1923,
-    "tokenAddress": "0x9ab96A4668456896d45c301Bc3A15Cee76AA7B8D",
+    "chainId": 2818,
+    "tokenAddress": "0x211Cc4DD073734dA055fbF44a2b4667d5E5fE5d2",
     "meetsMinimumLiquidity": false
   },
   {
@@ -2673,118 +2712,37 @@
     "hasLiquidity": false,
     "totalLiquidity": 0,
     "pairsCount": 0,
-    "chainSupported": "goat",
+    "chainSupported": "morph-l2",
     "error": "HTTP 429",
     "source": "geckoterminal",
     "tokenObject": {
-      "chainId": 2345,
-      "address": "0x1E0d0303a8c4aD428953f5ACB1477dB42bb838cf",
-      "symbol": "DOGEB",
+      "chainId": 2818,
+      "address": "0xe898E1CffA565aAe8bAcC364AA7D65D6A2d20F16",
+      "symbol": "KRWQ",
       "originalToken": {
-        "chainId": 2345,
-        "address": "0x1E0d0303a8c4aD428953f5ACB1477dB42bb838cf",
-        "name": "GOAT BSC DOGE",
-        "symbol": "DOGEB",
+        "chainId": 2818,
+        "address": "0xe898E1CffA565aAe8bAcC364AA7D65D6A2d20F16",
+        "name": "KRWQ",
+        "symbol": "KRWQ",
         "decimals": 18,
-        "logoURI": "https://icons-ckg.pages.dev/stargate-light/tokens/dogeb.svg",
+        "logoURI": "https://icons-ckg.pages.dev/stargate-light/tokens/krwq.svg",
         "tags": [],
         "extensions": {
           "bridgeInfo": {
-            "56": {
-              "tokenAddress": "0xbA2aE424d960c26247Dd6c32edC70B295c744C43"
+            "1": {
+              "tokenAddress": "0xc00db6b41473d065027F5Ed6fAdA20fde75f142e"
             }
           },
           "oftInfo": {
             "peersInfo": {
-              "56": {
-                "tokenAddress": "0xbA2aE424d960c26247Dd6c32edC70B295c744C43"
-              }
-            },
-            "oftAdapter": "0x1E0d0303a8c4aD428953f5ACB1477dB42bb838cf",
-            "oftVersion": 3,
-            "endpointVersion": 2,
-            "endpointId": 30361,
-            "oftSharedDecimals": 6
-          }
-        },
-        "isAcross": false,
-        "isOFT": true,
-        "source": "inactive"
-      }
-    },
-    "chainId": 2345,
-    "tokenAddress": "0x1E0d0303a8c4aD428953f5ACB1477dB42bb838cf",
-    "meetsMinimumLiquidity": false
-  },
-  {
-    "success": false,
-    "hasLiquidity": false,
-    "totalLiquidity": 0,
-    "pairsCount": 0,
-    "chainSupported": "sanko-mainnet",
-    "error": "HTTP 429",
-    "source": "geckoterminal",
-    "tokenObject": {
-      "chainId": 1996,
-      "address": "0xe2510aA4b019af3Eb835d3aC9c800382109A4631",
-      "symbol": "DcntEth",
-      "originalToken": {
-        "chainId": 1996,
-        "address": "0xe2510aA4b019af3Eb835d3aC9c800382109A4631",
-        "name": "Decent Eth",
-        "symbol": "DcntEth",
-        "decimals": 18,
-        "tags": [],
-        "extensions": {
-          "oftInfo": {
-            "peersInfo": {
               "1": {
-                "tokenAddress": "0x96F305198B3Bd5795B0eFc99133Ebf59511BBDeb"
-              },
-              "10": {
-                "tokenAddress": "0xEFa4486Cf8eBAe3137F1B5445808445D28a8511E"
-              },
-              "56": {
-                "tokenAddress": "0x92977dD9c96c24bB4118992E6aCaa5b5Fb5076b9"
-              },
-              "100": {
-                "tokenAddress": "0x1709b7dFcd7204015fB18C43eFEAD543ADe43054"
-              },
-              "137": {
-                "tokenAddress": "0x46988D12b2BDe2e92a4726f1186f2a67Ac00EF4a"
-              },
-              "204": {
-                "tokenAddress": "0x1709b7dFcd7204015fB18C43eFEAD543ADe43054"
-              },
-              "5000": {
-                "tokenAddress": "0x0852123795bC6Aef3A3eb0212DED01607F9c58a5"
-              },
-              "8453": {
-                "tokenAddress": "0xeE36f22e552182faA608443d7e9cB4Bbf9F4F83a"
-              },
-              "34443": {
-                "tokenAddress": "0x57CB483a4369B79EeB446487e8b36B268d9cE58B"
-              },
-              "42161": {
-                "tokenAddress": "0xe42E70881Ee9277Fa3F2dbb1F23eB38D12de2F9A"
-              },
-              "57073": {
-                "tokenAddress": "0xe2510aA4b019af3Eb835d3aC9c800382109A4631"
-              },
-              "81457": {
-                "tokenAddress": "0x023dc290A515b15e1605d34e40C8748EEdf02C93"
-              },
-              "534352": {
-                "tokenAddress": "0xA287C0c182332927767D18dC73bb220f229dd7BA"
-              },
-              "7777777": {
-                "tokenAddress": "0xCCdcc13127c1BeE4331dCF5F55577c9A6e74edf5"
+                "tokenAddress": "0xc00db6b41473d065027F5Ed6fAdA20fde75f142e"
               }
             },
-            "oftAdapter": "0xe2510aA4b019af3Eb835d3aC9c800382109A4631",
+            "oftAdapter": "0xe898E1CffA565aAe8bAcC364AA7D65D6A2d20F16",
             "oftVersion": 3,
             "endpointVersion": 2,
-            "endpointId": 30278,
+            "endpointId": 30322,
             "oftSharedDecimals": 6
           }
         },
@@ -2793,138 +2751,8 @@
         "source": "inactive"
       }
     },
-    "chainId": 1996,
-    "tokenAddress": "0xe2510aA4b019af3Eb835d3aC9c800382109A4631",
-    "meetsMinimumLiquidity": false
-  },
-  {
-    "success": false,
-    "hasLiquidity": false,
-    "totalLiquidity": 0,
-    "pairsCount": 0,
-    "chainSupported": "sanko-mainnet",
-    "error": "HTTP 429",
-    "source": "geckoterminal",
-    "tokenObject": {
-      "chainId": 1996,
-      "address": "0x452ed88fAc8A6e7eecFEb147DCe3F4e8e1e93de4",
-      "symbol": "MigrationOFT",
-      "originalToken": {
-        "chainId": 1996,
-        "address": "0x452ed88fAc8A6e7eecFEb147DCe3F4e8e1e93de4",
-        "name": "MigrationOFT",
-        "symbol": "MigrationOFT",
-        "decimals": 18,
-        "tags": [],
-        "extensions": {},
-        "isAcross": false,
-        "source": "inactive"
-      }
-    },
-    "chainId": 1996,
-    "tokenAddress": "0x452ed88fAc8A6e7eecFEb147DCe3F4e8e1e93de4",
-    "meetsMinimumLiquidity": false
-  },
-  {
-    "success": false,
-    "hasLiquidity": false,
-    "totalLiquidity": 0,
-    "pairsCount": 0,
-    "chainSupported": "swellchain",
-    "error": "HTTP 429",
-    "source": "geckoterminal",
-    "tokenObject": {
-      "chainId": 1923,
-      "address": "0xc2606AADe4bdd978a4fa5a6edb3b66657acEe6F8",
-      "symbol": "KING",
-      "originalToken": {
-        "chainId": 1923,
-        "address": "0xc2606AADe4bdd978a4fa5a6edb3b66657acEe6F8",
-        "name": "King Protocol",
-        "symbol": "KING",
-        "decimals": 18,
-        "tags": [],
-        "extensions": {
-          "oftInfo": {
-            "peersInfo": {
-              "1": {
-                "tokenAddress": "0x8F08B70456eb22f6109F57b8fafE862ED28E6040"
-              },
-              "130": {
-                "tokenAddress": "0xaf53D63eCaAc1a84718593BD68550b21977E7B7E"
-              },
-              "5000": {
-                "tokenAddress": "0x548c4116a97e0138F78000088eA3f155717b98ed"
-              },
-              "8453": {
-                "tokenAddress": "0xE22C243c7559C667a1EB94B593369D192c5fbac0"
-              },
-              "42161": {
-                "tokenAddress": "0x2e412435928EFE43b156Caa8F4B1068729fEE275"
-              }
-            },
-            "oftAdapter": "0xc2606AADe4bdd978a4fa5a6edb3b66657acEe6F8",
-            "oftVersion": 3,
-            "endpointVersion": 2,
-            "endpointId": 30335,
-            "oftSharedDecimals": 6
-          }
-        },
-        "isAcross": false,
-        "isOFT": true,
-        "source": "inactive"
-      }
-    },
-    "chainId": 1923,
-    "tokenAddress": "0xc2606AADe4bdd978a4fa5a6edb3b66657acEe6F8",
-    "meetsMinimumLiquidity": false
-  },
-  {
-    "success": false,
-    "hasLiquidity": false,
-    "totalLiquidity": 0,
-    "pairsCount": 0,
-    "chainSupported": "goat",
-    "error": "HTTP 429",
-    "source": "geckoterminal",
-    "tokenObject": {
-      "chainId": 2345,
-      "address": "0xfe41e7e5cB3460c483AB2A38eb605Cda9e2d248E",
-      "symbol": "BTCB",
-      "originalToken": {
-        "chainId": 2345,
-        "address": "0xfe41e7e5cB3460c483AB2A38eb605Cda9e2d248E",
-        "name": "BTCB Token",
-        "symbol": "BTCB",
-        "decimals": 18,
-        "logoURI": "https://icons-ckg.pages.dev/stargate-light/tokens/btcb.svg",
-        "tags": [],
-        "extensions": {
-          "bridgeInfo": {
-            "56": {
-              "tokenAddress": "0x7130d2A12B9BCbFAe4f2634d864A1Ee1Ce3Ead9c"
-            }
-          },
-          "oftInfo": {
-            "peersInfo": {
-              "56": {
-                "tokenAddress": "0x7130d2A12B9BCbFAe4f2634d864A1Ee1Ce3Ead9c"
-              }
-            },
-            "oftAdapter": "0xfe41e7e5cB3460c483AB2A38eb605Cda9e2d248E",
-            "oftVersion": 3,
-            "endpointVersion": 2,
-            "endpointId": 30361,
-            "oftSharedDecimals": 6
-          }
-        },
-        "isAcross": false,
-        "isOFT": true,
-        "source": "inactive"
-      }
-    },
-    "chainId": 2345,
-    "tokenAddress": "0xfe41e7e5cB3460c483AB2A38eb605Cda9e2d248E",
+    "chainId": 2818,
+    "tokenAddress": "0xe898E1CffA565aAe8bAcC364AA7D65D6A2d20F16",
     "meetsMinimumLiquidity": false
   },
   {
@@ -3038,42 +2866,6 @@
             "peersInfo": {
               "1": {
                 "tokenAddress": "0x57e114B691Db790C35207b2e685D4A43181e6061"
-              },
-              "10": {
-                "tokenAddress": "0x58538e6A46E07434d7E7375Bc268D3cb839C0133"
-              },
-              "56": {
-                "tokenAddress": "0x58538e6A46E07434d7E7375Bc268D3cb839C0133"
-              },
-              "169": {
-                "tokenAddress": "0x58538e6A46E07434d7E7375Bc268D3cb839C0133"
-              },
-              "252": {
-                "tokenAddress": "0x58538e6A46E07434d7E7375Bc268D3cb839C0133"
-              },
-              "1088": {
-                "tokenAddress": "0x58538e6A46E07434d7E7375Bc268D3cb839C0133"
-              },
-              "5000": {
-                "tokenAddress": "0x58538e6A46E07434d7E7375Bc268D3cb839C0133"
-              },
-              "8453": {
-                "tokenAddress": "0x58538e6A46E07434d7E7375Bc268D3cb839C0133"
-              },
-              "34443": {
-                "tokenAddress": "0x58538e6A46E07434d7E7375Bc268D3cb839C0133"
-              },
-              "42161": {
-                "tokenAddress": "0x58538e6A46E07434d7E7375Bc268D3cb839C0133"
-              },
-              "59144": {
-                "tokenAddress": "0x58538e6A46E07434d7E7375Bc268D3cb839C0133"
-              },
-              "81457": {
-                "tokenAddress": "0x58538e6A46E07434d7E7375Bc268D3cb839C0133"
-              },
-              "534352": {
-                "tokenAddress": "0x58538e6A46E07434d7E7375Bc268D3cb839C0133"
               }
             },
             "oftAdapter": "0x58538e6A46E07434d7E7375Bc268D3cb839C0133",
@@ -3097,34 +2889,37 @@
     "hasLiquidity": false,
     "totalLiquidity": 0,
     "pairsCount": 0,
-    "chainSupported": "morph-l2",
+    "chainSupported": "plume-network",
     "error": "HTTP 429",
     "source": "geckoterminal",
     "tokenObject": {
-      "chainId": 2818,
-      "address": "0xbAE3E03e3f847D0adD4eE6bE4732c690f7Fa9cCc",
-      "symbol": "demETH",
+      "chainId": 98866,
+      "address": "0x593cCcA4c4bf58b7526a4C164cEEf4003C6388db",
+      "symbol": "nALPHA",
       "originalToken": {
-        "chainId": 2818,
-        "address": "0xbAE3E03e3f847D0adD4eE6bE4732c690f7Fa9cCc",
-        "name": "Demether ETH",
-        "symbol": "demETH",
-        "decimals": 18,
+        "chainId": 98866,
+        "address": "0x593cCcA4c4bf58b7526a4C164cEEf4003C6388db",
+        "name": "Nest Alpha Vault",
+        "symbol": "nALPHA",
+        "decimals": 6,
+        "logoURI": "https://icons-ckg.pages.dev/stargate-light/tokens/nalpha.svg",
         "tags": [],
         "extensions": {
+          "bridgeInfo": {
+            "1": {
+              "tokenAddress": "0x593cCcA4c4bf58b7526a4C164cEEf4003C6388db"
+            }
+          },
           "oftInfo": {
             "peersInfo": {
               "1": {
-                "tokenAddress": "0xbAE3E03e3f847D0adD4eE6bE4732c690f7Fa9cCc"
-              },
-              "42161": {
-                "tokenAddress": "0xbAE3E03e3f847D0adD4eE6bE4732c690f7Fa9cCc"
+                "tokenAddress": "0x593cCcA4c4bf58b7526a4C164cEEf4003C6388db"
               }
             },
-            "oftAdapter": "0xbAE3E03e3f847D0adD4eE6bE4732c690f7Fa9cCc",
+            "oftAdapter": "0x0342EE795e7864319fB8D48651b47feBf1163C34",
             "oftVersion": 3,
             "endpointVersion": 2,
-            "endpointId": 30322,
+            "endpointId": 30370,
             "oftSharedDecimals": 6
           }
         },
@@ -3133,8 +2928,8 @@
         "source": "inactive"
       }
     },
-    "chainId": 2818,
-    "tokenAddress": "0xbAE3E03e3f847D0adD4eE6bE4732c690f7Fa9cCc",
+    "chainId": 98866,
+    "tokenAddress": "0x593cCcA4c4bf58b7526a4C164cEEf4003C6388db",
     "meetsMinimumLiquidity": false
   },
   {
@@ -3142,73 +2937,188 @@
     "hasLiquidity": false,
     "totalLiquidity": 0,
     "pairsCount": 0,
-    "chainSupported": "morph-l2",
+    "chainSupported": "plume-network",
     "error": "HTTP 429",
     "source": "geckoterminal",
     "tokenObject": {
-      "chainId": 2818,
-      "address": "0x211Cc4DD073734dA055fbF44a2b4667d5E5fE5d2",
-      "symbol": "sUSDe",
+      "chainId": 98866,
+      "address": "0x6eAf19b2FC24552925dB245F9Ff613157a7dbb4C",
+      "symbol": "xUSD",
       "originalToken": {
-        "chainId": 2818,
-        "address": "0x211Cc4DD073734dA055fbF44a2b4667d5E5fE5d2",
-        "name": "Staked USDe",
-        "symbol": "sUSDe",
-        "decimals": 18,
-        "logoURI": "https://icons-ckg.pages.dev/stargate-light/tokens/susde.svg",
+        "chainId": 98866,
+        "address": "0x6eAf19b2FC24552925dB245F9Ff613157a7dbb4C",
+        "name": "Staked Stream USD",
+        "symbol": "xUSD",
+        "decimals": 6,
         "tags": [],
         "extensions": {
           "bridgeInfo": {
             "1": {
-              "tokenAddress": "0x9D39A5DE30e57443BfF2A8307A4256c8797A3497"
+              "tokenAddress": "0xE2Fc85BfB48C4cF147921fBE110cf92Ef9f26F94"
             }
           },
           "oftInfo": {
             "peersInfo": {
               "1": {
-                "tokenAddress": "0x9D39A5DE30e57443BfF2A8307A4256c8797A3497"
+                "tokenAddress": "0xE2Fc85BfB48C4cF147921fBE110cf92Ef9f26F94"
+              }
+            },
+            "oftAdapter": "0x6eAf19b2FC24552925dB245F9Ff613157a7dbb4C",
+            "oftVersion": 3,
+            "endpointVersion": 2,
+            "endpointId": 30370,
+            "oftSharedDecimals": 6
+          }
+        },
+        "isAcross": false,
+        "isOFT": true,
+        "source": "inactive"
+      }
+    },
+    "chainId": 98866,
+    "tokenAddress": "0x6eAf19b2FC24552925dB245F9Ff613157a7dbb4C",
+    "meetsMinimumLiquidity": false
+  },
+  {
+    "success": false,
+    "hasLiquidity": false,
+    "totalLiquidity": 0,
+    "pairsCount": 0,
+    "chainSupported": "plume-network",
+    "error": "HTTP 429",
+    "source": "geckoterminal",
+    "tokenObject": {
+      "chainId": 98866,
+      "address": "0x94f9bB5c972285728DCee7EAece48BeC2fF341ce",
+      "symbol": "xETH",
+      "originalToken": {
+        "chainId": 98866,
+        "address": "0x94f9bB5c972285728DCee7EAece48BeC2fF341ce",
+        "name": "Staked Stream ETH",
+        "symbol": "xETH",
+        "decimals": 18,
+        "tags": [],
+        "extensions": {
+          "bridgeInfo": {
+            "1": {
+              "tokenAddress": "0x7E586fBaF3084C0be7aB5C82C04FfD7592723153"
+            }
+          },
+          "oftInfo": {
+            "peersInfo": {
+              "1": {
+                "tokenAddress": "0x7E586fBaF3084C0be7aB5C82C04FfD7592723153"
+              }
+            },
+            "oftAdapter": "0x94f9bB5c972285728DCee7EAece48BeC2fF341ce",
+            "oftVersion": 3,
+            "endpointVersion": 2,
+            "endpointId": 30370,
+            "oftSharedDecimals": 6
+          }
+        },
+        "isAcross": false,
+        "isOFT": true,
+        "source": "inactive"
+      }
+    },
+    "chainId": 98866,
+    "tokenAddress": "0x94f9bB5c972285728DCee7EAece48BeC2fF341ce",
+    "meetsMinimumLiquidity": false
+  },
+  {
+    "success": false,
+    "hasLiquidity": false,
+    "totalLiquidity": 0,
+    "pairsCount": 0,
+    "chainSupported": "plume-network",
+    "error": "HTTP 429",
+    "source": "geckoterminal",
+    "tokenObject": {
+      "chainId": 98866,
+      "address": "0x9E79eC4BC3574f2865636aECFF44B60A723A9eE7",
+      "symbol": "lz-USDp",
+      "originalToken": {
+        "chainId": 98866,
+        "address": "0x9E79eC4BC3574f2865636aECFF44B60A723A9eE7",
+        "name": "lz-USDp",
+        "symbol": "lz-USDp",
+        "decimals": 18,
+        "tags": [],
+        "extensions": {
+          "oftInfo": {
+            "peersInfo": {
+              "1": {
+                "tokenAddress": "0x78BB4882b77D74aD9B04Ab71fE8e61f72595823C"
               },
               "10": {
-                "tokenAddress": "0x211Cc4DD073734dA055fbF44a2b4667d5E5fE5d2"
+                "tokenAddress": "0x76A9A0062ec6712b99B4f63bD2b4270185759dd5"
               },
               "56": {
-                "tokenAddress": "0x211Cc4DD073734dA055fbF44a2b4667d5E5fE5d2"
+                "tokenAddress": "0x7b54f3D993d3bcA077946034Ea710F9c07420C72"
               },
-              "169": {
-                "tokenAddress": "0x211Cc4DD073734dA055fbF44a2b4667d5E5fE5d2"
+              "100": {
+                "tokenAddress": "0x9fFaCB3dB5cB74BdD4C68af3b7CF203130c699ec"
+              },
+              "130": {
+                "tokenAddress": "0x9fFaCB3dB5cB74BdD4C68af3b7CF203130c699ec"
+              },
+              "137": {
+                "tokenAddress": "0x9aFDB5A5eC2BBDDdAa4573BAA25CAA4e4e4a2CA9"
+              },
+              "146": {
+                "tokenAddress": "0xDa818995DdEee3AC36BF492133E1FeAE1FA377E6"
+              },
+              "239": {
+                "tokenAddress": "0xB3DbecE41acDD6aD76d037b8Da2e53C58826746c"
               },
               "252": {
-                "tokenAddress": "0x211Cc4DD073734dA055fbF44a2b4667d5E5fE5d2"
+                "tokenAddress": "0x9E79eC4BC3574f2865636aECFF44B60A723A9eE7"
               },
-              "1088": {
-                "tokenAddress": "0x211Cc4DD073734dA055fbF44a2b4667d5E5fE5d2"
+              "480": {
+                "tokenAddress": "0x9E79eC4BC3574f2865636aECFF44B60A723A9eE7"
               },
-              "5000": {
-                "tokenAddress": "0x211Cc4DD073734dA055fbF44a2b4667d5E5fE5d2"
+              "999": {
+                "tokenAddress": "0xC3BEF21Ea7dEB5C34CF33E918c8e28972C8048eD"
+              },
+              "1329": {
+                "tokenAddress": "0x7b54f3D993d3bcA077946034Ea710F9c07420C72"
               },
               "8453": {
-                "tokenAddress": "0x211Cc4DD073734dA055fbF44a2b4667d5E5fE5d2"
+                "tokenAddress": "0x4Dde0e308CFB60515218C6ad2DF1134Fc48531FC"
               },
-              "34443": {
-                "tokenAddress": "0x211Cc4DD073734dA055fbF44a2b4667d5E5fE5d2"
+              "9745": {
+                "tokenAddress": "0x9E79eC4BC3574f2865636aECFF44B60A723A9eE7"
               },
               "42161": {
-                "tokenAddress": "0x211Cc4DD073734dA055fbF44a2b4667d5E5fE5d2"
+                "tokenAddress": "0x4Dde0e308CFB60515218C6ad2DF1134Fc48531FC"
+              },
+              "43111": {
+                "tokenAddress": "0x9E79eC4BC3574f2865636aECFF44B60A723A9eE7"
+              },
+              "43114": {
+                "tokenAddress": "0x9fFaCB3dB5cB74BdD4C68af3b7CF203130c699ec"
+              },
+              "57073": {
+                "tokenAddress": "0x9fFaCB3dB5cB74BdD4C68af3b7CF203130c699ec"
               },
               "59144": {
-                "tokenAddress": "0x211Cc4DD073734dA055fbF44a2b4667d5E5fE5d2"
+                "tokenAddress": "0x9E79eC4BC3574f2865636aECFF44B60A723A9eE7"
               },
-              "81457": {
-                "tokenAddress": "0x211Cc4DD073734dA055fbF44a2b4667d5E5fE5d2"
+              "80094": {
+                "tokenAddress": "0x9fFaCB3dB5cB74BdD4C68af3b7CF203130c699ec"
               },
               "534352": {
-                "tokenAddress": "0x211Cc4DD073734dA055fbF44a2b4667d5E5fE5d2"
+                "tokenAddress": "0x9fFaCB3dB5cB74BdD4C68af3b7CF203130c699ec"
+              },
+              "747474": {
+                "tokenAddress": "0x9E79eC4BC3574f2865636aECFF44B60A723A9eE7"
               }
             },
-            "oftAdapter": "0x211Cc4DD073734dA055fbF44a2b4667d5E5fE5d2",
+            "oftAdapter": "0x9E79eC4BC3574f2865636aECFF44B60A723A9eE7",
             "oftVersion": 3,
             "endpointVersion": 2,
-            "endpointId": 30322,
+            "endpointId": 30370,
             "oftSharedDecimals": 6
           }
         },
@@ -3217,8 +3127,8 @@
         "source": "inactive"
       }
     },
-    "chainId": 2818,
-    "tokenAddress": "0x211Cc4DD073734dA055fbF44a2b4667d5E5fE5d2",
+    "chainId": 98866,
+    "tokenAddress": "0x9E79eC4BC3574f2865636aECFF44B60A723A9eE7",
     "meetsMinimumLiquidity": false
   },
   {
@@ -3226,37 +3136,37 @@
     "hasLiquidity": false,
     "totalLiquidity": 0,
     "pairsCount": 0,
-    "chainSupported": "morph-l2",
+    "chainSupported": "plume-network",
     "error": "HTTP 429",
     "source": "geckoterminal",
     "tokenObject": {
-      "chainId": 2818,
-      "address": "0xecAc9C5F704e954931349Da37F60E39f515c11c1",
-      "symbol": "LBTC",
+      "chainId": 98866,
+      "address": "0xd88eC8396e7b9731a2C0D564d520bee427b4B5E5",
+      "symbol": "RWAX",
       "originalToken": {
-        "chainId": 2818,
-        "address": "0xecAc9C5F704e954931349Da37F60E39f515c11c1",
-        "name": "Lombard Staked Bitcoin",
-        "symbol": "LBTC",
-        "decimals": 8,
-        "logoURI": "https://icons-ckg.pages.dev/stargate-light/tokens/lbtc.svg",
+        "chainId": 98866,
+        "address": "0xd88eC8396e7b9731a2C0D564d520bee427b4B5E5",
+        "name": "RWAX",
+        "symbol": "RWAX",
+        "decimals": 18,
+        "logoURI": "https://icons-ckg.pages.dev/stargate-light/tokens/rwax.svg",
         "tags": [],
         "extensions": {
           "bridgeInfo": {
-            "1": {
-              "tokenAddress": "0x8236a87084f8B84306f72007F36F2618A5634494"
+            "8453": {
+              "tokenAddress": "0xe0023E73aab4fE9a22f059a9d27E857E027eE3dc"
             }
           },
           "oftInfo": {
             "peersInfo": {
-              "1": {
-                "tokenAddress": "0x8236a87084f8B84306f72007F36F2618A5634494"
+              "8453": {
+                "tokenAddress": "0xe0023E73aab4fE9a22f059a9d27E857E027eE3dc"
               }
             },
-            "oftAdapter": "0x2e1871Fc8ac793dCf2A74Ce004eE21D913763565",
+            "oftAdapter": "0xd88eC8396e7b9731a2C0D564d520bee427b4B5E5",
             "oftVersion": 3,
             "endpointVersion": 2,
-            "endpointId": 30322,
+            "endpointId": 30370,
             "oftSharedDecimals": 6
           }
         },
@@ -3265,57 +3175,8 @@
         "source": "inactive"
       }
     },
-    "chainId": 2818,
-    "tokenAddress": "0xecAc9C5F704e954931349Da37F60E39f515c11c1",
-    "meetsMinimumLiquidity": false
-  },
-  {
-    "success": false,
-    "hasLiquidity": false,
-    "totalLiquidity": 0,
-    "pairsCount": 0,
-    "chainSupported": "nibiru",
-    "error": "HTTP 429",
-    "source": "geckoterminal",
-    "tokenObject": {
-      "chainId": 6900,
-      "address": "0x1D63c9409bb41b2Ab43259b843fF32c839A9ffa2",
-      "symbol": "SPELL",
-      "originalToken": {
-        "chainId": 6900,
-        "address": "0x1D63c9409bb41b2Ab43259b843fF32c839A9ffa2",
-        "name": "SPELL",
-        "symbol": "SPELL",
-        "decimals": 18,
-        "logoURI": "https://assets.coingecko.com/coins/images/15861/thumb/abracadabra-3.png?1622544862",
-        "tags": [],
-        "extensions": {
-          "oftInfo": {
-            "peersInfo": {
-              "1": {
-                "tokenAddress": "0x090185f2135308BaD17527004364eBcC2D37e5F6"
-              },
-              "42161": {
-                "tokenAddress": "0x34FbFB3e95011956aBAD82796f466bA88895f214"
-              },
-              "80094": {
-                "tokenAddress": "0x22581e7E93d66977849D094006fC2cF3aB9C8FfA"
-              }
-            },
-            "oftAdapter": "0x1D63c9409bb41b2Ab43259b843fF32c839A9ffa2",
-            "oftVersion": 3,
-            "endpointVersion": 2,
-            "endpointId": 30369,
-            "oftSharedDecimals": 6
-          }
-        },
-        "isAcross": false,
-        "isOFT": true,
-        "source": "inactive"
-      }
-    },
-    "chainId": 6900,
-    "tokenAddress": "0x1D63c9409bb41b2Ab43259b843fF32c839A9ffa2",
+    "chainId": 98866,
+    "tokenAddress": "0xd88eC8396e7b9731a2C0D564d520bee427b4B5E5",
     "meetsMinimumLiquidity": false
   },
   {
@@ -3391,6 +3252,54 @@
     },
     "chainId": 98866,
     "tokenAddress": "0xf9AA0FdFa7C8B40e844A09B0e6f0260Df120c2e8",
+    "meetsMinimumLiquidity": false
+  },
+  {
+    "success": false,
+    "hasLiquidity": false,
+    "totalLiquidity": 0,
+    "pairsCount": 0,
+    "chainSupported": "plume-network",
+    "error": "HTTP 429",
+    "source": "geckoterminal",
+    "tokenObject": {
+      "chainId": 98866,
+      "address": "0xE72Fe64840F4EF80E3Ec73a1c749491b5c938CB9",
+      "symbol": "nTBILL",
+      "originalToken": {
+        "chainId": 98866,
+        "address": "0xE72Fe64840F4EF80E3Ec73a1c749491b5c938CB9",
+        "name": "Nest Treasuries Vault",
+        "symbol": "nTBILL",
+        "decimals": 6,
+        "logoURI": "https://icons-ckg.pages.dev/stargate-light/tokens/ntbill.svg",
+        "tags": [],
+        "extensions": {
+          "bridgeInfo": {
+            "1": {
+              "tokenAddress": "0xE72Fe64840F4EF80E3Ec73a1c749491b5c938CB9"
+            }
+          },
+          "oftInfo": {
+            "peersInfo": {
+              "1": {
+                "tokenAddress": "0xE72Fe64840F4EF80E3Ec73a1c749491b5c938CB9"
+              }
+            },
+            "oftAdapter": "0x250c2D14Ed6376fB392FbA1edd2cfd11d2Bf7F12",
+            "oftVersion": 3,
+            "endpointVersion": 2,
+            "endpointId": 30370,
+            "oftSharedDecimals": 6
+          }
+        },
+        "isAcross": false,
+        "isOFT": true,
+        "source": "inactive"
+      }
+    },
+    "chainId": 98866,
+    "tokenAddress": "0xE72Fe64840F4EF80E3Ec73a1c749491b5c938CB9",
     "meetsMinimumLiquidity": false
   }
 ]

@@ -19,6 +19,9 @@
         "137": {
           "tokenAddress": "0x7ceB23fD6bC0adD59E62ac25578270cFf1b9f619"
         },
+        "239": {
+          "tokenAddress": "0x61D66bC21fED820938021B06e9b2291f3FB91945"
+        },
         "42161": {
           "tokenAddress": "0x82aF49447D8a07e3bd95BD0d56f35241523fBab1"
         },
@@ -72,10 +75,22 @@
         "7777777": {
           "address": "0x4200000000000000000000000000000000000006"
         }
+      },
+      "oftInfo": {
+        "peersInfo": {
+          "239": {
+            "tokenAddress": "0x61D66bC21fED820938021B06e9b2291f3FB91945"
+          }
+        },
+        "oftAdapter": "0xf211D3B40A74632162F45F4d42A461b663694a9D",
+        "oftVersion": 3,
+        "endpointVersion": 2,
+        "endpointId": 30101,
+        "oftSharedDecimals": 6
       }
     },
     "isAcross": true,
-    "isOFT": false
+    "isOFT": true
   },
   {
     "chainId": 10,
@@ -282,7 +297,7 @@
     "name": "Wrapped MON",
     "symbol": "WMON",
     "decimals": 18,
-    "logoURI": "https://coin-images.coingecko.com/coins/images/70784/large/wmon.png?1766028904",
+    "logoURI": "https://s3.openocean.finance/token_logos/logos/1762849901535_2510524360177776.png",
     "extensions": {},
     "isAcross": false,
     "isOFT": false
@@ -339,6 +354,8 @@
     "logoURI": "https://fraxscan.com/token/images/wfrax_64.png",
     "tags": [],
     "extensions": {
+      "coingeckoId": "wrapped-frax",
+      "coinMarketCapId": 37362,
       "bridgeInfo": {
         "1": {
           "tokenAddress": "0x04ACaF8D2865c0714F79da09645C13FD2888977f"
@@ -383,9 +400,6 @@
           "tokenAddress": "0x5217Ab28ECE654Aab2C68efedb6A22739df6C3D5"
         },
         "80094": {
-          "tokenAddress": "0x64445f0aecC51E94aD52d8AC56b7190e764E561a"
-        },
-        "81457": {
           "tokenAddress": "0x64445f0aecC51E94aD52d8AC56b7190e764E561a"
         },
         "98866": {
@@ -446,9 +460,6 @@
             "tokenAddress": "0x5217Ab28ECE654Aab2C68efedb6A22739df6C3D5"
           },
           "80094": {
-            "tokenAddress": "0x64445f0aecC51E94aD52d8AC56b7190e764E561a"
-          },
-          "81457": {
             "tokenAddress": "0x64445f0aecC51E94aD52d8AC56b7190e764E561a"
           },
           "98866": {
@@ -555,11 +566,14 @@
     "name": "Wrapped HYPE",
     "symbol": "WHYPE",
     "decimals": 18,
-    "logoURI": "https://coin-images.coingecko.com/coins/images/54469/large/_UP3jBsi_400x400.jpg?1739905920",
+    "logoURI": "https://s3.openocean.finance/token_logos/logos/1750322356418_9551882555637845.png",
     "tags": [],
     "extensions": {
       "bridgeInfo": {
         "1": {
+          "tokenAddress": "0xd83E3d560bA6F05094d9D8B3EB8aaEA571D1864E"
+        },
+        "10": {
           "tokenAddress": "0xd83E3d560bA6F05094d9D8B3EB8aaEA571D1864E"
         },
         "534352": {
@@ -792,31 +806,9 @@
     "decimals": 18,
     "logoURI": "https://images-ext-1.discordapp.net/external/tM3n2iub1SLOqiey4mkfnl4Lfe4LR6ijT-Ixv7juEu8/https/silverswap.io/tokens/nibiru/WNIBI.png?format=webp&quality=lossless&width=450&height=450",
     "tags": [],
-    "extensions": {
-      "oftInfo": {
-        "peersInfo": {
-          "1": {
-            "tokenAddress": "0x8A47e412a865198b9d5f10fF2e54f788f1696195"
-          },
-          "137": {
-            "tokenAddress": "0x02f6FD682027a148d73777034CB85D14f231A678"
-          },
-          "8453": {
-            "tokenAddress": "0x3aDE6652F203d919697f8577F75Eebb989A5C586"
-          },
-          "42161": {
-            "tokenAddress": "0x80cf4350c702D466ef65305A73726349e98d7f57"
-          }
-        },
-        "oftAdapter": "0x4DF4eFa0a3707b6Cc964F62042E8a303A0376F54",
-        "oftVersion": 3,
-        "endpointVersion": 2,
-        "endpointId": 30369,
-        "oftSharedDecimals": 6
-      }
-    },
+    "extensions": {},
     "isAcross": false,
-    "isOFT": true
+    "isOFT": false
   },
   {
     "chainId": 8453,
@@ -882,7 +874,7 @@
     "name": "Wrapped XPL",
     "symbol": "WXPL",
     "decimals": 18,
-    "logoURI": "https://raw.githubusercontent.com/balancer/tokenlists/main/src/assets/images/tokens/0x6100e367285b01f48d07953803a2d8dca5d19873.png",
+    "logoURI": "https://s3.openocean.finance/token_logos/logos/1758861117370_6245141124259231.png",
     "extensions": {},
     "isAcross": false,
     "isOFT": false
@@ -962,7 +954,7 @@
     "name": "Wrapped Ether",
     "symbol": "WETH",
     "decimals": 18,
-    "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2/logo.png",
+    "logoURI": "https://raw.githubusercontent.com/CamelotLabs/default-token-list/refs/heads/main/src/assets/weth.svg",
     "tags": [],
     "extensions": {
       "coingeckoId": "ethereum",
@@ -1025,7 +1017,7 @@
     "name": "Celo",
     "symbol": "CELO",
     "decimals": 18,
-    "logoURI": "https://celo-org.github.io/celo-token-list/assets/celo_logo.svg",
+    "logoURI": "https://s3.openocean.finance/token_logos/logos/1675828631474_42987407614787054.png",
     "tags": [],
     "extensions": {},
     "isAcross": false,
@@ -1353,9 +1345,29 @@
     "name": "Vault Bridge ETH",
     "symbol": "vbETH",
     "decimals": 18,
-    "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2/logo.png",
+    "logoURI": "https://icons-ckg.pages.dev/stargate-light/tokens/vbeth.svg",
+    "tags": [],
+    "extensions": {
+      "bridgeInfo": {
+        "1": {
+          "tokenAddress": "0x2DC70fb75b88d2eB4715bc06E1595E6D97c34DFF"
+        }
+      },
+      "oftInfo": {
+        "peersInfo": {
+          "1": {
+            "tokenAddress": "0x2DC70fb75b88d2eB4715bc06E1595E6D97c34DFF"
+          }
+        },
+        "oftAdapter": "0x694d1697F6909361775139357d99fb60b5caB683",
+        "oftVersion": 3,
+        "endpointVersion": 2,
+        "endpointId": 30375,
+        "oftSharedDecimals": 6
+      }
+    },
     "isAcross": false,
-    "isOFT": false
+    "isOFT": true
   },
   {
     "chainId": 7777777,
