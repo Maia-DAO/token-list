@@ -50,14 +50,37 @@ function findTokenForChain(chainId, nativeAddress) {
 }
 
 // Iterate in preserved order
+const missingChainIds = []
 for (const chainId of orderedChainIds) {
   const nativeAddress = WRAPPED_NATIVES[chainId]
   const match = findTokenForChain(chainId, nativeAddress)
   if (match) matchedTokens.push(match)
+  else {
+    missingChainIds.push(chainId)
+    console.warn(
+      `⚠️ No token found for wrapped native ${nativeAddress} on chain ${chainId} — entry will be missing from wrappedNatives.json`
+    )
+  }
 }
 
-// Write result to wrappedNatives.json
 const outputPath = path.join(__dirname, '../../wrappedNatives.json')
-fs.writeFileSync(outputPath, JSON.stringify(matchedTokens, null, 2), 'utf8')
 
-console.log(`✅ Done. Found ${matchedTokens.length} wrapped native tokens.`)
+// A chain present in the existing wrappedNatives.json but unmatched now means a configured
+// wrapped native was demoted/dropped upstream — never ship that silently.
+let previousChainIds = new Set()
+try {
+  previousChainIds = new Set(JSON.parse(fs.readFileSync(outputPath, 'utf8')).map((t) => t.chainId))
+} catch (e) {
+  /* no previous file — nothing to regress against */
+}
+const regressions = missingChainIds.filter((chainId) => previousChainIds.has(Number(chainId)))
+
+if (regressions.length > 0) {
+  console.error(
+    `❌ Wrapped native(s) for chain(s) ${regressions.join(', ')} exist in the current wrappedNatives.json but have no match in token-list.json. Leaving wrappedNatives.json untouched.`
+  )
+  process.exitCode = 1
+} else {
+  fs.writeFileSync(outputPath, JSON.stringify(matchedTokens, null, 2), 'utf8')
+  console.log(`✅ Done. Found ${matchedTokens.length} wrapped native tokens.`)
+}

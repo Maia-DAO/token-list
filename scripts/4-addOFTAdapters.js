@@ -134,4 +134,7 @@ async function main() {
   console.log(`Done: ${results.length} enriched, ${missingAdapters.length} missing`)
 }
 
-main().catch((e) => console.error(e))
+main().catch((e) => {
+  console.error(e)
+  process.exitCode = 1
+})

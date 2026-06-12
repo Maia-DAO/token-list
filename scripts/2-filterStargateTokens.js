@@ -26,6 +26,7 @@ async function filterStargateTokens() {
     console.log('✅ Filtered tokens saved to output/filteredStargateTokens.json')
   } catch (error) {
     console.error('❌ Error:', error)
+    process.exitCode = 1
   }
 }
 

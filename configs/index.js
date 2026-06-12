@@ -115,7 +115,7 @@ const PARTNER_TOKEN_SYMBOLS = [
   'HEMI',
   'hemiBTC',
   'rsETH',
-  'enzoBTC'
+  'enzoBTC',
 ]
 
 const CORE_TOKEN_SYMBOLS = [
@@ -151,7 +151,7 @@ const NATIVE_OFT_ADAPTERS = {
   [1996]: { ['0x7393ae4835fdfed4f25e46a10d6bdb2fd49a2706']: '0x0000000000000000000000000000000000000000' }, // SANKO has native OFT
   [747]: { ['0xd296588850bee2770136464ffdddd78c32f2a07c']: '0x0000000000000000000000000000000000000000' }, // FLOW has native OFT
   [1329]: { ['0xbdf43ecadc5cef51b7d1772f722e40596bc1788b']: '0x0000000000000000000000000000000000000000' }, // SEI has native OFT
-  [5064014]: { ['0x80f981abc18a48cfdbde5556f9b72e6a726f0ff3']: '0x0000000000000000000000000000000000000000' }, // ETHEREAL has native OFT
+  // [5064014]: { ['0x80f981abc18a48cfdbde5556f9b72e6a726f0ff3']: '0x0000000000000000000000000000000000000000' }, // ETHEREAL has native OFT
   [9745]: { ['0x405fbc9004d857903bfd6b3357792d71a50726b0']: '0x0000000000000000000000000000000000000000' }, // PLASMA has native OFT
 }
 
@@ -260,7 +260,7 @@ const WRAPPED_NATIVES = {
   [5000]: '0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000',
   [1890]: '0x7EbeF2A4b1B09381Ec5B9dF8C5c6f2dBECA59c73',
   [43111]: '0x4200000000000000000000000000000000000006',
-  [5064014]: '0xB6fC4B1BFF391e5F6b4a3D2C7Bda1FeE3524692D',
+  // [5064014]: '0xB6fC4B1BFF391e5F6b4a3D2C7Bda1FeE3524692D',
   [143]: '0x3bd359C1119dA7Da1D913D1C4D2B7c461115433A',
   [9745]: '0x6100E367285b01F48D07953803A2d8dCA5D19873',
 }
@@ -269,7 +269,7 @@ const WRAPPED_NATIVES = {
 // @dev copied from hermes UI frontend bridging.ts
 const CHAINS_WITH_NO_SWAPPING = [
   252, 200901, 60808, 1116, 2345, 57073, 747474, 2818, 6900, 291, 3338, 1868, 239, 167000, 480, 7777777, 1890, 43111,
-  5064014, 
+  5064014,
 ]
 
 // Extended supported chain IDs
@@ -313,7 +313,9 @@ const EXTENDED_SUPPORTED_CHAIN_IDS = [
   // 1380012617,
   34443, 81457,
   // 11501,
-  5000, 1890, 43111, 5064014, 143, 9745,
+  5000, 1890, 43111,
+  //  5064014,
+  143, 9745,
 ]
 
 // Supported chains List.
@@ -394,7 +396,7 @@ const SUPPORTED_CHAINS = [
   'mantle',
   'lightlink',
   'hemi',
-  'ethereal',
+  // 'ethereal',
   'monad',
   'plasma',
 ]
@@ -479,7 +481,7 @@ const CHAIN_KEYS = {
   5000: 'mantle',
   43111: 'hemi',
   1890: 'lightlink',
-  5064014: 'ethereal',
+  // 5064014: 'ethereal',
   143: 'monad',
   9745: 'plasma',
 }
@@ -562,7 +564,7 @@ const CHAIN_KEY_TO_ID = {
   mantle: 5000,
   hemi: 43111,
   lightlink: 1890,
-  ethereal: 5064014,
+  // ethereal: 5064014,
   monad: 143,
   plasma: 9745,
 }

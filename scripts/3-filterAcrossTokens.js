@@ -160,6 +160,7 @@ async function filterAcrossTokens() {
     console.log('✅ Filtered across tokens saved to output/filteredAcrossTokens.json')
   } catch (error) {
     console.error('❌ Error:', error)
+    process.exitCode = 1
   }
 }
 

@@ -477,6 +477,21 @@ class TokenLiquidityChecker {
       }
     }
 
+    // A successful response below the minimum can still be incomplete coverage
+    // (e.g. DEXScreener returning pairs without liquidity.usd), so confirm with
+    // the other API and keep whichever reports more liquidity
+    if (result.success && result.totalLiquidity < minimumLiquidity) {
+      const confirmFn = result.source === primaryAPI ? fallback : primary
+      const confirmAPI = result.source === primaryAPI ? fallbackAPI : primaryAPI
+      console.log(
+        `${result.source} reports $${result.totalLiquidity} (< ${minimumLiquidity}) for ${tokenAddress}, confirming with ${confirmAPI}...`
+      )
+      const confirmResult = await confirmFn.call(this, chainId, tokenAddress)
+      if (confirmResult.success && confirmResult.totalLiquidity > result.totalLiquidity) {
+        result = confirmResult
+      }
+    }
+
     // If neither API supports this chain, we should not process this token
     const chainSupportedByEither =
       this.isChainSupported(chainId, 'dexscreener') || this.isChainSupported(chainId, 'geckoterminal')
@@ -585,6 +600,7 @@ class TokenLiquidityChecker {
           hasAnyLiquidity: false,
           supportedChains: 0,
           unsupportedChain: false,
+          lookupFailed: false,
         })
       }
 
@@ -600,6 +616,9 @@ class TokenLiquidityChecker {
         // Only mark as unsupported if the chain is actually unsupported by all APIs
         if (result.chainSupported === false) {
           tokenResult.unsupportedChain = true
+        } else {
+          // Lookup failed on both APIs (e.g. HTTP 429) - not the same as zero liquidity
+          tokenResult.lookupFailed = true
         }
       }
     }
@@ -612,6 +631,7 @@ class TokenLiquidityChecker {
         totalChecks: liquidityChecks.length,
         tokensWithLiquidity: Array.from(tokenResults.values()).filter((r) => r.hasAnyLiquidity).length,
         tokensOnUnsupportedChains: Array.from(tokenResults.values()).filter((r) => r.unsupportedChain).length,
+        tokensWithFailedLookups: Array.from(tokenResults.values()).filter((r) => r.lookupFailed).length,
         averageLiquidityPerToken:
           Array.from(tokenResults.values())
             .filter((r) => r.hasAnyLiquidity)
@@ -638,6 +658,10 @@ class TokenLiquidityChecker {
 
       // Skip if there's no liquidity info for that chain
       if (result.unsupportedChain) return false
+
+      // Skip if the liquidity lookup failed on both APIs (e.g. rate limited):
+      // keep the token's previous state instead of treating failure as zero liquidity
+      if (result.lookupFailed) return false
 
       // Skip if token is in ignoreTokensList
       if (
@@ -849,6 +873,45 @@ async function runLiquidityCheck() {
       console.log('All tokens meet minimum liquidity requirements')
     }
 
+    // Clear stale noLiquidityOnChain flags for tokens whose liquidity is now confirmed.
+    // Only when the lookup actually succeeded — failed/unsupported lookups keep their previous state.
+    const tokensToUnflag = result.tokenResults.filter(
+      (r) =>
+        !r.unsupportedChain &&
+        !r.lookupFailed &&
+        r.hasAnyLiquidity &&
+        r.totalLiquidity >= MINIMUM_LIQUIDITY &&
+        r.token.noLiquidityOnChain === true
+    )
+
+    for (const tokenToUnflag of tokensToUnflag) {
+      const addrToUnflag = checker.getTokenAddress(tokenToUnflag.token)
+      const chainIdToUnflag = tokenToUnflag.token.chainId
+      const sourceToUnflag = tokenToUnflag.token.source
+
+      let found
+      if (sourceToUnflag === 'rootTokens') {
+        found = (tokenList.rootTokens || []).find((t) => checker.getTokenAddress(t) === addrToUnflag)
+      } else if (sourceToUnflag === 'tokens') {
+        found = (tokenList.tokens || []).find(
+          (t) => checker.getTokenAddress(t) === addrToUnflag && t.chainId === chainIdToUnflag
+        )
+      } else if (sourceToUnflag === 'inactive') {
+        found = (inactiveTokenList.tokens || []).find(
+          (t) => checker.getTokenAddress(t) === addrToUnflag && t.chainId === chainIdToUnflag
+        )
+      }
+
+      if (found && found.noLiquidityOnChain) {
+        delete found.noLiquidityOnChain
+        console.log(
+          `Cleared noLiquidityOnChain for ${tokenToUnflag.token.symbol} on chain ${chainIdToUnflag} ($${tokenToUnflag.totalLiquidity.toFixed(2)})`
+        )
+      } else if (!found) {
+        console.warn(`Could not find token to unflag ${addrToUnflag} on chain ${chainIdToUnflag}`)
+      }
+    }
+
     // Delete non-bridgeable tokens with insufficient liquidity
     const tokensToDelete = checker.filterTokens(result.tokenResults, {
       minimumLiquidity: MINIMUM_LIQUIDITY,
@@ -910,6 +973,7 @@ async function runLiquidityCheck() {
     ])
   } catch (error) {
     console.error('Error processing tokens:', error)
+    throw error
   }
 }
 
@@ -930,4 +994,6 @@ module.exports = {
   main,
 }
 
-main()
+if (require.main === module) {
+  main()
+}

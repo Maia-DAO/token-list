@@ -2,6 +2,33 @@ require('dotenv').config()
 const fs = require('fs').promises
 const { Agent, fetch: undiciFetch } = require('undici')
 
+const ipv4Agent = new Agent({ connect: { family: 4 } }) // force IPv4 (fix connection errors)
+
+// Tracks logo HEAD checks so the end-of-run guard can detect environment-wide network failures
+const logoCheckStats = { attempted: 0, networkErrors: 0 }
+
+/**
+ * HEAD-check a logo URL using the shared IPv4 undici agent. Never throws.
+ * @returns {Promise<{ ok: true } | { ok: false, reason: string }>}
+ */
+async function checkLogoUrl(url, timeoutMs = 10_000) {
+  logoCheckStats.attempted++
+  const ac = new AbortController()
+  const timer = setTimeout(() => ac.abort(), timeoutMs)
+  try {
+    const res = await undiciFetch(url, { method: 'HEAD', dispatcher: ipv4Agent, signal: ac.signal })
+    return res.ok ? { ok: true } : { ok: false, reason: `logoURI returned ${res.status}` }
+  } catch (err) {
+    logoCheckStats.networkErrors++
+    const reason = err.name === 'AbortError'
+      ? `logoURI HEAD check timed out after ${timeoutMs}ms`
+      : `error fetching logoURI: ${err.message}`
+    return { ok: false, reason }
+  } finally {
+    clearTimeout(timer)
+  }
+}
+
 /**
  * Fetch token data from a given URL and write it to an output file.
  *
@@ -10,7 +37,6 @@ const { Agent, fetch: undiciFetch } = require('undici')
  * @param {function} conversionFunction - Optional conversion function to change list output format 
  */
 async function fetchList(url, name, conversionFunction, conversionFunctionAdditionalParams, origin) {
-  const agent = new Agent({ connect: { family: 4 } }); // force IPv4 (fix connection errors)
   const headers = origin ? { Origin: origin } : undefined;
   const timeoutMs = 15_000;
   const maxAttempts = 2;
@@ -20,7 +46,7 @@ async function fetchList(url, name, conversionFunction, conversionFunctionAdditi
     const timer = setTimeout(() => ac.abort(), timeoutMs);
 
     try {
-      const res = await undiciFetch(url, { dispatcher: agent, signal: ac.signal, headers });
+      const res = await undiciFetch(url, { dispatcher: ipv4Agent, signal: ac.signal, headers });
 
       if (!res.ok) {
         clearTimeout(timer);
@@ -65,37 +91,14 @@ async function convertOpenoceanList(list, chainId) {
       const { address, name, symbol, decimals, icon } = item
 
       if (icon) {
-        try {
-          const logoResp = await fetch(icon, { method: "HEAD" })
-          if (!logoResp.ok) {
-            console.warn(`⚠️  No logo ${symbol || address} on chain ${chainId} – logoURI returned ${logoResp.status}`)
-            return {
-              chainId,
-              address,
-              name,
-              symbol,
-              decimals,
-            }
-          }
-        } catch (err) {
-          console.warn(`⚠️  No logo ${symbol || address} on chain ${chainId} – error fetching logoURI: ${err.message}`)
-          return {
-              chainId,
-              address,
-              name,
-              symbol,
-              decimals,
-            }
+        const logoCheck = await checkLogoUrl(icon)
+        if (!logoCheck.ok) {
+          console.warn(`⚠️  No logo ${symbol || address} on chain ${chainId} – ${logoCheck.reason}`)
+          return { chainId, address, name, symbol, decimals }
         }
       } else {
         console.warn(`⚠️  No logo ${symbol || address} on chain ${chainId} – missing logoURI`)
-        return {
-              chainId,
-              address,
-              name,
-              symbol,
-              decimals,
-            }
+        return { chainId, address, name, symbol, decimals }
       }
 
       return {
@@ -122,37 +125,14 @@ async function convertCamelotList(list) {
       )
       
       if (logoURI) {
-        try {
-          const logoResp = await fetch(logoURI, { method: "HEAD" })
-          if (!logoResp.ok) {
-            console.warn(`⚠️  No logo ${symbol || address} on chain ${chainId} – logoURI returned ${logoResp.status}`)
-            return {
-              chainId,
-              address,
-              name,
-              symbol,
-              decimals,
-            }
-          }
-        } catch (err) {
-          console.warn(`⚠️  No logo ${symbol || address} on chain ${chainId} – error fetching logoURI: ${err.message}`)
-          return {
-              chainId,
-              address,
-              name,
-              symbol,
-              decimals,
-            }
+        const logoCheck = await checkLogoUrl(logoURI)
+        if (!logoCheck.ok) {
+          console.warn(`⚠️  No logo ${symbol || address} on chain ${chainId} – ${logoCheck.reason}`)
+          return { chainId, address, name, symbol, decimals }
         }
       } else {
         console.warn(`⚠️  No logo ${symbol || address} on chain ${chainId} – missing logoURI`)
-        return {
-              chainId,
-              address,
-              name,
-              symbol,
-              decimals,
-            }
+        return { chainId, address, name, symbol, decimals }
       }
 
       return {
@@ -174,37 +154,14 @@ async function convertStandardList(list) {
       const { chainId, address, name, symbol, decimals, logoURI } = item
 
       if (logoURI) {
-        try {
-          const logoResp = await fetch(logoURI, { method: "HEAD" })
-          if (!logoResp.ok) {
-            console.warn(`⚠️  No logo ${symbol || address} on chain ${chainId} – logoURI returned ${logoResp.status}`)
-            return {
-              chainId,
-              address,
-              name,
-              symbol,
-              decimals,
-            }
-          }
-        } catch (err) {
-          console.warn(`⚠️  No logo ${symbol || address} on chain ${chainId} – error fetching logoURI: ${err.message}`)
-          return {
-              chainId,
-              address,
-              name,
-              symbol,
-              decimals,
-            }
+        const logoCheck = await checkLogoUrl(logoURI)
+        if (!logoCheck.ok) {
+          console.warn(`⚠️  No logo ${symbol || address} on chain ${chainId} – ${logoCheck.reason}`)
+          return { chainId, address, name, symbol, decimals }
         }
       } else {
         console.warn(`⚠️  No logo ${symbol || address} on chain ${chainId} – missing logoURI`)
-        return {
-              chainId,
-              address,
-              name,
-              symbol,
-              decimals,
-            }
+        return { chainId, address, name, symbol, decimals }
       }
 
       return {
@@ -372,4 +329,12 @@ async function convertStandardList(list) {
       convertOpenoceanList,
       1088
     )
+
+  // F-8 mass-demotion tripwire: stripped logoURIs cause step 8 to demote tokens to the
+  // inactive list, so a network-wide HEAD-check failure must abort the pipeline.
+  console.info(`ℹ️ logo HEAD checks: ${logoCheckStats.attempted} attempted, ${logoCheckStats.networkErrors} network errors`)
+  if (logoCheckStats.attempted >= 100 && logoCheckStats.networkErrors / logoCheckStats.attempted > 0.5) {
+    console.error('❌ >50% of logo HEAD checks failed with network errors — environment problem suspected; stripped logoURIs would mass-demote tokens in step 8. Aborting pipeline; fix connectivity and re-run yarn fetch.')
+    process.exitCode = 1
+  }
 })()

@@ -161,6 +161,7 @@ async function main() {
     console.log(`✅  removed tokens without logos from token-list.json`)
   } catch (err) {
     console.error('❌  Error merging inactive tokens:', err.message)
+    throw err
   }
 }
 

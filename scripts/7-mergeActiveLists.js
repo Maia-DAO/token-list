@@ -9,6 +9,7 @@ const {
   CORE_TOKEN_SYMBOLS,
   BLOCKED_TOKEN_SYMBOLS,
   NATIVE_OFT_ADAPTERS,
+  WRAPPED_NATIVES,
   CHAINS_WITH_NO_SWAPPING,
   EXTENDED_SUPPORTED_CHAIN_IDS,
 } = require('../configs')
@@ -265,10 +266,11 @@ const tryParseTokens = (raw) => {
   try {
     const j = JSON.parse(raw)
     if (Array.isArray(j)) return j
-    if (j && Array.isArray(j.tokens)) return j.tokens.map((t) => {
-      t.address = getAddress(t.address)
-      return t
-    })
+    if (j && Array.isArray(j.tokens))
+      return j.tokens.map((t) => {
+        t.address = getAddress(t.address)
+        return t
+      })
   } catch (e) {
     /* ignore */
   }
@@ -393,6 +395,11 @@ async function main() {
       }
     }
 
+    // Fresh pipeline data is authoritative for OFT pathway data. Any token that made it
+    // into this run's normalized stargate set must not have peers/flags resurrected by
+    // static files (wrappedNatives.json / additionalTokens.json / TOKEN_LIST_* / uniswap).
+    const freshStargateKeys = new Set(allOFTTokens.map(({ key }) => key))
+
     // Second pass: determine which OFTs should be active/inactive based on peer relationships and limits
     const oftsPerChainMap = {}
     const activeOFTSet = new Set()
@@ -453,6 +460,7 @@ async function main() {
       if (
         PARTNER_TOKEN_SYMBOLS.includes(token.symbol) ||
         CORE_TOKEN_SYMBOLS.includes(token.symbol) ||
+        WRAPPED_NATIVES[token.chainId]?.toLowerCase() === token.address.toLowerCase() ||
         ulyssesTokens.some(
           (ulyssesToken) =>
             (ulyssesToken.address?.toLowerCase() === token.address?.toLowerCase() ||
@@ -620,6 +628,18 @@ async function main() {
 
       token.address = getAddress(token.address)
 
+      const freshKey = token.address.toLowerCase() + '_' + token.chainId
+      if (freshStargateKeys.has(freshKey)) {
+        // Fresh data exists for this token: strip baked-in OFT data from the static entry
+        // so mergeTokenData keeps only the fresh pipeline's values.
+        token.isOFT = false // mergeTokenData ORs flags, so the fresh value decides
+        if (token.extensions) {
+          delete token.extensions.oftInfo
+          delete token.extensions.bridgeInfo
+          if (Object.keys(token.extensions).length === 0) delete token.extensions
+        }
+      }
+
       if (
         inactiveTokensArray.some(
           (inactive) =>
@@ -726,6 +746,7 @@ async function main() {
     )
   } catch (error) {
     console.error('❌ Error merging tokens:', error)
+    process.exitCode = 1
   }
 }
 

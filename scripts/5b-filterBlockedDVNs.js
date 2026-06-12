@@ -133,12 +133,14 @@ async function main() {
     if (configCalls.length === 0) continue
 
     let configData
-    try {
-      configData = await multiCallWithFallback(chainKey, configCalls, 50, 300)
-    } catch (err) {
-      console.error(`  getConfig multicall failed on chain ${chainKey}: ${err.message}`)
-      continue
+    for (let attempt = 1; attempt <= 2 && !configData; attempt++) {
+      try {
+        configData = await multiCallWithFallback(chainKey, configCalls, 50, 300)
+      } catch (err) {
+        console.error(`  getConfig multicall failed on chain ${chainKey} (attempt ${attempt}/2): ${err.message}`)
+      }
     }
+    if (!configData) continue
 
     const lzDVNs = lzDVNsByChain[chainKey]
     const stargateDVNs = stargateDVNsByChain[chainKey]
