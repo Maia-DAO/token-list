@@ -173,6 +173,7 @@ const OVERRIDE_PEG = {
 
 // Override logos for specific tokens
 const OVERRIDE_LOGO = {
+  BTCB: 'https://bridge.goat.network/tokens/BTC.svg',
   WMON: 'https://raw.githubusercontent.com/trustwallet/assets/refs/heads/master/blockchains/monad/assets/0x3bd359C1119dA7Da1D913D1C4D2B7c461115433A/logo.png',
   WETH: 'https://raw.githubusercontent.com/trustwallet/assets/c6108b1a2708c01a8c637b80e0f69e77085d4174/blockchains/ethereum/assets/0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2/logo.png',
   USDRIF: 'https://assets.coingecko.com/coins/images/39869/standard/USDRIF.webp?1724500201',
